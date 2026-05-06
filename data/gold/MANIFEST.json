@@ -1,4 +1,19 @@
 {
   "version": "0.1",
-  "examples": []
+  "examples": [
+    {
+      "doc_type": "other",
+      "slug": "curl-readme",
+      "source": "data/gold/other/curl-readme.md",
+      "eom": "data/gold/other/curl-readme.eom.json",
+      "n_blocks": 14
+    },
+    {
+      "doc_type": "paper",
+      "slug": "mistral-7b",
+      "source": "data/gold/paper/mistral-7b.md",
+      "eom": "data/gold/paper/mistral-7b.eom.json",
+      "n_blocks": 8
+    }
+  ]
 }
