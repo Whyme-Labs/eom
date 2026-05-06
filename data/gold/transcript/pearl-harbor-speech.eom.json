@@ -1,7 +1,7 @@
 {
   "version": "0.1",
   "document_type": "transcript",
-  "summary": "Franklin D. Roosevelt delivered his famous \"Day of Infamy\" speech to Congress on December 8, 1941, the day after Japan's surprise attack on ",
+  "summary": "Franklin D. Roosevelt's December 8, 1941 address to Congress, framing Japan's Pearl Harbor attack as deliberate treachery and calling for a declaration of war that Congress passed within 33 minutes.",
   "render_profile": "executive_brief",
   "attention_budget": {
     "B_A": 200,
@@ -27,30 +27,14 @@
     {
       "id": "lead-1",
       "type": "lead",
-      "content": "Franklin D. Roosevelt delivered his famous \"Day of Infamy\" speech to Congress on December 8, 1941, the day after Japan's surprise attack on Pearl Harbor. The address lasted approximately 6.5 minutes and became one of the most iconic speeches in American political history. Opening with the memorable phrase \"Yesterday, December 7, 1941—a date which will live in infamy,\" Roosevelt framed",
+      "content": "Franklin D. Roosevelt delivered his famous \"Day of Infamy\" speech to Congress on December 8, 1941, the day after Japan's surprise attack on Pearl Harbor. The address lasted approximately 6.5 minutes and became one of the most iconic speeches in American political history.",
       "attention_tier": "B",
       "priority": 0.95,
       "reading_order": 1,
       "source_span": {
         "start": 24,
-        "end": 411,
-        "quote": "Franklin D. Roosevelt delivered his famous \"Day of Infamy\" speech to Congress on December 8, 1941, the day after Japan's surprise attack on Pearl Harbor. The address lasted approximately 6.5 minutes and became one of the most iconic speeches in American political history. Opening with the memorable phrase \"Yesterday, December 7, 1941—a date which will live in infamy,\" Roosevelt framed"
-      },
-      "is_inferred": false,
-      "inference_basis": [],
-      "parent_id": null
-    },
-    {
-      "id": "claim-1",
-      "type": "claim",
-      "content": "Background",
-      "attention_tier": "C",
-      "priority": 0.85,
-      "reading_order": 2,
-      "source_span": {
-        "start": 486,
-        "end": 499,
-        "quote": "## Background"
+        "end": 296,
+        "quote": "Franklin D. Roosevelt delivered his famous \"Day of Infamy\" speech to Congress on December 8, 1941, the day after Japan's surprise attack on Pearl Harbor. The address lasted approximately 6.5 minutes and became one of the most iconic speeches in American political history."
       },
       "is_inferred": false,
       "inference_basis": [],
@@ -59,10 +43,10 @@
     {
       "id": "factbox-1",
       "type": "factbox",
-      "content": "Roosevelt, the 32nd president, had previously served as governor of New York and assistant secretary of the Navy. He won an unprecedented third presidential term in 1940. On the morning of December 7, 1941,…",
-      "attention_tier": "B",
-      "priority": 0.8125,
-      "reading_order": 3,
+      "content": "Roosevelt, the 32nd president, had previously served as governor of New York and assistant secretary of the Navy. He won an unprecedented third presidential term in 1940. On the morning of December 7, 1941, 353 Imperial Japanese Navy aircraft attacked the American naval base at Pearl Harbor in Hawaii, destroying numerous ships and aircraft while killing over 2,400 people. Roosevelt learned of the attack while having lunch and immediately ordered military mobilization.",
+      "attention_tier": "C",
+      "priority": 0.75,
+      "reading_order": 2,
       "source_span": {
         "start": 501,
         "end": 973,
@@ -76,9 +60,9 @@
       "id": "evidence-1",
       "type": "evidence",
       "content": "Rather than immediately addressing Congress, Roosevelt consulted with his cabinet and congressional leaders. He chose to deliver his speech the following day, believing that waiting until December 8 would allow time for proper preparation and give the address greater dramatic impact.",
-      "attention_tier": "B",
-      "priority": 0.775,
-      "reading_order": 4,
+      "attention_tier": "C",
+      "priority": 0.65,
+      "reading_order": 3,
       "source_span": {
         "start": 975,
         "end": 1259,
@@ -89,28 +73,12 @@
       "parent_id": null
     },
     {
-      "id": "claim-2",
+      "id": "claim-1",
       "type": "claim",
-      "content": "The Speech",
-      "attention_tier": "C",
-      "priority": 0.7375,
-      "reading_order": 5,
-      "source_span": {
-        "start": 1261,
-        "end": 1274,
-        "quote": "## The Speech"
-      },
-      "is_inferred": false,
-      "inference_basis": [],
-      "parent_id": null
-    },
-    {
-      "id": "caveat-1",
-      "type": "caveat",
       "content": "Roosevelt's brief address was deliberately crafted to portray America as an innocent victim of Japanese treachery. Secretary of State Cordell Hull had suggested a longer speech detailing diplomatic history, but Roosevelt rejected this approach, believing brevity would prove more powerful rhetorically.",
-      "attention_tier": "B",
-      "priority": 0.7,
-      "reading_order": 6,
+      "attention_tier": "C",
+      "priority": 0.72,
+      "reading_order": 4,
       "source_span": {
         "start": 1276,
         "end": 1578,
@@ -125,8 +93,8 @@
       "type": "evidence",
       "content": "The speech emphasized several key points. Roosevelt stressed that Japan had attacked \"suddenly and deliberately\" while the two nations were at peace. He highlighted the cynical nature of Japanese deception—diplomats were delivering formal responses to American messages even as bombing began in Hawaii. Roosevelt noted that the distance from Japan to Hawaii made it obvious the attack had been \"deliberately planned many days or even weeks ago.\"",
       "attention_tier": "C",
-      "priority": 0.6625,
-      "reading_order": 7,
+      "priority": 0.70,
+      "reading_order": 5,
       "source_span": {
         "start": 1580,
         "end": 2025,
@@ -137,12 +105,12 @@
       "parent_id": null
     },
     {
-      "id": "claim-3",
+      "id": "claim-2",
       "type": "claim",
       "content": "Rather than using active voice (\"Japan attacked\"), Roosevelt employed passive constructions to emphasize American vulnerability: \"the United States of America was suddenly and deliberately attacked.\" This rhetorical choice reinforced the narrative of victimhood that would unite the nation.",
       "attention_tier": "C",
-      "priority": 0.625,
-      "reading_order": 8,
+      "priority": 0.68,
+      "reading_order": 6,
       "source_span": {
         "start": 2027,
         "end": 2317,
@@ -155,42 +123,42 @@
     {
       "id": "evidence-3",
       "type": "evidence",
-      "content": "The speech catalogued Japanese attacks across the Pacific, from Hawaii to Guam to the Philippines, demonstrating the scope of the offensive. Roosevelt concluded by calling on Congress to declare war, stating that Americans would \"win through to absolute victory\" and ensure \"this form of treachery shall never again endanger us.\"",
+      "content": "The speech catalogued Japanese attacks across the Pacific, from Hawaii to Guam to the Philippines, demonstrating the scope of the offensive.",
       "attention_tier": "C",
-      "priority": 0.5874999999999999,
-      "reading_order": 9,
+      "priority": 0.62,
+      "reading_order": 7,
       "source_span": {
         "start": 2319,
-        "end": 2648,
-        "quote": "The speech catalogued Japanese attacks across the Pacific, from Hawaii to Guam to the Philippines, demonstrating the scope of the offensive. Roosevelt concluded by calling on Congress to declare war, stating that Americans would \"win through to absolute victory\" and ensure \"this form of treachery shall never again endanger us.\""
+        "end": 2459,
+        "quote": "The speech catalogued Japanese attacks across the Pacific, from Hawaii to Guam to the Philippines, demonstrating the scope of the offensive."
       },
       "is_inferred": false,
       "inference_basis": [],
       "parent_id": null
     },
     {
-      "id": "claim-4",
-      "type": "claim",
-      "content": "Impact and Reception",
-      "attention_tier": "C",
-      "priority": 0.55,
-      "reading_order": 10,
+      "id": "decision-1",
+      "type": "decision",
+      "content": "Roosevelt concluded by calling on Congress to declare war, stating that Americans would \"win through to absolute victory\" and ensure \"this form of treachery shall never again endanger us.\"",
+      "attention_tier": "B",
+      "priority": 0.90,
+      "reading_order": 8,
       "source_span": {
-        "start": 2650,
-        "end": 2673,
-        "quote": "## Impact and Reception"
+        "start": 2460,
+        "end": 2648,
+        "quote": "Roosevelt concluded by calling on Congress to declare war, stating that Americans would \"win through to absolute victory\" and ensure \"this form of treachery shall never again endanger us.\""
       },
       "is_inferred": false,
       "inference_basis": [],
       "parent_id": null
     },
     {
-      "id": "evidence-4",
-      "type": "evidence",
+      "id": "factbox-2",
+      "type": "factbox",
       "content": "The response was immediate and overwhelming. Congress declared war within 33 minutes, with only one representative voting against it. The speech reached an enormous audience through radio broadcast, attracting over 81 percent of adult American listeners—the largest radio audience in American history to that point.",
       "attention_tier": "C",
-      "priority": 0.5125,
-      "reading_order": 11,
+      "priority": 0.60,
+      "reading_order": 9,
       "source_span": {
         "start": 2675,
         "end": 2990,
@@ -201,12 +169,12 @@
       "parent_id": null
     },
     {
-      "id": "evidence-5",
-      "type": "evidence",
+      "id": "caveat-1",
+      "type": "caveat",
       "content": "The White House received numerous congratulatory telegrams. Recruiting stations became overwhelmed with volunteers seeking to enlist, with numbers reportedly twice as high as after America's entry into World War I. Even prominent isolationists like Charles Lindbergh endorsed the president's stance, though some fringe figures continued to oppose intervention.",
-      "attention_tier": "C",
-      "priority": 0.475,
-      "reading_order": 12,
+      "attention_tier": "D",
+      "priority": 0.50,
+      "reading_order": 10,
       "source_span": {
         "start": 2992,
         "end": 3352,
@@ -217,80 +185,16 @@
       "parent_id": null
     },
     {
-      "id": "appendix-1",
-      "type": "appendix",
+      "id": "caveat-2",
+      "type": "caveat",
       "content": "The anti-war movement effectively collapsed in response to Roosevelt's speech and the attack itself. The national mood shifted dramatically toward unity and determination.",
       "attention_tier": "D",
-      "priority": 0.4375,
-      "reading_order": 13,
+      "priority": 0.45,
+      "reading_order": 11,
       "source_span": {
         "start": 3354,
         "end": 3525,
         "quote": "The anti-war movement effectively collapsed in response to Roosevelt's speech and the attack itself. The national mood shifted dramatically toward unity and determination."
-      },
-      "is_inferred": false,
-      "inference_basis": [],
-      "parent_id": null
-    },
-    {
-      "id": "appendix-2",
-      "type": "appendix",
-      "content": "Legacy",
-      "attention_tier": "D",
-      "priority": 0.4,
-      "reading_order": 14,
-      "source_span": {
-        "start": 3527,
-        "end": 3536,
-        "quote": "## Legacy"
-      },
-      "is_inferred": false,
-      "inference_basis": [],
-      "parent_id": null
-    },
-    {
-      "id": "appendix-3",
-      "type": "appendix",
-      "content": "The phrase \"a date which will live in infamy\" became permanently embedded in American historical memory. Hollywood adopted Roosevelt's narrative in numerous war films throughout the 1940s, reinforcing the themes of American innocence and enemy deception through depictions of failed diplomatic negotiations.",
-      "attention_tier": "D",
-      "priority": 0.3625,
-      "reading_order": 15,
-      "source_span": {
-        "start": 3538,
-        "end": 3845,
-        "quote": "The phrase \"a date which will live in infamy\" became permanently embedded in American historical memory. Hollywood adopted Roosevelt's narrative in numerous war films throughout the 1940s, reinforcing the themes of American innocence and enemy deception through depictions of failed diplomatic negotiations."
-      },
-      "is_inferred": false,
-      "inference_basis": [],
-      "parent_id": null
-    },
-    {
-      "id": "factbox-2",
-      "type": "factbox",
-      "content": "The speech's language and structure have been referenced by subsequent presidents during national crises. After the September 11 attacks in 2001, President George W. Bush drew explicit parallels to Pearl Harbor, employing similar rhetorical strategies of portraying America as victimized and united against evil. The Spanish prime minister similarly invoked the \"infamy\" framework following the 2004 Madrid train bombings.",
-      "attention_tier": "C",
-      "priority": 0.32499999999999996,
-      "reading_order": 16,
-      "source_span": {
-        "start": 3847,
-        "end": 4269,
-        "quote": "The speech's language and structure have been referenced by subsequent presidents during national crises. After the September 11 attacks in 2001, President George W. Bush drew explicit parallels to Pearl Harbor, employing similar rhetorical strategies of portraying America as victimized and united against evil. The Spanish prime minister similarly invoked the \"infamy\" framework following the 2004 Madrid train bombings."
-      },
-      "is_inferred": false,
-      "inference_basis": [],
-      "parent_id": null
-    },
-    {
-      "id": "appendix-4",
-      "type": "appendix",
-      "content": "Roosevelt's masterful use of kairos—speaking promptly to address an urgent moment—demonstrated how timing and brevity could amplify rhetorical power. The speech unified the nation at a critical moment and established a template for presidential crisis rhetoric that continues to influence American political discourse today.",
-      "attention_tier": "D",
-      "priority": 0.2875,
-      "reading_order": 17,
-      "source_span": {
-        "start": 4271,
-        "end": 4596,
-        "quote": "Roosevelt's masterful use of kairos—speaking promptly to address an urgent moment—demonstrated how timing and brevity could amplify rhetorical power. The speech unified the nation at a critical moment and established a template for presidential crisis rhetoric that continues to influence American political discourse today.\n"
       },
       "is_inferred": false,
       "inference_basis": [],

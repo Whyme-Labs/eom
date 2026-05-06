@@ -27,14 +27,14 @@
     {
       "id": "lead-1",
       "type": "lead",
-      "content": "John F. Kennedy's inaugural address was delivered on January 20, 1961, at the East Portico of the United States Capitol in Washington, D.C., at the start of his presidency as the 35th president of the United States. The 1,366-word speech is widely considered among the finest presidential inaugural addresses in American history and was the first inaugural address delivered to a televised audience in color. Kennedy became the first Catholic president, the youngest person elected to the office, and the first president born in the twentieth century. The ceremony drew nearly one million people to the nation's capital.",
+      "content": "John F. Kennedy's inaugural address was delivered on January 20, 1961, at the East Portico of the United States Capitol in Washington, D.C., at the start of his presidency as the 35th president of the United States.",
       "attention_tier": "B",
       "priority": 0.95,
       "reading_order": 1,
       "source_span": {
         "start": 25,
-        "end": 645,
-        "quote": "John F. Kennedy's inaugural address was delivered on January 20, 1961, at the East Portico of the United States Capitol in Washington, D.C., at the start of his presidency as the 35th president of the United States. The 1,366-word speech is widely considered among the finest presidential inaugural addresses in American history and was the first inaugural address delivered to a televised audience in color. Kennedy became the first Catholic president, the youngest person elected to the office, and the first president born in the twentieth century. The ceremony drew nearly one million people to the nation's capital."
+        "end": 240,
+        "quote": "John F. Kennedy's inaugural address was delivered on January 20, 1961, at the East Portico of the United States Capitol in Washington, D.C., at the start of his presidency as the 35th president of the United States."
       },
       "is_inferred": false,
       "inference_basis": [],

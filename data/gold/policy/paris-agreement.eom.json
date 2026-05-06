@@ -1,7 +1,7 @@
 {
   "version": "0.1",
   "document_type": "policy",
-  "summary": "The Paris Agreement is an international treaty on climate change signed in 2016 that addresses mitigation, adaptation, and finance. Negotiat",
+  "summary": "The Paris Agreement (2016) is a near-universal international climate treaty committing 194 parties to limit global warming to well below 2°C above pre-industrial levels, with efforts toward 1.5°C, through nationally determined contributions that are procedurally binding but individually non-enforceable.",
   "render_profile": "executive_brief",
   "attention_budget": {
     "B_A": 200,
@@ -27,14 +27,14 @@
     {
       "id": "lead-1",
       "type": "lead",
-      "content": "The Paris Agreement is an international treaty on climate change signed in 2016 that addresses mitigation, adaptation, and finance. Negotiated by 196 parties at the 2015 United Nations Climate Change Conference near Paris, the agreement has achieved near-universal participation. As of January 2026, 194 members of the United Nations Framework Convention on Climate Change are parties to the accord. The",
+      "content": "The Paris Agreement is an international treaty on climate change signed in 2016 that addresses mitigation, adaptation, and finance. Negotiated by 196 parties at the 2015 United Nations Climate Change Conference near Paris, the agreement has achieved near-universal participation.",
       "attention_tier": "B",
       "priority": 0.95,
       "reading_order": 1,
       "source_span": {
         "start": 19,
-        "end": 422,
-        "quote": "The Paris Agreement is an international treaty on climate change signed in 2016 that addresses mitigation, adaptation, and finance. Negotiated by 196 parties at the 2015 United Nations Climate Change Conference near Paris, the agreement has achieved near-universal participation. As of January 2026, 194 members of the United Nations Framework Convention on Climate Change are parties to the accord. The"
+        "end": 298,
+        "quote": "The Paris Agreement is an international treaty on climate change signed in 2016 that addresses mitigation, adaptation, and finance. Negotiated by 196 parties at the 2015 United Nations Climate Change Conference near Paris, the agreement has achieved near-universal participation."
       },
       "is_inferred": false,
       "inference_basis": [],
@@ -43,26 +43,10 @@
     {
       "id": "claim-1",
       "type": "claim",
-      "content": "Temperature Goals and Aims",
-      "attention_tier": "C",
-      "priority": 0.85,
-      "reading_order": 2,
-      "source_span": {
-        "start": 665,
-        "end": 694,
-        "quote": "## Temperature Goals and Aims"
-      },
-      "is_inferred": false,
-      "inference_basis": [],
-      "parent_id": null
-    },
-    {
-      "id": "evidence-1",
-      "type": "evidence",
       "content": "The agreement establishes a long-term temperature objective to hold the increase in the global average temperature to well below 2 degrees Celsius above pre-industrial levels while pursuing efforts to limit warming to 1.5 degrees Celsius. These limits represent averages measured over extended periods. The lower the temperature increase, the smaller the anticipated effects of climate change.",
       "attention_tier": "B",
-      "priority": 0.8071428571428572,
-      "reading_order": 3,
+      "priority": 0.90,
+      "reading_order": 2,
       "source_span": {
         "start": 696,
         "end": 1089,
@@ -75,26 +59,26 @@
     {
       "id": "decision-1",
       "type": "decision",
-      "content": "To achieve these targets, greenhouse gas emissions must be reduced as rapidly as possible and eventually reach net zero by mid-century. Specifically, emissions must decline by approximately 50 percent by 2030 to maintain the 1.5-degree pathway. Despite these…",
-      "attention_tier": "B",
-      "priority": 0.7642857142857142,
-      "reading_order": 4,
+      "content": "To achieve these targets, greenhouse gas emissions must be reduced as rapidly as possible and eventually reach net zero by mid-century. Specifically, emissions must decline by approximately 50 percent by 2030 to maintain the 1.5-degree pathway.",
+      "attention_tier": "C",
+      "priority": 0.85,
+      "reading_order": 3,
       "source_span": {
         "start": 1091,
-        "end": 1529,
-        "quote": "To achieve these targets, greenhouse gas emissions must be reduced as rapidly as possible and eventually reach net zero by mid-century. Specifically, emissions must decline by approximately 50 percent by 2030 to maintain the 1.5-degree pathway. Despite these commitments, global emissions continued rising after the agreement's adoption, and 2024 became the hottest year on record, with average temperatures exceeding 1.5 degrees Celsius."
+        "end": 1335,
+        "quote": "To achieve these targets, greenhouse gas emissions must be reduced as rapidly as possible and eventually reach net zero by mid-century. Specifically, emissions must decline by approximately 50 percent by 2030 to maintain the 1.5-degree pathway."
       },
       "is_inferred": false,
       "inference_basis": [],
       "parent_id": null
     },
     {
-      "id": "evidence-2",
+      "id": "evidence-1",
       "type": "evidence",
       "content": "Beyond temperature goals, the agreement aims to enhance adaptive capacity to climate change impacts, foster climate resilience, and promote low-emissions development without threatening food security. Countries also committed to making finance flows consistent with pathways toward emissions reductions and climate resilience. A critical objective is achieving global peaking of greenhouse gas emissions as soon as possible.",
-      "attention_tier": "B",
-      "priority": 0.7214285714285714,
-      "reading_order": 5,
+      "attention_tier": "D",
+      "priority": 0.70,
+      "reading_order": 4,
       "source_span": {
         "start": 1531,
         "end": 1955,
@@ -105,28 +89,12 @@
       "parent_id": null
     },
     {
-      "id": "claim-2",
-      "type": "claim",
-      "content": "Nationally Determined Contributions",
-      "attention_tier": "C",
-      "priority": 0.6785714285714286,
-      "reading_order": 6,
-      "source_span": {
-        "start": 1957,
-        "end": 1995,
-        "quote": "## Nationally Determined Contributions"
-      },
-      "is_inferred": false,
-      "inference_basis": [],
-      "parent_id": null
-    },
-    {
-      "id": "decision-2",
-      "type": "decision",
+      "id": "factbox-1",
+      "type": "factbox",
       "content": "The Paris Agreement operates through a bottom-up approach where nations establish their own targets rather than having commitments imposed externally. Countries determine what contributions they should make to achieve treaty aims through documents called nationally determined contributions, or NDCs.",
       "attention_tier": "C",
-      "priority": 0.6357142857142857,
-      "reading_order": 7,
+      "priority": 0.80,
+      "reading_order": 5,
       "source_span": {
         "start": 1997,
         "end": 2297,
@@ -137,12 +105,12 @@
       "parent_id": null
     },
     {
-      "id": "decision-3",
-      "type": "decision",
+      "id": "evidence-2",
+      "type": "evidence",
       "content": "Article 3 requires these contributions to represent ambitious efforts toward the agreement's purpose and to demonstrate progression over time. Each country must establish new contributions every five years, with each successive target exceeding previous ambition levels. The agreement recognizes that NDCs may include conditional elements dependent on external finance, technical support, or actions by other parties.",
       "attention_tier": "C",
-      "priority": 0.5928571428571429,
-      "reading_order": 8,
+      "priority": 0.75,
+      "reading_order": 6,
       "source_span": {
         "start": 2299,
         "end": 2716,
@@ -153,12 +121,12 @@
       "parent_id": null
     },
     {
-      "id": "decision-4",
-      "type": "decision",
+      "id": "caveat-1",
+      "type": "caveat",
       "content": "Notably, the NDCs themselves are not legally binding. However, the procedures surrounding them carry mandatory force: nations must prepare, communicate, and maintain successive NDCs; submit new targets every five years; and report implementation progress. No enforcement mechanism compels countries to meet their targets or establish contributions by specific deadlines. Instead, the agreement employs a transparency and review system sometimes characterized as name and shame or, more diplomatically, name and encourage.",
       "attention_tier": "C",
-      "priority": 0.55,
-      "reading_order": 9,
+      "priority": 0.72,
+      "reading_order": 7,
       "source_span": {
         "start": 2718,
         "end": 3239,
@@ -169,28 +137,12 @@
       "parent_id": null
     },
     {
-      "id": "claim-3",
-      "type": "claim",
-      "content": "Binding Nature and Structure",
-      "attention_tier": "C",
-      "priority": 0.5071428571428571,
-      "reading_order": 10,
-      "source_span": {
-        "start": 3241,
-        "end": 3272,
-        "quote": "## Binding Nature and Structure"
-      },
-      "is_inferred": false,
-      "inference_basis": [],
-      "parent_id": null
-    },
-    {
-      "id": "caveat-1",
+      "id": "caveat-2",
       "type": "caveat",
       "content": "The Paris Agreement functions as a binding accord with 16 introductory paragraphs and 29 articles containing both procedural and operational provisions. Many articles, however, do not impose strict obligations or serve primarily to facilitate international collaboration. This structure proved significant for United States involvement: because the agreement lacks legal mitigation or finance targets, it qualifies as an executive agreement rather than a treaty, meaning it did not require Senate approval given that the foundational 1992 UNFCCC treaty had already received Senate consent.",
       "attention_tier": "C",
-      "priority": 0.46428571428571425,
-      "reading_order": 11,
+      "priority": 0.65,
+      "reading_order": 8,
       "source_span": {
         "start": 3274,
         "end": 3863,
@@ -201,12 +153,12 @@
       "parent_id": null
     },
     {
-      "id": "caveat-2",
+      "id": "caveat-3",
       "type": "caveat",
       "content": "A key structural distinction from its predecessor, the 1997 Kyoto Protocol, concerns treatment of developed versus developing nations. The Kyoto Protocol created distinct categories with differentiated obligations, but the Paris Agreement blurs this division by requiring all parties to submit emissions reduction plans. The agreement maintains the principle of Common but Differentiated Responsibility and Respective Capabilities, acknowledging that nations possess varying capacities for climate action, yet provides no specific division between developed and developing states.",
       "attention_tier": "C",
-      "priority": 0.42142857142857143,
-      "reading_order": 12,
+      "priority": 0.60,
+      "reading_order": 9,
       "source_span": {
         "start": 3865,
         "end": 4445,
@@ -217,28 +169,12 @@
       "parent_id": null
     },
     {
-      "id": "appendix-1",
-      "type": "appendix",
-      "content": "Signing and Ratification",
-      "attention_tier": "D",
-      "priority": 0.37857142857142856,
-      "reading_order": 13,
-      "source_span": {
-        "start": 4447,
-        "end": 4474,
-        "quote": "## Signing and Ratification"
-      },
-      "is_inferred": false,
-      "inference_basis": [],
-      "parent_id": null
-    },
-    {
-      "id": "factbox-1",
+      "id": "factbox-2",
       "type": "factbox",
       "content": "The Paris Agreement opened for signature on April 22, 2016, Earth Day, at United Nations Headquarters in New York, remaining open for signature until April 21, 2017. On the first day alone, 175 parties signed, including 174 states and the European Union. Signing represents the initial step toward ratification, though countries may accede to the agreement without signing.",
       "attention_tier": "C",
-      "priority": 0.33571428571428574,
-      "reading_order": 14,
+      "priority": 0.55,
+      "reading_order": 10,
       "source_span": {
         "start": 4476,
         "end": 4849,
@@ -249,16 +185,16 @@
       "parent_id": null
     },
     {
-      "id": "factbox-2",
-      "type": "factbox",
+      "id": "decision-2",
+      "type": "decision",
       "content": "The agreement entered into force on November 4, 2016, after achieving ratification by 55 countries accounting for at least 55 percent of global greenhouse gas emissions. The European Union's ratification, along with seven member states' simultaneous deposit of instruments on October 5, 2016, provided the necessary threshold. As of January 2026, 194 states and the European Union have signed or ratified the agreement.",
       "attention_tier": "C",
-      "priority": 0.2928571428571428,
-      "reading_order": 15,
+      "priority": 0.50,
+      "reading_order": 11,
       "source_span": {
         "start": 4851,
-        "end": 5271,
-        "quote": "The agreement entered into force on November 4, 2016, after achieving ratification by 55 countries accounting for at least 55 percent of global greenhouse gas emissions. The European Union's ratification, along with seven member states' simultaneous deposit of instruments on October 5, 2016, provided the necessary threshold. As of January 2026, 194 states and the European Union have signed or ratified the agreement.\n"
+        "end": 5270,
+        "quote": "The agreement entered into force on November 4, 2016, after achieving ratification by 55 countries accounting for at least 55 percent of global greenhouse gas emissions. The European Union's ratification, along with seven member states' simultaneous deposit of instruments on October 5, 2016, provided the necessary threshold. As of January 2026, 194 states and the European Union have signed or ratified the agreement."
       },
       "is_inferred": false,
       "inference_basis": [],

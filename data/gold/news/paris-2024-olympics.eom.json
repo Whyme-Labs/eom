@@ -11,26 +11,30 @@
     {
       "id": "headline-1",
       "type": "headline",
-      "content": "Paris hosts 2024 Summer Olympics for a record-tying third time",
+      "content": "2024 Summer Olympics",
       "attention_tier": "A",
       "priority": 1.0,
       "reading_order": 0,
-      "source_span": null,
-      "is_inferred": true,
-      "inference_basis": ["lead-1", "claim-1"],
+      "source_span": {
+        "start": 2,
+        "end": 22,
+        "quote": "2024 Summer Olympics"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
       "parent_id": null
     },
     {
       "id": "lead-1",
       "type": "lead",
-      "content": "The 2024 Summer Olympics, officially known as the Games of the XXXIII Olympiad and branded as Paris 2024, took place in France from July 26 to August 11, 2024, with certain events beginning on July 24. Paris served as the host city, with additional events distributed across 16 other metropolitan French locations. Football matches occurred in cities including Marseille, Lyon, Bordeaux, Nantes, Nice, and Saint-Étienne. A notable exception was the surfing competition, held in Teahupo'o, Tahiti, in French Polynesia, approximately 15,716 kilometers from Paris.",
+      "content": "The 2024 Summer Olympics, officially known as the Games of the XXXIII Olympiad and branded as Paris 2024, took place in France from July 26 to August 11, 2024, with certain events beginning on July 24. Paris served as the host city, with additional events distributed across 16 other metropolitan French locations.",
       "attention_tier": "B",
       "priority": 0.95,
       "reading_order": 1,
       "source_span": {
         "start": 24,
-        "end": 585,
-        "quote": "The 2024 Summer Olympics, officially known as the Games of the XXXIII Olympiad and branded as Paris 2024, took place in France from July 26 to August 11, 2024, with certain events beginning on July 24. Paris served as the host city, with additional events distributed across 16 other metropolitan French locations. Football matches occurred in cities including Marseille, Lyon, Bordeaux, Nantes, Nice, and Saint-Étienne. A notable exception was the surfing competition, held in Teahupo'o, Tahiti, in French Polynesia, approximately 15,716 kilometers from Paris."
+        "end": 338,
+        "quote": "The 2024 Summer Olympics, officially known as the Games of the XXXIII Olympiad and branded as Paris 2024, took place in France from July 26 to August 11, 2024, with certain events beginning on July 24. Paris served as the host city, with additional events distributed across 16 other metropolitan French locations."
       },
       "is_inferred": false,
       "inference_basis": [],
@@ -56,7 +60,7 @@
       "id": "factbox-1",
       "type": "factbox",
       "content": "The Games featured 10,714 athletes competing across 329 events in 32 sports comprising 48 disciplines. Breaking made its Olympic debut, while skateboarding, sport climbing, and surfing returned after debuting in 2020. The event was the first to achieve full gender parity in athlete participation.",
-      "attention_tier": "B",
+      "attention_tier": "C",
       "priority": 0.85,
       "reading_order": 3,
       "source_span": {

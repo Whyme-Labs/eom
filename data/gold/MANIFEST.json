@@ -10,6 +10,13 @@
     },
     {
       "doc_type": "memo",
+      "slug": "agile-manifesto",
+      "source": "data/gold/memo/agile-manifesto.md",
+      "eom": "data/gold/memo/agile-manifesto.eom.json",
+      "n_blocks": 21
+    },
+    {
+      "doc_type": "memo",
       "slug": "bus-factor",
       "source": "data/gold/memo/bus-factor.md",
       "eom": "data/gold/memo/bus-factor.eom.json",
@@ -45,6 +52,13 @@
     },
     {
       "doc_type": "news",
+      "slug": "paris-2024-olympics",
+      "source": "data/gold/news/paris-2024-olympics.md",
+      "eom": "data/gold/news/paris-2024-olympics.eom.json",
+      "n_blocks": 10
+    },
+    {
+      "doc_type": "news",
       "slug": "tohoku-earthquake",
       "source": "data/gold/news/tohoku-earthquake.md",
       "eom": "data/gold/news/tohoku-earthquake.eom.json",
@@ -62,21 +76,21 @@
       "slug": "git-readme",
       "source": "data/gold/other/git-readme.md",
       "eom": "data/gold/other/git-readme.eom.json",
-      "n_blocks": 17
+      "n_blocks": 15
     },
     {
       "doc_type": "other",
       "slug": "pep-8",
       "source": "data/gold/other/pep-8.md",
       "eom": "data/gold/other/pep-8.eom.json",
-      "n_blocks": 21
+      "n_blocks": 17
     },
     {
       "doc_type": "other",
       "slug": "wikipedia-readme",
       "source": "data/gold/other/wikipedia-readme.md",
       "eom": "data/gold/other/wikipedia-readme.eom.json",
-      "n_blocks": 14
+      "n_blocks": 8
     },
     {
       "doc_type": "paper",
@@ -84,6 +98,13 @@
       "source": "data/gold/paper/attention-is-all-you-need.md",
       "eom": "data/gold/paper/attention-is-all-you-need.eom.json",
       "n_blocks": 8
+    },
+    {
+      "doc_type": "paper",
+      "slug": "bert",
+      "source": "data/gold/paper/bert.md",
+      "eom": "data/gold/paper/bert.eom.json",
+      "n_blocks": 4
     },
     {
       "doc_type": "paper",
@@ -111,14 +132,14 @@
       "slug": "gdpr",
       "source": "data/gold/policy/gdpr.md",
       "eom": "data/gold/policy/gdpr.eom.json",
-      "n_blocks": 23
+      "n_blocks": 15
     },
     {
       "doc_type": "policy",
       "slug": "paris-agreement",
       "source": "data/gold/policy/paris-agreement.md",
       "eom": "data/gold/policy/paris-agreement.eom.json",
-      "n_blocks": 16
+      "n_blocks": 12
     },
     {
       "doc_type": "policy",
@@ -150,6 +171,13 @@
     },
     {
       "doc_type": "report",
+      "slug": "limits-to-growth",
+      "source": "data/gold/report/limits-to-growth.md",
+      "eom": "data/gold/report/limits-to-growth.eom.json",
+      "n_blocks": 15
+    },
+    {
+      "doc_type": "report",
       "slug": "pisa",
       "source": "data/gold/report/pisa.md",
       "eom": "data/gold/report/pisa.eom.json",
@@ -174,14 +202,21 @@
       "slug": "i-have-a-dream",
       "source": "data/gold/transcript/i-have-a-dream.md",
       "eom": "data/gold/transcript/i-have-a-dream.eom.json",
-      "n_blocks": 20
+      "n_blocks": 9
+    },
+    {
+      "doc_type": "transcript",
+      "slug": "jfk-inaugural",
+      "source": "data/gold/transcript/jfk-inaugural.md",
+      "eom": "data/gold/transcript/jfk-inaugural.eom.json",
+      "n_blocks": 13
     },
     {
       "doc_type": "transcript",
       "slug": "pearl-harbor-speech",
       "source": "data/gold/transcript/pearl-harbor-speech.md",
       "eom": "data/gold/transcript/pearl-harbor-speech.eom.json",
-      "n_blocks": 18
+      "n_blocks": 12
     }
   ]
 }

@@ -1,0 +1,353 @@
+{
+  "version": "0.1",
+  "document_type": "memo",
+  "summary": "Agile software development is an umbrella term for approaches to developing software that reflect the values and principles agreed upon by T",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "Agile software development",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 28,
+        "quote": "Agile software development"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "Agile software development is an umbrella term for approaches to developing software that reflect the values and principles agreed upon by The Agile Alliance, a group of 17 software practitioners, in 2001. As documented in their Manifesto for Agile Software Development, the practitioners value individuals and interactions over processes and tools, working software over comprehensive documentation, customer collaboration over contract",
+      "attention_tier": "A",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 30,
+        "end": 467,
+        "quote": "Agile software development is an umbrella term for approaches to developing software that reflect the values and principles agreed upon by The Agile Alliance, a group of 17 software practitioners, in 2001. As documented in their Manifesto for Agile Software Development, the practitioners value individuals and interactions over processes and tools, working software over comprehensive documentation, customer collaboration over contract"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "The practitioners cite inspiration from new practices at the time including extreme programming, scrum, dynamic systems development method, adaptive software development, and being sympathetic to the need for an alternative to documentation-driven, heavyweight software development processes.",
+      "attention_tier": "C",
+      "priority": 0.85,
+      "reading_order": 2,
+      "source_span": {
+        "start": 530,
+        "end": 822,
+        "quote": "The practitioners cite inspiration from new practices at the time including extreme programming, scrum, dynamic systems development method, adaptive software development, and being sympathetic to the need for an alternative to documentation-driven, heavyweight software development processes."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-2",
+      "type": "claim",
+      "content": "Many software development practices emerged from the agile mindset. These agile-based practices, sometimes called Agile (with a capital A), include requirements, discovery, and solutions improvement through the collaborative effort of self-organizing and cross-functional teams with their customer(s)/end user(s).",
+      "attention_tier": "C",
+      "priority": 0.8184210526315789,
+      "reading_order": 3,
+      "source_span": {
+        "start": 824,
+        "end": 1137,
+        "quote": "Many software development practices emerged from the agile mindset. These agile-based practices, sometimes called Agile (with a capital A), include requirements, discovery, and solutions improvement through the collaborative effort of self-organizing and cross-functional teams with their customer(s)/end user(s)."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "While there is much anecdotal evidence that the agile mindset and agile-based practices improve the software development process, the empirical evidence is limited and less than conclusive.",
+      "attention_tier": "B",
+      "priority": 0.7868421052631579,
+      "reading_order": 4,
+      "source_span": {
+        "start": 1139,
+        "end": 1328,
+        "quote": "While there is much anecdotal evidence that the agile mindset and agile-based practices improve the software development process, the empirical evidence is limited and less than conclusive."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-3",
+      "type": "claim",
+      "content": "The Agile Manifesto",
+      "attention_tier": "C",
+      "priority": 0.7552631578947369,
+      "reading_order": 5,
+      "source_span": {
+        "start": 1330,
+        "end": 1352,
+        "quote": "## The Agile Manifesto"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-4",
+      "type": "claim",
+      "content": "History",
+      "attention_tier": "C",
+      "priority": 0.7236842105263158,
+      "reading_order": 6,
+      "source_span": {
+        "start": 1354,
+        "end": 1365,
+        "quote": "### History"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "In February 2001, 17 software developers met at the Snowbird ski resort in Utah to discuss lightweight development methods. They were Kent Beck, Mike Beedle, Arie van Bennekum, Alistair Cockburn, Ward Cunningham, Martin Fowler, James Grenning, Jim Highsmith, Andrew Hunt, Ron Jeffries, Jon Kern, Brian Marick, Robert C. Martin, Steve Mellor, Ken Schwaber, Jeff Sutherland, and Dave Thomas. Together they published the Manifesto for Agile Software Development.",
+      "attention_tier": "B",
+      "priority": 0.6921052631578948,
+      "reading_order": 7,
+      "source_span": {
+        "start": 1367,
+        "end": 1826,
+        "quote": "In February 2001, 17 software developers met at the Snowbird ski resort in Utah to discuss lightweight development methods. They were Kent Beck, Mike Beedle, Arie van Bennekum, Alistair Cockburn, Ward Cunningham, Martin Fowler, James Grenning, Jim Highsmith, Andrew Hunt, Ron Jeffries, Jon Kern, Brian Marick, Robert C. Martin, Steve Mellor, Ken Schwaber, Jeff Sutherland, and Dave Thomas. Together they published the Manifesto for Agile Software Development."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-5",
+      "type": "claim",
+      "content": "Values",
+      "attention_tier": "C",
+      "priority": 0.6605263157894736,
+      "reading_order": 8,
+      "source_span": {
+        "start": 1828,
+        "end": 1838,
+        "quote": "### Values"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-6",
+      "type": "claim",
+      "content": "The manifesto for agile software development reads:",
+      "attention_tier": "C",
+      "priority": 0.6289473684210526,
+      "reading_order": 9,
+      "source_span": {
+        "start": 1840,
+        "end": 1891,
+        "quote": "The manifesto for agile software development reads:"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-2",
+      "type": "evidence",
+      "content": "\"We are uncovering better ways of developing software by doing it and helping others do it. Through this work we have come to value: Individuals and interactions over processes and tools; Working software over comprehensive documentation; Customer collaboration over contract negotiation; Responding to change over following a plan. That is, while there is value in the items on the right, we value the items on the left more.\"",
+      "attention_tier": "B",
+      "priority": 0.5973684210526315,
+      "reading_order": 10,
+      "source_span": {
+        "start": 1893,
+        "end": 2320,
+        "quote": "\"We are uncovering better ways of developing software by doing it and helping others do it. Through this work we have come to value: Individuals and interactions over processes and tools; Working software over comprehensive documentation; Customer collaboration over contract negotiation; Responding to change over following a plan. That is, while there is value in the items on the right, we value the items on the left more.\""
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "decision-1",
+      "type": "decision",
+      "content": "The four values can be understood as follows. Tools and processes are important, but it is more important to have competent people working together effectively. Good documentation is useful in helping people to understand how the software is built and how to use it, but the main point of development is to create software, not documentation. A contract is important but is not a substitute for working closely with customers to discover what they need. A project plan is important, but it must not be too rigid to accommodate changes in technology or the environment, stakeholders' priorities, and people's understanding of the problem and its solution.",
+      "attention_tier": "B",
+      "priority": 0.5657894736842105,
+      "reading_order": 11,
+      "source_span": {
+        "start": 2322,
+        "end": 2976,
+        "quote": "The four values can be understood as follows. Tools and processes are important, but it is more important to have competent people working together effectively. Good documentation is useful in helping people to understand how the software is built and how to use it, but the main point of development is to create software, not documentation. A contract is important but is not a substitute for working closely with customers to discover what they need. A project plan is important, but it must not be too rigid to accommodate changes in technology or the environment, stakeholders' priorities, and people's understanding of the problem and its solution."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-2",
+      "type": "caveat",
+      "content": "Introducing the manifesto on behalf of the Agile Alliance, Jim Highsmith said: \"The Agile movement is not anti-methodology, in fact many of us want to restore credibility to the word methodology. We want to restore a balance. We embrace modeling, but not in order to file some diagram in a dusty corporate repository. We embrace documentation, but not hundreds of pages of never-maintained and rarely-used tomes. We plan, but recognize the limits of planning in a turbulent environment.\"",
+      "attention_tier": "B",
+      "priority": 0.5342105263157895,
+      "reading_order": 12,
+      "source_span": {
+        "start": 2978,
+        "end": 3465,
+        "quote": "Introducing the manifesto on behalf of the Agile Alliance, Jim Highsmith said: \"The Agile movement is not anti-methodology, in fact many of us want to restore credibility to the word methodology. We want to restore a balance. We embrace modeling, but not in order to file some diagram in a dusty corporate repository. We embrace documentation, but not hundreds of pages of never-maintained and rarely-used tomes. We plan, but recognize the limits of planning in a turbulent environment.\""
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-7",
+      "type": "claim",
+      "content": "Principles",
+      "attention_tier": "C",
+      "priority": 0.5026315789473683,
+      "reading_order": 13,
+      "source_span": {
+        "start": 3467,
+        "end": 3481,
+        "quote": "### Principles"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-8",
+      "type": "claim",
+      "content": "The values are based on these twelve principles:",
+      "attention_tier": "C",
+      "priority": 0.4710526315789474,
+      "reading_order": 14,
+      "source_span": {
+        "start": 3483,
+        "end": 3531,
+        "quote": "The values are based on these twelve principles:"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "1. Customer satisfaction by early and continuous delivery of valuable software.\n2. Welcome changing requirements, even in late development.\n3. Deliver working software frequently (weeks rather than months).\n4. Close, daily cooperation between business people and developers.\n5. Projects are built around motivated individuals, who should be trusted.\n6. Face-to-face conversation is the best form of communication (co-location).\n7. Working software is the primary measure of progress.\n8. Sustainable development, able to maintain a constant pace.\n9. Continuous attention to technical excellence and good design.\n10. Simplicity—the art of maximizing the amount of work not done—is essential.\n11. Best architectures, requirements, and designs emerge from self-organizing teams.\n12. Regularly, the team reflects on how to become more effective, and adjusts accordingly.",
+      "attention_tier": "C",
+      "priority": 0.4394736842105263,
+      "reading_order": 15,
+      "source_span": {
+        "start": 3533,
+        "end": 4398,
+        "quote": "1. Customer satisfaction by early and continuous delivery of valuable software.\n2. Welcome changing requirements, even in late development.\n3. Deliver working software frequently (weeks rather than months).\n4. Close, daily cooperation between business people and developers.\n5. Projects are built around motivated individuals, who should be trusted.\n6. Face-to-face conversation is the best form of communication (co-location).\n7. Working software is the primary measure of progress.\n8. Sustainable development, able to maintain a constant pace.\n9. Continuous attention to technical excellence and good design.\n10. Simplicity—the art of maximizing the amount of work not done—is essential.\n11. Best architectures, requirements, and designs emerge from self-organizing teams.\n12. Regularly, the team reflects on how to become more effective, and adjusts accordingly."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-1",
+      "type": "appendix",
+      "content": "Criticism and non-applicability",
+      "attention_tier": "D",
+      "priority": 0.40789473684210525,
+      "reading_order": 16,
+      "source_span": {
+        "start": 4400,
+        "end": 4435,
+        "quote": "### Criticism and non-applicability"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-2",
+      "type": "appendix",
+      "content": "While agile methods have been widely adopted, critics point out that the benefits are difficult to measure empirically and depend heavily on context. Agile approaches are primarily suited to small, co-located teams working on software products where requirements can evolve. They are considered less applicable to large-scale systems with many dependencies, safety-critical applications requiring extensive upfront specification, or distributed teams across time zones.",
+      "attention_tier": "D",
+      "priority": 0.3763157894736842,
+      "reading_order": 17,
+      "source_span": {
+        "start": 4437,
+        "end": 4906,
+        "quote": "While agile methods have been widely adopted, critics point out that the benefits are difficult to measure empirically and depend heavily on context. Agile approaches are primarily suited to small, co-located teams working on software products where requirements can evolve. They are considered less applicable to large-scale systems with many dependencies, safety-critical applications requiring extensive upfront specification, or distributed teams across time zones."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-3",
+      "type": "appendix",
+      "content": "Some critics argue that agile can be used as an excuse to avoid documentation and planning discipline, creating technical debt and knowledge silos. Others note that agile frameworks like Scrum have themselves become heavyweight processes, with certification programs and prescribed ceremonies that contradict the original manifesto's spirit of lightweight, adaptive development.",
+      "attention_tier": "D",
+      "priority": 0.34473684210526323,
+      "reading_order": 18,
+      "source_span": {
+        "start": 4908,
+        "end": 5286,
+        "quote": "Some critics argue that agile can be used as an excuse to avoid documentation and planning discipline, creating technical debt and knowledge silos. Others note that agile frameworks like Scrum have themselves become heavyweight processes, with certification programs and prescribed ceremonies that contradict the original manifesto's spirit of lightweight, adaptive development."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-4",
+      "type": "appendix",
+      "content": "Source",
+      "attention_tier": "D",
+      "priority": 0.3131578947368421,
+      "reading_order": 19,
+      "source_span": {
+        "start": 5288,
+        "end": 5297,
+        "quote": "## Source"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-5",
+      "type": "appendix",
+      "content": "Content adapted from Wikipedia, \"Agile software development\", available under the Creative Commons Attribution-ShareAlike License (CC BY-SA).",
+      "attention_tier": "D",
+      "priority": 0.28157894736842104,
+      "reading_order": 20,
+      "source_span": {
+        "start": 5299,
+        "end": 5441,
+        "quote": "Content adapted from Wikipedia, \"Agile software development\", available under the Creative Commons Attribution-ShareAlike License (CC BY-SA).\n"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:254241c8329308bd9a2f9a7d3cbf84359465ad999eb87f04a44113df713a8962",
+    "chars": 5441,
+    "lang": "en"
+  }
+}
