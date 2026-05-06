@@ -5,6 +5,10 @@ from eom.harness import (
     check_h1,
     check_h2,
     check_h3,
+    check_h4,
+    check_h5,
+    check_h6,
+    check_h7,
 )
 from eom.schema import Block, EOMDocument, AttentionBudget, SourceMetadata, SourceSpan
 
@@ -167,3 +171,68 @@ class TestH3:
         tiers = ["B"] * 5 + ["D"] * 18
         d = self._doc_with_tiers(tiers)
         assert check_h3(d) == []
+
+
+class TestH4:
+    def test_passes_with_total_order(self):
+        d = _doc([
+            _block("headline-1", "headline", 0, tier="A"),
+            _block("lead-1", "lead", 1, tier="A"),
+            _block("claim-1", "claim", 2),
+        ])
+        assert check_h4(d) == []
+
+    def test_fails_with_duplicate_reading_order(self):
+        d = _doc([
+            _block("headline-1", "headline", 0, tier="A"),
+            _block("lead-1", "lead", 0, tier="A"),
+        ])
+        f = check_h4(d)
+        assert any(r.rule == "H4" for r in f)
+
+    def test_fails_with_gap(self):
+        d = _doc([
+            _block("headline-1", "headline", 0, tier="A"),
+            _block("lead-1", "lead", 2, tier="A"),
+        ])
+        f = check_h4(d)
+        assert any(r.rule == "H4" for r in f)
+
+
+class TestH5:
+    def test_passes_unique_ids(self):
+        d = _doc([
+            _block("headline-1", "headline", 0, tier="A"),
+            _block("lead-1", "lead", 1, tier="A"),
+        ])
+        assert check_h5(d) == []
+
+    def test_fails_duplicate_ids(self):
+        # Pydantic Block doesn't enforce cross-block uniqueness, so we can build a doc with dupes.
+        b1 = _block("claim-1", "claim", 0)
+        b2 = _block("claim-1", "claim", 1)
+        b_head = _block("headline-1", "headline", 2, tier="A")
+        b_lead = _block("lead-1", "lead", 3, tier="A")
+        d = _doc([b1, b2, b_head, b_lead])
+        f = check_h5(d)
+        assert any(r.rule == "H5" for r in f)
+
+
+class TestH6:
+    def test_passes_when_all_have_content(self):
+        d = _doc([
+            _block("headline-1", "headline", 0, tier="A"),
+            _block("lead-1", "lead", 1, tier="A"),
+        ])
+        assert check_h6(d) == []
+    # Empty content is already rejected by Block validators; H6 is a belt-and-braces.
+
+
+class TestH7:
+    # Block validator already restricts type; H7 is a runtime sanity check.
+    def test_passes_canonical_types(self):
+        d = _doc([
+            _block("headline-1", "headline", 0, tier="A"),
+            _block("lead-1", "lead", 1, tier="A"),
+        ])
+        assert check_h7(d) == []

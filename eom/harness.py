@@ -83,3 +83,72 @@ def check_h3(doc: EOMDocument) -> list[FailureRecord]:
             message=f"tier B fraction {counts['B']}/{n}={counts['B']/n:.2%} exceeds cap 25%",
         ))
     return out
+
+
+def check_h4(doc: EOMDocument) -> list[FailureRecord]:
+    """H4: reading_order is a total order in [0, N) with no duplicates or gaps."""
+    n = len(doc.blocks)
+    orders = sorted(b.reading_order for b in doc.blocks)
+    expected = list(range(n))
+    if orders == expected:
+        return []
+    out: list[FailureRecord] = []
+    seen: set[int] = set()
+    for b in doc.blocks:
+        if b.reading_order in seen:
+            out.append(FailureRecord(
+                rule="H4",
+                message=f"duplicate reading_order {b.reading_order}",
+                block_id=b.id,
+            ))
+        seen.add(b.reading_order)
+    if not out:
+        # No duplicates, but the sequence has gaps or is out of range.
+        out.append(FailureRecord(
+            rule="H4",
+            message=f"reading_order is not [0, N); got {orders}, expected {expected}",
+        ))
+    return out
+
+
+def check_h5(doc: EOMDocument) -> list[FailureRecord]:
+    """H5: block IDs unique within document."""
+    seen: set[str] = set()
+    out: list[FailureRecord] = []
+    for b in doc.blocks:
+        if b.id in seen:
+            out.append(FailureRecord(rule="H5", message=f"duplicate id {b.id!r}", block_id=b.id))
+        seen.add(b.id)
+    return out
+
+
+def check_h6(doc: EOMDocument) -> list[FailureRecord]:
+    """H6: every block has non-empty content (re-check at harness layer)."""
+    out: list[FailureRecord] = []
+    for b in doc.blocks:
+        if not b.content.strip():
+            out.append(FailureRecord(
+                rule="H6",
+                message="block content is empty or whitespace-only",
+                block_id=b.id,
+            ))
+    return out
+
+
+CANONICAL_BLOCK_TYPES = {
+    "headline", "lead", "claim", "evidence",
+    "factbox", "caveat", "decision", "appendix",
+}
+
+
+def check_h7(doc: EOMDocument) -> list[FailureRecord]:
+    """H7: every block.type is one of the eight canonical types."""
+    out: list[FailureRecord] = []
+    for b in doc.blocks:
+        if b.type not in CANONICAL_BLOCK_TYPES:
+            out.append(FailureRecord(
+                rule="H7",
+                message=f"unknown block type {b.type!r}",
+                block_id=b.id,
+            ))
+    return out
