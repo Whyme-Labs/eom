@@ -26,3 +26,9 @@ def test_count_tokens_multiline():
     b = count_tokens("hello world")
     # Newline introduces at least one extra token.
     assert a >= b
+
+
+def test_count_tokens_handles_special_token_strings():
+    # Real EOM source may quote LLM control tokens; counter must not raise.
+    n = count_tokens("the model emits <|endoftext|> when finished")
+    assert n > 0
