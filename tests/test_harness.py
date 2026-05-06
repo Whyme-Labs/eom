@@ -478,3 +478,32 @@ class TestH12:
         d = self._doc_with_decision(ev_span, decision)
         f = check_h12(d)
         assert any(r.rule == "H12" and "lacks source_span" in r.message for r in f)
+
+
+# Append to tests/test_harness.py
+from eom.harness import validate
+from tests.fixtures.loader import load_pair
+
+
+class TestValidate:
+    def test_freight_memo_fixture_passes(self):
+        source, eom = load_pair("freight_memo")
+        report = validate(eom, source)
+        if not report.passed:
+            for f in report.failures:
+                print(f)
+        assert report.passed
+
+    def test_metrics_populated(self):
+        source, eom = load_pair("freight_memo")
+        report = validate(eom, source)
+        assert "n_blocks" in report.metrics
+        assert "tier_a_count" in report.metrics
+        assert "tier_a_tokens" in report.metrics
+
+    def test_warnings_for_h13_h14(self):
+        source, eom = load_pair("freight_memo")
+        report = validate(eom, source)
+        rules = {w.rule for w in report.warnings}
+        assert "H13" in rules
+        assert "H14" in rules

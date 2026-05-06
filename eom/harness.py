@@ -280,3 +280,48 @@ def check_h12(doc: EOMDocument) -> list[FailureRecord]:
                     block_id=b.id,
                 ))
     return out
+
+
+def validate(doc: EOMDocument, source_text: str) -> ValidationReport:
+    """Run H1-H12 against the document and source text; return ValidationReport."""
+    failures: list[FailureRecord] = []
+    failures += check_h1(doc)
+    failures += check_h2(doc)
+    failures += check_h3(doc)
+    failures += check_h4(doc)
+    failures += check_h5(doc)
+    failures += check_h6(doc)
+    failures += check_h7(doc)
+    failures += check_h8(doc)
+    failures += check_h9(doc)
+    failures += check_h10(doc)
+    failures += check_h11(doc, source_text)
+    failures += check_h12(doc)
+
+    metrics: dict[str, int | float] = {
+        "n_blocks": len(doc.blocks),
+        "tier_a_count": sum(1 for b in doc.blocks if b.attention_tier == "A"),
+        "tier_b_count": sum(1 for b in doc.blocks if b.attention_tier == "B"),
+        "tier_c_count": sum(1 for b in doc.blocks if b.attention_tier == "C"),
+        "tier_d_count": sum(1 for b in doc.blocks if b.attention_tier == "D"),
+        "tier_a_tokens": sum(
+            count_tokens(b.content) for b in doc.blocks if b.attention_tier == "A"
+        ),
+        "tier_ab_tokens": sum(
+            count_tokens(b.content) for b in doc.blocks
+            if b.attention_tier in ("A", "B")
+        ),
+    }
+
+    warnings = [
+        WarningRecord(
+            rule="H13",
+            message="salience monotonicity is corpus-level; not checked here",
+        ),
+        WarningRecord(
+            rule="H14",
+            message="lead centrality is corpus-level; not checked here",
+        ),
+    ]
+
+    return ValidationReport(failures=failures, warnings=warnings, metrics=metrics)

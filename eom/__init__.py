@@ -8,3 +8,26 @@ Public API:
 """
 
 __version__ = "0.1.0"
+
+from eom.harness import validate, ValidationReport, FailureRecord, WarningRecord
+from eom.schema import (
+    EOMDocument,
+    Block,
+    SourceSpan,
+    SourceMetadata,
+    AttentionBudget,
+    RENDER_PROFILES,
+)
+
+__all__ = [
+    "validate",
+    "ValidationReport",
+    "FailureRecord",
+    "WarningRecord",
+    "EOMDocument",
+    "Block",
+    "SourceSpan",
+    "SourceMetadata",
+    "AttentionBudget",
+    "RENDER_PROFILES",
+]
