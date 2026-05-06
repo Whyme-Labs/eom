@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="{{ eom.source.lang }}">
+<head>
+<meta charset="utf-8">
+<title>{{ headline.content }}</title>
+<style>{{ css }}</style>
+</head>
+<body>
+<div class="eom-meta">EOM v{{ eom.version }} · {{ eom.document_type }} · profile={{ eom.render_profile }}</div>
+
+<div class="eom-hero">
+  <h1 data-block-id="{{ headline.id }}">{{ headline.content }}</h1>
+  {% if lead %}
+  <div class="eom-lead" data-block-id="{{ lead.id }}">{{ lead.content }}</div>
+  {% endif %}
+  {% for b in tier_a_extras %}
+    <div class="eom-block eom-{{ b.type }}" data-block-id="{{ b.id }}">
+      <p>{{ b.content }}</p>
+      {% if b.source_span %}<sup>[{{ b.id }}]</sup>{% endif %}
+    </div>
+  {% endfor %}
+</div>
+
+<div class="eom-grid">
+  <div class="eom-main">
+    {% for b in tier_b %}
+      <div class="eom-block eom-{{ b.type }}" data-block-id="{{ b.id }}">
+        <p>{{ b.content }}</p>
+        {% if b.source_span %}<sup>[{{ b.id }}]</sup>{% endif %}
+      </div>
+    {% endfor %}
+  </div>
+  <aside class="eom-rail">
+    {% for b in tier_c %}
+      <div class="eom-block eom-{{ b.type }}" data-block-id="{{ b.id }}">
+        <p>{{ b.content }}</p>
+      </div>
+    {% endfor %}
+  </aside>
+</div>
+
+<details class="eom-archive">
+  <summary>Archive ({{ tier_d|length }} blocks)</summary>
+  {% for b in tier_d %}
+    <div class="eom-block eom-{{ b.type }}" data-block-id="{{ b.id }}">
+      <p>{{ b.content }}</p>
+    </div>
+  {% endfor %}
+</details>
+
+</body>
+</html>
