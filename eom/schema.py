@@ -115,3 +115,30 @@ class Block(BaseModel):
                 "inference_basis is only valid when is_inferred=True"
             )
         return self
+
+
+DocumentType = Literal[
+    "memo", "report", "paper", "transcript", "news", "policy", "other",
+]
+
+RenderProfileName = Literal["executive_brief", "analytical_brief"]
+
+
+class EOMDocument(BaseModel):
+    """A complete EOM document (the reference encoding)."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    version: Literal["0.1"]
+    document_type: DocumentType
+    summary: str = Field(min_length=1)
+    render_profile: RenderProfileName
+    attention_budget: AttentionBudget
+    blocks: list[Block] = Field(min_length=1)
+    source: SourceMetadata
+
+
+RENDER_PROFILES: dict[str, AttentionBudget] = {
+    "executive_brief": AttentionBudget(B_A=200, B_AB=800),
+    "analytical_brief": AttentionBudget(B_A=400, B_AB=2000),
+}

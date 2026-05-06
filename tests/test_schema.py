@@ -3,6 +3,7 @@ from pydantic import ValidationError
 
 from eom.schema import SourceSpan, SourceMetadata
 from eom.schema import AttentionBudget, Block
+from eom.schema import EOMDocument, RENDER_PROFILES
 
 
 class TestSourceSpan:
@@ -147,3 +148,66 @@ class TestBlock:
             Block(**self._ok_block_kwargs(content=""))
         with pytest.raises(ValidationError):
             Block(**self._ok_block_kwargs(content="   "))
+
+
+class TestRenderProfiles:
+    def test_two_profiles_defined(self):
+        assert "executive_brief" in RENDER_PROFILES
+        assert "analytical_brief" in RENDER_PROFILES
+
+    def test_executive_brief_budgets(self):
+        b = RENDER_PROFILES["executive_brief"]
+        assert b.B_A == 200
+        assert b.B_AB == 800
+
+    def test_analytical_brief_budgets(self):
+        b = RENDER_PROFILES["analytical_brief"]
+        assert b.B_A == 400
+        assert b.B_AB == 2000
+
+
+class TestEOMDocument:
+    def _ok_doc(self, **overrides):
+        head = Block(
+            id="headline-1", type="headline",
+            content="Test", attention_tier="A",
+            priority=1.0, reading_order=0,
+            source_span=SourceSpan(start=0, end=4, quote="Test"),
+        )
+        defaults = dict(
+            version="0.1",
+            document_type="memo",
+            summary="A test document.",
+            render_profile="executive_brief",
+            attention_budget=AttentionBudget(B_A=200, B_AB=800),
+            blocks=[head],
+            source=SourceMetadata(checksum="sha256:test", chars=4, lang="en"),
+        )
+        defaults.update(overrides)
+        return defaults
+
+    def test_creates_valid_doc(self):
+        d = EOMDocument(**self._ok_doc())
+        assert d.version == "0.1"
+        assert d.document_type == "memo"
+
+    def test_rejects_unknown_version(self):
+        with pytest.raises(ValidationError):
+            EOMDocument(**self._ok_doc(version="0.2"))
+
+    def test_rejects_unknown_document_type(self):
+        with pytest.raises(ValidationError):
+            EOMDocument(**self._ok_doc(document_type="email"))
+
+    def test_rejects_unknown_render_profile(self):
+        with pytest.raises(ValidationError):
+            EOMDocument(**self._ok_doc(render_profile="custom"))
+
+    def test_rejects_empty_blocks_list(self):
+        with pytest.raises(ValidationError):
+            EOMDocument(**self._ok_doc(blocks=[]))
+
+    def test_round_trip_json(self):
+        d = EOMDocument(**self._ok_doc())
+        roundtripped = EOMDocument.model_validate_json(d.model_dump_json())
+        assert roundtripped == d
