@@ -8,7 +8,7 @@ from pathlib import Path
 import click
 
 from eom.compilers import get_compiler
-from eom.compilers.llm_client import TogetherClient
+from eom.compilers.llm_client import OpenRouterClient
 from eom.harness import validate as run_validate
 from eom.normalise import normalise
 from eom.renderers import render_context_pack, render_newspaper
@@ -38,7 +38,7 @@ def compile(input_path, output_path, compiler_kind, profile, document_type, max_
     """Compile a markdown / text document into EOM JSON."""
     source = normalise(Path(input_path).read_text(encoding="utf-8"))
     if compiler_kind == "prompted":
-        client = TogetherClient()
+        client = OpenRouterClient()
         compiler_obj = get_compiler("prompted", client=client, few_shots=[])
     else:
         compiler_obj = get_compiler("rules")

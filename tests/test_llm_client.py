@@ -13,4 +13,4 @@ def test_stub_returns_preset():
 def test_request_defaults():
     req = LLMRequest(system="s", user="u")
     assert req.temperature == 0.0
-    assert "gemma" in req.model.lower()
+    assert "gemma-4" in req.model.lower()

@@ -11,7 +11,7 @@ from typing import Sequence
 from pydantic import ValidationError
 
 from eom.compilers.base import CompileHints
-from eom.compilers.llm_client import LLMClient, LLMRequest
+from eom.compilers.llm_client import DEFAULT_MODEL, LLMClient, LLMRequest
 from eom.compilers.prompt_template import (
     SYSTEM_PROMPT,
     build_user_prompt,
@@ -49,7 +49,7 @@ def _format_few_shots(few_shots: Sequence[tuple[str, EOMDocument]]) -> str:
 class PromptedCompiler:
     client: LLMClient
     few_shots: Sequence[tuple[str, EOMDocument]] = field(default_factory=list)
-    model: str = "google/gemma-2-27b-it"  # pinned default
+    model: str = DEFAULT_MODEL  # pinned default; OpenRouter routing
 
     def compile(
         self,
