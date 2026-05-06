@@ -1,0 +1,86 @@
+{
+  "version": "0.1",
+  "document_type": "memo",
+  "summary": "Q1 freight cost rose 9% after a port closure; recommend temporary rerouting and buffer stock.",
+  "render_profile": "executive_brief",
+  "attention_budget": {"B_A": 200, "B_AB": 800},
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "Q1 Freight Cost Update",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {"start": 2, "end": 24, "quote": "Q1 Freight Cost Update"},
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "On-time delivery dropped from 96% to 91% and backlog rose 14%; operations expects a six-week recovery.",
+      "attention_tier": "A",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {"start": 91, "end": 250, "quote": "On-time delivery dropped from 96% to 91% over the quarter, while backlog increased by 14%. Operations estimates a six-week recovery once rerouting is in place."},
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "Freight: +9% • On-time: 96%↑91% • Backlog: +14% • Recovery est.: 6 weeks",
+      "attention_tier": "A",
+      "priority": 0.9,
+      "reading_order": 2,
+      "source_span": {"start": 26, "end": 250, "quote": "Q1 freight cost rose 9% after a port closure on the west coast.\n\nOn-time delivery dropped from 96% to 91% over the quarter, while backlog increased by 14%. Operations estimates a six-week recovery once rerouting is in place."},
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "Closure followed a labour dispute at the primary port; lasted 12 days; 10 of 14 weekly shipments delayed by avg 4.5 days.",
+      "attention_tier": "B",
+      "priority": 0.7,
+      "reading_order": 3,
+      "source_span": {"start": 267, "end": 445, "quote": "The closure followed a labour dispute at the primary port and lasted twelve days. During that period, ten of our fourteen weekly shipments were delayed by an average of 4.5 days."},
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "decision-1",
+      "type": "decision",
+      "content": "Approve temporary rerouting and a two-week buffer-stock build for top-30 SKUs.",
+      "attention_tier": "A",
+      "priority": 0.85,
+      "reading_order": 4,
+      "source_span": {"start": 466, "end": 570, "quote": "Approve a temporary rerouting through alternate ports and a two-week buffer-stock build for top-30 SKUs."},
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "Recommendation rests on Q1 data alone; reassess in six weeks before structural changes.",
+      "attention_tier": "B",
+      "priority": 0.6,
+      "reading_order": 5,
+      "source_span": {"start": 583, "end": 692, "quote": "This recommendation is based on Q1 data alone; a six-week reassessment is required before structural changes."},
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "PLACEHOLDER",
+    "chars": 0,
+    "lang": "en"
+  }
+}
