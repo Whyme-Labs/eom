@@ -31,7 +31,7 @@ class WarningRecord:
 class ValidationReport:
     failures: list[FailureRecord] = field(default_factory=list)
     warnings: list[WarningRecord] = field(default_factory=list)
-    metrics: dict[str, float] = field(default_factory=dict)
+    metrics: dict[str, int | float] = field(default_factory=dict)
 
     @property
     def passed(self) -> bool:
