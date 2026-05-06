@@ -1,7 +1,7 @@
 {
   "version": "0.1",
   "document_type": "other",
-  "summary": "JSON (JavaScript Object Notation) is an open standard file format and data interchange format that uses human-readable text to store and tra",
+  "summary": "JSON is a lightweight, language-independent data interchange format derived from JavaScript. It uses name-value pairs and arrays with a minimal syntax, standardized as RFC 8259 and ECMA-404, and is the de facto standard for web data exchange.",
   "render_profile": "executive_brief",
   "attention_budget": {
     "B_A": 200,
@@ -28,7 +28,7 @@
       "id": "lead-1",
       "type": "lead",
       "content": "JSON (JavaScript Object Notation) is an open standard file format and data interchange format that uses human-readable text to store and transmit data objects consisting of name-value pairs and arrays. It serves as a commonly used data format with diverse applications in electronic data interchange, particularly for web applications communicating with servers.",
-      "attention_tier": "A",
+      "attention_tier": "B",
       "priority": 0.95,
       "reading_order": 1,
       "source_span": {
@@ -44,8 +44,8 @@
       "id": "claim-1",
       "type": "claim",
       "content": "The format is programming language-independent, though it was derived from JavaScript. Most modern programming languages include built-in functionality to generate and parse JSON-format data. JSON filenames use the .json extension.",
-      "attention_tier": "C",
-      "priority": 0.85,
+      "attention_tier": "B",
+      "priority": 0.90,
       "reading_order": 2,
       "source_span": {
         "start": 372,
@@ -60,8 +60,8 @@
       "id": "evidence-1",
       "type": "evidence",
       "content": "Douglas Crockford originally specified JSON in the early 2000s, with the first JSON message sent in April 2001. The format grew out of a practical need for real-time server-to-browser communication without relying on browser plugins like Flash or Java applets, which dominated the early 2000s.",
-      "attention_tier": "B",
-      "priority": 0.8227272727272728,
+      "attention_tier": "C",
+      "priority": 0.82,
       "reading_order": 3,
       "source_span": {
         "start": 605,
@@ -73,28 +73,12 @@
       "parent_id": null
     },
     {
-      "id": "claim-2",
-      "type": "claim",
-      "content": "History",
-      "attention_tier": "C",
-      "priority": 0.7954545454545454,
-      "reading_order": 4,
-      "source_span": {
-        "start": 900,
-        "end": 910,
-        "quote": "## History"
-      },
-      "is_inferred": false,
-      "inference_basis": [],
-      "parent_id": null
-    },
-    {
       "id": "evidence-2",
       "type": "evidence",
       "content": "JSON emerged from work at State Software, a company cofounded by Crockford and others in March 2001. The founders designed a system that would use standard browser capabilities and provide an abstraction layer for developers to create stateful web applications with persistent duplex connections to web servers. They held a round-table discussion and voted on whether to call the format JSML (JavaScript Markup Language) or JSON, ultimately choosing the latter.",
-      "attention_tier": "B",
-      "priority": 0.7681818181818182,
-      "reading_order": 5,
+      "attention_tier": "C",
+      "priority": 0.78,
+      "reading_order": 4,
       "source_span": {
         "start": 912,
         "end": 1373,
@@ -105,28 +89,12 @@
       "parent_id": null
     },
     {
-      "id": "factbox-1",
-      "type": "factbox",
-      "content": "The JSON.org website launched in 2001. By December 2005, Yahoo! began offering some of its web services in JSON format, marking significant early adoption. The format was based on a subset of the JavaScript scripting language, specifically Standard ECMA-262 3rd Edition from December 1999.",
-      "attention_tier": "B",
-      "priority": 0.7409090909090909,
-      "reading_order": 6,
-      "source_span": {
-        "start": 1375,
-        "end": 1664,
-        "quote": "The JSON.org website launched in 2001. By December 2005, Yahoo! began offering some of its web services in JSON format, marking significant early adoption. The format was based on a subset of the JavaScript scripting language, specifically Standard ECMA-262 3rd Edition from December 1999."
-      },
-      "is_inferred": false,
-      "inference_basis": [],
-      "parent_id": null
-    },
-    {
-      "id": "factbox-2",
-      "type": "factbox",
+      "id": "evidence-3",
+      "type": "evidence",
       "content": "Formal standardization came later. After RFC 4627 served as an informational specification since 2006, JSON was first formally standardized in 2013 as ECMA-404. RFC 8259, published in 2017, became the current version of Internet Standard STD 90. That same year, JSON was also standardized as ISO/IEC 21778:2017. The ECMA and ISO/IEC standards describe only the allowed syntax, while the RFC covers security and interoperability considerations.",
-      "attention_tier": "B",
-      "priority": 0.7136363636363636,
-      "reading_order": 7,
+      "attention_tier": "C",
+      "priority": 0.74,
+      "reading_order": 5,
       "source_span": {
         "start": 1666,
         "end": 2109,
@@ -137,28 +105,12 @@
       "parent_id": null
     },
     {
-      "id": "claim-3",
-      "type": "claim",
-      "content": "Syntax",
-      "attention_tier": "C",
-      "priority": 0.6863636363636364,
-      "reading_order": 8,
-      "source_span": {
-        "start": 2111,
-        "end": 2120,
-        "quote": "## Syntax"
-      },
-      "is_inferred": false,
-      "inference_basis": [],
-      "parent_id": null
-    },
-    {
-      "id": "evidence-3",
-      "type": "evidence",
+      "id": "factbox-1",
+      "type": "factbox",
       "content": "The fundamental structure of JSON relies on simple, human-readable syntax. The format represents data using name-value pairs and ordered lists of values. JSON's basic data types include numbers (signed decimal numbers that may contain fractional parts and exponential notation), strings (sequences of Unicode characters delimited by double quotation marks), booleans (true or false values), arrays (ordered lists of zero or more elements), objects (collections of name-value pairs), and null values.",
-      "attention_tier": "B",
-      "priority": 0.6590909090909091,
-      "reading_order": 9,
+      "attention_tier": "C",
+      "priority": 0.70,
+      "reading_order": 6,
       "source_span": {
         "start": 2122,
         "end": 2621,
@@ -169,12 +121,12 @@
       "parent_id": null
     },
     {
-      "id": "evidence-4",
-      "type": "evidence",
+      "id": "factbox-2",
+      "type": "factbox",
       "content": "Objects are delimited with curly brackets and use colons to separate keys from values, with commas separating pairs. Arrays use square bracket notation with comma-separated elements. Whitespace is allowed and ignored around syntactic elements, though four specific characters qualify as whitespace: space, horizontal tab, line feed, and carriage return.",
-      "attention_tier": "B",
-      "priority": 0.6318181818181818,
-      "reading_order": 10,
+      "attention_tier": "C",
+      "priority": 0.66,
+      "reading_order": 7,
       "source_span": {
         "start": 2623,
         "end": 2976,
@@ -185,60 +137,12 @@
       "parent_id": null
     },
     {
-      "id": "evidence-5",
-      "type": "evidence",
-      "content": "JSON intentionally excludes comment syntax. The creator explained this design decision by noting concerns that people would use comments to hold parsing directives, which would destroy interoperability. Additionally, JSON disallows trailing commas after the last value in a data structure, though this feature appears in JSON derivatives to improve usability.",
-      "attention_tier": "C",
-      "priority": 0.6045454545454545,
-      "reading_order": 11,
-      "source_span": {
-        "start": 2978,
-        "end": 3337,
-        "quote": "JSON intentionally excludes comment syntax. The creator explained this design decision by noting concerns that people would use comments to hold parsing directives, which would destroy interoperability. Additionally, JSON disallows trailing commas after the last value in a data structure, though this feature appears in JSON derivatives to improve usability."
-      },
-      "is_inferred": false,
-      "inference_basis": [],
-      "parent_id": null
-    },
-    {
-      "id": "decision-1",
-      "type": "decision",
-      "content": "Character encoding follows strict standards. JSON exchange in open ecosystems must be encoded in UTF-8, supporting the full Unicode character set including characters beyond the Basic Multilingual Plane. When escaped, characters outside this range must be written using UTF-16 surrogate pairs.",
-      "attention_tier": "C",
-      "priority": 0.5772727272727273,
-      "reading_order": 12,
-      "source_span": {
-        "start": 3339,
-        "end": 3632,
-        "quote": "Character encoding follows strict standards. JSON exchange in open ecosystems must be encoded in UTF-8, supporting the full Unicode character set including characters beyond the Basic Multilingual Plane. When escaped, characters outside this range must be written using UTF-16 surrogate pairs."
-      },
-      "is_inferred": false,
-      "inference_basis": [],
-      "parent_id": null
-    },
-    {
-      "id": "claim-4",
-      "type": "claim",
-      "content": "Data Types and Values",
-      "attention_tier": "C",
-      "priority": 0.55,
-      "reading_order": 13,
-      "source_span": {
-        "start": 3634,
-        "end": 3658,
-        "quote": "## Data Types and Values"
-      },
-      "is_inferred": false,
-      "inference_basis": [],
-      "parent_id": null
-    },
-    {
-      "id": "caveat-1",
-      "type": "caveat",
+      "id": "factbox-3",
+      "type": "factbox",
       "content": "JSON provides a minimal but sufficient set of data types. Numbers make no distinction between integer and floating-point values and may use exponential notation. However, JSON cannot represent non-numbers like NaN. The format is agnostic regarding numeric representation within programming languages, which can lead to portability issues when implementations treat equivalent numbers differently.",
       "attention_tier": "C",
-      "priority": 0.5227272727272727,
-      "reading_order": 14,
+      "priority": 0.62,
+      "reading_order": 8,
       "source_span": {
         "start": 3660,
         "end": 4056,
@@ -249,60 +153,28 @@
       "parent_id": null
     },
     {
-      "id": "evidence-6",
-      "type": "evidence",
-      "content": "Strings support a backslash escaping syntax and can contain any Unicode character when unescaped or use UTF-16 surrogate pair notation when escaped. Boolean values consist simply of true or false. Arrays provide ordered collections of any type, while objects represent unordered collections of name-value pairs where names are always strings.",
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "JSON intentionally excludes comment syntax. The creator explained this design decision by noting concerns that people would use comments to hold parsing directives, which would destroy interoperability. Additionally, JSON disallows trailing commas after the last value in a data structure, though this feature appears in JSON derivatives to improve usability.",
       "attention_tier": "C",
-      "priority": 0.4954545454545454,
-      "reading_order": 15,
+      "priority": 0.58,
+      "reading_order": 9,
       "source_span": {
-        "start": 4058,
-        "end": 4400,
-        "quote": "Strings support a backslash escaping syntax and can contain any Unicode character when unescaped or use UTF-16 surrogate pair notation when escaped. Boolean values consist simply of true or false. Arrays provide ordered collections of any type, while objects represent unordered collections of name-value pairs where names are always strings."
+        "start": 2978,
+        "end": 3337,
+        "quote": "JSON intentionally excludes comment syntax. The creator explained this design decision by noting concerns that people would use comments to hold parsing directives, which would destroy interoperability. Additionally, JSON disallows trailing commas after the last value in a data structure, though this feature appears in JSON derivatives to improve usability."
       },
       "is_inferred": false,
       "inference_basis": [],
       "parent_id": null
     },
     {
-      "id": "evidence-7",
-      "type": "evidence",
-      "content": "The specification places no restrictions on strings used as object names, does not require name uniqueness, and assigns no significance to member ordering. This flexibility can sometimes create interoperability challenges when different implementations handle duplicate names unpredictably or when applications incorrectly assign meaning to member order.",
-      "attention_tier": "C",
-      "priority": 0.4681818181818182,
-      "reading_order": 16,
-      "source_span": {
-        "start": 4402,
-        "end": 4756,
-        "quote": "The specification places no restrictions on strings used as object names, does not require name uniqueness, and assigns no significance to member ordering. This flexibility can sometimes create interoperability challenges when different implementations handle duplicate names unpredictably or when applications incorrectly assign meaning to member order."
-      },
-      "is_inferred": false,
-      "inference_basis": [],
-      "parent_id": null
-    },
-    {
-      "id": "appendix-1",
-      "type": "appendix",
-      "content": "Security Considerations",
-      "attention_tier": "D",
-      "priority": 0.4409090909090909,
-      "reading_order": 17,
-      "source_span": {
-        "start": 4758,
-        "end": 4784,
-        "quote": "## Security Considerations"
-      },
-      "is_inferred": false,
-      "inference_basis": [],
-      "parent_id": null
-    },
-    {
-      "id": "appendix-2",
-      "type": "appendix",
+      "id": "caveat-2",
+      "type": "caveat",
       "content": "A common misconception holds that JSON is safe to pass directly to the JavaScript eval() function since JSON is often described as a subset of JavaScript. This assumption proved dangerous because certain valid JSON texts, specifically those containing Unicode line separators or paragraph separators, were not valid in older JavaScript implementations. The JSON.parse() function, added to the fifth edition of ECMAScript, provides the proper secure method for parsing JSON data.",
-      "attention_tier": "D",
-      "priority": 0.41363636363636364,
-      "reading_order": 18,
+      "attention_tier": "C",
+      "priority": 0.54,
+      "reading_order": 10,
       "source_span": {
         "start": 4786,
         "end": 5264,
@@ -313,44 +185,12 @@
       "parent_id": null
     },
     {
-      "id": "appendix-3",
-      "type": "appendix",
-      "content": "Various JSON parser implementations have historically suffered from denial-of-service attacks and mass assignment vulnerabilities. Developers must use dedicated parsing functions rather than eval() to safely process JSON from untrusted sources.",
-      "attention_tier": "D",
-      "priority": 0.38636363636363635,
-      "reading_order": 19,
-      "source_span": {
-        "start": 5266,
-        "end": 5510,
-        "quote": "Various JSON parser implementations have historically suffered from denial-of-service attacks and mass assignment vulnerabilities. Developers must use dedicated parsing functions rather than eval() to safely process JSON from untrusted sources."
-      },
-      "is_inferred": false,
-      "inference_basis": [],
-      "parent_id": null
-    },
-    {
-      "id": "appendix-4",
-      "type": "appendix",
-      "content": "Limitations and Design Trade-offs",
-      "attention_tier": "D",
-      "priority": 0.35909090909090907,
-      "reading_order": 20,
-      "source_span": {
-        "start": 5512,
-        "end": 5548,
-        "quote": "## Limitations and Design Trade-offs"
-      },
-      "is_inferred": false,
-      "inference_basis": [],
-      "parent_id": null
-    },
-    {
-      "id": "appendix-5",
-      "type": "appendix",
+      "id": "caveat-3",
+      "type": "caveat",
       "content": "JSON's simplicity brings both strengths and constraints. The format deliberately lacks a comment syntax, forcing developers using JSON for configuration files to employ preprocessing tools if annotation is desired. The specification does not constrain the magnitude or precision of number literals, though widely-used JavaScript implementations store numbers as IEEE754 binary64 quantities, creating potential precision issues with very large or precise decimal numbers.",
       "attention_tier": "D",
-      "priority": 0.3318181818181818,
-      "reading_order": 21,
+      "priority": 0.48,
+      "reading_order": 11,
       "source_span": {
         "start": 5550,
         "end": 6020,
@@ -361,12 +201,92 @@
       "parent_id": null
     },
     {
+      "id": "appendix-1",
+      "type": "appendix",
+      "content": "The JSON.org website launched in 2001. By December 2005, Yahoo! began offering some of its web services in JSON format, marking significant early adoption. The format was based on a subset of the JavaScript scripting language, specifically Standard ECMA-262 3rd Edition from December 1999.",
+      "attention_tier": "D",
+      "priority": 0.42,
+      "reading_order": 12,
+      "source_span": {
+        "start": 1375,
+        "end": 1664,
+        "quote": "The JSON.org website launched in 2001. By December 2005, Yahoo! began offering some of its web services in JSON format, marking significant early adoption. The format was based on a subset of the JavaScript scripting language, specifically Standard ECMA-262 3rd Edition from December 1999."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-2",
+      "type": "appendix",
+      "content": "Character encoding follows strict standards. JSON exchange in open ecosystems must be encoded in UTF-8, supporting the full Unicode character set including characters beyond the Basic Multilingual Plane. When escaped, characters outside this range must be written using UTF-16 surrogate pairs.",
+      "attention_tier": "D",
+      "priority": 0.38,
+      "reading_order": 13,
+      "source_span": {
+        "start": 3339,
+        "end": 3632,
+        "quote": "Character encoding follows strict standards. JSON exchange in open ecosystems must be encoded in UTF-8, supporting the full Unicode character set including characters beyond the Basic Multilingual Plane. When escaped, characters outside this range must be written using UTF-16 surrogate pairs."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-3",
+      "type": "appendix",
+      "content": "Strings support a backslash escaping syntax and can contain any Unicode character when unescaped or use UTF-16 surrogate pair notation when escaped. Boolean values consist simply of true or false. Arrays provide ordered collections of any type, while objects represent unordered collections of name-value pairs where names are always strings.",
+      "attention_tier": "D",
+      "priority": 0.35,
+      "reading_order": 14,
+      "source_span": {
+        "start": 4058,
+        "end": 4400,
+        "quote": "Strings support a backslash escaping syntax and can contain any Unicode character when unescaped or use UTF-16 surrogate pair notation when escaped. Boolean values consist simply of true or false. Arrays provide ordered collections of any type, while objects represent unordered collections of name-value pairs where names are always strings."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-4",
+      "type": "appendix",
+      "content": "The specification places no restrictions on strings used as object names, does not require name uniqueness, and assigns no significance to member ordering. This flexibility can sometimes create interoperability challenges when different implementations handle duplicate names unpredictably or when applications incorrectly assign meaning to member order.",
+      "attention_tier": "D",
+      "priority": 0.32,
+      "reading_order": 15,
+      "source_span": {
+        "start": 4402,
+        "end": 4756,
+        "quote": "The specification places no restrictions on strings used as object names, does not require name uniqueness, and assigns no significance to member ordering. This flexibility can sometimes create interoperability challenges when different implementations handle duplicate names unpredictably or when applications incorrectly assign meaning to member order."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-5",
+      "type": "appendix",
+      "content": "Various JSON parser implementations have historically suffered from denial-of-service attacks and mass assignment vulnerabilities. Developers must use dedicated parsing functions rather than eval() to safely process JSON from untrusted sources.",
+      "attention_tier": "D",
+      "priority": 0.29,
+      "reading_order": 16,
+      "source_span": {
+        "start": 5266,
+        "end": 5510,
+        "quote": "Various JSON parser implementations have historically suffered from denial-of-service attacks and mass assignment vulnerabilities. Developers must use dedicated parsing functions rather than eval() to safely process JSON from untrusted sources."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
       "id": "appendix-6",
       "type": "appendix",
       "content": "The specification allows objects with duplicate member names, though such data is problematic for interoperability. Similarly, while specifications place no limits on character encoding, nearly all implementations assume UTF-8, making this effectively required for reliable interchange.",
       "attention_tier": "D",
-      "priority": 0.30454545454545456,
-      "reading_order": 22,
+      "priority": 0.26,
+      "reading_order": 17,
       "source_span": {
         "start": 6022,
         "end": 6308,
@@ -377,12 +297,12 @@
       "parent_id": null
     },
     {
-      "id": "caveat-2",
-      "type": "caveat",
+      "id": "appendix-7",
+      "type": "appendix",
       "content": "Early JSON definitions required that valid text consist only of objects or arrays at the root level, but this restriction was dropped in later specifications, allowing any serialized value as a top-level JSON document.",
-      "attention_tier": "C",
-      "priority": 0.2772727272727272,
-      "reading_order": 23,
+      "attention_tier": "D",
+      "priority": 0.23,
+      "reading_order": 18,
       "source_span": {
         "start": 6310,
         "end": 6529,

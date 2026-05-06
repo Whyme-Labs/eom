@@ -13,7 +13,7 @@
       "slug": "agile-manifesto",
       "source": "data/gold/memo/agile-manifesto.md",
       "eom": "data/gold/memo/agile-manifesto.eom.json",
-      "n_blocks": 21
+      "n_blocks": 12
     },
     {
       "doc_type": "memo",
@@ -83,7 +83,7 @@
       "slug": "json-spec",
       "source": "data/gold/other/json-spec.md",
       "eom": "data/gold/other/json-spec.eom.json",
-      "n_blocks": 24
+      "n_blocks": 19
     },
     {
       "doc_type": "other",
@@ -181,7 +181,7 @@
       "slug": "limits-to-growth",
       "source": "data/gold/report/limits-to-growth.md",
       "eom": "data/gold/report/limits-to-growth.eom.json",
-      "n_blocks": 15
+      "n_blocks": 10
     },
     {
       "doc_type": "report",
