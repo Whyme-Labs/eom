@@ -1,0 +1,37 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+.venv/
+.env
+.envrc
+
+# data
+data/synthetic/
+data/raw/
+data/cache/
+*.parquet
+
+# models
+*.bin
+*.safetensors
+checkpoints/
+runs/
+wandb/
+
+# notebooks
+.ipynb_checkpoints/
+*.ipynb_meta
+
+# editor
+.vscode/
+.idea/
+*.swp
+.DS_Store
