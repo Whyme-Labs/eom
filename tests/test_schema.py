@@ -40,3 +40,8 @@ class TestSourceMetadata:
     def test_rejects_invalid_lang_format(self):
         with pytest.raises(ValidationError):
             SourceMetadata(checksum="sha256:x", chars=10, lang="english")
+
+    @pytest.mark.parametrize("bad_lang", ["EN", "e1", "éà", "ñé", "αβ", "e", "eng", " en"])
+    def test_rejects_non_ascii_or_non_lowercase_lang(self, bad_lang):
+        with pytest.raises(ValidationError):
+            SourceMetadata(checksum="sha256:x", chars=10, lang=bad_lang)

@@ -2,9 +2,11 @@
 
 from __future__ import annotations
 
-from typing import Literal
+import re
 
 from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
+
+_LANG_RE = re.compile(r"^[a-z]{2}$")
 
 
 class SourceSpan(BaseModel):
@@ -35,6 +37,8 @@ class SourceMetadata(BaseModel):
     @field_validator("lang")
     @classmethod
     def _check_lang(cls, v: str) -> str:
-        if len(v) != 2 or not v.islower() or not v.isalpha():
-            raise ValueError(f"lang must be ISO-639-1 (2 lowercase letters), got: {v!r}")
+        if not _LANG_RE.fullmatch(v):
+            raise ValueError(
+                f"lang must be ISO-639-1 (2 lowercase ASCII letters), got: {v!r}"
+            )
         return v
