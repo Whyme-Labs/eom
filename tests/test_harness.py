@@ -14,8 +14,10 @@ from eom.harness import (
     check_h10,
     check_h11,
     check_h12,
+    validate,
 )
 from eom.schema import Block, EOMDocument, AttentionBudget, SourceMetadata, SourceSpan
+from tests.fixtures.loader import load_pair
 
 
 def _block(id: str, type: str, ro: int, tier: str = "C", with_span: bool = True) -> Block:
@@ -478,11 +480,6 @@ class TestH12:
         d = self._doc_with_decision(ev_span, decision)
         f = check_h12(d)
         assert any(r.rule == "H12" and "lacks source_span" in r.message for r in f)
-
-
-# Append to tests/test_harness.py
-from eom.harness import validate
-from tests.fixtures.loader import load_pair
 
 
 class TestValidate:
