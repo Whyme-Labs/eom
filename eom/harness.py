@@ -61,3 +61,33 @@ def check_h2(doc: EOMDocument) -> list[FailureRecord]:
             block_id=lead.id,
         ))
     return out
+
+
+def check_h3(doc: EOMDocument) -> list[FailureRecord]:
+    """H3: tier distribution caps.
+    |A|/N <= 0.10, |B|/N <= 0.25, |A|+|B|+|C| <= N.
+    """
+    n = len(doc.blocks)
+    if n == 0:
+        return []  # H6 will catch the empty case
+    counts = {"A": 0, "B": 0, "C": 0, "D": 0}
+    for b in doc.blocks:
+        counts[b.attention_tier] += 1
+    out: list[FailureRecord] = []
+    if counts["A"] / n > 0.10 + 1e-9:
+        out.append(FailureRecord(
+            rule="H3",
+            message=(
+                f"tier A fraction {counts['A']}/{n}="
+                f"{counts['A']/n:.2%} exceeds cap 10%"
+            ),
+        ))
+    if counts["B"] / n > 0.25 + 1e-9:
+        out.append(FailureRecord(
+            rule="H3",
+            message=(
+                f"tier B fraction {counts['B']}/{n}="
+                f"{counts['B']/n:.2%} exceeds cap 25%"
+            ),
+        ))
+    return out

@@ -4,6 +4,7 @@ from eom.harness import (
     WarningRecord,
     check_h1,
     check_h2,
+    check_h3,
 )
 from eom.schema import Block, EOMDocument, AttentionBudget, SourceMetadata, SourceSpan
 
@@ -126,3 +127,43 @@ class TestH2:
         ])
         f = check_h2(d)
         assert len(f) >= 1
+
+
+class TestH3:
+    def _doc_with_tiers(self, tiers: list[str]) -> EOMDocument:
+        # Build a document where each appended block has the given tier.
+        # First block is headline (always A), second is lead (always A).
+        blocks = [
+            _block("headline-1", "headline", 0, tier="A"),
+            _block("lead-1", "lead", 1, tier="A"),
+        ]
+        for i, t in enumerate(tiers):
+            blocks.append(_block(f"claim-{i}", "claim", 2 + i, tier=t))
+        return _doc(blocks)
+
+    def test_passes_with_balanced_tiers(self):
+        # 25 total: 2 A (head+lead, 8%) + 5 B (20%) + 14 C (56%) + 4 D (16%).
+        # All within caps.
+        tiers = ["B"] * 5 + ["C"] * 14 + ["D"] * 4
+        d = self._doc_with_tiers(tiers)
+        assert check_h3(d) == []
+
+    def test_fails_when_A_exceeds_cap(self):
+        # 11 blocks total (head+lead+9 A-tier claims): A=11/11=100%
+        tiers = ["A"] * 9
+        d = self._doc_with_tiers(tiers)
+        f = check_h3(d)
+        assert any(r.rule == "H3" and "tier A" in r.message for r in f)
+
+    def test_fails_when_B_exceeds_cap(self):
+        # 10 blocks: 2 A + 8 B = 80% B, well past 25%
+        tiers = ["B"] * 8
+        d = self._doc_with_tiers(tiers)
+        f = check_h3(d)
+        assert any(r.rule == "H3" and "tier B" in r.message for r in f)
+
+    def test_passes_with_only_AB_when_within_caps(self):
+        # 25 total: 2 A (8%) + 5 B (20%) + 18 D
+        tiers = ["B"] * 5 + ["D"] * 18
+        d = self._doc_with_tiers(tiers)
+        assert check_h3(d) == []
