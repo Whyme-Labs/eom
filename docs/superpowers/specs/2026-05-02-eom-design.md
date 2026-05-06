@@ -101,7 +101,7 @@ Pure functions of `(eom_json, source_text)`. Sub-millisecond.
 **Structural** (syntactic):
 - **H1**: Exactly one block of `type=headline`.
 - **H2**: Exactly one block of `type=lead`, with `reading_order ≤ 3`.
-- **H3**: Tier distribution caps: `|A| / N ≤ 0.10`, `|B| / N ≤ 0.25`, `|A| + |B| + |C| ≤ N`. Hard error if violated.
+- **H3**: Tier distribution caps: `|A| ≤ max(1, 0.10·N)`, `|B| ≤ max(2, 0.25·N)`. The percentage rules bind on long documents; the small-doc floors (1 A, 2 B) keep the harness usable on short briefs where a single headline already exceeds the percentage. Hard error if violated.
 - **H4**: `reading_order` is a total order: unique integers in `[0, N)`, no gaps.
 - **H5**: Block IDs unique within document.
 - **H6**: Every block has non-empty `content`.
