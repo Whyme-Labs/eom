@@ -80,6 +80,13 @@
     },
     {
       "doc_type": "other",
+      "slug": "json-spec",
+      "source": "data/gold/other/json-spec.md",
+      "eom": "data/gold/other/json-spec.eom.json",
+      "n_blocks": 24
+    },
+    {
+      "doc_type": "other",
       "slug": "pep-8",
       "source": "data/gold/other/pep-8.md",
       "eom": "data/gold/other/pep-8.eom.json",
@@ -104,7 +111,7 @@
       "slug": "bert",
       "source": "data/gold/paper/bert.md",
       "eom": "data/gold/paper/bert.eom.json",
-      "n_blocks": 4
+      "n_blocks": 6
     },
     {
       "doc_type": "paper",
