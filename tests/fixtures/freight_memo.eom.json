@@ -32,7 +32,7 @@
     {
       "id": "factbox-1",
       "type": "factbox",
-      "content": "Freight: +9% • On-time: 96%↑91% • Backlog: +14% • Recovery est.: 6 weeks",
+      "content": "Freight: +9% • On-time: 96%→91% • Backlog: +14% • Recovery est.: 6 weeks",
       "attention_tier": "A",
       "priority": 0.9,
       "reading_order": 2,
