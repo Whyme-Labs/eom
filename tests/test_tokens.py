@@ -1,5 +1,3 @@
-import pytest
-
 from eom.tokens import count_tokens, ENCODING_NAME
 
 

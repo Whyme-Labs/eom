@@ -136,6 +136,12 @@ class TestBlock:
         with pytest.raises(ValidationError):
             Block(**self._ok_block_kwargs(id="claim_1"))
 
+    @pytest.mark.parametrize("bad_id", ["claim-1\n", "claim-1\t", "claim-1 ", " claim-1"])
+    def test_id_rejects_embedded_whitespace(self, bad_id):
+        # re.match would silently allow a trailing newline; we use fullmatch.
+        with pytest.raises(ValidationError):
+            Block(**self._ok_block_kwargs(id=bad_id))
+
     def test_content_must_be_non_empty(self):
         with pytest.raises(ValidationError):
             Block(**self._ok_block_kwargs(content=""))

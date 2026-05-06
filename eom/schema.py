@@ -93,7 +93,7 @@ class Block(BaseModel):
     @field_validator("id")
     @classmethod
     def _check_id(cls, v: str) -> str:
-        if not _ID_RE.match(v):
+        if not _ID_RE.fullmatch(v):
             raise ValueError(f"id must be slug (lowercase, alnum, hyphen): {v!r}")
         return v
 
