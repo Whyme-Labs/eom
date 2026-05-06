@@ -1,6 +1,5 @@
 doc_type,slug,n_blocks_gold,attempts,final_passed,total_failures,h1_failures,h2_failures,h3_failures,h4_failures,h5_failures,h6_failures,h7_failures,h8_failures,h9_failures,h10_failures,h11_failures,h12_failures,elapsed_seconds,error
 memo,12-factor-app,21,1,True,0,0,0,0,0,0,0,0,0,0,0,0,0,79.85,
-memo,agile-manifesto,12,1,False,3,0,0,1,0,0,0,0,0,0,0,2,0,132.02,
 news,notre-dame-fire,8,1,True,0,0,0,0,0,0,0,0,0,0,0,0,0,16.31,
 memo,postmortem-doc,7,1,True,0,0,0,0,0,0,0,0,0,0,0,0,0,16.76,
 news,paris-2024-olympics,10,1,True,0,0,0,0,0,0,0,0,0,0,0,0,0,16.85,
@@ -31,3 +30,4 @@ transcript,gettysburg-address,9,1,True,0,0,0,0,0,0,0,0,0,0,0,0,0,117.01,
 transcript,pearl-harbor-speech,12,1,True,0,0,0,0,0,0,0,0,0,0,0,0,0,106.54,
 transcript,jfk-inaugural,13,1,True,0,0,0,0,0,0,0,0,0,0,0,0,0,277.07,
 paper,mistral-7b,8,2,True,0,0,0,0,0,0,0,0,0,0,0,0,0,647.46,
+memo,agile-manifesto,12,3,True,0,0,0,0,0,0,0,0,0,0,0,0,0,281.91,
