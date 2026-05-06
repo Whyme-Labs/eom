@@ -211,3 +211,19 @@ class TestEOMDocument:
         d = EOMDocument(**self._ok_doc())
         roundtripped = EOMDocument.model_validate_json(d.model_dump_json())
         assert roundtripped == d
+
+    @pytest.mark.parametrize("bad_summary", ["", "   ", "\t\n"])
+    def test_rejects_blank_summary(self, bad_summary):
+        with pytest.raises(ValidationError):
+            EOMDocument(**self._ok_doc(summary=bad_summary))
+
+    def test_render_profiles_is_immutable_view(self):
+        # Read-only mapping: cannot add or replace keys.
+        with pytest.raises(TypeError):
+            RENDER_PROFILES["new_profile"] = AttentionBudget(B_A=1, B_AB=2)  # type: ignore[index]
+
+    def test_attention_budget_is_frozen(self):
+        # Frozen models reject in-place mutation; use model_copy(update=...) instead.
+        b = RENDER_PROFILES["executive_brief"]
+        with pytest.raises(ValidationError):
+            b.B_A = 999  # type: ignore[misc]

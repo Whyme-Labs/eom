@@ -3,7 +3,8 @@
 from __future__ import annotations
 
 import re
-from typing import Literal
+from types import MappingProxyType
+from typing import Literal, Mapping
 
 from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
 
@@ -62,7 +63,7 @@ _ID_RE = re.compile(r"^[a-z][a-z0-9-]*$")
 class AttentionBudget(BaseModel):
     """Token budgets enforced by H9 / H10."""
 
-    model_config = ConfigDict(extra="forbid")
+    model_config = ConfigDict(extra="forbid", frozen=True)
 
     B_A: int = Field(ge=0)
     B_AB: int = Field(ge=0)
@@ -137,8 +138,15 @@ class EOMDocument(BaseModel):
     blocks: list[Block] = Field(min_length=1)
     source: SourceMetadata
 
+    @field_validator("summary")
+    @classmethod
+    def _summary_non_blank(cls, v: str) -> str:
+        if not v.strip():
+            raise ValueError("summary must be non-empty (and non-whitespace)")
+        return v
 
-RENDER_PROFILES: dict[str, AttentionBudget] = {
+
+RENDER_PROFILES: Mapping[str, AttentionBudget] = MappingProxyType({
     "executive_brief": AttentionBudget(B_A=200, B_AB=800),
     "analytical_brief": AttentionBudget(B_A=400, B_AB=2000),
-}
+})
