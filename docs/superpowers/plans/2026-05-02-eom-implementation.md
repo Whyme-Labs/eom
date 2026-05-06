@@ -256,8 +256,10 @@ Expected: clean install, no errors.
 
 - [ ] **Step 7: Commit**
 
+`uv sync` will have generated `uv.lock`. Commit it for reproducible installs.
+
 ```bash
-git add pyproject.toml .python-version .gitignore README.md eom/__init__.py
+git add pyproject.toml .python-version .gitignore README.md eom/__init__.py uv.lock
 git commit -m "chore: bootstrap eom package layout"
 ```
 
