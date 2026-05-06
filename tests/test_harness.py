@@ -9,6 +9,9 @@ from eom.harness import (
     check_h5,
     check_h6,
     check_h7,
+    check_h8,
+    check_h9,
+    check_h10,
 )
 from eom.schema import Block, EOMDocument, AttentionBudget, SourceMetadata, SourceSpan
 
@@ -236,3 +239,95 @@ class TestH7:
             _block("lead-1", "lead", 1, tier="A"),
         ])
         assert check_h7(d) == []
+
+
+class TestH8:
+    def test_passes_short(self):
+        d = _doc([
+            _block("headline-1", "headline", 0, tier="A"),
+            _block("lead-1", "lead", 1, tier="A"),
+        ])
+        assert check_h8(d) == []
+
+    def test_fails_long_headline(self):
+        head = Block(
+            id="headline-1", type="headline",
+            content="x" * 101, attention_tier="A",
+            priority=1.0, reading_order=0,
+            source_span=SourceSpan(start=0, end=1, quote="x"),
+        )
+        lead = _block("lead-1", "lead", 1, tier="A")
+        d = _doc([head, lead])
+        f = check_h8(d)
+        assert any(r.rule == "H8" and "headline" in r.message for r in f)
+
+    def test_fails_long_lead(self):
+        head = _block("headline-1", "headline", 0, tier="A")
+        lead = Block(
+            id="lead-1", type="lead",
+            content=" ".join(["word"] * 61),  # 61 words, cap is 60
+            attention_tier="A",
+            priority=0.9, reading_order=1,
+            source_span=SourceSpan(start=0, end=10, quote="0123456789"),
+        )
+        d = _doc([head, lead])
+        f = check_h8(d)
+        assert any(r.rule == "H8" and "lead" in r.message for r in f)
+
+
+class TestH9H10:
+    def _heavy_block(self, id, type, ro, tier, n_tokens):
+        # Tokens are tiktoken-counted; "lorem " is ~2 tokens, so n_tokens/2 reps suffice.
+        # Be safe and use single chars repeated.
+        return Block(
+            id=id, type=type,
+            content=("a " * n_tokens).strip(),
+            attention_tier=tier,
+            priority=0.5, reading_order=ro,
+            source_span=SourceSpan(start=0, end=10, quote="0123456789"),
+        )
+
+    def test_h9_passes_within_budget(self):
+        # B_A=200; 2 tier-A blocks of ~50 tokens each = ~100 tokens.
+        d = EOMDocument(
+            version="0.1", document_type="memo",
+            summary="x", render_profile="executive_brief",
+            attention_budget=AttentionBudget(B_A=200, B_AB=800),
+            blocks=[
+                self._heavy_block("headline-1", "headline", 0, "A", 10),
+                self._heavy_block("lead-1", "lead", 1, "A", 40),
+            ],
+            source=SourceMetadata(checksum="sha256:x", chars=10, lang="en"),
+        )
+        assert check_h9(d) == []
+
+    def test_h9_fails_over_budget(self):
+        # 300 tokens at tier A, budget is 200.
+        d = EOMDocument(
+            version="0.1", document_type="memo",
+            summary="x", render_profile="executive_brief",
+            attention_budget=AttentionBudget(B_A=200, B_AB=800),
+            blocks=[
+                self._heavy_block("headline-1", "headline", 0, "A", 50),
+                self._heavy_block("lead-1", "lead", 1, "A", 250),
+            ],
+            source=SourceMetadata(checksum="sha256:x", chars=10, lang="en"),
+        )
+        f = check_h9(d)
+        assert any(r.rule == "H9" for r in f)
+
+    def test_h10_fails_over_combined_budget(self):
+        # B_AB=800 but actual A+B is 1000.
+        d = EOMDocument(
+            version="0.1", document_type="memo",
+            summary="x", render_profile="executive_brief",
+            attention_budget=AttentionBudget(B_A=200, B_AB=800),
+            blocks=[
+                self._heavy_block("headline-1", "headline", 0, "A", 30),
+                self._heavy_block("lead-1", "lead", 1, "A", 70),
+                self._heavy_block("evidence-1", "evidence", 2, "B", 900),
+            ],
+            source=SourceMetadata(checksum="sha256:x", chars=10, lang="en"),
+        )
+        f = check_h10(d)
+        assert any(r.rule == "H10" for r in f)

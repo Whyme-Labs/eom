@@ -9,6 +9,7 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 
 from eom.schema import EOMDocument
+from eom.tokens import count_tokens
 
 
 @dataclass(frozen=True)
@@ -152,3 +153,49 @@ def check_h7(doc: EOMDocument) -> list[FailureRecord]:
                 block_id=b.id,
             ))
     return out
+
+
+def check_h8(doc: EOMDocument) -> list[FailureRecord]:
+    """H8: headline <= 100 chars; lead <= 60 words (English)."""
+    out: list[FailureRecord] = []
+    for b in doc.blocks:
+        if b.type == "headline" and len(b.content) > 100:
+            out.append(FailureRecord(
+                rule="H8",
+                message=f"headline length {len(b.content)} > 100",
+                block_id=b.id,
+            ))
+        if b.type == "lead":
+            n_words = len(b.content.split())
+            if n_words > 60:
+                out.append(FailureRecord(
+                    rule="H8",
+                    message=f"lead word count {n_words} > 60",
+                    block_id=b.id,
+                ))
+    return out
+
+
+def check_h9(doc: EOMDocument) -> list[FailureRecord]:
+    """H9: sum of tokens across tier A blocks <= attention_budget.B_A."""
+    total = sum(count_tokens(b.content) for b in doc.blocks if b.attention_tier == "A")
+    if total > doc.attention_budget.B_A:
+        return [FailureRecord(
+            rule="H9",
+            message=f"tier A total tokens {total} > B_A {doc.attention_budget.B_A}",
+        )]
+    return []
+
+
+def check_h10(doc: EOMDocument) -> list[FailureRecord]:
+    """H10: sum of tokens across tier A and B blocks <= attention_budget.B_AB."""
+    total = sum(
+        count_tokens(b.content) for b in doc.blocks
+        if b.attention_tier in ("A", "B")
+    )
+    if total > doc.attention_budget.B_AB:
+        return [FailureRecord(
+            rule="H10",
+            message=f"tier A+B total tokens {total} > B_AB {doc.attention_budget.B_AB}",
+        )]
+    return []
