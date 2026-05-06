@@ -36,6 +36,8 @@ dev = [
     "beautifulsoup4>=4.12",
     "jupyter>=1.0",
     "nbconvert>=7.0",
+    "matplotlib>=3.7",
+    "pandas>=2.0",
 ]
 
 [project.scripts]
