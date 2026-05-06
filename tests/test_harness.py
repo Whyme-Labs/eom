@@ -12,6 +12,8 @@ from eom.harness import (
     check_h8,
     check_h9,
     check_h10,
+    check_h11,
+    check_h12,
 )
 from eom.schema import Block, EOMDocument, AttentionBudget, SourceMetadata, SourceSpan
 
@@ -331,3 +333,148 @@ class TestH9H10:
         )
         f = check_h10(d)
         assert any(r.rule == "H10" for r in f)
+
+
+SOURCE_TEXT = "The freight cost rose 9 percent after the closure of the western port."
+
+
+class TestH11:
+    def _doc_with_evidence(self, span: SourceSpan | None) -> EOMDocument:
+        head = _block("headline-1", "headline", 0, tier="A", with_span=False)
+        lead = _block("lead-1", "lead", 1, tier="A", with_span=False)
+        evidence = Block(
+            id="evidence-1", type="evidence",
+            content="freight rose",
+            attention_tier="B", priority=0.5, reading_order=2,
+            source_span=span,
+        )
+        return _doc([head, lead, evidence])
+
+    def test_passes_with_valid_span(self):
+        # "freight cost rose" is at offsets 4..21 in SOURCE_TEXT
+        span = SourceSpan(start=4, end=21, quote="freight cost rose")
+        d = self._doc_with_evidence(span)
+        assert check_h11(d, SOURCE_TEXT) == []
+
+    def test_fails_when_span_missing(self):
+        d = self._doc_with_evidence(None)
+        f = check_h11(d, SOURCE_TEXT)
+        assert any(r.rule == "H11" and "missing source_span" in r.message for r in f)
+
+    def test_fails_when_offsets_out_of_range(self):
+        span = SourceSpan(start=1000, end=1010, quote="0123456789")
+        d = self._doc_with_evidence(span)
+        f = check_h11(d, SOURCE_TEXT)
+        assert any(r.rule == "H11" and "out of range" in r.message for r in f)
+
+    def test_fails_when_quote_does_not_match(self):
+        span = SourceSpan(start=4, end=21, quote="WRONG QUOTE TEXT!")
+        d = self._doc_with_evidence(span)
+        f = check_h11(d, SOURCE_TEXT)
+        assert any(r.rule == "H11" and "quote mismatch" in r.message for r in f)
+
+
+class TestH12:
+    def _doc_with_decision(self, ev_span: SourceSpan, decision: Block) -> EOMDocument:
+        head = _block("headline-1", "headline", 0, tier="A", with_span=False)
+        lead = _block("lead-1", "lead", 1, tier="A", with_span=False)
+        evidence = Block(
+            id="evidence-1", type="evidence",
+            content="freight cost rose",
+            attention_tier="B", priority=0.5, reading_order=2,
+            source_span=ev_span,
+        )
+        return _doc([head, lead, evidence, decision])
+
+    def test_passes_with_source_span(self):
+        # "freight cost rose 9 percent" at 4..30
+        ev_span = SourceSpan(start=4, end=21, quote="freight cost rose")
+        decision_span = SourceSpan(start=4, end=30, quote="freight cost rose 9 percent")
+        decision = Block(
+            id="decision-1", type="decision",
+            content="Approve action",
+            attention_tier="A", priority=0.8, reading_order=3,
+            source_span=decision_span,
+        )
+        d = self._doc_with_decision(ev_span, decision)
+        assert check_h12(d) == []
+
+    def test_passes_when_inferred_with_basis(self):
+        ev_span = SourceSpan(start=4, end=21, quote="freight cost rose")
+        decision = Block(
+            id="decision-1", type="decision",
+            content="Approve action",
+            attention_tier="A", priority=0.8, reading_order=3,
+            source_span=None, is_inferred=True,
+            inference_basis=["evidence-1"],
+        )
+        d = self._doc_with_decision(ev_span, decision)
+        assert check_h12(d) == []
+
+    def test_fails_when_inferred_with_empty_basis(self):
+        # Pydantic Block already prohibits is_inferred without basis at *write*?  No — it
+        # only prohibits inference_basis without is_inferred. is_inferred=True with
+        # empty basis is a harness-layer failure.
+        ev_span = SourceSpan(start=4, end=21, quote="freight cost rose")
+        decision = Block(
+            id="decision-1", type="decision",
+            content="Approve action",
+            attention_tier="A", priority=0.8, reading_order=3,
+            source_span=None, is_inferred=True, inference_basis=[],
+        )
+        d = self._doc_with_decision(ev_span, decision)
+        f = check_h12(d)
+        assert any(r.rule == "H12" and "empty inference_basis" in r.message for r in f)
+
+    def test_fails_when_basis_points_to_nonexistent_block(self):
+        ev_span = SourceSpan(start=4, end=21, quote="freight cost rose")
+        decision = Block(
+            id="decision-1", type="decision",
+            content="Approve action",
+            attention_tier="A", priority=0.8, reading_order=3,
+            source_span=None, is_inferred=True,
+            inference_basis=["nonexistent-9"],
+        )
+        d = self._doc_with_decision(ev_span, decision)
+        f = check_h12(d)
+        assert any(r.rule == "H12" and "unknown id" in r.message for r in f)
+
+    def test_fails_when_basis_points_to_wrong_type(self):
+        # basis must point to evidence/factbox; pointing to a claim is invalid.
+        ev_span = SourceSpan(start=4, end=21, quote="freight cost rose")
+        head = _block("headline-1", "headline", 0, tier="A", with_span=False)
+        lead = _block("lead-1", "lead", 1, tier="A", with_span=False)
+        evidence = Block(
+            id="evidence-1", type="evidence",
+            content="freight cost rose",
+            attention_tier="B", priority=0.5, reading_order=2,
+            source_span=ev_span,
+        )
+        another_claim = Block(
+            id="claim-2", type="claim",
+            content="Some other claim.",
+            attention_tier="C", priority=0.3, reading_order=3,
+            source_span=ev_span,
+        )
+        decision = Block(
+            id="decision-1", type="decision",
+            content="Approve action",
+            attention_tier="A", priority=0.8, reading_order=4,
+            source_span=None, is_inferred=True,
+            inference_basis=["claim-2"],
+        )
+        d = _doc([head, lead, evidence, another_claim, decision])
+        f = check_h12(d)
+        assert any(r.rule == "H12" and "must be evidence or factbox" in r.message for r in f)
+
+    def test_fails_when_neither_span_nor_inferred(self):
+        ev_span = SourceSpan(start=4, end=21, quote="freight cost rose")
+        decision = Block(
+            id="decision-1", type="decision",
+            content="Approve action",
+            attention_tier="A", priority=0.8, reading_order=3,
+            source_span=None, is_inferred=False,
+        )
+        d = self._doc_with_decision(ev_span, decision)
+        f = check_h12(d)
+        assert any(r.rule == "H12" and "lacks source_span" in r.message for r in f)

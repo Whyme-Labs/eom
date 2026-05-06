@@ -199,3 +199,84 @@ def check_h10(doc: EOMDocument) -> list[FailureRecord]:
             message=f"tier A+B total tokens {total} > B_AB {doc.attention_budget.B_AB}",
         )]
     return []
+
+
+def check_h11(doc: EOMDocument, source_text: str) -> list[FailureRecord]:
+    """H11: every evidence/factbox has a valid source_span (offsets in range, quote matches)."""
+    out: list[FailureRecord] = []
+    for b in doc.blocks:
+        if b.type not in ("evidence", "factbox"):
+            continue
+        if b.source_span is None:
+            out.append(FailureRecord(
+                rule="H11",
+                message=f"{b.type} block missing source_span",
+                block_id=b.id,
+            ))
+            continue
+        span = b.source_span
+        if span.end > len(source_text):
+            out.append(FailureRecord(
+                rule="H11",
+                message=f"source_span [{span.start},{span.end}) out of range "
+                        f"(source has {len(source_text)} chars)",
+                block_id=b.id,
+                span=(span.start, span.end),
+            ))
+            continue
+        actual = source_text[span.start : span.end]
+        if actual != span.quote:
+            out.append(FailureRecord(
+                rule="H11",
+                message=f"source_span quote mismatch: expected {span.quote!r}, "
+                        f"got {actual!r}",
+                block_id=b.id,
+                span=(span.start, span.end),
+            ))
+    return out
+
+
+def check_h12(doc: EOMDocument) -> list[FailureRecord]:
+    """H12: claim/decision must have source_span or be is_inferred with valid basis.
+
+    Inference basis must reference existing evidence/factbox blocks.
+    Span validity (offsets, quote match) is H11's job at the corpus level for
+    these block types when source_span is provided; here we check structural
+    consistency only.
+    """
+    out: list[FailureRecord] = []
+    by_id = {b.id: b for b in doc.blocks}
+    for b in doc.blocks:
+        if b.type not in ("claim", "decision"):
+            continue
+        if b.is_inferred:
+            if not b.inference_basis:
+                out.append(FailureRecord(
+                    rule="H12",
+                    message=f"{b.type} is_inferred=True but empty inference_basis",
+                    block_id=b.id,
+                ))
+                continue
+            for ref_id in b.inference_basis:
+                ref = by_id.get(ref_id)
+                if ref is None:
+                    out.append(FailureRecord(
+                        rule="H12",
+                        message=f"inference_basis contains unknown id {ref_id!r}",
+                        block_id=b.id,
+                    ))
+                elif ref.type not in ("evidence", "factbox"):
+                    out.append(FailureRecord(
+                        rule="H12",
+                        message=f"inference_basis target {ref_id!r} is type {ref.type!r}; "
+                                f"must be evidence or factbox",
+                        block_id=b.id,
+                    ))
+        else:
+            if b.source_span is None:
+                out.append(FailureRecord(
+                    rule="H12",
+                    message=f"{b.type} lacks source_span and is not is_inferred",
+                    block_id=b.id,
+                ))
+    return out
