@@ -1,0 +1,353 @@
+{
+  "version": "0.1",
+  "document_type": "memo",
+  "summary": "A methodology for building software-as-a-service applications that are portable, cloud-ready, continuously deployable, and scalable without architectural change.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "The Twelve-Factor App",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 23,
+        "quote": "The Twelve-Factor App"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "In the modern era, software is commonly delivered as a service: called web apps, or software-as-a-service.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 25,
+        "end": 131,
+        "quote": "In the modern era, software is commonly delivered as a service: called web apps, or software-as-a-service."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "The twelve-factor app is a methodology for building software-as-a-service apps that:",
+      "attention_tier": "B",
+      "priority": 0.90,
+      "reading_order": 2,
+      "source_span": {
+        "start": 133,
+        "end": 217,
+        "quote": "The twelve-factor app is a methodology for building software-as-a-service apps that:"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "- Use declarative formats for setup automation, to minimize time and cost for new developers joining the project;\n- Have a clean contract with the underlying operating system, offering maximum portability between execution environments;\n- Are suitable for deployment on modern cloud platforms, obviating the need for servers and systems administration;\n- Minimize divergence between development and production, enabling continuous deployment for maximum agility;\n- And can scale up without significant changes to tooling, architecture, or development practices.",
+      "attention_tier": "B",
+      "priority": 0.85,
+      "reading_order": 3,
+      "source_span": {
+        "start": 219,
+        "end": 780,
+        "quote": "- Use declarative formats for setup automation, to minimize time and cost for new developers joining the project;\n- Have a clean contract with the underlying operating system, offering maximum portability between execution environments;\n- Are suitable for deployment on modern cloud platforms, obviating the need for servers and systems administration;\n- Minimize divergence between development and production, enabling continuous deployment for maximum agility;\n- And can scale up without significant changes to tooling, architecture, or development practices."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-2",
+      "type": "claim",
+      "content": "The twelve-factor methodology can be applied to apps written in any programming language, and which use any combination of backing services (database, queue, memory cache, etc).",
+      "attention_tier": "C",
+      "priority": 0.80,
+      "reading_order": 4,
+      "source_span": {
+        "start": 782,
+        "end": 959,
+        "quote": "The twelve-factor methodology can be applied to apps written in any programming language, and which use any combination of backing services (database, queue, memory cache, etc)."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-2",
+      "type": "evidence",
+      "content": "The contributors to this document have been directly involved in the development and deployment of hundreds of apps, and indirectly witnessed the development, operation, and scaling of hundreds of thousands of apps via our work on the Heroku platform.",
+      "attention_tier": "C",
+      "priority": 0.70,
+      "reading_order": 5,
+      "source_span": {
+        "start": 976,
+        "end": 1227,
+        "quote": "The contributors to this document have been directly involved in the development and deployment of hundreds of apps, and indirectly witnessed the development, operation, and scaling of hundreds of thousands of apps via our work on the Heroku platform."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-3",
+      "type": "evidence",
+      "content": "This document synthesizes all of our experience and observations on a wide variety of software-as-a-service apps in the wild. It is a triangulation on ideal practices for app development, paying particular attention to the dynamics of the organic growth of an app over time, the dynamics of collaboration between developers working on the app's codebase, and avoiding the cost of software erosion.",
+      "attention_tier": "C",
+      "priority": 0.65,
+      "reading_order": 6,
+      "source_span": {
+        "start": 1229,
+        "end": 1626,
+        "quote": "This document synthesizes all of our experience and observations on a wide variety of software-as-a-service apps in the wild. It is a triangulation on ideal practices for app development, paying particular attention to the dynamics of the organic growth of an app over time, the dynamics of collaboration between developers working on the app's codebase, and avoiding the cost of software erosion."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "Our motivation is to raise awareness of some systemic problems we've seen in modern application development, to provide a shared vocabulary for discussing those problems, and to offer a set of broad conceptual solutions to those problems with accompanying terminology. The format is inspired by Martin Fowler's books Patterns of Enterprise Application Architecture and Refactoring.",
+      "attention_tier": "C",
+      "priority": 0.60,
+      "reading_order": 7,
+      "source_span": {
+        "start": 1628,
+        "end": 2009,
+        "quote": "Our motivation is to raise awareness of some systemic problems we've seen in modern application development, to provide a shared vocabulary for discussing those problems, and to offer a set of broad conceptual solutions to those problems with accompanying terminology. The format is inspired by Martin Fowler's books Patterns of Enterprise Application Architecture and Refactoring."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-3",
+      "type": "claim",
+      "content": "Any developer building applications which run as a service. Ops engineers who deploy or manage such applications.",
+      "attention_tier": "D",
+      "priority": 0.55,
+      "reading_order": 8,
+      "source_span": {
+        "start": 2046,
+        "end": 2159,
+        "quote": "Any developer building applications which run as a service. Ops engineers who deploy or manage such applications."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "I. Codebase — One codebase tracked in revision control, many deploys",
+      "attention_tier": "C",
+      "priority": 0.75,
+      "reading_order": 9,
+      "source_span": {
+        "start": 2184,
+        "end": 2252,
+        "quote": "I. Codebase — One codebase tracked in revision control, many deploys"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-2",
+      "type": "factbox",
+      "content": "II. Dependencies — Explicitly declare and isolate dependencies",
+      "attention_tier": "C",
+      "priority": 0.74,
+      "reading_order": 10,
+      "source_span": {
+        "start": 2254,
+        "end": 2316,
+        "quote": "II. Dependencies — Explicitly declare and isolate dependencies"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-3",
+      "type": "factbox",
+      "content": "III. Config — Store config in the environment",
+      "attention_tier": "C",
+      "priority": 0.73,
+      "reading_order": 11,
+      "source_span": {
+        "start": 2318,
+        "end": 2363,
+        "quote": "III. Config — Store config in the environment"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-4",
+      "type": "factbox",
+      "content": "IV. Backing services — Treat backing services as attached resources",
+      "attention_tier": "C",
+      "priority": 0.72,
+      "reading_order": 12,
+      "source_span": {
+        "start": 2365,
+        "end": 2432,
+        "quote": "IV. Backing services — Treat backing services as attached resources"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-5",
+      "type": "factbox",
+      "content": "V. Build, release, run — Strictly separate build and run stages",
+      "attention_tier": "C",
+      "priority": 0.71,
+      "reading_order": 13,
+      "source_span": {
+        "start": 2434,
+        "end": 2497,
+        "quote": "V. Build, release, run — Strictly separate build and run stages"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-6",
+      "type": "factbox",
+      "content": "VI. Processes — Execute the app as one or more stateless processes",
+      "attention_tier": "D",
+      "priority": 0.50,
+      "reading_order": 14,
+      "source_span": {
+        "start": 2499,
+        "end": 2565,
+        "quote": "VI. Processes — Execute the app as one or more stateless processes"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-7",
+      "type": "factbox",
+      "content": "VII. Port binding — Export services via port binding",
+      "attention_tier": "D",
+      "priority": 0.49,
+      "reading_order": 15,
+      "source_span": {
+        "start": 2567,
+        "end": 2619,
+        "quote": "VII. Port binding — Export services via port binding"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-8",
+      "type": "factbox",
+      "content": "VIII. Concurrency — Scale out via the process model",
+      "attention_tier": "D",
+      "priority": 0.48,
+      "reading_order": 16,
+      "source_span": {
+        "start": 2621,
+        "end": 2672,
+        "quote": "VIII. Concurrency — Scale out via the process model"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-9",
+      "type": "factbox",
+      "content": "IX. Disposability — Maximize robustness with fast startup and graceful shutdown",
+      "attention_tier": "D",
+      "priority": 0.47,
+      "reading_order": 17,
+      "source_span": {
+        "start": 2674,
+        "end": 2753,
+        "quote": "IX. Disposability — Maximize robustness with fast startup and graceful shutdown"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-10",
+      "type": "factbox",
+      "content": "X. Dev/prod parity — Keep development, staging, and production as similar as possible",
+      "attention_tier": "D",
+      "priority": 0.46,
+      "reading_order": 18,
+      "source_span": {
+        "start": 2755,
+        "end": 2840,
+        "quote": "X. Dev/prod parity — Keep development, staging, and production as similar as possible"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-11",
+      "type": "factbox",
+      "content": "XI. Logs — Treat logs as event streams",
+      "attention_tier": "D",
+      "priority": 0.45,
+      "reading_order": 19,
+      "source_span": {
+        "start": 2842,
+        "end": 2880,
+        "quote": "XI. Logs — Treat logs as event streams"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-12",
+      "type": "factbox",
+      "content": "XII. Admin processes — Run admin/management tasks as one-off processes",
+      "attention_tier": "D",
+      "priority": 0.44,
+      "reading_order": 20,
+      "source_span": {
+        "start": 2882,
+        "end": 2953,
+        "quote": "XII. Admin processes — Run admin/management tasks as one-off processes\n"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:c032cf81282590f2dac9d385b39b5a9e662db7684da07a5ac97bf4cffd42487b",
+    "chars": 2953,
+    "lang": "en"
+  }
+}

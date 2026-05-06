@@ -1,0 +1,161 @@
+{
+  "version": "0.1",
+  "document_type": "transcript",
+  "summary": "The Gettysburg Address is a dedication speech delivered by President Abraham Lincoln following the Battle of Gettysburg during the American ",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "Gettysburg Address",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 20,
+        "quote": "Gettysburg Address"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "The Gettysburg Address is a dedication speech delivered by President Abraham Lincoln following the Battle of Gettysburg during the American Civil War. Widely regarded as one of the most famous and historically significant speeches in American history, Lincoln delivered it on the afternoon of November 19, 1863, during a formal dedication of what is now known as Gettysburg National Cemetery.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 22,
+        "end": 414,
+        "quote": "The Gettysburg Address is a dedication speech delivered by President Abraham Lincoln following the Battle of Gettysburg during the American Civil War. Widely regarded as one of the most famous and historically significant speeches in American history, Lincoln delivered it on the afternoon of November 19, 1863, during a formal dedication of what is now known as Gettysburg National Cemetery."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "The speech",
+      "attention_tier": "C",
+      "priority": 0.85,
+      "reading_order": 2,
+      "source_span": {
+        "start": 846,
+        "end": 859,
+        "quote": "## The speech"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-2",
+      "type": "claim",
+      "content": "Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.",
+      "attention_tier": "C",
+      "priority": 0.7642857142857142,
+      "reading_order": 3,
+      "source_span": {
+        "start": 861,
+        "end": 1037,
+        "quote": "Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "decision-1",
+      "type": "decision",
+      "content": "Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. We are met on a great battle-field of that war. We have come to dedicate a portion of that…",
+      "attention_tier": "B",
+      "priority": 0.6785714285714286,
+      "reading_order": 4,
+      "source_span": {
+        "start": 1039,
+        "end": 1418,
+        "quote": "Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure. We are met on a great battle-field of that war. We have come to dedicate a portion of that field, as a final resting place for those who here gave their lives that that nation might live. It is altogether fitting and proper that we should do this."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "But, in a larger sense, we can not dedicate—we can not consecrate—we can not hallow—this ground. The brave men, living and dead, who struggled here, have consecrated it, far above our poor power to add or detract. The world will little note, nor long remember what we say here, but it can never forget what they did here. It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced. It is rather for us to be here dedicated to the great task remaining before us—that from these honored dead we take increased devotion to that cause for which they gave the last full measure of devotion—that we here highly resolve that these dead shall not have died in vain—that this nation, under God, shall have a new birth of freedom—and that government of the people, by the people, for the people, shall not perish from the earth.",
+      "attention_tier": "C",
+      "priority": 0.5928571428571429,
+      "reading_order": 5,
+      "source_span": {
+        "start": 1420,
+        "end": 2315,
+        "quote": "But, in a larger sense, we can not dedicate—we can not consecrate—we can not hallow—this ground. The brave men, living and dead, who struggled here, have consecrated it, far above our poor power to add or detract. The world will little note, nor long remember what we say here, but it can never forget what they did here. It is for us the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly advanced. It is rather for us to be here dedicated to the great task remaining before us—that from these honored dead we take increased devotion to that cause for which they gave the last full measure of devotion—that we here highly resolve that these dead shall not have died in vain—that this nation, under God, shall have a new birth of freedom—and that government of the people, by the people, for the people, shall not perish from the earth."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-1",
+      "type": "appendix",
+      "content": "Context",
+      "attention_tier": "D",
+      "priority": 0.5071428571428571,
+      "reading_order": 6,
+      "source_span": {
+        "start": 2317,
+        "end": 2327,
+        "quote": "## Context"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-2",
+      "type": "appendix",
+      "content": "Lincoln rose from the speakers' podium shortly after Edward Everett concluded his lengthy two-hour oration and addressed the crowd for approximately two minutes. His ten-sentence remarks were part of what was meant to be a minor role in the day's formal dedication ceremony—he was invited to offer \"a few appropriate remarks\" following Everett's main address.",
+      "attention_tier": "D",
+      "priority": 0.42142857142857143,
+      "reading_order": 7,
+      "source_span": {
+        "start": 2329,
+        "end": 2688,
+        "quote": "Lincoln rose from the speakers' podium shortly after Edward Everett concluded his lengthy two-hour oration and addressed the crowd for approximately two minutes. His ten-sentence remarks were part of what was meant to be a minor role in the day's formal dedication ceremony—he was invited to offer \"a few appropriate remarks\" following Everett's main address."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-3",
+      "type": "appendix",
+      "content": "Eyewitness accounts of the reception proved contradictory. Some observers recalled an impressive silence when he stopped speaking, with no applause. Historian Shelby Foote characterized the response as \"delayed, scattered, and barely polite.\" By contrast, Pennsylvania Governor Andrew Gregg Curtin remembered the crowd as hushed and deeply moved. The contemporary press divided along partisan lines. Democratic publications like the Chicago Times dismissed the speech as \"silly, flat and dishwatery utterances,\" while Republican outlets including The New York Times praised Lincoln's address and printed the full text. The Springfield Republican called it \"a perfect gem\" that would \"repay further study as the model speech.\"",
+      "attention_tier": "D",
+      "priority": 0.33571428571428574,
+      "reading_order": 8,
+      "source_span": {
+        "start": 2690,
+        "end": 3416,
+        "quote": "Eyewitness accounts of the reception proved contradictory. Some observers recalled an impressive silence when he stopped speaking, with no applause. Historian Shelby Foote characterized the response as \"delayed, scattered, and barely polite.\" By contrast, Pennsylvania Governor Andrew Gregg Curtin remembered the crowd as hushed and deeply moved. The contemporary press divided along partisan lines. Democratic publications like the Chicago Times dismissed the speech as \"silly, flat and dishwatery utterances,\" while Republican outlets including The New York Times praised Lincoln's address and printed the full text. The Springfield Republican called it \"a perfect gem\" that would \"repay further study as the model speech.\"\n"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:8fb76d0b5ed7a22f4c7b9d36985ffd1a0f9b558155c6dd18d58bdb80db765f9f",
+    "chars": 3416,
+    "lang": "en"
+  }
+}

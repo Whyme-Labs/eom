@@ -1,0 +1,273 @@
+{
+  "version": "0.1",
+  "document_type": "memo",
+  "summary": "The bus factor measures how many irreplaceable team members must disappear before a project stalls, and why raising that number through documentation and cross-training is a core engineering discipline.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "Bus factor",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 12,
+        "quote": "Bus factor"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "The **bus factor** is a risk management concept that measures organizational vulnerability to the sudden loss of key personnel. Also known as the \"lottery factor,\" \"truck factor,\" or \"circus factor,\" it quantifies how many team members must unexpectedly disappear before a project stalls due to insufficient expertise.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 14,
+        "end": 332,
+        "quote": "The **bus factor** is a risk management concept that measures organizational vulnerability to the sudden loss of key personnel. Also known as the \"lottery factor,\" \"truck factor,\" or \"circus factor,\" it quantifies how many team members must unexpectedly disappear before a project stalls due to insufficient expertise."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "The bus factor represents \"the minimum number of team members that have to suddenly disappear from a project before the project stalls due to lack of knowledgeable or competent personnel.\" A project's bus factor equals the smallest number of irreplaceable experts whose simultaneous absence would paralyze operations.",
+      "attention_tier": "B",
+      "priority": 0.90,
+      "reading_order": 2,
+      "source_span": {
+        "start": 656,
+        "end": 973,
+        "quote": "The bus factor represents \"the minimum number of team members that have to suddenly disappear from a project before the project stalls due to lack of knowledgeable or competent personnel.\" A project's bus factor equals the smallest number of irreplaceable experts whose simultaneous absence would paralyze operations."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "The term originates from the darkly humorous phrase \"hit by a bus\"—describing any sudden, substantial absence from a project. This could result from accidents, new employment, parental leave, or other life changes. The concept extends beyond literal disasters to encompass realistic personnel disruptions.",
+      "attention_tier": "C",
+      "priority": 0.80,
+      "reading_order": 3,
+      "source_span": {
+        "start": 334,
+        "end": 639,
+        "quote": "The term originates from the darkly humorous phrase \"hit by a bus\"—describing any sudden, substantial absence from a project. This could result from accidents, new employment, parental leave, or other life changes. The concept extends beyond literal disasters to encompass realistic personnel disruptions."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "Consider a bread-making team of 30 people with three necessary functions: mixing (10 people trained), kneading (all 30 people trained), and baking (5 people trained). If all five baking experts vanished, production would cease entirely. That team's bus factor is five. A bus factor of one indicates a dangerous \"single point of failure\"—complete dependence on one individual.",
+      "attention_tier": "C",
+      "priority": 0.75,
+      "reading_order": 4,
+      "source_span": {
+        "start": 975,
+        "end": 1350,
+        "quote": "Consider a bread-making team of 30 people with three necessary functions: mixing (10 people trained), kneading (all 30 people trained), and baking (5 people trained). If all five baking experts vanished, production would cease entirely. That team's bus factor is five. A bus factor of one indicates a dangerous \"single point of failure\"—complete dependence on one individual."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "Critically, only personnel who are both key and irreplaceable contribute to bus factor calculations. Losing a replaceable team member produces no bus-factor effect, regardless of their role.",
+      "attention_tier": "C",
+      "priority": 0.72,
+      "reading_order": 5,
+      "source_span": {
+        "start": 1352,
+        "end": 1542,
+        "quote": "Critically, only personnel who are both key and irreplaceable contribute to bus factor calculations. Losing a replaceable team member produces no bus-factor effect, regardless of their role."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-2",
+      "type": "evidence",
+      "content": "The concept emerged in software development, where undocumented code, encrypted components, and obfuscated solutions create knowledge silos. A developer might create critical functionality unavailable to colleagues, making their departure catastrophic.",
+      "attention_tier": "C",
+      "priority": 0.68,
+      "reading_order": 6,
+      "source_span": {
+        "start": 1570,
+        "end": 1822,
+        "quote": "The concept emerged in software development, where undocumented code, encrypted components, and obfuscated solutions create knowledge silos. A developer might create critical functionality unavailable to colleagues, making their departure catastrophic."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-3",
+      "type": "evidence",
+      "content": "The earliest documented instance occurred in 1994 when Michael McLay publicly asked what would happen to Python if Guido van Rossum \"were to be hit by a bus.\" The \"truck number\" concept later appeared in organizational patterns literature (2004) and pattern language publications from 1995, tracing back to the 1994 Pattern Languages of Programs conference.",
+      "attention_tier": "D",
+      "priority": 0.55,
+      "reading_order": 7,
+      "source_span": {
+        "start": 1824,
+        "end": 2181,
+        "quote": "The earliest documented instance occurred in 1994 when Michael McLay publicly asked what would happen to Python if Guido van Rossum \"were to be hit by a bus.\" The \"truck number\" concept later appeared in organizational patterns literature (2004) and pattern language publications from 1995, tracing back to the 1994 Pattern Languages of Programs conference."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-4",
+      "type": "evidence",
+      "content": "By 2003, the concept had spread to engineering disciplines, and by 2005 it appeared in Debian project discussions. A 2015–2016 study analyzed 133 popular GitHub projects, revealing that 65% have bus factor of 2 or below while fewer than 10 percent exceeded a factor of 10.",
+      "attention_tier": "D",
+      "priority": 0.50,
+      "reading_order": 8,
+      "source_span": {
+        "start": 2183,
+        "end": 2455,
+        "quote": "By 2003, the concept had spread to engineering disciplines, and by 2005 it appeared in Debian project discussions. A 2015–2016 study analyzed 133 popular GitHub projects, revealing that 65% have bus factor of 2 or below while fewer than 10 percent exceeded a factor of 10."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "decision-1",
+      "type": "decision",
+      "content": "Software development teams increasingly view improving bus factor as a core objective. Effective strategies include:",
+      "attention_tier": "C",
+      "priority": 0.65,
+      "reading_order": 9,
+      "source_span": {
+        "start": 2483,
+        "end": 2599,
+        "quote": "Software development teams increasingly view improving bus factor as a core objective. Effective strategies include:"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "decision-2",
+      "type": "decision",
+      "content": "**Reduce complexity** — Simpler systems require less specialized knowledge and are easier to transfer between team members.",
+      "attention_tier": "C",
+      "priority": 0.62,
+      "reading_order": 10,
+      "source_span": {
+        "start": 2601,
+        "end": 2724,
+        "quote": "**Reduce complexity** — Simpler systems require less specialized knowledge and are easier to transfer between team members."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "decision-3",
+      "type": "decision",
+      "content": "**Document processes thoroughly** — Maintaining current, accessible documentation captures critical knowledge and makes information retrievable without relying on individual memory.",
+      "attention_tier": "C",
+      "priority": 0.60,
+      "reading_order": 11,
+      "source_span": {
+        "start": 2726,
+        "end": 2907,
+        "quote": "**Document processes thoroughly** — Maintaining current, accessible documentation captures critical knowledge and makes information retrievable without relying on individual memory."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "decision-4",
+      "type": "decision",
+      "content": "**Encourage cross-training** — Developing overlapping skill sets ensures multiple people understand each critical function, creating redundancy in expertise.",
+      "attention_tier": "C",
+      "priority": 0.58,
+      "reading_order": 12,
+      "source_span": {
+        "start": 2909,
+        "end": 3066,
+        "quote": "**Encourage cross-training** — Developing overlapping skill sets ensures multiple people understand each critical function, creating redundancy in expertise."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-2",
+      "type": "factbox",
+      "content": "A good bus factor means \"many individuals know enough to carry on and the project could still succeed even in very adverse events.\"",
+      "attention_tier": "D",
+      "priority": 0.45,
+      "reading_order": 13,
+      "source_span": {
+        "start": 3068,
+        "end": 3199,
+        "quote": "A good bus factor means \"many individuals know enough to carry on and the project could still succeed even in very adverse events.\""
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-2",
+      "type": "caveat",
+      "content": "The bus factor concept originated in software development but has expanded across business management, organizational psychology, engineering, and healthcare sectors. It represents a practical approach to assessing organizational resilience and identifying critical dependency risks.",
+      "attention_tier": "D",
+      "priority": 0.40,
+      "reading_order": 14,
+      "source_span": {
+        "start": 3226,
+        "end": 3509,
+        "quote": "The bus factor concept originated in software development but has expanded across business management, organizational psychology, engineering, and healthcare sectors. It represents a practical approach to assessing organizational resilience and identifying critical dependency risks."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-3",
+      "type": "caveat",
+      "content": "The measurement remains most popular among development teams where knowledge concentration and technical specialization naturally create vulnerability, but the principle applies universally wherever expertise determines operational continuity.",
+      "attention_tier": "D",
+      "priority": 0.35,
+      "reading_order": 15,
+      "source_span": {
+        "start": 3511,
+        "end": 3755,
+        "quote": "The measurement remains most popular among development teams where knowledge concentration and technical specialization naturally create vulnerability, but the principle applies universally wherever expertise determines operational continuity.\n"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:307d8d2ca5eec7daa61284f60ce1448c8d1d2f0c21b019c74b178f54c5796b28",
+    "chars": 3755,
+    "lang": "en"
+  }
+}

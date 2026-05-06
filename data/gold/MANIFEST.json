@@ -2,6 +2,41 @@
   "version": "0.1",
   "examples": [
     {
+      "doc_type": "memo",
+      "slug": "12-factor-app",
+      "source": "data/gold/memo/12-factor-app.md",
+      "eom": "data/gold/memo/12-factor-app.eom.json",
+      "n_blocks": 21
+    },
+    {
+      "doc_type": "memo",
+      "slug": "bus-factor",
+      "source": "data/gold/memo/bus-factor.md",
+      "eom": "data/gold/memo/bus-factor.eom.json",
+      "n_blocks": 16
+    },
+    {
+      "doc_type": "memo",
+      "slug": "conway-law",
+      "source": "data/gold/memo/conway-law.md",
+      "eom": "data/gold/memo/conway-law.eom.json",
+      "n_blocks": 11
+    },
+    {
+      "doc_type": "memo",
+      "slug": "postmortem-doc",
+      "source": "data/gold/memo/postmortem-doc.md",
+      "eom": "data/gold/memo/postmortem-doc.eom.json",
+      "n_blocks": 7
+    },
+    {
+      "doc_type": "news",
+      "slug": "key-bridge-collapse",
+      "source": "data/gold/news/key-bridge-collapse.md",
+      "eom": "data/gold/news/key-bridge-collapse.eom.json",
+      "n_blocks": 7
+    },
+    {
       "doc_type": "other",
       "slug": "curl-readme",
       "source": "data/gold/other/curl-readme.md",
@@ -10,10 +45,73 @@
     },
     {
       "doc_type": "paper",
+      "slug": "attention-is-all-you-need",
+      "source": "data/gold/paper/attention-is-all-you-need.md",
+      "eom": "data/gold/paper/attention-is-all-you-need.eom.json",
+      "n_blocks": 8
+    },
+    {
+      "doc_type": "paper",
+      "slug": "chinchilla",
+      "source": "data/gold/paper/chinchilla.md",
+      "eom": "data/gold/paper/chinchilla.eom.json",
+      "n_blocks": 9
+    },
+    {
+      "doc_type": "paper",
+      "slug": "llama2",
+      "source": "data/gold/paper/llama2.md",
+      "eom": "data/gold/paper/llama2.eom.json",
+      "n_blocks": 5
+    },
+    {
+      "doc_type": "paper",
       "slug": "mistral-7b",
       "source": "data/gold/paper/mistral-7b.md",
       "eom": "data/gold/paper/mistral-7b.eom.json",
       "n_blocks": 8
+    },
+    {
+      "doc_type": "policy",
+      "slug": "rfc-9293-tcp",
+      "source": "data/gold/policy/rfc-9293-tcp.md",
+      "eom": "data/gold/policy/rfc-9293-tcp.eom.json",
+      "n_blocks": 16
+    },
+    {
+      "doc_type": "report",
+      "slug": "doomsday-clock",
+      "source": "data/gold/report/doomsday-clock.md",
+      "eom": "data/gold/report/doomsday-clock.eom.json",
+      "n_blocks": 18
+    },
+    {
+      "doc_type": "report",
+      "slug": "ipcc-ar6",
+      "source": "data/gold/report/ipcc-ar6.md",
+      "eom": "data/gold/report/ipcc-ar6.eom.json",
+      "n_blocks": 16
+    },
+    {
+      "doc_type": "report",
+      "slug": "pisa",
+      "source": "data/gold/report/pisa.md",
+      "eom": "data/gold/report/pisa.eom.json",
+      "n_blocks": 15
+    },
+    {
+      "doc_type": "report",
+      "slug": "stern-review",
+      "source": "data/gold/report/stern-review.md",
+      "eom": "data/gold/report/stern-review.eom.json",
+      "n_blocks": 14
+    },
+    {
+      "doc_type": "transcript",
+      "slug": "gettysburg-address",
+      "source": "data/gold/transcript/gettysburg-address.md",
+      "eom": "data/gold/transcript/gettysburg-address.eom.json",
+      "n_blocks": 9
     }
   ]
 }

@@ -1,0 +1,273 @@
+{
+  "version": "0.1",
+  "document_type": "report",
+  "summary": "The Sixth Assessment Report (AR6) of the United Nations Intergovernmental Panel on Climate Change represents the most recent comprehensive e",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "IPCC Sixth Assessment Report",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 30,
+        "quote": "IPCC Sixth Assessment Report"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "The Sixth Assessment Report (AR6) of the United Nations Intergovernmental Panel on Climate Change represents the most recent comprehensive evaluation of available scientific information on climate change. This report series, spanning multiple decades, synthesizes thousands of peer-reviewed studies to inform global climate policy and action.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 32,
+        "end": 374,
+        "quote": "The Sixth Assessment Report (AR6) of the United Nations Intergovernmental Panel on Climate Change represents the most recent comprehensive evaluation of available scientific information on climate change. This report series, spanning multiple decades, synthesizes thousands of peer-reviewed studies to inform global climate policy and action."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "The AR6 assessment cycle produced three primary working group reports followed by a synthesis document. The first working group report was published in August 2021, addressing the physical science basis of climate change. The second report, examining impacts, adaptation, and…",
+      "attention_tier": "B",
+      "priority": 0.85,
+      "reading_order": 2,
+      "source_span": {
+        "start": 376,
+        "end": 948,
+        "quote": "The AR6 assessment cycle produced three primary working group reports followed by a synthesis document. The first working group report was published in August 2021, addressing the physical science basis of climate change. The second report, examining impacts, adaptation, and vulnerability, was released in February 2022. The third report on climate change mitigation followed in April 2022. A final synthesis report integrating all three perspectives was completed in March 2023 and served as the foundation for the 2023 United Nations Climate Change Conference in Dubai."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-2",
+      "type": "factbox",
+      "content": "The report draws on contributions from 234 scientists across 66 countries for the first working group alone. These authors synthesized more than 14,000 scientific papers into a comprehensive 3,949-page report that was then approved by 195 governments. The…",
+      "attention_tier": "B",
+      "priority": 0.8071428571428572,
+      "reading_order": 3,
+      "source_span": {
+        "start": 950,
+        "end": 1343,
+        "quote": "The report draws on contributions from 234 scientists across 66 countries for the first working group alone. These authors synthesized more than 14,000 scientific papers into a comprehensive 3,949-page report that was then approved by 195 governments. The Summary for Policymakers underwent line-by-line agreement by all participating governments during a five-day period prior to publication."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "Working Group 1: Physical Science Basis",
+      "attention_tier": "C",
+      "priority": 0.7642857142857142,
+      "reading_order": 4,
+      "source_span": {
+        "start": 1345,
+        "end": 1387,
+        "quote": "## Working Group 1: Physical Science Basis"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "The first working group focused on establishing the foundational science regarding how Earth's climate system is changing and why. This report confirmed that current warming is unprecedented in more than 2,000 years and represents the warmest multi-century period in over 100,000 years.",
+      "attention_tier": "B",
+      "priority": 0.7214285714285714,
+      "reading_order": 5,
+      "source_span": {
+        "start": 1389,
+        "end": 1675,
+        "quote": "The first working group focused on establishing the foundational science regarding how Earth's climate system is changing and why. This report confirmed that current warming is unprecedented in more than 2,000 years and represents the warmest multi-century period in over 100,000 years."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-3",
+      "type": "factbox",
+      "content": "Key findings established that human activities, principally through greenhouse gas emissions, have unequivocally caused global warming. Global surface temperature reached 1.1 degrees Celsius above pre-industrial levels in the 2011-2020 period. The report quantifies climate sensitivity at between 2.5 and 4.0 degrees Celsius, with a best estimate of 3 degrees, for every doubling of atmospheric carbon dioxide.",
+      "attention_tier": "C",
+      "priority": 0.6785714285714286,
+      "reading_order": 6,
+      "source_span": {
+        "start": 1677,
+        "end": 2087,
+        "quote": "Key findings established that human activities, principally through greenhouse gas emissions, have unequivocally caused global warming. Global surface temperature reached 1.1 degrees Celsius above pre-industrial levels in the 2011-2020 period. The report quantifies climate sensitivity at between 2.5 and 4.0 degrees Celsius, with a best estimate of 3 degrees, for every doubling of atmospheric carbon dioxide."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "decision-1",
+      "type": "decision",
+      "content": "Regarding future warming projections, the analysis indicates that under all modeled scenarios, global temperature will reach the 1.5-degree warming threshold at least temporarily during the mid-21st century. Completely avoiding 1.5 degrees of warming would require cutting global emissions by 50 percent by 2030 and achieving net-zero emissions by 2050. Without drastic and immediate reductions in greenhouse gas emissions, warming of 1.5 or 2 degrees Celsius cannot be prevented.",
+      "attention_tier": "C",
+      "priority": 0.6357142857142857,
+      "reading_order": 7,
+      "source_span": {
+        "start": 2089,
+        "end": 2569,
+        "quote": "Regarding future warming projections, the analysis indicates that under all modeled scenarios, global temperature will reach the 1.5-degree warming threshold at least temporarily during the mid-21st century. Completely avoiding 1.5 degrees of warming would require cutting global emissions by 50 percent by 2030 and achieving net-zero emissions by 2050. Without drastic and immediate reductions in greenhouse gas emissions, warming of 1.5 or 2 degrees Celsius cannot be prevented."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-4",
+      "type": "factbox",
+      "content": "The report documents increased frequency and intensity of extreme weather events. Heat waves that occurred once every ten years under 1850-1900 climate conditions are projected to occur 4.1 times more frequently and be 1.9 degrees hotter under 1.5 degrees of warming. Heavy precipitation events, droughts, and other extreme phenomena similarly escalate with warming levels.",
+      "attention_tier": "C",
+      "priority": 0.5928571428571429,
+      "reading_order": 8,
+      "source_span": {
+        "start": 2571,
+        "end": 2944,
+        "quote": "The report documents increased frequency and intensity of extreme weather events. Heat waves that occurred once every ten years under 1850-1900 climate conditions are projected to occur 4.1 times more frequently and be 1.9 degrees hotter under 1.5 degrees of warming. Heavy precipitation events, droughts, and other extreme phenomena similarly escalate with warming levels."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-2",
+      "type": "claim",
+      "content": "Sea-level rise projections indicate a likely range of half to one meter by 2100, though two to five meters is not ruled out due to uncertainties regarding ice sheet stability.",
+      "attention_tier": "C",
+      "priority": 0.55,
+      "reading_order": 9,
+      "source_span": {
+        "start": 2946,
+        "end": 3121,
+        "quote": "Sea-level rise projections indicate a likely range of half to one meter by 2100, though two to five meters is not ruled out due to uncertainties regarding ice sheet stability."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-3",
+      "type": "claim",
+      "content": "Working Group 2: Impacts, Adaptation, and Vulnerability",
+      "attention_tier": "C",
+      "priority": 0.5071428571428571,
+      "reading_order": 10,
+      "source_span": {
+        "start": 3123,
+        "end": 3181,
+        "quote": "## Working Group 2: Impacts, Adaptation, and Vulnerability"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-1",
+      "type": "appendix",
+      "content": "The second working group examined how climate change affects human societies and natural ecosystems. Published as \"Climate Change 2022: Impacts, Adaptation and Vulnerability,\" this 3,675-page report documented widespread and accelerating climate impacts across all world regions.",
+      "attention_tier": "D",
+      "priority": 0.46428571428571425,
+      "reading_order": 11,
+      "source_span": {
+        "start": 3183,
+        "end": 3462,
+        "quote": "The second working group examined how climate change affects human societies and natural ecosystems. Published as \"Climate Change 2022: Impacts, Adaptation and Vulnerability,\" this 3,675-page report documented widespread and accelerating climate impacts across all world regions."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-2",
+      "type": "appendix",
+      "content": "The report found that approximately 3.3 billion people, roughly 40 percent of global population, now fall into the most serious category of highly vulnerable to climate impacts, with developing nations experiencing the worst effects. Climate change poses severe threats including biodiversity loss, water scarcity, food insecurity, health risks, and forced migration. At least one billion people face flooding from sea-level rise.",
+      "attention_tier": "D",
+      "priority": 0.42142857142857143,
+      "reading_order": 12,
+      "source_span": {
+        "start": 3464,
+        "end": 3894,
+        "quote": "The report found that approximately 3.3 billion people, roughly 40 percent of global population, now fall into the most serious category of highly vulnerable to climate impacts, with developing nations experiencing the worst effects. Climate change poses severe threats including biodiversity loss, water scarcity, food insecurity, health risks, and forced migration. At least one billion people face flooding from sea-level rise."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-3",
+      "type": "appendix",
+      "content": "The report identified 127 distinct negative climate impacts, many classified as irreversible. These include ongoing mass extinction, increasingly frequent droughts, floods, and heatwaves. A temporary overshoot of 1.5 degrees warming will produce lasting negative effects on humans and ecosystems, with some impacts triggering additional greenhouse gas releases.",
+      "attention_tier": "D",
+      "priority": 0.37857142857142856,
+      "reading_order": 13,
+      "source_span": {
+        "start": 3896,
+        "end": 4257,
+        "quote": "The report identified 127 distinct negative climate impacts, many classified as irreversible. These include ongoing mass extinction, increasingly frequent droughts, floods, and heatwaves. A temporary overshoot of 1.5 degrees warming will produce lasting negative effects on humans and ecosystems, with some impacts triggering additional greenhouse gas releases."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-4",
+      "type": "appendix",
+      "content": "Adaptation measures remain effective when implemented promptly. Water management improvements, agroforestry, and landscape diversification can reduce vulnerability while providing ecological and economic benefits. The report recommends maintaining 30 to 50 percent of Earth's land, freshwater, and ocean areas through effective and equitable conservation to preserve biodiversity and ecosystem services.",
+      "attention_tier": "D",
+      "priority": 0.33571428571428574,
+      "reading_order": 14,
+      "source_span": {
+        "start": 4259,
+        "end": 4662,
+        "quote": "Adaptation measures remain effective when implemented promptly. Water management improvements, agroforestry, and landscape diversification can reduce vulnerability while providing ecological and economic benefits. The report recommends maintaining 30 to 50 percent of Earth's land, freshwater, and ocean areas through effective and equitable conservation to preserve biodiversity and ecosystem services."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-5",
+      "type": "appendix",
+      "content": "Climate-resilient development requires international cooperation, local community engagement, and immediate action to limit warming. The report cautions that climate-resilient development becomes substantially more difficult above 1.5 degrees warming and impossible in some regions above 2 degrees. While losses and damages from climate change are already widespread and irreversible, aggressive action to limit warming would substantially reduce future harms.",
+      "attention_tier": "D",
+      "priority": 0.2928571428571428,
+      "reading_order": 15,
+      "source_span": {
+        "start": 4664,
+        "end": 5125,
+        "quote": "Climate-resilient development requires international cooperation, local community engagement, and immediate action to limit warming. The report cautions that climate-resilient development becomes substantially more difficult above 1.5 degrees warming and impossible in some regions above 2 degrees. While losses and damages from climate change are already widespread and irreversible, aggressive action to limit warming would substantially reduce future harms.\n"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:8109683f7fcb0f7c1ad7030f59b67e18028bfc7b1aa461b33eef333b195efcb8",
+    "chars": 5125,
+    "lang": "en"
+  }
+}

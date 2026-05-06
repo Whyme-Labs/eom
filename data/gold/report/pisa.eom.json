@@ -1,0 +1,257 @@
+{
+  "version": "0.1",
+  "document_type": "report",
+  "summary": "The Programme for International Student Assessment (PISA) is a worldwide evaluation conducted by the Organisation for Economic Co-operation ",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "Programme for International Student Assessment",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 48,
+        "quote": "Programme for International Student Assessment"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "The Programme for International Student Assessment (PISA) is a worldwide evaluation conducted by the Organisation for Economic Co-operation and Development (OECD) that measures the scholastic performance of 15-year-old students across mathematics, science, and reading. First administered in 2000, PISA has been conducted every three years since inception, with results from the 2022 assessment released in December 2023. The initiative involves",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 50,
+        "end": 495,
+        "quote": "The Programme for International Student Assessment (PISA) is a worldwide evaluation conducted by the Organisation for Economic Co-operation and Development (OECD) that measures the scholastic performance of 15-year-old students across mathematics, science, and reading. First administered in 2000, PISA has been conducted every three years since inception, with results from the 2022 assessment released in December 2023. The initiative involves"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "Methodology",
+      "attention_tier": "C",
+      "priority": 0.85,
+      "reading_order": 2,
+      "source_span": {
+        "start": 746,
+        "end": 760,
+        "quote": "## Methodology"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "decision-1",
+      "type": "decision",
+      "content": "PISA targets students aged 15 years and 3 months through 16 years and 2 months, testing only those enrolled in schools. Each country must sample a minimum of 5,000 students, though smaller nations like Iceland and Luxembourg test entire…",
+      "attention_tier": "B",
+      "priority": 0.8038461538461539,
+      "reading_order": 3,
+      "source_span": {
+        "start": 762,
+        "end": 1054,
+        "quote": "PISA targets students aged 15 years and 3 months through 16 years and 2 months, testing only those enrolled in schools. Each country must sample a minimum of 5,000 students, though smaller nations like Iceland and Luxembourg test entire age cohorts when populations fall below this threshold."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "The assessment requires approximately two hours of computer-based testing per student, combining multiple-choice questions with extended-response items. Students encounter only portions of the available test content, as there are six and a half hours of assessment material distributed across different test booklets. Beyond the cognitive assessment, participating students complete an additional hour responding to questionnaires about learning habits, motivation, and family background. School administrators also complete surveys describing institutional demographics and funding.",
+      "attention_tier": "B",
+      "priority": 0.7576923076923077,
+      "reading_order": 4,
+      "source_span": {
+        "start": 1056,
+        "end": 1639,
+        "quote": "The assessment requires approximately two hours of computer-based testing per student, combining multiple-choice questions with extended-response items. Students encounter only portions of the available test content, as there are six and a half hours of assessment material distributed across different test booklets. Beyond the cognitive assessment, participating students complete an additional hour responding to questionnaires about learning habits, motivation, and family background. School administrators also complete surveys describing institutional demographics and funding."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-2",
+      "type": "claim",
+      "content": "Beginning in 2012, PISA introduced interactive problem-solving tasks requiring students to explore virtual devices, marking a significant evolution in large-scale assessment methodology. Some countries have begun experimenting with computer adaptive testing that adjusts difficulty based on performance.",
+      "attention_tier": "C",
+      "priority": 0.7115384615384615,
+      "reading_order": 5,
+      "source_span": {
+        "start": 1641,
+        "end": 1944,
+        "quote": "Beginning in 2012, PISA introduced interactive problem-solving tasks requiring students to explore virtual devices, marking a significant evolution in large-scale assessment methodology. Some countries have begun experimenting with computer adaptive testing that adjusts difficulty based on performance."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-2",
+      "type": "evidence",
+      "content": "Raw scores undergo statistical transformation to enable meaningful cross-country comparison. The scaling methodology ensures that the OECD average in each domain is 500 and the standard deviation is 100. This standardisation applies to the initial assessment cycle; subsequent iterations are linked to previous cycles through item response theory scaling methods. The proficiency estimation relies on latent regression extensions of the Rasch model, with results expressed as plausible values that permit unbiased estimation of group differences.",
+      "attention_tier": "C",
+      "priority": 0.6653846153846154,
+      "reading_order": 6,
+      "source_span": {
+        "start": 1946,
+        "end": 2492,
+        "quote": "Raw scores undergo statistical transformation to enable meaningful cross-country comparison. The scaling methodology ensures that the OECD average in each domain is 500 and the standard deviation is 100. This standardisation applies to the initial assessment cycle; subsequent iterations are linked to previous cycles through item response theory scaling methods. The proficiency estimation relies on latent regression extensions of the Rasch model, with results expressed as plausible values that permit unbiased estimation of group differences."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "PISA assesses literacy across three competence domains: reading, mathematics, and science. The mathematics component asks students to apply mathematical knowledge to solve problems presented in real-world contexts, requiring activation of multiple mathematical competencies. The reading assessment evaluates whether students can construct, extend and reflect on the meaning of what they have read across a wide range of continuous and non-continuous texts, rather than measuring fluency or word recognition skills. In recent cycles, PISA expanded to include innovative domains: collaborative problem-solving appeared in 2012 and 2015, while global competence was introduced in 2018.",
+      "attention_tier": "C",
+      "priority": 0.6192307692307693,
+      "reading_order": 7,
+      "source_span": {
+        "start": 2494,
+        "end": 3176,
+        "quote": "PISA assesses literacy across three competence domains: reading, mathematics, and science. The mathematics component asks students to apply mathematical knowledge to solve problems presented in real-world contexts, requiring activation of multiple mathematical competencies. The reading assessment evaluates whether students can construct, extend and reflect on the meaning of what they have read across a wide range of continuous and non-continuous texts, rather than measuring fluency or word recognition skills. In recent cycles, PISA expanded to include innovative domains: collaborative problem-solving appeared in 2012 and 2015, while global competence was introduced in 2018."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-3",
+      "type": "claim",
+      "content": "Impact and Policy Use",
+      "attention_tier": "C",
+      "priority": 0.573076923076923,
+      "reading_order": 8,
+      "source_span": {
+        "start": 3178,
+        "end": 3202,
+        "quote": "## Impact and Policy Use"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-3",
+      "type": "evidence",
+      "content": "International assessments like PISA have become increasingly influential in shaping educational policy at national and international levels. The impact manifests in three primary ways: creation of new knowledge about education systems, modifications to national assessment policies, and external influence over educational policymaking.",
+      "attention_tier": "C",
+      "priority": 0.5269230769230769,
+      "reading_order": 9,
+      "source_span": {
+        "start": 3204,
+        "end": 3540,
+        "quote": "International assessments like PISA have become increasingly influential in shaping educational policy at national and international levels. The impact manifests in three primary ways: creation of new knowledge about education systems, modifications to national assessment policies, and external influence over educational policymaking."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-4",
+      "type": "evidence",
+      "content": "PISA data have generated insights challenging established practices, such as the early academic tracking of students into vocational or academic pathways. Policy-makers in most participating nations view PISA results as significant performance indicators. Many countries, regardless of whether their scores exceeded, met, or fell below international averages, have initiated reforms in response to assessment reports. Following the first PISA results, Germany experienced what became known as the \"PISA shock,\" leading to widespread questioning of established educational policies and ultimately spurring agreement among regional governments on common national standards.",
+      "attention_tier": "C",
+      "priority": 0.4807692307692307,
+      "reading_order": 10,
+      "source_span": {
+        "start": 3542,
+        "end": 4213,
+        "quote": "PISA data have generated insights challenging established practices, such as the early academic tracking of students into vocational or academic pathways. Policy-makers in most participating nations view PISA results as significant performance indicators. Many countries, regardless of whether their scores exceeded, met, or fell below international averages, have initiated reforms in response to assessment reports. Following the first PISA results, Germany experienced what became known as the \"PISA shock,\" leading to widespread questioning of established educational policies and ultimately spurring agreement among regional governments on common national standards."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-1",
+      "type": "appendix",
+      "content": "The influence of PISA assessments has increased the international standing of the OECD as an education monitor and policy actor, shifting accountability partly from national to international levels.",
+      "attention_tier": "D",
+      "priority": 0.4346153846153846,
+      "reading_order": 11,
+      "source_span": {
+        "start": 4215,
+        "end": 4413,
+        "quote": "The influence of PISA assessments has increased the international standing of the OECD as an education monitor and policy actor, shifting accountability partly from national to international levels."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-2",
+      "type": "appendix",
+      "content": "Criticisms",
+      "attention_tier": "D",
+      "priority": 0.3884615384615384,
+      "reading_order": 12,
+      "source_span": {
+        "start": 4415,
+        "end": 4428,
+        "quote": "## Criticisms"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-3",
+      "type": "appendix",
+      "content": "Critics note that policymakers often refer to PISA data to legitimise policies introduced for other reasons, ignoring the actual findings. Governments often use only superficial features of PISA surveys such as country rankings and not the more detailed analyses. Portugal exemplifies this: officials used PISA data to justify new arrangements for teacher assessment based on inferences not justified by the assessments themselves.",
+      "attention_tier": "D",
+      "priority": 0.3423076923076923,
+      "reading_order": 13,
+      "source_span": {
+        "start": 4430,
+        "end": 4861,
+        "quote": "Critics note that policymakers often refer to PISA data to legitimise policies introduced for other reasons, ignoring the actual findings. Governments often use only superficial features of PISA surveys such as country rankings and not the more detailed analyses. Portugal exemplifies this: officials used PISA data to justify new arrangements for teacher assessment based on inferences not justified by the assessments themselves."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "Scholars question whether PISA data are sufficiently robust to bear the weight of the major policy decisions being based upon them. Critics further note that interpretations of PISA results often assume causal relationships that cannot legitimately be based upon the data alone; proper investigation would require qualitative in-depth studies and longitudinal surveys based on mixed quantitative and qualitative methods. Additionally, because PISA assesses enrolled school students only, results exclude homeschooled learners and may not reflect the full range of a nation's educational outcomes.",
+      "attention_tier": "C",
+      "priority": 0.2961538461538461,
+      "reading_order": 14,
+      "source_span": {
+        "start": 4863,
+        "end": 5460,
+        "quote": "Scholars question whether PISA data are sufficiently robust to bear the weight of the major policy decisions being based upon them. Critics further note that interpretations of PISA results often assume causal relationships that cannot legitimately be based upon the data alone; proper investigation would require qualitative in-depth studies and longitudinal surveys based on mixed quantitative and qualitative methods. Additionally, because PISA assesses enrolled school students only, results exclude homeschooled learners and may not reflect the full range of a nation's educational outcomes.\n"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:04553b1ba02fb366041f515c464e80b5623487c4a3b306ee6b062d5ff0a3f18a",
+    "chars": 5460,
+    "lang": "en"
+  }
+}

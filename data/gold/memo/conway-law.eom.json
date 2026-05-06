@@ -1,0 +1,193 @@
+{
+  "version": "0.1",
+  "document_type": "memo",
+  "summary": "Organizations which design systems are constrained to produce designs which are copies of their communication structures, a principle named Conway's Law after Melvin Conway (1967).",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "Conway's law",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 14,
+        "quote": "Conway's law"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "Conway's law is an adage that states organizations which design systems are constrained to produce designs which are copies of the communication structures of these organizations. The law is named after computer programmer Melvin Conway, who introduced the idea in 1967.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 16,
+        "end": 286,
+        "quote": "Conway's law is an adage that states organizations which design systems are constrained to produce designs which are copies of the communication structures of these organizations. The law is named after computer programmer Melvin Conway, who introduced the idea in 1967."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "Conway's original formulation states: \"organizations which design systems (in the broad sense used here) are constrained to produce designs which are copies of the communication structures of these organizations.\"",
+      "attention_tier": "B",
+      "priority": 0.90,
+      "reading_order": 2,
+      "source_span": {
+        "start": 779,
+        "end": 992,
+        "quote": "Conway's original formulation states: \"organizations which design systems (in the broad sense used here) are constrained to produce designs which are copies of the communication structures of these organizations.\""
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "Melvin Conway was a computer scientist who observed the relationship between organizational structure and system design while working on compilers in the 1960s. He submitted a paper on the topic to Harvard Business Review in 1967, which was rejected on the grounds that he had not proved his thesis. The paper was later published in Datamation magazine. The concept was named \"Conway's Law\" at the 1968 National Symposium on Modular Programming, where attendees coined the term.",
+      "attention_tier": "C",
+      "priority": 0.80,
+      "reading_order": 3,
+      "source_span": {
+        "start": 299,
+        "end": 777,
+        "quote": "Melvin Conway was a computer scientist who observed the relationship between organizational structure and system design while working on compilers in the 1960s. He submitted a paper on the topic to Harvard Business Review in 1967, which was rejected on the grounds that he had not proved his thesis. The paper was later published in Datamation magazine. The concept was named \"Conway's Law\" at the 1968 National Symposium on Modular Programming, where attendees coined the term."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-2",
+      "type": "evidence",
+      "content": "The reasoning behind this observation is straightforward: for a system to function correctly, the people who design its individual components must communicate with each other to ensure compatibility between the parts. Because communication naturally follows organizational boundaries, the architecture of the resulting system tends to mirror those same boundaries.",
+      "attention_tier": "C",
+      "priority": 0.72,
+      "reading_order": 4,
+      "source_span": {
+        "start": 994,
+        "end": 1358,
+        "quote": "The reasoning behind this observation is straightforward: for a system to function correctly, the people who design its individual components must communicate with each other to ensure compatibility between the parts. Because communication naturally follows organizational boundaries, the architecture of the resulting system tends to mirror those same boundaries."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-2",
+      "type": "claim",
+      "content": "The law has significant implications for software engineering and organizational design. A key insight is that the correspondence between organizational structure and system architecture is not merely incidental but structurally enforced. Teams that do not communicate freely will produce designs with hard interfaces at exactly the points where communication breaks down.",
+      "attention_tier": "C",
+      "priority": 0.65,
+      "reading_order": 5,
+      "source_span": {
+        "start": 1377,
+        "end": 1749,
+        "quote": "The law has significant implications for software engineering and organizational design. A key insight is that the correspondence between organizational structure and system architecture is not merely incidental but structurally enforced. Teams that do not communicate freely will produce designs with hard interfaces at exactly the points where communication breaks down."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-3",
+      "type": "evidence",
+      "content": "Research at MIT and Harvard Business School has validated the \"mirroring hypothesis\" — an equivalent formulation of Conway's Law — finding strong evidence that the product developed by a loosely-coupled organization is significantly more modular than the product from a tightly-coupled organization.",
+      "attention_tier": "C",
+      "priority": 0.58,
+      "reading_order": 6,
+      "source_span": {
+        "start": 1751,
+        "end": 2050,
+        "quote": "Research at MIT and Harvard Business School has validated the \"mirroring hypothesis\" — an equivalent formulation of Conway's Law — finding strong evidence that the product developed by a loosely-coupled organization is significantly more modular than the product from a tightly-coupled organization."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "Website design provides a practical illustration: researcher Nigel Bevan observed in 1997 that organizations often produce web sites with a content and structure which mirrors the internal concerns of the organization rather than the needs of the users of the site.",
+      "attention_tier": "D",
+      "priority": 0.50,
+      "reading_order": 7,
+      "source_span": {
+        "start": 2052,
+        "end": 2317,
+        "quote": "Website design provides a practical illustration: researcher Nigel Bevan observed in 1997 that organizations often produce web sites with a content and structure which mirrors the internal concerns of the organization rather than the needs of the users of the site."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-4",
+      "type": "evidence",
+      "content": "Scholars have proposed stronger variations. Edward Yourdon and Larry Constantine stated that the structure of any system designed by an organization is isomorphic to the structure of the organization. James O. Coplien and Neil B. Harrison offered a prescriptive version: organizational structure should be deliberately aligned with product architecture to avoid project failures.",
+      "attention_tier": "D",
+      "priority": 0.42,
+      "reading_order": 8,
+      "source_span": {
+        "start": 2319,
+        "end": 2698,
+        "quote": "Scholars have proposed stronger variations. Edward Yourdon and Larry Constantine stated that the structure of any system designed by an organization is isomorphic to the structure of the organization. James O. Coplien and Neil B. Harrison offered a prescriptive version: organizational structure should be deliberately aligned with product architecture to avoid project failures."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "Opinions differ on whether the phenomenon is beneficial or harmful. Some view the organizational-technical mirroring as a natural and helpful property. Others see it as an undesirable consequence of organizational bias that constrains design flexibility. A middle perspective treats it as a necessary compromise given human cognitive limitations.",
+      "attention_tier": "D",
+      "priority": 0.35,
+      "reading_order": 9,
+      "source_span": {
+        "start": 2700,
+        "end": 3046,
+        "quote": "Opinions differ on whether the phenomenon is beneficial or harmful. Some view the organizational-technical mirroring as a natural and helpful property. Others see it as an undesirable consequence of organizational bias that constrains design flexibility. A middle perspective treats it as a necessary compromise given human cognitive limitations."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-1",
+      "type": "appendix",
+      "content": "The \"Inverse Conway Maneuver\" has become a popular concept in discussions of microservices and team topology: rather than letting organizational structure dictate architecture, teams deliberately reorganize around the desired system architecture to nudge the design in a preferred direction.",
+      "attention_tier": "D",
+      "priority": 0.28,
+      "reading_order": 10,
+      "source_span": {
+        "start": 3048,
+        "end": 3339,
+        "quote": "The \"Inverse Conway Maneuver\" has become a popular concept in discussions of microservices and team topology: rather than letting organizational structure dictate architecture, teams deliberately reorganize around the desired system architecture to nudge the design in a preferred direction."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:07e95756c8cf4efbecf8afb4301d1c16d0a75db9b3e85d4381969a873872939f",
+    "chars": 3340,
+    "lang": "en"
+  }
+}

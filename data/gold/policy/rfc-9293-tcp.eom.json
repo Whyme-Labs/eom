@@ -1,0 +1,273 @@
+{
+  "version": "0.1",
+  "document_type": "policy",
+  "summary": "This document specifies the Transmission Control Protocol (TCP). TCP is an important transport-layer protocol in the Internet protocol stack",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "RFC 9293: Transmission Control Protocol (TCP)",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 47,
+        "quote": "RFC 9293: Transmission Control Protocol (TCP)"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "This document specifies the Transmission Control Protocol (TCP). TCP is an important transport-layer protocol in the Internet protocol stack, and it has continuously evolved over decades of use and growth of the Internet. Over this time, a number of changes have been made to TCP as it was specified in RFC 793, though these have only been documented in a",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 62,
+        "end": 417,
+        "quote": "This document specifies the Transmission Control Protocol (TCP). TCP is an important transport-layer protocol in the Internet protocol stack, and it has continuously evolved over decades of use and growth of the Internet. Over this time, a number of changes have been made to TCP as it was specified in RFC 793, though these have only been documented in a"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "Abstract",
+      "attention_tier": "C",
+      "priority": 0.85,
+      "reading_order": 2,
+      "source_span": {
+        "start": 49,
+        "end": 60,
+        "quote": "## Abstract"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-2",
+      "type": "claim",
+      "content": "Status of This Memo",
+      "attention_tier": "C",
+      "priority": 0.8071428571428572,
+      "reading_order": 3,
+      "source_span": {
+        "start": 541,
+        "end": 563,
+        "quote": "## Status of This Memo"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "This is an Internet Standards Track document. This document is a product of the Internet Engineering Task Force (IETF). It represents the consensus of the IETF community. It has received public review and has been approved for publication by the Internet Engineering Steering Group (IESG). Further information on Internet Standards is available in Section 2 of RFC 7841. Information about the current status of this document, any errata, and how to provide feedback on it may be obtained at https://www.rfc-editor.org/info/rfc9293.",
+      "attention_tier": "B",
+      "priority": 0.7642857142857142,
+      "reading_order": 4,
+      "source_span": {
+        "start": 565,
+        "end": 1096,
+        "quote": "This is an Internet Standards Track document. This document is a product of the Internet Engineering Task Force (IETF). It represents the consensus of the IETF community. It has received public review and has been approved for publication by the Internet Engineering Steering Group (IESG). Further information on Internet Standards is available in Section 2 of RFC 7841. Information about the current status of this document, any errata, and how to provide feedback on it may be obtained at https://www.rfc-editor.org/info/rfc9293."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "This document obsoletes RFC 793, RFC 879, RFC 2873, RFC 6093, RFC 6429, RFC 6528, and RFC 6691. This document updates RFC 1011, RFC 1122, and RFC 5961.",
+      "attention_tier": "B",
+      "priority": 0.7214285714285714,
+      "reading_order": 5,
+      "source_span": {
+        "start": 1098,
+        "end": 1249,
+        "quote": "This document obsoletes RFC 793, RFC 879, RFC 2873, RFC 6093, RFC 6429, RFC 6528, and RFC 6691. This document updates RFC 1011, RFC 1122, and RFC 5961."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-3",
+      "type": "claim",
+      "content": "Introduction",
+      "attention_tier": "C",
+      "priority": 0.6785714285714286,
+      "reading_order": 6,
+      "source_span": {
+        "start": 1251,
+        "end": 1266,
+        "quote": "## Introduction"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-2",
+      "type": "factbox",
+      "content": "RFC 793 contains a discussion of the TCP design goals and provides examples of its operation, including examples of connection establishment, connection termination, and packet retransmission to repair losses. This document describes the basic functionality expected in modern TCP implementations and replaces the protocol specification in RFC 793. It does not replicate or attempt to update the introduction and philosophy content in Sections 1 and 2 of RFC 793. Other documents are referenced to provide explanations of the theory of operation, rationale, and detailed discussion of design decisions. This document only focuses on the normative behavior of the protocol.",
+      "attention_tier": "B",
+      "priority": 0.6357142857142857,
+      "reading_order": 7,
+      "source_span": {
+        "start": 1268,
+        "end": 1940,
+        "quote": "RFC 793 contains a discussion of the TCP design goals and provides examples of its operation, including examples of connection establishment, connection termination, and packet retransmission to repair losses. This document describes the basic functionality expected in modern TCP implementations and replaces the protocol specification in RFC 793. It does not replicate or attempt to update the introduction and philosophy content in Sections 1 and 2 of RFC 793. Other documents are referenced to provide explanations of the theory of operation, rationale, and detailed discussion of design decisions. This document only focuses on the normative behavior of the protocol."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "The \"TCP Roadmap\" provides a more extensive guide to the RFCs that define TCP and describe various important algorithms. The TCP Roadmap contains sections on strongly encouraged enhancements that improve performance and other aspects of TCP beyond the basic operation specified in this document. As one example, implementing congestion control (e.g., [8]) is a TCP requirement, but it is a complex topic on its own and not described in detail in this document, as there are many options and possibilities that do not impact basic interoperability. Similarly, most TCP implementations today include the high-performance extensions in [47], but these are not strictly required or discussed in this document. Multipath considerations for TCP are also specified separately in [59].",
+      "attention_tier": "C",
+      "priority": 0.5928571428571429,
+      "reading_order": 8,
+      "source_span": {
+        "start": 1942,
+        "end": 2719,
+        "quote": "The \"TCP Roadmap\" provides a more extensive guide to the RFCs that define TCP and describe various important algorithms. The TCP Roadmap contains sections on strongly encouraged enhancements that improve performance and other aspects of TCP beyond the basic operation specified in this document. As one example, implementing congestion control (e.g., [8]) is a TCP requirement, but it is a complex topic on its own and not described in detail in this document, as there are many options and possibilities that do not impact basic interoperability. Similarly, most TCP implementations today include the high-performance extensions in [47], but these are not strictly required or discussed in this document. Multipath considerations for TCP are also specified separately in [59]."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-4",
+      "type": "claim",
+      "content": "A list of changes from RFC 793 is contained in Section 5.",
+      "attention_tier": "C",
+      "priority": 0.55,
+      "reading_order": 9,
+      "source_span": {
+        "start": 2721,
+        "end": 2778,
+        "quote": "A list of changes from RFC 793 is contained in Section 5."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-5",
+      "type": "claim",
+      "content": "Normative Requirements",
+      "attention_tier": "C",
+      "priority": 0.5071428571428571,
+      "reading_order": 10,
+      "source_span": {
+        "start": 2780,
+        "end": 2805,
+        "quote": "## Normative Requirements"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-1",
+      "type": "appendix",
+      "content": "The window size MUST be treated as an unsigned number, or else large window sizes will appear like negative windows and TCP will not work.",
+      "attention_tier": "D",
+      "priority": 0.46428571428571425,
+      "reading_order": 11,
+      "source_span": {
+        "start": 2807,
+        "end": 2945,
+        "quote": "The window size MUST be treated as an unsigned number, or else large window sizes will appear like negative windows and TCP will not work."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-2",
+      "type": "appendix",
+      "content": "A TCP implementation MUST use the above type of clock for clock-driven selection of initial sequence numbers.",
+      "attention_tier": "D",
+      "priority": 0.42142857142857143,
+      "reading_order": 12,
+      "source_span": {
+        "start": 2947,
+        "end": 3056,
+        "quote": "A TCP implementation MUST use the above type of clock for clock-driven selection of initial sequence numbers."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-3",
+      "type": "factbox",
+      "content": "TCP implementations MUST assume a default send MSS of 536 (576 - 40) for IPv4 or 1220 (1280 - 60) for IPv6.",
+      "attention_tier": "C",
+      "priority": 0.37857142857142856,
+      "reading_order": 13,
+      "source_span": {
+        "start": 3058,
+        "end": 3165,
+        "quote": "TCP implementations MUST assume a default send MSS of 536 (576 - 40) for IPv4 or 1220 (1280 - 60) for IPv6."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-3",
+      "type": "appendix",
+      "content": "The TCP checksum is never optional. The sender MUST generate it and the receiver MUST check it.",
+      "attention_tier": "D",
+      "priority": 0.33571428571428574,
+      "reading_order": 14,
+      "source_span": {
+        "start": 3167,
+        "end": 3262,
+        "quote": "The TCP checksum is never optional. The sender MUST generate it and the receiver MUST check it."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-4",
+      "type": "appendix",
+      "content": "A TCP implementation MUST support simultaneous open attempts.",
+      "attention_tier": "D",
+      "priority": 0.2928571428571428,
+      "reading_order": 15,
+      "source_span": {
+        "start": 3264,
+        "end": 3326,
+        "quote": "A TCP implementation MUST support simultaneous open attempts.\n"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:775839dc70d7fc152049b589b5e4cfe0942bc4571f17744e93bf470aa88c901a",
+    "chars": 3326,
+    "lang": "en"
+  }
+}

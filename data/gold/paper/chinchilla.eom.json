@@ -1,0 +1,161 @@
+{
+  "version": "0.1",
+  "document_type": "paper",
+  "summary": "Chinchilla (70B) matches Gopher’s compute budget while using 4× more training data, uniformly outperforming all prior LLMs including Gopher (280B) and GPT-3 (175B), and establishing that model size and training tokens should scale equally under a fixed compute budget.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "Training Compute-Optimal Large Language Models",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 48,
+        "quote": "Training Compute-Optimal Large Language Models"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "We investigate the optimal model size and number of tokens for training a transformer language model under a given compute budget.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 418,
+        "end": 548,
+        "quote": "We investigate the optimal model size and number of tokens for training a transformer language model under a given compute budget."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "for compute-optimal training, the model size and the number of training tokens should be scaled equally: for every doubling of model size the number of training tokens should also be doubled.",
+      "attention_tier": "B",
+      "priority": 0.88,
+      "reading_order": 2,
+      "source_span": {
+        "start": 870,
+        "end": 1061,
+        "quote": "for compute-optimal training, the model size and the number of training tokens should be scaled equally: for every doubling of model size the number of training tokens should also be doubled."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "We find that current large language models are significantly undertrained, a consequence of the recent focus on scaling language models whilst keeping the amount of training data constant.",
+      "attention_tier": "C",
+      "priority": 0.75,
+      "reading_order": 3,
+      "source_span": {
+        "start": 549,
+        "end": 737,
+        "quote": "We find that current large language models are significantly undertrained, a consequence of the recent focus on scaling language models whilst keeping the amount of training data constant."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "By training over 400 language models ranging from 70 million to over 16 billion parameters on 5 to 500 billion tokens, we find that for compute-optimal training, the model size and the number of training tokens should be scaled equally: for every doubling of model size the number of training tokens should also be doubled.",
+      "attention_tier": "C",
+      "priority": 0.70,
+      "reading_order": 4,
+      "source_span": {
+        "start": 738,
+        "end": 1061,
+        "quote": "By training over 400 language models ranging from 70 million to over 16 billion parameters on 5 to 500 billion tokens, we find that for compute-optimal training, the model size and the number of training tokens should be scaled equally: for every doubling of model size the number of training tokens should also be doubled."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "We test this hypothesis by training a predicted compute-optimal model, Chinchilla, that uses the same compute budget as Gopher but with 70B parameters and 4× more more data.",
+      "attention_tier": "C",
+      "priority": 0.65,
+      "reading_order": 5,
+      "source_span": {
+        "start": 1062,
+        "end": 1235,
+        "quote": "We test this hypothesis by training a predicted compute-optimal model, Chinchilla, that uses the same compute budget as Gopher but with 70B parameters and 4× more more data."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-2",
+      "type": "factbox",
+      "content": "Chinchilla uniformly and significantly outperforms Gopher (280B), GPT-3 (175B), Jurassic-1 (178B), and Megatron-Turing NLG (530B) on a large range of downstream evaluation tasks.",
+      "attention_tier": "C",
+      "priority": 0.60,
+      "reading_order": 6,
+      "source_span": {
+        "start": 1236,
+        "end": 1414,
+        "quote": "Chinchilla uniformly and significantly outperforms Gopher (280B), GPT-3 (175B), Jurassic-1 (178B), and Megatron-Turing NLG (530B) on a large range of downstream evaluation tasks."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "decision-1",
+      "type": "decision",
+      "content": "This also means that Chinchilla uses substantially less compute for fine-tuning and inference, greatly facilitating downstream usage.",
+      "attention_tier": "C",
+      "priority": 0.55,
+      "reading_order": 7,
+      "source_span": {
+        "start": 1415,
+        "end": 1548,
+        "quote": "This also means that Chinchilla uses substantially less compute for fine-tuning and inference, greatly facilitating downstream usage."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-3",
+      "type": "factbox",
+      "content": "As a highlight, Chinchilla reaches a state-of-the-art average accuracy of 67.5% on the MMLU benchmark, greater than a 7% improvement over Gopher.",
+      "attention_tier": "D",
+      "priority": 0.45,
+      "reading_order": 8,
+      "source_span": {
+        "start": 1549,
+        "end": 1694,
+        "quote": "As a highlight, Chinchilla reaches a state-of-the-art average accuracy of 67.5% on the MMLU benchmark, greater than a 7% improvement over Gopher."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:a63f41cceda154d05485acd30cac42fe773726351e2a85305c280ea22814fd8a",
+    "chars": 1695,
+    "lang": "en"
+  }
+}

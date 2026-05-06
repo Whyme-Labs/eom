@@ -1,0 +1,241 @@
+{
+  "version": "0.1",
+  "document_type": "report",
+  "summary": "The Stern Review on the Economics of Climate Change is a 700-page independent review released for the Government of the United Kingdom on 30",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "Stern Review",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 14,
+        "quote": "Stern Review"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "The Stern Review on the Economics of Climate Change is a 700-page independent review released for the Government of the United Kingdom on 30 October 2006 by economist Nicholas Stern, chair of the Grantham Research Institute on Climate Change and the Environment at the London School of Economics and also chair of the Centre for Climate Change Economics and Policy",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 16,
+        "end": 380,
+        "quote": "The Stern Review on the Economics of Climate Change is a 700-page independent review released for the Government of the United Kingdom on 30 October 2006 by economist Nicholas Stern, chair of the Grantham Research Institute on Climate Change and the Environment at the London School of Economics and also chair of the Centre for Climate Change Economics and Policy"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "The Review states that climate change represents \"the greatest and widest-ranging market failure ever seen,\" presenting a unique challenge for economics. The Review provides prescriptions including environmental taxes to minimise the economic and social disruptions. The Stern Review's main conclusion is that the benefits…",
+      "attention_tier": "B",
+      "priority": 0.85,
+      "reading_order": 2,
+      "source_span": {
+        "start": 630,
+        "end": 1526,
+        "quote": "The Review states that climate change represents \"the greatest and widest-ranging market failure ever seen,\" presenting a unique challenge for economics. The Review provides prescriptions including environmental taxes to minimise the economic and social disruptions. The Stern Review's main conclusion is that the benefits of strong, early action on climate change far outweigh the costs of not acting. The Review points to the potential impacts of climate change on water resources, food production, health, and the environment. According to the Review, without action, the overall costs of climate change will be equivalent to losing at least 5% of global gross domestic product each year, now and forever. Including a wider range of risks and impacts could increase this to 20% of GDP or more, also indefinitely. Stern believes that 5–6 degrees of temperature increase is \"a real possibility.\""
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-2",
+      "type": "factbox",
+      "content": "The Review proposes that one per cent of global GDP per annum is required to be invested to avoid the worst effects of climate change. In June 2008, Stern increased the estimate for the annual cost of achieving stabilisation between 500 and 550…",
+      "attention_tier": "B",
+      "priority": 0.7999999999999999,
+      "reading_order": 3,
+      "source_span": {
+        "start": 1528,
+        "end": 1846,
+        "quote": "The Review proposes that one per cent of global GDP per annum is required to be invested to avoid the worst effects of climate change. In June 2008, Stern increased the estimate for the annual cost of achieving stabilisation between 500 and 550 ppm CO2e to 2% of GDP to account for faster than expected climate change."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "There has been a mixed reaction to the Stern Review from economists. Several economists have been critical of the Review, describing it as deeply flawed. Some economists have supported the Review. Others have criticised aspects of the Review's analysis, but argued that some of its conclusions might still be justified based on other grounds.",
+      "attention_tier": "C",
+      "priority": 0.75,
+      "reading_order": 4,
+      "source_span": {
+        "start": 1848,
+        "end": 2190,
+        "quote": "There has been a mixed reaction to the Stern Review from economists. Several economists have been critical of the Review, describing it as deeply flawed. Some economists have supported the Review. Others have criticised aspects of the Review's analysis, but argued that some of its conclusions might still be justified based on other grounds."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "Summary of the Review's Main Conclusions",
+      "attention_tier": "C",
+      "priority": 0.7,
+      "reading_order": 5,
+      "source_span": {
+        "start": 2192,
+        "end": 2235,
+        "quote": "## Summary of the Review's Main Conclusions"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "The executive summary states several key points. The benefits of strong, early action on climate change outweigh the costs. The scientific evidence points to increasing risks of serious, irreversible impacts from climate change associated with business-as-usual paths for emissions. Climate change threatens the basic elements of life for people around the world—access to water, food production, health, and use of land and the environment.",
+      "attention_tier": "C",
+      "priority": 0.65,
+      "reading_order": 6,
+      "source_span": {
+        "start": 2237,
+        "end": 2678,
+        "quote": "The executive summary states several key points. The benefits of strong, early action on climate change outweigh the costs. The scientific evidence points to increasing risks of serious, irreversible impacts from climate change associated with business-as-usual paths for emissions. Climate change threatens the basic elements of life for people around the world—access to water, food production, health, and use of land and the environment."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-2",
+      "type": "caveat",
+      "content": "The impacts of climate change are not evenly distributed—the poorest countries and people will suffer earliest and most. Climate change may initially have small positive effects for a few developed countries, but it is likely to be very damaging for the much higher temperature increases expected by mid-to-late century under business-as-usual scenarios. Integrated assessment modelling provides a tool for estimating the total impact on the economy; estimates suggest this is likely to be higher than previously suggested.",
+      "attention_tier": "C",
+      "priority": 0.6,
+      "reading_order": 7,
+      "source_span": {
+        "start": 2680,
+        "end": 3203,
+        "quote": "The impacts of climate change are not evenly distributed—the poorest countries and people will suffer earliest and most. Climate change may initially have small positive effects for a few developed countries, but it is likely to be very damaging for the much higher temperature increases expected by mid-to-late century under business-as-usual scenarios. Integrated assessment modelling provides a tool for estimating the total impact on the economy; estimates suggest this is likely to be higher than previously suggested."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-2",
+      "type": "evidence",
+      "content": "Emissions have been, and continue to be, driven by economic growth; yet stabilisation of greenhouse gas concentration in the atmosphere is feasible and consistent with continued growth. Central estimates of the annual costs of achieving stabilisation between 500 and 550ppm CO2e are around 1% of global GDP, if strong action begins now. Delaying action would make stabilisation more difficult and costly.",
+      "attention_tier": "C",
+      "priority": 0.55,
+      "reading_order": 8,
+      "source_span": {
+        "start": 3205,
+        "end": 3609,
+        "quote": "Emissions have been, and continue to be, driven by economic growth; yet stabilisation of greenhouse gas concentration in the atmosphere is feasible and consistent with continued growth. Central estimates of the annual costs of achieving stabilisation between 500 and 550ppm CO2e are around 1% of global GDP, if strong action begins now. Delaying action would make stabilisation more difficult and costly."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-3",
+      "type": "caveat",
+      "content": "The transition to a low-carbon economy will bring challenges for competitiveness but also opportunities for growth. Policies to support the development of a range of low-carbon and high-efficiency technologies are required urgently. Establishing a carbon price, through tax, trading or regulation, is an essential foundation for climate change policy. Creating a broadly similar carbon price signal around the world, and using carbon finance to accelerate action in developing countries, are urgent priorities for international cooperation.",
+      "attention_tier": "C",
+      "priority": 0.49999999999999994,
+      "reading_order": 9,
+      "source_span": {
+        "start": 3611,
+        "end": 4151,
+        "quote": "The transition to a low-carbon economy will bring challenges for competitiveness but also opportunities for growth. Policies to support the development of a range of low-carbon and high-efficiency technologies are required urgently. Establishing a carbon price, through tax, trading or regulation, is an essential foundation for climate change policy. Creating a broadly similar carbon price signal around the world, and using carbon finance to accelerate action in developing countries, are urgent priorities for international cooperation."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-4",
+      "type": "caveat",
+      "content": "Adaptation policy is crucial for dealing with the unavoidable impacts of climate change, but it has been under-emphasised in many countries. An effective response to climate change will depend on creating the conditions for international collective action. There is still time to avoid the worst impacts of climate change if strong collective action starts now.",
+      "attention_tier": "C",
+      "priority": 0.45,
+      "reading_order": 10,
+      "source_span": {
+        "start": 4153,
+        "end": 4514,
+        "quote": "Adaptation policy is crucial for dealing with the unavoidable impacts of climate change, but it has been under-emphasised in many countries. An effective response to climate change will depend on creating the conditions for international collective action. There is still time to avoid the worst impacts of climate change if strong collective action starts now."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-1",
+      "type": "appendix",
+      "content": "Background",
+      "attention_tier": "D",
+      "priority": 0.4,
+      "reading_order": 11,
+      "source_span": {
+        "start": 4516,
+        "end": 4529,
+        "quote": "## Background"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-2",
+      "type": "appendix",
+      "content": "On 19 July 2005 the Chancellor of the Exchequer, Gordon Brown announced that he had asked Sir Nicholas Stern to lead a major review of the economics of climate change, to understand more comprehensively the nature of the economic challenges and how they can be met, in the UK and globally. The Stern Review was prepared by a team of economists at HM Treasury; independent academics were involved as consultants only. The scientific content of the Review was reviewed by experts from the Walker Institute.",
+      "attention_tier": "D",
+      "priority": 0.35,
+      "reading_order": 12,
+      "source_span": {
+        "start": 4531,
+        "end": 5035,
+        "quote": "On 19 July 2005 the Chancellor of the Exchequer, Gordon Brown announced that he had asked Sir Nicholas Stern to lead a major review of the economics of climate change, to understand more comprehensively the nature of the economic challenges and how they can be met, in the UK and globally. The Stern Review was prepared by a team of economists at HM Treasury; independent academics were involved as consultants only. The scientific content of the Review was reviewed by experts from the Walker Institute."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-3",
+      "type": "appendix",
+      "content": "The Stern review was not released for regular peer-review, since the UK Government does not undertake peer review on commissioned reviews. Papers were published and presentations held, that outlined the approach in the months preceding the release.",
+      "attention_tier": "D",
+      "priority": 0.30000000000000004,
+      "reading_order": 13,
+      "source_span": {
+        "start": 5037,
+        "end": 5286,
+        "quote": "The Stern review was not released for regular peer-review, since the UK Government does not undertake peer review on commissioned reviews. Papers were published and presentations held, that outlined the approach in the months preceding the release.\n"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:d086dcc4c6612c3203f80fdf01368a0e97429e957945a984e7558faebf2c3c6a",
+    "chars": 5286,
+    "lang": "en"
+  }
+}
