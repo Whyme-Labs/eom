@@ -1,0 +1,385 @@
+{
+  "version": "0.1",
+  "document_type": "policy",
+  "summary": "The General Data Protection Regulation (GDPR), formally Regulation (EU) 2016/679, is a European Union regulation on information privacy in t",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "General Data Protection Regulation",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 36,
+        "quote": "General Data Protection Regulation"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "The General Data Protection Regulation (GDPR), formally Regulation (EU) 2016/679, is a European Union regulation on information privacy in the European Union and the European Economic Area. Adopted by the European Parliament and Council on April 14, 2016, the regulation became effective on May 25, 2018. As a regulation rather than a directive, it applies uniformly across EU member states",
+      "attention_tier": "A",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 38,
+        "end": 428,
+        "quote": "The General Data Protection Regulation (GDPR), formally Regulation (EU) 2016/679, is a European Union regulation on information privacy in the European Union and the European Economic Area. Adopted by the European Parliament and Council on April 14, 2016, the regulation became effective on May 25, 2018. As a regulation rather than a directive, it applies uniformly across EU member states"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "The GDPR aims to enhance individual control over personal data while simplifying regulatory requirements for international business operations. It replaced the Data Protection Directive 95/46/EC and has become influential globally, inspiring similar privacy legislation in numerous countries including Brazil, Japan, Singapore, South Korea, and Thailand. The regulation functions as an example of the \"Brussels effect,\" wherein European regulatory standards become de facto global benchmarks due to their significance and scope.",
+      "attention_tier": "B",
+      "priority": 0.85,
+      "reading_order": 2,
+      "source_span": {
+        "start": 484,
+        "end": 1012,
+        "quote": "The GDPR aims to enhance individual control over personal data while simplifying regulatory requirements for international business operations. It replaced the Data Protection Directive 95/46/EC and has become influential globally, inspiring similar privacy legislation in numerous countries including Brazil, Japan, Singapore, South Korea, and Thailand. The regulation functions as an example of the \"Brussels effect,\" wherein European regulatory standards become de facto global benchmarks due to their significance and scope."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "Territorial and Material Scope",
+      "attention_tier": "C",
+      "priority": 0.8214285714285714,
+      "reading_order": 3,
+      "source_span": {
+        "start": 1014,
+        "end": 1047,
+        "quote": "## Territorial and Material Scope"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "decision-1",
+      "type": "decision",
+      "content": "The regulation applies whenever a data controller or processor operates within the EU, or when an individual data subject resides in the EU. Organizations based outside the European Economic Area must comply if they collect or process personal data of individuals located within the EU. This…",
+      "attention_tier": "B",
+      "priority": 0.7928571428571428,
+      "reading_order": 4,
+      "source_span": {
+        "start": 1049,
+        "end": 1427,
+        "quote": "The regulation applies whenever a data controller or processor operates within the EU, or when an individual data subject resides in the EU. Organizations based outside the European Economic Area must comply if they collect or process personal data of individuals located within the EU. This extraterritorial reach represents one of the regulation's most consequential features."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-2",
+      "type": "evidence",
+      "content": "The scope encompasses organizations engaging in offering of goods or services to EU residents, regardless of payment requirements, or monitoring their behavior within EU territory. The regulation does not apply to private individuals processing data for personal or household purposes unconnected to professional or commercial activity.",
+      "attention_tier": "B",
+      "priority": 0.7642857142857142,
+      "reading_order": 5,
+      "source_span": {
+        "start": 1429,
+        "end": 1765,
+        "quote": "The scope encompasses organizations engaging in offering of goods or services to EU residents, regardless of payment requirements, or monitoring their behavior within EU territory. The regulation does not apply to private individuals processing data for personal or household purposes unconnected to professional or commercial activity."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-2",
+      "type": "claim",
+      "content": "The regulation explicitly excludes certain processing activities from its coverage: personal or household activities, law enforcement operations, and national security activities. A separate Data Protection Directive addresses police and criminal justice sector data exchanges across EU, national, and international levels.",
+      "attention_tier": "C",
+      "priority": 0.7357142857142858,
+      "reading_order": 6,
+      "source_span": {
+        "start": 1767,
+        "end": 2090,
+        "quote": "The regulation explicitly excludes certain processing activities from its coverage: personal or household activities, law enforcement operations, and national security activities. A separate Data Protection Directive addresses police and criminal justice sector data exchanges across EU, national, and international levels."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-3",
+      "type": "claim",
+      "content": "Each EU member state establishes an independent supervisory authority to investigate complaints, sanction violations, and ensure compliance. A lead authority model applies to businesses with multiple EU establishments, designated based on the location of primary processing activities.",
+      "attention_tier": "C",
+      "priority": 0.7071428571428571,
+      "reading_order": 7,
+      "source_span": {
+        "start": 2092,
+        "end": 2377,
+        "quote": "Each EU member state establishes an independent supervisory authority to investigate complaints, sanction violations, and ensure compliance. A lead authority model applies to businesses with multiple EU establishments, designated based on the location of primary processing activities."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-4",
+      "type": "claim",
+      "content": "Key Provisions",
+      "attention_tier": "C",
+      "priority": 0.6785714285714286,
+      "reading_order": 8,
+      "source_span": {
+        "start": 2379,
+        "end": 2396,
+        "quote": "## Key Provisions"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-5",
+      "type": "claim",
+      "content": "Principles and Lawful Basis",
+      "attention_tier": "C",
+      "priority": 0.65,
+      "reading_order": 9,
+      "source_span": {
+        "start": 2398,
+        "end": 2429,
+        "quote": "### Principles and Lawful Basis"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "decision-2",
+      "type": "decision",
+      "content": "Article 5 establishes six core principles governing lawful data processing. Data must be processed lawfully, fairly, and in a transparent manner. Additional principles mandate purpose limitation, data minimization, accuracy, storage limitation, and integrity with confidentiality protections.",
+      "attention_tier": "B",
+      "priority": 0.6214285714285714,
+      "reading_order": 10,
+      "source_span": {
+        "start": 2431,
+        "end": 2723,
+        "quote": "Article 5 establishes six core principles governing lawful data processing. Data must be processed lawfully, fairly, and in a transparent manner. Additional principles mandate purpose limitation, data minimization, accuracy, storage limitation, and integrity with confidentiality protections."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-3",
+      "type": "evidence",
+      "content": "Article 6 specifies that personal data processing requires at least one lawful basis. The regulation identifies six permissible grounds: explicit data subject consent, fulfilling contractual obligations, complying with legal requirements, protecting vital interests, performing public tasks, or pursuing legitimate interests unless overridden by data subject rights.",
+      "attention_tier": "B",
+      "priority": 0.5928571428571429,
+      "reading_order": 11,
+      "source_span": {
+        "start": 2725,
+        "end": 3091,
+        "quote": "Article 6 specifies that personal data processing requires at least one lawful basis. The regulation identifies six permissible grounds: explicit data subject consent, fulfilling contractual obligations, complying with legal requirements, protecting vital interests, performing public tasks, or pursuing legitimate interests unless overridden by data subject rights."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-6",
+      "type": "claim",
+      "content": "Data Subject Rights",
+      "attention_tier": "C",
+      "priority": 0.5642857142857143,
+      "reading_order": 12,
+      "source_span": {
+        "start": 3093,
+        "end": 3116,
+        "quote": "### Data Subject Rights"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-4",
+      "type": "evidence",
+      "content": "The regulation grants individuals comprehensive rights regarding their personal information. The right of access under Article 15 permits individuals to request information about what data is collected, how it is processed, its purposes, and recipients. Controllers must provide an overview of data categories and, upon request, a copy of actual data in a structured, commonly-used electronic format.",
+      "attention_tier": "C",
+      "priority": 0.5357142857142857,
+      "reading_order": 13,
+      "source_span": {
+        "start": 3118,
+        "end": 3518,
+        "quote": "The regulation grants individuals comprehensive rights regarding their personal information. The right of access under Article 15 permits individuals to request information about what data is collected, how it is processed, its purposes, and recipients. Controllers must provide an overview of data categories and, upon request, a copy of actual data in a structured, commonly-used electronic format."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "The right to data portability under Article 20 enables individuals to transfer personal data between electronic systems without controller obstruction. Article 17 provides the right of erasure under specified circumstances, including noncompliance with lawful processing requirements. Article 21 grants individuals the right to object to personal data processing for marketing or non-service purposes.",
+      "attention_tier": "C",
+      "priority": 0.5071428571428571,
+      "reading_order": 14,
+      "source_span": {
+        "start": 3520,
+        "end": 3921,
+        "quote": "The right to data portability under Article 20 enables individuals to transfer personal data between electronic systems without controller obstruction. Article 17 provides the right of erasure under specified circumstances, including noncompliance with lawful processing requirements. Article 21 grants individuals the right to object to personal data processing for marketing or non-service purposes."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-7",
+      "type": "claim",
+      "content": "Consent Requirements",
+      "attention_tier": "C",
+      "priority": 0.47857142857142854,
+      "reading_order": 15,
+      "source_span": {
+        "start": 3923,
+        "end": 3947,
+        "quote": "### Consent Requirements"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-1",
+      "type": "appendix",
+      "content": "When consent serves as the lawful basis, it must be explicit, specific, freely given, and unambiguously affirmed. The regulation prohibits pre-selected opt-out consent mechanisms or bundling multiple processing purposes into single affirmation prompts. Consent withdrawal must be as straightforward as the initial opt-in process.",
+      "attention_tier": "D",
+      "priority": 0.45,
+      "reading_order": 16,
+      "source_span": {
+        "start": 3949,
+        "end": 4278,
+        "quote": "When consent serves as the lawful basis, it must be explicit, specific, freely given, and unambiguously affirmed. The regulation prohibits pre-selected opt-out consent mechanisms or bundling multiple processing purposes into single affirmation prompts. Consent withdrawal must be as straightforward as the initial opt-in process."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-2",
+      "type": "appendix",
+      "content": "For children under 16 years old, with member state options to lower this threshold to 13, parental or custodian consent is required and must be verifiable. Data controllers cannot refuse service to users declining non-essential consent.",
+      "attention_tier": "D",
+      "priority": 0.42142857142857143,
+      "reading_order": 17,
+      "source_span": {
+        "start": 4280,
+        "end": 4516,
+        "quote": "For children under 16 years old, with member state options to lower this threshold to 13, parental or custodian consent is required and must be verifiable. Data controllers cannot refuse service to users declining non-essential consent."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-3",
+      "type": "appendix",
+      "content": "Penalties and Enforcement",
+      "attention_tier": "D",
+      "priority": 0.3928571428571429,
+      "reading_order": 18,
+      "source_span": {
+        "start": 4518,
+        "end": 4547,
+        "quote": "### Penalties and Enforcement"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-2",
+      "type": "factbox",
+      "content": "Organizations found in violation of the GDPR face substantial financial penalties. Infringements of the most fundamental obligations can result in fines of up to 20 million euros, or in the case of an undertaking, up to 4% of the total worldwide annual turnover of the preceding financial year, whichever is higher. Less severe infringements carry fines of up to 10 million euros or 2% of global annual turnover.",
+      "attention_tier": "C",
+      "priority": 0.36428571428571427,
+      "reading_order": 19,
+      "source_span": {
+        "start": 4549,
+        "end": 4961,
+        "quote": "Organizations found in violation of the GDPR face substantial financial penalties. Infringements of the most fundamental obligations can result in fines of up to 20 million euros, or in the case of an undertaking, up to 4% of the total worldwide annual turnover of the preceding financial year, whichever is higher. Less severe infringements carry fines of up to 10 million euros or 2% of global annual turnover."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-4",
+      "type": "appendix",
+      "content": "Data Controller Obligations and Criticisms",
+      "attention_tier": "D",
+      "priority": 0.33571428571428574,
+      "reading_order": 20,
+      "source_span": {
+        "start": 4963,
+        "end": 5009,
+        "quote": "### Data Controller Obligations and Criticisms"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-5",
+      "type": "appendix",
+      "content": "Controllers must implement appropriate technical and organizational measures ensuring compliance throughout data processing lifecycles. Article 25 mandates data protection by design and default. Controllers must conduct data protection impact assessments when specific risks emerge to individual rights and freedoms, and must notify supervisory authorities of data breaches within 72 hours.",
+      "attention_tier": "D",
+      "priority": 0.30714285714285716,
+      "reading_order": 21,
+      "source_span": {
+        "start": 5011,
+        "end": 5401,
+        "quote": "Controllers must implement appropriate technical and organizational measures ensuring compliance throughout data processing lifecycles. Article 25 mandates data protection by design and default. Controllers must conduct data protection impact assessments when specific risks emerge to individual rights and freedoms, and must notify supervisory authorities of data breaches within 72 hours."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-6",
+      "type": "appendix",
+      "content": "Critics and compliance practitioners have noted that the regulation's broad requirements place significant burdens on smaller organizations without dedicated legal or compliance departments. The extraterritorial scope creates complex jurisdictional questions, and inconsistent enforcement across member states has generated uncertainty. Some argue that consent requirements, while protective in principle, have led to widespread consent fatigue and superficial compliance through cookie banners and dense privacy notices that users rarely read.",
+      "attention_tier": "D",
+      "priority": 0.2785714285714286,
+      "reading_order": 22,
+      "source_span": {
+        "start": 5403,
+        "end": 5948,
+        "quote": "Critics and compliance practitioners have noted that the regulation's broad requirements place significant burdens on smaller organizations without dedicated legal or compliance departments. The extraterritorial scope creates complex jurisdictional questions, and inconsistent enforcement across member states has generated uncertainty. Some argue that consent requirements, while protective in principle, have led to widespread consent fatigue and superficial compliance through cookie banners and dense privacy notices that users rarely read.\n"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:8f153ae63e17ed8271a77699b117bcf979d0f991e873f111e8461432fb5ab52a",
+    "chars": 5948,
+    "lang": "en"
+  }
+}

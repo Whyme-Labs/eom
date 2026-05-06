@@ -1,0 +1,129 @@
+{
+  "version": "0.1",
+  "document_type": "news",
+  "summary": "On 11 March 2011, a magnitude 9.0–9.1 megathrust earthquake off Japan's Tōhoku coast triggered a devastating tsunami, killing nearly 20,000 people, displacing over 228,000, and causing the Fukushima Daiichi nuclear disaster.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "2011 Tōhoku earthquake and tsunami",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 36,
+        "quote": "2011 Tōhoku earthquake and tsunami"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "On 11 March 2011, at 2:46 PM Japan Standard Time, a massive undersea megathrust earthquake struck off Japan's Pacific coast. Measuring 9.0 to 9.1 in magnitude, the earthquake occurred approximately 72 kilometres east of the Oshika Peninsula in the Tōhoku region, at an underwater depth of about 30 kilometres.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 38,
+        "end": 347,
+        "quote": "On 11 March 2011, at 2:46 PM Japan Standard Time, a massive undersea megathrust earthquake struck off Japan's Pacific coast. Measuring 9.0 to 9.1 in magnitude, the earthquake occurred approximately 72 kilometres east of the Oshika Peninsula in the Tōhoku region, at an underwater depth of about 30 kilometres."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "The earthquake triggered a powerful tsunami with waves that reached heights of up to 40.1 metres and travelled up to 10 kilometres inland. The disaster killed 19,759 people, injured 6,242, and left 2,553 missing according to official figures released in 2021. The tsunami caused the level 7 meltdowns at three reactors in the Fukushima Daiichi Nuclear Power Plant complex, the largest nuclear disaster since the Chernobyl disaster in 1986. A 2015 report revealed that over 228,000 people were still displaced from their homes either temporarily or permanently years after the event.",
+      "attention_tier": "B",
+      "priority": 0.90,
+      "reading_order": 2,
+      "source_span": {
+        "start": 534,
+        "end": 1116,
+        "quote": "The earthquake triggered a powerful tsunami with waves that reached heights of up to 40.1 metres and travelled up to 10 kilometres inland. The disaster killed 19,759 people, injured 6,242, and left 2,553 missing according to official figures released in 2021. The tsunami caused the level 7 meltdowns at three reactors in the Fukushima Daiichi Nuclear Power Plant complex, the largest nuclear disaster since the Chernobyl disaster in 1986. A 2015 report revealed that over 228,000 people were still displaced from their homes either temporarily or permanently years after the event."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "The earthquake resulted from the Pacific plate subducting beneath the plate underlying northern Honshu. The Pacific plate moves at approximately 8 to 9 centimetres per year, gradually building enormous elastic energy until accumulated stress triggers a rupture. The break caused the seafloor to rise several metres, with the Japan Meteorological Agency indicating the fault zone extended roughly 500 kilometres in length and 200 kilometres in width. Portions of northeastern Japan shifted as much as 2.4 metres closer to North America, and a 400-kilometre stretch of coastline dropped vertically by 0.6 metres, which allowed tsunami waves to travel farther inland at greater speeds.",
+      "attention_tier": "C",
+      "priority": 0.75,
+      "reading_order": 3,
+      "source_span": {
+        "start": 1118,
+        "end": 1800,
+        "quote": "The earthquake resulted from the Pacific plate subducting beneath the plate underlying northern Honshu. The Pacific plate moves at approximately 8 to 9 centimetres per year, gradually building enormous elastic energy until accumulated stress triggers a rupture. The break caused the seafloor to rise several metres, with the Japan Meteorological Agency indicating the fault zone extended roughly 500 kilometres in length and 200 kilometres in width. Portions of northeastern Japan shifted as much as 2.4 metres closer to North America, and a 400-kilometre stretch of coastline dropped vertically by 0.6 metres, which allowed tsunami waves to travel farther inland at greater speeds."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "An upthrust of 6 to 8 metres along a 180-kilometre-wide section of seafloor generated a major tsunami that devastated Japan's Pacific coastline. The Japan Meteorological Agency issued a tsunami warning rated \"major,\" predicted to reach at least 3 metres in height, though actual heights proved far greater. The tsunami reached Sendai Airport at 3:55 PM, approximately 69 minutes after the earthquake struck. Recorded wave heights included 6.8 metres near Kamaishi and 7.3 metres at Sōma. Survey measurements found run-up heights of 40.1 metres at Ryōri Bay in Ōfunato and an estimated 38.9 metres at Aneyoshi fishery port in Miyako, the highest tsunami run-up height recorded in Japan's documented history.",
+      "attention_tier": "C",
+      "priority": 0.65,
+      "reading_order": 4,
+      "source_span": {
+        "start": 1802,
+        "end": 2508,
+        "quote": "An upthrust of 6 to 8 metres along a 180-kilometre-wide section of seafloor generated a major tsunami that devastated Japan's Pacific coastline. The Japan Meteorological Agency issued a tsunami warning rated \"major,\" predicted to reach at least 3 metres in height, though actual heights proved far greater. The tsunami reached Sendai Airport at 3:55 PM, approximately 69 minutes after the earthquake struck. Recorded wave heights included 6.8 metres near Kamaishi and 7.3 metres at Sōma. Survey measurements found run-up heights of 40.1 metres at Ryōri Bay in Ōfunato and an estimated 38.9 metres at Aneyoshi fishery port in Miyako, the highest tsunami run-up height recorded in Japan's documented history."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-2",
+      "type": "evidence",
+      "content": "The tsunami inundated approximately 561 square kilometres of Japanese territory, destroying entire coastal communities. Towns like Rikuzentakata were nearly obliterated, with the tsunami reaching three stories high in some areas. Minamisanriku experienced 9,500 missing persons, with over 1,000 bodies recovered by 14 March. Despite extensive sea walls and floodgates constructed in many coastal cities, the unexpectedly large surge overwhelmed these defences. The notable exception was Fudai, Iwate, which possessed a 15.5-metre floodgate that successfully withstood the waves, sparing the community from destruction.",
+      "attention_tier": "C",
+      "priority": 0.55,
+      "reading_order": 5,
+      "source_span": {
+        "start": 2510,
+        "end": 3128,
+        "quote": "The tsunami inundated approximately 561 square kilometres of Japanese territory, destroying entire coastal communities. Towns like Rikuzentakata were nearly obliterated, with the tsunami reaching three stories high in some areas. Minamisanriku experienced 9,500 missing persons, with over 1,000 bodies recovered by 14 March. Despite extensive sea walls and floodgates constructed in many coastal cities, the unexpectedly large surge overwhelmed these defences. The notable exception was Fudai, Iwate, which possessed a 15.5-metre floodgate that successfully withstood the waves, sparing the community from destruction."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "decision-1",
+      "type": "decision",
+      "content": "The international response to the disaster was swift. Sixty-two countries and numerous international organisations offered assistance. Rescue teams from countries including Australia, New Zealand, South Korea, the United Kingdom, and the United States arrived in Japan within days. The Japanese government initially estimated the economic cost of the disaster at around 25 trillion yen (approximately $300 billion), making it one of the costliest natural disasters in recorded history.",
+      "attention_tier": "D",
+      "priority": 0.40,
+      "reading_order": 6,
+      "source_span": {
+        "start": 3130,
+        "end": 3615,
+        "quote": "The international response to the disaster was swift. Sixty-two countries and numerous international organisations offered assistance. Rescue teams from countries including Australia, New Zealand, South Korea, the United Kingdom, and the United States arrived in Japan within days. The Japanese government initially estimated the economic cost of the disaster at around 25 trillion yen (approximately $300 billion), making it one of the costliest natural disasters in recorded history."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:0e27d15e1808d16bf92d32c00470399b2030ffdf37c3ce3c7ebb440df1701db0",
+    "chars": 3616,
+    "lang": "en"
+  }
+}

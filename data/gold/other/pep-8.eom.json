@@ -1,0 +1,353 @@
+{
+  "version": "0.1",
+  "document_type": "other",
+  "summary": "This document gives coding conventions for the Python code comprising the standard library in the main Python distribution. Please see the c",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "PEP 8 – Style Guide for Python Code",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 37,
+        "quote": "PEP 8 – Style Guide for Python Code"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "This document gives coding conventions for the Python code comprising the standard library in the main Python distribution. Please see the companion informational PEP describing style guidelines for the C code in the C implementation of Python.",
+      "attention_tier": "A",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 56,
+        "end": 300,
+        "quote": "This document gives coding conventions for the Python code comprising the standard library in the main Python distribution. Please see the companion informational PEP describing style guidelines for the C code in the C implementation of Python."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "Introduction",
+      "attention_tier": "C",
+      "priority": 0.85,
+      "reading_order": 2,
+      "source_span": {
+        "start": 39,
+        "end": 54,
+        "quote": "## Introduction"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-2",
+      "type": "claim",
+      "content": "This document and PEP 257 (Docstring Conventions) were adapted from Guido's original Python Style Guide essay, with some additions from Barry's style guide.",
+      "attention_tier": "C",
+      "priority": 0.8184210526315789,
+      "reading_order": 3,
+      "source_span": {
+        "start": 302,
+        "end": 458,
+        "quote": "This document and PEP 257 (Docstring Conventions) were adapted from Guido's original Python Style Guide essay, with some additions from Barry's style guide."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-3",
+      "type": "claim",
+      "content": "This style guide evolves over time as additional conventions are identified and past conventions are rendered obsolete by changes in the language itself.",
+      "attention_tier": "C",
+      "priority": 0.7868421052631579,
+      "reading_order": 4,
+      "source_span": {
+        "start": 460,
+        "end": 613,
+        "quote": "This style guide evolves over time as additional conventions are identified and past conventions are rendered obsolete by changes in the language itself."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-4",
+      "type": "claim",
+      "content": "Many projects have their own coding style guidelines. In the event of any conflicts, such project-specific guides take precedence for that project.",
+      "attention_tier": "C",
+      "priority": 0.7552631578947369,
+      "reading_order": 5,
+      "source_span": {
+        "start": 615,
+        "end": 762,
+        "quote": "Many projects have their own coding style guidelines. In the event of any conflicts, such project-specific guides take precedence for that project."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-5",
+      "type": "claim",
+      "content": "A Foolish Consistency is the Hobgoblin of Little Minds",
+      "attention_tier": "C",
+      "priority": 0.7236842105263158,
+      "reading_order": 6,
+      "source_span": {
+        "start": 764,
+        "end": 821,
+        "quote": "## A Foolish Consistency is the Hobgoblin of Little Minds"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "One of Guido's key insights is that code is read much more often than it is written. The guidelines provided here are intended to improve the readability of code and make it consistent across the wide spectrum of Python code. As PEP 20 says, \"Readability counts\".",
+      "attention_tier": "B",
+      "priority": 0.6921052631578948,
+      "reading_order": 7,
+      "source_span": {
+        "start": 823,
+        "end": 1086,
+        "quote": "One of Guido's key insights is that code is read much more often than it is written. The guidelines provided here are intended to improve the readability of code and make it consistent across the wide spectrum of Python code. As PEP 20 says, \"Readability counts\"."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-6",
+      "type": "claim",
+      "content": "A style guide is about consistency. Consistency with this style guide is important. Consistency within a project is more important. Consistency within one module or function is the most important.",
+      "attention_tier": "C",
+      "priority": 0.6605263157894736,
+      "reading_order": 8,
+      "source_span": {
+        "start": 1088,
+        "end": 1284,
+        "quote": "A style guide is about consistency. Consistency with this style guide is important. Consistency within a project is more important. Consistency within one module or function is the most important."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "However, know when to be inconsistent – sometimes style guide recommendations just aren't applicable. When in doubt, use your best judgment. Look at other examples and decide what looks best. And don't hesitate to ask!",
+      "attention_tier": "B",
+      "priority": 0.6289473684210526,
+      "reading_order": 9,
+      "source_span": {
+        "start": 1286,
+        "end": 1504,
+        "quote": "However, know when to be inconsistent – sometimes style guide recommendations just aren't applicable. When in doubt, use your best judgment. Look at other examples and decide what looks best. And don't hesitate to ask!"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-7",
+      "type": "claim",
+      "content": "In particular: do not break backwards compatibility just to comply with this PEP!",
+      "attention_tier": "C",
+      "priority": 0.5973684210526315,
+      "reading_order": 10,
+      "source_span": {
+        "start": 1506,
+        "end": 1587,
+        "quote": "In particular: do not break backwards compatibility just to comply with this PEP!"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-2",
+      "type": "caveat",
+      "content": "There are other good reasons to ignore a particular guideline. When the guideline says to do something, but you know it makes the code less readable, even for someone who is used to reading code that follows this PEP: violate the guideline. When in doubt, use your best judgment.",
+      "attention_tier": "B",
+      "priority": 0.5657894736842105,
+      "reading_order": 11,
+      "source_span": {
+        "start": 1589,
+        "end": 1868,
+        "quote": "There are other good reasons to ignore a particular guideline. When the guideline says to do something, but you know it makes the code less readable, even for someone who is used to reading code that follows this PEP: violate the guideline. When in doubt, use your best judgment."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-8",
+      "type": "claim",
+      "content": "Indentation",
+      "attention_tier": "C",
+      "priority": 0.5342105263157895,
+      "reading_order": 12,
+      "source_span": {
+        "start": 1870,
+        "end": 1884,
+        "quote": "## Indentation"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-9",
+      "type": "claim",
+      "content": "Use 4 spaces per indentation level.",
+      "attention_tier": "C",
+      "priority": 0.5026315789473683,
+      "reading_order": 13,
+      "source_span": {
+        "start": 1886,
+        "end": 1921,
+        "quote": "Use 4 spaces per indentation level."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-2",
+      "type": "evidence",
+      "content": "Continuation lines should align wrapped elements either vertically using Python's implicit line joining inside parentheses, brackets and braces, or using a hanging indent. When using a hanging indent the following should be considered: there should be no arguments on the first line and further indentation should be used to clearly distinguish itself as a continuation line.",
+      "attention_tier": "C",
+      "priority": 0.4710526315789474,
+      "reading_order": 14,
+      "source_span": {
+        "start": 1923,
+        "end": 2298,
+        "quote": "Continuation lines should align wrapped elements either vertically using Python's implicit line joining inside parentheses, brackets and braces, or using a hanging indent. When using a hanging indent the following should be considered: there should be no arguments on the first line and further indentation should be used to clearly distinguish itself as a continuation line."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-1",
+      "type": "appendix",
+      "content": "Maximum Line Length",
+      "attention_tier": "D",
+      "priority": 0.4394736842105263,
+      "reading_order": 15,
+      "source_span": {
+        "start": 2300,
+        "end": 2322,
+        "quote": "## Maximum Line Length"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-2",
+      "type": "appendix",
+      "content": "Limit all lines to a maximum of 79 characters.",
+      "attention_tier": "D",
+      "priority": 0.40789473684210525,
+      "reading_order": 16,
+      "source_span": {
+        "start": 2324,
+        "end": 2370,
+        "quote": "Limit all lines to a maximum of 79 characters."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-3",
+      "type": "caveat",
+      "content": "For flowing long blocks of text with fewer structural restrictions (docstrings or comments), the line length should be limited to 72 characters.",
+      "attention_tier": "B",
+      "priority": 0.3763157894736842,
+      "reading_order": 17,
+      "source_span": {
+        "start": 2372,
+        "end": 2516,
+        "quote": "For flowing long blocks of text with fewer structural restrictions (docstrings or comments), the line length should be limited to 72 characters."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-3",
+      "type": "appendix",
+      "content": "Limiting the required editor window width makes it possible to have several files open side by side, and works well when using code review tools that present the two versions in adjacent columns.",
+      "attention_tier": "D",
+      "priority": 0.34473684210526323,
+      "reading_order": 18,
+      "source_span": {
+        "start": 2518,
+        "end": 2713,
+        "quote": "Limiting the required editor window width makes it possible to have several files open side by side, and works well when using code review tools that present the two versions in adjacent columns."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "The default wrapping in most tools disrupts the visual structure of the code, making it more difficult to understand. The limits are chosen to avoid wrapping in editors with the window width set to 80, even if the tool places a marker glyph in the final column when wrapping lines. Some teams strongly prefer a longer line length. For code maintained exclusively or primarily by a team that can reach agreement on this issue, it is okay to increase the line length limit up to 99 characters, provided that comments and docstrings are still wrapped at 79 characters.",
+      "attention_tier": "B",
+      "priority": 0.3131578947368421,
+      "reading_order": 19,
+      "source_span": {
+        "start": 2715,
+        "end": 3280,
+        "quote": "The default wrapping in most tools disrupts the visual structure of the code, making it more difficult to understand. The limits are chosen to avoid wrapping in editors with the window width set to 80, even if the tool places a marker glyph in the final column when wrapping lines. Some teams strongly prefer a longer line length. For code maintained exclusively or primarily by a team that can reach agreement on this issue, it is okay to increase the line length limit up to 99 characters, provided that comments and docstrings are still wrapped at 79 characters."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-4",
+      "type": "appendix",
+      "content": "The Python standard library is conservative and requires limiting lines to 79 characters (and docstrings/comments to 72).",
+      "attention_tier": "D",
+      "priority": 0.28157894736842104,
+      "reading_order": 20,
+      "source_span": {
+        "start": 3282,
+        "end": 3404,
+        "quote": "The Python standard library is conservative and requires limiting lines to 79 characters (and docstrings/comments to 72).\n"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:7980fa341b4edbf2a9cf185dff12b6df3c0b60f60af184841d71a8d4cf1a63cc",
+    "chars": 3404,
+    "lang": "en"
+  }
+}

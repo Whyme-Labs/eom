@@ -37,10 +37,45 @@
       "n_blocks": 7
     },
     {
+      "doc_type": "news",
+      "slug": "notre-dame-fire",
+      "source": "data/gold/news/notre-dame-fire.md",
+      "eom": "data/gold/news/notre-dame-fire.eom.json",
+      "n_blocks": 8
+    },
+    {
+      "doc_type": "news",
+      "slug": "tohoku-earthquake",
+      "source": "data/gold/news/tohoku-earthquake.md",
+      "eom": "data/gold/news/tohoku-earthquake.eom.json",
+      "n_blocks": 7
+    },
+    {
       "doc_type": "other",
       "slug": "curl-readme",
       "source": "data/gold/other/curl-readme.md",
       "eom": "data/gold/other/curl-readme.eom.json",
+      "n_blocks": 14
+    },
+    {
+      "doc_type": "other",
+      "slug": "git-readme",
+      "source": "data/gold/other/git-readme.md",
+      "eom": "data/gold/other/git-readme.eom.json",
+      "n_blocks": 17
+    },
+    {
+      "doc_type": "other",
+      "slug": "pep-8",
+      "source": "data/gold/other/pep-8.md",
+      "eom": "data/gold/other/pep-8.eom.json",
+      "n_blocks": 21
+    },
+    {
+      "doc_type": "other",
+      "slug": "wikipedia-readme",
+      "source": "data/gold/other/wikipedia-readme.md",
+      "eom": "data/gold/other/wikipedia-readme.eom.json",
       "n_blocks": 14
     },
     {
@@ -73,38 +108,59 @@
     },
     {
       "doc_type": "policy",
+      "slug": "gdpr",
+      "source": "data/gold/policy/gdpr.md",
+      "eom": "data/gold/policy/gdpr.eom.json",
+      "n_blocks": 23
+    },
+    {
+      "doc_type": "policy",
+      "slug": "paris-agreement",
+      "source": "data/gold/policy/paris-agreement.md",
+      "eom": "data/gold/policy/paris-agreement.eom.json",
+      "n_blocks": 16
+    },
+    {
+      "doc_type": "policy",
+      "slug": "rfc-7540-http2",
+      "source": "data/gold/policy/rfc-7540-http2.md",
+      "eom": "data/gold/policy/rfc-7540-http2.eom.json",
+      "n_blocks": 9
+    },
+    {
+      "doc_type": "policy",
       "slug": "rfc-9293-tcp",
       "source": "data/gold/policy/rfc-9293-tcp.md",
       "eom": "data/gold/policy/rfc-9293-tcp.eom.json",
-      "n_blocks": 16
+      "n_blocks": 10
     },
     {
       "doc_type": "report",
       "slug": "doomsday-clock",
       "source": "data/gold/report/doomsday-clock.md",
       "eom": "data/gold/report/doomsday-clock.eom.json",
-      "n_blocks": 18
+      "n_blocks": 13
     },
     {
       "doc_type": "report",
       "slug": "ipcc-ar6",
       "source": "data/gold/report/ipcc-ar6.md",
       "eom": "data/gold/report/ipcc-ar6.eom.json",
-      "n_blocks": 16
+      "n_blocks": 11
     },
     {
       "doc_type": "report",
       "slug": "pisa",
       "source": "data/gold/report/pisa.md",
       "eom": "data/gold/report/pisa.eom.json",
-      "n_blocks": 15
+      "n_blocks": 10
     },
     {
       "doc_type": "report",
       "slug": "stern-review",
       "source": "data/gold/report/stern-review.md",
       "eom": "data/gold/report/stern-review.eom.json",
-      "n_blocks": 14
+      "n_blocks": 12
     },
     {
       "doc_type": "transcript",
@@ -112,6 +168,20 @@
       "source": "data/gold/transcript/gettysburg-address.md",
       "eom": "data/gold/transcript/gettysburg-address.eom.json",
       "n_blocks": 9
+    },
+    {
+      "doc_type": "transcript",
+      "slug": "i-have-a-dream",
+      "source": "data/gold/transcript/i-have-a-dream.md",
+      "eom": "data/gold/transcript/i-have-a-dream.eom.json",
+      "n_blocks": 20
+    },
+    {
+      "doc_type": "transcript",
+      "slug": "pearl-harbor-speech",
+      "source": "data/gold/transcript/pearl-harbor-speech.md",
+      "eom": "data/gold/transcript/pearl-harbor-speech.eom.json",
+      "n_blocks": 18
     }
   ]
 }
