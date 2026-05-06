@@ -1,31 +1,46 @@
 # EOM — Editorial Object Model
 
-An attention-architecture standard for documents that serve both humans and AI.
+A standard for representing documents that serves both human readers and language models.
 
-EOM is a downstream representation: any markdown / prose source — whether human-authored or LLM-generated — compiles into a structured graph of editorial blocks (headline, lead, claim, evidence, factbox, caveat, decision, appendix) with explicit salience, source provenance, and a hard attention budget.
-
-The standard is defined as a **harness** (versioned testable properties); the JSON shape is just one encoding that satisfies the harness.
-
-**Status:** v0.1 in development. See [the design spec](docs/superpowers/specs/2026-05-02-eom-design.md) for full details.
-
-## Quickstart (when Phase 1 ships)
+## Quickstart
 
 ```bash
-uv sync
-uv run eom compile --input examples/memo.md --compiler rules --output memo.eom.json
-uv run eom render --eom memo.eom.json --target newspaper --output memo.html
-uv run eom render --eom memo.eom.json --target context-pack --budget 3000 --output memo.txt
+# Install (Python 3.11)
+uv venv && uv sync --extra dev
+
+# Compile a markdown document with the rules-based compiler
+uv run eom compile \
+    --input tests/fixtures/freight_memo.md \
+    --compiler rules \
+    --document-type memo \
+    --output freight.eom.json
+
+# Validate against the harness
+uv run eom validate --eom freight.eom.json --source tests/fixtures/freight_memo.md
+
+# Render
+uv run eom render --eom freight.eom.json --target newspaper --output freight.html
+uv run eom render --eom freight.eom.json --target context-pack --budget 1000 --output freight.txt
+
+# Test the gold seed
+uv run python scripts/validate_gold.py
 ```
 
-## Components
+For the prompted compiler (Gemma-4-27B via Together AI), set `TOGETHER_API_KEY`:
 
-| Layer | Responsibility |
-|---|---|
-| Harness | Defines what makes a document EOM-conformant. Source of truth. |
-| Schema | The simplest JSON encoding that satisfies the harness. |
-| Compiler | Three implementations: rules-based, prompted-LLM, fine-tuned (Gemma-4 E2B). |
-| Renderers | Newspaper HTML view + LLM context pack — both deterministic. |
+```bash
+export TOGETHER_API_KEY=...
+uv run eom compile -i my.md --compiler prompted --output my.eom.json
+```
 
-## License
+## Repository status (Phase 1 complete)
 
-MIT.
+- ✓ Schema (Pydantic) and harness validator (H1-H12)
+- ✓ Two compilers: `rules` (deterministic) and `prompted` (Gemma-4-27B)
+- ✓ Two renderers: newspaper HTML and LLM context pack
+- ✓ Repair loop with failure summarisation
+- ✓ CLI: `eom compile / validate / render`
+- ✓ 30+ hand-curated gold examples passing harness
+- ☐ Phase 2: synthetic dataset generation pipeline
+- ☐ Phase 3: Gemma-4 E2B fine-tune via Unsloth
+- ☐ Phase 4: standard publication
