@@ -1,0 +1,43 @@
+{
+  "version": "first-validation-batch",
+  "raw_pool_size": 87,
+  "processed": 57,
+  "unprocessed": 30,
+  "passing_on_disk": 29,
+  "yield_pct_of_processed": 50.9,
+  "yield_pct_of_pool": 33.3,
+  "by_doc_type_pass": {
+    "paper": 17,
+    "other": 12
+  },
+  "by_doc_type_fail": {
+    "other": 5,
+    "paper": 22,
+    "policy": 1
+  },
+  "failure_rule_frequency": {
+    "H11": 70,
+    "H3": 16,
+    "H8": 4
+  },
+  "attempts_distribution_passing": {
+    "1": 14,
+    "2": 6,
+    "3": 9
+  },
+  "mean_attempts_passing": 1.83,
+  "mean_elapsed_seconds_passing": 190.3,
+  "mean_elapsed_seconds_failing": 232.7,
+  "unprocessed_breakdown_by_type": {
+    "policy": 29,
+    "paper": 1
+  },
+  "decision_gate": "30-60% range (plan: continue cautiously; consider calibration LLM)",
+  "notes": [
+    "First validation batch on raw fetched docs (Wikipedia random + arXiv abstracts + IETF RFCs).",
+    "Generation halted on 30 policy/RFCs due to OpenRouter slow responses on long inputs (5-8 min/doc); resumable later.",
+    "H11 (source_span quote mismatch) dominates failures (~76%).",
+    "Yield on raw docs is much lower than on hand-curated gold (46% vs 100%) because random Wikipedia + arXiv full abstracts have messier formatting.",
+    "Pipeline correctness validated: every on-disk eom.json passes harness at write time."
+  ]
+}

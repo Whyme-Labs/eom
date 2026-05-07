@@ -1,0 +1,81 @@
+{
+  "version": "0.1",
+  "document_type": "paper",
+  "summary": "Authors: Ahmed Cherif",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "HalluScan: A Systematic Benchmark for Detecting and Mitigating Hallucinations in Instruction-Followi",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 109,
+        "quote": "HalluScan: A Systematic Benchmark for Detecting and Mitigating Hallucinations in Instruction-Following LLMs"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "Authors: Ahmed Cherif",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 111,
+        "end": 132,
+        "quote": "Authors: Ahmed Cherif"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "Abstract",
+      "attention_tier": "C",
+      "priority": 0.85,
+      "reading_order": 2,
+      "source_span": {
+        "start": 134,
+        "end": 145,
+        "quote": "## Abstract"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "Large Language Models (LLMs) have demonstrated remarkable capabilities across diverse natural language processing tasks, yet they remain susceptible to hallucinations -- generating content that is factually incorrect, unfaithful to provided context, or misaligned with user instructions. We present…",
+      "attention_tier": "B",
+      "priority": 0.55,
+      "reading_order": 3,
+      "source_span": {
+        "start": 147,
+        "end": 1227,
+        "quote": "Large Language Models (LLMs) have demonstrated remarkable capabilities across diverse natural language processing tasks, yet they remain susceptible to hallucinations -- generating content that is factually incorrect, unfaithful to provided context, or misaligned with user instructions. We present HalluScan, a comprehensive benchmark framework that systematically evaluates hallucination detection and mitigation across 72 configurations spanning 6 detection methods, 4 open-weight model families, and 3 diverse domains. We introduce three key contributions: (1) HalluScore, a novel composite metric that achieves a Pearson correlation of r = 0.41 with human expert judgments; (2) Adaptive Detection Routing (ADR), an intelligent routing algorithm achieving 2.0x cost reduction with only 0.1% AUROC degradation; and (3) systematic error cascade decomposition revealing substantial variation in hallucination error types across domains. Our experiments reveal that NLI Verification achieves the highest overall AUROC of 0.88, while RAV achieves the second-highest AUROC of 0.66.\n"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:f7b67f091ebe9b506f9ee3df072c7cf8820729c21df513b00999707791d76521",
+    "chars": 1227,
+    "lang": "en"
+  }
+}

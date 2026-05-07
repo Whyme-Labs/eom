@@ -1,0 +1,81 @@
+{
+  "version": "0.1",
+  "document_type": "paper",
+  "summary": "Authors: Patrícia Pereira, Helena Moniz, Joao Paulo Carvalho",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "Fuzzy Fingerprinting Encoder Pre-trained Language Models for Emotion Recognition in Conversations: H",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 136,
+        "quote": "Fuzzy Fingerprinting Encoder Pre-trained Language Models for Emotion Recognition in Conversations: Human Assessment and Validity Study"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "Authors: Patrícia Pereira, Helena Moniz, Joao Paulo Carvalho",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 138,
+        "end": 198,
+        "quote": "Authors: Patrícia Pereira, Helena Moniz, Joao Paulo Carvalho"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "Abstract",
+      "attention_tier": "C",
+      "priority": 0.85,
+      "reading_order": 2,
+      "source_span": {
+        "start": 200,
+        "end": 211,
+        "quote": "## Abstract"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "decision-1",
+      "type": "decision",
+      "content": "In Emotion Recognition in Conversations (ERC), model decisions should align with nuanced human perception and ideally provide insights on the classification process. Standard encoder pre-trained language models (PLMs) are the state-of-the-art at these tasks but offer little insight…",
+      "attention_tier": "B",
+      "priority": 0.55,
+      "reading_order": 3,
+      "source_span": {
+        "start": 213,
+        "end": 1748,
+        "quote": "In Emotion Recognition in Conversations (ERC), model decisions should align with nuanced human perception and ideally provide insights on the classification process. Standard encoder pre-trained language models (PLMs) are the state-of-the-art at these tasks but offer little insight into why a certain prediction is made. This is especially problematic in imbalanced datasets, where most utterances are labeled as neutral, making these models frequently misclassify minority emotions as the majority neutral class. To tackle this issue, we introduced a novel, interpretable approach to ERC by combining PLMs with Fuzzy Fingerprints (FFPs). FFP provide class-specific prototypes that reflect the characteristic class activation patterns in the PLM's latent space. They are derived by ranking and fuzzifying the activations of the pooled conversational context-dependent embeddings across training instances for each emotion. At inference time, each input utterance is similarly fuzzy fingerprinted and matched to the emotion prototypes using a fuzzy similarity function based on the aggregation of the intersection of the fuzzy sets that define each FFP. Experimental results show that FFP integration reduces overclassification into the neutral class and human evaluation further supports the adequacy of FFP predictions. Our proposed method thus bridges the gap between deep neural inference and human perception, performing at state-of-the-art level while simultaneously offering valuable insights into the classification procedure.\n"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:588e0191af78c715f26077b228221c90ccc3e95925ce48a1f1f002f1dadb53ef",
+    "chars": 1748,
+    "lang": "en"
+  }
+}

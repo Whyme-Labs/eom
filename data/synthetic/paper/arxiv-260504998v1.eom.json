@@ -1,0 +1,81 @@
+{
+  "version": "0.1",
+  "document_type": "paper",
+  "summary": "Authors: Jinju Lee",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "Empirical Study of Pop and Jazz Mix Ratios for Genre-Adaptive Chord Generation",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 80,
+        "quote": "Empirical Study of Pop and Jazz Mix Ratios for Genre-Adaptive Chord Generation"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "Authors: Jinju Lee",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 82,
+        "end": 100,
+        "quote": "Authors: Jinju Lee"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "Abstract",
+      "attention_tier": "C",
+      "priority": 0.85,
+      "reading_order": 2,
+      "source_span": {
+        "start": 102,
+        "end": 113,
+        "quote": "## Abstract"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "decision-1",
+      "type": "decision",
+      "content": "Chord progression generation is practically important but understudied. Most large-scale symbolic music systems target melody, multi-track arrangement, or audio synthesis, and chord-only models tend to be relegated to conditioning components inside larger pipelines. This paper treats chord generation as…",
+      "attention_tier": "B",
+      "priority": 0.55,
+      "reading_order": 3,
+      "source_span": {
+        "start": 115,
+        "end": 1804,
+        "quote": "Chord progression generation is practically important but understudied. Most large-scale symbolic music systems target melody, multi-track arrangement, or audio synthesis, and chord-only models tend to be relegated to conditioning components inside larger pipelines. This paper treats chord generation as a standalone task and addresses a question that arises whenever such a model is adapted across genres: how much old-domain data must be retained during fine-tuning to acquire a new domain without forgetting the old? I study jazz fine-tuning starting from a pop-pretrained 25M-parameter Music Transformer (84.24% top-1 chord accuracy on a held-out pop test set). The available jazz corpus is an order of magnitude smaller than the pop corpus, so every fine-tune run uses all 1,513 jazz training sequences. The swept variable is the volume of pop \"rehearsal\" data mixed alongside, taking values in {0, 1K, 2.5K, 5K, 10K}. Every fine-tuned model gains 7 to 9 points of jazz top-1. Pop accuracy collapses by 2.14 points under jazz-only fine-tuning, recovers to baseline at approximately 2.5K rehearsal samples (1.65x the jazz volume), and saturates beyond that point. A complementary observation: the metric-best run (F3, 2.5K mix) is not always the perceptually preferred one. The pop-leaning (10K) and jazz-leaning (1K) endpoints carry more committed stylistic identities that the author more often selects as finished output in informal listening. I discuss what this suggests for music co-creation tools but make no perceptual claim, since no formal listening study has been conducted. All six checkpoints are released on the HuggingFace Hub at https://huggingface.co/PearlLeeStudio.\n"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:dec56447e6cdab274e07be0599e19cdad3ffe9f8ce6eee46d46092be97254152",
+    "chars": 1804,
+    "lang": "en"
+  }
+}

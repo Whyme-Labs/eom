@@ -1,0 +1,129 @@
+{
+  "version": "0.1",
+  "document_type": "other",
+  "summary": "\"Cap\" is a song by British YouTuber and rapper KSI featuring American rapper Offset from the former's debut studio album, Dissimulation (202",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "Cap (song)",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 12,
+        "quote": "Cap (song)"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "\"Cap\" is a song by British YouTuber and rapper KSI featuring American rapper Offset from the former's debut studio album, Dissimulation (2020) It was produced by Diego Ave, Go Grizzly, and Mally Mall. The song was released for digital download and streaming by RBC Records and BMG upon the release of the album. \"Cap\" is a hip hop and trap",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 14,
+        "end": 353,
+        "quote": "\"Cap\" is a song by British YouTuber and rapper KSI featuring American rapper Offset from the former's debut studio album, Dissimulation (2020) It was produced by Diego Ave, Go Grizzly, and Mally Mall. The song was released for digital download and streaming by RBC Records and BMG upon the release of the album. \"Cap\" is a hip hop and trap"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "\"Cap\" was met with mixed reviews from music critics. KSI received some criticism for his excessive use of auto-tune and he was also accused of \"blatantly ripping off Travis Scott\". The song debuted at number 24 on the UK…",
+      "attention_tier": "B",
+      "priority": 0.85,
+      "reading_order": 2,
+      "source_span": {
+        "start": 528,
+        "end": 1088,
+        "quote": "\"Cap\" was met with mixed reviews from music critics. KSI received some criticism for his excessive use of auto-tune and he was also accused of \"blatantly ripping off Travis Scott\". The song debuted at number 24 on the UK Singles Chart and it additionally entered the music charts of Greece, Ireland, Lithuania and New Zealand. The music video was released alongside the album on 22 May 2020. The black and white video shows the two rappers surrounded by women in a warehouse filled with candles, before they perform the song on a stage in front of an audience."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "is featured on \"Cap\".]]",
+      "attention_tier": "C",
+      "priority": 0.73,
+      "reading_order": 3,
+      "source_span": {
+        "start": 1090,
+        "end": 1114,
+        "quote": " is featured on \"Cap\".]]"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "\"Cap\" was produced by American record producers Diego Ave, Go Grizzly and Mally Mall. Offset wrote and recorded a verse to the instrumental. KSI was played the instrumental with Offset's verse during a recording studio session with the song's producers and American songwriter Ivory Scott in Los Angeles, United States, towards the end of 2019. KSI \"fucked with it a lot\" and wrote and recorded both a chorus and a verse to the instrumental. Offset \"thought it was sick\" and subsequently gave KSI authorisation to include the song on his debut studio album at the beginning of 2020. Speaking about collaborating with Offset, KSI said, \"Offset has always been someone who I would love to have on a song, but I never thought I'd get the opportunity to have him on a song.\" Offset performs the first verse, while KSI performs both the chorus and the second verse, with an auto-tune-heavy delivery. In the song, KSI addresses fake people and those who have deceived him in the past, with lyrics including, \"I can tell the fake from the fraud\" and \"I can't be no friends with no cap\". Speaking to Genius about the inspiration for \"Cap\", KSI explained, \"I wrote 'Cap' about certain people in my life; people who have back-stabbed me; people who are snakey with their movements.\" KSI continued, \"I'm pretty good at spotting what their true agendas are... [because] I've been fucked over in the past.\" Writing for Metro, Louise Griffin remarked that Offset is an \"iconic feature\" for KSI. It was filmed in a warehouse in Los Angeles in March 2020. The music video was released to KSI's YouTube channel on 22 May 2020 at 15:00 BST. The video is shot in black and white and comprises shots of KSI and Offset surrounded by women in a warehouse filled with candles, before they perform the song on a stage in front of an audience. It debuted at number 24 on the UK Singles Chart, making it the second highest-placed new entry of that week. The song also debuted at number 14 on the UK Hip Hop and R&B Singles Chart. Elsewhere in Europe, the song charted at number 98 on the Greek Singles Chart and number 98 on the Lithuanian Singles Chart.",
+      "attention_tier": "C",
+      "priority": 0.61,
+      "reading_order": 4,
+      "source_span": {
+        "start": 1116,
+        "end": 3244,
+        "quote": "\"Cap\" was produced by American record producers Diego Ave, Go Grizzly and Mally Mall. Offset wrote and recorded a verse to the instrumental. KSI was played the instrumental with Offset's verse during a recording studio session with the song's producers and American songwriter Ivory Scott in Los Angeles, United States, towards the end of 2019. KSI \"fucked with it a lot\" and wrote and recorded both a chorus and a verse to the instrumental. Offset \"thought it was sick\" and subsequently gave KSI authorisation to include the song on his debut studio album at the beginning of 2020. Speaking about collaborating with Offset, KSI said, \"Offset has always been someone who I would love to have on a song, but I never thought I'd get the opportunity to have him on a song.\" Offset performs the first verse, while KSI performs both the chorus and the second verse, with an auto-tune-heavy delivery. In the song, KSI addresses fake people and those who have deceived him in the past, with lyrics including, \"I can tell the fake from the fraud\" and \"I can't be no friends with no cap\". Speaking to Genius about the inspiration for \"Cap\", KSI explained, \"I wrote 'Cap' about certain people in my life; people who have back-stabbed me; people who are snakey with their movements.\" KSI continued, \"I'm pretty good at spotting what their true agendas are... [because] I've been fucked over in the past.\" Writing for Metro, Louise Griffin remarked that Offset is an \"iconic feature\" for KSI. It was filmed in a warehouse in Los Angeles in March 2020. The music video was released to KSI's YouTube channel on 22 May 2020 at 15:00 BST. The video is shot in black and white and comprises shots of KSI and Offset surrounded by women in a warehouse filled with candles, before they perform the song on a stage in front of an audience. It debuted at number 24 on the UK Singles Chart, making it the second highest-placed new entry of that week. The song also debuted at number 14 on the UK Hip Hop and R&B Singles Chart. Elsewhere in Europe, the song charted at number 98 on the Greek Singles Chart and number 98 on the Lithuanian Singles Chart."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-1",
+      "type": "appendix",
+      "content": "* KSIsongwriting, vocals\n* Offsetsongwriting, vocals\n* Diego Aveproduction, songwriting\n* Go Grizzlyproduction, songwriting\n* Mally Mallproduction, songwriting\n* Ivory Scottsongwriting\n* Michalis Michaelmixing\n* Henkka Niemistömastering",
+      "attention_tier": "D",
+      "priority": 0.49,
+      "reading_order": 5,
+      "source_span": {
+        "start": 3246,
+        "end": 3482,
+        "quote": "* KSIsongwriting, vocals\n* Offsetsongwriting, vocals\n* Diego Aveproduction, songwriting\n* Go Grizzlyproduction, songwriting\n* Mally Mallproduction, songwriting\n* Ivory Scottsongwriting\n* Michalis Michaelmixing\n* Henkka Niemistömastering"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-2",
+      "type": "appendix",
+      "content": "Category:2020 songs\nCategory:2020 singles\nCategory:KSI songs\nCategory:Offset (rapper) songs\nCategory:Songs written by KSI\nCategory:Songs written by Offset (rapper)\nCategory:Songs written by Mally Mall\nCategory:RBC Records singles\nCategory:BMG Rights Management singles",
+      "attention_tier": "D",
+      "priority": 0.37,
+      "reading_order": 6,
+      "source_span": {
+        "start": 3484,
+        "end": 3753,
+        "quote": "Category:2020 songs\nCategory:2020 singles\nCategory:KSI songs\nCategory:Offset (rapper) songs\nCategory:Songs written by KSI\nCategory:Songs written by Offset (rapper)\nCategory:Songs written by Mally Mall\nCategory:RBC Records singles\nCategory:BMG Rights Management singles\n"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:3f71126449b5c14d9c76797a593ed49e819c33c7f7cdd133c4c1ed7c45db44e4",
+    "chars": 3753,
+    "lang": "en"
+  }
+}

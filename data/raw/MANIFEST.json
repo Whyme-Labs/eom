@@ -1,0 +1,701 @@
+{
+  "version": "0.1",
+  "documents": [
+    {
+      "slug": "b-of-the-bang",
+      "doc_type": "other",
+      "source_url": "https://en.wikipedia.org/wiki/B_of_the_Bang",
+      "license": "CC-BY-SA-3.0",
+      "lang": "en",
+      "n_words": 1328
+    },
+    {
+      "slug": "cap-song",
+      "doc_type": "other",
+      "source_url": "https://en.wikipedia.org/wiki/Cap_(song)",
+      "license": "CC-BY-SA-3.0",
+      "lang": "en",
+      "n_words": 623
+    },
+    {
+      "slug": "harmonic-mean-p-value",
+      "doc_type": "other",
+      "source_url": "https://en.wikipedia.org/wiki/Harmonic_mean_p-value",
+      "license": "CC-BY-SA-3.0",
+      "lang": "en",
+      "n_words": 451
+    },
+    {
+      "slug": "no-464-squadron-raaf",
+      "doc_type": "other",
+      "source_url": "https://en.wikipedia.org/wiki/No._464_Squadron_RAAF",
+      "license": "CC-BY-SA-3.0",
+      "lang": "en",
+      "n_words": 784
+    },
+    {
+      "slug": "project-looking-glass",
+      "doc_type": "other",
+      "source_url": "https://en.wikipedia.org/wiki/Project_Looking_Glass",
+      "license": "CC-BY-SA-3.0",
+      "lang": "en",
+      "n_words": 730
+    },
+    {
+      "slug": "deborah-suttle",
+      "doc_type": "other",
+      "source_url": "https://en.wikipedia.org/wiki/Deborah_Suttle",
+      "license": "CC-BY-SA-3.0",
+      "lang": "en",
+      "n_words": 303
+    },
+    {
+      "slug": "maciej-henneberg",
+      "doc_type": "other",
+      "source_url": "https://en.wikipedia.org/wiki/Maciej_Henneberg",
+      "license": "CC-BY-SA-3.0",
+      "lang": "en",
+      "n_words": 829
+    },
+    {
+      "slug": "baron-skryne",
+      "doc_type": "other",
+      "source_url": "https://en.wikipedia.org/wiki/Baron_Skryne",
+      "license": "CC-BY-SA-3.0",
+      "lang": "en",
+      "n_words": 876
+    },
+    {
+      "slug": "revelation-records",
+      "doc_type": "other",
+      "source_url": "https://en.wikipedia.org/wiki/Revelation_Records",
+      "license": "CC-BY-SA-3.0",
+      "lang": "en",
+      "n_words": 598
+    },
+    {
+      "slug": "conus-leopardus",
+      "doc_type": "other",
+      "source_url": "https://en.wikipedia.org/wiki/Conus_leopardus",
+      "license": "CC-BY-SA-3.0",
+      "lang": "en",
+      "n_words": 582
+    },
+    {
+      "slug": "the-candidate-1972-film",
+      "doc_type": "other",
+      "source_url": "https://en.wikipedia.org/wiki/The_Candidate_(1972_film)",
+      "license": "CC-BY-SA-3.0",
+      "lang": "en",
+      "n_words": 1406
+    },
+    {
+      "slug": "rochester-public-library",
+      "doc_type": "other",
+      "source_url": "https://en.wikipedia.org/wiki/Rochester_Public_Library",
+      "license": "CC-BY-SA-3.0",
+      "lang": "en",
+      "n_words": 460
+    },
+    {
+      "slug": "nikos-goumas-stadium",
+      "doc_type": "other",
+      "source_url": "https://en.wikipedia.org/wiki/Nikos_Goumas_Stadium",
+      "license": "CC-BY-SA-3.0",
+      "lang": "en",
+      "n_words": 873
+    },
+    {
+      "slug": "springfield-thunderbirds",
+      "doc_type": "other",
+      "source_url": "https://en.wikipedia.org/wiki/Springfield_Thunderbirds",
+      "license": "CC-BY-SA-3.0",
+      "lang": "en",
+      "n_words": 939
+    },
+    {
+      "slug": "screen-directors-playhouse-radio-series",
+      "doc_type": "other",
+      "source_url": "https://en.wikipedia.org/wiki/Screen_Directors_Playhouse_(radio_series)",
+      "license": "CC-BY-SA-3.0",
+      "lang": "en",
+      "n_words": 645
+    },
+    {
+      "slug": "darya-moroz",
+      "doc_type": "other",
+      "source_url": "https://en.wikipedia.org/wiki/Darya_Moroz",
+      "license": "CC-BY-SA-3.0",
+      "lang": "en",
+      "n_words": 894
+    },
+    {
+      "slug": "ss-john-carter-rose",
+      "doc_type": "other",
+      "source_url": "https://en.wikipedia.org/wiki/SS_John_Carter_Rose",
+      "license": "CC-BY-SA-3.0",
+      "lang": "en",
+      "n_words": 552
+    },
+    {
+      "slug": "rfc-9160",
+      "doc_type": "policy",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc9160.txt",
+      "license": "IETF-public-domain",
+      "lang": "en",
+      "n_words": 263
+    },
+    {
+      "slug": "rfc-9060",
+      "doc_type": "policy",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc9060.txt",
+      "license": "IETF-public-domain",
+      "lang": "en",
+      "n_words": 257
+    },
+    {
+      "slug": "rfc-9130",
+      "doc_type": "policy",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc9130.txt",
+      "license": "IETF-public-domain",
+      "lang": "en",
+      "n_words": 211
+    },
+    {
+      "slug": "rfc-9030",
+      "doc_type": "policy",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc9030.txt",
+      "license": "IETF-public-domain",
+      "lang": "en",
+      "n_words": 242
+    },
+    {
+      "slug": "rfc-8100",
+      "doc_type": "policy",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8100.txt",
+      "license": "IETF-public-domain",
+      "lang": "en",
+      "n_words": 424
+    },
+    {
+      "slug": "rfc-8230",
+      "doc_type": "policy",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8230.txt",
+      "license": "IETF-public-domain",
+      "lang": "en",
+      "n_words": 294
+    },
+    {
+      "slug": "rfc-8740",
+      "doc_type": "policy",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8740.txt",
+      "license": "IETF-public-domain",
+      "lang": "en",
+      "n_words": 208
+    },
+    {
+      "slug": "rfc-8530",
+      "doc_type": "policy",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8530.txt",
+      "license": "IETF-public-domain",
+      "lang": "en",
+      "n_words": 313
+    },
+    {
+      "slug": "rfc-9090",
+      "doc_type": "policy",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc9090.txt",
+      "license": "IETF-public-domain",
+      "lang": "en",
+      "n_words": 250
+    },
+    {
+      "slug": "rfc-8350",
+      "doc_type": "policy",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8350.txt",
+      "license": "IETF-public-domain",
+      "lang": "en",
+      "n_words": 508
+    },
+    {
+      "slug": "rfc-8630",
+      "doc_type": "policy",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8630.txt",
+      "license": "IETF-public-domain",
+      "lang": "en",
+      "n_words": 342
+    },
+    {
+      "slug": "rfc-9110",
+      "doc_type": "policy",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc9110.txt",
+      "license": "IETF-public-domain",
+      "lang": "en",
+      "n_words": 388
+    },
+    {
+      "slug": "rfc-8670",
+      "doc_type": "policy",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8670.txt",
+      "license": "IETF-public-domain",
+      "lang": "en",
+      "n_words": 240
+    },
+    {
+      "slug": "rfc-8190",
+      "doc_type": "policy",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8190.txt",
+      "license": "IETF-public-domain",
+      "lang": "en",
+      "n_words": 265
+    },
+    {
+      "slug": "rfc-8690",
+      "doc_type": "policy",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8690.txt",
+      "license": "IETF-public-domain",
+      "lang": "en",
+      "n_words": 278
+    },
+    {
+      "slug": "rfc-9190",
+      "doc_type": "policy",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc9190.txt",
+      "license": "IETF-public-domain",
+      "lang": "en",
+      "n_words": 310
+    },
+    {
+      "slug": "rfc-8300",
+      "doc_type": "policy",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8300.txt",
+      "license": "IETF-public-domain",
+      "lang": "en",
+      "n_words": 268
+    },
+    {
+      "slug": "rfc-9150",
+      "doc_type": "policy",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc9150.txt",
+      "license": "IETF-public-domain",
+      "lang": "en",
+      "n_words": 339
+    },
+    {
+      "slug": "rfc-8730",
+      "doc_type": "policy",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8730.txt",
+      "license": "IETF-public-domain",
+      "lang": "en",
+      "n_words": 280
+    },
+    {
+      "slug": "rfc-9420",
+      "doc_type": "policy",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc9420.txt",
+      "license": "IETF-public-domain",
+      "lang": "en",
+      "n_words": 283
+    },
+    {
+      "slug": "rfc-8370",
+      "doc_type": "policy",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8370.txt",
+      "license": "IETF-public-domain",
+      "lang": "en",
+      "n_words": 282
+    },
+    {
+      "slug": "rfc-8320",
+      "doc_type": "policy",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8320.txt",
+      "license": "IETF-public-domain",
+      "lang": "en",
+      "n_words": 326
+    },
+    {
+      "slug": "rfc-8260",
+      "doc_type": "policy",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8260.txt",
+      "license": "IETF-public-domain",
+      "lang": "en",
+      "n_words": 383
+    },
+    {
+      "slug": "rfc-8860",
+      "doc_type": "policy",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8860.txt",
+      "license": "IETF-public-domain",
+      "lang": "en",
+      "n_words": 251
+    },
+    {
+      "slug": "rfc-8470",
+      "doc_type": "policy",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8470.txt",
+      "license": "IETF-public-domain",
+      "lang": "en",
+      "n_words": 286
+    },
+    {
+      "slug": "rfc-9490",
+      "doc_type": "policy",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc9490.txt",
+      "license": "IETF-public-domain",
+      "lang": "en",
+      "n_words": 283
+    },
+    {
+      "slug": "rfc-8600",
+      "doc_type": "policy",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8600.txt",
+      "license": "IETF-public-domain",
+      "lang": "en",
+      "n_words": 281
+    },
+    {
+      "slug": "rfc-8950",
+      "doc_type": "policy",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8950.txt",
+      "license": "IETF-public-domain",
+      "lang": "en",
+      "n_words": 351
+    },
+    {
+      "slug": "rfc-9260",
+      "doc_type": "policy",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc9260.txt",
+      "license": "IETF-public-domain",
+      "lang": "en",
+      "n_words": 552
+    },
+    {
+      "slug": "rfc-8540",
+      "doc_type": "policy",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc8540.txt",
+      "license": "IETF-public-domain",
+      "lang": "en",
+      "n_words": 338
+    },
+    {
+      "slug": "arxiv-260505206v1",
+      "doc_type": "paper",
+      "source_url": "https://arxiv.org/abs/2605.05206v1",
+      "license": "CC-BY-4.0",
+      "lang": "en",
+      "n_words": 184
+    },
+    {
+      "slug": "arxiv-260505176v1",
+      "doc_type": "paper",
+      "source_url": "https://arxiv.org/abs/2605.05176v1",
+      "license": "CC-BY-4.0",
+      "lang": "en",
+      "n_words": 140
+    },
+    {
+      "slug": "arxiv-260505151v1",
+      "doc_type": "paper",
+      "source_url": "https://arxiv.org/abs/2605.05151v1",
+      "license": "CC-BY-4.0",
+      "lang": "en",
+      "n_words": 223
+    },
+    {
+      "slug": "arxiv-260505133v1",
+      "doc_type": "paper",
+      "source_url": "https://arxiv.org/abs/2605.05133v1",
+      "license": "CC-BY-4.0",
+      "lang": "en",
+      "n_words": 150
+    },
+    {
+      "slug": "arxiv-260505066v1",
+      "doc_type": "paper",
+      "source_url": "https://arxiv.org/abs/2605.05066v1",
+      "license": "CC-BY-4.0",
+      "lang": "en",
+      "n_words": 178
+    },
+    {
+      "slug": "arxiv-260504998v1",
+      "doc_type": "paper",
+      "source_url": "https://arxiv.org/abs/2605.04998v1",
+      "license": "CC-BY-4.0",
+      "lang": "en",
+      "n_words": 254
+    },
+    {
+      "slug": "arxiv-260504971v1",
+      "doc_type": "paper",
+      "source_url": "https://arxiv.org/abs/2605.04971v1",
+      "license": "CC-BY-4.0",
+      "lang": "en",
+      "n_words": 168
+    },
+    {
+      "slug": "arxiv-260504957v1",
+      "doc_type": "paper",
+      "source_url": "https://arxiv.org/abs/2605.04957v1",
+      "license": "CC-BY-4.0",
+      "lang": "en",
+      "n_words": 195
+    },
+    {
+      "slug": "arxiv-260504952v1",
+      "doc_type": "paper",
+      "source_url": "https://arxiv.org/abs/2605.04952v1",
+      "license": "CC-BY-4.0",
+      "lang": "en",
+      "n_words": 192
+    },
+    {
+      "slug": "arxiv-260504913v1",
+      "doc_type": "paper",
+      "source_url": "https://arxiv.org/abs/2605.04913v1",
+      "license": "CC-BY-4.0",
+      "lang": "en",
+      "n_words": 175
+    },
+    {
+      "slug": "arxiv-260504899v1",
+      "doc_type": "paper",
+      "source_url": "https://arxiv.org/abs/2605.04899v1",
+      "license": "CC-BY-4.0",
+      "lang": "en",
+      "n_words": 102
+    },
+    {
+      "slug": "arxiv-260504834v1",
+      "doc_type": "paper",
+      "source_url": "https://arxiv.org/abs/2605.04834v1",
+      "license": "CC-BY-4.0",
+      "lang": "en",
+      "n_words": 180
+    },
+    {
+      "slug": "arxiv-260504830v1",
+      "doc_type": "paper",
+      "source_url": "https://arxiv.org/abs/2605.04830v1",
+      "license": "CC-BY-4.0",
+      "lang": "en",
+      "n_words": 156
+    },
+    {
+      "slug": "arxiv-260504770v1",
+      "doc_type": "paper",
+      "source_url": "https://arxiv.org/abs/2605.04770v1",
+      "license": "CC-BY-4.0",
+      "lang": "en",
+      "n_words": 245
+    },
+    {
+      "slug": "arxiv-260504759v1",
+      "doc_type": "paper",
+      "source_url": "https://arxiv.org/abs/2605.04759v1",
+      "license": "CC-BY-4.0",
+      "lang": "en",
+      "n_words": 215
+    },
+    {
+      "slug": "arxiv-260505192v1",
+      "doc_type": "paper",
+      "source_url": "https://arxiv.org/abs/2605.05192v1",
+      "license": "CC-BY-4.0",
+      "lang": "en",
+      "n_words": 186
+    },
+    {
+      "slug": "arxiv-260505170v1",
+      "doc_type": "paper",
+      "source_url": "https://arxiv.org/abs/2605.05170v1",
+      "license": "CC-BY-4.0",
+      "lang": "en",
+      "n_words": 176
+    },
+    {
+      "slug": "arxiv-260505166v1",
+      "doc_type": "paper",
+      "source_url": "https://arxiv.org/abs/2605.05166v1",
+      "license": "CC-BY-4.0",
+      "lang": "en",
+      "n_words": 187
+    },
+    {
+      "slug": "arxiv-260505164v1",
+      "doc_type": "paper",
+      "source_url": "https://arxiv.org/abs/2605.05164v1",
+      "license": "CC-BY-4.0",
+      "lang": "en",
+      "n_words": 243
+    },
+    {
+      "slug": "arxiv-260505159v1",
+      "doc_type": "paper",
+      "source_url": "https://arxiv.org/abs/2605.05159v1",
+      "license": "CC-BY-4.0",
+      "lang": "en",
+      "n_words": 169
+    },
+    {
+      "slug": "arxiv-260505155v1",
+      "doc_type": "paper",
+      "source_url": "https://arxiv.org/abs/2605.05155v1",
+      "license": "CC-BY-4.0",
+      "lang": "en",
+      "n_words": 244
+    },
+    {
+      "slug": "arxiv-260505148v1",
+      "doc_type": "paper",
+      "source_url": "https://arxiv.org/abs/2605.05148v1",
+      "license": "CC-BY-4.0",
+      "lang": "en",
+      "n_words": 214
+    },
+    {
+      "slug": "arxiv-260505138v1",
+      "doc_type": "paper",
+      "source_url": "https://arxiv.org/abs/2605.05138v1",
+      "license": "CC-BY-4.0",
+      "lang": "en",
+      "n_words": 191
+    },
+    {
+      "slug": "arxiv-260505125v1",
+      "doc_type": "paper",
+      "source_url": "https://arxiv.org/abs/2605.05125v1",
+      "license": "CC-BY-4.0",
+      "lang": "en",
+      "n_words": 255
+    },
+    {
+      "slug": "arxiv-260505118v1",
+      "doc_type": "paper",
+      "source_url": "https://arxiv.org/abs/2605.05118v1",
+      "license": "CC-BY-4.0",
+      "lang": "en",
+      "n_words": 191
+    },
+    {
+      "slug": "arxiv-260505104v1",
+      "doc_type": "paper",
+      "source_url": "https://arxiv.org/abs/2605.05104v1",
+      "license": "CC-BY-4.0",
+      "lang": "en",
+      "n_words": 215
+    },
+    {
+      "slug": "arxiv-260505103v1",
+      "doc_type": "paper",
+      "source_url": "https://arxiv.org/abs/2605.05103v1",
+      "license": "CC-BY-4.0",
+      "lang": "en",
+      "n_words": 231
+    },
+    {
+      "slug": "arxiv-260505097v1",
+      "doc_type": "paper",
+      "source_url": "https://arxiv.org/abs/2605.05097v1",
+      "license": "CC-BY-4.0",
+      "lang": "en",
+      "n_words": 137
+    },
+    {
+      "slug": "arxiv-260504885v1",
+      "doc_type": "paper",
+      "source_url": "https://arxiv.org/abs/2605.04885v1",
+      "license": "CC-BY-4.0",
+      "lang": "en",
+      "n_words": 212
+    },
+    {
+      "slug": "arxiv-260504576v1",
+      "doc_type": "paper",
+      "source_url": "https://arxiv.org/abs/2605.04576v1",
+      "license": "CC-BY-4.0",
+      "lang": "en",
+      "n_words": 248
+    },
+    {
+      "slug": "arxiv-260504449v1",
+      "doc_type": "paper",
+      "source_url": "https://arxiv.org/abs/2605.04449v1",
+      "license": "CC-BY-4.0",
+      "lang": "en",
+      "n_words": 176
+    },
+    {
+      "slug": "arxiv-260504196v1",
+      "doc_type": "paper",
+      "source_url": "https://arxiv.org/abs/2605.04196v1",
+      "license": "CC-BY-4.0",
+      "lang": "en",
+      "n_words": 151
+    },
+    {
+      "slug": "arxiv-260503971v1",
+      "doc_type": "paper",
+      "source_url": "https://arxiv.org/abs/2605.03971v1",
+      "license": "CC-BY-4.0",
+      "lang": "en",
+      "n_words": 172
+    },
+    {
+      "slug": "arxiv-260503824v1",
+      "doc_type": "paper",
+      "source_url": "https://arxiv.org/abs/2605.03824v1",
+      "license": "CC-BY-4.0",
+      "lang": "en",
+      "n_words": 190
+    },
+    {
+      "slug": "arxiv-260503092v1",
+      "doc_type": "paper",
+      "source_url": "https://arxiv.org/abs/2605.03092v1",
+      "license": "CC-BY-4.0",
+      "lang": "en",
+      "n_words": 136
+    },
+    {
+      "slug": "arxiv-260502665v1",
+      "doc_type": "paper",
+      "source_url": "https://arxiv.org/abs/2605.02665v1",
+      "license": "CC-BY-4.0",
+      "lang": "en",
+      "n_words": 222
+    },
+    {
+      "slug": "arxiv-260502443v1",
+      "doc_type": "paper",
+      "source_url": "https://arxiv.org/abs/2605.02443v1",
+      "license": "CC-BY-4.0",
+      "lang": "en",
+      "n_words": 148
+    },
+    {
+      "slug": "arxiv-260502234v1",
+      "doc_type": "paper",
+      "source_url": "https://arxiv.org/abs/2605.02234v1",
+      "license": "CC-BY-4.0",
+      "lang": "en",
+      "n_words": 222
+    },
+    {
+      "slug": "arxiv-260504103v1",
+      "doc_type": "paper",
+      "source_url": "https://arxiv.org/abs/2605.04103v1",
+      "license": "CC-BY-4.0",
+      "lang": "en",
+      "n_words": 221
+    },
+    {
+      "slug": "arxiv-260501591v1",
+      "doc_type": "paper",
+      "source_url": "https://arxiv.org/abs/2605.01591v1",
+      "license": "CC-BY-4.0",
+      "lang": "en",
+      "n_words": 194
+    }
+  ]
+}

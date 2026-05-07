@@ -1,0 +1,225 @@
+{
+  "version": "0.1",
+  "document_type": "other",
+  "summary": "The Rochester Public Library is a public library system serving the city of Rochester, New York, United States. Founded in 1911, the system ",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "Rochester Public Library",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 26,
+        "quote": "Rochester Public Library"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "The Rochester Public Library is a public library system serving the city of Rochester, New York, United States. Founded in 1911, the system consists of the Central Library, located in downtown Rochester, and ten neighborhood branch libraries. The library is a member of the Monroe County Library System, which serves all of Monroe County, New York.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 28,
+        "end": 376,
+        "quote": "The Rochester Public Library is a public library system serving the city of Rochester, New York, United States. Founded in 1911, the system consists of the Central Library, located in downtown Rochester, and ten neighborhood branch libraries. The library is a member of the Monroe County Library System, which serves all of Monroe County, New York."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "The history of libraries in Rochester dates to the 1820s with the formation of literary social clubs. The Rochester Athenaeum was founded in 1828, followed by the Mechanics Literary Association in 1836. These organizations sponsored book collections that…",
+      "attention_tier": "B",
+      "priority": 0.85,
+      "reading_order": 2,
+      "source_span": {
+        "start": 378,
+        "end": 849,
+        "quote": "The history of libraries in Rochester dates to the 1820s with the formation of literary social clubs. The Rochester Athenaeum was founded in 1828, followed by the Mechanics Literary Association in 1836. These organizations sponsored book collections that were often made available to the public. The two groups merged in 1847 to form the Athenaeum and Mechanics Association, whose collection grew to several thousand volumes before the organization went bankrupt in 1877."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "Mortimer Reynolds, a prominent Rochester businessman, purchased the collection virtually intact. The Reynolds Library operated as a subscription library until it merged with the Rochester Public Library in the 1930s. Together, both buildings at 115 South Avenue serve as the Central Library of Rochester and Monroe County.",
+      "attention_tier": "B",
+      "priority": 0.7954545454545454,
+      "reading_order": 3,
+      "source_span": {
+        "start": 851,
+        "end": 1173,
+        "quote": "Mortimer Reynolds, a prominent Rochester businessman, purchased the collection virtually intact. The Reynolds Library operated as a subscription library until it merged with the Rochester Public Library in the 1930s. Together, both buildings at 115 South Avenue serve as the Central Library of Rochester and Monroe County."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-2",
+      "type": "evidence",
+      "content": "The Central Library of Rochester and Monroe County occupies two buildings: the Rundel Memorial Library and the Bausch & Lomb Public Library Building. The Central Library serves as both a public library and the operational hub of the Monroe County Library System.",
+      "attention_tier": "C",
+      "priority": 0.7409090909090909,
+      "reading_order": 4,
+      "source_span": {
+        "start": 1175,
+        "end": 1437,
+        "quote": "The Central Library of Rochester and Monroe County occupies two buildings: the Rundel Memorial Library and the Bausch & Lomb Public Library Building. The Central Library serves as both a public library and the operational hub of the Monroe County Library System."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-2",
+      "type": "factbox",
+      "content": "The Local History and Genealogy Division, located on the second floor of the Rundel Building, holds the largest collection of materials about the history of Rochester and the Genesee Valley in the region. The collection includes more than 10,000 photographs and postcards, 3,000 maps, 2,000 school yearbooks, 350 scrapbooks, and city directories dating from 1827.",
+      "attention_tier": "C",
+      "priority": 0.6863636363636364,
+      "reading_order": 5,
+      "source_span": {
+        "start": 1439,
+        "end": 1802,
+        "quote": "The Local History and Genealogy Division, located on the second floor of the Rundel Building, holds the largest collection of materials about the history of Rochester and the Genesee Valley in the region. The collection includes more than 10,000 photographs and postcards, 3,000 maps, 2,000 school yearbooks, 350 scrapbooks, and city directories dating from 1827."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "Notable holdings include original issues of The North Star, the anti-slavery newspaper published by Frederick Douglass in Rochester, records of the Rochester Women's Educational and Industrial Union, and personal papers of Susan B. Anthony and Nathaniel Rochester.",
+      "attention_tier": "C",
+      "priority": 0.6318181818181818,
+      "reading_order": 6,
+      "source_span": {
+        "start": 1804,
+        "end": 2068,
+        "quote": "Notable holdings include original issues of The North Star, the anti-slavery newspaper published by Frederick Douglass in Rochester, records of the Rochester Women's Educational and Industrial Union, and personal papers of Susan B. Anthony and Nathaniel Rochester."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-3",
+      "type": "evidence",
+      "content": "In 2024, the library launched the Archive of Black History and Culture, a collection documenting African American history in Rochester and the surrounding region. The archive includes materials related to Frederick Douglass's time in Rochester, the Underground Railroad, and the city's civil rights history.",
+      "attention_tier": "C",
+      "priority": 0.5772727272727273,
+      "reading_order": 7,
+      "source_span": {
+        "start": 2070,
+        "end": 2377,
+        "quote": "In 2024, the library launched the Archive of Black History and Culture, a collection documenting African American history in Rochester and the surrounding region. The archive includes materials related to Frederick Douglass's time in Rochester, the Underground Railroad, and the city's civil rights history."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-2",
+      "type": "claim",
+      "content": "The Rochester Public Library operates ten neighborhood branch libraries throughout the city:",
+      "attention_tier": "C",
+      "priority": 0.5227272727272727,
+      "reading_order": 8,
+      "source_span": {
+        "start": 2379,
+        "end": 2471,
+        "quote": "The Rochester Public Library operates ten neighborhood branch libraries throughout the city:"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-1",
+      "type": "appendix",
+      "content": "The Rochester Public Library is governed by an eleven-member Board of Trustees appointed by the Mayor with approval of the City Council. Trustees serve five-year terms. One seat is reserved for a trustee from the Monroe County Library System Board, and one seat for a representative from the Reynolds Library Board.",
+      "attention_tier": "D",
+      "priority": 0.4681818181818182,
+      "reading_order": 9,
+      "source_span": {
+        "start": 2473,
+        "end": 2788,
+        "quote": "The Rochester Public Library is governed by an eleven-member Board of Trustees appointed by the Mayor with approval of the City Council. Trustees serve five-year terms. One seat is reserved for a trustee from the Monroe County Library System Board, and one seat for a representative from the Reynolds Library Board."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-2",
+      "type": "appendix",
+      "content": "* Rundel Memorial Library\n* Monroe County Library System\n* Frederick Douglass\n* Susan B. Anthony",
+      "attention_tier": "D",
+      "priority": 0.41363636363636364,
+      "reading_order": 10,
+      "source_span": {
+        "start": 2790,
+        "end": 2886,
+        "quote": "* Rundel Memorial Library\n* Monroe County Library System\n* Frederick Douglass\n* Susan B. Anthony"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-3",
+      "type": "appendix",
+      "content": "*\n* Rochester Public Library at New York Heritage",
+      "attention_tier": "D",
+      "priority": 0.35909090909090907,
+      "reading_order": 11,
+      "source_span": {
+        "start": 2888,
+        "end": 2937,
+        "quote": "*\n* Rochester Public Library at New York Heritage"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-4",
+      "type": "appendix",
+      "content": "Category:Public libraries in New York (state)\nCategory:Rochester, New York\nCategory:Libraries established in 1911\nCategory:1911 establishments in New York (state)",
+      "attention_tier": "D",
+      "priority": 0.30454545454545456,
+      "reading_order": 12,
+      "source_span": {
+        "start": 2939,
+        "end": 3102,
+        "quote": "Category:Public libraries in New York (state)\nCategory:Rochester, New York\nCategory:Libraries established in 1911\nCategory:1911 establishments in New York (state)\n"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:5b60ccd27e9522bd1606f3ce95b7314111d2bfb2d7f5549c7dfb09e51a8a3dd8",
+    "chars": 3102,
+    "lang": "en"
+  }
+}

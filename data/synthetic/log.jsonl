@@ -1,0 +1,90 @@
+{"slug": "conus-leopardus", "doc_type": "other", "passed": true, "attempts": 1, "elapsed_s": 52.7, "error": ""}
+{"slug": "baron-skryne", "doc_type": "other", "passed": false, "attempts": 3, "elapsed_s": 152.81, "error": "harness failures: ['H3', 'H11', 'H11', 'H11']"}
+{"slug": "cap-song", "doc_type": "other", "passed": true, "attempts": 2, "elapsed_s": 239.59, "error": ""}
+{"slug": "darya-moroz", "doc_type": "other", "passed": true, "attempts": 1, "elapsed_s": 240.18, "error": ""}
+{"slug": "b-of-the-bang", "doc_type": "other", "passed": false, "attempts": 3, "elapsed_s": 378.06, "error": "harness failures: ['H3', 'H11', 'H11', 'H11', 'H11']"}
+{"slug": "harmonic-mean-p-value", "doc_type": "other", "passed": true, "attempts": 3, "elapsed_s": 146.81, "error": ""}
+{"slug": "no-464-squadron-raaf", "doc_type": "other", "passed": true, "attempts": 1, "elapsed_s": 41.02, "error": ""}
+{"slug": "deborah-suttle", "doc_type": "other", "passed": false, "attempts": 3, "elapsed_s": 278.3, "error": "harness failures: ['H11', 'H11', 'H11']"}
+{"slug": "maciej-henneberg", "doc_type": "other", "passed": true, "attempts": 1, "elapsed_s": 271.29, "error": ""}
+{"slug": "project-looking-glass", "doc_type": "other", "passed": false, "attempts": 3, "elapsed_s": 229.79, "error": "harness failures: ['H3', 'H11', 'H11', 'H11']"}
+{"slug": "rochester-public-library", "doc_type": "other", "passed": false, "attempts": 3, "elapsed_s": 146.96, "error": "harness failures: ['H3', 'H11', 'H11', 'H11']"}
+{"slug": "revelation-records", "doc_type": "other", "passed": false, "attempts": 3, "elapsed_s": 310.4, "error": "harness failures: ['H3', 'H11', 'H11', 'H11', 'H11']"}
+{"slug": "screen-directors-playhouse-radio-series", "doc_type": "other", "passed": false, "attempts": 3, "elapsed_s": 234.51, "error": "harness failures: ['H3', 'H11', 'H11', 'H11', 'H11']"}
+{"slug": "nikos-goumas-stadium", "doc_type": "other", "passed": false, "attempts": 3, "elapsed_s": 554.69, "error": "harness failures: ['H3', 'H11', 'H11', 'H11']"}
+{"slug": "the-candidate-1972-film", "doc_type": "other", "passed": true, "attempts": 2, "elapsed_s": 77.68, "error": ""}
+{"slug": "arxiv-260501591v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 71.74, "error": "harness failures: ['H11']"}
+{"slug": "arxiv-260502234v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 182.01, "error": "harness failures: ['H11', 'H11']"}
+{"slug": "arxiv-260502443v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 217.51, "error": "harness failures: ['H3', 'H8', 'H11', 'H11']"}
+{"slug": "arxiv-260502665v1", "doc_type": "paper", "passed": true, "attempts": 1, "elapsed_s": 76.93, "error": ""}
+{"slug": "arxiv-260503824v1", "doc_type": "paper", "passed": true, "attempts": 1, "elapsed_s": 23.58, "error": ""}
+{"slug": "arxiv-260503971v1", "doc_type": "paper", "passed": true, "attempts": 2, "elapsed_s": 68.32, "error": ""}
+{"slug": "arxiv-260503092v1", "doc_type": "paper", "passed": true, "attempts": 1, "elapsed_s": 127.71, "error": ""}
+{"slug": "springfield-thunderbirds", "doc_type": "other", "passed": true, "attempts": 3, "elapsed_s": 653.52, "error": ""}
+{"slug": "ss-john-carter-rose", "doc_type": "other", "passed": true, "attempts": 3, "elapsed_s": 678.39, "error": ""}
+{"slug": "arxiv-260504196v1", "doc_type": "paper", "passed": true, "attempts": 1, "elapsed_s": 99.49, "error": ""}
+{"slug": "arxiv-260504449v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 149.57, "error": "harness failures: ['H3', 'H11', 'H11']"}
+{"slug": "arxiv-260504103v1", "doc_type": "paper", "passed": true, "attempts": 1, "elapsed_s": 257.47, "error": ""}
+{"slug": "arxiv-260504576v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 222.42, "error": "harness failures: ['H3', 'H11', 'H11', 'H11']"}
+{"slug": "arxiv-260504759v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 206.82, "error": "harness failures: ['H11', 'H11']"}
+{"slug": "arxiv-260504770v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 150.88, "error": "harness failures: ['H3', 'H11', 'H11', 'H11']"}
+{"slug": "arxiv-260504899v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 64.45, "error": "harness failures: ['H8', 'H11']"}
+{"slug": "arxiv-260504830v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 165.36, "error": "harness failures: ['H11']"}
+{"slug": "arxiv-260504834v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 115.46, "error": "harness failures: ['H3', 'H11', 'H11', 'H11', 'H11']"}
+{"slug": "conus-leopardus", "doc_type": "other", "passed": true, "attempts": 1, "elapsed_s": 28.19, "error": ""}
+{"slug": "baron-skryne", "doc_type": "other", "passed": true, "attempts": 1, "elapsed_s": 28.46, "error": ""}
+{"slug": "b-of-the-bang", "doc_type": "other", "passed": false, "attempts": 3, "elapsed_s": 90.44, "error": "harness failures: ['H3', 'H11', 'H11', 'H11', 'H11']"}
+{"slug": "harmonic-mean-p-value", "doc_type": "other", "passed": true, "attempts": 1, "elapsed_s": 36.44, "error": ""}
+{"slug": "darya-moroz", "doc_type": "other", "passed": true, "attempts": 1, "elapsed_s": 204.3, "error": ""}
+{"slug": "deborah-suttle", "doc_type": "other", "passed": false, "attempts": 3, "elapsed_s": 467.79, "error": "harness failures: ['H3', 'H11', 'H11', 'H11', 'H11']"}
+{"slug": "maciej-henneberg", "doc_type": "other", "passed": false, "attempts": 3, "elapsed_s": 381.62, "error": "harness failures: ['H3', 'H3', 'H11', 'H11', 'H11']"}
+{"slug": "no-464-squadron-raaf", "doc_type": "other", "passed": true, "attempts": 1, "elapsed_s": 55.68, "error": ""}
+{"slug": "cap-song", "doc_type": "other", "passed": true, "attempts": 2, "elapsed_s": 556.95, "error": ""}
+{"slug": "rochester-public-library", "doc_type": "other", "passed": true, "attempts": 2, "elapsed_s": 127.98, "error": ""}
+{"slug": "nikos-goumas-stadium", "doc_type": "other", "passed": false, "attempts": 3, "elapsed_s": 527.58, "error": "harness failures: ['H3', 'H11', 'H11', 'H11', 'H11']"}
+{"slug": "project-looking-glass", "doc_type": "other", "passed": false, "attempts": 3, "elapsed_s": 449.52, "error": "harness failures: ['H3', 'H11', 'H11', 'H11']"}
+{"slug": "springfield-thunderbirds", "doc_type": "other", "passed": true, "attempts": 2, "elapsed_s": 239.73, "error": ""}
+{"slug": "screen-directors-playhouse-radio-series", "doc_type": "other", "passed": true, "attempts": 3, "elapsed_s": 350.29, "error": ""}
+{"slug": "ss-john-carter-rose", "doc_type": "other", "passed": false, "attempts": 3, "elapsed_s": 180.07, "error": "harness failures: ['H3', 'H3', 'H11', 'H11', 'H11']"}
+{"slug": "arxiv-260501591v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 106.41, "error": "harness failures: ['H11', 'H11', 'H11']"}
+{"slug": "revelation-records", "doc_type": "other", "passed": false, "attempts": 3, "elapsed_s": 663.77, "error": "harness failures: ['H3', 'H11', 'H11']"}
+{"slug": "arxiv-260502665v1", "doc_type": "paper", "passed": true, "attempts": 1, "elapsed_s": 16.77, "error": ""}
+{"slug": "arxiv-260503092v1", "doc_type": "paper", "passed": true, "attempts": 2, "elapsed_s": 74.07, "error": ""}
+{"slug": "arxiv-260503824v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 145.11, "error": "harness failures: ['H3', 'H11', 'H11']"}
+{"slug": "arxiv-260503971v1", "doc_type": "paper", "passed": true, "attempts": 1, "elapsed_s": 32.44, "error": ""}
+{"slug": "arxiv-260502234v1", "doc_type": "paper", "passed": true, "attempts": 3, "elapsed_s": 386.88, "error": ""}
+{"slug": "arxiv-260502443v1", "doc_type": "paper", "passed": true, "attempts": 3, "elapsed_s": 419.99, "error": ""}
+{"slug": "arxiv-260504196v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 167.45, "error": "harness failures: ['H11', 'H11']"}
+{"slug": "arxiv-260504103v1", "doc_type": "paper", "passed": true, "attempts": 1, "elapsed_s": 238.17, "error": ""}
+{"slug": "arxiv-260504449v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 188.78, "error": "harness failures: ['H3', 'H11', 'H11', 'H11']"}
+{"slug": "arxiv-260504576v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 108.71, "error": "harness failures: ['H11', 'H11']"}
+{"slug": "the-candidate-1972-film", "doc_type": "other", "passed": false, "attempts": 3, "elapsed_s": 820.25, "error": "harness failures: ['H3', 'H11', 'H11', 'H11', 'H11']"}
+{"slug": "arxiv-260504759v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 119.71, "error": "harness failures: ['H11', 'H11']"}
+{"slug": "arxiv-260504770v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 127.66, "error": "harness failures: ['H3', 'H11']"}
+{"slug": "arxiv-260504830v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 114.04, "error": "harness failures: ['H11']"}
+{"slug": "arxiv-260504899v1", "doc_type": "paper", "passed": true, "attempts": 3, "elapsed_s": 61.16, "error": ""}
+{"slug": "arxiv-260504885v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 163.27, "error": "harness failures: ['H8', 'H11', 'H11', 'H11']"}
+{"slug": "arxiv-260504913v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 94.07, "error": "harness failures: ['H11']"}
+{"slug": "arxiv-260504952v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 85.64, "error": "harness failures: ['H11', 'H11']"}
+{"slug": "arxiv-260504971v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 130.72, "error": "harness failures: ['H8', 'H11', 'H11', 'H11']"}
+{"slug": "arxiv-260504957v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 167.17, "error": "harness failures: ['H3', 'H8', 'H11', 'H11']"}
+{"slug": "arxiv-260504998v1", "doc_type": "paper", "passed": true, "attempts": 2, "elapsed_s": 169.75, "error": ""}
+{"slug": "arxiv-260505066v1", "doc_type": "paper", "passed": true, "attempts": 2, "elapsed_s": 209.08, "error": ""}
+{"slug": "arxiv-260504834v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 543.46, "error": "harness failures: ['H3', 'H11', 'H11', 'H11', 'H11']"}
+{"slug": "arxiv-260505103v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 195.51, "error": "harness failures: ['H3', 'H11', 'H11', 'H11']"}
+{"slug": "arxiv-260505097v1", "doc_type": "paper", "passed": true, "attempts": 1, "elapsed_s": 225.35, "error": ""}
+{"slug": "arxiv-260505125v1", "doc_type": "paper", "passed": true, "attempts": 1, "elapsed_s": 44.44, "error": ""}
+{"slug": "arxiv-260505118v1", "doc_type": "paper", "passed": true, "attempts": 1, "elapsed_s": 91.26, "error": ""}
+{"slug": "arxiv-260505104v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 128.93, "error": "harness failures: ['H11', 'H11']"}
+{"slug": "arxiv-260505151v1", "doc_type": "paper", "passed": true, "attempts": 1, "elapsed_s": 18.89, "error": ""}
+{"slug": "arxiv-260505148v1", "doc_type": "paper", "passed": true, "attempts": 1, "elapsed_s": 147.63, "error": ""}
+{"slug": "arxiv-260505133v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 207.79, "error": "harness failures: ['H3', 'H11', 'H11']"}
+{"slug": "arxiv-260505155v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 110.41, "error": "harness failures: ['H3', 'H11', 'H11']"}
+{"slug": "arxiv-260505159v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 129.25, "error": "harness failures: ['H3', 'H11', 'H11', 'H11']"}
+{"slug": "arxiv-260505138v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 341.73, "error": "harness failures: ['H3', 'H11', 'H11']"}
+{"slug": "arxiv-260505166v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 191.58, "error": "harness failures: ['H11']"}
+{"slug": "arxiv-260505192v1", "doc_type": "paper", "passed": true, "attempts": 1, "elapsed_s": 60.48, "error": ""}
+{"slug": "arxiv-260505176v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 145.85, "error": "harness failures: ['H8', 'H11', 'H11']"}
+{"slug": "rfc-8100", "doc_type": "policy", "passed": false, "attempts": 3, "elapsed_s": 90.64, "error": "harness failures: ['H3', 'H11', 'H11', 'H11']"}
+{"slug": "arxiv-260505170v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 338.96, "error": "harness failures: ['H11', 'H11']"}
+{"slug": "arxiv-260505164v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 485.11, "error": "harness failures: ['H3', 'H11', 'H11', 'H11', 'H11']"}

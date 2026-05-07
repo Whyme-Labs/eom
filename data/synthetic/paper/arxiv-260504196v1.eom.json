@@ -1,0 +1,81 @@
+{
+  "version": "0.1",
+  "document_type": "paper",
+  "summary": "Authors: Oona Itkonen, Jörg Tiedemann",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "The Impact of Vocabulary Overlaps on Knowledge Transfer in Multilingual Machine Translation",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 93,
+        "quote": "The Impact of Vocabulary Overlaps on Knowledge Transfer in Multilingual Machine Translation"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "Authors: Oona Itkonen, Jörg Tiedemann",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 95,
+        "end": 132,
+        "quote": "Authors: Oona Itkonen, Jörg Tiedemann"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "Abstract",
+      "attention_tier": "C",
+      "priority": 0.85,
+      "reading_order": 2,
+      "source_span": {
+        "start": 134,
+        "end": 145,
+        "quote": "## Abstract"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "Knowledge transfer, especially across related languages, has been found beneficial for multilingual neural machine translation (MNMT), but some aspects are still under-explored and deserve further investigation. A joint vocabulary is most often applied to form a uniform word embedding space, but since the impact of a disjoint vocabulary on model performance is far less studied, there is no consensus on how much knowledge transfer is mainly due to vocabulary overlap. In this paper, we present systematic experiments with joint and disjoint vocabularies, and auxiliary languages related and unrelated to the source language. We design this experiment in an out-of-domain setup in order to emphasize transfer and the impact of the auxiliary language. As expected, we yield better results with more extensive vocabulary overlaps typical for related languages, but our experiments also show that domain-match and language relatedness are more important than a joint vocabulary.",
+      "attention_tier": "B",
+      "priority": 0.55,
+      "reading_order": 3,
+      "source_span": {
+        "start": 147,
+        "end": 1125,
+        "quote": "Knowledge transfer, especially across related languages, has been found beneficial for multilingual neural machine translation (MNMT), but some aspects are still under-explored and deserve further investigation. A joint vocabulary is most often applied to form a uniform word embedding space, but since the impact of a disjoint vocabulary on model performance is far less studied, there is no consensus on how much knowledge transfer is mainly due to vocabulary overlap. In this paper, we present systematic experiments with joint and disjoint vocabularies, and auxiliary languages related and unrelated to the source language. We design this experiment in an out-of-domain setup in order to emphasize transfer and the impact of the auxiliary language. As expected, we yield better results with more extensive vocabulary overlaps typical for related languages, but our experiments also show that domain-match and language relatedness are more important than a joint vocabulary.\n"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:62e68e3dcc33bbd45fdd0f78da28a79235d326461eb7c34928b8cd2f41279bf4",
+    "chars": 1125,
+    "lang": "en"
+  }
+}

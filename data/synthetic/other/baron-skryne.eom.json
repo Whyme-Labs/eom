@@ -1,0 +1,241 @@
+{
+  "version": "0.1",
+  "document_type": "other",
+  "summary": "Baron Skryne was the title of the holder of an Irish feudal barony: the title derived from the parish of Skryne, or Skreen, in County Meath.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "Baron Skryne",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 14,
+        "quote": "Baron Skryne"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "Baron Skryne was the title of the holder of an Irish feudal barony: the title derived from the parish of Skryne, or Skreen, in County Meath. It was not recognised as a barony in the Peerage of Ireland, but was habitually used firstly by the de Feypo family and then by their descendants, the Marwards. The Barons of Skryne were",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 16,
+        "end": 343,
+        "quote": "Baron Skryne was the title of the holder of an Irish feudal barony: the title derived from the parish of Skryne, or Skreen, in County Meath. It was not recognised as a barony in the Peerage of Ireland, but was habitually used firstly by the de Feypo family and then by their descendants, the Marwards. The Barons of Skryne were"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "Hugh de Lacy, Lord of Meath in 1173 granted the lands of Skryne and Santry to his lieutenant Adam de Feypo, who was the first of his family to use the title Baron of Skryne. Despite…",
+      "attention_tier": "B",
+      "priority": 0.85,
+      "reading_order": 2,
+      "source_span": {
+        "start": 717,
+        "end": 1395,
+        "quote": "Hugh de Lacy, Lord of Meath in 1173 granted the lands of Skryne and Santry to his lieutenant Adam de Feypo, who was the first of his family to use the title Baron of Skryne. Despite Adam's loyalty to Hugh de Lacy, his son Richard, second Baron Skryne, witnessed a charter in 1210 forfeiting the de Lacy inheritance. A later Richard, perhaps the first Richard's grandson, died in the reign of Edward I leaving an underage son, Simon. In 1302 Simon, by then an adult, brought a successful lawsuit against his former guardian Theobald de Verdon for wasting his inheritance. The last of the de Feypo barons of Skryne, Francis, founded an Augustinian friary and a chantry about 1340."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "decision-1",
+      "type": "decision",
+      "content": "Francis's daughter and heiress Katherine de Feypo married Thomas Marward in about 1375. Lord Francis's eldest son and heir John de Feipo along with his son, also called John, had died before Francis and Katherine became heiress…",
+      "attention_tier": "B",
+      "priority": 0.7999999999999999,
+      "reading_order": 3,
+      "source_span": {
+        "start": 1397,
+        "end": 1933,
+        "quote": "Francis's daughter and heiress Katherine de Feypo married Thomas Marward in about 1375. Lord Francis's eldest son and heir John de Feipo along with his son, also called John, had died before Francis and Katherine became heiress to Skryne. Robert de Feipo, Katherine's surviving brother must have been somewhat out of sorts as he should have been the rightful heir. There had been de Feypos holding the title of Baron for five generations. Robert lived in Santry Castle near Dunboyne and his descendants also used the title Baron Skryne."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "When the Marwards first adopted the title Baron Skryne is uncertain, but it was certainly before 1414, when Thomas Marward, Baron Skryne, was killed taking part in putting down a rebellion by O'Connor Fahy. His son, also called Thomas, being a minor, was made a Royal ward, and in 1422 King Henry VI of England granted the wardship to Stephen de Bray, the Chief Justice of the Irish Common Pleas. A few years later Anne Marward, described as the daughter of Baron Skryne (almost certainly Richard, who died in 1478), married as his first wife Sir Alexander Plunket (died 1503), a future Lord Chancellor of Ireland. Walter Marward, Baron Skryne (died 1487), who was probably Anne's brother, was apparently a man of some consequence, who married Margaret St Lawrence, daughter of the powerful Anglo-Irish peer and statesman Christopher St Lawrence, 2nd Baron Howth. After Skryne's death, she remarried Sir William Darcy of Platten, another leading Anglo-Irish statesman and writer on political issues.",
+      "attention_tier": "C",
+      "priority": 0.75,
+      "reading_order": 4,
+      "source_span": {
+        "start": 1935,
+        "end": 2934,
+        "quote": "When the Marwards first adopted the title Baron Skryne is uncertain, but it was certainly before 1414, when Thomas Marward, Baron Skryne, was killed taking part in putting down a rebellion by O'Connor Fahy. His son, also called Thomas, being a minor, was made a Royal ward, and in 1422 King Henry VI of England granted the wardship to Stephen de Bray, the Chief Justice of the Irish Common Pleas. A few years later Anne Marward, described as the daughter of Baron Skryne (almost certainly Richard, who died in 1478), married as his first wife Sir Alexander Plunket (died 1503), a future Lord Chancellor of Ireland. Walter Marward, Baron Skryne (died 1487), who was probably Anne's brother, was apparently a man of some consequence, who married Margaret St Lawrence, daughter of the powerful Anglo-Irish peer and statesman Christopher St Lawrence, 2nd Baron Howth. After Skryne's death, she remarried Sir William Darcy of Platten, another leading Anglo-Irish statesman and writer on political issues."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "William Nugent, the second son of Richard, Baron Delvin, married Janet Marward, only daughter and heiress of Walter Marward, baron of Skryne, who died c. 1565, and inherited with this marriage the manor of Santry among other possessions.",
+      "attention_tier": "C",
+      "priority": 0.7,
+      "reading_order": 5,
+      "source_span": {
+        "start": 2936,
+        "end": 3173,
+        "quote": "William Nugent, the second son of Richard, Baron Delvin, married Janet Marward, only daughter and heiress of Walter Marward, baron of Skryne, who died c. 1565, and inherited with this marriage the manor of Santry among other possessions."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-2",
+      "type": "factbox",
+      "content": "In the sixteenth century, the Marward family were involved in two notable scandals. In 1534 James Marward, Baron Skryne, grandson of Walter and Margaret, was murdered by Richard FitzGerald, younger son of Gerald FitzGerald, 8th Earl of Kildare, supposedly at the instigation of James' wife, Maud Darcy, who later married Fitzgerald. James left an only son Thomas (or Walter) who died about 1565, leaving a daughter and heiress, Janet, titular Barones of Skryne. Her mother, Janet Plunket, daughter of Sir John Plunket, remarried the leading judge Nicholas Nugent, who was given wardship of his step-daughter. Nugent apparently conspired with his favourite nephew, William Nugent to kidnap Janet and force her into marriage with William. Despite the scandal surrounding the marriage, it could not be dissolved. William died in 1625 and Janet in 1629.",
+      "attention_tier": "C",
+      "priority": 0.65,
+      "reading_order": 6,
+      "source_span": {
+        "start": 3175,
+        "end": 4024,
+        "quote": "In the sixteenth century, the Marward family were involved in two notable scandals. In 1534 James Marward, Baron Skryne, grandson of Walter and Margaret, was murdered by Richard FitzGerald, younger son of Gerald FitzGerald, 8th Earl of Kildare, supposedly at the instigation of James' wife, Maud Darcy, who later married Fitzgerald. James left an only son Thomas (or Walter) who died about 1565, leaving a daughter and heiress, Janet, titular Barones of Skryne. Her mother, Janet Plunket, daughter of Sir John Plunket, remarried the leading judge Nicholas Nugent, who was given wardship of his step-daughter. Nugent apparently conspired with his favourite nephew, William Nugent to kidnap Janet and force her into marriage with William. Despite the scandal surrounding the marriage, it could not be dissolved. William died in 1625 and Janet in 1629."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-2",
+      "type": "caveat",
+      "content": "The Skryne inheritance passed to James Nugent, eldest son of William and Janet, but his lands were forfeit to the English Crown after he took part in the Irish Rebellion of 1641, and the title lapsed.",
+      "attention_tier": "C",
+      "priority": 0.6,
+      "reading_order": 7,
+      "source_span": {
+        "start": 4026,
+        "end": 4226,
+        "quote": "The Skryne inheritance passed to James Nugent, eldest son of William and Janet, but his lands were forfeit to the English Crown after he took part in the Irish Rebellion of 1641, and the title lapsed."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-2",
+      "type": "claim",
+      "content": "Incomplete list",
+      "attention_tier": "C",
+      "priority": 0.55,
+      "reading_order": 8,
+      "source_span": {
+        "start": 4228,
+        "end": 4243,
+        "quote": "Incomplete list"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-3",
+      "type": "factbox",
+      "content": "*Adam de Feypo, Baron Skryne (died 1190/91)\n*Richard de Feypo, Baron Skryne (living 1210)\n*Richard de Feypo, Baron Skryne (living 1290)\n*Simon de Feypo, Baron Skryne (living 1302)\n*Francis de Feypo, Baron Skryne (died before 1375)",
+      "attention_tier": "C",
+      "priority": 0.49999999999999994,
+      "reading_order": 9,
+      "source_span": {
+        "start": 4245,
+        "end": 4475,
+        "quote": "*Adam de Feypo, Baron Skryne (died 1190/91)\n*Richard de Feypo, Baron Skryne (living 1210)\n*Richard de Feypo, Baron Skryne (living 1290)\n*Simon de Feypo, Baron Skryne (living 1302)\n*Francis de Feypo, Baron Skryne (died before 1375)"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-4",
+      "type": "factbox",
+      "content": "Incomplete list\n*Thomas Marward, Baron Skryne (killed 1414)\n*Thomas Marward, Baron Skryne (living 1422)\n*Richard Marward, Baron Skryne (described as Baron in 1459, died 1478)\n*Walter Marward, Baron Skryne (died 1487)\n*Thomas Marward, Baron Skryne (1484-1503)\n*James Marward, Baron Skryne (1501-1534)\n*Walter Marward, Baron Skryne (died c.1565)\n*Thomas Marward, Baron Skryne (died 1568)",
+      "attention_tier": "C",
+      "priority": 0.45,
+      "reading_order": 10,
+      "source_span": {
+        "start": 4477,
+        "end": 4862,
+        "quote": "Incomplete list\n*Thomas Marward, Baron Skryne (killed 1414)\n*Thomas Marward, Baron Skryne (living 1422)\n*Richard Marward, Baron Skryne (described as Baron in 1459, died 1478)\n*Walter Marward, Baron Skryne (died 1487)\n*Thomas Marward, Baron Skryne (1484-1503)\n*James Marward, Baron Skryne (1501-1534)\n*Walter Marward, Baron Skryne (died c.1565)\n*Thomas Marward, Baron Skryne (died 1568)"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-1",
+      "type": "appendix",
+      "content": "*Janet Marward Nugent, Baroness Skryne (died 1629), daughter of Walter\n*James Nugent, Baron Skryne (died after 1641)",
+      "attention_tier": "D",
+      "priority": 0.4,
+      "reading_order": 11,
+      "source_span": {
+        "start": 4864,
+        "end": 4980,
+        "quote": "*Janet Marward Nugent, Baroness Skryne (died 1629), daughter of Walter\n*James Nugent, Baron Skryne (died after 1641)"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-5",
+      "type": "factbox",
+      "content": "* The Parliamentary Gazetteer of Ireland: Adapted to the New Poor-law, Franchise, Municipal and Ecclesiastical Arrangements, and Compiled with a Special Reference to the Lines of Railroad and Canal Communication, as Existing in 1814-45, vol. 3, p.&nbsp;204 (1846). Dublin, London and Edinburgh. Published by A. Fullarton and Company, 1846",
+      "attention_tier": "C",
+      "priority": 0.35,
+      "reading_order": 12,
+      "source_span": {
+        "start": 4982,
+        "end": 5320,
+        "quote": "* The Parliamentary Gazetteer of Ireland: Adapted to the New Poor-law, Franchise, Municipal and Ecclesiastical Arrangements, and Compiled with a Special Reference to the Lines of Railroad and Canal Communication, as Existing in 1814-45, vol. 3, p.&nbsp;204 (1846). Dublin, London and Edinburgh. Published by A. Fullarton and Company, 1846"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-2",
+      "type": "appendix",
+      "content": "Skryne\nCategory:Lordship of Ireland\nCategory:1170 establishments in Ireland\nCategory:1641 disestablishments in Ireland\nCategory:Early modern history of Ireland",
+      "attention_tier": "D",
+      "priority": 0.30000000000000004,
+      "reading_order": 13,
+      "source_span": {
+        "start": 5322,
+        "end": 5482,
+        "quote": "Skryne\nCategory:Lordship of Ireland\nCategory:1170 establishments in Ireland\nCategory:1641 disestablishments in Ireland\nCategory:Early modern history of Ireland\n"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:e142ed8b0ff653d9faa4d4d1303465f86feb238744165536525963f5fa019567",
+    "chars": 5482,
+    "lang": "en"
+  }
+}

@@ -1,0 +1,369 @@
+{
+  "version": "0.1",
+  "document_type": "other",
+  "summary": "The Springfield Thunderbirds are a professional ice hockey team based in Springfield, Massachusetts. They are the American Hockey League (AH",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "Springfield Thunderbirds",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 26,
+        "quote": "Springfield Thunderbirds"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "The Springfield Thunderbirds are a professional ice hockey team based in Springfield, Massachusetts. They are the American Hockey League (AHL) affiliate of the National Hockey League's St. Louis Blues. The Thunderbirds play their home games at the MassMutual Center.",
+      "attention_tier": "A",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 28,
+        "end": 294,
+        "quote": "The Springfield Thunderbirds are a professional ice hockey team based in Springfield, Massachusetts. They are the American Hockey League (AHL) affiliate of the National Hockey League's St. Louis Blues. The Thunderbirds play their home games at the MassMutual Center."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "In May 2016, following the relocation of the Springfield Falcons to Tucson, Arizona, after the team was sold to the Arizona Coyotes, the AHL's Portland Pirates were sold to a Springfield-based group who relocated the franchise to Springfield for the…",
+      "attention_tier": "B",
+      "priority": 0.85,
+      "reading_order": 2,
+      "source_span": {
+        "start": 296,
+        "end": 561,
+        "quote": "In May 2016, following the relocation of the Springfield Falcons to Tucson, Arizona, after the team was sold to the Arizona Coyotes, the AHL's Portland Pirates were sold to a Springfield-based group who relocated the franchise to Springfield for the 2016–17 season."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "The new owners were a consortium of local business interests seeking to keep hockey in Springfield, and included Paul Picknelly, owner of the Springfield Sheraton and member of the family-owning Peter Pan Bus Lines, as well as several local hotel owners. A team from Springfield has taken the ice in the AHL and its predecessors for all but seven years since 1926, and in every season since 1954.",
+      "attention_tier": "B",
+      "priority": 0.82,
+      "reading_order": 3,
+      "source_span": {
+        "start": 563,
+        "end": 959,
+        "quote": "The new owners were a consortium of local business interests seeking to keep hockey in Springfield, and included Paul Picknelly, owner of the Springfield Sheraton and member of the family-owning Peter Pan Bus Lines, as well as several local hotel owners. A team from Springfield has taken the ice in the AHL and its predecessors for all but seven years since 1926, and in every season since 1954."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "The Thunderbirds inherited the Florida Panthers' affiliation with the Pirates. The Panthers assigned their assistant general manager, Eric Joyce, to be Springfield's general manager and named Geordie Kinnear as the new head coach. The Thunderbirds also named Bruce Landon, the Falcons' and Indians' longtime president and general manager, as a consultant, while hiring AHL executive Nathan Costa as their executive vice-president in charge of business operations. The team's new name was announced at a press conference on June 15, 2016. Team management explained that Thunderbirds invokes both the mythological Thunderbird and the United States Air Force presence in the region, such as the Barnes and Westover Air Reserve Bases.",
+      "attention_tier": "B",
+      "priority": 0.79,
+      "reading_order": 4,
+      "source_span": {
+        "start": 961,
+        "end": 1691,
+        "quote": "The Thunderbirds inherited the Florida Panthers' affiliation with the Pirates. The Panthers assigned their assistant general manager, Eric Joyce, to be Springfield's general manager and named Geordie Kinnear as the new head coach. The Thunderbirds also named Bruce Landon, the Falcons' and Indians' longtime president and general manager, as a consultant, while hiring AHL executive Nathan Costa as their executive vice-president in charge of business operations. The team's new name was announced at a press conference on June 15, 2016. Team management explained that Thunderbirds invokes both the mythological Thunderbird and the United States Air Force presence in the region, such as the Barnes and Westover Air Reserve Bases."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-2",
+      "type": "factbox",
+      "content": "The Thunderbirds played their first game on October 15, 2016, a 4–2 loss to the Lehigh Valley Phantoms. Anthony Greco scored the first goal in team history. On October 22, 2016, the Thunderbirds played their home opener, a 5–4 win, against the St. John's IceCaps. Dryden Hunt scored the first goal on home ice, and MacKenzie Weegar scored the game-winning goal in overtime in front of a sellout crowd of 6,793. While the inaugural season did not result in a playoff berth, average attendance rose from 3,108 in the Falcons' last season to 4,618 and including three sellouts.",
+      "attention_tier": "B",
+      "priority": 0.76,
+      "reading_order": 5,
+      "source_span": {
+        "start": 1693,
+        "end": 2267,
+        "quote": "The Thunderbirds played their first game on October 15, 2016, a 4–2 loss to the Lehigh Valley Phantoms. Anthony Greco scored the first goal in team history. On October 22, 2016, the Thunderbirds played their home opener, a 5–4 win, against the St. John's IceCaps. Dryden Hunt scored the first goal on home ice, and MacKenzie Weegar scored the game-winning goal in overtime in front of a sellout crowd of 6,793. While the inaugural season did not result in a playoff berth, average attendance rose from 3,108 in the Falcons' last season to 4,618 and including three sellouts."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-3",
+      "type": "factbox",
+      "content": "On February 17, 2018, it was announced that the Springfield Thunderbirds and the MassMutual Center would host the 2019 AHL All-Star Classic and Skills contest, to take place on January 27–28, 2019. This marked the first AHL All-Star Game in Springfield since 1959. MGM Springfield served as the host of the event. The Western Conference was victorious in the skills competition, while the Central Division defeated the Atlantic Division in the championship game of the round-robin event. Both events were sold out.",
+      "attention_tier": "B",
+      "priority": 0.73,
+      "reading_order": 6,
+      "source_span": {
+        "start": 2269,
+        "end": 2783,
+        "quote": "On February 17, 2018, it was announced that the Springfield Thunderbirds and the MassMutual Center would host the 2019 AHL All-Star Classic and Skills contest, to take place on January 27–28, 2019. This marked the first AHL All-Star Game in Springfield since 1959. MGM Springfield served as the host of the event. The Western Conference was victorious in the skills competition, while the Central Division defeated the Atlantic Division in the championship game of the round-robin event. Both events were sold out."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-2",
+      "type": "caveat",
+      "content": "On March 6, 2020, the Springfield Thunderbirds announced a five-year affiliation deal with the St. Louis Blues of the NHL starting from the 2020–21 season. The affiliation with Florida did not yield any playoff appearances, but saw a number of players recalled to the NHL. The team had seen attendance rise in each of its four seasons. Drew Bannister was announced as the second head coach in team history coming from the Blues' previous affiliate, the San Antonio Rampage. However, due to the ongoing restrictions during the COVID-19 pandemic, the Thunderbirds were one of three teams that opted out of the 2020–21 AHL season.",
+      "attention_tier": "C",
+      "priority": 0.7,
+      "reading_order": 7,
+      "source_span": {
+        "start": 2785,
+        "end": 3412,
+        "quote": "On March 6, 2020, the Springfield Thunderbirds announced a five-year affiliation deal with the St. Louis Blues of the NHL starting from the 2020–21 season. The affiliation with Florida did not yield any playoff appearances, but saw a number of players recalled to the NHL. The team had seen attendance rise in each of its four seasons. Drew Bannister was announced as the second head coach in team history coming from the Blues' previous affiliate, the San Antonio Rampage. However, due to the ongoing restrictions during the COVID-19 pandemic, the Thunderbirds were one of three teams that opted out of the 2020–21 AHL season."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-4",
+      "type": "factbox",
+      "content": "In the 2021-22 AHL season, with COVID restrictions lifted and the Thunderbirds having by far their best season, they led the Atlantic Division with a 43-26-4-3 record, with a team record average attendance of 5,375. They made the playoffs for the first time, sweeping the Wilkes-Barre/Scranton Penguins and the Charlotte Checkers in the first two rounds before winning the third against the Laval Rocket in seven games. In the Thunderbirds' first Calder Cup Finals appearance, they were defeated by the Chicago Wolves in five games.",
+      "attention_tier": "C",
+      "priority": 0.6699999999999999,
+      "reading_order": 8,
+      "source_span": {
+        "start": 3414,
+        "end": 3946,
+        "quote": "In the 2021-22 AHL season, with COVID restrictions lifted and the Thunderbirds having by far their best season, they led the Atlantic Division with a 43-26-4-3 record, with a team record average attendance of 5,375. They made the playoffs for the first time, sweeping the Wilkes-Barre/Scranton Penguins and the Charlotte Checkers in the first two rounds before winning the third against the Laval Rocket in seven games. In the Thunderbirds' first Calder Cup Finals appearance, they were defeated by the Chicago Wolves in five games."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-5",
+      "type": "factbox",
+      "content": "On October 4, 2024, the Thunderbirds renewed their affiliation agreement with the St. Louis Blues through the 2030–2031 season.",
+      "attention_tier": "C",
+      "priority": 0.64,
+      "reading_order": 9,
+      "source_span": {
+        "start": 3948,
+        "end": 4075,
+        "quote": "On October 4, 2024, the Thunderbirds renewed their affiliation agreement with the St. Louis Blues through the 2030–2031 season."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-6",
+      "type": "factbox",
+      "content": "The market was previously home to:\n*Springfield Indians (1926–1994)\n*Springfield Falcons (1994–2016)",
+      "attention_tier": "C",
+      "priority": 0.61,
+      "reading_order": 10,
+      "source_span": {
+        "start": 4077,
+        "end": 4177,
+        "quote": "The market was previously home to:\n*Springfield Indians (1926–1994)\n*Springfield Falcons (1994–2016)"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "Updated March 9, 2026.",
+      "attention_tier": "C",
+      "priority": 0.58,
+      "reading_order": 11,
+      "source_span": {
+        "start": 4179,
+        "end": 4201,
+        "quote": "Updated March 9, 2026."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-2",
+      "type": "claim",
+      "content": "|}",
+      "attention_tier": "C",
+      "priority": 0.55,
+      "reading_order": 12,
+      "source_span": {
+        "start": 4203,
+        "end": 4205,
+        "quote": "|}"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-7",
+      "type": "factbox",
+      "content": "* Brent Regner, 2016–2017\n* Paul Thompson, 2018–2020\n* Tommy Cross, 2021–2023\n* Matthew Peca, 2023–2026\n* Chris Wagner, 2026–present",
+      "attention_tier": "C",
+      "priority": 0.52,
+      "reading_order": 13,
+      "source_span": {
+        "start": 4207,
+        "end": 4339,
+        "quote": "* Brent Regner, 2016–2017\n* Paul Thompson, 2018–2020\n* Tommy Cross, 2021–2023\n* Matthew Peca, 2023–2026\n* Chris Wagner, 2026–present"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-3",
+      "type": "claim",
+      "content": "*#2: Eddie Shore\n*#23: Rob Murray",
+      "attention_tier": "C",
+      "priority": 0.49,
+      "reading_order": 14,
+      "source_span": {
+        "start": 4341,
+        "end": 4374,
+        "quote": "*#2: Eddie Shore\n*#23: Rob Murray"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-2",
+      "type": "evidence",
+      "content": "Note: Shore's number was retired by the Springfield Indians, and Murray's by the Springfield Falcons; the Thunderbirds continue to honor both numbers. Former AHL president Jack Butterfield and vice president Gordie Anziano, longtime Springfield residents, as well as former Indians' general manager and Falcons founder Bruce Landon, and Willie O'Ree, the first African American to play in the AHL, have been honored with banners raised with the retired numbers.",
+      "attention_tier": "C",
+      "priority": 0.45999999999999996,
+      "reading_order": 15,
+      "source_span": {
+        "start": 4376,
+        "end": 4837,
+        "quote": "Note: Shore's number was retired by the Springfield Indians, and Murray's by the Springfield Falcons; the Thunderbirds continue to honor both numbers. Former AHL president Jack Butterfield and vice president Gordie Anziano, longtime Springfield residents, as well as former Indians' general manager and Falcons founder Bruce Landon, and Willie O'Ree, the first African American to play in the AHL, have been honored with banners raised with the retired numbers."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-1",
+      "type": "appendix",
+      "content": "Players playing at least 100 games in Springfield and 100 games in major leagues.",
+      "attention_tier": "D",
+      "priority": 0.43,
+      "reading_order": 16,
+      "source_span": {
+        "start": 4839,
+        "end": 4920,
+        "quote": "Players playing at least 100 games in Springfield and 100 games in major leagues."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-2",
+      "type": "appendix",
+      "content": "*Josh Brown\n*Bobby Farnham\n*Dryden Hunt\n*Juho Lammikko\n*Steven Santini\n*Mackenzie MacEachern",
+      "attention_tier": "D",
+      "priority": 0.4,
+      "reading_order": 17,
+      "source_span": {
+        "start": 4922,
+        "end": 5014,
+        "quote": "*Josh Brown\n*Bobby Farnham\n*Dryden Hunt\n*Juho Lammikko\n*Steven Santini\n*Mackenzie MacEachern"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-8",
+      "type": "factbox",
+      "content": ";Single season\n:Goals: 44, Adam Gaudette (2023–24)\n:Goals by a Rookie: 19, Owen Tippett (2019–20)\n:Power Play Goals: 15, Adam Gaudette (2023-24)\n:Short Handed Goals: 6, Anthony Greco (2017–18)\n:Assists: 44, Sam Anas (2021–22)\n:Points: 71, Adam Gaudette (2023-24)\n:Penalty Minutes: 147, Sena Acolatse (2016–17)\n:+/-: 23, Ian McCoshen (2016–17)\n:Appearances by a Goalie: 47, Joel Hofer (2022–23)\n:GAA:2.21, Charlie Lindgren (2021–22)\n:SV%:.925 Charlie Lindgren (2021–22)\n:Shutouts: 5, Joel Hofer (2022–23)",
+      "attention_tier": "C",
+      "priority": 0.37,
+      "reading_order": 18,
+      "source_span": {
+        "start": 5016,
+        "end": 5519,
+        "quote": ";Single season\n:Goals: 44, Adam Gaudette (2023–24)\n:Goals by a Rookie: 19, Owen Tippett (2019–20)\n:Power Play Goals: 15, Adam Gaudette (2023-24)\n:Short Handed Goals: 6, Anthony Greco (2017–18)\n:Assists: 44, Sam Anas (2021–22)\n:Points: 71, Adam Gaudette (2023-24)\n:Penalty Minutes: 147, Sena Acolatse (2016–17)\n:+/-: 23, Ian McCoshen (2016–17)\n:Appearances by a Goalie: 47, Joel Hofer (2022–23)\n:GAA:2.21, Charlie Lindgren (2021–22)\n:SV%:.925 Charlie Lindgren (2021–22)\n:Shutouts: 5, Joel Hofer (2022–23)"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-9",
+      "type": "factbox",
+      "content": ";Career\n:Games: 261, Anthony Greco\n:Penalty Minutes: 238, Paul Thompson\n:Goaltending Wins: 45, Joel Hofer\n:Shutouts: 6 Joel Hofer\n:Goals: 85, Anthony Greco\n:Assists: 124, Matthew Peca\n:Points: 199, Matthew Peca\n:Power Play Goals: 20, Dryden Hunt\n:Short Handed Goals: 16, Anthony Greco",
+      "attention_tier": "C",
+      "priority": 0.33999999999999997,
+      "reading_order": 19,
+      "source_span": {
+        "start": 5521,
+        "end": 5805,
+        "quote": ";Career\n:Games: 261, Anthony Greco\n:Penalty Minutes: 238, Paul Thompson\n:Goaltending Wins: 45, Joel Hofer\n:Shutouts: 6 Joel Hofer\n:Goals: 85, Anthony Greco\n:Assists: 124, Matthew Peca\n:Points: 199, Matthew Peca\n:Power Play Goals: 20, Dryden Hunt\n:Short Handed Goals: 16, Anthony Greco"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-3",
+      "type": "appendix",
+      "content": "*Springfield Thunderbirds Official Website",
+      "attention_tier": "D",
+      "priority": 0.30999999999999994,
+      "reading_order": 20,
+      "source_span": {
+        "start": 5807,
+        "end": 5849,
+        "quote": "*Springfield Thunderbirds Official Website"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-4",
+      "type": "appendix",
+      "content": "Category:American Hockey League teams\nCategory:Florida Panthers minor league affiliates\nCategory:Professional ice hockey teams in Massachusetts\nCategory:Ice hockey teams in Springfield, Massachusetts\nCategory:Ice hockey clubs established in 2016\nCategory:2016 establishments in Massachusetts\nCategory:St. Louis Blues minor league affiliates",
+      "attention_tier": "D",
+      "priority": 0.28,
+      "reading_order": 21,
+      "source_span": {
+        "start": 5852,
+        "end": 6193,
+        "quote": "Category:American Hockey League teams\nCategory:Florida Panthers minor league affiliates\nCategory:Professional ice hockey teams in Massachusetts\nCategory:Ice hockey teams in Springfield, Massachusetts\nCategory:Ice hockey clubs established in 2016\nCategory:2016 establishments in Massachusetts\nCategory:St. Louis Blues minor league affiliates\n"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:53b6824ee69c8944ebb8953cb76dab4458a00fdd4991f0b0b1ccd383752222c9",
+    "chars": 6193,
+    "lang": "en"
+  }
+}

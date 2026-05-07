@@ -1,0 +1,177 @@
+{
+  "version": "0.1",
+  "document_type": "other",
+  "summary": "Conus leopardus, common name the leopard cone, is a species of predatory sea snail, a marine gastropod mollusk in the family Conidae, the co",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "Conus leopardus",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 17,
+        "quote": "Conus leopardus"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "Conus leopardus, common name the leopard cone, is a species of predatory sea snail, a marine gastropod mollusk in the family Conidae, the cone snails, cone shells, or cones.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 19,
+        "end": 192,
+        "quote": "Conus leopardus, common name the leopard cone, is a species of predatory sea snail, a marine gastropod mollusk in the family Conidae, the cone snails, cone shells, or cones."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "decision-1",
+      "type": "decision",
+      "content": "Like all species within the genus Conus, these snails are predatory and venomous. They are capable of stinging humans, therefore live ones should be handled carefully or not at all.",
+      "attention_tier": "B",
+      "priority": 0.85,
+      "reading_order": 2,
+      "source_span": {
+        "start": 194,
+        "end": 375,
+        "quote": "Like all species within the genus Conus, these snails are predatory and venomous. They are capable of stinging humans, therefore live ones should be handled carefully or not at all."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "The size of an adult shell varies between 50&nbsp;mm and 222&nbsp;mm.",
+      "attention_tier": "C",
+      "priority": 0.775,
+      "reading_order": 3,
+      "source_span": {
+        "start": 377,
+        "end": 446,
+        "quote": "The size of an adult shell varies between 50&nbsp;mm and 222&nbsp;mm."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-2",
+      "type": "claim",
+      "content": "This marine species occurs in the Indian Ocean off Aldabra, Chagos, Madagascar, the Mascarene basin, Mauritius, and Tanzania; in the entire Indo-Pacific Region; off Australia (Northern Territory, Queensland, Western Australia).",
+      "attention_tier": "C",
+      "priority": 0.7,
+      "reading_order": 4,
+      "source_span": {
+        "start": 448,
+        "end": 675,
+        "quote": "This marine species occurs in the Indian Ocean off Aldabra, Chagos, Madagascar, the Mascarene basin, Mauritius, and Tanzania; in the entire Indo-Pacific Region; off Australia (Northern Territory, Queensland, Western Australia)."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-3",
+      "type": "claim",
+      "content": "* Conus leopardus Dillwyn, 1817 is a synonym of Conus vexillum Gmelin, 1791",
+      "attention_tier": "C",
+      "priority": 0.625,
+      "reading_order": 5,
+      "source_span": {
+        "start": 677,
+        "end": 752,
+        "quote": "* Conus leopardus Dillwyn, 1817 is a synonym of Conus vexillum Gmelin, 1791"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "* Röding, P.F. 1798. Museum Boltenianum sive Catalogus cimeliorum e tribus regnis naturae quae olim collegerat Joa. Hamburg : Trappii 199 pp\n* Lamarck, J.B.P.A. de M. 1822. Histoire naturelle des Animaux sans Vertèbres. Paris : J.B. Lamarck Vol. 7 711 pp\n* Reeve, L.A. 1843. Monograph of the genus Conus. pls 1-39 in Reeve, L.A. (ed.). Conchologica Iconica. London : L. Reeve & Co. Vol. 1.\n* Dautzenberg, P. 1937. Gastéropodes marins. 3-Famille Conidae'; Résultats Scientifiques du Voyage aux Indes Orientales Néerlandaises de LL. AA. RR. Le Prince et la Princesse Lé Belgique. Mémoires du Musée Royal d'Histoire Naturelle de Belgique 2(18): 284 pp, 3 pls\n* Demond, J. 1957. Micronesian reef associated gastropods. Pacific Science 11(3): 275-341, fig. 2, pl. 1\n* Spry, J.F. (1961). The sea shells of Dar es Salaam: Gastropods. Tanganyika Notes and Records 56\n* Rippingale, O.H. & McMichael, D.F. 1961. Queensland and Great Barrier Reef Shells. Brisbane : Jacaranda Press 210 pp.\n* Maes, V.O. 1967. The littoral marine mollusks of Cocos-Keeling Islands (Indian Ocean). Proceedings of the Academy of Natural Sciences, Philadelphia 119: 93-217\n* Wilson, B.R. & Gillett, K. 1971. Australian Shells: illustrating and describing 600 species of marine gastropods found in Australian waters. Sydney : Reed Books 168 pp.\n* Hinton, A. 1972. Shells of New Guinea and the Central Indo-Pacific. Milton : Jacaranda Press xviii 94 pp.\n* Salvat, B. & Rives, C. 1975. Coquillages de Polynésie. Tahiti : Papéete Les editions du pacifique, pp.&nbsp;1–391.\n* Cernohorsky, W.O. 1978. Tropical Pacific Marine Shells. Sydney : Pacific Publications 352 pp., 68 pls.\n* Kay, E.A. 1979. Hawaiian Marine Shells. Reef and shore fauna of Hawaii. Section 4 : Mollusca. Honolulu, Hawaii : Bishop Museum Press Bernice P. Bishop Museum Special Publication Vol. 64(4) 653 pp.\n* Drivas, J.; Jay, M. (1987). Coquillages de La Réunion et de l'Île Maurice. Collection Les Beautés de la Nature. Delachaux et Niestlé: Neuchâtel. . 159 pp\n* Wilson, B. 1994. Australian Marine Shells. Prosobranch Gastropods. Kallaroo, WA : Odyssey Publishing Vol. 2 370 pp.\n* Röckel, D., Korn, W. & Kohn, A.J. 1995. Manual of the Living Conidae. Volume 1: Indo-Pacific Region. Wiesbaden : Hemmen 517 pp.\n* Filmer R.M. (2001). A Catalogue of Nomenclature and Taxonomy in the Living Conidae 1758 - 1998. Backhuys Publishers, Leiden. 388pp\n* Tucker J.K. & Tenorio M.J. (2009) Systematic classification of Recent and fossil conoidean gastropods. Hackenheim: Conchbooks. 296 pp\n* Puillandre N., Duda T.F., Meyer C., Olivera B.M. & Bouchet P. (2015). One, four or 100 genera? A new classification of the cone snails. Journal of Molluscan Studies. 81: 1-23",
+      "attention_tier": "C",
+      "priority": 0.55,
+      "reading_order": 6,
+      "source_span": {
+        "start": 754,
+        "end": 3444,
+        "quote": "* Röding, P.F. 1798. Museum Boltenianum sive Catalogus cimeliorum e tribus regnis naturae quae olim collegerat Joa. Hamburg : Trappii 199 pp\n* Lamarck, J.B.P.A. de M. 1822. Histoire naturelle des Animaux sans Vertèbres. Paris : J.B. Lamarck Vol. 7 711 pp\n* Reeve, L.A. 1843. Monograph of the genus Conus. pls 1-39 in Reeve, L.A. (ed.). Conchologica Iconica. London : L. Reeve & Co. Vol. 1.\n* Dautzenberg, P. 1937. Gastéropodes marins. 3-Famille Conidae'; Résultats Scientifiques du Voyage aux Indes Orientales Néerlandaises de LL. AA. RR. Le Prince et la Princesse Lé Belgique. Mémoires du Musée Royal d'Histoire Naturelle de Belgique 2(18): 284 pp, 3 pls\n* Demond, J. 1957. Micronesian reef associated gastropods. Pacific Science 11(3): 275-341, fig. 2, pl. 1\n* Spry, J.F. (1961). The sea shells of Dar es Salaam: Gastropods. Tanganyika Notes and Records 56\n* Rippingale, O.H. & McMichael, D.F. 1961. Queensland and Great Barrier Reef Shells. Brisbane : Jacaranda Press 210 pp.\n* Maes, V.O. 1967. The littoral marine mollusks of Cocos-Keeling Islands (Indian Ocean). Proceedings of the Academy of Natural Sciences, Philadelphia 119: 93-217\n* Wilson, B.R. & Gillett, K. 1971. Australian Shells: illustrating and describing 600 species of marine gastropods found in Australian waters. Sydney : Reed Books 168 pp.\n* Hinton, A. 1972. Shells of New Guinea and the Central Indo-Pacific. Milton : Jacaranda Press xviii 94 pp.\n* Salvat, B. & Rives, C. 1975. Coquillages de Polynésie. Tahiti : Papéete Les editions du pacifique, pp.&nbsp;1–391.\n* Cernohorsky, W.O. 1978. Tropical Pacific Marine Shells. Sydney : Pacific Publications 352 pp., 68 pls.\n* Kay, E.A. 1979. Hawaiian Marine Shells. Reef and shore fauna of Hawaii. Section 4 : Mollusca. Honolulu, Hawaii : Bishop Museum Press Bernice P. Bishop Museum Special Publication Vol. 64(4) 653 pp.\n* Drivas, J.; Jay, M. (1987). Coquillages de La Réunion et de l'Île Maurice. Collection Les Beautés de la Nature. Delachaux et Niestlé: Neuchâtel. . 159 pp\n* Wilson, B. 1994. Australian Marine Shells. Prosobranch Gastropods. Kallaroo, WA : Odyssey Publishing Vol. 2 370 pp.\n* Röckel, D., Korn, W. & Kohn, A.J. 1995. Manual of the Living Conidae. Volume 1: Indo-Pacific Region. Wiesbaden : Hemmen 517 pp.\n* Filmer R.M. (2001). A Catalogue of Nomenclature and Taxonomy in the Living Conidae 1758 - 1998. Backhuys Publishers, Leiden. 388pp\n* Tucker J.K. & Tenorio M.J. (2009) Systematic classification of Recent and fossil conoidean gastropods. Hackenheim: Conchbooks. 296 pp\n* Puillandre N., Duda T.F., Meyer C., Olivera B.M. & Bouchet P. (2015). One, four or 100 genera? A new classification of the cone snails. Journal of Molluscan Studies. 81: 1-23"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-2",
+      "type": "factbox",
+      "content": "File:Conus leopardus 1.jpg|Conus leopardus (Röding, P.F., 1798)\nFile:Conus leopardus 2.jpg|Conus leopardus (Röding, P.F., 1798)\nFile:Conus leopardus 3.jpg|Conus leopardus (Röding, P.F., 1798)",
+      "attention_tier": "C",
+      "priority": 0.475,
+      "reading_order": 7,
+      "source_span": {
+        "start": 3446,
+        "end": 3637,
+        "quote": "File:Conus leopardus 1.jpg|Conus leopardus (Röding, P.F., 1798)\nFile:Conus leopardus 2.jpg|Conus leopardus (Röding, P.F., 1798)\nFile:Conus leopardus 3.jpg|Conus leopardus (Röding, P.F., 1798)"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-1",
+      "type": "appendix",
+      "content": "*\n* Cone Shells - Knights of the Sea",
+      "attention_tier": "D",
+      "priority": 0.4,
+      "reading_order": 8,
+      "source_span": {
+        "start": 3639,
+        "end": 3675,
+        "quote": "*\n* Cone Shells - Knights of the Sea"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-2",
+      "type": "appendix",
+      "content": "leopardus\nCategory:Gastropods described in 1798",
+      "attention_tier": "D",
+      "priority": 0.32499999999999996,
+      "reading_order": 9,
+      "source_span": {
+        "start": 3677,
+        "end": 3725,
+        "quote": "leopardus\nCategory:Gastropods described in 1798\n"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:e2551a508c197198f223a541a6fa2b71be5c8927cb3a7fb074191aa2ca707ff8",
+    "chars": 3725,
+    "lang": "en"
+  }
+}

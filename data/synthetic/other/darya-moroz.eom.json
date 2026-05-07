@@ -1,0 +1,225 @@
+{
+  "version": "0.1",
+  "document_type": "other",
+  "summary": "Darya Yurievna Moroz (; born 1 September 1983) is a Soviet and Russian screen and stage actress, Honored Artist of Russia (2015). She is a t",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "Darya Moroz",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 13,
+        "quote": "Darya Moroz"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "Darya Yurievna Moroz (; born 1 September 1983) is a Soviet and Russian screen and stage actress, Honored Artist of Russia (2015). She is a two-time winner of the Nika Award (2009, 2015). She is best known for starring in the TV series Gold Diggers.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 15,
+        "end": 263,
+        "quote": "Darya Yurievna Moroz (; born 1 September 1983) is a Soviet and Russian screen and stage actress, Honored Artist of Russia (2015). She is a two-time winner of the Nika Award (2009, 2015). She is best known for starring in the TV series Gold Diggers."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "Darya Moroz was born in Leningrad, Russian SFSR, Soviet Union (now Saint Petersburg, Russia). Darya grew up in a family of actors, she started acting at an early age. She made her debut at the age of three months in the movie Dear, Dearest, Beloved, Unique.... As a child, Darya engaged in artistic gymnastics, but the coach did not see in her a talent for gymnastics. Then, there was a period of training in figure skating, and Darya even ranked second in the same competition. There were other children's interests: animation studio, painting, and theatrical studio.",
+      "attention_tier": "B",
+      "priority": 0.85,
+      "reading_order": 2,
+      "source_span": {
+        "start": 265,
+        "end": 833,
+        "quote": "Darya Moroz was born in Leningrad, Russian SFSR, Soviet Union (now Saint Petersburg, Russia). Darya grew up in a family of actors, she started acting at an early age. She made her debut at the age of three months in the movie Dear, Dearest, Beloved, Unique.... As a child, Darya engaged in artistic gymnastics, but the coach did not see in her a talent for gymnastics. Then, there was a period of training in figure skating, and Darya even ranked second in the same competition. There were other children's interests: animation studio, painting, and theatrical studio."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "In the years of study at the school, Daria continued to act in films, starring in five films: The Family Man, Black Square, Russian Ragtime. After listening to them, Daria wanted to change caused during her school years, the decision to enroll in college theater and acting at MGIMO.",
+      "attention_tier": "B",
+      "priority": 0.7954545454545454,
+      "reading_order": 3,
+      "source_span": {
+        "start": 835,
+        "end": 1118,
+        "quote": "In the years of study at the school, Daria continued to act in films, starring in five films: The Family Man, Black Square, Russian Ragtime. After listening to them, Daria wanted to change caused during her school years, the decision to enroll in college theater and acting at MGIMO."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-2",
+      "type": "evidence",
+      "content": "By this time, Georgy Daneliya invited her on a first major role in the comedy Fortune. It was on the set of this picture Darya was determined to become an actress. For the film Fortune, Darya was awarded a special mention of the jury of the festival Kinotavr 2000.",
+      "attention_tier": "C",
+      "priority": 0.7409090909090909,
+      "reading_order": 4,
+      "source_span": {
+        "start": 1120,
+        "end": 1384,
+        "quote": "By this time, Georgy Daneliya invited her on a first major role in the comedy Fortune. It was on the set of this picture Darya was determined to become an actress. For the film Fortune, Darya was awarded a special mention of the jury of the festival Kinotavr 2000."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "Darya Moroz entered the Moscow Art Theatre School, in the course of Roman Kozak and Dmitry Brusnikin. In 2003, she graduated and was accepted into the troupe of the Chekhov Moscow Art Theatre.",
+      "attention_tier": "C",
+      "priority": 0.6863636363636364,
+      "reading_order": 5,
+      "source_span": {
+        "start": 1386,
+        "end": 1578,
+        "quote": "Darya Moroz entered the Moscow Art Theatre School, in the course of Roman Kozak and Dmitry Brusnikin. In 2003, she graduated and was accepted into the troupe of the Chekhov Moscow Art Theatre."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-2",
+      "type": "claim",
+      "content": "In 2005, she graduated from producer faculty of Higher Courses for Scriptwriters and Directors (workshop of Vladilen Arsenyev).",
+      "attention_tier": "C",
+      "priority": 0.6318181818181818,
+      "reading_order": 6,
+      "source_span": {
+        "start": 1580,
+        "end": 1707,
+        "quote": "In 2005, she graduated from producer faculty of Higher Courses for Scriptwriters and Directors (workshop of Vladilen Arsenyev)."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-3",
+      "type": "claim",
+      "content": "In 2009, she participated in the music program Two Stars on Channel One paired with Pelageya.",
+      "attention_tier": "C",
+      "priority": 0.5772727272727273,
+      "reading_order": 7,
+      "source_span": {
+        "start": 1709,
+        "end": 1802,
+        "quote": "In 2009, she participated in the music program Two Stars on Channel One paired with Pelageya."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-4",
+      "type": "claim",
+      "content": "She appeared in the sixth season of ice show contest Ice Age.",
+      "attention_tier": "C",
+      "priority": 0.5227272727272727,
+      "reading_order": 8,
+      "source_span": {
+        "start": 1804,
+        "end": 1865,
+        "quote": "She appeared in the sixth season of ice show contest Ice Age."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "*First husband Andrei Tomashevsky (born April 20, 1972), director. They parted because of Andrei's unwillingness to have children.\n*Second husband Konstantin Bogomolov (born July 23, 1975), Russian theater director, poet. Darya and Konstantin met in 2009, when Bogomolov invited her to play the role of the rich young widow Eulampia Kupavina in his play Wolves and Sheep based on the play of the same name by Alexander Ostrovsky in Tabakerka Theater. Darya was then married. The marriage was registered on May 11, 2010. On August 18, 2018, they divorced, remaining on good terms.\n**Daughter Anna Bogomolova (born September 6, 2010), studies at a German school at the Embassy of Germany in Russia, located in Moscow, as well as at a children's music school, plays tennis.",
+      "attention_tier": "C",
+      "priority": 0.4681818181818182,
+      "reading_order": 9,
+      "source_span": {
+        "start": 1867,
+        "end": 2637,
+        "quote": "*First husband Andrei Tomashevsky (born April 20, 1972), director. They parted because of Andrei's unwillingness to have children.\n*Second husband Konstantin Bogomolov (born July 23, 1975), Russian theater director, poet. Darya and Konstantin met in 2009, when Bogomolov invited her to play the role of the rich young widow Eulampia Kupavina in his play Wolves and Sheep based on the play of the same name by Alexander Ostrovsky in Tabakerka Theater. Darya was then married. The marriage was registered on May 11, 2010. On August 18, 2018, they divorced, remaining on good terms.\n**Daughter Anna Bogomolova (born September 6, 2010), studies at a German school at the Embassy of Germany in Russia, located in Moscow, as well as at a children's music school, plays tennis."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-2",
+      "type": "factbox",
+      "content": "*1984 Dear, Dearest, Beloved, Unique... as Gerochka\n*1991 The Family Man as Kolyvanov's daughter\n*1992 Black Square as Luda Merkulova\n*1993 Russian Ragtime as Mitya's Mitya's daughter\n*2000 Fortune as Masha Sorokina, bride\n*2000 Athens Evenings as Natasha\n*2001 Savage as Varya\n*2001 Salome (TV Series) as Katerina Bronina, Salome's sister\n*2002 Women's Logic (TV Movie) as Vika Korzun\n*2002 Kamenskaya (second season) as Vika Ulanova\n*2003 Blues Theater (TV Series) as Anna Astakhova\n*2004 Women in A Game Without Rules (TV Mini-Series) as Masha Peredreeva\n*2004 Farewell Echo (TV Series) as Oksana Perfilieva\n*2005 The Fall of the Empire (TV Series) as Katya\n*2005 Multiplying Grieve (TV Mini-Series) as Lena Ostroumova\n*2006 Point as Nina\n*2006 Nankin Landscape as Nadya, Zhen-zi\n*2008 Live and Remember as Nastya\n*2008 Thaw as Natasha\n*2008 The Apostle (TV Mini-Series) as Lida\n*2008 Brothers detectives (TV Series) as Katya Mukhina\n*2008 Frenchman Serge as Irina\n*2009 Pelagia and the White Bulldog (TV Series) as Governor's wife Lyudmila Platonovna\n*2009 Jumping Bottlenose Dolphin as Maya\n*2009 Two Ladies in Amsterdam as Svetlana\n*2009 Trap (TV Mini-Series) as Vera\n*2010 The House of the Sun as Gerda\n*2010 French Doctor (TV Series) as Larissa\n*2011 Dostoevsky (TV Series) as Sasha Schubert, actress\n*2011 Black Wolves (TV Series) as Vera Samarina\n*2011 The Forgotten (TV Mini-Series) as Anya\n*2011 Do Not Cry for Me, Argentina (TV Series) as Alla\n*2011 Cedar' Pierces the Sky (TV Series) as Alla Kantorovich\n*2011 Fairytale.Is as Barbie\n*2012 Conductor as Olga\n*2012 No Witnesses (TV Series) as Lena\n*2012 Steel Butterfly as Tatiana\n*2012 Kraplyony (TV Series) as Veronika\n*2014 Department (TV Series) as Alena Ivanovna Revnivtseva, lawyer\n*2014 House with Lilies (TV Series) as Taisia\n*2014 The Long Way Home (TV Series) as Nadya\n*2014 Inquisitor (TV Series) as Kira Eduardovna Falk, department press secretary\n*2014 The Fool as Masha\n*2014 Hold Me (TV) as Maria Ozerova\n*2015 The Dawns Here Are Quiet as Maria, apartment proprietress\n*2015 Santa Mazaev and Zaitsev (TV Mini-Series) as Rita Zaitseva\n*2015 Pioneers-heroes as Katya Eliseeva\n*2016 Graphomaniac as Veronika\n*2016 Crime (TV Series) as Sasha Moskvina\n*2016 Collector as Ksenia (voice)\n*2016 When the Stars Collide as Raisa Gorbacheva\n*2017 Red Bracelets (TV Series) as Alyona\n*2019 Gold Diggers as Lena Shirokova\n*2021 Mediator as Vera Gromova\n*2023 Mira as Svetlana",
+      "attention_tier": "C",
+      "priority": 0.41363636363636364,
+      "reading_order": 10,
+      "source_span": {
+        "start": 2639,
+        "end": 5078,
+        "quote": "*1984 Dear, Dearest, Beloved, Unique... as Gerochka\n*1991 The Family Man as Kolyvanov's daughter\n*1992 Black Square as Luda Merkulova\n*1993 Russian Ragtime as Mitya's Mitya's daughter\n*2000 Fortune as Masha Sorokina, bride\n*2000 Athens Evenings as Natasha\n*2001 Savage as Varya\n*2001 Salome (TV Series) as Katerina Bronina, Salome's sister\n*2002 Women's Logic (TV Movie) as Vika Korzun\n*2002 Kamenskaya (second season) as Vika Ulanova\n*2003 Blues Theater (TV Series) as Anna Astakhova\n*2004 Women in A Game Without Rules (TV Mini-Series) as Masha Peredreeva\n*2004 Farewell Echo (TV Series) as Oksana Perfilieva\n*2005 The Fall of the Empire (TV Series) as Katya\n*2005 Multiplying Grieve (TV Mini-Series) as Lena Ostroumova\n*2006 Point as Nina\n*2006 Nankin Landscape as Nadya, Zhen-zi\n*2008 Live and Remember as Nastya\n*2008 Thaw as Natasha\n*2008 The Apostle (TV Mini-Series) as Lida\n*2008 Brothers detectives (TV Series) as Katya Mukhina\n*2008 Frenchman Serge as Irina\n*2009 Pelagia and the White Bulldog (TV Series) as Governor's wife Lyudmila Platonovna\n*2009 Jumping Bottlenose Dolphin as Maya\n*2009 Two Ladies in Amsterdam as Svetlana\n*2009 Trap (TV Mini-Series) as Vera\n*2010 The House of the Sun as Gerda\n*2010 French Doctor (TV Series) as Larissa\n*2011 Dostoevsky (TV Series) as Sasha Schubert, actress\n*2011 Black Wolves (TV Series) as Vera Samarina\n*2011 The Forgotten (TV Mini-Series) as Anya\n*2011 Do Not Cry for Me, Argentina (TV Series) as Alla\n*2011 Cedar' Pierces the Sky (TV Series) as Alla Kantorovich\n*2011 Fairytale.Is as Barbie\n*2012 Conductor as Olga\n*2012 No Witnesses (TV Series) as Lena\n*2012 Steel Butterfly as Tatiana\n*2012 Kraplyony (TV Series) as Veronika\n*2014 Department (TV Series) as Alena Ivanovna Revnivtseva, lawyer\n*2014 House with Lilies (TV Series) as Taisia\n*2014 The Long Way Home (TV Series) as Nadya\n*2014 Inquisitor (TV Series) as Kira Eduardovna Falk, department press secretary\n*2014 The Fool as Masha\n*2014 Hold Me (TV) as Maria Ozerova\n*2015 The Dawns Here Are Quiet as Maria, apartment proprietress\n*2015 Santa Mazaev and Zaitsev (TV Mini-Series) as Rita Zaitseva\n*2015 Pioneers-heroes as Katya Eliseeva\n*2016 Graphomaniac as Veronika\n*2016 Crime (TV Series) as Sasha Moskvina\n*2016 Collector as Ksenia (voice)\n*2016 When the Stars Collide as Raisa Gorbacheva\n*2017 Red Bracelets (TV Series) as Alyona\n*2019 Gold Diggers as Lena Shirokova\n*2021 Mediator as Vera Gromova\n*2023 Mira as Svetlana"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-1",
+      "type": "appendix",
+      "content": "*\n*\n* Дарья Мороз on Facebook",
+      "attention_tier": "D",
+      "priority": 0.35909090909090907,
+      "reading_order": 11,
+      "source_span": {
+        "start": 5080,
+        "end": 5109,
+        "quote": "*\n*\n* Дарья Мороз on Facebook"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-2",
+      "type": "appendix",
+      "content": "Category:1983 births\nCategory:Living people\nCategory:Soviet child actresses\nCategory:Russian child actresses\nCategory:Russian film actresses\nCategory:Russian television actresses\nCategory:Russian stage actresses\nCategory:20th-century Russian actresses\nCategory:21st-century Russian actresses\nCategory:Merited Artists of the Russian Federation\nCategory:Recipients of the Nika Award\nCategory:Moscow Art Theatre School alumni\nCategory:Actresses from Saint Petersburg\nCategory:Recipients of the Golden Mask\nCategory:Russian people of Ukrainian-Jewish descent",
+      "attention_tier": "D",
+      "priority": 0.30454545454545456,
+      "reading_order": 12,
+      "source_span": {
+        "start": 5111,
+        "end": 5666,
+        "quote": "Category:1983 births\nCategory:Living people\nCategory:Soviet child actresses\nCategory:Russian child actresses\nCategory:Russian film actresses\nCategory:Russian television actresses\nCategory:Russian stage actresses\nCategory:20th-century Russian actresses\nCategory:21st-century Russian actresses\nCategory:Merited Artists of the Russian Federation\nCategory:Recipients of the Nika Award\nCategory:Moscow Art Theatre School alumni\nCategory:Actresses from Saint Petersburg\nCategory:Recipients of the Golden Mask\nCategory:Russian people of Ukrainian-Jewish descent\n"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:12d9828e0bc0830dcae3066b129be436b3a109e989a85d01d7ac8e8fe79cc0d7",
+    "chars": 5666,
+    "lang": "en"
+  }
+}

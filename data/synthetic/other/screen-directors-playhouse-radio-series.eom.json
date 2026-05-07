@@ -1,0 +1,465 @@
+{
+  "version": "0.1",
+  "document_type": "other",
+  "summary": "Screen Directors Playhouse is an American radio dramatic anthology program that was broadcast on NBC from January 9, 1949, through September",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "Screen Directors Playhouse (radio series)",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 43,
+        "quote": "Screen Directors Playhouse (radio series)"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "Screen Directors Playhouse is an American radio dramatic anthology program that was broadcast on NBC from January 9, 1949, through September 28, 1951. Initially it was called NBC Theater.",
+      "attention_tier": "A",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 45,
+        "end": 232,
+        "quote": "Screen Directors Playhouse is an American radio dramatic anthology program that was broadcast on NBC from January 9, 1949, through September 28, 1951. Initially it was called NBC Theater."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "Episodes of Screen Directors Playhouse were adaptations of films. Each episode began with an introduction by the director of the film being featured, and it concluded with a conversation between that director and the stars of the episode.",
+      "attention_tier": "C",
+      "priority": 0.85,
+      "reading_order": 2,
+      "source_span": {
+        "start": 234,
+        "end": 472,
+        "quote": "Episodes of Screen Directors Playhouse were adaptations of films. Each episode began with an introduction by the director of the film being featured, and it concluded with a conversation between that director and the stars of the episode."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "NBC Theater debuted on January 9, 1949, which was a replacement for Fred Allen's program at 8:30&nbsp;p.m. Eastern Time on Sundays. Broadcasts were done in cooperation with the Screen Directors Guild. The premiere episode…",
+      "attention_tier": "B",
+      "priority": 0.8269230769230769,
+      "reading_order": 3,
+      "source_span": {
+        "start": 474,
+        "end": 780,
+        "quote": "NBC Theater debuted on January 9, 1949, which was a replacement for Fred Allen's program at 8:30&nbsp;p.m. Eastern Time on Sundays. Broadcasts were done in cooperation with the Screen Directors Guild. The premiere episode was \"Stagecoach\", with John Wayne re-creating his role in the film of the same name."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-2",
+      "type": "factbox",
+      "content": "On March 13, 1949, the show was moved to 9 p.m. E. T. on Sundays. The Pabst sponsorship was accompanied by a change in name as the program became Screen Directors Playhouse. The trade publication…",
+      "attention_tier": "B",
+      "priority": 0.8038461538461539,
+      "reading_order": 4,
+      "source_span": {
+        "start": 782,
+        "end": 1422,
+        "quote": "On March 13, 1949, the show was moved to 9 p.m. E. T. on Sundays. The Pabst sponsorship was accompanied by a change in name as the program became Screen Directors Playhouse. The trade publication Billboard reported that NBC discounted the show's price for the summer, saying that the network wanted \"to snare a bankroller during summer months even at a loss, thus cutting its overhead on the show and getting sponsorship prestige.\" After the summer run, the show was heard on Mondays at 10 p.m. E. T. Beginning on November 18, 1949, it was moved to Fridays at 10 p.m. E. T. It was sustaining until RCA became its sponsor on January 6, 1950."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-2",
+      "type": "claim",
+      "content": "{| class=\"wikitable\"\n|+ Partial List of Episodes of NBC Theater/Screen Directors Playhouse",
+      "attention_tier": "C",
+      "priority": 0.7807692307692308,
+      "reading_order": 5,
+      "source_span": {
+        "start": 1424,
+        "end": 1514,
+        "quote": "{| class=\"wikitable\"\n|+ Partial List of Episodes of NBC Theater/Screen Directors Playhouse"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-3",
+      "type": "claim",
+      "content": "! Date !! Episode !! Actor(s) !! Director",
+      "attention_tier": "C",
+      "priority": 0.7576923076923077,
+      "reading_order": 6,
+      "source_span": {
+        "start": 1516,
+        "end": 1557,
+        "quote": "! Date !! Episode !! Actor(s) !! Director"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-4",
+      "type": "claim",
+      "content": "| January 9, 1949 || \"Stagecoach\" || John Wayne || John Ford ||",
+      "attention_tier": "C",
+      "priority": 0.7346153846153846,
+      "reading_order": 7,
+      "source_span": {
+        "start": 1559,
+        "end": 1622,
+        "quote": "| January 9, 1949 || \"Stagecoach\" || John Wayne || John Ford ||"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-5",
+      "type": "claim",
+      "content": "| March 6, 1949 || \"Manhattan Merry-Go-Round\" || Rosalind Russell, Marlene Dietrich, John Lund|| Billy Wilder",
+      "attention_tier": "C",
+      "priority": 0.7115384615384615,
+      "reading_order": 8,
+      "source_span": {
+        "start": 1624,
+        "end": 1733,
+        "quote": "| March 6, 1949 || \"Manhattan Merry-Go-Round\" || Rosalind Russell, Marlene Dietrich, John Lund|| Billy Wilder"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-6",
+      "type": "claim",
+      "content": "| March 13, 1949 || \"You Were Meant for Me\" || Dan Dailey || Lloyd Bacon",
+      "attention_tier": "C",
+      "priority": 0.6884615384615385,
+      "reading_order": 9,
+      "source_span": {
+        "start": 1735,
+        "end": 1807,
+        "quote": "| March 13, 1949 || \"You Were Meant for Me\" || Dan Dailey || Lloyd Bacon"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-7",
+      "type": "claim",
+      "content": "| April 2, 1949 || \"The Ghost Breakers\" || Bob Hope ||",
+      "attention_tier": "C",
+      "priority": 0.6653846153846154,
+      "reading_order": 10,
+      "source_span": {
+        "start": 1809,
+        "end": 1863,
+        "quote": "| April 2, 1949 || \"The Ghost Breakers\" || Bob Hope ||"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-8",
+      "type": "claim",
+      "content": "| August 5, 1949|| \"Fort Apache\" || John Wayne, Ward Bond ||",
+      "attention_tier": "C",
+      "priority": 0.6423076923076922,
+      "reading_order": 11,
+      "source_span": {
+        "start": 1865,
+        "end": 1925,
+        "quote": "| August 5, 1949|| \"Fort Apache\" || John Wayne, Ward Bond ||"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-9",
+      "type": "claim",
+      "content": "| November 25, 1949 || \"The Spiral Staircase\" || Dorothy McGuire ||",
+      "attention_tier": "C",
+      "priority": 0.6192307692307693,
+      "reading_order": 12,
+      "source_span": {
+        "start": 1927,
+        "end": 1994,
+        "quote": "| November 25, 1949 || \"The Spiral Staircase\" || Dorothy McGuire ||"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-10",
+      "type": "claim",
+      "content": "| December 2, 1949 || \"All My Sons\" || Edward G. Robinson||",
+      "attention_tier": "C",
+      "priority": 0.5961538461538461,
+      "reading_order": 13,
+      "source_span": {
+        "start": 1996,
+        "end": 2055,
+        "quote": "| December 2, 1949 || \"All My Sons\" || Edward G. Robinson||"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-3",
+      "type": "factbox",
+      "content": "| December 9, 1949 || \"Call Northside 777\" || James Stewart|| Henry Hathaway",
+      "attention_tier": "B",
+      "priority": 0.573076923076923,
+      "reading_order": 14,
+      "source_span": {
+        "start": 2057,
+        "end": 2133,
+        "quote": "| December 9, 1949 || \"Call Northside 777\" || James Stewart|| Henry Hathaway"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-11",
+      "type": "claim",
+      "content": "| January 13, 1950 || \"Tomorrow Is Forever\" || Claudette Colbert ||",
+      "attention_tier": "C",
+      "priority": 0.55,
+      "reading_order": 15,
+      "source_span": {
+        "start": 2135,
+        "end": 2202,
+        "quote": "| January 13, 1950 || \"Tomorrow Is Forever\" || Claudette Colbert ||"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-12",
+      "type": "claim",
+      "content": "| March 17, 1950 || \"Champion\"|| ||",
+      "attention_tier": "C",
+      "priority": 0.5269230769230769,
+      "reading_order": 16,
+      "source_span": {
+        "start": 2204,
+        "end": 2239,
+        "quote": "| March 17, 1950 || \"Champion\"|| ||"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-13",
+      "type": "claim",
+      "content": "| March 24, 1950 || \"Chicago Deadline\" || Alan Ladd ||",
+      "attention_tier": "C",
+      "priority": 0.5038461538461538,
+      "reading_order": 17,
+      "source_span": {
+        "start": 2241,
+        "end": 2295,
+        "quote": "| March 24, 1950 || \"Chicago Deadline\" || Alan Ladd ||"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-14",
+      "type": "claim",
+      "content": "| March 31, 1950 || \"The Dark Mirror\" || Olivia de Havilland ||",
+      "attention_tier": "C",
+      "priority": 0.4807692307692307,
+      "reading_order": 18,
+      "source_span": {
+        "start": 2297,
+        "end": 2360,
+        "quote": "| March 31, 1950 || \"The Dark Mirror\" || Olivia de Havilland ||"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-15",
+      "type": "claim",
+      "content": "| May 26, 1950|| \"Flamingo Road\" || Joan Crawford ||",
+      "attention_tier": "C",
+      "priority": 0.4576923076923077,
+      "reading_order": 19,
+      "source_span": {
+        "start": 2362,
+        "end": 2414,
+        "quote": "| May 26, 1950|| \"Flamingo Road\" || Joan Crawford ||"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-1",
+      "type": "appendix",
+      "content": "| November 23, 1950 || \"Mrs. Mike\" || Dick Powell, June Allyson",
+      "attention_tier": "D",
+      "priority": 0.4346153846153846,
+      "reading_order": 20,
+      "source_span": {
+        "start": 2416,
+        "end": 2479,
+        "quote": "| November 23, 1950 || \"Mrs. Mike\" || Dick Powell, June Allyson"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-2",
+      "type": "appendix",
+      "content": "| December 7, 1950 || \"My Favorite Wife\" || Cary Grant, Irene Dunne||",
+      "attention_tier": "D",
+      "priority": 0.4115384615384616,
+      "reading_order": 21,
+      "source_span": {
+        "start": 2481,
+        "end": 2550,
+        "quote": "| December 7, 1950 || \"My Favorite Wife\" || Cary Grant, Irene Dunne||"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-3",
+      "type": "appendix",
+      "content": "| February 15, 1951 || \"Dark Victory\" || Tallulah Bankhead ||",
+      "attention_tier": "D",
+      "priority": 0.3884615384615384,
+      "reading_order": 22,
+      "source_span": {
+        "start": 2552,
+        "end": 2613,
+        "quote": "| February 15, 1951 || \"Dark Victory\" || Tallulah Bankhead ||"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "| February 22, 1951 || \"No Minor Vices\" || Dana Andrews, Louis Jourdan Milton Geiger and Richard Simmons were the writers. By November 1950, however, the show had become one of several network radio programs that used \"canned bridges and cues\".",
+      "attention_tier": "B",
+      "priority": 0.36538461538461536,
+      "reading_order": 23,
+      "source_span": {
+        "start": 2615,
+        "end": 2859,
+        "quote": "| February 22, 1951 || \"No Minor Vices\" || Dana Andrews, Louis Jourdan Milton Geiger and Richard Simmons were the writers. By November 1950, however, the show had become one of several network radio programs that used \"canned bridges and cues\"."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-4",
+      "type": "factbox",
+      "content": "In November 1949, the National Council of Teachers of English presented an award to NBC Theater as \"the program which during 1948-49 school year has done most to promote greater understanding and appreciation of our literary heritage\". In December 1949, was a second-place selection for \"outstanding entertainment in drama\" in the Peabody Awards.",
+      "attention_tier": "B",
+      "priority": 0.3423076923076923,
+      "reading_order": 24,
+      "source_span": {
+        "start": 2861,
+        "end": 3207,
+        "quote": "In November 1949, the National Council of Teachers of English presented an award to NBC Theater as \"the program which during 1948-49 school year has done most to promote greater understanding and appreciation of our literary heritage\". In December 1949, was a second-place selection for \"outstanding entertainment in drama\" in the Peabody Awards."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-4",
+      "type": "appendix",
+      "content": "Radio historian John Dunning wrote in his book On the Air: The Encyclopedia of Old-Time Radio, that Screen Directors Playhouse demonstrated the importance of writing for radio programs, saying that such importance \"was seldom better demonstrated than here. Though the material had a familiar sound, it was made fresh.\"",
+      "attention_tier": "D",
+      "priority": 0.3192307692307692,
+      "reading_order": 25,
+      "source_span": {
+        "start": 3209,
+        "end": 3527,
+        "quote": "Radio historian John Dunning wrote in his book On the Air: The Encyclopedia of Old-Time Radio, that Screen Directors Playhouse demonstrated the importance of writing for radio programs, saying that such importance \"was seldom better demonstrated than here. Though the material had a familiar sound, it was made fresh.\""
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-5",
+      "type": "appendix",
+      "content": "* Screen Directors Playhouse at the Internet Archive\n* Screen Directors Playhouse at Digital Deli (archived)\n* Screen Directors Playhouse at Jerry Haendiges' Vintage Radio Logs",
+      "attention_tier": "D",
+      "priority": 0.2961538461538461,
+      "reading_order": 26,
+      "source_span": {
+        "start": 3529,
+        "end": 3705,
+        "quote": "* Screen Directors Playhouse at the Internet Archive\n* Screen Directors Playhouse at Digital Deli (archived)\n* Screen Directors Playhouse at Jerry Haendiges' Vintage Radio Logs"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-6",
+      "type": "appendix",
+      "content": "Category:1949 radio programme debuts\nCategory:1951 radio programme endings\nCategory:1940s American radio programs\nCategory:1950s American radio programs\nCategory:American radio dramas\nCategory:Anthology radio series\nCategory:NBC radio programs\nCategory:Radio programs based on films",
+      "attention_tier": "D",
+      "priority": 0.2730769230769231,
+      "reading_order": 27,
+      "source_span": {
+        "start": 3707,
+        "end": 3990,
+        "quote": "Category:1949 radio programme debuts\nCategory:1951 radio programme endings\nCategory:1940s American radio programs\nCategory:1950s American radio programs\nCategory:American radio dramas\nCategory:Anthology radio series\nCategory:NBC radio programs\nCategory:Radio programs based on films\n"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:fb09e5c909d99f12f460b24e41ff442eb089eec0ffafa0fa1247402c7b02d825",
+    "chars": 3990,
+    "lang": "en"
+  }
+}

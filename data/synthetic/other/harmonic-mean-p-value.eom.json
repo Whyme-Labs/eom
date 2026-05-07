@@ -1,0 +1,241 @@
+{
+  "version": "0.1",
+  "document_type": "other",
+  "summary": "The harmonic mean p-value (HMP) is a statistical technique for addressing the multiple comparisons problem that controls the strong-sense fa",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "Harmonic mean p-value",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 23,
+        "quote": "Harmonic mean p-value"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "The harmonic mean p-value (HMP) is a statistical technique for addressing the multiple comparisons problem that controls the strong-sense family-wise error rate). It improves on the power of Bonferroni correction by performing combined tests, i.e. by testing whether groups of p-values are statistically significant, like Fisher's method. However, similar to other extensions of Fisher's method, it avoids the restrictive assumption",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 25,
+        "end": 457,
+        "quote": "The harmonic mean p-value (HMP) is a statistical technique for addressing the multiple comparisons problem that controls the strong-sense family-wise error rate). It improves on the power of Bonferroni correction by performing combined tests, i.e. by testing whether groups of p-values are statistically significant, like Fisher's method. However, similar to other extensions of Fisher's method, it avoids the restrictive assumption"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "When \\alpha is small (e.g. \\alpha), the following multilevel test based on direct interpretation of the HMP controls the strong-sense family-wise error rate at level approximately \\alpha:",
+      "attention_tier": "C",
+      "priority": 0.85,
+      "reading_order": 2,
+      "source_span": {
+        "start": 675,
+        "end": 862,
+        "quote": "When \\alpha is small (e.g. \\alpha), the following multilevel test based on direct interpretation of the HMP controls the strong-sense family-wise error rate at level approximately \\alpha:"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-2",
+      "type": "claim",
+      "content": "Define the HMP of any subset \\mathcal{R} of the L p-values to be\n\\overset{\\circ}{p}_\\mathcal{R} = \\frac{\\sum_{i\\in\\mathcal{R}} w_{i}}{\\sum_{i\\in\\mathcal{R}} w_{i}/p_{i}}.",
+      "attention_tier": "C",
+      "priority": 0.7999999999999999,
+      "reading_order": 3,
+      "source_span": {
+        "start": 864,
+        "end": 1036,
+        "quote": "# Define the HMP of any subset \\mathcal{R} of the L p-values to be\n\\overset{\\circ}{p}_\\mathcal{R} = \\frac{\\sum_{i\\in\\mathcal{R}} w_{i}}{\\sum_{i\\in\\mathcal{R}} w_{i}/p_{i}}."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "decision-1",
+      "type": "decision",
+      "content": "Reject the null hypothesis that none of the p-values in subset \\mathcal{R} are significant if \\overset{\\circ}{p}_\\mathcal{R}\\leq\\alpha\\,w_\\mathcal{R}, where…",
+      "attention_tier": "B",
+      "priority": 0.75,
+      "reading_order": 4,
+      "source_span": {
+        "start": 1038,
+        "end": 1287,
+        "quote": "# Reject the null hypothesis that none of the p-values in subset \\mathcal{R} are significant if \\overset{\\circ}{p}_\\mathcal{R}\\leq\\alpha\\,w_\\mathcal{R}, where w_\\mathcal{R}=\\sum_{i\\in\\mathcal{R}}w_i. (Recall that, by definition, \\sum_{i=1}^L w_i=1.)"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "An asymptotically exact version of the above replaces \\overset{\\circ}{p}_\\mathcal{R}in step 2 with p_{\\overset{\\circ}{p}_\\mathcal{R}} = \\max\\left\\{\\overset{\\circ}{p}_\\mathcal{R}, w_{\\mathcal{R}} \\int_{w_{\\mathcal{R}}/\\overset{\\circ}{p}_\\mathcal{R}}^\\infty f_\\textrm{Landau}\\left(x\\,|\\,\\log L +0.874,\\frac{\\pi}{2}\\right) \\mathrm{d} x\\right\\}, where L gives the number of p-values, not just those in subset \\mathcal{R}.",
+      "attention_tier": "B",
+      "priority": 0.7,
+      "reading_order": 5,
+      "source_span": {
+        "start": 1289,
+        "end": 1706,
+        "quote": "An asymptotically exact version of the above replaces \\overset{\\circ}{p}_\\mathcal{R}in step 2 with p_{\\overset{\\circ}{p}_\\mathcal{R}} = \\max\\left\\{\\overset{\\circ}{p}_\\mathcal{R}, w_{\\mathcal{R}} \\int_{w_{\\mathcal{R}}/\\overset{\\circ}{p}_\\mathcal{R}}^\\infty f_\\textrm{Landau}\\left(x\\,|\\,\\log L +0.874,\\frac{\\pi}{2}\\right) \\mathrm{d} x\\right\\}, where L gives the number of p-values, not just those in subset \\mathcal{R}."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-3",
+      "type": "claim",
+      "content": "Since direct interpretation of the HMP is faster, a two-pass procedure may be used to identify subsets of p-values that are likely to be significant using direct interpretation, subject to confirmation using the asymptotically exact formula.",
+      "attention_tier": "C",
+      "priority": 0.65,
+      "reading_order": 6,
+      "source_span": {
+        "start": 1708,
+        "end": 1949,
+        "quote": "Since direct interpretation of the HMP is faster, a two-pass procedure may be used to identify subsets of p-values that are likely to be significant using direct interpretation, subject to confirmation using the asymptotically exact formula."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-4",
+      "type": "claim",
+      "content": "The HMP has a range of properties that arise from generalized central limit theorem.",
+      "attention_tier": "C",
+      "priority": 0.6,
+      "reading_order": 7,
+      "source_span": {
+        "start": 1951,
+        "end": 2035,
+        "quote": "The HMP has a range of properties that arise from generalized central limit theorem."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-2",
+      "type": "factbox",
+      "content": "If the distributions of the p-values under the alternative hypotheses follow Beta distributions with parameters \\left(0, a form considered by Sellke, Bayarri and Berger, then the inverse proportionality between the model-averaged Bayes factor and the HMP can be formalized as\\overline{\\textrm{BF}}=\\sum_{i=1}^L \\mu_i\\,\\textrm{BF}_i=\\sum_{i=1}^L \\mu_i\\,\\xi_i\\,p_i^{\\xi_i-1}\\approx\\bar\\xi\\sum_{i=1}^L w_i\\,p_i^{-1}=\\frac{\\bar\\xi}{\\overset{\\circ}{p}}, where",
+      "attention_tier": "C",
+      "priority": 0.55,
+      "reading_order": 8,
+      "source_span": {
+        "start": 2037,
+        "end": 2491,
+        "quote": "If the distributions of the p-values under the alternative hypotheses follow Beta distributions with parameters \\left(0, a form considered by Sellke, Bayarri and Berger, then the inverse proportionality between the model-averaged Bayes factor and the HMP can be formalized as\\overline{\\textrm{BF}}=\\sum_{i=1}^L \\mu_i\\,\\textrm{BF}_i=\\sum_{i=1}^L \\mu_i\\,\\xi_i\\,p_i^{\\xi_i-1}\\approx\\bar\\xi\\sum_{i=1}^L w_i\\,p_i^{-1}=\\frac{\\bar\\xi}{\\overset{\\circ}{p}}, where"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-3",
+      "type": "factbox",
+      "content": "*\\mu_i is the prior probability of alternative hypothesis i, such that \\sum_{i=1}^L\\mu_i=1,\n*\\xi_i/(1+\\xi_i) is the expected value of p_i under alternative hypothesis i,\n*w_i=u_i/\\bar\\xi is the weight attributed to p-value i,\n*u_i = \\left(\\mu_i\\,\\xi_i\\right)^{1/(1-\\xi_i)} incorporates the prior model probabilities and powers into the weights, and\n*\\bar\\xi = \\sum_{i=1}^L u_i normalizes the weights.",
+      "attention_tier": "C",
+      "priority": 0.49999999999999994,
+      "reading_order": 9,
+      "source_span": {
+        "start": 2493,
+        "end": 2893,
+        "quote": "*\\mu_i is the prior probability of alternative hypothesis i, such that \\sum_{i=1}^L\\mu_i=1,\n*\\xi_i/(1+\\xi_i) is the expected value of p_i under alternative hypothesis i,\n*w_i=u_i/\\bar\\xi is the weight attributed to p-value i,\n*u_i = \\left(\\mu_i\\,\\xi_i\\right)^{1/(1-\\xi_i)} incorporates the prior model probabilities and powers into the weights, and\n*\\bar\\xi = \\sum_{i=1}^L u_i normalizes the weights."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-1",
+      "type": "appendix",
+      "content": "The approximation works best for well-powered tests (\\xi_i\\ll 1).",
+      "attention_tier": "D",
+      "priority": 0.45,
+      "reading_order": 10,
+      "source_span": {
+        "start": 2895,
+        "end": 2960,
+        "quote": "The approximation works best for well-powered tests (\\xi_i\\ll 1)."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-4",
+      "type": "factbox",
+      "content": "For likelihood ratio tests with exactly two degrees of freedom, Wilks' theorem implies that p_i=1/R_i, where R_i is the maximized likelihood ratio in favour of alternative hypothesis i, and therefore \\overset{\\circ}{p}=1/\\bar{R}, where \\bar{R} is the weighted mean maximized likelihood ratio, using weights w_1,\\dots,w_L. Since R_i is an upper bound on the Bayes factor, \\textrm{BF}_i, then 1/\\overset{\\circ}{p} is an upper bound on the model-averaged Bayes factor:\\overline{\\textrm{BF}}\\leq\\frac{1}{\\overset{\\circ}{p}}.While the equivalence holds only for two degrees of freedom, the relationship between \\overset{\\circ}{p} and \\bar{R}, and therefore \\overline{\\textrm{BF}}, behaves similarly for other degrees of freedom.",
+      "attention_tier": "C",
+      "priority": 0.4,
+      "reading_order": 11,
+      "source_span": {
+        "start": 2962,
+        "end": 3685,
+        "quote": "For likelihood ratio tests with exactly two degrees of freedom, Wilks' theorem implies that p_i=1/R_i, where R_i is the maximized likelihood ratio in favour of alternative hypothesis i, and therefore \\overset{\\circ}{p}=1/\\bar{R}, where \\bar{R} is the weighted mean maximized likelihood ratio, using weights w_1,\\dots,w_L. Since R_i is an upper bound on the Bayes factor, \\textrm{BF}_i, then 1/\\overset{\\circ}{p} is an upper bound on the model-averaged Bayes factor:\\overline{\\textrm{BF}}\\leq\\frac{1}{\\overset{\\circ}{p}}.While the equivalence holds only for two degrees of freedom, the relationship between \\overset{\\circ}{p} and \\bar{R}, and therefore \\overline{\\textrm{BF}}, behaves similarly for other degrees of freedom."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-2",
+      "type": "appendix",
+      "content": "*Extensions of Fisher's method",
+      "attention_tier": "D",
+      "priority": 0.35,
+      "reading_order": 12,
+      "source_span": {
+        "start": 3687,
+        "end": 3717,
+        "quote": "*Extensions of Fisher's method"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-3",
+      "type": "appendix",
+      "content": "Category:Multiple comparisons",
+      "attention_tier": "D",
+      "priority": 0.30000000000000004,
+      "reading_order": 13,
+      "source_span": {
+        "start": 3719,
+        "end": 3749,
+        "quote": "Category:Multiple comparisons\n"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:9ba9e9a7a8b1c83a1b16b4e1cc54b57695f02d37af39ce8ec808ea391fc7f778",
+    "chars": 3749,
+    "lang": "en"
+  }
+}

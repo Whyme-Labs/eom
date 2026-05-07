@@ -1,0 +1,177 @@
+{
+  "version": "0.1",
+  "document_type": "other",
+  "summary": "No. 464 Squadron RAAF is a Royal Australian Air Force (RAAF) unit responsible for public relations. It was originally formed in the United K",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "No. 464 Squadron RAAF",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 23,
+        "quote": "No. 464 Squadron RAAF"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "No. 464 Squadron RAAF is a Royal Australian Air Force (RAAF) unit responsible for public relations. It was originally formed in the United Kingdom during 1942 as a bomber unit. It comprised personnel from Australia, Britain, Canada, New Zealand, South Africa and the Netherlands, the squadron served in the light bomber role, undertaking operations over France and the Low Countries,",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 25,
+        "end": 408,
+        "quote": "No. 464 Squadron RAAF is a Royal Australian Air Force (RAAF) unit responsible for public relations. It was originally formed in the United Kingdom during 1942 as a bomber unit. It comprised personnel from Australia, Britain, Canada, New Zealand, South Africa and the Netherlands, the squadron served in the light bomber role, undertaking operations over France and the Low Countries,"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "The squadron was officially formed on 1 September 1942 at RAF Feltwell, Norfolk in the United Kingdom, as an Article XV squadron under the Empire Air Training Scheme. Although technically a squadron of the RAAF, its personnel were drawn from many countries and upon formation only about 30 per cent were Australian. This fluctuated and later in the war this grew to just over 50 per cent. Upon formation, the squadron's first commanding officer was a South African, Wing Commander Ronald Young. On 1 June, No. 464 Squadron was transferred from RAF Bomber Command to the Second Tactical Air Force. Concerns about the vulnerability of the Ventura, however, led to their withdrawal and in July, the squadron was re-equipped with the more suitable de Havilland Mosquito. In early 1944, still based out of Hunsdon, No. 464 Squadron concentrated on attacking V-1 flying bomb launch sites and gained a reputation for highly accurate bombing. This reputation lead it to be selected for Operation Jericho, which was the first of a number of precision attacks that the squadron made on Gestapo targets in occupied Europe. In this mission, aircraft from the squadron formed part of the force which breached the walls of a Gestapo prison at Amiens, France on 18 February 1944 allowing members of the French Resistance to escape.",
+      "attention_tier": "B",
+      "priority": 0.85,
+      "reading_order": 2,
+      "source_span": {
+        "start": 931,
+        "end": 2247,
+        "quote": "The squadron was officially formed on 1 September 1942 at RAF Feltwell, Norfolk in the United Kingdom, as an Article XV squadron under the Empire Air Training Scheme. Although technically a squadron of the RAAF, its personnel were drawn from many countries and upon formation only about 30 per cent were Australian. This fluctuated and later in the war this grew to just over 50 per cent. Upon formation, the squadron's first commanding officer was a South African, Wing Commander Ronald Young. On 1 June, No. 464 Squadron was transferred from RAF Bomber Command to the Second Tactical Air Force. Concerns about the vulnerability of the Ventura, however, led to their withdrawal and in July, the squadron was re-equipped with the more suitable de Havilland Mosquito. In early 1944, still based out of Hunsdon, No. 464 Squadron concentrated on attacking V-1 flying bomb launch sites and gained a reputation for highly accurate bombing. This reputation lead it to be selected for Operation Jericho, which was the first of a number of precision attacks that the squadron made on Gestapo targets in occupied Europe. In this mission, aircraft from the squadron formed part of the force which breached the walls of a Gestapo prison at Amiens, France on 18 February 1944 allowing members of the French Resistance to escape."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "The squadron continued to attack transport and communications targets from June 1944 to support the invasion; in this role it was a prominent part of the Australian contribution to the Battle of Normandy. This was one of its busiest periods during the war and in…",
+      "attention_tier": "C",
+      "priority": 0.775,
+      "reading_order": 3,
+      "source_span": {
+        "start": 2249,
+        "end": 4090,
+        "quote": "The squadron continued to attack transport and communications targets from June 1944 to support the invasion; in this role it was a prominent part of the Australian contribution to the Battle of Normandy. This was one of its busiest periods during the war and in the first week after D-Day, the squadron's aircraft flew 75 sorties; over the course of the whole month it lost five aircraft.\nOn the 11 June, at the request of the SAS Operation Bulbasket and French Resistance, Mosquitos of No. 464 Squadron, based at RAF Gravesend in Kent, attacked and destroyed a train composed of at least eleven petrol tankers that was parked at the rail sidings at Châtellerault. These were the fuel reserves for the advancing 2nd SS Panzer Division that was heading towards Normandy. For the next two months, the squadron's operations intensified further. Throughout July it flew more than 350 sorties. Perhaps the most noteworthy of these came on 14/15 July 1944, when four aircraft from the squadron attacked the Gestapo barracks at Bonneuil-Matours in a night-time attack in reprisal for the execution of 34 SAS, 9 French Resistance, and a downed USAAF pilot who were on Operation Bulbasket. In August, No. 464 Squadron flew 400 sorties, concentrating mainly upon carrying out night-time attacks on German transports and infrastructure in France. Three aircraft were lost during this time. No. 464 Squadron moved from England to France in February 1945 and, based out of Rosières-en-Santerre, continued day and night bombing missions. The following month, on 21 March in Operation Carthage, six of the squadron's Mosquitos attacked Gestapo headquarters at the Shellhus in Copenhagen, Denmark, heavily damaging the building while losing two aircraft. It then continued to carry out regular operations. Its final operation of the war came on 2 May 1945."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-2",
+      "type": "factbox",
+      "content": "The squadron is credited with having attacked 2,353 separate targets during the war. It assumed responsibility for public relations duties from No. 28 Squadron, which was disbanded in December 2020. The squadron forms part of the RAAF Air…",
+      "attention_tier": "C",
+      "priority": 0.7,
+      "reading_order": 4,
+      "source_span": {
+        "start": 4092,
+        "end": 4435,
+        "quote": "The squadron is credited with having attacked 2,353 separate targets during the war. It assumed responsibility for public relations duties from No. 28 Squadron, which was disbanded in December 2020. The squadron forms part of the RAAF Air Warfare Centre's Information Warfare Directorate. The squadron includes regular and reservist personnel."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "*Ramrod 16 - an operation flown as a diversion for 464 Squadron",
+      "attention_tier": "C",
+      "priority": 0.625,
+      "reading_order": 5,
+      "source_span": {
+        "start": 4437,
+        "end": 4500,
+        "quote": "*Ramrod 16 - an operation flown as a diversion for 464 Squadron"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-2",
+      "type": "claim",
+      "content": "*\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*",
+      "attention_tier": "C",
+      "priority": 0.55,
+      "reading_order": 6,
+      "source_span": {
+        "start": 4502,
+        "end": 4527,
+        "quote": "*\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*\n*"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-1",
+      "type": "appendix",
+      "content": "* 464 Squadron at RAAF Museum",
+      "attention_tier": "D",
+      "priority": 0.475,
+      "reading_order": 7,
+      "source_span": {
+        "start": 4529,
+        "end": 4558,
+        "quote": "* 464 Squadron at RAAF Museum"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-2",
+      "type": "appendix",
+      "content": "* No 450 - 467 Squadron Histories - Air of Authority",
+      "attention_tier": "D",
+      "priority": 0.4,
+      "reading_order": 8,
+      "source_span": {
+        "start": 4560,
+        "end": 4612,
+        "quote": "* No 450 - 467 Squadron Histories - Air of Authority"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-3",
+      "type": "factbox",
+      "content": "Category:Australian Article XV squadrons of World War II\nCategory:Military units and formations established in 1942\nCategory:Military units and formations disestablished in 1945\nCategory:Military units and formations established in 2021\nCategory:2021 establishments in Australia\nCategory:Night fighter units",
+      "attention_tier": "C",
+      "priority": 0.32499999999999996,
+      "reading_order": 9,
+      "source_span": {
+        "start": 4614,
+        "end": 4922,
+        "quote": "Category:Australian Article XV squadrons of World War II\nCategory:Military units and formations established in 1942\nCategory:Military units and formations disestablished in 1945\nCategory:Military units and formations established in 2021\nCategory:2021 establishments in Australia\nCategory:Night fighter units\n"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:bc1a31aa9bae85de9e920d50d702f45c73324d67c1c60d6e64b67d2529cfa637",
+    "chars": 4922,
+    "lang": "en"
+  }
+}

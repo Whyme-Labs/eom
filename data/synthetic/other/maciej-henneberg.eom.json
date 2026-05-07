@@ -1,0 +1,225 @@
+{
+  "version": "0.1",
+  "document_type": "other",
+  "summary": "Maciej Henneberg (born 23 April 1949) is a Polish-Australian anatomist, Emeritus Professor at the University of Adelaide and Adjunct Profess",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "Maciej Henneberg",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 18,
+        "quote": "Maciej Henneberg"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "Maciej Henneberg (born 23 April 1949) is a Polish-Australian anatomist, Emeritus Professor at the University of Adelaide and Adjunct Professor at Flinders University interested in human evolution, forensic science, human anatomy, as well as physical anthropology. From 1996 to 2021 he was Wood Jones Professor of Anthropological and Comparative Anatomy at the University of Adelaide, Australia. He has held various",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 20,
+        "end": 434,
+        "quote": "Maciej Henneberg (born 23 April 1949) is a Polish-Australian anatomist, Emeritus Professor at the University of Adelaide and Adjunct Professor at Flinders University interested in human evolution, forensic science, human anatomy, as well as physical anthropology. From 1996 to 2021 he was Wood Jones Professor of Anthropological and Comparative Anatomy at the University of Adelaide, Australia. He has held various"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "His work has been widely published and commented on in the news media. Henneberg is often called upon for comment by journalists investigating his areas of expertise. Similarly, he has appeared in numerous Australian courts to provide expert evidence.",
+      "attention_tier": "C",
+      "priority": 0.85,
+      "reading_order": 2,
+      "source_span": {
+        "start": 628,
+        "end": 879,
+        "quote": "His work has been widely published and commented on in the news media. Henneberg is often called upon for comment by journalists investigating his areas of expertise. Similarly, he has appeared in numerous Australian courts to provide expert evidence."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "Henneberg graduated summa cum laude in 1973 in Biology (Physical Anthropology) at Adam Mickiewicz University, Poznan, Poland. In 1976 he received a PhD from the same institution. His thesis was entitled,…",
+      "attention_tier": "B",
+      "priority": 0.7954545454545454,
+      "reading_order": 3,
+      "source_span": {
+        "start": 881,
+        "end": 1238,
+        "quote": "Henneberg graduated summa cum laude in 1973 in Biology (Physical Anthropology) at Adam Mickiewicz University, Poznan, Poland. In 1976 he received a PhD from the same institution. His thesis was entitled, \"Biological Dynamics of a Polish Rural Community in the 19th Century\". He received another degree Doktor Habilitowany (=DSc) in 1981 in Natural Sciences."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-2",
+      "type": "factbox",
+      "content": "In 1981, Henneberg was imprisoned by the Polish People's Republic for his role in the Solidarity trade union movement and his efforts to reconstitute the academic board at his university, as well as organise strikes. He was imprisoned…",
+      "attention_tier": "B",
+      "priority": 0.7409090909090909,
+      "reading_order": 4,
+      "source_span": {
+        "start": 1240,
+        "end": 1570,
+        "quote": "In 1981, Henneberg was imprisoned by the Polish People's Republic for his role in the Solidarity trade union movement and his efforts to reconstitute the academic board at his university, as well as organise strikes. He was imprisoned without trial for 100 days, became ill and was hospitalised. He was exiled from Poland in 1984."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "In 2002, the President of Poland awarded Henneberg Professor of Biological Sciences, the highest academic award in Poland, in recognition of his academic achievements.\nIn 2023 the University of Łódź awarded him the degree Doctor Honoris Causa for his academic work and social services",
+      "attention_tier": "C",
+      "priority": 0.6863636363636364,
+      "reading_order": 5,
+      "source_span": {
+        "start": 1572,
+        "end": 1856,
+        "quote": "In 2002, the President of Poland awarded Henneberg Professor of Biological Sciences, the highest academic award in Poland, in recognition of his academic achievements.\nIn 2023 the University of Łódź awarded him the degree Doctor Honoris Causa for his academic work and social services"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-2",
+      "type": "evidence",
+      "content": "Henneberg is perhaps most famous for the work he has co-authored since 2004 which claims that the 'Hobbit Man' was most likely a homo sapiens, probably with Down syndrome. Homo floresiensis, also known as 'Hobbit Man', was discovered around the same time as The Lord of the Rings trilogy was in cinemas and generated considerable global news media interest. Henneberg's team have been labelled \"Hobbit deniers\" as a result of their research. Henneberg has sustained that there is a \"Hobbit Trap\" whereby scientists are inclined to see new species in normal variation of homo sapiens.",
+      "attention_tier": "C",
+      "priority": 0.6318181818181818,
+      "reading_order": 6,
+      "source_span": {
+        "start": 1858,
+        "end": 2441,
+        "quote": "Henneberg is perhaps most famous for the work he has co-authored since 2004 which claims that the 'Hobbit Man' was most likely a homo sapiens, probably with Down syndrome. Homo floresiensis, also known as 'Hobbit Man', was discovered around the same time as The Lord of the Rings trilogy was in cinemas and generated considerable global news media interest. Henneberg's team have been labelled \"Hobbit deniers\" as a result of their research. Henneberg has sustained that there is a \"Hobbit Trap\" whereby scientists are inclined to see new species in normal variation of homo sapiens."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "However, this view has been criticised by the noted physical anthropologist Chris Stringer who in 2011 wrote of Homo floresiensis deniers generally, \"I think they have damaged their own, and palaeoanthropology's, reputation.\" Another noted paleoanthropologist, Ian Tattersall, similarly argues that the species has become well-established among reputable scientists. Other experts have specifically called-out Henneberg and his team for ignoring scientific evidence and consensus. In 2015, Henneberg and his team were asked to end their obstructionist approach to Homo floresiensis: \"It is time for the field to move on. The Hobbits are a new species of early hominins not modern humans with Down syndrome or indeed any other pathological condition.\". Despite this Henneberg continued to publish his original opinion and at the meetings of the American Association of Biological Anthropologists in Baltimore in March 2025 together with Robert B Eckhardt and Samuel Bennett presented three posters still arguing against the recognition of \"The Hobbit\" as a separate species.",
+      "attention_tier": "C",
+      "priority": 0.5772727272727273,
+      "reading_order": 7,
+      "source_span": {
+        "start": 2443,
+        "end": 3516,
+        "quote": "However, this view has been criticised by the noted physical anthropologist Chris Stringer who in 2011 wrote of Homo floresiensis deniers generally, \"I think they have damaged their own, and palaeoanthropology's, reputation.\" Another noted paleoanthropologist, Ian Tattersall, similarly argues that the species has become well-established among reputable scientists. Other experts have specifically called-out Henneberg and his team for ignoring scientific evidence and consensus. In 2015, Henneberg and his team were asked to end their obstructionist approach to Homo floresiensis: \"It is time for the field to move on. The Hobbits are a new species of early hominins not modern humans with Down syndrome or indeed any other pathological condition.\". Despite this Henneberg continued to publish his original opinion and at the meetings of the American Association of Biological Anthropologists in Baltimore in March 2025 together with Robert B Eckhardt and Samuel Bennett presented three posters still arguing against the recognition of \"The Hobbit\" as a separate species."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-3",
+      "type": "evidence",
+      "content": "In 2011, Henneberg discovered that Australian citizens height had plateaued since the 1990s and that this disproved popular notions of perpetual growth in the height of humans beyond the last hundred years. Henneberg's team of researchers theorised in 2013 that another popular notion - that of humans being more intelligent than other animals - is inaccurate, as species merely think differently. He has also stated a belief that available evidence indicates humans predominantly engage in intercourse for pleasure, rather than procreation.",
+      "attention_tier": "C",
+      "priority": 0.5227272727272727,
+      "reading_order": 8,
+      "source_span": {
+        "start": 3518,
+        "end": 4059,
+        "quote": "In 2011, Henneberg discovered that Australian citizens height had plateaued since the 1990s and that this disproved popular notions of perpetual growth in the height of humans beyond the last hundred years. Henneberg's team of researchers theorised in 2013 that another popular notion - that of humans being more intelligent than other animals - is inaccurate, as species merely think differently. He has also stated a belief that available evidence indicates humans predominantly engage in intercourse for pleasure, rather than procreation."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-1",
+      "type": "appendix",
+      "content": "Henneberg believes that evolutionary biologists are so enthusiastic to declare new species and links in human evolution that they have overlook the possibility that each species, like Neanderthals, are merely variations of homo sapiens. In The Dynamic Human, Henneberg and Arthur Saniotis argue that human evolution is still occurring, though at a slower rate because of technological advancement. It is further argued that technology may advance to a point where it becomes hard to distinguish between \"human and machine\".",
+      "attention_tier": "D",
+      "priority": 0.4681818181818182,
+      "reading_order": 9,
+      "source_span": {
+        "start": 4061,
+        "end": 4584,
+        "quote": "Henneberg believes that evolutionary biologists are so enthusiastic to declare new species and links in human evolution that they have overlook the possibility that each species, like Neanderthals, are merely variations of homo sapiens. In The Dynamic Human, Henneberg and Arthur Saniotis argue that human evolution is still occurring, though at a slower rate because of technological advancement. It is further argued that technology may advance to a point where it becomes hard to distinguish between \"human and machine\"."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-2",
+      "type": "appendix",
+      "content": "In 2016, Henneberg co-authored an article which demonstrates that the consumption of meat contributes to obesity to the same extent as the consumption of sugar. This is because protein is processed by the human body after fats and carbohydrates, which are conventionally thought to contribute to weight gain.",
+      "attention_tier": "D",
+      "priority": 0.41363636363636364,
+      "reading_order": 10,
+      "source_span": {
+        "start": 4586,
+        "end": 4894,
+        "quote": "In 2016, Henneberg co-authored an article which demonstrates that the consumption of meat contributes to obesity to the same extent as the consumption of sugar. This is because protein is processed by the human body after fats and carbohydrates, which are conventionally thought to contribute to weight gain."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-3",
+      "type": "appendix",
+      "content": "In 2008, Henneberg was suspended from the University of Adelaide pending an investigation of possible fraud. As head of department, the university held him technically responsible for the disappearance of $400,000 in an account he did not personally manage. Henneberg was later cleared of wrongdoing and reinstated by the university with an official apology published in The Advertiser.",
+      "attention_tier": "D",
+      "priority": 0.35909090909090907,
+      "reading_order": 11,
+      "source_span": {
+        "start": 4896,
+        "end": 5282,
+        "quote": "In 2008, Henneberg was suspended from the University of Adelaide pending an investigation of possible fraud. As head of department, the university held him technically responsible for the disappearance of $400,000 in an account he did not personally manage. Henneberg was later cleared of wrongdoing and reinstated by the university with an official apology published in The Advertiser."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-4",
+      "type": "appendix",
+      "content": "Category:Academic staff of the University of Adelaide\nCategory:Australian anthropologists\nCategory:Polish emigrants to Australia\nCategory:Adam Mickiewicz University in Poznań alumni\nCategory:Academic staff of the University of Zurich\nCategory:1949 births\nCategory:Living people",
+      "attention_tier": "D",
+      "priority": 0.30454545454545456,
+      "reading_order": 12,
+      "source_span": {
+        "start": 5284,
+        "end": 5562,
+        "quote": "Category:Academic staff of the University of Adelaide\nCategory:Australian anthropologists\nCategory:Polish emigrants to Australia\nCategory:Adam Mickiewicz University in Poznań alumni\nCategory:Academic staff of the University of Zurich\nCategory:1949 births\nCategory:Living people\n"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:21dde9de5bb950a8a8421bd77137d42fc97f4aae0e784d91d90efa514ce3cb15",
+    "chars": 5562,
+    "lang": "en"
+  }
+}

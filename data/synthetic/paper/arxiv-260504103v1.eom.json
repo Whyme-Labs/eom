@@ -1,0 +1,81 @@
+{
+  "version": "0.1",
+  "document_type": "paper",
+  "summary": "Authors: Matteo Gambella, Fabrizio Pittorino, Manuel Roveri",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "HERCULES: Hardware-Efficient, Robust, Continual Learning Neural Architecture Search",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 85,
+        "quote": "HERCULES: Hardware-Efficient, Robust, Continual Learning Neural Architecture Search"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "Authors: Matteo Gambella, Fabrizio Pittorino, Manuel Roveri",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 87,
+        "end": 146,
+        "quote": "Authors: Matteo Gambella, Fabrizio Pittorino, Manuel Roveri"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "Abstract",
+      "attention_tier": "C",
+      "priority": 0.85,
+      "reading_order": 2,
+      "source_span": {
+        "start": 148,
+        "end": 159,
+        "quote": "## Abstract"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "decision-1",
+      "type": "decision",
+      "content": "Neural Architecture Search (NAS) has emerged as a powerful framework for automatically discovering neural architectures that balance accuracy and efficiency. However, as AI transitions from static benchmarks to real-world deployment, the traditional focus on hardware-aware efficiency is no longer sufficient. We…",
+      "attention_tier": "B",
+      "priority": 0.55,
+      "reading_order": 3,
+      "source_span": {
+        "start": 161,
+        "end": 1831,
+        "quote": "Neural Architecture Search (NAS) has emerged as a powerful framework for automatically discovering neural architectures that balance accuracy and efficiency. However, as AI transitions from static benchmarks to real-world deployment, the traditional focus on hardware-aware efficiency is no longer sufficient. We observe that modern NAS methods, especially those that target edge AI, are evolving to address a triple objective: Efficiency, Robustness, and Continual Learning. While efficiency ensures feasibility in resource-constrained environments, robustness guarantees reliability under environmental variabilities, and continual learning enables adaptation to sequential tasks without catastrophic forgetting. We propose a taxonomy of NAS approaches through this triple lens, distinguishing between methods targeting resource optimization, environmental resilience, and architectural plasticity. This unified perspective reveals that these axes, though often studied in isolation, are mutually reinforcing. Building on this taxonomy, we map the current landscape of these NAS methods into a new framework called Hardware-Efficient, Robust, and ContinUal LEarning Search (HERCULES). We define the desiderata, the twelve labours of HERCULES, addressing the non-trivial challenge of balancing an adequate search-space exploration with the immense computational costs of a multi-objective NAS, accounting for these crucial objectives of current AI systems. By identifying critical gaps in existing research, this survey outlines a roadmap toward integrated algorithmic, architectural, and hardware-software co-design for truly deployable, lifelong-learning AI systems.\n"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:a3be4bde6e025c546bd8ae8bfccd13d83bcb1981bfd3a105a1e0f899087fdd8b",
+    "chars": 1831,
+    "lang": "en"
+  }
+}
