@@ -1,0 +1,97 @@
+{
+  "version": "0.1",
+  "document_type": "policy",
+  "summary": "RFC 8260 introduces a new chunk to the Stream Control Transmission Protocol (SCTP) to enable user message interleaving, specifically to prevent head-of-line blocking for WebRTC data channels.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "RFC 8260: Internet Engineering Task Force (IETF)",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 0,
+        "end": 84,
+        "quote": "# RFC 8260: Internet Engineering Task Force (IETF)                        R. Stewart"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "The Stream Control Transmission Protocol (SCTP) is a message-oriented transport protocol supporting arbitrarily large user messages. This document adds a new chunk to SCTP for carrying payload data to allow a sender to interleave different user messages.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 96,
+        "end": 514,
+        "quote": "   The Stream Control Transmission Protocol (SCTP) is a message-oriented\n   transport protocol supporting arbitrarily large user messages.  This\n   document adds a new chunk to SCTP for carrying payload data.  This\n   allows a sender to interleave different user messages that would\n   otherwise result in head-of-line blocking at the sender.  The\n   interleaving of user messages is required for WebRTC data channels."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "Interleaving of user messages is required for WebRTC data channels to prevent head-of-line blocking at the sender.",
+      "attention_tier": "B",
+      "priority": 0.9,
+      "reading_order": 2,
+      "source_span": {
+        "start": 96,
+        "end": 514,
+        "quote": "   The Stream Control Transmission Protocol (SCTP) is a message-oriented\n   transport protocol supporting arbitrarily large user messages.  This\n   document adds a new chunk to SCTP for carrying payload data.  This\n   allows a sender to interleave different user messages that would\n   otherwise result in head-of-line blocking at the sender.  The\n   interleaving of user messages is required for WebRTC data channels."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "Whenever an SCTP sender is allowed to send user data, it may choose from multiple outgoing SCTP streams. Multiple ways for performing this selection, called stream schedulers, are defined in this document.",
+      "attention_tier": "C",
+      "priority": 0.8,
+      "reading_order": 3,
+      "source_span": {
+        "start": 516,
+        "end": 834,
+        "quote": "   Whenever an SCTP sender is allowed to send user data, it may choose\n   from multiple outgoing SCTP streams.  Multiple ways for performing\n   this selection, called stream schedulers, are defined in this\n   document.  A stream scheduler can choose to either implement, or not\n   implement, user message interleaving."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "This is an Internet Standards Track document produced by the Internet Engineering Task Force (IETF) and approved by the Internet Engineering Steering Group (IESG).",
+      "attention_tier": "C",
+      "priority": 0.7,
+      "reading_order": 4,
+      "source_span": {
+        "start": 857,
+        "end": 1249,
+        "quote": "   This is an Internet Standards Track document.\n\n   This document is a product of the Internet Engineering Task Force\n   (IETF).  It represents the consensus of the IETF community.  It has\n   received public review and has been approved for publication by the\n   Internet Engineering Steering Group (IESG).  Further information on\n   Internet Standards is available in Section 2 of RFC 7841."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:0d5521bf7cad15f540c5fc214b8a7c2e68b1e190237c9e27bb6970f7d662acb3",
+    "chars": 2502,
+    "lang": "en"
+  }
+}

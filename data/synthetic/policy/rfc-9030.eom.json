@@ -1,0 +1,97 @@
+{
+  "version": "0.1",
+  "document_type": "policy",
+  "summary": "RFC 9030 describes a network architecture combining a high-speed powered backbone with IEEE 802.15.4 TSCH subnetworks to provide low-latency, high-reliability packet delivery for low-power wireless deterministic applications.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "RFC 9030: An Architecture for IPv6 over the Time-Slotted Channel Hopping Mode of",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 0,
+        "end": 82,
+        "quote": "# RFC 9030: An Architecture for IPv6 over the Time-Slotted Channel Hopping Mode of"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "This document describes a network architecture that provides low-latency, low-jitter, and high-reliability packet delivery. It combines a high-speed powered backbone and subnetworks using IEEE 802.15.4 time-slotted channel hopping (TSCH) to meet the requirements of low-power wireless deterministic applications.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 94,
+        "end": 423,
+        "quote": "   This document describes a network architecture that provides low-\n   latency, low-jitter, and high-reliability packet delivery.  It\n   combines a high-speed powered backbone and subnetworks using IEEE\n   802.15.4 time-slotted channel hopping (TSCH) to meet the requirements\n   of low-power wireless deterministic applications."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "This document is not an Internet Standards Track specification; it is published for informational purposes.",
+      "attention_tier": "B",
+      "priority": 0.8,
+      "reading_order": 2,
+      "source_span": {
+        "start": 446,
+        "end": 559,
+        "quote": "   This document is not an Internet Standards Track specification; it is\n   published for informational purposes."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "This document is a product of the Internet Engineering Task Force (IETF). It represents the consensus of the IETF community. It has received public review and has been approved for publication by the Internet Engineering Steering Group (IESG).",
+      "attention_tier": "C",
+      "priority": 0.7,
+      "reading_order": 3,
+      "source_span": {
+        "start": 561,
+        "end": 942,
+        "quote": "   This document is a product of the Internet Engineering Task Force\n   (IETF).  It represents the consensus of the IETF community.  It has\n   received public review and has been approved for publication by the\n   Internet Engineering Steering Group (IESG).  Not all documents\n   approved by the IESG are candidates for any level of Internet\n   Standard; see Section 2 of RFC 7841."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "This document is subject to BCP 78 and the IETF Trust's Legal Provisions Relating to IETF Documents in effect on the date of publication of this document.",
+      "attention_tier": "D",
+      "priority": 0.5,
+      "reading_order": 4,
+      "source_span": {
+        "start": 1244,
+        "end": 1807,
+        "quote": "   This document is subject to BCP 78 and the IETF Trust's Legal\n   Provisions Relating to IETF Documents\n   (https://trustee.ietf.org/license-info) in effect on the date of\n   publication of this document.  Please review these documents\n   carefully, as they describe your rights and restrictions with respect\n   to this document.  Code Components extracted from this document must\n   include Simplified BSD License text as described in Section 4.e of\n   the Trust Legal Provisions and are provided without warranty as\n   described in the Simplified BSD License."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:90a03eee79348049de6402efc983f584701a5dad5b1ac927f99e62ca3b93a7c1",
+    "chars": 1845,
+    "lang": "en"
+  }
+}

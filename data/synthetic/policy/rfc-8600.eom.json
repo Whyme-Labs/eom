@@ -1,0 +1,97 @@
+{
+  "version": "0.1",
+  "document_type": "policy",
+  "summary": "RFC 8600 specifies the use of the Extensible Messaging and Presence Protocol (XMPP) for the collection and distribution of security incident reports, specifically illustrating its application with the Incident Object Description Exchange Format (IODEF).",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "RFC 8600: P. Saint-Andre",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 0,
+        "end": 26,
+        "quote": "# RFC 8600: P. Saint-Andre"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "This document describes how to use the Extensible Messaging and Presence Protocol (XMPP) to collect and distribute security incident reports and other security-relevant information between network-connected devices, primarily for the purpose of communication among Computer Security Incident Response Teams and associated entities.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 38,
+        "end": 528,
+        "quote": "   This document describes how to use the Extensible Messaging and\n   Presence Protocol (XMPP) to collect and distribute security incident\n   reports and other security-relevant information between network-\n   connected devices, primarily for the purpose of communication among\n   Computer Security Incident Response Teams and associated entities.\n   To illustrate the principles involved, this document describes such a\n   usage for the Incident Object Description Exchange Format (IODEF)."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "This is an Internet Standards Track document.",
+      "attention_tier": "B",
+      "priority": 0.8,
+      "reading_order": 2,
+      "source_span": {
+        "start": 551,
+        "end": 599,
+        "quote": "   This is an Internet Standards Track document."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "This document is a product of the Internet Engineering Task Force (IETF). It represents the consensus of the IETF community. It has received public review and has been approved for publication by the Internet Engineering Steering Group (IESG).",
+      "attention_tier": "C",
+      "priority": 0.7,
+      "reading_order": 3,
+      "source_span": {
+        "start": 601,
+        "end": 943,
+        "quote": "   This document is a product of the Internet Engineering Task Force\n   (IETF).  It represents the consensus of the IETF community.  It has\n   received public review and has been approved for publication by the\n   Internet Engineering Steering Group (IESG).  Further information on\n   Internet Standards is available in Section 2 of RFC 7841."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "This document is subject to BCP 78 and the IETF Trust's Legal Provisions Relating to IETF Documents in effect on the date of publication of this document.",
+      "attention_tier": "D",
+      "priority": 0.6,
+      "reading_order": 4,
+      "source_span": {
+        "start": 1319,
+        "end": 1882,
+        "quote": "   This document is subject to BCP 78 and the IETF Trust's Legal\n   Provisions Relating to IETF Documents\n   (https://trustee.ietf.org/license-info) in effect on the date of\n   publication of this document.  Please review these documents\n   carefully, as they describe your rights and restrictions with respect\n   to this document.  Code Components extracted from this document must\n   include Simplified BSD License text as described in Section 4.e of\n   the Trust Legal Provisions and are provided without warranty as\n   described in the Simplified BSD License."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:6de058c33f8f1ff552c69cc5bff5f65f4d86f6cc18a45c9596705771cfcf77b3",
+    "chars": 1976,
+    "lang": "en"
+  }
+}

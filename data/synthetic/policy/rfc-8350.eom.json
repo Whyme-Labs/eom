@@ -1,0 +1,241 @@
+{
+  "version": "0.1",
+  "document_type": "policy",
+  "summary": "Abstract",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "RFC 8350: Internet Engineering Task Force (IETF)                          R. Zhang",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 84,
+        "quote": "RFC 8350: Internet Engineering Task Force (IETF)                          R. Zhang"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "Abstract",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 86,
+        "end": 94,
+        "quote": "Abstract"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "Control and Provisioning of Wireless Access Points (CAPWAP) is a protocol for encapsulating a station's data frames between the Wireless Transmission Point (WTP) and Access Controller (AC). Specifically, the station's IEEE 802.11 data…",
+      "attention_tier": "B",
+      "priority": 0.85,
+      "reading_order": 2,
+      "source_span": {
+        "start": 96,
+        "end": 1348,
+        "quote": "   Control and Provisioning of Wireless Access Points (CAPWAP) is a\n   protocol for encapsulating a station's data frames between the\n   Wireless Transmission Point (WTP) and Access Controller (AC).\n   Specifically, the station's IEEE 802.11 data frames can be either\n   locally bridged or tunneled to the AC.  When tunneled, a CAPWAP Data\n   Channel is used for tunneling.  In many deployments, encapsulating\n   data frames to an entity other than the AC (for example, to an Access\n   Router (AR)) is desirable.  Furthermore, it may also be desirable to\n   use different tunnel encapsulation modes between the WTP and the\n   Access Router.  This document defines an extension to the CAPWAP\n   protocol that supports this capability and refers to it as alternate\n   tunnel encapsulation.  The alternate tunnel encapsulation allows 1)\n   the WTP to tunnel non-management data frames to an endpoint different\n   from the AC and 2) the WTP to tunnel using one of many known\n   encapsulation types, such as IP-IP, IP-GRE, or CAPWAP.  The WTP may\n   advertise support for alternate tunnel encapsulation during the\n   discovery and join process, and the AC may select one of the\n   supported alternate tunnel encapsulation types while configuring the\n   WTP."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "Zhang, et al.                 Experimental                      [Page 1]",
+      "attention_tier": "C",
+      "priority": 0.7999999999999999,
+      "reading_order": 3,
+      "source_span": {
+        "start": 1350,
+        "end": 1422,
+        "quote": "Zhang, et al.                 Experimental                      [Page 1]"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-2",
+      "type": "claim",
+      "content": "Status of This Memo",
+      "attention_tier": "C",
+      "priority": 0.75,
+      "reading_order": 4,
+      "source_span": {
+        "start": 1424,
+        "end": 1443,
+        "quote": "Status of This Memo"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-3",
+      "type": "claim",
+      "content": "This document is not an Internet Standards Track specification; it is\n   published for examination, experimental implementation, and\n   evaluation.",
+      "attention_tier": "C",
+      "priority": 0.7,
+      "reading_order": 5,
+      "source_span": {
+        "start": 1445,
+        "end": 1595,
+        "quote": "   This document is not an Internet Standards Track specification; it is\n   published for examination, experimental implementation, and\n   evaluation."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "This document defines an Experimental Protocol for the Internet\n   community.  This document is a product of the Internet Engineering\n   Task Force (IETF).  It represents the consensus of the IETF\n   community.  It has received public review and has been approved for\n   publication by the Internet Engineering Steering Group (IESG).  Not\n   all documents approved by the IESG are candidates for any level of\n   Internet Standard; see Section 2 of RFC 7841.",
+      "attention_tier": "B",
+      "priority": 0.65,
+      "reading_order": 6,
+      "source_span": {
+        "start": 1597,
+        "end": 2057,
+        "quote": "   This document defines an Experimental Protocol for the Internet\n   community.  This document is a product of the Internet Engineering\n   Task Force (IETF).  It represents the consensus of the IETF\n   community.  It has received public review and has been approved for\n   publication by the Internet Engineering Steering Group (IESG).  Not\n   all documents approved by the IESG are candidates for any level of\n   Internet Standard; see Section 2 of RFC 7841."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-4",
+      "type": "claim",
+      "content": "Information about the current status of this document, any errata,\n   and how to provide feedback on it may be obtained at\n   https://www.rfc-editor.org/info/rfc8350.",
+      "attention_tier": "C",
+      "priority": 0.6,
+      "reading_order": 7,
+      "source_span": {
+        "start": 2059,
+        "end": 2228,
+        "quote": "   Information about the current status of this document, any errata,\n   and how to provide feedback on it may be obtained at\n   https://www.rfc-editor.org/info/rfc8350."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-5",
+      "type": "claim",
+      "content": "Copyright Notice",
+      "attention_tier": "C",
+      "priority": 0.55,
+      "reading_order": 8,
+      "source_span": {
+        "start": 2230,
+        "end": 2246,
+        "quote": "Copyright Notice"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-6",
+      "type": "claim",
+      "content": "Copyright (c) 2018 IETF Trust and the persons identified as the\n   document authors.  All rights reserved.",
+      "attention_tier": "C",
+      "priority": 0.49999999999999994,
+      "reading_order": 9,
+      "source_span": {
+        "start": 2248,
+        "end": 2357,
+        "quote": "   Copyright (c) 2018 IETF Trust and the persons identified as the\n   document authors.  All rights reserved."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-1",
+      "type": "appendix",
+      "content": "This document is subject to BCP 78 and the IETF Trust's Legal\n   Provisions Relating to IETF Documents\n   (https://trustee.ietf.org/license-info) in effect on the date of\n   publication of this document.  Please review these documents\n   carefully, as they describe your rights and restrictions with respect\n   to this document.  Code Components extracted from this document must\n   include Simplified BSD License text as described in Section 4.e of\n   the Trust Legal Provisions and are provided without warranty as\n   described in the Simplified BSD License.",
+      "attention_tier": "D",
+      "priority": 0.45,
+      "reading_order": 10,
+      "source_span": {
+        "start": 2359,
+        "end": 2922,
+        "quote": "   This document is subject to BCP 78 and the IETF Trust's Legal\n   Provisions Relating to IETF Documents\n   (https://trustee.ietf.org/license-info) in effect on the date of\n   publication of this document.  Please review these documents\n   carefully, as they describe your rights and restrictions with respect\n   to this document.  Code Components extracted from this document must\n   include Simplified BSD License text as described in Section 4.e of\n   the Trust Legal Provisions and are provided without warranty as\n   described in the Simplified BSD License."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-2",
+      "type": "appendix",
+      "content": "Zhang, et al.                 Experimental                      [Page 2]",
+      "attention_tier": "D",
+      "priority": 0.4,
+      "reading_order": 11,
+      "source_span": {
+        "start": 2924,
+        "end": 2996,
+        "quote": "Zhang, et al.                 Experimental                      [Page 2]"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-3",
+      "type": "appendix",
+      "content": "Table of Contents",
+      "attention_tier": "D",
+      "priority": 0.35,
+      "reading_order": 12,
+      "source_span": {
+        "start": 2998,
+        "end": 3015,
+        "quote": "Table of Contents"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-2",
+      "type": "factbox",
+      "content": "1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   3\n     1.1.  Conventions Used in This Document . . . . . . . . . . . .   7\n     1.2.  Terminology . . . . . . . . . . . . . . . . . . . . . . .   7\n     1.3.  History of the Document . . . . . . . . . . . . . . . . .   8",
+      "attention_tier": "C",
+      "priority": 0.30000000000000004,
+      "reading_order": 13,
+      "source_span": {
+        "start": 3017,
+        "end": 3309,
+        "quote": "   1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   3\n     1.1.  Conventions Used in This Document . . . . . . . . . . . .   7\n     1.2.  Terminology . . . . . . . . . . . . . . . . . . . . . . .   7\n     1.3.  History of the Document . . . . . . . . . . . . . . . . .   8\n"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:cdc3dd2b3628af0de331cc3040b1e9ba55bf995e4d7c327a1a39e5b2e2764d83",
+    "chars": 3309,
+    "lang": "en"
+  }
+}

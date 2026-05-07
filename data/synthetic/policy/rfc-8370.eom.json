@@ -1,0 +1,241 @@
+{
+  "version": "0.1",
+  "document_type": "policy",
+  "summary": "Abstract",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "RFC 8370: Google, Inc",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 23,
+        "quote": "RFC 8370: Google, Inc"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "Abstract",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 25,
+        "end": 33,
+        "quote": "Abstract"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "Networks that utilize RSVP-TE LSPs are encountering implementations\n   that have a limited ability to support the growth in the number of\n   LSPs deployed.",
+      "attention_tier": "B",
+      "priority": 0.85,
+      "reading_order": 2,
+      "source_span": {
+        "start": 35,
+        "end": 193,
+        "quote": "   Networks that utilize RSVP-TE LSPs are encountering implementations\n   that have a limited ability to support the growth in the number of\n   LSPs deployed."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "This document defines two techniques, Refresh-Interval Independent\n   RSVP (RI-RSVP) and Per-Peer Flow Control, that reduce the number of\n   processing cycles required to maintain RSVP-TE LSP state in Label\n   Switching Routers (LSRs) and hence allow implementations to support\n   larger scale deployments.",
+      "attention_tier": "C",
+      "priority": 0.7999999999999999,
+      "reading_order": 3,
+      "source_span": {
+        "start": 195,
+        "end": 504,
+        "quote": "   This document defines two techniques, Refresh-Interval Independent\n   RSVP (RI-RSVP) and Per-Peer Flow Control, that reduce the number of\n   processing cycles required to maintain RSVP-TE LSP state in Label\n   Switching Routers (LSRs) and hence allow implementations to support\n   larger scale deployments."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-2",
+      "type": "claim",
+      "content": "Status of This Memo",
+      "attention_tier": "C",
+      "priority": 0.75,
+      "reading_order": 4,
+      "source_span": {
+        "start": 506,
+        "end": 525,
+        "quote": "Status of This Memo"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-3",
+      "type": "claim",
+      "content": "This is an Internet Standards Track document.",
+      "attention_tier": "C",
+      "priority": 0.7,
+      "reading_order": 5,
+      "source_span": {
+        "start": 527,
+        "end": 575,
+        "quote": "   This is an Internet Standards Track document."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "This document is a product of the Internet Engineering Task Force\n   (IETF).  It represents the consensus of the IETF community.  It has\n   received public review and has been approved for publication by the\n   Internet Engineering Steering Group (IESG).  Further information on\n   Internet Standards is available in Section 2 of RFC 7841.",
+      "attention_tier": "B",
+      "priority": 0.65,
+      "reading_order": 6,
+      "source_span": {
+        "start": 577,
+        "end": 919,
+        "quote": "   This document is a product of the Internet Engineering Task Force\n   (IETF).  It represents the consensus of the IETF community.  It has\n   received public review and has been approved for publication by the\n   Internet Engineering Steering Group (IESG).  Further information on\n   Internet Standards is available in Section 2 of RFC 7841."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-4",
+      "type": "claim",
+      "content": "Information about the current status of this document, any errata,\n   and how to provide feedback on it may be obtained at\n   https://www.rfc-editor.org/info/rfc8370.",
+      "attention_tier": "C",
+      "priority": 0.6,
+      "reading_order": 7,
+      "source_span": {
+        "start": 921,
+        "end": 1090,
+        "quote": "   Information about the current status of this document, any errata,\n   and how to provide feedback on it may be obtained at\n   https://www.rfc-editor.org/info/rfc8370."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-5",
+      "type": "claim",
+      "content": "Beeram, et al.               Standards Track                    [Page 1]",
+      "attention_tier": "C",
+      "priority": 0.55,
+      "reading_order": 8,
+      "source_span": {
+        "start": 1092,
+        "end": 1164,
+        "quote": "Beeram, et al.               Standards Track                    [Page 1]"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-6",
+      "type": "claim",
+      "content": "Copyright Notice",
+      "attention_tier": "C",
+      "priority": 0.49999999999999994,
+      "reading_order": 9,
+      "source_span": {
+        "start": 1166,
+        "end": 1182,
+        "quote": "Copyright Notice"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-1",
+      "type": "appendix",
+      "content": "Copyright (c) 2018 IETF Trust and the persons identified as the\n   document authors.  All rights reserved.",
+      "attention_tier": "D",
+      "priority": 0.45,
+      "reading_order": 10,
+      "source_span": {
+        "start": 1184,
+        "end": 1293,
+        "quote": "   Copyright (c) 2018 IETF Trust and the persons identified as the\n   document authors.  All rights reserved."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-2",
+      "type": "appendix",
+      "content": "This document is subject to BCP 78 and the IETF Trust's Legal\n   Provisions Relating to IETF Documents\n   (https://trustee.ietf.org/license-info) in effect on the date of\n   publication of this document.  Please review these documents\n   carefully, as they describe your rights and restrictions with respect\n   to this document.  Code Components extracted from this document must\n   include Simplified BSD License text as described in Section 4.e of\n   the Trust Legal Provisions and are provided without warranty as\n   described in the Simplified BSD License.",
+      "attention_tier": "D",
+      "priority": 0.4,
+      "reading_order": 11,
+      "source_span": {
+        "start": 1295,
+        "end": 1858,
+        "quote": "   This document is subject to BCP 78 and the IETF Trust's Legal\n   Provisions Relating to IETF Documents\n   (https://trustee.ietf.org/license-info) in effect on the date of\n   publication of this document.  Please review these documents\n   carefully, as they describe your rights and restrictions with respect\n   to this document.  Code Components extracted from this document must\n   include Simplified BSD License text as described in Section 4.e of\n   the Trust Legal Provisions and are provided without warranty as\n   described in the Simplified BSD License."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-3",
+      "type": "appendix",
+      "content": "Table of Contents",
+      "attention_tier": "D",
+      "priority": 0.35,
+      "reading_order": 12,
+      "source_span": {
+        "start": 1860,
+        "end": 1877,
+        "quote": "Table of Contents"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-4",
+      "type": "appendix",
+      "content": "1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   3",
+      "attention_tier": "D",
+      "priority": 0.30000000000000004,
+      "reading_order": 13,
+      "source_span": {
+        "start": 1879,
+        "end": 1952,
+        "quote": "   1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   3\n"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:74d31970c454d6469a65e01145bbb5f1ee978aeb040e7247a3b3206836ff5fb9",
+    "chars": 1952,
+    "lang": "en"
+  }
+}

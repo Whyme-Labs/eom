@@ -1,0 +1,97 @@
+{
+  "version": "0.1",
+  "document_type": "policy",
+  "summary": "RFC 8690 updates RFC 8287 to resolve interoperability issues by clarifying how the length of Segment ID sub-TLVs should be computed for Segment Routing with the MPLS data plane.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "# RFC 8690: A. Vainshtein",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 0,
+        "end": 25,
+        "quote": "# RFC 8690: A. Vainshtein"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "This document updates RFC 8287 by clarifying the length of each of the Segment ID sub-TLVs defined in RFC 8287.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 523,
+        "end": 640,
+        "quote": "   This document updates RFC 8287 by clarifying the length of each of\n   the Segment ID sub-TLVs defined in RFC 8287."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "for Segment Routing IGP-Prefix and IGP-Adjacency Segment Identifiers (SIDs) with the MPLS data plane. RFC 8287 proposes three Target Forwarding Equivalence Class (FEC) Stack sub-TLVs. While RFC 8287 defines the format and procedure to handle those sub-TLVs, it does not sufficiently clarify how the length of the Segment ID sub-TLVs should be computed to be included in the Length field of the sub-TLVs. This ambiguity has resulted in interoperability issues.",
+      "attention_tier": "B",
+      "priority": 0.9,
+      "reading_order": 2,
+      "source_span": {
+        "start": 37,
+        "end": 521,
+        "quote": "   for Segment Routing IGP-Prefix and IGP-Adjacency Segment Identifiers\n   (SIDs) with the MPLS data plane.  RFC 8287 proposes three Target\n   Forwarding Equivalence Class (FEC) Stack sub-TLVs.  While RFC 8287\n   defines the format and procedure to handle those sub-TLVs, it does\n   not sufficiently clarify how the length of the Segment ID sub-TLVs\n   should be computed to be included in the Length field of the sub-\n   TLVs.  This ambiguity has resulted in interoperability issues."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "This is an Internet Standards Track document.",
+      "attention_tier": "C",
+      "priority": 0.8,
+      "reading_order": 3,
+      "source_span": {
+        "start": 663,
+        "end": 711,
+        "quote": "   This is an Internet Standards Track document."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-2",
+      "type": "evidence",
+      "content": "This document is a product of the Internet Engineering Task Force (IETF). It represents the consensus of the IETF community. It has received public review and has been approved for publication by the Internet Engineering Steering Group (IESG).",
+      "attention_tier": "C",
+      "priority": 0.7,
+      "reading_order": 4,
+      "source_span": {
+        "start": 713,
+        "end": 1055,
+        "quote": "   This document is a product of the Internet Engineering Task Force\n   (IETF).  It represents the consensus of the IETF community.  It has\n   received public review and has been approved for publication by the\n   Internet Engineering Steering Group (IESG).  Further information on\n   Internet Standards is available in Section 2 of RFC 7841."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:aa03964c801d5754af25c7716b71bdb2d62a48ed983dc51b76259e291f37c1ca",
+    "chars": 1958,
+    "lang": "en"
+  }
+}

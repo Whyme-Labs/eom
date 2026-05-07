@@ -1,0 +1,225 @@
+{
+  "version": "0.1",
+  "document_type": "policy",
+  "summary": "Abstract",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "RFC 8230: Using RSA Algorithms with",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 37,
+        "quote": "RFC 8230: Using RSA Algorithms with"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "Abstract",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 39,
+        "end": 47,
+        "quote": "Abstract"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "The CBOR Object Signing and Encryption (COSE) specification defines\n   cryptographic message encodings using Concise Binary Object\n   Representation (CBOR).  This specification defines algorithm\n   encodings and representations enabling RSA algorithms to be used for\n   COSE messages.  Encodings are specified for the use of RSA\n   Probabilistic Signature Scheme (RSASSA-PSS) signatures, RSA\n   Encryption Scheme - Optimal Asymmetric Encryption Padding (RSAES-\n   OAEP) encryption, and RSA keys.",
+      "attention_tier": "B",
+      "priority": 0.85,
+      "reading_order": 2,
+      "source_span": {
+        "start": 49,
+        "end": 547,
+        "quote": "   The CBOR Object Signing and Encryption (COSE) specification defines\n   cryptographic message encodings using Concise Binary Object\n   Representation (CBOR).  This specification defines algorithm\n   encodings and representations enabling RSA algorithms to be used for\n   COSE messages.  Encodings are specified for the use of RSA\n   Probabilistic Signature Scheme (RSASSA-PSS) signatures, RSA\n   Encryption Scheme - Optimal Asymmetric Encryption Padding (RSAES-\n   OAEP) encryption, and RSA keys."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "Status of This Memo",
+      "attention_tier": "C",
+      "priority": 0.7954545454545454,
+      "reading_order": 3,
+      "source_span": {
+        "start": 549,
+        "end": 568,
+        "quote": "Status of This Memo"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-2",
+      "type": "claim",
+      "content": "This is an Internet Standards Track document.",
+      "attention_tier": "C",
+      "priority": 0.7409090909090909,
+      "reading_order": 4,
+      "source_span": {
+        "start": 570,
+        "end": 618,
+        "quote": "   This is an Internet Standards Track document."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-2",
+      "type": "evidence",
+      "content": "This document is a product of the Internet Engineering Task Force\n   (IETF).  It represents the consensus of the IETF community.  It has\n   received public review and has been approved for publication by the\n   Internet Engineering Steering Group (IESG).  Further information on\n   Internet Standards is available in Section 2 of RFC 7841.",
+      "attention_tier": "B",
+      "priority": 0.6863636363636364,
+      "reading_order": 5,
+      "source_span": {
+        "start": 620,
+        "end": 962,
+        "quote": "   This document is a product of the Internet Engineering Task Force\n   (IETF).  It represents the consensus of the IETF community.  It has\n   received public review and has been approved for publication by the\n   Internet Engineering Steering Group (IESG).  Further information on\n   Internet Standards is available in Section 2 of RFC 7841."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-3",
+      "type": "claim",
+      "content": "Information about the current status of this document, any errata,\n   and how to provide feedback on it may be obtained at\n   http://www.rfc-editor.org/info/rfc8230.",
+      "attention_tier": "C",
+      "priority": 0.6318181818181818,
+      "reading_order": 6,
+      "source_span": {
+        "start": 964,
+        "end": 1132,
+        "quote": "   Information about the current status of this document, any errata,\n   and how to provide feedback on it may be obtained at\n   http://www.rfc-editor.org/info/rfc8230."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-4",
+      "type": "claim",
+      "content": "Copyright Notice",
+      "attention_tier": "C",
+      "priority": 0.5772727272727273,
+      "reading_order": 7,
+      "source_span": {
+        "start": 1134,
+        "end": 1150,
+        "quote": "Copyright Notice"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-5",
+      "type": "claim",
+      "content": "Copyright (c) 2017 IETF Trust and the persons identified as the\n   document authors.  All rights reserved.",
+      "attention_tier": "C",
+      "priority": 0.5227272727272727,
+      "reading_order": 8,
+      "source_span": {
+        "start": 1152,
+        "end": 1261,
+        "quote": "   Copyright (c) 2017 IETF Trust and the persons identified as the\n   document authors.  All rights reserved."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-1",
+      "type": "appendix",
+      "content": "This document is subject to BCP 78 and the IETF Trust's Legal\n   Provisions Relating to IETF Documents\n   (http://trustee.ietf.org/license-info) in effect on the date of\n   publication of this document.  Please review these documents\n   carefully, as they describe your rights and restrictions with respect\n   to this document.  Code Components extracted from this document must\n   include Simplified BSD License text as described in Section 4.e of\n   the Trust Legal Provisions and are provided without warranty as\n   described in the Simplified BSD License.",
+      "attention_tier": "D",
+      "priority": 0.4681818181818182,
+      "reading_order": 9,
+      "source_span": {
+        "start": 1263,
+        "end": 1825,
+        "quote": "   This document is subject to BCP 78 and the IETF Trust's Legal\n   Provisions Relating to IETF Documents\n   (http://trustee.ietf.org/license-info) in effect on the date of\n   publication of this document.  Please review these documents\n   carefully, as they describe your rights and restrictions with respect\n   to this document.  Code Components extracted from this document must\n   include Simplified BSD License text as described in Section 4.e of\n   the Trust Legal Provisions and are provided without warranty as\n   described in the Simplified BSD License."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-2",
+      "type": "appendix",
+      "content": "Jones                        Standards Track                    [Page 1]",
+      "attention_tier": "D",
+      "priority": 0.41363636363636364,
+      "reading_order": 10,
+      "source_span": {
+        "start": 1827,
+        "end": 1899,
+        "quote": "Jones                        Standards Track                    [Page 1]"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-3",
+      "type": "appendix",
+      "content": "Table of Contents",
+      "attention_tier": "D",
+      "priority": 0.35909090909090907,
+      "reading_order": 11,
+      "source_span": {
+        "start": 1901,
+        "end": 1918,
+        "quote": "Table of Contents"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   3\n     1.1.  Requirements Notation and Conventions . . . . . . . . . .   3",
+      "attention_tier": "C",
+      "priority": 0.30454545454545456,
+      "reading_order": 12,
+      "source_span": {
+        "start": 1920,
+        "end": 2066,
+        "quote": "   1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   3\n     1.1.  Requirements Notation and Conventions . . . . . . . . . .   3\n"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:d2b7aa5e2fbce154f868407a6033e66f1eff940bffba602dc23af39e60540c86",
+    "chars": 2066,
+    "lang": "en"
+  }
+}

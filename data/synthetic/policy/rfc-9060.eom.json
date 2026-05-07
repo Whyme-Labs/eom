@@ -1,0 +1,81 @@
+{
+  "version": "0.1",
+  "document_type": "policy",
+  "summary": "RFC 9060 specifies the mechanism for delegating authority from a parent certificate to a subordinate certificate within the Secure Telephone Identity Revisited (STIR) profile to prevent telephone number spoofing.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "RFC 9060: Secure Telephone Identity Revisited (STIR) Certificate Delegation",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 0,
+        "end": 77,
+        "quote": "# RFC 9060: Secure Telephone Identity Revisited (STIR) Certificate Delegation"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "The Secure Telephone Identity Revisited (STIR) certificate profile provides a way to attest authority over telephone numbers and related identifiers for the purpose of preventing telephone number spoofing. This specification details how that authority can be delegated from a parent certificate to a subordinate certificate.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 89,
+        "end": 438,
+        "quote": "   The Secure Telephone Identity Revisited (STIR) certificate profile\n   provides a way to attest authority over telephone numbers and related\n   identifiers for the purpose of preventing telephone number spoofing.\n   This specification details how that authority can be delegated from a\n   parent certificate to a subordinate certificate."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "Certificate delegation supports various use cases, specifically allowing service providers to grant credentials to enterprises or other customers who are capable of signing calls with STIR.",
+      "attention_tier": "B",
+      "priority": 0.9,
+      "reading_order": 2,
+      "source_span": {
+        "start": 439,
+        "end": 603,
+        "quote": "  This supports a\n   number of use cases, including those where service providers grant\n   credentials to enterprises or other customers capable of signing\n   calls with STIR."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "This is an Internet Standards Track document produced by the Internet Engineering Task Force (IETF), representing the consensus of the IETF community and approved by the Internet Engineering Steering Group (IESG).",
+      "attention_tier": "C",
+      "priority": 0.8,
+      "reading_order": 3,
+      "source_span": {
+        "start": 626,
+        "end": 1018,
+        "quote": "   This is an Internet Standards Track document.\n\n   This document is a product of the Internet Engineering Task Force\n   (IETF).  It represents the consensus of the IETF community.  It has\n   received public review and has been approved for publication by the\n   Internet Engineering Steering Group (IESG).  Further information on\n   Internet Standards is available in Section 2 of RFC 7841."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:48324b28b155c10acd150fb1eb2db1ed58121c9cb25811a426b662b7a169bf0c",
+    "chars": 1921,
+    "lang": "en"
+  }
+}

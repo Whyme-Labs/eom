@@ -1,0 +1,209 @@
+{
+  "version": "0.1",
+  "document_type": "policy",
+  "summary": "Abstract",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "RFC 9190: EAP-TLS 1.3: Using the Extensible Authentication Protocol with TLS 1.3",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 82,
+        "quote": "RFC 9190: EAP-TLS 1.3: Using the Extensible Authentication Protocol with TLS 1.3"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "Abstract",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 84,
+        "end": 92,
+        "quote": "Abstract"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "The Extensible Authentication Protocol (EAP), defined in RFC 3748, provides a standard mechanism for support of multiple authentication methods. This document specifies the use of EAP-TLS with TLS 1.3 while remaining backwards compatible with existing implementations…",
+      "attention_tier": "B",
+      "priority": 0.85,
+      "reading_order": 2,
+      "source_span": {
+        "start": 94,
+        "end": 976,
+        "quote": "   The Extensible Authentication Protocol (EAP), defined in RFC 3748,\n   provides a standard mechanism for support of multiple authentication\n   methods.  This document specifies the use of EAP-TLS with TLS 1.3\n   while remaining backwards compatible with existing implementations of\n   EAP-TLS.  TLS 1.3 provides significantly improved security and\n   privacy, and reduced latency when compared to earlier versions of\n   TLS.  EAP-TLS with TLS 1.3 (EAP-TLS 1.3) further improves security\n   and privacy by always providing forward secrecy, never disclosing the\n   peer identity, and by mandating use of revocation checking when\n   compared to EAP-TLS with earlier versions of TLS.  This document also\n   provides guidance on authentication, authorization, and resumption\n   for EAP-TLS in general (regardless of the underlying TLS version\n   used).  This document updates RFC 5216."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "Status of This Memo",
+      "attention_tier": "C",
+      "priority": 0.79,
+      "reading_order": 3,
+      "source_span": {
+        "start": 978,
+        "end": 997,
+        "quote": "Status of This Memo"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-2",
+      "type": "claim",
+      "content": "This is an Internet Standards Track document.",
+      "attention_tier": "C",
+      "priority": 0.73,
+      "reading_order": 4,
+      "source_span": {
+        "start": 999,
+        "end": 1047,
+        "quote": "   This is an Internet Standards Track document."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "This document is a product of the Internet Engineering Task Force\n   (IETF).  It represents the consensus of the IETF community.  It has\n   received public review and has been approved for publication by the\n   Internet Engineering Steering Group (IESG).  Further information on\n   Internet Standards is available in Section 2 of RFC 7841.",
+      "attention_tier": "B",
+      "priority": 0.6699999999999999,
+      "reading_order": 5,
+      "source_span": {
+        "start": 1049,
+        "end": 1391,
+        "quote": "   This document is a product of the Internet Engineering Task Force\n   (IETF).  It represents the consensus of the IETF community.  It has\n   received public review and has been approved for publication by the\n   Internet Engineering Steering Group (IESG).  Further information on\n   Internet Standards is available in Section 2 of RFC 7841."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-3",
+      "type": "claim",
+      "content": "Information about the current status of this document, any errata,\n   and how to provide feedback on it may be obtained at\n   https://www.rfc-editor.org/info/rfc9190.",
+      "attention_tier": "C",
+      "priority": 0.61,
+      "reading_order": 6,
+      "source_span": {
+        "start": 1393,
+        "end": 1562,
+        "quote": "   Information about the current status of this document, any errata,\n   and how to provide feedback on it may be obtained at\n   https://www.rfc-editor.org/info/rfc9190."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-4",
+      "type": "claim",
+      "content": "Copyright Notice",
+      "attention_tier": "C",
+      "priority": 0.55,
+      "reading_order": 7,
+      "source_span": {
+        "start": 1564,
+        "end": 1580,
+        "quote": "Copyright Notice"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-5",
+      "type": "claim",
+      "content": "Copyright (c) 2022 IETF Trust and the persons identified as the\n   document authors.  All rights reserved.",
+      "attention_tier": "C",
+      "priority": 0.49,
+      "reading_order": 8,
+      "source_span": {
+        "start": 1582,
+        "end": 1691,
+        "quote": "   Copyright (c) 2022 IETF Trust and the persons identified as the\n   document authors.  All rights reserved."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-1",
+      "type": "appendix",
+      "content": "This document is subject to BCP 78 and the IETF Trust's Legal\n   Provisions Relating to IETF Documents\n   (https://trustee.ietf.org/license-info) in effect on the date of\n   publication of this document.  Please review these documents\n   carefully, as they describe your rights and restrictions with respect\n   to this document.  Code Components extracted from this document must\n   include Revised BSD License text as described in Section 4.e of the\n   Trust Legal Provisions and are provided without warranty as described\n   in the Revised BSD License.",
+      "attention_tier": "D",
+      "priority": 0.43,
+      "reading_order": 9,
+      "source_span": {
+        "start": 1693,
+        "end": 2250,
+        "quote": "   This document is subject to BCP 78 and the IETF Trust's Legal\n   Provisions Relating to IETF Documents\n   (https://trustee.ietf.org/license-info) in effect on the date of\n   publication of this document.  Please review these documents\n   carefully, as they describe your rights and restrictions with respect\n   to this document.  Code Components extracted from this document must\n   include Revised BSD License text as described in Section 4.e of the\n   Trust Legal Provisions and are provided without warranty as described\n   in the Revised BSD License."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-2",
+      "type": "appendix",
+      "content": "Table of Contents",
+      "attention_tier": "D",
+      "priority": 0.37,
+      "reading_order": 10,
+      "source_span": {
+        "start": 2252,
+        "end": 2269,
+        "quote": "Table of Contents"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-3",
+      "type": "appendix",
+      "content": "1.  Introduction\n     1.1.  Requirements and Terminology",
+      "attention_tier": "D",
+      "priority": 0.30999999999999994,
+      "reading_order": 11,
+      "source_span": {
+        "start": 2271,
+        "end": 2328,
+        "quote": "1.  Introduction\n     1.1.  Requirements and Terminology\n"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:30cc160da23a7831752e8726d662bcc31cffaa6084b3b88a27e87aa3695dbfad",
+    "chars": 2328,
+    "lang": "en"
+  }
+}

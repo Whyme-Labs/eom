@@ -88,3 +88,73 @@
 {"slug": "rfc-8100", "doc_type": "policy", "passed": false, "attempts": 3, "elapsed_s": 90.64, "error": "harness failures: ['H3', 'H11', 'H11', 'H11']"}
 {"slug": "arxiv-260505170v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 338.96, "error": "harness failures: ['H11', 'H11']"}
 {"slug": "arxiv-260505164v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 485.11, "error": "harness failures: ['H3', 'H11', 'H11', 'H11', 'H11']"}
+{"slug": "baron-skryne", "doc_type": "other", "passed": true, "attempts": 1, "elapsed_s": 4.34, "error": ""}
+{"slug": "b-of-the-bang", "doc_type": "other", "passed": true, "attempts": 1, "elapsed_s": 9.84, "error": ""}
+{"slug": "darya-moroz", "doc_type": "other", "passed": true, "attempts": 1, "elapsed_s": 9.88, "error": ""}
+{"slug": "conus-leopardus", "doc_type": "other", "passed": true, "attempts": 1, "elapsed_s": 18.41, "error": ""}
+{"slug": "deborah-suttle", "doc_type": "other", "passed": true, "attempts": 1, "elapsed_s": 10.29, "error": ""}
+{"slug": "harmonic-mean-p-value", "doc_type": "other", "passed": true, "attempts": 1, "elapsed_s": 9.12, "error": ""}
+{"slug": "maciej-henneberg", "doc_type": "other", "passed": true, "attempts": 1, "elapsed_s": 8.92, "error": ""}
+{"slug": "nikos-goumas-stadium", "doc_type": "other", "passed": true, "attempts": 1, "elapsed_s": 12.29, "error": ""}
+{"slug": "revelation-records", "doc_type": "other", "passed": true, "attempts": 1, "elapsed_s": 4.31, "error": ""}
+{"slug": "project-looking-glass", "doc_type": "other", "passed": true, "attempts": 1, "elapsed_s": 9.85, "error": ""}
+{"slug": "rochester-public-library", "doc_type": "other", "passed": true, "attempts": 1, "elapsed_s": 10.32, "error": ""}
+{"slug": "springfield-thunderbirds", "doc_type": "other", "passed": true, "attempts": 1, "elapsed_s": 4.4, "error": ""}
+{"slug": "cap-song", "doc_type": "other", "passed": true, "attempts": 1, "elapsed_s": 133.15, "error": ""}
+{"slug": "screen-directors-playhouse-radio-series", "doc_type": "other", "passed": true, "attempts": 1, "elapsed_s": 145.54, "error": ""}
+{"slug": "no-464-squadron-raaf", "doc_type": "other", "passed": false, "attempts": 3, "elapsed_s": 252.54, "error": "harness failures: ['H3', 'H11', 'H11', 'H11', 'H11']"}
+{"slug": "arxiv-260501591v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 229.86, "error": "harness failures: ['H11']"}
+{"slug": "the-candidate-1972-film", "doc_type": "other", "passed": false, "attempts": 3, "elapsed_s": 453.94, "error": "harness failures: ['H3', 'H11', 'H11', 'H11']"}
+{"slug": "arxiv-260504449v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 66.56, "error": "harness failures: ['H3', 'H11', 'H11']"}
+{"slug": "arxiv-260504759v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 121.41, "error": "harness failures: ['H11', 'H11']"}
+{"slug": "arxiv-260504576v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 180.79, "error": "harness failures: ['H3', 'H8', 'H11', 'H11', 'H11']"}
+{"slug": "arxiv-260504834v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 97.47, "error": "harness failures: ['H11', 'H11', 'H11']"}
+{"slug": "arxiv-260504885v1", "doc_type": "paper", "passed": true, "attempts": 2, "elapsed_s": 61.18, "error": ""}
+{"slug": "arxiv-260501591v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 369.41, "error": "harness failures: ['H11', 'H11']"}
+{"slug": "arxiv-260504770v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 325.46, "error": "harness failures: ['H3', 'H11', 'H11']"}
+{"slug": "arxiv-260504913v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 63.48, "error": "harness failures: ['H11', 'H11']"}
+{"slug": "arxiv-260504830v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 325.38, "error": "harness failures: ['H11']"}
+{"slug": "arxiv-260504952v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 85.64, "error": "harness failures: ['H11', 'H11']"}
+{"slug": "arxiv-260505104v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 65.29, "error": "harness failures: ['H11', 'H11']"}
+{"slug": "arxiv-260505103v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 101.93, "error": "harness failures: ['H11', 'H11', 'H11']"}
+{"slug": "arxiv-260504971v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 169.0, "error": "harness failures: ['H8', 'H11', 'H11', 'H11']"}
+{"slug": "arxiv-260505133v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 80.31, "error": "harness failures: ['H11', 'H11', 'H11']"}
+{"slug": "arxiv-260505138v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 69.2, "error": "harness failures: ['H11', 'H11']"}
+{"slug": "arxiv-260504957v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 252.97, "error": "harness failures: ['H3', 'H8', 'H11', 'H11']"}
+{"slug": "arxiv-260505164v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 97.68, "error": "harness failures: ['H3', 'H11', 'H11', 'H11']"}
+{"slug": "arxiv-260505170v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 203.04, "error": "harness failures: ['H11', 'H11']"}
+{"slug": "arxiv-260505166v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 512.34, "error": "harness failures: ['H3', 'H11', 'H11']"}
+{"slug": "arxiv-260505159v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 699.81, "error": "harness failures: ['H8', 'H11', 'H11']"}
+{"slug": "arxiv-260505176v1", "doc_type": "paper", "passed": true, "attempts": 3, "elapsed_s": 513.71, "error": ""}
+{"slug": "rfc-8190", "doc_type": "policy", "passed": true, "attempts": 1, "elapsed_s": 4.73, "error": ""}
+{"slug": "rfc-8230", "doc_type": "policy", "passed": true, "attempts": 1, "elapsed_s": 9.23, "error": ""}
+{"slug": "arxiv-260505206v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 305.58, "error": "harness failures: ['H3', 'H11']"}
+{"slug": "rfc-8260", "doc_type": "policy", "passed": true, "attempts": 1, "elapsed_s": 39.58, "error": ""}
+{"slug": "rfc-8320", "doc_type": "policy", "passed": true, "attempts": 1, "elapsed_s": 9.8, "error": ""}
+{"slug": "rfc-8350", "doc_type": "policy", "passed": true, "attempts": 1, "elapsed_s": 9.09, "error": ""}
+{"slug": "rfc-8370", "doc_type": "policy", "passed": true, "attempts": 1, "elapsed_s": 8.78, "error": ""}
+{"slug": "rfc-8470", "doc_type": "policy", "passed": true, "attempts": 1, "elapsed_s": 18.89, "error": ""}
+{"slug": "rfc-8530", "doc_type": "policy", "passed": true, "attempts": 1, "elapsed_s": 8.55, "error": ""}
+{"slug": "rfc-8540", "doc_type": "policy", "passed": true, "attempts": 1, "elapsed_s": 8.72, "error": ""}
+{"slug": "rfc-8300", "doc_type": "policy", "passed": true, "attempts": 2, "elapsed_s": 144.62, "error": ""}
+{"slug": "rfc-8630", "doc_type": "policy", "passed": false, "attempts": 3, "elapsed_s": 147.15, "error": "harness failures: ['H3']"}
+{"slug": "arxiv-260505155v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 1253.36, "error": "harness failures: ['H3', 'H11', 'H11']"}
+{"slug": "rfc-8600", "doc_type": "policy", "passed": true, "attempts": 2, "elapsed_s": 373.45, "error": ""}
+{"slug": "rfc-8670", "doc_type": "policy", "passed": true, "attempts": 1, "elapsed_s": 252.6, "error": ""}
+{"slug": "rfc-8740", "doc_type": "policy", "passed": true, "attempts": 1, "elapsed_s": 19.95, "error": ""}
+{"slug": "rfc-8100", "doc_type": "policy", "passed": false, "attempts": 3, "elapsed_s": 770.96, "error": "harness failures: ['H11', 'H11']"}
+{"slug": "rfc-8860", "doc_type": "policy", "passed": true, "attempts": 1, "elapsed_s": 76.52, "error": ""}
+{"slug": "rfc-9030", "doc_type": "policy", "passed": true, "attempts": 1, "elapsed_s": 15.04, "error": ""}
+{"slug": "rfc-9060", "doc_type": "policy", "passed": true, "attempts": 1, "elapsed_s": 16.42, "error": ""}
+{"slug": "rfc-8950", "doc_type": "policy", "passed": false, "attempts": 3, "elapsed_s": 77.72, "error": "harness failures: ['H3', 'H11']"}
+{"slug": "rfc-8730", "doc_type": "policy", "passed": false, "attempts": 3, "elapsed_s": 248.41, "error": "harness failures: ['H11']"}
+{"slug": "rfc-9110", "doc_type": "policy", "passed": true, "attempts": 1, "elapsed_s": 37.87, "error": ""}
+{"slug": "rfc-8690", "doc_type": "policy", "passed": true, "attempts": 1, "elapsed_s": 382.57, "error": ""}
+{"slug": "rfc-9090", "doc_type": "policy", "passed": true, "attempts": 1, "elapsed_s": 88.3, "error": ""}
+{"slug": "rfc-9190", "doc_type": "policy", "passed": true, "attempts": 2, "elapsed_s": 68.2, "error": ""}
+{"slug": "rfc-9130", "doc_type": "policy", "passed": true, "attempts": 1, "elapsed_s": 163.86, "error": ""}
+{"slug": "rfc-9420", "doc_type": "policy", "passed": true, "attempts": 1, "elapsed_s": 25.28, "error": ""}
+{"slug": "rfc-9490", "doc_type": "policy", "passed": true, "attempts": 1, "elapsed_s": 24.34, "error": ""}
+{"slug": "rfc-9160", "doc_type": "policy", "passed": false, "attempts": 3, "elapsed_s": 183.18, "error": "harness failures: ['H11', 'H11']"}
+{"slug": "rfc-9150", "doc_type": "policy", "passed": false, "attempts": 3, "elapsed_s": 247.26, "error": "harness failures: ['H11']"}
+{"slug": "rfc-9260", "doc_type": "policy", "passed": false, "attempts": 3, "elapsed_s": 331.62, "error": "harness failures: ['H3']"}

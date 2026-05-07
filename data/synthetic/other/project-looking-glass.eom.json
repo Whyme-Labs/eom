@@ -1,0 +1,225 @@
+{
+  "version": "0.1",
+  "document_type": "other",
+  "summary": "Project Looking Glass is a now inactive free software project under the GPL to create an innovative 3D desktop environment for Linux, Solari",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "Project Looking Glass",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 23,
+        "quote": "Project Looking Glass"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "Project Looking Glass is a now inactive free software project under the GPL to create an innovative 3D desktop environment for Linux, Solaris, and Windows. It was sponsored by Sun Microsystems.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 25,
+        "end": 218,
+        "quote": "Project Looking Glass is a now inactive free software project under the GPL to create an innovative 3D desktop environment for Linux, Solaris, and Windows. It was sponsored by Sun Microsystems."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "Looking Glass is programmed in the Java language using the Java 3D system to remain platform agnostic. Despite the use of graphics acceleration features, the desktop explores the use of 3D windowing capabilities for both existing application programs and ones specifically designed for Looking Glass.",
+      "attention_tier": "B",
+      "priority": 0.85,
+      "reading_order": 2,
+      "source_span": {
+        "start": 220,
+        "end": 520,
+        "quote": "Looking Glass is programmed in the Java language using the Java 3D system to remain platform agnostic. Despite the use of graphics acceleration features, the desktop explores the use of 3D windowing capabilities for both existing application programs and ones specifically designed for Looking Glass."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "There is a Live CD available from Project Looking Glass. The Looking Glass environment is also included on a Live DVD (FunWorks 2007 edition) from the Granular Linux project.",
+      "attention_tier": "C",
+      "priority": 0.7954545454545454,
+      "reading_order": 3,
+      "source_span": {
+        "start": 522,
+        "end": 696,
+        "quote": "There is a Live CD available from Project Looking Glass. The Looking Glass environment is also included on a Live DVD (FunWorks 2007 edition) from the Granular Linux project."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "Looking Glass was first developed by Hideya Kawahara, a Sun programmer who wrote it in his spare time on a Linux laptop. After demonstrating an early version to Sun executives, he was assigned to it full-time with a dedicated team and open sourced the project. It was demonstrated by Jonathan Schwartz at LinuxWorld Expo 2003 in San Francisco.\nAfter the demonstration, Apple CEO Steve Jobs called Schwartz's office and told him that Apple would sue Sun if they moved forward to commercialize it – Jobs felt the project infringed Apple's intellectual property.\nRegardless of the threat, Sun determined that the project was not a priority and decided not to put more resource to develop it to product quality. The project continued in an experimental mode, but with Sun's finances deteriorating, it became inactive in late 2006.",
+      "attention_tier": "B",
+      "priority": 0.7409090909090909,
+      "reading_order": 4,
+      "source_span": {
+        "start": 698,
+        "end": 1524,
+        "quote": "Looking Glass was first developed by Hideya Kawahara, a Sun programmer who wrote it in his spare time on a Linux laptop. After demonstrating an early version to Sun executives, he was assigned to it full-time with a dedicated team and open sourced the project. It was demonstrated by Jonathan Schwartz at LinuxWorld Expo 2003 in San Francisco.\nAfter the demonstration, Apple CEO Steve Jobs called Schwartz's office and told him that Apple would sue Sun if they moved forward to commercialize it – Jobs felt the project infringed Apple's intellectual property.\nRegardless of the threat, Sun determined that the project was not a priority and decided not to put more resource to develop it to product quality. The project continued in an experimental mode, but with Sun's finances deteriorating, it became inactive in late 2006."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-2",
+      "type": "caveat",
+      "content": "One of its most notable features is the creation of reversible windows. This capability can be used for features like allowing the user to write notes and comments on the windows' backs, or displaying application dialogs without risking their being detached from the application they relate to. All windows start by looking like a normal 2D or 2.5D window, but can be manipulated as thin slate-like 3D objects which can be set at any angle or turned completely around by the user.",
+      "attention_tier": "C",
+      "priority": 0.6863636363636364,
+      "reading_order": 5,
+      "source_span": {
+        "start": 1526,
+        "end": 2006,
+        "quote": "One of its most notable features is the creation of reversible windows. This capability can be used for features like allowing the user to write notes and comments on the windows' backs, or displaying application dialogs without risking their being detached from the application they relate to. All windows start by looking like a normal 2D or 2.5D window, but can be manipulated as thin slate-like 3D objects which can be set at any angle or turned completely around by the user."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-2",
+      "type": "evidence",
+      "content": "Other features include tilting all the window to assist the user to pick up a desired window, provision of a panning virtual desktop, icons that reflect the live status of the window they represent and zooming of a window when it receives focus.",
+      "attention_tier": "C",
+      "priority": 0.6318181818181818,
+      "reading_order": 6,
+      "source_span": {
+        "start": 2008,
+        "end": 2253,
+        "quote": "Other features include tilting all the window to assist the user to pick up a desired window, provision of a panning virtual desktop, icons that reflect the live status of the window they represent and zooming of a window when it receives focus."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-3",
+      "type": "evidence",
+      "content": "There are a few designs that Looking Glass implemented which appeared in other products in later years. One technique became popular by Apple's Dashboard widgets is configuration of an application (widget) by flipping its visual and performing updates on the backside of it. The visual of Apple's macOS Dock became similar to Looking Glass's look when Leopard was released.\nWindows 7 implements a feature for window selection that hides other windows than the one that the user placed the mouse cursor on a thumbnail above the taskbar. It resembles Looking Glass's usage of transparency for window selection using window thumbnails on the taskbar.",
+      "attention_tier": "C",
+      "priority": 0.5772727272727273,
+      "reading_order": 7,
+      "source_span": {
+        "start": 2255,
+        "end": 2902,
+        "quote": "There are a few designs that Looking Glass implemented which appeared in other products in later years. One technique became popular by Apple's Dashboard widgets is configuration of an application (widget) by flipping its visual and performing updates on the backside of it. The visual of Apple's macOS Dock became similar to Looking Glass's look when Leopard was released.\nWindows 7 implements a feature for window selection that hides other windows than the one that the user placed the mouse cursor on a thumbnail above the taskbar. It resembles Looking Glass's usage of transparency for window selection using window thumbnails on the taskbar."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-3",
+      "type": "caveat",
+      "content": "Looking Glass is similar to the TaskGallery prototype from Microsoft Research and the open source Croquet project based on Squeak in terms of allowance for the user to manipulate applications (including existing 2D applications) in a 3D space. However, user interaction models of TaskGallery and Croquet are based on virtual reality-like experience where the user moves inside the 3D space to perform tasks, whereas Looking Glass retains the operational model of today's desktop (i.e. no walking around inside the 3D space) and uses 3D effects selectively where they are thought to be effective. Also, these three are similar as they are meant to work on adapted or enhanced versions of existing desktops rather than re-designing the entire graphical user interface from scratch, an approach taken by many Zooming User Interface projects such as the one created by Jef Raskin.",
+      "attention_tier": "C",
+      "priority": 0.5227272727272727,
+      "reading_order": 8,
+      "source_span": {
+        "start": 2904,
+        "end": 3780,
+        "quote": "Looking Glass is similar to the TaskGallery prototype from Microsoft Research and the open source Croquet project based on Squeak in terms of allowance for the user to manipulate applications (including existing 2D applications) in a 3D space. However, user interaction models of TaskGallery and Croquet are based on virtual reality-like experience where the user moves inside the 3D space to perform tasks, whereas Looking Glass retains the operational model of today's desktop (i.e. no walking around inside the 3D space) and uses 3D effects selectively where they are thought to be effective. Also, these three are similar as they are meant to work on adapted or enhanced versions of existing desktops rather than re-designing the entire graphical user interface from scratch, an approach taken by many Zooming User Interface projects such as the one created by Jef Raskin."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-1",
+      "type": "appendix",
+      "content": "While many window managers (such as Microsoft's Desktop Window Manager, the X Window System based Compiz, and macOS through Core Animation) can utilize 3D effects, these merely augment a conventional 2D environment.",
+      "attention_tier": "D",
+      "priority": 0.4681818181818182,
+      "reading_order": 9,
+      "source_span": {
+        "start": 3782,
+        "end": 3997,
+        "quote": "While many window managers (such as Microsoft's Desktop Window Manager, the X Window System based Compiz, and macOS through Core Animation) can utilize 3D effects, these merely augment a conventional 2D environment."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-2",
+      "type": "appendix",
+      "content": "* Compiz\n* Windows Aero\n* OpenCroquet\n* Metisse\n* BumpTop\n* Zooming User Interface",
+      "attention_tier": "D",
+      "priority": 0.41363636363636364,
+      "reading_order": 10,
+      "source_span": {
+        "start": 3999,
+        "end": 4081,
+        "quote": "* Compiz\n* Windows Aero\n* OpenCroquet\n* Metisse\n* BumpTop\n* Zooming User Interface"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-4",
+      "type": "caveat",
+      "content": "* Official Demo Video on Youtube\n* Another demo movie clip on Youtube - Without marketing speeches, but in lower quality.\n* Project Looking Glass: A Comprehensive Overview of the Technology\n* Development home\n* LG3D Live CD\n* Interview with Hideya Kawahara",
+      "attention_tier": "C",
+      "priority": 0.35909090909090907,
+      "reading_order": 11,
+      "source_span": {
+        "start": 4083,
+        "end": 4339,
+        "quote": "* Official Demo Video on Youtube\n* Another demo movie clip on Youtube - Without marketing speeches, but in lower quality.\n* Project Looking Glass: A Comprehensive Overview of the Technology\n* Development home\n* LG3D Live CD\n* Interview with Hideya Kawahara"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-3",
+      "type": "appendix",
+      "content": "Category:2003 software\nCategory:Products and services discontinued in 2007\nCategory:3D GUIs\nCategory:Free X window managers\nCategory:Cross-platform free software\nCategory:Free software programmed in Java\nCategory:Sun Microsystems software\nCategory:Software using the GNU General Public License",
+      "attention_tier": "D",
+      "priority": 0.30454545454545456,
+      "reading_order": 12,
+      "source_span": {
+        "start": 4341,
+        "end": 4635,
+        "quote": "Category:2003 software\nCategory:Products and services discontinued in 2007\nCategory:3D GUIs\nCategory:Free X window managers\nCategory:Cross-platform free software\nCategory:Free software programmed in Java\nCategory:Sun Microsystems software\nCategory:Software using the GNU General Public License\n"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:44cd41fb901ceb4eff51635fd538194edc3baef4e5d0ef5a6744dd8997504adc",
+    "chars": 4635,
+    "lang": "en"
+  }
+}

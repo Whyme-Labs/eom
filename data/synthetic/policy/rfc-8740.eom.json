@@ -1,0 +1,81 @@
+{
+  "version": "0.1",
+  "document_type": "policy",
+  "summary": "RFC 8740 updates RFC 7540 to forbid TLS 1.3 post-handshake authentication when used with HTTP/2, mirroring restrictions present in TLS 1.2 renegotiation.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "RFC 8740: Using TLS 1.3 with HTTP/2",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 0,
+        "end": 37,
+        "quote": "# RFC 8740: Using TLS 1.3 with HTTP/2"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "This document updates RFC 7540 by forbidding TLS 1.3 post-handshake authentication, as an analog to the existing TLS 1.2 renegotiation restriction.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 49,
+        "end": 205,
+        "quote": "   This document updates RFC 7540 by forbidding TLS 1.3 post-handshake\n   authentication, as an analog to the existing TLS 1.2 renegotiation\n   restriction."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "This is an Internet Standards Track document.",
+      "attention_tier": "C",
+      "priority": 0.8,
+      "reading_order": 2,
+      "source_span": {
+        "start": 228,
+        "end": 276,
+        "quote": "   This is an Internet Standards Track document."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "This document is a product of the Internet Engineering Task Force (IETF). It represents the consensus of the IETF community. It has received public review and has been approved for publication by the Internet Engineering Steering Group (IESG).",
+      "attention_tier": "D",
+      "priority": 0.7,
+      "reading_order": 3,
+      "source_span": {
+        "start": 278,
+        "end": 620,
+        "quote": "   This document is a product of the Internet Engineering Task Force\n   (IETF).  It represents the consensus of the IETF community.  It has\n   received public review and has been approved for publication by the\n   Internet Engineering Steering Group (IESG).  Further information on\n   Internet Standards is available in Section 2 of RFC 7841."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:c7d78c2ea05922fed1afc9be102819a0100a211f3c9f61b24f915031f3323a3f",
+    "chars": 1523,
+    "lang": "en"
+  }
+}

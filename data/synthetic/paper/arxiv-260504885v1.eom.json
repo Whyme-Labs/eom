@@ -1,0 +1,81 @@
+{
+  "version": "0.1",
+  "document_type": "paper",
+  "summary": "Authors: Tanty Widiyastuti,  Mayada, Adisty Syawalda Ariyanto, Luluk Muthoharoh, Ardika Satria",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "A Comparative Study of PyCaret AutoML and CNN-BiLSTM for Binary Hate Speech Detection in Indonesian ",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 109,
+        "quote": "A Comparative Study of PyCaret AutoML and CNN-BiLSTM for Binary Hate Speech Detection in Indonesian Twitter"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "Authors: Tanty Widiyastuti,  Mayada, Adisty Syawalda Ariyanto, Luluk Muthoharoh, Ardika Satria",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 111,
+        "end": 205,
+        "quote": "Authors: Tanty Widiyastuti,  Mayada, Adisty Syawalda Ariyanto, Luluk Muthoharoh, Ardika Satria"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "Abstract",
+      "attention_tier": "C",
+      "priority": 0.85,
+      "reading_order": 2,
+      "source_span": {
+        "start": 207,
+        "end": 218,
+        "quote": "## Abstract"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "This paper compares a PyCaret AutoML branch and a CNN-BiLSTM branch for binary hate speech detection on Indonesian Twitter using the HS label from the corpus of Ibrohim and Budi. Both branches share the same preprocessing pipeline so that…",
+      "attention_tier": "B",
+      "priority": 0.55,
+      "reading_order": 3,
+      "source_span": {
+        "start": 220,
+        "end": 1612,
+        "quote": "This paper compares a PyCaret AutoML branch and a CNN-BiLSTM branch for binary hate speech detection on Indonesian Twitter using the HS label from the corpus of Ibrohim and Budi. Both branches share the same preprocessing pipeline so that the comparison reflects modelling differences rather than inconsistent data preparation. The conventional branch uses TF-IDF with a lexicon-based abusive-word count, whereas the neural branch learns dense token representations and captures both local phrase patterns and bidirectional context. The benchmark is built from the released 13,130-row annotation table, whose HS label yields a 58:42 class ratio. On the held-out split, CNN-BiLSTM achieves the best result with 83.8% accuracy, 79.8% precision, 82.7% recall, and 81.2% F1-score. Within the PyCaret branch, Random Forest is the strongest conventional model with 77.2% accuracy and 77.0% F1-score. The neural branch therefore improves accuracy by 6.6 points and F1-score by 4.2 points. Exploratory corpus analysis, learning curves, and confusion matrices show that the dataset is short-text, moderately imbalanced, and still difficult because many decisions depend on local lexical cues plus short contextual composition. The study concludes that PyCaret AutoML is an effective conventional benchmarking framework, whereas CNN-BiLSTM is the stronger end model for the reported benchmark setting.\n"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:331e3c02baaba6803cf766bb880e5288de396f7a77ec5788fffdb4693f7852d7",
+    "chars": 1612,
+    "lang": "en"
+  }
+}

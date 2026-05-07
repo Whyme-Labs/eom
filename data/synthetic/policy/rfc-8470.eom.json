@@ -1,0 +1,113 @@
+{
+  "version": "0.1",
+  "document_type": "policy",
+  "summary": "RFC 8470 defines mechanisms for clients and servers to communicate about HTTP requests sent in TLS early data to mitigate the risk of replay attacks.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "# RFC 8470: HAProxy Technologies",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 0,
+        "end": 32,
+        "quote": "# RFC 8470: HAProxy Technologies"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "Using TLS early data creates an exposure to the possibility of a replay attack. This document defines mechanisms that allow clients to communicate with servers about HTTP requests that are sent in early data. Techniques are described that use these mechanisms to mitigate the risk of replay.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 44,
+        "end": 352,
+        "quote": "   Using TLS early data creates an exposure to the possibility of a\n   replay attack.  This document defines mechanisms that allow clients\n   to communicate with servers about HTTP requests that are sent in\n   early data.  Techniques are described that use these mechanisms to\n   mitigate the risk of replay."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "This is an Internet Standards Track document.",
+      "attention_tier": "B",
+      "priority": 0.8,
+      "reading_order": 2,
+      "source_span": {
+        "start": 375,
+        "end": 423,
+        "quote": "   This is an Internet Standards Track document."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "This document is a product of the Internet Engineering Task Force (IETF). It represents the consensus of the IETF community. It has received public review and has been approved for publication by the Internet Engineering Steering Group (IESG).",
+      "attention_tier": "C",
+      "priority": 0.7,
+      "reading_order": 3,
+      "source_span": {
+        "start": 425,
+        "end": 767,
+        "quote": "   This document is a product of the Internet Engineering Task Force\n   (IETF).  It represents the consensus of the IETF community.  It has\n   received public review and has been approved for publication by the\n   Internet Engineering Steering Group (IESG).  Further information on\n   Internet Standards is available in Section 2 of RFC 7841."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-2",
+      "type": "factbox",
+      "content": "Information about the current status of this document, any errata, and how to provide feedback on it may be obtained at https://www.rfc-editor.org/info/rfc8470.",
+      "attention_tier": "C",
+      "priority": 0.6,
+      "reading_order": 4,
+      "source_span": {
+        "start": 769,
+        "end": 938,
+        "quote": "   Information about the current status of this document, any errata,\n   and how to provide feedback on it may be obtained at\n   https://www.rfc-editor.org/info/rfc8470."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "This document is subject to BCP 78 and the IETF Trust's Legal Provisions Relating to IETF Documents in effect on the date of publication of this document.",
+      "attention_tier": "D",
+      "priority": 0.5,
+      "reading_order": 5,
+      "source_span": {
+        "start": 1069,
+        "end": 1632,
+        "quote": "   This document is subject to BCP 78 and the IETF Trust's Legal\n   Provisions Relating to IETF Documents\n   (https://trustee.ietf.org/license-info) in effect on the date of\n   publication of this document.  Please review these documents\n   carefully, as they describe your rights and restrictions with respect\n   to this document.  Code Components extracted from this document must\n   include Simplified BSD License text as described in Section 4.e of\n   the Trust Legal Provisions and are provided without warranty as\n   described in the Simplified BSD License."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:a099d79eb296577a7b5eaaddc58608a10961ccb78b04cfdb8a5f4cbcece55be4",
+    "chars": 1873,
+    "lang": "en"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "version": "0.1",
+  "document_type": "policy",
+  "summary": "RFC 8860 updates RFCs 3550 and 3551 to allow a single RTP session to contain multiple media types, such as audio, video, and text, for applicable applications.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "# RFC 8860: 8x8 / Jitsi",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 0,
+        "end": 23,
+        "quote": "# RFC 8860: 8x8 / Jitsi"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "This document specifies how an RTP session can contain RTP streams with media from multiple media types such as audio, video, and text. This has been restricted by the RTP specifications (RFCs 3550 and 3551), and thus this document updates RFCs 3550 and 3551 to enable this behaviour.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 35,
+        "end": 440,
+        "quote": "   This document specifies how an RTP session can contain RTP streams\n   with media from multiple media types such as audio, video, and text.\n   This has been restricted by the RTP specifications (RFCs 3550 and\n   3551), and thus this document updates RFCs 3550 and 3551 to enable\n   this behaviour for applications that satisfy the applicability for\n   using multiple media types in a single RTP session."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "This is an Internet Standards Track document.",
+      "attention_tier": "B",
+      "priority": 0.8,
+      "reading_order": 2,
+      "source_span": {
+        "start": 463,
+        "end": 511,
+        "quote": "   This is an Internet Standards Track document."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "This document is a product of the Internet Engineering Task Force (IETF). It represents the consensus of the IETF community. It has received public review and has been approved for publication by the Internet Engineering Steering Group (IESG).",
+      "attention_tier": "C",
+      "priority": 0.7,
+      "reading_order": 3,
+      "source_span": {
+        "start": 513,
+        "end": 855,
+        "quote": "   This document is a product of the Internet Engineering Task Force\n   (IETF).  It represents the consensus of the IETF community.  It has\n   received public review and has been approved for publication by the\n   Internet Engineering Steering Group (IESG).  Further information on\n   Internet Standards is available in Section 2 of RFC 7841."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-2",
+      "type": "evidence",
+      "content": "Copyright (c) 2021 IETF Trust and the persons identified as the document authors. All rights reserved.",
+      "attention_tier": "D",
+      "priority": 0.5,
+      "reading_order": 4,
+      "source_span": {
+        "start": 1046,
+        "end": 1155,
+        "quote": "   Copyright (c) 2021 IETF Trust and the persons identified as the\n   document authors.  All rights reserved."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:0df1de9d8d13bb79e2f620420979887689b90620568f64d84105fbdfcfd851bc",
+    "chars": 1758,
+    "lang": "en"
+  }
+}

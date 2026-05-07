@@ -1,0 +1,97 @@
+{
+  "version": "0.1",
+  "document_type": "policy",
+  "summary": "RFC 9490 reports on the 'Management Techniques in Encrypted Networks (M-TEN)' workshop convened by the IAB in October 2022 to discuss improving network management in the context of increasing Internet encryption.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "RFC 9490: January 2024",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 0,
+        "end": 24,
+        "quote": "# RFC 9490: January 2024"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "The \"Management Techniques in Encrypted Networks (M-TEN)\" workshop was convened by the Internet Architecture Board (IAB) from 17 October 2022 to 19 October 2022 as a three-day online meeting to discuss ways to improve network management techniques in support of even broader adoption of encryption on the Internet.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 36,
+        "end": 534,
+        "quote": "   The \"Management Techniques in Encrypted Networks (M-TEN)\" workshop\n   was convened by the Internet Architecture Board (IAB) from 17 October\n   2022 to 19 October 2022 as a three-day online meeting.  The workshop\n   was organized in three parts to discuss ways to improve network\n   management techniques in support of even broader adoption of\n   encryption on the Internet.  This report summarizes the workshop's\n   discussion and identifies topics that warrant future work and\n   consideration."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "The views and positions documented in this report are those of the expressed during the workshop by participants and do not necessarily reflect IAB views and positions.",
+      "attention_tier": "C",
+      "priority": 0.8,
+      "reading_order": 2,
+      "source_span": {
+        "start": 536,
+        "end": 789,
+        "quote": "   Note that this document is a report on the proceedings of the\n   workshop.  The views and positions documented in this report are\n   those of the expressed during the workshop by participants and do not\n   necessarily reflect IAB views and positions."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "This document is not an Internet Standards Track specification; it is published for informational purposes.",
+      "attention_tier": "C",
+      "priority": 0.7,
+      "reading_order": 3,
+      "source_span": {
+        "start": 812,
+        "end": 925,
+        "quote": "   This document is not an Internet Standards Track specification; it is\n   published for informational purposes."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "This document is a product of the Internet Architecture Board (IAB) and represents information that the IAB has deemed valuable to provide for permanent record. It represents the consensus of the Internet Architecture Board (IAB).",
+      "attention_tier": "D",
+      "priority": 0.6,
+      "reading_order": 4,
+      "source_span": {
+        "start": 927,
+        "end": 1305,
+        "quote": "   This document is a product of the Internet Architecture Board (IAB)\n   and represents information that the IAB has deemed valuable to\n   provide for permanent record.  It represents the consensus of the\n   Internet Architecture Board (IAB).  Documents approved for\n   publication by the IAB are not candidates for any level of Internet\n   Standard; see Section 2 of RFC 7841."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:3d41db0988bd9ea871a031c561b2516219805227f69d6f22f44bd6d242802658",
+    "chars": 2022,
+    "lang": "en"
+  }
+}

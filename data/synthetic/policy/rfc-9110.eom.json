@@ -1,0 +1,113 @@
+{
+  "version": "0.1",
+  "document_type": "policy",
+  "summary": "RFC 9110 defines the overall architecture, common terminology, and shared core elements of the Hypertext Transfer Protocol (HTTP), updating RFC 3864 and obsoleting several previous specifications.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "RFC 9110: STD: 97",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 0,
+        "end": 84,
+        "quote": "# RFC 9110: STD: 97                                               M. Nottingham, Ed."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "The Hypertext Transfer Protocol (HTTP) is a stateless application-level protocol for distributed, collaborative, hypertext information systems. This document describes the overall architecture of HTTP, establishes common terminology, and defines aspects of the protocol that are shared by all versions.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 96,
+        "end": 565,
+        "quote": "   The Hypertext Transfer Protocol (HTTP) is a stateless application-\n   level protocol for distributed, collaborative, hypertext information\n   systems.  This document describes the overall architecture of HTTP,\n   establishes common terminology, and defines aspects of the protocol\n   that are shared by all versions.  In this definition are core\n   protocol elements, extensibility mechanisms, and the \"http\" and\n   \"https\" Uniform Resource Identifier (URI) schemes."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "This document updates RFC 3864 and obsoletes RFCs 2818, 7231, 7232, 7233, 7235, 7538, 7615, 7694, and portions of 7230.",
+      "attention_tier": "B",
+      "priority": 0.9,
+      "reading_order": 2,
+      "source_span": {
+        "start": 567,
+        "end": 692,
+        "quote": "   This document updates RFC 3864 and obsoletes RFCs 2818, 7231, 7232,\n   7233, 7235, 7538, 7615, 7694, and portions of 7230."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "This is an Internet Standards Track document.",
+      "attention_tier": "C",
+      "priority": 0.8,
+      "reading_order": 3,
+      "source_span": {
+        "start": 715,
+        "end": 763,
+        "quote": "   This is an Internet Standards Track document."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-2",
+      "type": "evidence",
+      "content": "This document is a product of the Internet Engineering Task Force (IETF). It represents the consensus of the IETF community. It has received public review and has been approved for publication by the Internet Engineering Steering Group (IESG).",
+      "attention_tier": "C",
+      "priority": 0.7,
+      "reading_order": 4,
+      "source_span": {
+        "start": 765,
+        "end": 1107,
+        "quote": "   This document is a product of the Internet Engineering Task Force\n   (IETF).  It represents the consensus of the IETF community.  It has\n   received public review and has been approved for publication by the\n   Internet Engineering Steering Group (IESG).  Further information on\n   Internet Standards is available in Section 2 of RFC 7841."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "This document may contain material from IETF Documents or IETF Contributions published or made publicly available before November 10, 2008. The person(s) controlling the copyright in some of this material may not have granted the IETF Trust the right to allow modifications of such material outside the IETF Standards Process.",
+      "attention_tier": "D",
+      "priority": 0.6,
+      "reading_order": 5,
+      "source_span": {
+        "start": 1968,
+        "end": 2682,
+        "quote": "   This document may contain material from IETF Documents or IETF\n   Contributions published or made publicly available before November\n   10, 2008.  The person(s) controlling the copyright in some of this\n   material may not have granted the IETF Trust the right to allow\n   modifications of such material outside the IETF Standards Process.\n   Without obtaining an adequate license from the person(s) controlling\n   the copyright in such materials, this document may not be modified\n   outside the IETF Standards Process, and derivative works of it may\n   not be created outside the IETF Standards Process, except to format\n   it for publication as an RFC or to translate it into languages other\n   than English."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:8bb2a78884c31fc79c14d713375709780bc879b5d9aaf133575915373acdccf6",
+    "chars": 2851,
+    "lang": "en"
+  }
+}

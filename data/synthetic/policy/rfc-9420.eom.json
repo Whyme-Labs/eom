@@ -1,0 +1,209 @@
+{
+  "version": "0.1",
+  "document_type": "policy",
+  "summary": "Abstract",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "RFC 9420: Phoenix R&D",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 23,
+        "quote": "RFC 9420: Phoenix R&D"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "Abstract",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 25,
+        "end": 33,
+        "quote": "Abstract"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "Messaging applications are increasingly making use of end-to-end\n   security mechanisms to ensure that messages are only accessible to\n   the communicating endpoints, and not to any servers involved in\n   delivering messages.  Establishing keys to provide such protections\n   is challenging for group chat settings, in which more than two\n   clients need to agree on a key but may not be online at the same\n   time.  In this document, we specify a key establishment protocol that\n   provides efficient asynchronous group key establishment with forward\n   secrecy (FS) and post-compromise security (PCS) for groups in size\n   ranging from two to thousands.",
+      "attention_tier": "B",
+      "priority": 0.85,
+      "reading_order": 2,
+      "source_span": {
+        "start": 35,
+        "end": 693,
+        "quote": "   Messaging applications are increasingly making use of end-to-end\n   security mechanisms to ensure that messages are only accessible to\n   the communicating endpoints, and not to any servers involved in\n   delivering messages.  Establishing keys to provide such protections\n   is challenging for group chat settings, in which more than two\n   clients need to agree on a key but may not be online at the same\n   time.  In this document, we specify a key establishment protocol that\n   provides efficient asynchronous group key establishment with forward\n   secrecy (FS) and post-compromise security (PCS) for groups in size\n   ranging from two to thousands."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "Status of This Memo",
+      "attention_tier": "C",
+      "priority": 0.79,
+      "reading_order": 3,
+      "source_span": {
+        "start": 695,
+        "end": 714,
+        "quote": "Status of This Memo"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-2",
+      "type": "claim",
+      "content": "This is an Internet Standards Track document.",
+      "attention_tier": "C",
+      "priority": 0.73,
+      "reading_order": 4,
+      "source_span": {
+        "start": 716,
+        "end": 764,
+        "quote": "   This is an Internet Standards Track document."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "This document is a product of the Internet Engineering Task Force\n   (IETF).  It represents the consensus of the IETF community.  It has\n   received public review and has been approved for publication by the\n   Internet Engineering Steering Group (IESG).  Further information on\n   Internet Standards is available in Section 2 of RFC 7841.",
+      "attention_tier": "B",
+      "priority": 0.6699999999999999,
+      "reading_order": 5,
+      "source_span": {
+        "start": 766,
+        "end": 1108,
+        "quote": "   This document is a product of the Internet Engineering Task Force\n   (IETF).  It represents the consensus of the IETF community.  It has\n   received public review and has been approved for publication by the\n   Internet Engineering Steering Group (IESG).  Further information on\n   Internet Standards is available in Section 2 of RFC 7841."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-3",
+      "type": "claim",
+      "content": "Information about the current status of this document, any errata,\n   and how to provide feedback on it may be obtained at\n   https://www.rfc-editor.org/info/rfc9420.",
+      "attention_tier": "C",
+      "priority": 0.61,
+      "reading_order": 6,
+      "source_span": {
+        "start": 1110,
+        "end": 1279,
+        "quote": "   Information about the current status of this document, any errata,\n   and how to provide feedback on it may be obtained at\n   https://www.rfc-editor.org/info/rfc9420."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-4",
+      "type": "claim",
+      "content": "Copyright Notice",
+      "attention_tier": "C",
+      "priority": 0.55,
+      "reading_order": 7,
+      "source_span": {
+        "start": 1281,
+        "end": 1297,
+        "quote": "Copyright Notice"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-5",
+      "type": "claim",
+      "content": "Copyright (c) 2023 IETF Trust and the persons identified as the\n   document authors.  All rights reserved.",
+      "attention_tier": "C",
+      "priority": 0.49,
+      "reading_order": 8,
+      "source_span": {
+        "start": 1299,
+        "end": 1408,
+        "quote": "   Copyright (c) 2023 IETF Trust and the persons identified as the\n   document authors.  All rights reserved."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-1",
+      "type": "appendix",
+      "content": "This document is subject to BCP 78 and the IETF Trust's Legal\n   Provisions Relating to IETF Documents\n   (https://trustee.ietf.org/license-info) in effect on the date of\n   publication of this document.  Please review these documents\n   carefully, as they describe your rights and restrictions with respect\n   to this document.  Code Components extracted from this document must\n   include Revised BSD License text as described in Section 4.e of the\n   Trust Legal Provisions and are provided without warranty as described\n   in the Revised BSD License.",
+      "attention_tier": "D",
+      "priority": 0.43,
+      "reading_order": 9,
+      "source_span": {
+        "start": 1410,
+        "end": 1967,
+        "quote": "   This document is subject to BCP 78 and the IETF Trust's Legal\n   Provisions Relating to IETF Documents\n   (https://trustee.ietf.org/license-info) in effect on the date of\n   publication of this document.  Please review these documents\n   carefully, as they describe your rights and restrictions with respect\n   to this document.  Code Components extracted from this document must\n   include Revised BSD License text as described in Section 4.e of the\n   Trust Legal Provisions and are provided without warranty as described\n   in the Revised BSD License."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-2",
+      "type": "appendix",
+      "content": "Table of Contents",
+      "attention_tier": "D",
+      "priority": 0.37,
+      "reading_order": 10,
+      "source_span": {
+        "start": 1969,
+        "end": 1986,
+        "quote": "Table of Contents"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-3",
+      "type": "appendix",
+      "content": "1.  Introduction",
+      "attention_tier": "D",
+      "priority": 0.30999999999999994,
+      "reading_order": 11,
+      "source_span": {
+        "start": 1988,
+        "end": 2005,
+        "quote": "1.  Introduction\n"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:7e2d169e6737e8ef44163aa6d0b281e3b377cd74913e5bc2423b9dcf56a5938c",
+    "chars": 2005,
+    "lang": "en"
+  }
+}

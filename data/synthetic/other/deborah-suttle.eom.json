@@ -1,0 +1,97 @@
+{
+  "version": "0.1",
+  "document_type": "other",
+  "summary": "Deborah \"Deb\" Suttle (; born December 28, 1945) is a Democratic politician from the state of Nebraska who served as a member of the Nebraska",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "Deborah Suttle",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 16,
+        "quote": "Deborah Suttle"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "Deborah \"Deb\" Suttle (; born December 28, 1945) is a Democratic politician from the state of Nebraska who served as a member of the Nebraska Legislature from 1997 to 2003 from the 10th district. She is married to former Omaha Mayor Jim Suttle.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 18,
+        "end": 261,
+        "quote": "Deborah \"Deb\" Suttle (; born December 28, 1945) is a Democratic politician from the state of Nebraska who served as a member of the Nebraska Legislature from 1997 to 2003 from the 10th district. She is married to former Omaha Mayor Jim Suttle."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "Deborah Sindy was in Charleston, West Virginia, and attended West Virginia University, graduating with her bachelor's degree in nursing in 1967. She married Jim Suttle in 1966, and they relocated to Omaha, Nebraska. Suttle…",
+      "attention_tier": "B",
+      "priority": 0.85,
+      "reading_order": 2,
+      "source_span": {
+        "start": 263,
+        "end": 572,
+        "quote": "Deborah Sindy was in Charleston, West Virginia, and attended West Virginia University, graduating with her bachelor's degree in nursing in 1967. She married Jim Suttle in 1966, and they relocated to Omaha, Nebraska. Suttle served as president of the League of Women Voters for Greater Omaha from 1991 to 1993."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "In 1994, Suttle challenged State Senator Carol McBride Pirsch for re-election, arguing that Pirsch voted against the interests of Omaha. In the primary election, Pirsch placed first by a wide margin, receiving 63 percent of the vote to Suttle's 37 percent. While both candidates campaigned as moderates in the general election, Pirsch argued that Suttle had changed her positions on the issues, while Suttle argued that Pirsch had been absent from the legislature. Ultimately, Pirsch defeated Suttle with 55 percent of the vote. Suttle ran for a full term in 1998, and was challenged by Republican R.L. Kerrigan, a real estate businessman. In the primary election, Suttle placed first over Kerrigan, winning 56 percent of the vote to his 43 percent. In the general election, Suttle narrowly won re-election, receiving 53 percent of the vote to Kerrigan's 47 percent. In the primary election, Suttle narrowly placed first over Friend, but was narrowly defeated in the general election, winning 49 percent of the vote to Friend's 51 percent.",
+      "attention_tier": "C",
+      "priority": 0.65,
+      "reading_order": 3,
+      "source_span": {
+        "start": 574,
+        "end": 1613,
+        "quote": "In 1994, Suttle challenged State Senator Carol McBride Pirsch for re-election, arguing that Pirsch voted against the interests of Omaha. In the primary election, Pirsch placed first by a wide margin, receiving 63 percent of the vote to Suttle's 37 percent. While both candidates campaigned as moderates in the general election, Pirsch argued that Suttle had changed her positions on the issues, while Suttle argued that Pirsch had been absent from the legislature. Ultimately, Pirsch defeated Suttle with 55 percent of the vote. Suttle ran for a full term in 1998, and was challenged by Republican R.L. Kerrigan, a real estate businessman. In the primary election, Suttle placed first over Kerrigan, winning 56 percent of the vote to his 43 percent. In the general election, Suttle narrowly won re-election, receiving 53 percent of the vote to Kerrigan's 47 percent. In the primary election, Suttle narrowly placed first over Friend, but was narrowly defeated in the general election, winning 49 percent of the vote to Friend's 51 percent."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-1",
+      "type": "appendix",
+      "content": "Category:1945 births\nCategory:Living people\nCategory:Nebraska state senators\nCategory:Politicians from Charleston, West Virginia\nCategory:West Virginia University alumni\nCategory:Nebraska Democrats\nCategory:American nurses\nCategory:Women state legislators in Nebraska\nCategory:20th-century American women politicians\nCategory:20th-century Nebraska politicians\nCategory:21st-century American women politicians\nCategory:21st-century Nebraska politicians\nCategory:Health professionals from Nebraska",
+      "attention_tier": "D",
+      "priority": 0.45,
+      "reading_order": 4,
+      "source_span": {
+        "start": 1615,
+        "end": 2111,
+        "quote": "Category:1945 births\nCategory:Living people\nCategory:Nebraska state senators\nCategory:Politicians from Charleston, West Virginia\nCategory:West Virginia University alumni\nCategory:Nebraska Democrats\nCategory:American nurses\nCategory:Women state legislators in Nebraska\nCategory:20th-century American women politicians\nCategory:20th-century Nebraska politicians\nCategory:21st-century American women politicians\nCategory:21st-century Nebraska politicians\nCategory:Health professionals from Nebraska\n"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:f315f3d19330711b53a58367e1d6b3e1abff9d3f2b8fd758f833c9600690311f",
+    "chars": 2111,
+    "lang": "en"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "version": "0.1",
+  "document_type": "other",
+  "summary": "Revelation Records is an independent record label focusing originally and primarily on hardcore punk. The label is known for releases by ban",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "Revelation Records",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 20,
+        "quote": "Revelation Records"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "Revelation Records is an independent record label focusing originally and primarily on hardcore punk. The label is known for releases by bands such as Youth of Today, Warzone, Sick of It All, Quicksand, Side By Side, Chain of Strength, Shelter, Judge, No for an Answer, Gorilla Biscuits, and End of a Year.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 22,
+        "end": 328,
+        "quote": "Revelation Records is an independent record label focusing originally and primarily on hardcore punk. The label is known for releases by bands such as Youth of Today, Warzone, Sick of It All, Quicksand, Side By Side, Chain of Strength, Shelter, Judge, No for an Answer, Gorilla Biscuits, and End of a Year."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "Revelation, along with the bands it put out in the late 1980s, is usually credited with creating and cementing the \"youth crew\" sound as well as New York hardcore, which bridged the gap from the earlier bands of almost a decade before and helped carry the music through the early 1990s. Some of the label's best selling releases have been Gorilla Biscuits' Start Today, Inside Out's No Spiritual Surrender, and the In-Flight Program compilation.",
+      "attention_tier": "B",
+      "priority": 0.85,
+      "reading_order": 2,
+      "source_span": {
+        "start": 330,
+        "end": 775,
+        "quote": "Revelation, along with the bands it put out in the late 1980s, is usually credited with creating and cementing the \"youth crew\" sound as well as New York hardcore, which bridged the gap from the earlier bands of almost a decade before and helped carry the music through the early 1990s. Some of the label's best selling releases have been Gorilla Biscuits' Start Today, Inside Out's No Spiritual Surrender, and the In-Flight Program compilation."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "Formerly of New Haven, Connecticut, it is now based in Huntington Beach, California. It was founded in 1987 by owner Jordan Cooper, along with Ray Cappo of Youth of Today, with the sole intent of producing the Warzone Lower East Side Crew 7-inch. Within the year, they put out two more releases and a limited 4th pressing of Youth of Today's Can't Close My Eyes 7-inch, which had been originally released on Positive Force Records, just for the two of them to trade for vintage G.I.Joes and other action figures. In the first three years, the label put out 23 releases and pressed approximately 50,000 records, and it has continued to release an average of 7–8 albums a year.",
+      "attention_tier": "C",
+      "priority": 0.7642857142857142,
+      "reading_order": 3,
+      "source_span": {
+        "start": 777,
+        "end": 1452,
+        "quote": "Formerly of New Haven, Connecticut, it is now based in Huntington Beach, California. It was founded in 1987 by owner Jordan Cooper, along with Ray Cappo of Youth of Today, with the sole intent of producing the Warzone Lower East Side Crew 7-inch. Within the year, they put out two more releases and a limited 4th pressing of Youth of Today's Can't Close My Eyes 7-inch, which had been originally released on Positive Force Records, just for the two of them to trade for vintage G.I.Joes and other action figures. In the first three years, the label put out 23 releases and pressed approximately 50,000 records, and it has continued to release an average of 7–8 albums a year."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-2",
+      "type": "evidence",
+      "content": "Cappo left the business in 1988, to focus on his band Shelter. He also started his own label Equal Vision Records (which he later sold to Youth of Today roadie, former Revelation employee and friend, Steve Reddy), though his albums were still released by Revelation after that, and he also operated Supersoul Records.",
+      "attention_tier": "C",
+      "priority": 0.6785714285714286,
+      "reading_order": 4,
+      "source_span": {
+        "start": 1454,
+        "end": 1771,
+        "quote": "Cappo left the business in 1988, to focus on his band Shelter. He also started his own label Equal Vision Records (which he later sold to Youth of Today roadie, former Revelation employee and friend, Steve Reddy), though his albums were still released by Revelation after that, and he also operated Supersoul Records."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-2",
+      "type": "caveat",
+      "content": "The label put out several definitive hardcore and metalcore records in the late 1990s and early 2000s, with notable releases coming from Damnation A.D., Will Haven, Shai Hulud, Curl Up and Die, and Himsa. However, by the mid-2000s, Revelation Records had seemingly fallen by the wayside, with very few releases between 2004 and 2006. However, the label is returning to its former stature as a premier old-school hardcore label with strong releases from newer bands like Down to Nothing, Shook Ones, and Sinking Ships.",
+      "attention_tier": "C",
+      "priority": 0.5928571428571429,
+      "reading_order": 5,
+      "source_span": {
+        "start": 1773,
+        "end": 2290,
+        "quote": "The label put out several definitive hardcore and metalcore records in the late 1990s and early 2000s, with notable releases coming from Damnation A.D., Will Haven, Shai Hulud, Curl Up and Die, and Himsa. However, by the mid-2000s, Revelation Records had seemingly fallen by the wayside, with very few releases between 2004 and 2006. However, the label is returning to its former stature as a premier old-school hardcore label with strong releases from newer bands like Down to Nothing, Shook Ones, and Sinking Ships."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-1",
+      "type": "appendix",
+      "content": "*Youth of Today\n*Warzone\n*Sick of It All\n*Down To Nothing\n*Praise\n*CIV\n*Garrison\n*Self Defense Family\n*Calling Hours\n*Dag Nasty\n*Himsa\n*Quicksand\n*New Found Glory\n*Inside Out\n*Side by Side\n*Speedway\n*Gameface\n*Chain of Strength\n*Sinking Ships\n*Fall Silent\n*In My Eyes\n*Farside\n*Texas Is the Reason\n*Shook Ones\n*Shelter\n*Kill Holiday\n*Sincebyman\n*On the Might of Princes\n*The Plot to Blow Up the Eiffel Tower\n*Kiss It Goodbye\n*Judge\n*Shai Hulud\n*Paint It Black\n*Dare\n*The Movielife\n*Drain\n*Curl Up and Die\n*Elliott\n*No for an Answer\n*Morning Again\n*Garrison\n*Spaced\n*Capital\n*Living Hell\n*Bold\n*Title Fight\n*Violent Reaction\n*Fell to Low\n*By a Thread\n*The Rival Mob\n*The Nerve Agents\n*CIV\n*Ignite\n*Big Laugh\n*Sense Field\n*Mouthpiece\n*Shades Apart\n*Planet on a Chain\n*Living Hell\n*Be Well\n*Primal Rite\n*Battery\n*Gorilla Biscuits\n*Into Another\n*World Be Free\n*Turning Point\n*End of a Year\n*Forced Order\n*Drowningman\n*Supertouch\n*Where Fear and Weapons Meet",
+      "attention_tier": "D",
+      "priority": 0.5071428571428571,
+      "reading_order": 6,
+      "source_span": {
+        "start": 2292,
+        "end": 3245,
+        "quote": "*Youth of Today\n*Warzone\n*Sick of It All\n*Down To Nothing\n*Praise\n*CIV\n*Garrison\n*Self Defense Family\n*Calling Hours\n*Dag Nasty\n*Himsa\n*Quicksand\n*New Found Glory\n*Inside Out\n*Side by Side\n*Speedway\n*Gameface\n*Chain of Strength\n*Sinking Ships\n*Fall Silent\n*In My Eyes\n*Farside\n*Texas Is the Reason\n*Shook Ones\n*Shelter\n*Kill Holiday\n*Sincebyman\n*On the Might of Princes\n*The Plot to Blow Up the Eiffel Tower\n*Kiss It Goodbye\n*Judge\n*Shai Hulud\n*Paint It Black\n*Dare\n*The Movielife\n*Drain\n*Curl Up and Die\n*Elliott\n*No for an Answer\n*Morning Again\n*Garrison\n*Spaced\n*Capital\n*Living Hell\n*Bold\n*Title Fight\n*Violent Reaction\n*Fell to Low\n*By a Thread\n*The Rival Mob\n*The Nerve Agents\n*CIV\n*Ignite\n*Big Laugh\n*Sense Field\n*Mouthpiece\n*Shades Apart\n*Planet on a Chain\n*Living Hell\n*Be Well\n*Primal Rite\n*Battery\n*Gorilla Biscuits\n*Into Another\n*World Be Free\n*Turning Point\n*End of a Year\n*Forced Order\n*Drowningman\n*Supertouch\n*Where Fear and Weapons Meet"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-2",
+      "type": "appendix",
+      "content": "* Official website\n* The Revelation Records discography\n* The pressing history of most Revelation releases\n* Revelation online music distribution.\n* An Interview with Jordan Cooper\n* An Interview with Jordan Cooper on PMAKid.com\n* True Till Rev website",
+      "attention_tier": "D",
+      "priority": 0.42142857142857143,
+      "reading_order": 7,
+      "source_span": {
+        "start": 3247,
+        "end": 3499,
+        "quote": "* Official website\n* The Revelation Records discography\n* The pressing history of most Revelation releases\n* Revelation online music distribution.\n* An Interview with Jordan Cooper\n* An Interview with Jordan Cooper on PMAKid.com\n* True Till Rev website"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-3",
+      "type": "appendix",
+      "content": "Category:Record labels established in 1987\nCategory:American independent record labels\nCategory:Hardcore record labels\nCategory:Punk record labels\nCategory:Revelation Records\nCategory:1987 establishments in Connecticut",
+      "attention_tier": "D",
+      "priority": 0.33571428571428574,
+      "reading_order": 8,
+      "source_span": {
+        "start": 3501,
+        "end": 3720,
+        "quote": "Category:Record labels established in 1987\nCategory:American independent record labels\nCategory:Hardcore record labels\nCategory:Punk record labels\nCategory:Revelation Records\nCategory:1987 establishments in Connecticut\n"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:f2cd2e1ce53773be2f384b831943ff742cefe2b4b75ce6f3eff8537fc0203318",
+    "chars": 3720,
+    "lang": "en"
+  }
+}

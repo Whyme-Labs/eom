@@ -1,0 +1,353 @@
+{
+  "version": "0.1",
+  "document_type": "other",
+  "summary": "B of the Bang was a sculpture by Thomas Heatherwick next to the City of Manchester Stadium in east Manchester, England, commissioned to mark",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "B of the Bang",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 15,
+        "quote": "B of the Bang"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "B of the Bang was a sculpture by Thomas Heatherwick next to the City of Manchester Stadium in east Manchester, England, commissioned to mark the 2002 Commonwealth Games. At it was one of the tallest structures in Manchester and the tallest sculpture in the UK until the completion of Aspire in 2008. The sculpture took its name from a quotation",
+      "attention_tier": "A",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 17,
+        "end": 361,
+        "quote": "B of the Bang was a sculpture by Thomas Heatherwick next to the City of Manchester Stadium in east Manchester, England, commissioned to mark the 2002 Commonwealth Games. At it was one of the tallest structures in Manchester and the tallest sculpture in the UK until the completion of Aspire in 2008. The sculpture took its name from a quotation"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "The sculpture was commissioned in 2003; construction overran and the official unveiling was delayed until 12 January 2005. Six days before the launch, the sculpture suffered the first of three visible structural problems as the tip of one of the spikes…",
+      "attention_tier": "B",
+      "priority": 0.85,
+      "reading_order": 2,
+      "source_span": {
+        "start": 521,
+        "end": 960,
+        "quote": "The sculpture was commissioned in 2003; construction overran and the official unveiling was delayed until 12 January 2005. Six days before the launch, the sculpture suffered the first of three visible structural problems as the tip of one of the spikes detached and fell to the ground. Legal action to repair the sculpture was started by Manchester City Council a year later, resulting in an out-of-court settlement totalling £1.7 million."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-2",
+      "type": "factbox",
+      "content": "In 2009, Manchester City Council announced that the sculpture would be dismantled and placed in storage. Despite the promise of storage and potential reassembly, the core and legs of the sculpture were cut apart during removal. The core was sold for scrap…",
+      "attention_tier": "B",
+      "priority": 0.8184210526315789,
+      "reading_order": 3,
+      "source_span": {
+        "start": 962,
+        "end": 1315,
+        "quote": "In 2009, Manchester City Council announced that the sculpture would be dismantled and placed in storage. Despite the promise of storage and potential reassembly, the core and legs of the sculpture were cut apart during removal. The core was sold for scrap in 2012, with the 180 spikes reported to have been placed in storage for an undecided future use."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-3",
+      "type": "factbox",
+      "content": "B of the Bang originally stood tall with 180 hollow tapered steel columns or spikes radiating from a central core. It was angled at 30 degrees and supported by five long, tapered steel legs which connected to the spikes above the ground. The sculpture…",
+      "attention_tier": "B",
+      "priority": 0.7868421052631579,
+      "reading_order": 4,
+      "source_span": {
+        "start": 1317,
+        "end": 1728,
+        "quote": "B of the Bang originally stood tall with 180 hollow tapered steel columns or spikes radiating from a central core. It was angled at 30 degrees and supported by five long, tapered steel legs which connected to the spikes above the ground. The sculpture weighed 165&nbsp;tonnes, with the concrete in the foundations weighing over 1,000&nbsp;tonnes, including a reinforced concrete slab. The foundations were deep."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "The sculpture was made from the same weathering steel (also known as Cor-Ten) as the Angel of the North sculpture, which gradually develops a tightly adhering oxide layer as it is exposed to the elements. This layer inhibits further corrosion by reducing its permeability to water. As part of the design, the spikes swayed slightly in the wind in order to withstand gusts in excess of . At the time of construction, a time capsule was placed in one of the spikes of the sculpture, containing children's poems and paintings, due to be opened circa 2300. The location of the time capsule after dismantling is currently unknown.",
+      "attention_tier": "B",
+      "priority": 0.7552631578947369,
+      "reading_order": 5,
+      "source_span": {
+        "start": 1730,
+        "end": 2355,
+        "quote": "The sculpture was made from the same weathering steel (also known as Cor-Ten) as the Angel of the North sculpture, which gradually develops a tightly adhering oxide layer as it is exposed to the elements. This layer inhibits further corrosion by reducing its permeability to water. As part of the design, the spikes swayed slightly in the wind in order to withstand gusts in excess of . At the time of construction, a time capsule was placed in one of the spikes of the sculpture, containing children's poems and paintings, due to be opened circa 2300. The location of the time capsule after dismantling is currently unknown."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "B of the Bang was located next to the City of Manchester Stadium at Sportcity, in Beswick, at the corner of Alan Turing Way and Ashton New Road. It took its name from a quotation of British sprinter Linford Christie in which he said that he started his races not merely at the 'bang' of the starting pistol, but at 'The B of the Bang'. The artwork had been nicknamed KerPlunk by the locals after the popular children's game from the 1970s.",
+      "attention_tier": "B",
+      "priority": 0.7236842105263158,
+      "reading_order": 6,
+      "source_span": {
+        "start": 2357,
+        "end": 2796,
+        "quote": "B of the Bang was located next to the City of Manchester Stadium at Sportcity, in Beswick, at the corner of Alan Turing Way and Ashton New Road. It took its name from a quotation of British sprinter Linford Christie in which he said that he started his races not merely at the 'bang' of the starting pistol, but at 'The B of the Bang'. The artwork had been nicknamed KerPlunk by the locals after the popular children's game from the 1970s."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-2",
+      "type": "caveat",
+      "content": "Prior to the construction of Aspire at the University of Nottingham, B of the Bang was Britain's tallest sculpture at well over twice the height of the Angel of the North, which stands at . It was designed to look like an exploding firework and was taller and leaned at a greater angle than the Leaning Tower of Pisa. It was commissioned by New East Manchester Limited to commemorate the 2002 Commonwealth Games. The design was selected by a panel consisting of both local residents and art experts via a competition in 2002 and was designed by Thomas Heatherwick.",
+      "attention_tier": "C",
+      "priority": 0.6921052631578948,
+      "reading_order": 7,
+      "source_span": {
+        "start": 2798,
+        "end": 3362,
+        "quote": "Prior to the construction of Aspire at the University of Nottingham, B of the Bang was Britain's tallest sculpture at well over twice the height of the Angel of the North, which stands at . It was designed to look like an exploding firework and was taller and leaned at a greater angle than the Leaning Tower of Pisa. It was commissioned by New East Manchester Limited to commemorate the 2002 Commonwealth Games. The design was selected by a panel consisting of both local residents and art experts via a competition in 2002 and was designed by Thomas Heatherwick."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-4",
+      "type": "factbox",
+      "content": "The sculpture was constructed in Sheffield by Thomas Heatherwick Studio, Packman Lucas, Flint and Neill and Westbury Structures. It was approved at the start of 2003, with the central core arriving in Manchester on 13 June 2004. This was the largest load that could be transferred via road from the factory, and required a police escort. This central core was lifted into place in August 2004, after which the 180 spikes could begin being attached. Early estimates had given an optimistic completion date of July 2003, which contributed to the sculpture gaining the nickname G of the Bang.",
+      "attention_tier": "C",
+      "priority": 0.6605263157894736,
+      "reading_order": 8,
+      "source_span": {
+        "start": 3364,
+        "end": 3953,
+        "quote": "The sculpture was constructed in Sheffield by Thomas Heatherwick Studio, Packman Lucas, Flint and Neill and Westbury Structures. It was approved at the start of 2003, with the central core arriving in Manchester on 13 June 2004. This was the largest load that could be transferred via road from the factory, and required a police escort. This central core was lifted into place in August 2004, after which the 180 spikes could begin being attached. Early estimates had given an optimistic completion date of July 2003, which contributed to the sculpture gaining the nickname G of the Bang."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "The official unveiling by Linford Christie took place on 12 January 2005.",
+      "attention_tier": "C",
+      "priority": 0.6289473684210526,
+      "reading_order": 9,
+      "source_span": {
+        "start": 3955,
+        "end": 4028,
+        "quote": "The official unveiling by Linford Christie took place on 12 January 2005."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-5",
+      "type": "factbox",
+      "content": "In total the sculpture cost £1.42 million to design and construct – twice the original estimate, as the initial costing had neglected to include installation costs. Funding was sourced from a European Regional Development Fund contribution of £700,000, the North West Development Agency, contributing £500,000, and Manchester City Council providing £120,000.",
+      "attention_tier": "C",
+      "priority": 0.5973684210526315,
+      "reading_order": 10,
+      "source_span": {
+        "start": 4030,
+        "end": 4388,
+        "quote": "In total the sculpture cost £1.42 million to design and construct – twice the original estimate, as the initial costing had neglected to include installation costs. Funding was sourced from a European Regional Development Fund contribution of £700,000, the North West Development Agency, contributing £500,000, and Manchester City Council providing £120,000."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-2",
+      "type": "claim",
+      "content": "The tip of one of the spikes detached and fell from the sculpture on 6 January 2005, only six days before the official unveiling. After inspection, the event went ahead as planned.",
+      "attention_tier": "C",
+      "priority": 0.5657894736842105,
+      "reading_order": 11,
+      "source_span": {
+        "start": 4390,
+        "end": 4570,
+        "quote": "The tip of one of the spikes detached and fell from the sculpture on 6 January 2005, only six days before the official unveiling. After inspection, the event went ahead as planned."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-2",
+      "type": "evidence",
+      "content": "Four months later, in May 2005, a second spike had to be cut off by firefighters after it was discovered hanging loose. At that time the sculpture was closed off to the public, and the junction and pathway near the sculpture were temporarily closed. As a result, some of the joints were re-welded, with equipment put in place to prevent excessive movement. This consisted of retrofitting tip weights to 70% of the spikes' weights.",
+      "attention_tier": "C",
+      "priority": 0.5342105263157895,
+      "reading_order": 12,
+      "source_span": {
+        "start": 4572,
+        "end": 5002,
+        "quote": "Four months later, in May 2005, a second spike had to be cut off by firefighters after it was discovered hanging loose. At that time the sculpture was closed off to the public, and the junction and pathway near the sculpture were temporarily closed. As a result, some of the joints were re-welded, with equipment put in place to prevent excessive movement. This consisted of retrofitting tip weights to 70% of the spikes' weights."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-3",
+      "type": "evidence",
+      "content": "Despite these modifications, B of the Bang remained fenced off, prompting a local newspaper campaign to 'Get It Sorted'. In May 2006 a total of nine spikes were removed from the sculpture and taken away for metallurgical analysis, to discover the stresses being placed on the steel.",
+      "attention_tier": "C",
+      "priority": 0.5026315789473683,
+      "reading_order": 13,
+      "source_span": {
+        "start": 5004,
+        "end": 5286,
+        "quote": "Despite these modifications, B of the Bang remained fenced off, prompting a local newspaper campaign to 'Get It Sorted'. In May 2006 a total of nine spikes were removed from the sculpture and taken away for metallurgical analysis, to discover the stresses being placed on the steel."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-4",
+      "type": "evidence",
+      "content": "Weld defects were identified within the sculpture, which cracked when wind blew through it. Weights affixed to the tips to reduce vibrations did not solve the problem. Replacing the spikes with heavier steel was proposed, at a cost of £3.5 million, with a reduction of the size of the spikes that the council described as \"unacceptable on aesthetic grounds\". Another option would have been to replace the spikes with carbon/glass fibre composite, which would have cost around £3 million.",
+      "attention_tier": "C",
+      "priority": 0.4710526315789474,
+      "reading_order": 14,
+      "source_span": {
+        "start": 5288,
+        "end": 5775,
+        "quote": "Weld defects were identified within the sculpture, which cracked when wind blew through it. Weights affixed to the tips to reduce vibrations did not solve the problem. Replacing the spikes with heavier steel was proposed, at a cost of £3.5 million, with a reduction of the size of the spikes that the council described as \"unacceptable on aesthetic grounds\". Another option would have been to replace the spikes with carbon/glass fibre composite, which would have cost around £3 million."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-6",
+      "type": "factbox",
+      "content": "It was announced in October 2007 that Manchester City Council were taking legal action against the makers of the sculpture, with the aim of completing the necessary repairs to the sculpture. In November 2008, this culminated in an out-of-court settlement being reached between Manchester City Council, the project's designers Thomas Heatherwick Studio Ltd, and the engineering and construction subcontractors Packman Lucas Ltd, Flint and Neill Partnership and Westbury Structures Ltd. The agreement was to pay the council £1.7m in damages for breach of contract and negligence.",
+      "attention_tier": "C",
+      "priority": 0.4394736842105263,
+      "reading_order": 15,
+      "source_span": {
+        "start": 5777,
+        "end": 6354,
+        "quote": "It was announced in October 2007 that Manchester City Council were taking legal action against the makers of the sculpture, with the aim of completing the necessary repairs to the sculpture. In November 2008, this culminated in an out-of-court settlement being reached between Manchester City Council, the project's designers Thomas Heatherwick Studio Ltd, and the engineering and construction subcontractors Packman Lucas Ltd, Flint and Neill Partnership and Westbury Structures Ltd. The agreement was to pay the council £1.7m in damages for breach of contract and negligence."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-1",
+      "type": "appendix",
+      "content": "Acting on a report in January 2009, the city council recommended that B of the Bang should be dismantled and placed in storage until funds could be raised for its safe reinstatement. The report recognised the sculpture's aesthetic value for Manchester and Manchester City Council committed itself to working with the artist to reach a long-term solution. One possibility involved the replacement of the steel spikes with alternatives made from carbon fibre, although the report underlined the necessity for extensive testing.",
+      "attention_tier": "D",
+      "priority": 0.40789473684210525,
+      "reading_order": 16,
+      "source_span": {
+        "start": 6356,
+        "end": 6881,
+        "quote": "Acting on a report in January 2009, the city council recommended that B of the Bang should be dismantled and placed in storage until funds could be raised for its safe reinstatement. The report recognised the sculpture's aesthetic value for Manchester and Manchester City Council committed itself to working with the artist to reach a long-term solution. One possibility involved the replacement of the steel spikes with alternatives made from carbon fibre, although the report underlined the necessity for extensive testing."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-3",
+      "type": "caveat",
+      "content": "In January 2009, Antony Gormley, creator of the Angel of the North—to which B of the Bang is often compared—spoke out in support of the sculpture, stating that, \"It is a great tribute to Manchester that this ground-breaking work was commissioned. To allow it to disappear would be a loss not just of an inspirational artwork but also of the council's nerve.\"",
+      "attention_tier": "C",
+      "priority": 0.3763157894736842,
+      "reading_order": 17,
+      "source_span": {
+        "start": 6883,
+        "end": 7241,
+        "quote": "In January 2009, Antony Gormley, creator of the Angel of the North—to which B of the Bang is often compared—spoke out in support of the sculpture, stating that, \"It is a great tribute to Manchester that this ground-breaking work was commissioned. To allow it to disappear would be a loss not just of an inspirational artwork but also of the council's nerve.\""
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-4",
+      "type": "caveat",
+      "content": "Despite Gormley's plea, removal of B of the Bang began in April 2009. More substantial hoarding was erected around the site and demolition firm Connell Brothers Limited began removing the spikes with oxyacetylene cutting equipment.",
+      "attention_tier": "C",
+      "priority": 0.34473684210526323,
+      "reading_order": 18,
+      "source_span": {
+        "start": 7243,
+        "end": 7474,
+        "quote": "Despite Gormley's plea, removal of B of the Bang began in April 2009. More substantial hoarding was erected around the site and demolition firm Connell Brothers Limited began removing the spikes with oxyacetylene cutting equipment."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-7",
+      "type": "factbox",
+      "content": "Although the council had promised to store the complex central core and legs, these too were cut apart during removal, casting doubt on future prospects for the landmark sculpture's return, and in early July 2012 the core was sold as scrap for £17,000. The spikes were reported to be in storage in a secret location in 2018.",
+      "attention_tier": "C",
+      "priority": 0.3131578947368421,
+      "reading_order": 19,
+      "source_span": {
+        "start": 7476,
+        "end": 7800,
+        "quote": "Although the council had promised to store the complex central core and legs, these too were cut apart during removal, casting doubt on future prospects for the landmark sculpture's return, and in early July 2012 the core was sold as scrap for £17,000. The spikes were reported to be in storage in a secret location in 2018."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-8",
+      "type": "factbox",
+      "content": "Category:Outdoor sculptures in Manchester\nCategory:Tourist attractions in Manchester\nCategory:Demolished buildings and structures in Manchester\nCategory:Former buildings and structures in Manchester\nCategory:Buildings and structures demolished in 2009\nCategory:2005 sculptures\nCategory:Steel sculptures in England\nCategory:Thomas Heatherwick\nCategory:2005 establishments in England\nCategory:2009 disestablishments in England",
+      "attention_tier": "C",
+      "priority": 0.28157894736842104,
+      "reading_order": 20,
+      "source_span": {
+        "start": 7802,
+        "end": 8227,
+        "quote": "Category:Outdoor sculptures in Manchester\nCategory:Tourist attractions in Manchester\nCategory:Demolished buildings and structures in Manchester\nCategory:Former buildings and structures in Manchester\nCategory:Buildings and structures demolished in 2009\nCategory:2005 sculptures\nCategory:Steel sculptures in England\nCategory:Thomas Heatherwick\nCategory:2005 establishments in England\nCategory:2009 disestablishments in England\n"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:c74894190ada2aa81fc11ca2cadd9f2b019132b245171de023388e708afc5566",
+    "chars": 8227,
+    "lang": "en"
+  }
+}

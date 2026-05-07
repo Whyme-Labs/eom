@@ -1,43 +1,77 @@
 {
-  "version": "first-validation-batch",
-  "raw_pool_size": 87,
-  "processed": 57,
-  "unprocessed": 30,
-  "passing_on_disk": 29,
-  "yield_pct_of_processed": 50.9,
-  "yield_pct_of_pool": 33.3,
-  "by_doc_type_pass": {
-    "paper": 17,
-    "other": 12
+  "total_attempted": 160,
+  "n_pass": 78,
+  "n_fail": 82,
+  "yield_pct": 48.8,
+  "error_rate_pct": 0.0,
+  "mean_attempts_passing": 1.37,
+  "mean_attempts_failing": 3.0,
+  "per_doc_type": {
+    "other": {
+      "pass": 32,
+      "fail": 18,
+      "total": 50,
+      "yield_pct": 64.0
+    },
+    "paper": {
+      "pass": 23,
+      "fail": 56,
+      "total": 79,
+      "yield_pct": 29.1
+    },
+    "policy": {
+      "pass": 23,
+      "fail": 8,
+      "total": 31,
+      "yield_pct": 74.2
+    }
   },
-  "by_doc_type_fail": {
-    "other": 5,
-    "paper": 22,
-    "policy": 1
+  "top_failure_modes": {
+    "H11": 193,
+    "H3": 47,
+    "H8": 10
   },
-  "failure_rule_frequency": {
-    "H11": 70,
-    "H3": 16,
-    "H8": 4
-  },
-  "attempts_distribution_passing": {
-    "1": 14,
-    "2": 6,
-    "3": 9
-  },
-  "mean_attempts_passing": 1.83,
-  "mean_elapsed_seconds_passing": 190.3,
-  "mean_elapsed_seconds_failing": 232.7,
-  "unprocessed_breakdown_by_type": {
-    "policy": 29,
-    "paper": 1
-  },
-  "decision_gate": "30-60% range (plan: continue cautiously; consider calibration LLM)",
-  "notes": [
-    "First validation batch on raw fetched docs (Wikipedia random + arXiv abstracts + IETF RFCs).",
-    "Generation halted on 30 policy/RFCs due to OpenRouter slow responses on long inputs (5-8 min/doc); resumable later.",
-    "H11 (source_span quote mismatch) dominates failures (~76%).",
-    "Yield on raw docs is much lower than on hand-curated gold (46% vs 100%) because random Wikipedia + arXiv full abstracts have messier formatting.",
-    "Pipeline correctness validated: every on-disk eom.json passes harness at write time."
+  "sample_passing": [
+    {
+      "slug": "rfc-9060",
+      "doc_type": "policy",
+      "attempts": 1,
+      "elapsed_s": 16.42
+    },
+    {
+      "slug": "arxiv-260505151v1",
+      "doc_type": "paper",
+      "attempts": 1,
+      "elapsed_s": 18.89
+    },
+    {
+      "slug": "springfield-thunderbirds",
+      "doc_type": "other",
+      "attempts": 1,
+      "elapsed_s": 4.4
+    }
+  ],
+  "sample_failing": [
+    {
+      "slug": "arxiv-260501591v1",
+      "doc_type": "paper",
+      "error": "harness failures: ['H11', 'H11', 'H11']",
+      "attempts": 3,
+      "elapsed_s": 106.41
+    },
+    {
+      "slug": "arxiv-260505103v1",
+      "doc_type": "paper",
+      "error": "harness failures: ['H3', 'H11', 'H11', 'H11']",
+      "attempts": 3,
+      "elapsed_s": 195.51
+    },
+    {
+      "slug": "rfc-9160",
+      "doc_type": "policy",
+      "error": "harness failures: ['H11', 'H11']",
+      "attempts": 3,
+      "elapsed_s": 183.18
+    }
   ]
 }
