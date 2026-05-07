@@ -1,0 +1,129 @@
+{
+  "version": "0.1",
+  "document_type": "paper",
+  "summary": "Wu et al. identify outlier tokens in Diffusion Transformers (DiTs) and introduce Dual-Stage Registers (DSR) to reduce these artifacts and improve image generation quality across ImageNet and text-to-image tasks.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "Taming Outlier Tokens in Diffusion Transformers",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 0,
+        "end": 49,
+        "quote": "# Taming Outlier Tokens in Diffusion Transformers"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "We study outlier tokens in Diffusion Transformers (DiTs) for image generation.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 135,
+        "end": 213,
+        "quote": "We study outlier tokens in Diffusion Transformers (DiTs) for image generation."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "We show that this phenomenon appears in both the encoder and denoiser of modern Representation Autoencoder (RAE)-DiT pipelines: pretrained ViT encoders can produce outlier representations, and DiTs themselves can develop internal outlier tokens, especially in intermediate layers.",
+      "attention_tier": "B",
+      "priority": 0.85,
+      "reading_order": 2,
+      "source_span": {
+        "start": 455,
+        "end": 735,
+        "quote": "We show that this phenomenon appears in both the encoder and denoiser of modern Representation Autoencoder (RAE)-DiT pipelines: pretrained ViT encoders can produce outlier representations, and DiTs themselves can develop internal outlier tokens, especially in intermediate layers."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "Moreover, simply masking high-norm tokens does not improve performance, indicating that the problem is not only caused by a few extreme values, but is more closely related to corrupted local patch semantics.",
+      "attention_tier": "C",
+      "priority": 0.7,
+      "reading_order": 3,
+      "source_span": {
+        "start": 736,
+        "end": 943,
+        "quote": "Moreover, simply masking high-norm tokens does not improve performance, indicating that the problem is not only caused by a few extreme values, but is more closely related to corrupted local patch semantics."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "To address this issue, we introduce Dual-Stage Registers (DSR), a register-based intervention for both components: trained registers when available, recursive test-time registers otherwise, and diffusion registers for the denoiser.",
+      "attention_tier": "C",
+      "priority": 0.8,
+      "reading_order": 4,
+      "source_span": {
+        "start": 944,
+        "end": 1175,
+        "quote": "To address this issue, we introduce Dual-Stage Registers (DSR), a register-based intervention for both components: trained registers when available, recursive test-time registers otherwise, and diffusion registers for the denoiser."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "Across ImageNet and large-scale text-to-image generation, these interventions consistently reduce outlier artifacts and improve generation quality.",
+      "attention_tier": "C",
+      "priority": 0.6,
+      "reading_order": 5,
+      "source_span": {
+        "start": 1176,
+        "end": 1323,
+        "quote": "Across ImageNet and large-scale text-to-image generation, these interventions consistently reduce outlier artifacts and improve generation quality."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "decision-1",
+      "type": "decision",
+      "content": "Our results highlight outlier-token control as an important ingredient in building stronger DiTs.",
+      "attention_tier": "D",
+      "priority": 0.5,
+      "reading_order": 6,
+      "source_span": {
+        "start": 1324,
+        "end": 1421,
+        "quote": "Our results highlight outlier-token control as an important ingredient in building stronger DiTs."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:83c3bf3f86fa8493de744136c230bb5767867909dce57b0537482174e5832741",
+    "chars": 1422,
+    "lang": "en"
+  }
+}

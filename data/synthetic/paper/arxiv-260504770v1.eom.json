@@ -1,0 +1,129 @@
+{
+  "version": "0.1",
+  "document_type": "paper",
+  "summary": "The Gaze4HRI benchmark reveals that current zero-shot 3D gaze estimation methods struggle with steeply-downward gaze, while PureGaze trained on the diverse ETH-X-Gaze dataset demonstrates superior robustness in unconstrained HRI environments.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "Gaze4HRI: Zero-shot Benchmarking Gaze Estimation Neural-Networks for Human-Robot Interaction",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 0,
+        "end": 94,
+        "quote": "# Gaze4HRI: Zero-shot Benchmarking Gaze Estimation Neural-Networks for Human-Robot Interaction"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "To bridge these gaps, we introduce Gaze4HRI, a large-scale dataset designed to evaluate state-of-the-art performance against critical HRI variables: illumination, head-gaze conflict, as well as the motion of camera and gaze target in video.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 735,
+        "end": 1022,
+        "quote": "To bridge these gaps, we introduce Gaze4HRI, a large-scale dataset (50+ subjects, 3,000+ videos, 600,000+ frames) designed to evaluate state-of-the-art performance against critical HRI variables: illumination, head-gaze conflict, as well as the motion of camera and gaze target in video."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "All evaluated methods fail in at least one condition, identifying steeply-downward gaze as a universal failure point.",
+      "attention_tier": "B",
+      "priority": 0.9,
+      "reading_order": 2,
+      "source_span": {
+        "start": 1023,
+        "end": 1167,
+        "quote": "Our benchmark reveals that all evaluated methods fail in at least one condition, identifying steeply-downward gaze as a universal failure point."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "Notably, PureGaze trained on the ETH-X-Gaze dataset uniquely maintains resilience across all other conditions.",
+      "attention_tier": "C",
+      "priority": 0.85,
+      "reading_order": 3,
+      "source_span": {
+        "start": 1168,
+        "end": 1278,
+        "quote": "Notably, PureGaze trained on the ETH-X-Gaze dataset uniquely maintains resilience across all other conditions."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-2",
+      "type": "claim",
+      "content": "Extensive data diversity, as exemplified by the ETH-X-Gaze dataset, serves as the primary driver of zero-shot robustness in unconstrained environments.",
+      "attention_tier": "C",
+      "priority": 0.8,
+      "reading_order": 4,
+      "source_span": {
+        "start": 1412,
+        "end": 1752,
+        "quote": "Instead, our findings suggest that extensive data diversity, as exemplified by the ETH-X-Gaze dataset, serves as the primary driver of zero-shot robustness in unconstrained environments, while resilience-enhancing frameworks, such as PureGaze's self-adversarial loss for gaze feature purification, provide a substantial further improvement."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "Existing benchmarks frequently overlook fundamental HRI conditions, such as dynamic camera viewpoints and moving targets in video.",
+      "attention_tier": "C",
+      "priority": 0.7,
+      "reading_order": 5,
+      "source_span": {
+        "start": 386,
+        "end": 516,
+        "quote": "Existing benchmarks frequently overlook fundamental HRI conditions, such as dynamic camera viewpoints and moving targets in video."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "decision-1",
+      "type": "decision",
+      "content": "This study establishes a rigorous benchmark that provides practical guidelines for practitioners as well as reshaping future research.",
+      "attention_tier": "D",
+      "priority": 0.6,
+      "reading_order": 6,
+      "source_span": {
+        "start": 1753,
+        "end": 1899,
+        "quote": "Ultimately, this study establishes a rigorous benchmark that provides practical guidelines for practitioners as well as reshaping future research."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:911385cb2f316d3f50422fedab17bfd593fea59f88b4a5d1fd4cd24580b28a4c",
+    "chars": 1969,
+    "lang": "en"
+  }
+}

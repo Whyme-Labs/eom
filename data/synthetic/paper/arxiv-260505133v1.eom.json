@@ -1,0 +1,129 @@
+{
+  "version": "0.1",
+  "document_type": "paper",
+  "summary": "Jiang et al. propose the Transformed Latent Variable MOGP (T-LVMOGP), a scalable framework using Lipschitz-regularised neural networks and stochastic variational inference to model high-dimensional output spaces, outperforming baselines in climate modelling and spatial transcriptomics.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "# Transformed Latent Variable Multi-Output Gaussian Processes",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 0,
+        "end": 61,
+        "quote": "# Transformed Latent Variable Multi-Output Gaussian Processes"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "Multi-Output Gaussian Processes (MOGPs) provide a principled probabilistic framework for modelling correlated outputs but face scalability bottlenecks when applied to datasets with high-dimensional output spaces.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 167,
+        "end": 379,
+        "quote": "Multi-Output Gaussian Processes (MOGPs) provide a principled probabilistic framework for modelling correlated outputs but face scalability bottlenecks when applied to datasets with high-dimensional output spaces."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "To maintain tractability, existing methods typically resort to restrictive assumptions, such as employing low-rank or sum-of-separable kernels, which can limit expressiveness.",
+      "attention_tier": "C",
+      "priority": 0.8,
+      "reading_order": 2,
+      "source_span": {
+        "start": 380,
+        "end": 555,
+        "quote": "To maintain tractability, existing methods typically resort to restrictive assumptions, such as employing low-rank or sum-of-separable kernels, which can limit expressiveness."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "We propose the Transformed Latent Variable MOGP (T-LVMOGP), a novel framework that scales MOGPs to a massive number of outputs while preserving the capacity to capture meaningful inter-output dependencies.",
+      "attention_tier": "B",
+      "priority": 0.9,
+      "reading_order": 3,
+      "source_span": {
+        "start": 556,
+        "end": 761,
+        "quote": "We propose the Transformed Latent Variable MOGP (T-LVMOGP), a novel framework that scales MOGPs to a massive number of outputs while preserving the capacity to capture meaningful inter-output dependencies."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "T-LVMOGP constructs a flexible multi-output deep kernel by mapping inputs and output-specific latent variables into an embedding space using a Lipschitz-regularised neural network.",
+      "attention_tier": "C",
+      "priority": 0.75,
+      "reading_order": 4,
+      "source_span": {
+        "start": 762,
+        "end": 942,
+        "quote": "T-LVMOGP constructs a flexible multi-output deep kernel by mapping inputs and output-specific latent variables into an embedding space using a Lipschitz-regularised neural network."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": "claim-1"
+    },
+    {
+      "id": "evidence-2",
+      "type": "evidence",
+      "content": "Combined with stochastic variational inference, our model effectively scales to high-dimensional output settings.",
+      "attention_tier": "C",
+      "priority": 0.7,
+      "reading_order": 5,
+      "source_span": {
+        "start": 943,
+        "end": 1056,
+        "quote": "Combined with stochastic variational inference, our model effectively scales to high-dimensional output settings."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": "claim-1"
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "Across diverse benchmarks, including climate modelling with over 10,000 outputs and zero-inflated spatial transcriptomics data, T-LVMOGP outperforms baselines in both predictive accuracy and computational efficiency.",
+      "attention_tier": "C",
+      "priority": 0.85,
+      "reading_order": 6,
+      "source_span": {
+        "start": 1057,
+        "end": 1273,
+        "quote": "Across diverse benchmarks, including climate modelling with over 10,000 outputs and zero-inflated spatial transcriptomics data, T-LVMOGP outperforms baselines in both predictive accuracy and computational efficiency."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": "claim-1"
+    }
+  ],
+  "source": {
+    "checksum": "sha256:5d3a2259dd7ac0e46fc6cea24327fe2d511056f7c618e5c69ab62d555b46cbf5",
+    "chars": 1274,
+    "lang": "en"
+  }
+}

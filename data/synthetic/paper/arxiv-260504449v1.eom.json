@@ -1,0 +1,129 @@
+{
+  "version": "0.1",
+  "document_type": "paper",
+  "summary": "GEM (Graph-Enhanced Mixture-of-Experts) improves Dialogue State Tracking by combining a Graph Neural Network, a T5-Small encoder-decoder, and ReAct agents, achieving 65.19% Joint Goal Accuracy on MultiWOZ 2.2.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "GEM: Graph-Enhanced Mixture-of-Experts with ReAct Agents for Dialogue State Tracking",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 0,
+        "end": 86,
+        "quote": "# GEM: Graph-Enhanced Mixture-of-Experts with ReAct Agents for Dialogue State Tracking"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "We present GEM (Graph-Enhanced Mixture-of-Experts), a novel framework that combines language models and graph-structured dialogue understanding with ReAct agent-based reasoning for superior DST performance.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 379,
+        "end": 585,
+        "quote": "We present GEM (Graph-Enhanced Mixture-of-Experts), a novel framework that combines language models and graph-structured dialogue understanding with ReAct agent-based reasoning for superior DST performance."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "Our approach dynamically routes between specialized experts: a Graph Neural Network that captures dialogue structure and turn-level dependencies, and a finetuned T5-Small encoder-decoder for sequence modeling, coordinated by an intelligent router.",
+      "attention_tier": "B",
+      "priority": 0.88,
+      "reading_order": 2,
+      "source_span": {
+        "start": 586,
+        "end": 833,
+        "quote": "Our approach dynamically routes between specialized experts: a Graph Neural Network that captures dialogue structure and turn-level dependencies, and a finetuned T5-Small encoder-decoder for sequence modeling, coordinated by an intelligent router."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "For complex value generation tasks, we integrate ReAct agents that perform structured reasoning over dialogue context.",
+      "attention_tier": "C",
+      "priority": 0.8,
+      "reading_order": 3,
+      "source_span": {
+        "start": 834,
+        "end": 952,
+        "quote": "For complex value generation tasks, we integrate ReAct agents that perform structured reasoning over dialogue context."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "On MultiWOZ 2.2, GEM achieves 65.19% Joint Goal Accuracy, substantially outperforming end-to-end LLM approaches (best: 38.43%) and surpassing state-of-the-art (SOTA) methods including TOATOD (63.79%), D3ST (58.70%), and Diable (56.48%).",
+      "attention_tier": "C",
+      "priority": 0.85,
+      "reading_order": 4,
+      "source_span": {
+        "start": 953,
+        "end": 1189,
+        "quote": "On MultiWOZ 2.2, GEM achieves 65.19% Joint Goal Accuracy, substantially outperforming end-to-end LLM approaches (best: 38.43%) and surpassing state-of-the-art (SOTA) methods including TOATOD (63.79%), D3ST (58.70%), and Diable (56.48%)."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "decision-1",
+      "type": "decision",
+      "content": "Our graph-enhanced mixture-of-experts architecture with ReAct integration demonstrates that combining structured dialogue representation with dynamic expert routing and agent-based reasoning provides a powerful paradigm for dialogue state tracking, achieving superior accuracy while maintaining computational efficiency through selective expert activation.",
+      "attention_tier": "C",
+      "priority": 0.7,
+      "reading_order": 5,
+      "source_span": {
+        "start": 1190,
+        "end": 1546,
+        "quote": "Our graph-enhanced mixture-of-experts architecture with ReAct integration demonstrates that combining structured dialogue representation with dynamic expert routing and agent-based reasoning provides a powerful paradigm for dialogue state tracking, achieving superior accuracy while maintaining computational efficiency through selective expert activation."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "Dialogue State Tracking (DST) requires precise extraction of structured information from multi-domain conversations, a task where Large Language Models (LLMs) struggle despite their impressive general capabilities.",
+      "attention_tier": "D",
+      "priority": 0.5,
+      "reading_order": 6,
+      "source_span": {
+        "start": 164,
+        "end": 378,
+        "quote": "Dialogue State Tracking (DST) requires precise extraction of structured information from multi-domain conversations, a task where Large Language Models (LLMs) struggle despite their impressive general capabilities."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:a5e1b0968bb4244051a2c40ddfc866bd32d3527c6129fb675f51c3027818095f",
+    "chars": 1547,
+    "lang": "en"
+  }
+}

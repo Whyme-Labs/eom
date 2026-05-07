@@ -1,0 +1,161 @@
+{
+  "version": "0.1",
+  "document_type": "paper",
+  "summary": "The authors introduce BatMIL, a WSI classification framework that utilizes a hybrid hyperbolic-Euclidean representation, an S4 backbone for long-range dependencies, and a chunk-level MoE module to outperform state-of-the-art MIL approaches.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "Geometry-Aware State Space Model: A New Paradigm for Whole-Slide Image Representation",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 0,
+        "end": 87,
+        "quote": "# Geometry-Aware State Space Model: A New Paradigm for Whole-Slide Image Representation"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "Accurate analysis of histopathological images is critical for disease diagnosis and treatment planning.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 177,
+        "end": 280,
+        "quote": "Accurate analysis of histopathological images is critical for disease diagnosis and treatment planning."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "most existing methods implicitly embed patch representations in homogeneous Euclidean spaces, overlooking the hierarchical organization and regional heterogeneity of pathological tissues.",
+      "attention_tier": "C",
+      "priority": 0.8,
+      "reading_order": 2,
+      "source_span": {
+        "start": 614,
+        "end": 810,
+        "quote": "However, most existing methods implicitly embed patch representations in homogeneous Euclidean spaces, overlooking the hierarchical organization and regional heterogeneity of pathological tissues."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "we introduce a hybrid hyperbolic-Euclidean representation that embeds WSI features in dual geometric spaces, enabling complementary modeling of hierarchical tissue structures and local morphological details.",
+      "attention_tier": "B",
+      "priority": 0.9,
+      "reading_order": 3,
+      "source_span": {
+        "start": 923,
+        "end": 1158,
+        "quote": "To address this limitation, we introduce a hybrid hyperbolic-Euclidean representation that embeds WSI features in dual geometric spaces, enabling complementary modeling of hierarchical tissue structures and local morphological details."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "Building on this formulation, we develop BatMIL, a WSI classification framework that leverages both geometric spaces.",
+      "attention_tier": "C",
+      "priority": 0.75,
+      "reading_order": 4,
+      "source_span": {
+        "start": 1159,
+        "end": 1276,
+        "quote": "Building on this formulation, we develop BatMIL, a WSI classification framework that leverages both geometric spaces."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": "claim-1"
+    },
+    {
+      "id": "factbox-2",
+      "type": "factbox",
+      "content": "To model long-range dependencies among thousands of patches, we employ a structured state space sequence model (S4) backbone that encodes patch sequences with linear computational complexity.",
+      "attention_tier": "C",
+      "priority": 0.7,
+      "reading_order": 5,
+      "source_span": {
+        "start": 1277,
+        "end": 1468,
+        "quote": "To model long-range dependencies among thousands of patches, we employ a structured state space sequence model (S4) backbone that encodes patch sequences with linear computational complexity."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": "factbox-1"
+    },
+    {
+      "id": "factbox-3",
+      "type": "factbox",
+      "content": "to account for regional heterogeneity, we introduce a chunk-level mixture-of-experts (MoE) module that groups patches into regions and dynamically routes them to specialized subnetworks",
+      "attention_tier": "C",
+      "priority": 0.65,
+      "reading_order": 6,
+      "source_span": {
+        "start": 1469,
+        "end": 1742,
+        "quote": "Furthermore, to account for regional heterogeneity, we introduce a chunk-level mixture-of-experts (MoE) module that groups patches into regions and dynamically routes them to specialized subnetworks, improving representational capacity while reducing redundant computation."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": "factbox-1"
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "Extensive experiments on seven WSI datasets spanning six cancer types demonstrate that BatMIL consistently outperforms state-of-the-art MIL approaches in slide-level classification tasks.",
+      "attention_tier": "C",
+      "priority": 0.85,
+      "reading_order": 7,
+      "source_span": {
+        "start": 1743,
+        "end": 1930,
+        "quote": "Extensive experiments on seven WSI datasets spanning six cancer types demonstrate that BatMIL consistently outperforms state-of-the-art MIL approaches in slide-level classification tasks."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": "factbox-1"
+    },
+    {
+      "id": "decision-1",
+      "type": "decision",
+      "content": "geometry-aware representation learning offers a promising direction for next-generation computational pathology.",
+      "attention_tier": "D",
+      "priority": 0.5,
+      "reading_order": 8,
+      "source_span": {
+        "start": 1931,
+        "end": 2071,
+        "quote": "These results indicate that geometry-aware representation learning offers a promising direction for next-generation computational pathology."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": "evidence-1"
+    }
+  ],
+  "source": {
+    "checksum": "sha256:4b43d1889bc293f1175592af8690ee46b6256218b62d927e31de5a7d97c1293c",
+    "chars": 2072,
+    "lang": "en"
+  }
+}

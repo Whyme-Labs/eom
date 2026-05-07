@@ -1,0 +1,113 @@
+{
+  "version": "0.1",
+  "document_type": "paper",
+  "summary": "The Verkor Team introduces Design Conductor 2.0, a multi-agent harness that autonomously built VerTQ, a TurboQuant inference accelerator with 5129 FP16/32 units, demonstrating an 80x increase in task capacity over its predecessor.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "Design Conductor 2.0: An agent builds a TurboQuant inference accelerator in 80 hours",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 0,
+        "end": 86,
+        "quote": "# Design Conductor 2.0: An agent builds a TurboQuant inference accelerator in 80 hours"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "In this work, we introduce an updated multi-agent harness powered by frontier models released in April 2026, which is able to handle 80x larger tasks, at higher quality, fully autonomously.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 462,
+        "end": 651,
+        "quote": "In this work, we introduce an updated multi-agent harness powered by frontier models released in April 2026, which is able to handle 80x larger tasks, at higher quality, fully autonomously."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "The system autonomously produced four designs, including \"VerTQ\", an LLM inference accelerator which hard-wires support for TurboQuant in a 240-cycle pipeline.",
+      "attention_tier": "B",
+      "priority": 0.88,
+      "reading_order": 2,
+      "source_span": {
+        "start": 652,
+        "end": 898,
+        "quote": "Following a brief introduction, we examine 4 designs that the system produced autonomously, including \"VerTQ\", an LLM inference accelerator which hard-wires support for TurboQuant in a 240-cycle pipeline, starting from the TurboQuant arXiv paper."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "VerTQ includes heavy compute processing, with 5129 FP16/32 units; the design was mapped to an FPGA at 125 MHz and consumes 5.7 mm^2 in TSMC 16FF (8 attention pipes).",
+      "attention_tier": "C",
+      "priority": 0.8,
+      "reading_order": 3,
+      "source_span": {
+        "start": 899,
+        "end": 1064,
+        "quote": "VerTQ includes heavy compute processing, with 5129 FP16/32 units; the design was mapped to an FPGA at 125 MHz and consumes 5.7 mm^2 in TSMC 16FF (8 attention pipes)."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": "claim-1"
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "In our prior work (performed in Dec. 2025), we introduced \"Design Conductor\" (or just \"Conductor\"), a system capable of building a 5-stage Linux-capable RISC-V CPU in 12 hours.",
+      "attention_tier": "C",
+      "priority": 0.6,
+      "reading_order": 4,
+      "source_span": {
+        "start": 322,
+        "end": 461,
+        "quote": "2025), we introduced \"Design Conductor\" (or just \"Conductor\"), a system capable of building a 5-stage Linux-capable RISC-V CPU in 12 hours."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "decision-1",
+      "type": "decision",
+      "content": "Finally, we analyze Design Conductor's token usage and other empirical characteristics, including its limitations.",
+      "attention_tier": "D",
+      "priority": 0.4,
+      "reading_order": 5,
+      "source_span": {
+        "start": 1131,
+        "end": 1245,
+        "quote": "Finally, we analyze Design Conductor's token usage and other empirical characteristics, including its limitations."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:ebef7ab59e740956c362ac956e9e05e1f6e2e710124e789717ad7e213a34c4ba",
+    "chars": 1246,
+    "lang": "en"
+  }
+}

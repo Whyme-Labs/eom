@@ -1,0 +1,113 @@
+{
+  "version": "0.1",
+  "document_type": "policy",
+  "summary": "RFC 9150 defines HMAC-based cipher suites for TLS 1.3 that provide authentication and integrity without data confidentiality, specifically for IoT and constrained environments.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "RFC 9150: Independent Submission",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 0,
+        "end": 84,
+        "quote": "# RFC 9150: Independent Submission                                     N. Cam-Winget"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "This document defines the use of cipher suites for TLS 1.3 based on Hashed Message Authentication Code (HMAC). Using these cipher suites provides server and, optionally, mutual authentication and data authenticity, but not data confidentiality.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 96,
+        "end": 353,
+        "quote": "   This document defines the use of cipher suites for TLS 1.3 based on\n   Hashed Message Authentication Code (HMAC).  Using these cipher suites\n   provides server and, optionally, mutual authentication and data\n   authenticity, but not data confidentiality."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "Cipher suites with these properties are not of general applicability, but there are use cases, specifically in Internet of Things (IoT) and constrained environments, that do not require confidentiality of exchanged messages while still requiring integrity protection, server authentication, and optional client authentication.",
+      "attention_tier": "B",
+      "priority": 0.9,
+      "reading_order": 2,
+      "source_span": {
+        "start": 355,
+        "end": 696,
+        "quote": "Cipher suites with these\n   properties are not of general applicability, but there are use cases,\n   specifically in Internet of Things (IoT) and constrained\n   environments, that do not require confidentiality of exchanged\n   messages while still requiring integrity protection, server\n   authentication, and optional client authentication."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "prior to using these integrity-only cipher suites, a threat model for the situation at hand is needed, and a threat analysis must be performed within that model to determine whether the use of integrity-only cipher suites is appropriate.",
+      "attention_tier": "C",
+      "priority": 0.8,
+      "reading_order": 3,
+      "source_span": {
+        "start": 698,
+        "end": 1019,
+        "quote": "This document\n   gives examples of such use cases, with the caveat that prior to using\n   these integrity-only cipher suites, a threat model for the situation\n   at hand is needed, and a threat analysis must be performed within\n   that model to determine whether the use of integrity-only cipher\n   suites is appropriate."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "The approach described in this document is not endorsed by the IETF and does not have IETF consensus, but it is presented here to enable interoperable implementation of a reduced-security mechanism that provides authentication and message integrity without supporting confidentiality.",
+      "attention_tier": "C",
+      "priority": 0.7,
+      "reading_order": 4,
+      "source_span": {
+        "start": 1021,
+        "end": 1318,
+        "quote": "The approach described in this document is\n   not endorsed by the IETF and does not have IETF consensus, but it is\n   presented here to enable interoperable implementation of a reduced-\n   security mechanism that provides authentication and message integrity\n   without supporting confidentiality."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-2",
+      "type": "factbox",
+      "content": "This document is not an Internet Standards Track specification; it is published for informational purposes.",
+      "attention_tier": "D",
+      "priority": 0.6,
+      "reading_order": 5,
+      "source_span": {
+        "start": 1341,
+        "end": 1454,
+        "quote": "   This document is not an Internet Standards Track specification; it is\n   published for informational purposes."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:aff568712b487cc6eedcfc3751bf966283c89041581beeef731d9fbfd157ccb0",
+    "chars": 2504,
+    "lang": "en"
+  }
+}

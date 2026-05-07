@@ -1,0 +1,225 @@
+{
+  "version": "0.1",
+  "document_type": "policy",
+  "summary": "Abstract",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "RFC 8950: Internet Engineering Task Force (IETF)                      S. Litkowski",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 84,
+        "quote": "RFC 8950: Internet Engineering Task Force (IETF)                      S. Litkowski"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "Abstract",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 86,
+        "end": 94,
+        "quote": "Abstract"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "Multiprotocol BGP (MP-BGP) specifies that the set of usable next-hop\n   address families is determined by the Address Family Identifier (AFI)\n   and the Subsequent Address Family Identifier (SAFI).  The AFI/SAFI\n   definitions for the IPv4 address family only have provisions for\n   advertising a next-hop address that belongs to the IPv4 protocol when\n   advertising IPv4 Network Layer Reachability Information (NLRI) or\n   VPN-IPv4 NLRI.",
+      "attention_tier": "B",
+      "priority": 0.85,
+      "reading_order": 2,
+      "source_span": {
+        "start": 96,
+        "end": 538,
+        "quote": "   Multiprotocol BGP (MP-BGP) specifies that the set of usable next-hop\n   address families is determined by the Address Family Identifier (AFI)\n   and the Subsequent Address Family Identifier (SAFI).  The AFI/SAFI\n   definitions for the IPv4 address family only have provisions for\n   advertising a next-hop address that belongs to the IPv4 protocol when\n   advertising IPv4 Network Layer Reachability Information (NLRI) or\n   VPN-IPv4 NLRI."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-2",
+      "type": "evidence",
+      "content": "This document specifies the extensions necessary to allow the\n   advertising of IPv4 NLRI or VPN-IPv4 NLRI with a next-hop address\n   that belongs to the IPv6 protocol.  This comprises an extension of\n   the AFI/SAFI definitions to allow the address of the next hop for\n   IPv4 NLRI or VPN-IPv4 NLRI to also belong to the IPv6 protocol, the\n   encoding of the next hop to determine which of the protocols the\n   address actually belongs to, and a BGP Capability allowing MP-BGP\n   peers to dynamically discover whether they can exchange IPv4 NLRI and\n   VPN-IPv4 NLRI with an IPv6 next hop.  This document obsoletes RFC\n   5549.",
+      "attention_tier": "B",
+      "priority": 0.7954545454545454,
+      "reading_order": 3,
+      "source_span": {
+        "start": 540,
+        "end": 1171,
+        "quote": "   This document specifies the extensions necessary to allow the\n   advertising of IPv4 NLRI or VPN-IPv4 NLRI with a next-hop address\n   that belongs to the IPv6 protocol.  This comprises an extension of\n   the AFI/SAFI definitions to allow the address of the next hop for\n   IPv4 NLRI or VPN-IPv4 NLRI to also belong to the IPv6 protocol, the\n   encoding of the next hop to determine which of the protocols the\n   address actually belongs to, and a BGP Capability allowing MP-BGP\n   peers to dynamically discover whether they can exchange IPv4 NLRI and\n   VPN-IPv4 NLRI with an IPv6 next hop.  This document obsoletes RFC\n   5549."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "Status of This Memo",
+      "attention_tier": "C",
+      "priority": 0.7409090909090909,
+      "reading_order": 4,
+      "source_span": {
+        "start": 1173,
+        "end": 1192,
+        "quote": "Status of This Memo"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-2",
+      "type": "claim",
+      "content": "This is an Internet Standards Track document.",
+      "attention_tier": "C",
+      "priority": 0.6863636363636364,
+      "reading_order": 5,
+      "source_span": {
+        "start": 1194,
+        "end": 1242,
+        "quote": "   This is an Internet Standards Track document."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-3",
+      "type": "evidence",
+      "content": "This document is a product of the Internet Engineering Task Force\n   (IETF).  It represents the consensus of the IETF community.  It has\n   received public review and has been approved for publication by the\n   Internet Engineering Steering Group (IESG).  Further information on\n   Internet Standards is available in Section 2 of RFC 7841.",
+      "attention_tier": "C",
+      "priority": 0.6318181818181818,
+      "reading_order": 6,
+      "source_span": {
+        "start": 1244,
+        "end": 1586,
+        "quote": "   This document is a product of the Internet Engineering Task Force\n   (IETF).  It represents the consensus of the IETF community.  It has\n   received public review and has been approved for publication by the\n   Internet Engineering Steering Group (IESG).  Further information on\n   Internet Standards is available in Section 2 of RFC 7841."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-3",
+      "type": "claim",
+      "content": "Information about the current status of this document, any errata,\n   and how to provide feedback on it may be obtained at\n   https://www.rfc-editor.org/info/rfc8950.",
+      "attention_tier": "C",
+      "priority": 0.5772727272727273,
+      "reading_order": 7,
+      "source_span": {
+        "start": 1588,
+        "end": 1757,
+        "quote": "   Information about the current status of this document, any errata,\n   and how to provide feedback on it may be obtained at\n   https://www.rfc-editor.org/info/rfc8950."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-4",
+      "type": "claim",
+      "content": "Copyright Notice",
+      "attention_tier": "C",
+      "priority": 0.5227272727272727,
+      "reading_order": 8,
+      "source_span": {
+        "start": 1759,
+        "end": 1775,
+        "quote": "Copyright Notice"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-1",
+      "type": "appendix",
+      "content": "Copyright (c) 2020 IETF Trust and the persons identified as the\n   document authors.  All rights reserved.",
+      "attention_tier": "D",
+      "priority": 0.4681818181818182,
+      "reading_order": 9,
+      "source_span": {
+        "start": 1777,
+        "end": 1886,
+        "quote": "   Copyright (c) 2020 IETF Trust and the persons identified as the\n   document authors.  All rights reserved."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-2",
+      "type": "appendix",
+      "content": "This document is subject to BCP 78 and the IETF Trust's Legal\n   Provisions Relating to IETF Documents\n   (https://trustee.ietf.org/license-info) in effect on the date of\n   publication of this document.  Please review these documents\n   carefully, as they describe your rights and restrictions with respect\n   to this document.  Code Components extracted from this document must\n   include Simplified BSD License text as described in Section 4.e of\n   the Trust Legal Provisions and are provided without warranty as\n   described in the Simplified BSD License.",
+      "attention_tier": "D",
+      "priority": 0.41363636363636364,
+      "reading_order": 10,
+      "source_span": {
+        "start": 1888,
+        "end": 2451,
+        "quote": "   This document is subject to BCP 78 and the IETF Trust's Legal\n   Provisions Relating to IETF Documents\n   (https://trustee.ietf.org/license-info) in effect on the date of\n   publication of this document.  Please review these documents\n   carefully, as they describe your rights and restrictions with respect\n   to this document.  Code Components extracted from this document must\n   include Simplified BSD License text as described in Section 4.e of\n   the Trust Legal Provisions and are provided without warranty as\n   described in the Simplified BSD License."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-3",
+      "type": "appendix",
+      "content": "Table of Contents",
+      "attention_tier": "D",
+      "priority": 0.35909090909090907,
+      "reading_order": 11,
+      "source_span": {
+        "start": 2453,
+        "end": 2470,
+        "quote": "Table of Contents"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-4",
+      "type": "appendix",
+      "content": "1.  Introduction\n     1.1.  Requirements Language",
+      "attention_tier": "D",
+      "priority": 0.30454545454545456,
+      "reading_order": 12,
+      "source_span": {
+        "start": 2472,
+        "end": 2522,
+        "quote": "1.  Introduction\n     1.1.  Requirements Language\n"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:2073f39eea5851d6f7b0c4009132f3b69379c600c9f2ee671e6f7eacd01853ab",
+    "chars": 2522,
+    "lang": "en"
+  }
+}

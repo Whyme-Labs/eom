@@ -1,0 +1,129 @@
+{
+  "version": "0.1",
+  "document_type": "paper",
+  "summary": "The authors introduce CRAFT, an LLM-powered supervised framework for black-box adversarial rank attacks that outperforms state-of-the-art baselines and transfers across diverse neural ranking architectures.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "Led to Mislead: Adversarial Content Injection for Attacks on Neural Ranking Models",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 0,
+        "end": 84,
+        "quote": "# Led to Mislead: Adversarial Content Injection for Attacks on Neural Ranking Models"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "We propose CRAFT, a supervised framework for black-box adversarial rank attacks powered by large language models (LLMs).",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 435,
+        "end": 555,
+        "quote": "We propose CRAFT, a supervised framework for black-box adversarial rank attacks powered by large language models (LLMs)."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "CRAFT significantly outperforms state-of-the-art baselines, achieving higher promotion rates and rank boosts while preserving fluency and semantic fidelity.",
+      "attention_tier": "B",
+      "priority": 0.88,
+      "reading_order": 2,
+      "source_span": {
+        "start": 819,
+        "end": 1104,
+        "quote": "Extensive experiments on the MS MARCO passage dataset, TREC Deep Learning 2019, and TREC Deep Learning 2020 benchmarks show that CRAFT significantly outperforms state-of-the-art baselines, achieving higher promotion rates and rank boosts while preserving fluency and semantic fidelity."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "CRAFT transfers effectively across diverse ranking architectures, including cross-encoder, embedding-based, and LLM-based rankers, underscoring vulnerabilities in real-world retrieval systems.",
+      "attention_tier": "C",
+      "priority": 0.75,
+      "reading_order": 3,
+      "source_span": {
+        "start": 1105,
+        "end": 1307,
+        "quote": "Moreover, CRAFT transfers effectively across diverse ranking architectures, including cross-encoder, embedding-based, and LLM-based rankers, underscoring vulnerabilities in real-world retrieval systems."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "CRAFT operates in three stages: adversarial dataset generation via retrieval-augmented generation and self-refinement, supervised fine-tuning on curated adversarial examples, and preference-guided optimization to align generations with rank-promotion objectives.",
+      "attention_tier": "C",
+      "priority": 0.7,
+      "reading_order": 4,
+      "source_span": {
+        "start": 556,
+        "end": 818,
+        "quote": "CRAFT operates in three stages: adversarial dataset generation via retrieval-augmented generation and self-refinement, supervised fine-tuning on curated adversarial examples, and preference-guided optimization to align generations with rank-promotion objectives."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "Neural Ranking Models (NRMs) are central to modern information retrieval but remain highly vulnerable to adversarial manipulation.",
+      "attention_tier": "D",
+      "priority": 0.6,
+      "reading_order": 5,
+      "source_span": {
+        "start": 197,
+        "end": 327,
+        "quote": "Neural Ranking Models (NRMs) are central to modern information retrieval but remain highly vulnerable to adversarial manipulation."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "decision-1",
+      "type": "decision",
+      "content": "This work provides a principled framework for studying adversarial threats in NRMs, underscores the risks of generative AI in rank manipulation, and provides a foundation for developing more robust retrieval systems.",
+      "attention_tier": "D",
+      "priority": 0.5,
+      "reading_order": 6,
+      "source_span": {
+        "start": 1308,
+        "end": 1524,
+        "quote": "This work provides a principled framework for studying adversarial threats in NRMs, underscores the risks of generative AI in rank manipulation, and provides a foundation for developing more robust retrieval systems."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:1472a7b29bc9863a447b1d749e0b5b4be204df6cdcca248199f81df69d9feeb2",
+    "chars": 1628,
+    "lang": "en"
+  }
+}

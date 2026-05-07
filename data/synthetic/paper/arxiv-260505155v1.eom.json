@@ -1,0 +1,177 @@
+{
+  "version": "0.1",
+  "document_type": "paper",
+  "summary": "The authors propose Aes3D, a framework for assessing 3D Gaussian Splatting (3DGS) aesthetics, featuring the Aesthetic3D dataset and Aes3DGSNet, a lightweight model that predicts aesthetic scores directly from 3D primitives without rendering.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "# Aes3D: Aesthetic Assessment in 3D Gaussian Splatting",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 0,
+        "end": 54,
+        "quote": "# Aes3D: Aesthetic Assessment in 3D Gaussian Splatting"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "As 3D Gaussian Splatting (3DGS) gains attention in immersive media and digital content creation, assessing the aesthetics of 3D scenes becomes important in helping creators build more visually compelling 3D content.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 140,
+        "end": 355,
+        "quote": "As 3D Gaussian Splatting (3DGS) gains attention in immersive media and digital content creation, assessing the aesthetics of 3D scenes becomes important in helping creators build more visually compelling 3D content."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "However, existing evaluation methods for 3D scenes primarily emphasize reconstruction fidelity and perceptual realism, largely overlooking higher-level aesthetic attributes such as composition, harmony, and visual appeal.",
+      "attention_tier": "C",
+      "priority": 0.85,
+      "reading_order": 2,
+      "source_span": {
+        "start": 356,
+        "end": 577,
+        "quote": "However, existing evaluation methods for 3D scenes primarily emphasize reconstruction fidelity and perceptual realism, largely overlooking higher-level aesthetic attributes such as composition, harmony, and visual appeal."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "This limitation comes from two key challenges: (1) the absence of general 3DGS datasets with aesthetic annotations, and (2) the intrinsic nature of 3DGS as a low-level primitive representation, which makes it difficult to capture high-level aesthetic features.",
+      "attention_tier": "C",
+      "priority": 0.75,
+      "reading_order": 3,
+      "source_span": {
+        "start": 578,
+        "end": 838,
+        "quote": "This limitation comes from two key challenges: (1) the absence of general 3DGS datasets with aesthetic annotations, and (2) the intrinsic nature of 3DGS as a low-level primitive representation, which makes it difficult to capture high-level aesthetic features."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "To address these challenges, we propose Aes3D, the first systematic framework for assessing the aesthetics of 3D neural rendering scenes.",
+      "attention_tier": "B",
+      "priority": 0.9,
+      "reading_order": 4,
+      "source_span": {
+        "start": 839,
+        "end": 976,
+        "quote": "To address these challenges, we propose Aes3D, the first systematic framework for assessing the aesthetics of 3D neural rendering scenes."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "Aes3D includes Aesthetic3D, the first dataset dedicated to 3D scene aesthetic assessment, built on our proposed annotation strategy for 3D scene aesthetics.",
+      "attention_tier": "C",
+      "priority": 0.7,
+      "reading_order": 5,
+      "source_span": {
+        "start": 977,
+        "end": 1133,
+        "quote": "Aes3D includes Aesthetic3D, the first dataset dedicated to 3D scene aesthetic assessment, built on our proposed annotation strategy for 3D scene aesthetics."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": "claim-1"
+    },
+    {
+      "id": "claim-2",
+      "type": "claim",
+      "content": "In addition, we present Aes3DGSNet, a lightweight model that directly predicts scene-level aesthetic scores from 3DGS representations.",
+      "attention_tier": "C",
+      "priority": 0.88,
+      "reading_order": 6,
+      "source_span": {
+        "start": 1134,
+        "end": 1268,
+        "quote": "In addition, we present Aes3DGSNet, a lightweight model that directly predicts scene-level aesthetic scores from 3DGS representations."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-2",
+      "type": "evidence",
+      "content": "Notably, our model operates solely on 3D Gaussian primitives, eliminating the need for rendering multi-view images and thus reducing computational cost and hardware requirements.",
+      "attention_tier": "C",
+      "priority": 0.65,
+      "reading_order": 7,
+      "source_span": {
+        "start": 1269,
+        "end": 1447,
+        "quote": "Notably, our model operates solely on 3D Gaussian primitives, eliminating the need for rendering multi-view images and thus reducing computational cost and hardware requirements."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": "claim-2"
+    },
+    {
+      "id": "evidence-3",
+      "type": "evidence",
+      "content": "Through aesthetics-supervised learning on multi-view 3DGS scene representations, Aes3DGSNet effectively captures high-level aesthetic cues and accurately regresses aesthetic scores.",
+      "attention_tier": "C",
+      "priority": 0.6,
+      "reading_order": 8,
+      "source_span": {
+        "start": 1448,
+        "end": 1629,
+        "quote": "Through aesthetics-supervised learning on multi-view 3DGS scene representations, Aes3DGSNet effectively captures high-level aesthetic cues and accurately regresses aesthetic scores."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": "claim-2"
+    },
+    {
+      "id": "decision-1",
+      "type": "decision",
+      "content": "Experimental results demonstrate that our approach achieves strong performance while maintaining a lightweight design, establishing a new benchmark for 3D scene aesthetic assessment.",
+      "attention_tier": "C",
+      "priority": 0.8,
+      "reading_order": 9,
+      "source_span": {
+        "start": 1630,
+        "end": 1812,
+        "quote": "Experimental results demonstrate that our approach achieves strong performance while maintaining a lightweight design, establishing a new benchmark for 3D scene aesthetic assessment."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:4e14a49866c563c31210f677666b7aca448d22506865d9ddda6351ad12c694ce",
+    "chars": 1875,
+    "lang": "en"
+  }
+}

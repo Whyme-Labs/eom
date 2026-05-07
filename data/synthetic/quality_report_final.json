@@ -1,0 +1,32 @@
+{
+  "version": "final-scaffolded-postproc-batch",
+  "scaffolding": "sentence-level",
+  "post_processor": "tier-cap + token-budget",
+  "raw_pool_size": 87,
+  "passing_on_disk": 84,
+  "yield_pct_of_pool": 96.6,
+  "by_doc_type_pass": {
+    "paper": 37,
+    "policy": 30,
+    "other": 17
+  },
+  "by_doc_type_fail": {
+    "paper": 3
+  },
+  "remaining_failure_rules": {
+    "H8": 3
+  },
+  "attempts_distribution_passing": {
+    "1": 67,
+    "2": 8,
+    "3": 9
+  },
+  "mean_attempts_passing": 1.31,
+  "mean_elapsed_seconds_passing": 116.4,
+  "improvement_journey": {
+    "no_scaffolding_pool_yield_pct": 33.3,
+    "paragraph_scaffolding_pool_yield_pct": 67.8,
+    "sentence_scaffolding_pool_yield_pct": "n/a (full batch not run; A/B 50% on hardest)",
+    "sentence_scaffolding_plus_postproc_pool_yield_pct": 96.6
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "version": "0.1",
+  "document_type": "paper",
+  "summary": "The authors propose ALL-IN, a method that enables graph foundation models to generalize across datasets with different input features by projecting node features into a shared random space and using covariance-based statistics to achieve invariance to feature permutations and orthogonal transformations.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "# Bridging Input Feature Spaces Towards Graph Foundation Models",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 0,
+        "end": 63,
+        "quote": "# Bridging Input Feature Spaces Towards Graph Foundation Models"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "In this work, we propose ALL-IN, a simple and theoretically grounded method that enables transferability across datasets with different input features.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 500,
+        "end": 651,
+        "quote": "In this work, we propose ALL-IN, a simple and theoretically grounded method that enables transferability across datasets with different input features."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "Our approach projects node features into a shared random space and constructs representations via covariance-based statistics, thus eliminating dependence on the original feature space.",
+      "attention_tier": "B",
+      "priority": 0.88,
+      "reading_order": 2,
+      "source_span": {
+        "start": 652,
+        "end": 837,
+        "quote": "Our approach projects node features into a shared random space and constructs representations via covariance-based statistics, thus eliminating dependence on the original feature space."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "We show that the computed node-covariance operators and the resulting node representations are invariant in distribution to permutations of the input features.",
+      "attention_tier": "C",
+      "priority": 0.75,
+      "reading_order": 3,
+      "source_span": {
+        "start": 838,
+        "end": 997,
+        "quote": "We show that the computed node-covariance operators and the resulting node representations are invariant in distribution to permutations of the input features."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": "claim-1"
+    },
+    {
+      "id": "evidence-2",
+      "type": "evidence",
+      "content": "We further demonstrate that the expected operator exhibits invariance to general orthogonal transformations of the input features.",
+      "attention_tier": "C",
+      "priority": 0.7,
+      "reading_order": 4,
+      "source_span": {
+        "start": 998,
+        "end": 1128,
+        "quote": "We further demonstrate that the expected operator exhibits invariance to general orthogonal transformations of the input features."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": "claim-1"
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "Empirically, ALL-IN achieves strong performance across diverse node- and graph-level tasks on unseen datasets with new input features, without requiring architecture changes or retraining.",
+      "attention_tier": "C",
+      "priority": 0.65,
+      "reading_order": 5,
+      "source_span": {
+        "start": 1129,
+        "end": 1317,
+        "quote": "Empirically, ALL-IN achieves strong performance across diverse node- and graph-level tasks on unseen datasets with new input features, without requiring architecture changes or retraining."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "Unlike vision and language domains, graph learning lacks a shared input space, as input features differ across graph datasets not only in semantics, but also in value ranges and dimensionality.",
+      "attention_tier": "D",
+      "priority": 0.5,
+      "reading_order": 6,
+      "source_span": {
+        "start": 190,
+        "end": 383,
+        "quote": "Unlike vision and language domains, graph learning lacks a shared input space, as input features differ across graph datasets not only in semantics, but also in value ranges and dimensionality."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:a2f584c477361c169326d67501dc02a526b46c566fbc749fad8ddcba7e4a8bad",
+    "chars": 1410,
+    "lang": "en"
+  }
+}

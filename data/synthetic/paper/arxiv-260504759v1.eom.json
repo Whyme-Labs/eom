@@ -1,0 +1,145 @@
+{
+  "version": "0.1",
+  "document_type": "paper",
+  "summary": "The authors introduce Gyan, a non-transformer, neuro-symbolic language model that decouples knowledge acquisition from representation to eliminate hallucinations and improve interpretability, achieving SOTA performance on multiple datasets.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "Gyan: An Explainable Neuro-Symbolic Language Model",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 0,
+        "end": 52,
+        "quote": "# Gyan: An Explainable Neuro-Symbolic Language Model"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "Here, we describe Gyan, an explainable language model based on a novel non-transformer architecture, without any of these limitations.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 614,
+        "end": 748,
+        "quote": "Here, we describe Gyan, an explainable language model based on a novel non-transformer architecture, without any of these limitations."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "Besides, by the very nature of the architecture, these models hallucinate, are difficult to maintain, are not easily interpretable and require enormous compute resources for training and inference.",
+      "attention_tier": "C",
+      "priority": 0.8,
+      "reading_order": 2,
+      "source_span": {
+        "start": 416,
+        "end": 613,
+        "quote": "Besides, by the very nature of the architecture, these models hallucinate, are difficult to maintain, are not easily interpretable and require enormous compute resources for training and inference."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "The novel architecture decouples the language model from knowledge acquisition and representation.",
+      "attention_tier": "B",
+      "priority": 0.88,
+      "reading_order": 3,
+      "source_span": {
+        "start": 863,
+        "end": 961,
+        "quote": "The novel architecture decouples the language model from knowledge acquisition and representation."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "Gyan achieves SOTA performance on 3 widely cited data sets and superior performance on two proprietary data sets.",
+      "attention_tier": "C",
+      "priority": 0.75,
+      "reading_order": 4,
+      "source_span": {
+        "start": 749,
+        "end": 862,
+        "quote": "Gyan achieves SOTA performance on 3 widely cited data sets and superior performance on two proprietary data sets."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "The model draws on rhetorical structure theory, semantic role theory and knowledge-based computational linguistics.",
+      "attention_tier": "C",
+      "priority": 0.7,
+      "reading_order": 5,
+      "source_span": {
+        "start": 962,
+        "end": 1077,
+        "quote": "The model draws on rhetorical structure theory, semantic role theory and knowledge-based computational linguistics."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-2",
+      "type": "claim",
+      "content": "Gyan's meaning representation structure captures the complete compositional context and attempts to mimic humans by expanding the context to a 'world model'.",
+      "attention_tier": "C",
+      "priority": 0.65,
+      "reading_order": 6,
+      "source_span": {
+        "start": 1078,
+        "end": 1235,
+        "quote": "Gyan's meaning representation structure captures the complete compositional context and attempts to mimic humans by expanding the context to a 'world model'."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "decision-1",
+      "type": "decision",
+      "content": "Collectively, our results demonstrate that it is possible to create models which are trustable and reliable for mission critical tasks.",
+      "attention_tier": "D",
+      "priority": 0.5,
+      "reading_order": 7,
+      "source_span": {
+        "start": 1341,
+        "end": 1476,
+        "quote": "Collectively, our results demonstrate that it is possible to create models which are trustable and reliable for mission critical tasks."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:6439185ed59c40ee35d78d71afd29733924e63d6469bcf9aa759d0ad9705baa7",
+    "chars": 1612,
+    "lang": "en"
+  }
+}

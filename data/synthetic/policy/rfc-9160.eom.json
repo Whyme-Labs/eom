@@ -1,0 +1,97 @@
+{
+  "version": "0.1",
+  "document_type": "policy",
+  "summary": "RFC 9160 defines five new IPFIX code points for the mplsTopLabelType Information Element to identify traffic forwarded via PCE, IS-IS, OSPFv2, OSPFv3, and BGP MPLS Segment Routing extensions.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "RFC 9160: Export of MPLS Segment Routing Label Type Information in IP Flow",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 0,
+        "end": 76,
+        "quote": "# RFC 9160: Export of MPLS Segment Routing Label Type Information in IP Flow"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "This document introduces new IP Flow Information Export (IPFIX) code points to identify which traffic is being forwarded based on which MPLS control plane protocol is used within a Segment Routing domain.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 88,
+        "end": 301,
+        "quote": "   This document introduces new IP Flow Information Export (IPFIX) code\n   points to identify which traffic is being forwarded based on which\n   MPLS control plane protocol is used within a Segment Routing domain."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "In particular, this document defines five code points for the IPFIX mplsTopLabelType Information Element for Path Computation Element (PCE), IS-IS, OSPFv2, OSPFv3, and BGP MPLS Segment Routing extensions.",
+      "attention_tier": "B",
+      "priority": 0.9,
+      "reading_order": 2,
+      "source_span": {
+        "start": 305,
+        "end": 518,
+        "quote": "In particular, this document defines five code points for the IPFIX\n   mplsTopLabelType Information Element for Path Computation Element\n   (PCE), IS-IS, OSPFv2, OSPFv3, and BGP MPLS Segment Routing\n   extensions."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "This document is not an Internet Standards Track specification; it is published for informational purposes.",
+      "attention_tier": "C",
+      "priority": 0.8,
+      "reading_order": 3,
+      "source_span": {
+        "start": 541,
+        "end": 654,
+        "quote": "   This document is not an Internet Standards Track specification; it is\n   published for informational purposes."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-2",
+      "type": "evidence",
+      "content": "This document is a product of the Internet Engineering Task Force (IETF). It represents the consensus of the IETF community. It has received public review and has been approved for publication by the Internet Engineering Steering Group (IESG).",
+      "attention_tier": "C",
+      "priority": 0.7,
+      "reading_order": 4,
+      "source_span": {
+        "start": 656,
+        "end": 913,
+        "quote": "   This document is a product of the Internet Engineering Task Force\n   (IETF).  It represents the consensus of the IETF community.  It has\n   received public review and has been approved for publication by the\n   Internet Engineering Steering Group (IESG)."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:d4a35854468d596aa93c885d8eb3ef2256822ef1634581385e89bd085c74318a",
+    "chars": 1934,
+    "lang": "en"
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "version": "0.1",
+  "document_type": "paper",
+  "summary": "Mina Gabriel introduces phi_first, a low-cost hallucination detection metric based on first-token confidence that matches or exceeds semantic self-consistency in closed-book short-answer QA.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "# The First Token Knows: Single-Decode Confidence for Hallucination Detection",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 0,
+        "end": 77,
+        "quote": "# The First Token Knows: Single-Decode Confidence for Hallucination Detection"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "We show that first-token confidence, phi_first, computed from the normalized entropy of the top-K logits at the first content-bearing answer token of a single greedy decode, matches or modestly exceeds semantic self-consistency on closed-book short-answer factual question answering.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 491,
+        "end": 774,
+        "quote": "We show that first-token confidence, phi_first, computed from the normalized entropy of the top-K logits at the first content-bearing answer token of a single greedy decode, matches or modestly exceeds semantic self-consistency on closed-book short-answer factual question answering."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "Across three 7-8B instruction-tuned models and two benchmarks, phi_first achieves a mean AUROC of 0.820, compared with 0.793 for semantic agreement and 0.791 for standard surface-form self-consistency.",
+      "attention_tier": "B",
+      "priority": 0.9,
+      "reading_order": 2,
+      "source_span": {
+        "start": 775,
+        "end": 976,
+        "quote": "Across three 7-8B instruction-tuned models and two benchmarks, phi_first achieves a mean AUROC of 0.820, compared with 0.793 for semantic agreement and 0.791 for standard surface-form self-consistency."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "A subsumption test shows that phi_first is moderately to strongly correlated with semantic agreement, and combining the two signals yields only a small AUROC improvement over phi_first alone.",
+      "attention_tier": "C",
+      "priority": 0.8,
+      "reading_order": 3,
+      "source_span": {
+        "start": 977,
+        "end": 1168,
+        "quote": "A subsumption test shows that phi_first is moderately to strongly correlated with semantic agreement, and combining the two signals yields only a small AUROC improvement over phi_first alone."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "These results suggest that much of the uncertainty information captured by multi-sample agreement is already available in the model's initial token distribution.",
+      "attention_tier": "C",
+      "priority": 0.7,
+      "reading_order": 4,
+      "source_span": {
+        "start": 1169,
+        "end": 1330,
+        "quote": "These results suggest that much of the uncertainty information captured by multi-sample agreement is already available in the model's initial token distribution."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "decision-1",
+      "type": "decision",
+      "content": "We argue that phi_first should be reported as a default low-cost baseline before invoking sampling-based uncertainty estimation.",
+      "attention_tier": "C",
+      "priority": 0.6,
+      "reading_order": 5,
+      "source_span": {
+        "start": 1331,
+        "end": 1459,
+        "quote": "We argue that phi_first should be reported as a default low-cost baseline before invoking sampling-based uncertainty estimation."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "Self-consistency detects hallucinations by generating multiple sampled answers to a question and measuring agreement, but this requires repeated decoding and can be sensitive to lexical variation.",
+      "attention_tier": "D",
+      "priority": 0.4,
+      "reading_order": 6,
+      "source_span": {
+        "start": 115,
+        "end": 311,
+        "quote": "Self-consistency detects hallucinations by generating multiple sampled answers to a question and measuring agreement, but this requires repeated decoding and can be sensitive to lexical variation."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:9a259042399c7643298b3cb4243f854faeb24d4911403d170298b4962d9aa79a",
+    "chars": 1460,
+    "lang": "en"
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "version": "0.1",
+  "document_type": "policy",
+  "summary": "RFC 8730 defines the role and responsibilities of the RFC Independent Submission Editor (ISE), who serves as the stream approver for the Independent Submission stream and is appointed by the IAB.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "RFC 8730: Independent Submission Editor Model",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 0,
+        "end": 47,
+        "quote": "# RFC 8730: Independent Submission Editor Model"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "This document describes the function and responsibilities of the RFC Independent Submission Editor (ISE). The Independent Submission stream is one of the stream producers that create draft RFCs, with the ISE as its stream approver.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 59,
+        "end": 303,
+        "quote": "   This document describes the function and responsibilities of the RFC\n   Independent Submission Editor (ISE).  The Independent Submission\n   stream is one of the stream producers that create draft RFCs, with\n   the ISE as its stream approver."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "The ISE is overall responsible for activities within the Independent Submission stream, working with draft editors and reviewers, and interacts with the RFC Production Center and Publisher, and the RFC Series Editor (RSE).",
+      "attention_tier": "B",
+      "priority": 0.9,
+      "reading_order": 2,
+      "source_span": {
+        "start": 305,
+        "end": 536,
+        "quote": "The ISE is overall responsible for\n   activities within the Independent Submission stream, working with\n   draft editors and reviewers, and interacts with the RFC Production\n   Center and Publisher, and the RFC Series Editor (RSE)."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "The ISE is appointed by the IAB, and also interacts with the IETF Administration Limited Liability Company (LLC).",
+      "attention_tier": "C",
+      "priority": 0.8,
+      "reading_order": 3,
+      "source_span": {
+        "start": 538,
+        "end": 657,
+        "quote": "The ISE is\n   appointed by the IAB, and also interacts with the IETF Administration\n   Limited Liability Company (LLC)."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "This version obsoletes RFC 6548 to replace all references to the Internet Administrative Support Activity (IASA) and related structures with those defined by the IASA 2.0 structure.",
+      "attention_tier": "C",
+      "priority": 0.7,
+      "reading_order": 4,
+      "source_span": {
+        "start": 659,
+        "end": 849,
+        "quote": "   This version obsoletes RFC 6548 to replace all references to the\n   Internet Administrative Support Activity (IASA) and related\n   structures with those defined by the IASA 2.0 structure."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-2",
+      "type": "factbox",
+      "content": "This document is not an Internet Standards Track specification; it is published for informational purposes.",
+      "attention_tier": "D",
+      "priority": 0.6,
+      "reading_order": 5,
+      "source_span": {
+        "start": 872,
+        "end": 985,
+        "quote": "   This document is not an Internet Standards Track specification; it is\n   published for informational purposes."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "This document is a product of the Internet Architecture Board (IAB) and represents information that the IAB has deemed valuable to provide for permanent record. It represents the consensus of the Internet Architecture Board (IAB).",
+      "attention_tier": "D",
+      "priority": 0.5,
+      "reading_order": 6,
+      "source_span": {
+        "start": 987,
+        "end": 1230,
+        "quote": "   This document is a product of the Internet Architecture Board (IAB)\n   and represents information that the IAB has deemed valuable to\n   provide for permanent record.  It represents the consensus of the\n   Internet Architecture Board (IAB)."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:6bbf2de3d88b3584a6ec19f0222debf4613d6c3562247158fc28c7a293a48ec0",
+    "chars": 2036,
+    "lang": "en"
+  }
+}

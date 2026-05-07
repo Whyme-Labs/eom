@@ -1,0 +1,113 @@
+{
+  "version": "0.1",
+  "document_type": "policy",
+  "summary": "RFC 9260 specifies the Stream Control Transmission Protocol (SCTP), a reliable transport protocol providing multi-homing, multi-streaming, and congestion avoidance, obsoleting RFC 4960 and several related documents.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "RFC 9260: Kamstrup A/S",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 0,
+        "end": 24,
+        "quote": "# RFC 9260: Kamstrup A/S"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "This document describes the Stream Control Transmission Protocol (SCTP) and obsoletes RFC 4960. It incorporates specifications from RFC 6096 and RFC 7053, and obsoletes errata described in RFCs 4460 and 8540.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 36,
+        "end": 457,
+        "quote": "   This document describes the Stream Control Transmission Protocol\n   (SCTP) and obsoletes RFC 4960.  It incorporates the specification of\n   the chunk flags registry from RFC 6096 and the specification of the I\n   bit of DATA chunks from RFC 7053.  Therefore, RFCs 6096 and 7053 are\n   also obsoleted by this document.  In addition, RFCs 4460 and 8540,\n   which describe errata for SCTP, are obsoleted by this document."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "SCTP was originally designed to transport Public Switched Telephone Network (PSTN) signaling messages over IP networks. It is also suited to be used for other applications, for example, WebRTC.",
+      "attention_tier": "C",
+      "priority": 0.85,
+      "reading_order": 2,
+      "source_span": {
+        "start": 459,
+        "end": 662,
+        "quote": "   SCTP was originally designed to transport Public Switched Telephone\n   Network (PSTN) signaling messages over IP networks.  It is also\n   suited to be used for other applications, for example, WebRTC."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "SCTP is a reliable transport protocol operating on top of a connectionless packet network, such as IP, offering services including acknowledged error-free transfer, data fragmentation, sequenced delivery within multiple streams, optional bundling, and network-level fault tolerance through multi-homing.",
+      "attention_tier": "B",
+      "priority": 0.9,
+      "reading_order": 3,
+      "source_span": {
+        "start": 664,
+        "end": 1356,
+        "quote": "   SCTP is a reliable transport protocol operating on top of a\n   connectionless packet network, such as IP.  It offers the following\n   services to its users:\n\n   *  acknowledged error-free, non-duplicated transfer of user data,\n\n   *  data fragmentation to conform to discovered Path Maximum\n      Transmission Unit (PMTU) size,\n\n   *  sequenced delivery of user messages within multiple streams, with\n      an option for order-of-arrival delivery of individual user\n      messages,\n\n   *  optional bundling of multiple user messages into a single SCTP\n      packet, and\n\n   *  network-level fault tolerance through supporting of multi-homing\n      at either or both ends of an association."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "The design of SCTP includes appropriate congestion avoidance behavior and resistance to flooding and masquerade attacks.",
+      "attention_tier": "C",
+      "priority": 0.7,
+      "reading_order": 4,
+      "source_span": {
+        "start": 1358,
+        "end": 1484,
+        "quote": "   The design of SCTP includes appropriate congestion avoidance behavior\n   and resistance to flooding and masquerade attacks."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-2",
+      "type": "factbox",
+      "content": "This is an Internet Standards Track document produced by the Internet Engineering Task Force (IETF), representing the consensus of the IETF community and approved by the IESG.",
+      "attention_tier": "C",
+      "priority": 0.6,
+      "reading_order": 5,
+      "source_span": {
+        "start": 1507,
+        "end": 1814,
+        "quote": "   This is an Internet Standards Track document.\n\n   This document is a product of the Internet Engineering Task Force\n   (IETF).  It represents the consensus of the IETF community.  It has\n   received public review and has been approved for publication by the\n   Internet Engineering Steering Group (IESG)."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:d8522f854d558d5a20cb823d1087899032ca2eada2f6e1b00665284464fcd13d",
+    "chars": 4008,
+    "lang": "en"
+  }
+}

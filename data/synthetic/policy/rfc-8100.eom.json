@@ -1,0 +1,129 @@
+{
+  "version": "0.1",
+  "document_type": "policy",
+  "summary": "RFC 8100 defines a common set of Diffserv Per-Hop Behaviors (PHBs) and Codepoints (DSCPs) to simplify network configuration and operation at the interconnections of separately administered networks, particularly those using MPLS and the Short Pipe Model.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "# RFC 8100: Diffserv-Interconnection Classes and Practice",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 0,
+        "end": 57,
+        "quote": "# RFC 8100: Diffserv-Interconnection Classes and Practice"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "This document defines a limited common set of Diffserv Per-Hop Behaviors (PHBs) and Diffserv Codepoints (DSCPs) to be applied at (inter)connections of two separately administered and operated networks, and it explains how this approach can simplify network configuration and operation.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 69,
+        "end": 369,
+        "quote": "   This document defines a limited common set of Diffserv Per-Hop\n   Behaviors (PHBs) and Diffserv Codepoints (DSCPs) to be applied at\n   (inter)connections of two separately administered and operated\n   networks, and it explains how this approach can simplify network\n   configuration and operation."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "Many network providers operate Multiprotocol Label Switching (MPLS) using Treatment Aggregates for traffic marked with different Diffserv Per-Hop Behaviors and use MPLS for interconnection with other networks.",
+      "attention_tier": "B",
+      "priority": 0.85,
+      "reading_order": 2,
+      "source_span": {
+        "start": 371,
+        "end": 589,
+        "quote": "Many network providers operate\n   Multiprotocol Label Switching (MPLS) using Treatment Aggregates for\n   traffic marked with different Diffserv Per-Hop Behaviors and use MPLS\n   for interconnection with other networks."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "This document offers a simple interconnection approach that may simplify operation of Diffserv for network interconnection among providers that use MPLS and apply the Short Pipe Model.",
+      "attention_tier": "C",
+      "priority": 0.8,
+      "reading_order": 3,
+      "source_span": {
+        "start": 591,
+        "end": 784,
+        "quote": "This document offers a\n   simple interconnection approach that may simplify operation of\n   Diffserv for network interconnection among providers that use MPLS\n   and apply the Short Pipe Model."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "While motivated by the requirements of MPLS network operators that use Short Pipe Model tunnels, this document is applicable to other networks, both MPLS and non-MPLS.",
+      "attention_tier": "C",
+      "priority": 0.7,
+      "reading_order": 4,
+      "source_span": {
+        "start": 786,
+        "end": 959,
+        "quote": "While motivated by the requirements\n   of MPLS network operators that use Short Pipe Model tunnels, this\n   document is applicable to other networks, both MPLS and non-MPLS."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "This document is not an Internet Standards Track specification; it is published for informational purposes.",
+      "attention_tier": "C",
+      "priority": 0.6,
+      "reading_order": 5,
+      "source_span": {
+        "start": 982,
+        "end": 1095,
+        "quote": "   This document is not an Internet Standards Track specification; it is\n   published for informational purposes."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-2",
+      "type": "factbox",
+      "content": "This document is a product of the Internet Engineering Task Force (IETF). It represents the consensus of the IETF community.",
+      "attention_tier": "D",
+      "priority": 0.5,
+      "reading_order": 6,
+      "source_span": {
+        "start": 1097,
+        "end": 1228,
+        "quote": "   This document is a product of the Internet Engineering Task Force\n   (IETF).  It represents the consensus of the IETF community."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:a7ba28c876729c8e71bd861408cdaab5557df53cceb7cb480abfcd214fdc9f9d",
+    "chars": 2729,
+    "lang": "en"
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "version": "0.1",
+  "document_type": "paper",
+  "summary": "The authors propose LoPT (Local-Learning Post-Training), a strategy that reduces memory cost and increases efficiency by placing a gradient boundary at the transformer midpoint, using a feature-reconstruction objective for the first half and the task objective for the second half.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "# Rethinking Local Learning: A Cheaper and Faster Recipe for LLM Post-Training",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 0,
+        "end": 78,
+        "quote": "# Rethinking Local Learning: A Cheaper and Faster Recipe for LLM Post-Training"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "LLM post-training typically propagates task gradients through the full depth of the model.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 164,
+        "end": 254,
+        "quote": "LLM post-training typically propagates task gradients through the full depth of the model."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "We argue that this full-depth backward coupling can be unnecessarily expensive and intrusive, particularly when post-training supervision is much narrower than pre-training.",
+      "attention_tier": "B",
+      "priority": 0.9,
+      "reading_order": 2,
+      "source_span": {
+        "start": 470,
+        "end": 643,
+        "quote": "We argue that this full-depth backward coupling can be unnecessarily expensive and intrusive, particularly when post-training supervision is much narrower than pre-training."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-2",
+      "type": "claim",
+      "content": "To this end, we propose \\textbf{LoPT}: Local-Learning Post-Training, a simple post-training strategy that makes gradient reach an explicit design choice.",
+      "attention_tier": "C",
+      "priority": 0.85,
+      "reading_order": 3,
+      "source_span": {
+        "start": 644,
+        "end": 797,
+        "quote": "To this end, we propose \\textbf{LoPT}: Local-Learning Post-Training, a simple post-training strategy that makes gradient reach an explicit design choice."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "LoPT places a single gradient boundary at the transformer midpoint: the second-half block learns from the task objective, while the first-half block is updated by a lightweight feature-reconstruction objective to preserve useful representations and maintain interface compatibility.",
+      "attention_tier": "C",
+      "priority": 0.8,
+      "reading_order": 4,
+      "source_span": {
+        "start": 798,
+        "end": 1080,
+        "quote": "LoPT places a single gradient boundary at the transformer midpoint: the second-half block learns from the task objective, while the first-half block is updated by a lightweight feature-reconstruction objective to preserve useful representations and maintain interface compatibility."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": "claim-2"
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "Extensive experiments demonstrate that LoPT achieves competitive performance with lower memory cost, higher training efficiency and better retention of pretrained capabilities.",
+      "attention_tier": "C",
+      "priority": 0.7,
+      "reading_order": 5,
+      "source_span": {
+        "start": 1220,
+        "end": 1396,
+        "quote": "Extensive experiments demonstrate that LoPT achieves competitive performance with lower memory cost, higher training efficiency and better retention of pretrained capabilities."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": "claim-2"
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "LoPT shortens the task-induced backward path while limiting direct interference from narrow task gradients on early-layer representations.",
+      "attention_tier": "D",
+      "priority": 0.6,
+      "reading_order": 6,
+      "source_span": {
+        "start": 1081,
+        "end": 1219,
+        "quote": "LoPT shortens the task-induced backward path while limiting direct interference from narrow task gradients on early-layer representations."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:87526b72bb581db167c93b1835e0d2f246fa93835cf9b7fc86d409ee5b44dc6c",
+    "chars": 1456,
+    "lang": "en"
+  }
+}

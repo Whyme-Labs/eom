@@ -158,3 +158,31 @@
 {"slug": "rfc-9160", "doc_type": "policy", "passed": false, "attempts": 3, "elapsed_s": 183.18, "error": "harness failures: ['H11', 'H11']"}
 {"slug": "rfc-9150", "doc_type": "policy", "passed": false, "attempts": 3, "elapsed_s": 247.26, "error": "harness failures: ['H11']"}
 {"slug": "rfc-9260", "doc_type": "policy", "passed": false, "attempts": 3, "elapsed_s": 331.62, "error": "harness failures: ['H3']"}
+{"slug": "arxiv-260501591v1", "doc_type": "paper", "passed": true, "attempts": 1, "elapsed_s": 42.62, "error": ""}
+{"slug": "arxiv-260504759v1", "doc_type": "paper", "passed": true, "attempts": 1, "elapsed_s": 55.91, "error": ""}
+{"slug": "arxiv-260504449v1", "doc_type": "paper", "passed": true, "attempts": 1, "elapsed_s": 82.81, "error": ""}
+{"slug": "arxiv-260504770v1", "doc_type": "paper", "passed": true, "attempts": 1, "elapsed_s": 51.92, "error": ""}
+{"slug": "arxiv-260504913v1", "doc_type": "paper", "passed": true, "attempts": 1, "elapsed_s": 41.58, "error": ""}
+{"slug": "arxiv-260504952v1", "doc_type": "paper", "passed": true, "attempts": 1, "elapsed_s": 39.65, "error": ""}
+{"slug": "arxiv-260504830v1", "doc_type": "paper", "passed": true, "attempts": 1, "elapsed_s": 305.89, "error": ""}
+{"slug": "arxiv-260504576v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 642.97, "error": "harness failures: ['H8']"}
+{"slug": "arxiv-260504834v1", "doc_type": "paper", "passed": true, "attempts": 1, "elapsed_s": 576.42, "error": ""}
+{"slug": "arxiv-260505104v1", "doc_type": "paper", "passed": true, "attempts": 1, "elapsed_s": 26.45, "error": ""}
+{"slug": "arxiv-260505103v1", "doc_type": "paper", "passed": true, "attempts": 1, "elapsed_s": 82.54, "error": ""}
+{"slug": "arxiv-260505133v1", "doc_type": "paper", "passed": true, "attempts": 1, "elapsed_s": 86.18, "error": ""}
+{"slug": "arxiv-260505138v1", "doc_type": "paper", "passed": true, "attempts": 1, "elapsed_s": 56.83, "error": ""}
+{"slug": "arxiv-260504957v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 629.44, "error": "harness failures: ['H8']"}
+{"slug": "arxiv-260504971v1", "doc_type": "paper", "passed": false, "attempts": 3, "elapsed_s": 501.47, "error": "harness failures: ['H8']"}
+{"slug": "arxiv-260505159v1", "doc_type": "paper", "passed": true, "attempts": 2, "elapsed_s": 90.47, "error": ""}
+{"slug": "arxiv-260505170v1", "doc_type": "paper", "passed": true, "attempts": 1, "elapsed_s": 25.72, "error": ""}
+{"slug": "arxiv-260505206v1", "doc_type": "paper", "passed": true, "attempts": 1, "elapsed_s": 29.18, "error": ""}
+{"slug": "rfc-8100", "doc_type": "policy", "passed": true, "attempts": 1, "elapsed_s": 40.48, "error": ""}
+{"slug": "arxiv-260505164v1", "doc_type": "paper", "passed": true, "attempts": 1, "elapsed_s": 204.56, "error": ""}
+{"slug": "rfc-8630", "doc_type": "policy", "passed": true, "attempts": 1, "elapsed_s": 43.98, "error": ""}
+{"slug": "arxiv-260505166v1", "doc_type": "paper", "passed": true, "attempts": 1, "elapsed_s": 160.81, "error": ""}
+{"slug": "rfc-8730", "doc_type": "policy", "passed": true, "attempts": 1, "elapsed_s": 65.22, "error": ""}
+{"slug": "rfc-9150", "doc_type": "policy", "passed": true, "attempts": 1, "elapsed_s": 64.62, "error": ""}
+{"slug": "rfc-9260", "doc_type": "policy", "passed": true, "attempts": 1, "elapsed_s": 27.34, "error": ""}
+{"slug": "rfc-9160", "doc_type": "policy", "passed": true, "attempts": 1, "elapsed_s": 261.03, "error": ""}
+{"slug": "arxiv-260505155v1", "doc_type": "paper", "passed": true, "attempts": 1, "elapsed_s": 687.56, "error": ""}
+{"slug": "rfc-8950", "doc_type": "policy", "passed": true, "attempts": 1, "elapsed_s": 456.94, "error": ""}

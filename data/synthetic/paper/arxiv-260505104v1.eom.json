@@ -1,0 +1,129 @@
+{
+  "version": "0.1",
+  "document_type": "paper",
+  "summary": "The authors present a diversity-aware dataset construction framework for materials science that maximizes informativeness for target properties while preventing performance degradation on untargeted ones.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "# Building informative materials datasets beyond targeted objectives",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 0,
+        "end": 68,
+        "quote": "# Building informative materials datasets beyond targeted objectives"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "Here, we present a framework for dataset construction that maximizes informativeness for target properties of interest while preserving performance on untargeted ones.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 554,
+        "end": 721,
+        "quote": "Here, we present a framework for dataset construction that maximizes informativeness for target properties of interest while preserving performance on untargeted ones."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "Our approach uses diversity-aware selection to ensure broad coverage of the materials space.",
+      "attention_tier": "B",
+      "priority": 0.9,
+      "reading_order": 2,
+      "source_span": {
+        "start": 722,
+        "end": 814,
+        "quote": "Our approach uses diversity-aware selection to ensure broad coverage of the materials space."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "In noisy experimental dataset construction, we find that without our diversity-aware framework, prediction performance on untargeted properties can degrade by up to 40% relative to random sampling, whereas applying our framework yields improvements of up to 10% .",
+      "attention_tier": "C",
+      "priority": 0.85,
+      "reading_order": 3,
+      "source_span": {
+        "start": 815,
+        "end": 1078,
+        "quote": "In noisy experimental dataset construction, we find that without our diversity-aware framework, prediction performance on untargeted properties can degrade by up to 40% relative to random sampling, whereas applying our framework yields improvements of up to 10% ."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": "claim-1"
+    },
+    {
+      "id": "evidence-2",
+      "type": "evidence",
+      "content": "For targeted properties, performance can degrade with respect to random sampling by up to 12.5% without diversity, while our framework achieves gains of up to 25%.",
+      "attention_tier": "C",
+      "priority": 0.8,
+      "reading_order": 4,
+      "source_span": {
+        "start": 1079,
+        "end": 1242,
+        "quote": "For targeted properties, performance can degrade with respect to random sampling by up to 12.5% without diversity, while our framework achieves gains of up to 25%."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": "claim-1"
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "Materials science data collection can be expensive, making the reuse and long-term utility of datasets critical important for future discovery campaigns.",
+      "attention_tier": "C",
+      "priority": 0.7,
+      "reading_order": 5,
+      "source_span": {
+        "start": 175,
+        "end": 328,
+        "quote": "Materials science data collection can be expensive, making the reuse and long-term utility of datasets critical important for future discovery campaigns."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "decision-1",
+      "type": "decision",
+      "content": "As a result, the constructed datasets remain broadly informative across considered and unconsidered outcomes, ensuring unbiased quality entries and mitigating cold-start limitations in subsequent modeling and discovery campaigns.",
+      "attention_tier": "C",
+      "priority": 0.6,
+      "reading_order": 6,
+      "source_span": {
+        "start": 1427,
+        "end": 1656,
+        "quote": "As a result, the constructed datasets remain broadly informative across considered and unconsidered outcomes, ensuring unbiased quality entries and mitigating cold-start limitations in subsequent modeling and discovery campaigns."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:5eb2cd2ebee87cc757b90903aa7ebcdcabecf0ca311186d5dbeb6829ee804bf5",
+    "chars": 1657,
+    "lang": "en"
+  }
+}

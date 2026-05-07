@@ -1,10 +1,10 @@
 {
-  "total_attempted": 160,
-  "n_pass": 78,
-  "n_fail": 82,
-  "yield_pct": 48.8,
+  "total_attempted": 188,
+  "n_pass": 103,
+  "n_fail": 85,
+  "yield_pct": 54.8,
   "error_rate_pct": 0.0,
-  "mean_attempts_passing": 1.37,
+  "mean_attempts_passing": 1.29,
   "mean_attempts_failing": 3.0,
   "per_doc_type": {
     "other": {
@@ -14,64 +14,64 @@
       "yield_pct": 64.0
     },
     "paper": {
-      "pass": 23,
-      "fail": 56,
-      "total": 79,
-      "yield_pct": 29.1
+      "pass": 41,
+      "fail": 59,
+      "total": 100,
+      "yield_pct": 41.0
     },
     "policy": {
-      "pass": 23,
+      "pass": 30,
       "fail": 8,
-      "total": 31,
-      "yield_pct": 74.2
+      "total": 38,
+      "yield_pct": 78.9
     }
   },
   "top_failure_modes": {
     "H11": 193,
     "H3": 47,
-    "H8": 10
+    "H8": 13
   },
   "sample_passing": [
     {
-      "slug": "rfc-9060",
-      "doc_type": "policy",
-      "attempts": 1,
-      "elapsed_s": 16.42
-    },
-    {
-      "slug": "arxiv-260505151v1",
+      "slug": "arxiv-260504759v1",
       "doc_type": "paper",
       "attempts": 1,
-      "elapsed_s": 18.89
+      "elapsed_s": 55.91
     },
     {
-      "slug": "springfield-thunderbirds",
-      "doc_type": "other",
+      "slug": "rfc-8190",
+      "doc_type": "policy",
       "attempts": 1,
-      "elapsed_s": 4.4
+      "elapsed_s": 4.73
+    },
+    {
+      "slug": "rfc-8950",
+      "doc_type": "policy",
+      "attempts": 1,
+      "elapsed_s": 456.94
     }
   ],
   "sample_failing": [
     {
-      "slug": "arxiv-260501591v1",
+      "slug": "arxiv-260504834v1",
       "doc_type": "paper",
-      "error": "harness failures: ['H11', 'H11', 'H11']",
+      "error": "harness failures: ['H3', 'H11', 'H11', 'H11', 'H11']",
       "attempts": 3,
-      "elapsed_s": 106.41
+      "elapsed_s": 543.46
     },
     {
-      "slug": "arxiv-260505103v1",
+      "slug": "arxiv-260504770v1",
       "doc_type": "paper",
-      "error": "harness failures: ['H3', 'H11', 'H11', 'H11']",
+      "error": "harness failures: ['H3', 'H11', 'H11']",
       "attempts": 3,
-      "elapsed_s": 195.51
+      "elapsed_s": 325.46
     },
     {
-      "slug": "rfc-9160",
-      "doc_type": "policy",
-      "error": "harness failures: ['H11', 'H11']",
+      "slug": "maciej-henneberg",
+      "doc_type": "other",
+      "error": "harness failures: ['H3', 'H3', 'H11', 'H11', 'H11']",
       "attempts": 3,
-      "elapsed_s": 183.18
+      "elapsed_s": 381.62
     }
   ]
 }
