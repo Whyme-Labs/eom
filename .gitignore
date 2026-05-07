@@ -15,9 +15,14 @@ build/
 
 # data
 data/synthetic/
-data/raw/
+data/raw/*
 data/cache/
 *.parquet
+
+# track manifest and synthetic outputs
+!data/raw/MANIFEST.json
+!data/synthetic/
+!data/synthetic/**
 
 # models
 *.bin
