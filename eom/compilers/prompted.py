@@ -114,9 +114,20 @@ class PromptedCompiler:
         payload["attention_budget"] = {"B_A": budget.B_A, "B_AB": budget.B_AB}
 
         try:
-            return EOMDocument.model_validate(payload)
+            eom = EOMDocument.model_validate(payload)
         except ValidationError:
             return self._fallback(source, hints)
+
+        # Post-process: deterministically enforce H3 tier caps and H9/H10 token
+        # budgets. Teacher LLMs frequently over-tag importance; demoting by
+        # priority is harmless when the priorities themselves are reasonable
+        # and converts H3/H9/H10 from harness failures into clean fixups.
+        from eom.compilers.post_process import enforce_tier_caps, enforce_token_budget
+        adjusted = enforce_tier_caps(list(eom.blocks))
+        adjusted = enforce_token_budget(adjusted, eom.attention_budget)
+        if adjusted != list(eom.blocks):
+            eom = eom.model_copy(update={"blocks": adjusted})
+        return eom
 
     def _fallback(self, source: str, hints: CompileHints) -> EOMDocument:
         rules = RulesCompiler()

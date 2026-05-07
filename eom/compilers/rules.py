@@ -185,10 +185,10 @@ class RulesCompiler:
             ))
             ro += 1
 
-        # Enforce H3 caps after the fact: if too many tier A, demote lowest priority.
-        blocks = self._enforce_tier_caps(blocks)
-        # Ensure H10 budget.
-        blocks = self._enforce_token_budget(blocks, budget)
+        # Enforce H3 caps and H9/H10 budgets via the shared post-processor.
+        from eom.compilers.post_process import enforce_tier_caps, enforce_token_budget
+        blocks = enforce_tier_caps(blocks)
+        blocks = enforce_token_budget(blocks, budget)
 
         eom = EOMDocument(
             version="0.1",
@@ -248,61 +248,6 @@ class RulesCompiler:
         if len(result) < len(text):
             result = result.rstrip(".") + "…"
         return result or text[:60]
-
-    def _enforce_tier_caps(self, blocks: list[Block]) -> list[Block]:
-        n = len(blocks)
-        cap_a = max(1, int(0.10 * n))
-        cap_b = max(2, int(0.25 * n))
-        # Sort tier A blocks by priority desc; keep top cap_a, demote rest to B.
-        tier_a = sorted(
-            [b for b in blocks if b.attention_tier == "A"],
-            key=lambda b: -b.priority,
-        )
-        keep_a = set(b.id for b in tier_a[:cap_a])
-        # Same for B.
-        new_blocks = []
-        for b in blocks:
-            if b.attention_tier == "A" and b.id not in keep_a:
-                b = b.model_copy(update={"attention_tier": "B"})
-            new_blocks.append(b)
-        tier_b = sorted(
-            [b for b in new_blocks if b.attention_tier == "B"],
-            key=lambda b: -b.priority,
-        )
-        keep_b = set(b.id for b in tier_b[:cap_b])
-        final = []
-        for b in new_blocks:
-            if b.attention_tier == "B" and b.id not in keep_b:
-                b = b.model_copy(update={"attention_tier": "C"})
-            final.append(b)
-        return final
-
-    def _enforce_token_budget(self, blocks: list[Block], budget: AttentionBudget) -> list[Block]:
-        """Truncate tier A/B content to fit B_A and B_AB."""
-        # Pass 1: enforce B_A by demoting lowest-priority tier-A blocks until under budget.
-        while True:
-            tier_a = [b for b in blocks if b.attention_tier == "A"]
-            total = sum(count_tokens(b.content) for b in tier_a)
-            if total <= budget.B_A or len(tier_a) <= 1:
-                break
-            victim = min(tier_a, key=lambda b: b.priority)
-            blocks = [
-                b.model_copy(update={"attention_tier": "B"}) if b.id == victim.id else b
-                for b in blocks
-            ]
-        # Pass 2: enforce B_AB by demoting lowest-priority tier-B blocks.
-        while True:
-            ab = [b for b in blocks if b.attention_tier in ("A", "B")]
-            total = sum(count_tokens(b.content) for b in ab)
-            tier_b = [b for b in blocks if b.attention_tier == "B"]
-            if total <= budget.B_AB or not tier_b:
-                break
-            victim = min(tier_b, key=lambda b: b.priority)
-            blocks = [
-                b.model_copy(update={"attention_tier": "C"}) if b.id == victim.id else b
-                for b in blocks
-            ]
-        return blocks
 
     def _minimal_doc(
         self,
