@@ -15,6 +15,7 @@ from eom.compilers.llm_client import DEFAULT_MODEL, LLMClient, LLMRequest
 from eom.compilers.prompt_template import (
     SYSTEM_PROMPT,
     build_user_prompt,
+    build_user_prompt_with_spans,
 )
 from eom.compilers.rules import RulesCompiler
 from eom.normalise import normalise
@@ -50,6 +51,7 @@ class PromptedCompiler:
     client: LLMClient
     few_shots: Sequence[tuple[str, EOMDocument]] = field(default_factory=list)
     model: str = DEFAULT_MODEL  # pinned default; OpenRouter routing
+    use_scaffolding: bool = True  # pre-extract reference spans and inline them
 
     def compile(
         self,
@@ -63,12 +65,26 @@ class PromptedCompiler:
         budget = RENDER_PROFILES[render_profile]
 
         few_shot_text = _format_few_shots(self.few_shots)
-        user = build_user_prompt(
-            source_text=source,
-            document_type=document_type,
-            render_profile=render_profile,
-            few_shots=few_shot_text,
-        )
+        if self.use_scaffolding:
+            from eom.compilers.scaffolding import (
+                extract_reference_spans,
+                format_spans_for_prompt,
+            )
+            spans = extract_reference_spans(source)
+            user = build_user_prompt_with_spans(
+                source_text=source,
+                document_type=document_type,
+                render_profile=render_profile,
+                few_shots=few_shot_text,
+                spans_menu=format_spans_for_prompt(spans),
+            )
+        else:
+            user = build_user_prompt(
+                source_text=source,
+                document_type=document_type,
+                render_profile=render_profile,
+                few_shots=few_shot_text,
+            )
         req = LLMRequest(
             system=SYSTEM_PROMPT,
             user=user,

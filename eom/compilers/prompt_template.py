@@ -86,3 +86,38 @@ def build_user_prompt(source_text: str, document_type: str, render_profile: str,
         source_text=source_text,
         few_shots=few_shots,
     )
+
+
+WITH_SPANS_USER = dedent("""\
+    Document type: {document_type}
+    Render profile: {render_profile}
+    Source text (between <<<>>>):
+
+    <<<
+    {source_text}
+    >>>
+
+    REFERENCE SPANS — every block's `source_span` field MUST be drawn
+    verbatim from this list. Do NOT invent offsets or quotes; pick a span
+    by copying its `start`, `end`, and `quote` exactly.
+
+    {spans_menu}
+
+    Examples of well-formed EOM (study the structure, then produce JSON):
+
+    {few_shots}
+
+    Now output the EOM JSON for the source above. Output JSON only.
+""").strip()
+
+
+def build_user_prompt_with_spans(source_text: str, document_type: str,
+                                  render_profile: str, few_shots: str,
+                                  spans_menu: str) -> str:
+    return WITH_SPANS_USER.format(
+        document_type=document_type,
+        render_profile=render_profile,
+        source_text=source_text,
+        few_shots=few_shots,
+        spans_menu=spans_menu,
+    )
