@@ -57,10 +57,13 @@ def raw_pairs() -> list[tuple[str, Path]]:
 
 
 def existing_synth_slugs() -> set[str]:
+    """Slugs already present on disk as <slug>.eom.json. Path.stem only strips
+    the final extension (.json), so we strip the full ``.eom.json`` suffix
+    explicitly to match slugs from raw_pairs()."""
     if not SYNTH_DIR.exists():
         return set()
     return {
-        p.stem
+        p.name.removesuffix(".eom.json")
         for type_dir in SYNTH_DIR.iterdir()
         if type_dir.is_dir()
         for p in type_dir.glob("*.eom.json")
