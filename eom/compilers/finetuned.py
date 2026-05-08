@@ -46,7 +46,7 @@ class FineTunedCompiler:
     """
 
     checkpoint_path: str | None = None
-    base_model_name: str = "google/gemma-3-4b-it"  # full-precision; swap to bnb-4bit variant as needed
+    base_model_name: str = "google/gemma-3-1b-it"  # full-precision; swap to bnb-4bit variant as needed
     max_new_tokens: int = 2048
     _model: Any = field(default=None, init=False, repr=False)
     _tokenizer: Any = field(default=None, init=False, repr=False)
