@@ -21,11 +21,12 @@ image = (
     modal.Image.debian_slim(python_version="3.11")
     .apt_install("git")
     .pip_install(
+        # Stick with the proven vanilla stack from modal-distill (worked end-
+        # to-end on Gemma-3-1B). Gemma-4 needs Unsloth, which has its own dep
+        # cascade we'll tackle separately.
         "torch==2.5.1",
-        "transformers>=4.55",     # Gemma-4 tokenizer needs the newer special-tokens format
-        "tokenizers>=0.20",
+        "transformers>=4.45,<5",
         "peft>=0.12,<0.15",
-        "bitsandbytes>=0.45",     # 4-bit kernels for 26B model
         "datasets>=2.20",
         "accelerate>=0.34",
         "sentencepiece",
@@ -54,7 +55,7 @@ def train_sft():
     from transformers import (
         AutoModelForCausalLM,
         AutoTokenizer,
-        DataCollatorForLanguageModeling,
+        DataCollatorForSeq2Seq,
         Trainer,
         TrainingArguments,
     )
@@ -65,15 +66,13 @@ def train_sft():
         print(f"GPU={torch.cuda.get_device_name(0)} sm_{cap[0]}{cap[1]}")
         print(f"VRAM={torch.cuda.get_device_properties(0).total_memory / 1e9:.1f} GB")
 
-    # Plan asked for Gemma-4 but as of 2026-05-08, PEFT doesn't support Gemma-4's
-    # Gemma4ClippableLinear layers (ValueError on inject_adapter). Falling back
-    # to Gemma-3-1B which has standard nn.Linear and a proven training run.
-    # The self-distillation experiment (minimal student prompt) is the actual
-    # change; can revisit Gemma-4 once PEFT supports it.
+    # Stage 2: same Gemma-3-1B base as Stage 1 but with three upgrades to push
+    # past 0% pass rate: 20 epochs (vs 5), completion-only loss (manual mask),
+    # smaller grad-accum (8 vs 16, more grad steps per epoch).
+    # Gemma-4 path is blocked by PEFT not yet supporting Gemma4ClippableLinear.
     model_name = "unsloth/gemma-3-1b-it"
     max_seq_length = 4096
 
-    # 1B model fits fp16 trivially; no need for 4-bit.
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     model = AutoModelForCausalLM.from_pretrained(
         model_name,
@@ -83,15 +82,11 @@ def train_sft():
     )
     model.config.use_cache = False
     model.gradient_checkpointing_enable()
-    # Required for gradient checkpointing + PEFT on a non-quantized model:
     if hasattr(model, "enable_input_require_grads"):
         model.enable_input_require_grads()
 
     lora_config = LoraConfig(
-        r=16,
-        lora_alpha=32,
-        lora_dropout=0.0,
-        bias="none",
+        r=16, lora_alpha=32, lora_dropout=0.0, bias="none",
         task_type="CAUSAL_LM",
         target_modules=["q_proj", "k_proj", "v_proj", "o_proj",
                         "gate_proj", "up_proj", "down_proj"],
@@ -108,39 +103,51 @@ def train_sft():
     )
     print({k: len(v) for k, v in raw.items()})
 
-    def to_chat(ex):
+    # Find the boundary between user prompt and assistant response so we can
+    # mask prompt tokens with -100 (assistant-only loss, manual version since
+    # Gemma's chat template lacks {% generation %} for TRL's automatic mask).
+    response_template_str = "<start_of_turn>model\n"
+    response_template_ids = tokenizer(
+        response_template_str, add_special_tokens=False
+    )["input_ids"]
+
+    def tokenize_with_response_mask(ex):
         messages = [
             {"role": "user", "content": ex["input"]},
             {"role": "assistant", "content": ex["target"]},
         ]
-        return {"text": tokenizer.apply_chat_template(messages, tokenize=False)}
+        text = tokenizer.apply_chat_template(messages, tokenize=False)
+        ids = tokenizer(
+            text, truncation=True, max_length=max_seq_length,
+            padding=False, add_special_tokens=False,
+        )["input_ids"]
+        labels = list(ids)
+        # Locate the response template within `ids` and mask everything up to
+        # and including it.
+        L = len(response_template_ids)
+        for i in range(len(ids) - L + 1):
+            if ids[i:i + L] == response_template_ids:
+                for j in range(i + L):
+                    labels[j] = -100
+                break
+        else:
+            # Fallback: if marker not found, train on full sequence
+            pass
+        return {"input_ids": ids, "labels": labels, "attention_mask": [1] * len(ids)}
 
-    dataset = raw.map(to_chat, remove_columns=raw["train"].column_names)
+    tokenized = raw.map(tokenize_with_response_mask, remove_columns=raw["train"].column_names)
 
     def fits(ex):
-        return len(tokenizer(ex["text"], add_special_tokens=False)["input_ids"]) <= max_seq_length
+        return len(ex["input_ids"]) <= max_seq_length
 
-    dataset = dataset.filter(fits)
-    print({k: len(v) for k, v in dataset.items()})
-
-    # Pre-tokenize. DataCollatorForLanguageModeling(mlm=False) will copy
-    # input_ids -> labels at collation time and handle padding.
-    def tokenize(ex):
-        return tokenizer(
-            ex["text"],
-            truncation=True,
-            max_length=max_seq_length,
-            padding=False,
-            add_special_tokens=False,
-        )
-
-    tokenized = dataset.map(tokenize, remove_columns=["text"])
+    tokenized = tokenized.filter(fits)
+    print("after length filter:", {k: len(v) for k, v in tokenized.items()})
 
     args = TrainingArguments(
         output_dir="/output/eom-sft-out",
-        num_train_epochs=5,
+        num_train_epochs=20,                      # Stage 2: more passes on the small dataset
         per_device_train_batch_size=1,
-        gradient_accumulation_steps=16,
+        gradient_accumulation_steps=8,            # smaller for more grad steps per epoch
         learning_rate=2e-4,
         lr_scheduler_type="cosine",
         warmup_ratio=0.03,
@@ -148,6 +155,7 @@ def train_sft():
         logging_steps=1,
         save_strategy="epoch",
         eval_strategy="epoch",
+        save_total_limit=2,
         fp16=True,
         bf16=False,
         seed=42,
@@ -156,7 +164,11 @@ def train_sft():
         remove_unused_columns=False,
     )
 
-    collator = DataCollatorForLanguageModeling(tokenizer=tokenizer, mlm=False)
+    # Seq2Seq collator pads input_ids with pad_token_id and labels with -100,
+    # which is what we need for completion-only loss (already masked prompts).
+    collator = DataCollatorForSeq2Seq(
+        tokenizer=tokenizer, padding=True, return_tensors="pt"
+    )
 
     trainer = Trainer(
         model=model,
@@ -165,7 +177,7 @@ def train_sft():
         eval_dataset=tokenized["val"],
         data_collator=collator,
     )
-    print(f"steps/epoch ≈ {len(dataset['train']) // 16}")
+    print(f"steps/epoch ≈ {len(tokenized['train']) // 8}")
 
     t0 = time.time()
     stats = trainer.train()
@@ -175,8 +187,12 @@ def train_sft():
 
     model.eval()
     gens = []
-    for ex in dataset["val"]:
-        prompt = ex["text"].split("<start_of_turn>model")[0] + "<start_of_turn>model\n"
+    raw_val = raw["val"]
+    for ex in raw_val:
+        messages = [{"role": "user", "content": ex["input"]}]
+        prompt = tokenizer.apply_chat_template(
+            messages, tokenize=False, add_generation_prompt=True
+        )
         inp = tokenizer(prompt, return_tensors="pt").to(model.device)
         with torch.no_grad():
             out = model.generate(
