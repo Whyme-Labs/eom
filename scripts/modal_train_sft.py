@@ -22,9 +22,10 @@ image = (
     .apt_install("git")
     .pip_install(
         "torch==2.5.1",
-        "transformers>=4.45,<5",  # avoid 5.x API breakage
+        "transformers>=4.55",     # Gemma-4 tokenizer needs the newer special-tokens format
+        "tokenizers>=0.20",
         "peft>=0.12,<0.15",
-        # No TRL — vanilla HF Trainer is more stable across versions
+        "bitsandbytes>=0.45",     # 4-bit kernels for 26B model
         "datasets>=2.20",
         "accelerate>=0.34",
         "sentencepiece",
@@ -38,9 +39,9 @@ app = modal.App("eom-sft", image=image)
 
 
 @app.function(
-    gpu="A100-40GB",  # L4 22GB OOM'd on fp16 Gemma-3-1B + 8K seq backward
+    gpu="A100-40GB",  # E4B in 4-bit is ~3GB; 40GB fits comfortably
     volumes={"/output": volume},
-    timeout=60 * 60,
+    timeout=2 * 60 * 60,
 )
 def train_sft():
     import json
@@ -64,9 +65,15 @@ def train_sft():
         print(f"GPU={torch.cuda.get_device_name(0)} sm_{cap[0]}{cap[1]}")
         print(f"VRAM={torch.cuda.get_device_properties(0).total_memory / 1e9:.1f} GB")
 
-    model_name = "unsloth/gemma-3-1b-it"  # Unsloth's open mirror (Google's repo is gated)
-    max_seq_length = 4096  # Gemma's 256K vocab × 8K logits OOM'd even on A100-40GB
+    # Plan asked for Gemma-4 but as of 2026-05-08, PEFT doesn't support Gemma-4's
+    # Gemma4ClippableLinear layers (ValueError on inject_adapter). Falling back
+    # to Gemma-3-1B which has standard nn.Linear and a proven training run.
+    # The self-distillation experiment (minimal student prompt) is the actual
+    # change; can revisit Gemma-4 once PEFT supports it.
+    model_name = "unsloth/gemma-3-1b-it"
+    max_seq_length = 4096
 
+    # 1B model fits fp16 trivially; no need for 4-bit.
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     model = AutoModelForCausalLM.from_pretrained(
         model_name,
@@ -95,8 +102,8 @@ def train_sft():
     raw = load_dataset(
         "json",
         data_files={
-            "train": "/data/sft.jsonl",
-            "val":   "/data/val.jsonl",
+            "train": "/data/distill_sft.jsonl",  # student template, no spans menu
+            "val":   "/data/distill_val.jsonl",
         },
     )
     print({k: len(v) for k, v in raw.items()})

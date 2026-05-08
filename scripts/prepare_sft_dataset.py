@@ -50,8 +50,40 @@ def _walk_pairs(root: Path):
                 yield (md, ej, type_dir.name, md.stem)
 
 
-def _build_example(source: str, eom: EOMDocument, doc_type: str) -> dict:
-    """Build one (input, target) text pair."""
+_MINIMAL_PROMPT = """\
+Convert the source document below into an EOM JSON object.
+
+Document type: {document_type}
+Render profile: {render_profile}
+
+Source text (between <<<>>>):
+
+<<<
+{source_text}
+>>>
+
+Output the EOM JSON for the source above. Output JSON only."""
+
+
+def _build_example(source: str, eom: EOMDocument, doc_type: str, *,
+                   minimal: bool = False) -> dict:
+    """Build one (input, target) text pair.
+
+    minimal=True produces the student template per Snell 2022 — no spans menu,
+    no few-shots, no harness rules. The fine-tuned student should internalize
+    those from the teacher's targets via context distillation.
+    """
+    target = json.dumps(eom.model_dump(mode="json"), sort_keys=True, separators=(",", ":"))
+    if minimal:
+        return {
+            "input": _MINIMAL_PROMPT.format(
+                document_type=doc_type,
+                render_profile=eom.render_profile,
+                source_text=source,
+            ),
+            "target": target,
+            "doc_type": doc_type,
+        }
     spans = extract_reference_spans(source)
     user_prompt = build_user_prompt_with_spans(
         source_text=source,
@@ -60,7 +92,6 @@ def _build_example(source: str, eom: EOMDocument, doc_type: str) -> dict:
         few_shots="(none — fine-tuned model)",
         spans_menu=format_spans_for_prompt(spans),
     )
-    target = json.dumps(eom.model_dump(mode="json"), sort_keys=True, separators=(",", ":"))
     return {
         "input": f"{SYSTEM_PROMPT}\n\n{user_prompt}",
         "target": target,
@@ -69,6 +100,16 @@ def _build_example(source: str, eom: EOMDocument, doc_type: str) -> dict:
 
 
 def main() -> None:
+    import argparse
+    p = argparse.ArgumentParser()
+    p.add_argument("--minimal", action="store_true",
+                   help="Emit student template (no spans menu, no few-shots) — "
+                        "for context distillation per Snell 2022 / Cartridges self-study.")
+    p.add_argument("--out-prefix", default="",
+                   help="Prefix for output filenames, e.g. 'distill_' "
+                        "→ data/train/distill_sft.jsonl")
+    args = p.parse_args()
+
     OUT.mkdir(parents=True, exist_ok=True)
 
     examples: list[dict] = []
@@ -88,7 +129,7 @@ def main() -> None:
                       f"({len(report.failures)} rules)")
                 n_skipped += 1
                 continue
-            ex = _build_example(source, eom, doc_type)
+            ex = _build_example(source, eom, doc_type, minimal=args.minimal)
             ex["source_label"] = label
             ex["slug"] = slug
             examples.append(ex)
@@ -105,7 +146,7 @@ def main() -> None:
     train, val, test = examples[:n_train], examples[n_train:n_train + n_val], examples[n_train + n_val:]
 
     for name, items in [("sft", train), ("val", val), ("test", test)]:
-        out_path = OUT / f"{name}.jsonl"
+        out_path = OUT / f"{args.out_prefix}{name}.jsonl"
         with out_path.open("w") as f:
             for item in items:
                 f.write(json.dumps(item) + "\n")
