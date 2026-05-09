@@ -28,6 +28,9 @@ train = [
     "trl>=0.10",
     "peft>=0.12",
 ]
+demo = [
+    "streamlit>=1.35",
+]
 dev = [
     "pytest>=8.0",
     "pytest-cov>=5.0",
