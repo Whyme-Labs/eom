@@ -1,0 +1,98 @@
+{
+  "version": "0.1",
+  "qsets": [
+    {
+      "doc_id": "gdpr",
+      "doc_path": "data/gold/policy/gdpr",
+      "questions": [
+        {
+          "id": "gdpr-q1",
+          "q": "When did the GDPR become effective?",
+          "ref": "The GDPR became effective on May 25, 2018, after being adopted by the European Parliament and Council on April 14, 2016."
+        },
+        {
+          "id": "gdpr-q2",
+          "q": "What is the maximum fine for the most serious GDPR violations?",
+          "ref": "Up to 20 million euros or 4% of total worldwide annual turnover of the preceding financial year, whichever is higher."
+        },
+        {
+          "id": "gdpr-q3",
+          "q": "Under Article 6, what are the lawful bases for processing personal data?",
+          "ref": "Six grounds: explicit data subject consent, fulfilling contractual obligations, complying with legal requirements, protecting vital interests, performing public tasks, and pursuing legitimate interests unless overridden by data subject rights."
+        },
+        {
+          "id": "gdpr-q4",
+          "q": "What is the default minimum age for valid consent under GDPR, and how can it differ across member states?",
+          "ref": "16 years old by default; member states have the option to lower the threshold to 13."
+        },
+        {
+          "id": "gdpr-q5",
+          "q": "How quickly must controllers notify supervisory authorities of a personal data breach?",
+          "ref": "Within 72 hours."
+        }
+      ]
+    },
+    {
+      "doc_id": "paris-2024",
+      "doc_path": "data/gold/news/paris-2024-olympics",
+      "questions": [
+        {
+          "id": "p24-q1",
+          "q": "When and where did the 2024 Summer Olympics take place?",
+          "ref": "In France from July 26 to August 11, 2024 (with certain events beginning on July 24); Paris was the host city, with events distributed across 16 other metropolitan French locations and surfing in Teahupo'o, Tahiti."
+        },
+        {
+          "id": "p24-q2",
+          "q": "How many athletes, events, and sports were featured?",
+          "ref": "10,714 athletes competing across 329 events in 32 sports comprising 48 disciplines."
+        },
+        {
+          "id": "p24-q3",
+          "q": "Which countries topped the medal table by gold and how did they compare?",
+          "ref": "The United States and China tied for first on gold medals with 40 each; the U.S. won 126 total medals to China's 91. It was the first time the two nations tied in gold."
+        },
+        {
+          "id": "p24-q4",
+          "q": "Which new sports debuted or returned at Paris 2024?",
+          "ref": "Breaking made its Olympic debut. Skateboarding, sport climbing, and surfing returned after debuting at the 2020 Games."
+        },
+        {
+          "id": "p24-q5",
+          "q": "What was unusual about the opening ceremony?",
+          "ref": "It departed from tradition by occurring outside a stadium: athletes paraded by boat along the Seine from Pont d'Austerlitz to Pont d'Iéna, with cultural performances at landmarks. The Olympic cauldron used LED lighting and aerosol jets rather than actual combustion for the first time."
+        }
+      ]
+    },
+    {
+      "doc_id": "rfc-9293-tcp",
+      "doc_path": "data/gold/policy/rfc-9293-tcp",
+      "questions": [
+        {
+          "id": "tcp-q1",
+          "q": "What does RFC 9293 specify and what does it obsolete?",
+          "ref": "RFC 9293 specifies the Transmission Control Protocol (TCP); it consolidates and updates the TCP specification, replacing earlier RFCs including RFC 793, with corrections, clarifications, and updates accumulated over decades."
+        },
+        {
+          "id": "tcp-q2",
+          "q": "What guarantees does TCP provide to applications?",
+          "ref": "Reliable, in-order, byte-stream delivery between endpoints, with congestion control and flow control over the unreliable IP network layer."
+        },
+        {
+          "id": "tcp-q3",
+          "q": "What is the three-way handshake?",
+          "ref": "The connection establishment procedure where the initiator sends SYN, the responder replies with SYN-ACK, and the initiator confirms with ACK, synchronising sequence numbers in both directions."
+        },
+        {
+          "id": "tcp-q4",
+          "q": "How does TCP detect and recover from packet loss?",
+          "ref": "Through cumulative acknowledgements, retransmission timers, and selective retransmission; lost segments are detected via missing ACKs or timeouts and retransmitted."
+        },
+        {
+          "id": "tcp-q5",
+          "q": "What is congestion control in TCP and why does it matter?",
+          "ref": "TCP adjusts sending rate based on observed network conditions (slow start, congestion avoidance, fast retransmit, fast recovery) to prevent collapse of the shared network when many flows compete for bandwidth."
+        }
+      ]
+    }
+  ]
+}
