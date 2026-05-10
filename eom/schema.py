@@ -1,4 +1,9 @@
-"""EOM Pydantic schema (v0.1)."""
+"""EOM Pydantic schema.
+
+v0.1 is the original; v0.2 is strictly additive — every v0.1 document is a
+valid v0.2 document. New v0.2 fields are optional with v0.1-equivalent
+defaults. See `docs/SPEC-v0.2.md`.
+"""
 
 from __future__ import annotations
 
@@ -61,18 +66,41 @@ _ID_RE = re.compile(r"^[a-z][a-z0-9-]*$")
 
 
 class AttentionBudget(BaseModel):
-    """Token budgets enforced by H9 / H10."""
+    """Token budgets enforced by H9 / H10. v0.2 adds optional `token_budget`."""
 
     model_config = ConfigDict(extra="forbid", frozen=True)
 
     B_A: int = Field(ge=0)
     B_AB: int = Field(ge=0)
+    token_budget: int | None = Field(default=None, ge=0)
 
     @model_validator(mode="after")
     def _BAB_at_least_BA(self) -> AttentionBudget:
         if self.B_AB < self.B_A:
             raise ValueError(f"B_AB ({self.B_AB}) must be >= B_A ({self.B_A})")
         return self
+
+
+RelationType = Literal[
+    "supports", "qualifies", "contradicts", "derived_from", "cites", "refines",
+]
+
+
+class Relation(BaseModel):
+    """Typed directed edge between blocks (v0.2). Replaces v0.1's untyped
+    `inference_basis: [str]` over the migration window — both coexist."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    type: RelationType
+    target: str
+    confidence: float = Field(default=1.0, ge=0.0, le=1.0)
+
+
+RoleTag = Literal["ground_truth", "claim", "speculation", "citation"]
+EvidenceLayer = Literal["surface", "drill", "archive"]
+SystemIntent = Literal["question", "summarize", "extract", "compare", "decide"]
+Dialect = Literal["outbound", "inbound"]
 
 
 class Block(BaseModel):
@@ -90,6 +118,9 @@ class Block(BaseModel):
     is_inferred: bool = False
     inference_basis: list[str] = Field(default_factory=list)
     parent_id: str | None = None
+    relations: list[Relation] = Field(default_factory=list)
+    role_tag: RoleTag | None = None
+    evidence_layer: EvidenceLayer | None = None
 
     @field_validator("id")
     @classmethod
@@ -126,17 +157,20 @@ RenderProfileName = Literal["executive_brief", "analytical_brief"]
 
 
 class EOMDocument(BaseModel):
-    """A complete EOM document (the reference encoding)."""
+    """A complete EOM document. `version` widens to "0.2" for the new
+    optional fields (dialect, system_intent). v0.1 docs validate unchanged."""
 
     model_config = ConfigDict(extra="forbid")
 
-    version: Literal["0.1"]
+    version: Literal["0.1", "0.2"]
     document_type: DocumentType
     summary: str = Field(min_length=1)
     render_profile: RenderProfileName
     attention_budget: AttentionBudget
     blocks: list[Block] = Field(min_length=1)
     source: SourceMetadata
+    dialect: Dialect = "outbound"
+    system_intent: SystemIntent | None = None
 
     @field_validator("summary")
     @classmethod

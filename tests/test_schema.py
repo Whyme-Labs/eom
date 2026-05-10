@@ -193,7 +193,13 @@ class TestEOMDocument:
 
     def test_rejects_unknown_version(self):
         with pytest.raises(ValidationError):
-            EOMDocument(**self._ok_doc(version="0.2"))
+            EOMDocument(**self._ok_doc(version="9.99"))
+
+    def test_accepts_v02_version(self):
+        # v0.2 widens version Literal additively; v0.1 docs validate unchanged.
+        doc = EOMDocument(**self._ok_doc(version="0.2"))
+        assert doc.version == "0.2"
+        assert doc.dialect == "outbound"  # default preserves v0.1 behaviour
 
     def test_rejects_unknown_document_type(self):
         with pytest.raises(ValidationError):
