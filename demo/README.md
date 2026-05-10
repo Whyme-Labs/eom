@@ -1,6 +1,10 @@
 # EOM live demo
 
-Streamlit app for the **Editorial Object Model** standard. Paste any markdown source and watch a Gemma-4 model compile it into newspaper-style EOM JSON in real time, then render it three ways: as an HTML newspaper, as an LLM-friendly context pack, and as the raw schema.
+Streamlit app for the **Editorial Object Model** — a two-way wire format
+between humans and models. Paste any markdown source, watch Gemma-4
+compile it into the EOM IR, then drive both directions live: the
+outbound newspaper brief on one side, and the inbound LLM context-pack
+benchmarked side-by-side against raw markdown on the other.
 
 ## Local run
 
@@ -25,12 +29,13 @@ uv run streamlit run demo/app.py
 
 ## What it shows
 
-| Tab | Content |
-|---|---|
-| Newspaper | Print-style HTML render with hero / grid / archive layout |
-| Context pack | Token-budgeted text payload an LLM ingests in one shot |
-| JSON | The raw EOM v0.1 document |
-| Harness | Pass/fail per H1–H12, with metrics + warnings |
+| Tab | Direction | Content |
+|---|---|---|
+| 📰 Newspaper | outbound (AI → human) | Print-style HTML brief — hero / grid / archive |
+| 🤖 Context pack | inbound (human → AI) | Token-budgeted text payload an LLM ingests in one shot |
+| 📋 JSON | core IR | The raw EOM document |
+| ✓ Harness | shared validator | Pass/fail per H1–H12, with metrics + warnings |
+| 🔄 Ask AI | inbound (live) | Side-by-side raw vs context-pack on the same model — shows token cost, latency, and answer per column |
 
 ## What's running
 
