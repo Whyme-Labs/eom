@@ -14,30 +14,19 @@ Expect 213 passed.
 
 ## 1. Public GitHub repo
 
-This is a **user action** — the assistant has not pushed.
+✓ Done — repo at `git@github.com:Whyme-Labs/eom.git`, default branch
+`main`. To re-sync after later commits:
 
 ```bash
-# If not yet created:
-gh repo create <handle>/eom --public --source=. --push --description \
-  "EOM — two-way wire format between humans and models"
-
-# Otherwise:
-git remote add origin git@github.com:<handle>/eom.git
-git push -u origin master:main      # Kaggle expects 'main'
+git push origin main
 ```
-
-Then update the URL in three places if `<handle>` is not `soh`:
-
-- `README.md` — the GitHub link in the License section
-- `demo/app.py` footer
-- `docs/KAGGLE-WRITEUP.md` if any link references it
 
 ## 2. Streamlit Cloud deploy
 
 The judges should be able to click a live URL.
 
 1. Visit https://streamlit.io/cloud → New app.
-2. Repo `<handle>/eom`, branch `main`, main file `demo/app.py`.
+2. Repo `Whyme-Labs/eom`, branch `main`, main file `demo/app.py`.
 3. Advanced → Secrets → paste:
    ```toml
    OPENROUTER_API_KEY = "sk-or-..."
@@ -91,7 +80,7 @@ Paste contents of `docs/KAGGLE-WRITEUP.md` (1163 words).
 
 | Field | Value |
 |---|---|
-| Code repository | `https://github.com/<handle>/eom` |
+| Code repository | `https://github.com/Whyme-Labs/eom` |
 | Live demo | `https://<your-app>.streamlit.app/` |
 | Video | `https://youtu.be/<id>` |
 | Adapter (Unsloth track) | `modal://eom-sft-out/eom-sft-adapter-gemma4-v5` |

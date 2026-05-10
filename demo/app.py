@@ -314,5 +314,5 @@ else:
 st.divider()
 st.markdown(
     "*EOM v0.2 (draft) · MIT license · "
-    "[GitHub](https://github.com/soh/eom) · spec at `docs/SPEC-v0.2.md`*"
+    "[GitHub](https://github.com/Whyme-Labs/eom) · spec at `docs/SPEC-v0.2.md`*"
 )
