@@ -1,0 +1,490 @@
+<template id="beat-4-architecture-template">
+  <div
+    data-composition-id="beat-4-architecture"
+    data-width="1920"
+    data-height="1080"
+    data-start="0"
+    data-duration="35"
+  >
+    <style>
+      [data-composition-id="beat-4-architecture"] {
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        background: #fafaf7;
+        overflow: hidden;
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+        color: #111111;
+      }
+
+      /* --- Title (Phase A) --- */
+      [data-composition-id="beat-4-architecture"] .b4-title {
+        position: absolute;
+        top: 64px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        font-family: Georgia, "Times New Roman", serif;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.1;
+        color: #111111;
+        letter-spacing: -0.005em;
+        z-index: 3;
+      }
+
+      /* --- Diagram SVG (Phase B) --- */
+      [data-composition-id="beat-4-architecture"] .b4-diagram-wrap {
+        position: absolute;
+        top: 168px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1400px;
+        height: 620px;
+        z-index: 2;
+      }
+      [data-composition-id="beat-4-architecture"] .b4-diagram {
+        width: 1400px;
+        height: 620px;
+        display: block;
+      }
+
+      /* SVG path drawing — strokes use pathLength=1 then dashoffset 1 -> 0 */
+      [data-composition-id="beat-4-architecture"] .b4-draw {
+        stroke-dasharray: 1;
+        stroke-dashoffset: 1;
+      }
+
+      /* SVG text styling */
+      [data-composition-id="beat-4-architecture"] .b4-core-label {
+        font-family: ui-monospace, "SF Mono", Menlo, monospace;
+        font-size: 32px;
+        font-weight: 600;
+        fill: #111111;
+      }
+      [data-composition-id="beat-4-architecture"] .b4-dialect-label {
+        font-family: ui-monospace, "SF Mono", Menlo, monospace;
+        font-size: 24px;
+        font-weight: 600;
+        fill: #111111;
+        letter-spacing: 0.01em;
+      }
+      [data-composition-id="beat-4-architecture"] .b4-leaf-label {
+        font-family: ui-monospace, "SF Mono", Menlo, monospace;
+        font-size: 20px;
+        font-weight: 400;
+        fill: #111111;
+      }
+      [data-composition-id="beat-4-architecture"] .b4-arrow-tip {
+        fill: #b8860b;
+      }
+      [data-composition-id="beat-4-architecture"] .b4-dialect-underline {
+        stroke: #b8860b;
+        stroke-width: 2;
+        fill: none;
+      }
+
+      /* --- Caption above chip strip (Phase C) --- */
+      [data-composition-id="beat-4-architecture"] .b4-cf-caption {
+        position: absolute;
+        top: 820px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        font-family: Georgia, "Times New Roman", serif;
+        font-style: italic;
+        font-size: 28px;
+        line-height: 1.2;
+        color: #5a5a5a;
+        z-index: 3;
+      }
+
+      /* --- Chip strip (Phase C) --- */
+      [data-composition-id="beat-4-architecture"] .b4-chip-wrap {
+        position: absolute;
+        top: 870px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1400px;
+        height: 119px; /* 163 * (1400/1920) ≈ 118.9 */
+        overflow: hidden;
+        z-index: 4;
+      }
+      [data-composition-id="beat-4-architecture"] .b4-chip {
+        width: 1400px;
+        height: auto;
+        display: block;
+      }
+    </style>
+
+    <!-- Phase A: Title -->
+    <div class="b4-title">EOM v0.2 — architecture</div>
+
+    <!-- Phase B: Diagram -->
+    <div class="b4-diagram-wrap">
+      <svg
+        class="b4-diagram"
+        viewBox="0 0 1400 620"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <!-- Core IR box: rounded rect, ink stroke 2px on cream fill.
+             Box is 300x80 centred at x=700 (so x=550..850), y=20..100. -->
+        <rect
+          class="b4-core-box b4-draw"
+          x="550"
+          y="20"
+          width="300"
+          height="80"
+          rx="8"
+          ry="8"
+          fill="#fafaf7"
+          stroke="#111111"
+          stroke-width="2"
+          pathLength="1"
+        />
+        <!-- Core IR label centred inside box -->
+        <text
+          class="b4-core-label b4-core-text"
+          x="700"
+          y="68"
+          text-anchor="middle"
+        >Core IR</text>
+
+        <!-- Vertical drop from Core IR bottom (700,100) to junction (700,150) -->
+        <line
+          class="b4-branch-trunk b4-draw"
+          x1="700" y1="100" x2="700" y2="150"
+          stroke="#111111" stroke-width="2"
+          pathLength="1"
+        />
+
+        <!-- Left branch: from (700,150) -> (350,150) -> (350,230). Polyline path. -->
+        <path
+          class="b4-branch-left b4-draw"
+          d="M 700 150 L 350 150 L 350 230"
+          fill="none"
+          stroke="#111111"
+          stroke-width="2"
+          pathLength="1"
+        />
+
+        <!-- Right branch: from (700,150) -> (1050,150) -> (1050,230). -->
+        <path
+          class="b4-branch-right b4-draw"
+          d="M 700 150 L 1050 150 L 1050 230"
+          fill="none"
+          stroke="#111111"
+          stroke-width="2"
+          pathLength="1"
+        />
+
+        <!-- Gold arrow tips just above each dialect box (sparse accent).
+             Triangle pointing down at left (350,232) and right (1050,232). -->
+        <polygon
+          class="b4-arrow-tip b4-tip-left"
+          points="340,222 360,222 350,238"
+        />
+        <polygon
+          class="b4-arrow-tip b4-tip-right"
+          points="1040,222 1060,222 1050,238"
+        />
+
+        <!-- Left dialect box: outbound. 280x70, centred at x=350. -->
+        <rect
+          class="b4-dialect-box b4-box-left b4-draw"
+          x="210"
+          y="245"
+          width="280"
+          height="70"
+          rx="6"
+          ry="6"
+          fill="#fafaf7"
+          stroke="#111111"
+          stroke-width="2"
+          pathLength="1"
+        />
+        <text
+          class="b4-dialect-label b4-label-left"
+          x="350"
+          y="287"
+          text-anchor="middle"
+        >outbound dialect</text>
+        <!-- Gold underline beneath the outbound label (single accent rule) -->
+        <line
+          class="b4-dialect-underline b4-under-left b4-draw"
+          x1="240" y1="305" x2="460" y2="305"
+          pathLength="1"
+        />
+
+        <!-- Right dialect box: inbound. 280x70, centred at x=1050. -->
+        <rect
+          class="b4-dialect-box b4-box-right b4-draw"
+          x="910"
+          y="245"
+          width="280"
+          height="70"
+          rx="6"
+          ry="6"
+          fill="#fafaf7"
+          stroke="#111111"
+          stroke-width="2"
+          pathLength="1"
+        />
+        <text
+          class="b4-dialect-label b4-label-right"
+          x="1050"
+          y="287"
+          text-anchor="middle"
+        >inbound dialect</text>
+        <line
+          class="b4-dialect-underline b4-under-right b4-draw"
+          x1="940" y1="305" x2="1160" y2="305"
+          pathLength="1"
+        />
+
+        <!-- Left leaves: outbound lowering targets. Stack from y=380 down. -->
+        <text
+          class="b4-leaf-label b4-leaf-l1"
+          x="350" y="380" text-anchor="middle"
+        >HTML newspaper</text>
+        <text
+          class="b4-leaf-label b4-leaf-l2"
+          x="350" y="425" text-anchor="middle"
+        >mobile cards</text>
+        <text
+          class="b4-leaf-label b4-leaf-l3"
+          x="350" y="470" text-anchor="middle"
+        >slide deck</text>
+
+        <!-- Right leaves: inbound lowering targets. -->
+        <text
+          class="b4-leaf-label b4-leaf-r1"
+          x="1050" y="380" text-anchor="middle"
+        >LLM context-pack</text>
+        <text
+          class="b4-leaf-label b4-leaf-r2"
+          x="1050" y="425" text-anchor="middle"
+        >retrieval payload</text>
+        <text
+          class="b4-leaf-label b4-leaf-r3"
+          x="1050" y="470" text-anchor="middle"
+        >tool-call payload</text>
+      </svg>
+    </div>
+
+    <!-- Phase C: Caption + chip strip -->
+    <div class="b4-cf-caption">Deployed on the Cloudflare suite</div>
+    <div class="b4-chip-wrap">
+      <img
+        class="b4-chip"
+        src="../playwright/shots/10-hero-bindings.png"
+        alt=""
+      />
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      const scope = '[data-composition-id="beat-4-architecture"]';
+
+      // -------------------------------------------------------------------
+      // Phase A: Title fade-up (0..3s)
+      // -------------------------------------------------------------------
+      tl.fromTo(
+        scope + " .b4-title",
+        { opacity: 0, y: 24 },
+        { opacity: 1, y: 0, duration: 0.9, ease: "power3.out" },
+        0.2,
+      );
+
+      // -------------------------------------------------------------------
+      // Phase B: Diagram build (3..18s) — staged stroke draws + fade-ups
+      // -------------------------------------------------------------------
+      // Pre-hide everything that animates after t=3 so the title can sit alone.
+      // SVG path elements: dashoffset 1 -> 0. Labels/leaves: opacity 0 -> 1.
+      tl.set(
+        scope + " .b4-core-text, " +
+        scope + " .b4-label-left, " +
+        scope + " .b4-label-right, " +
+        scope + " .b4-tip-left, " +
+        scope + " .b4-tip-right, " +
+        scope + " .b4-leaf-l1, " +
+        scope + " .b4-leaf-l2, " +
+        scope + " .b4-leaf-l3, " +
+        scope + " .b4-leaf-r1, " +
+        scope + " .b4-leaf-r2, " +
+        scope + " .b4-leaf-r3",
+        { opacity: 0 },
+        0,
+      );
+
+      // 3.0s — Core IR box draws (0.8s)
+      tl.fromTo(
+        scope + " .b4-core-box",
+        { strokeDashoffset: 1 },
+        { strokeDashoffset: 0, duration: 0.8, ease: "power2.inOut" },
+        3.0,
+      );
+      // 3.6s — Core IR label fades in
+      tl.fromTo(
+        scope + " .b4-core-text",
+        { opacity: 0, y: -6 },
+        { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" },
+        3.6,
+      );
+
+      // 4.2s — Vertical trunk from Core IR bottom to junction
+      tl.fromTo(
+        scope + " .b4-branch-trunk",
+        { strokeDashoffset: 1 },
+        { strokeDashoffset: 0, duration: 0.5, ease: "none" },
+        4.2,
+      );
+
+      // 4.8s — Left branch draws (1.0s)
+      tl.fromTo(
+        scope + " .b4-branch-left",
+        { strokeDashoffset: 1 },
+        { strokeDashoffset: 0, duration: 1.0, ease: "power1.inOut" },
+        4.8,
+      );
+      // 5.2s — Right branch draws (1.0s), staggered 0.4s after left
+      tl.fromTo(
+        scope + " .b4-branch-right",
+        { strokeDashoffset: 1 },
+        { strokeDashoffset: 0, duration: 1.0, ease: "power1.inOut" },
+        5.2,
+      );
+
+      // 5.9s — Gold arrow tips pop in (left then right)
+      tl.fromTo(
+        scope + " .b4-tip-left",
+        { opacity: 0, scale: 0.6, transformOrigin: "50% 50%" },
+        { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(2)" },
+        5.9,
+      );
+      tl.fromTo(
+        scope + " .b4-tip-right",
+        { opacity: 0, scale: 0.6, transformOrigin: "50% 50%" },
+        { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(2)" },
+        6.1,
+      );
+
+      // 6.5s — Left dialect box draws
+      tl.fromTo(
+        scope + " .b4-box-left",
+        { strokeDashoffset: 1 },
+        { strokeDashoffset: 0, duration: 0.7, ease: "power2.inOut" },
+        6.5,
+      );
+      // 6.7s — Right dialect box draws
+      tl.fromTo(
+        scope + " .b4-box-right",
+        { strokeDashoffset: 1 },
+        { strokeDashoffset: 0, duration: 0.7, ease: "power2.inOut" },
+        6.7,
+      );
+
+      // 7.3s — dialect labels fade in
+      tl.fromTo(
+        scope + " .b4-label-left",
+        { opacity: 0, y: -4 },
+        { opacity: 1, y: 0, duration: 0.45, ease: "power2.out" },
+        7.3,
+      );
+      tl.fromTo(
+        scope + " .b4-label-right",
+        { opacity: 0, y: -4 },
+        { opacity: 1, y: 0, duration: 0.45, ease: "power2.out" },
+        7.45,
+      );
+
+      // 7.9s — gold underlines under dialect labels (sparse accent)
+      tl.fromTo(
+        scope + " .b4-under-left",
+        { strokeDashoffset: 1 },
+        { strokeDashoffset: 0, duration: 0.55, ease: "expo.out" },
+        7.9,
+      );
+      tl.fromTo(
+        scope + " .b4-under-right",
+        { strokeDashoffset: 1 },
+        { strokeDashoffset: 0, duration: 0.55, ease: "expo.out" },
+        8.05,
+      );
+
+      // 8.8s onward — leaves fade-up with stagger (200ms per leaf)
+      // Left column
+      tl.fromTo(
+        scope + " .b4-leaf-l1",
+        { opacity: 0, y: 10 },
+        { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" },
+        8.8,
+      );
+      tl.fromTo(
+        scope + " .b4-leaf-l2",
+        { opacity: 0, y: 10 },
+        { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" },
+        9.0,
+      );
+      tl.fromTo(
+        scope + " .b4-leaf-l3",
+        { opacity: 0, y: 10 },
+        { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" },
+        9.2,
+      );
+      // Right column — interleaved cadence
+      tl.fromTo(
+        scope + " .b4-leaf-r1",
+        { opacity: 0, y: 10 },
+        { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" },
+        8.9,
+      );
+      tl.fromTo(
+        scope + " .b4-leaf-r2",
+        { opacity: 0, y: 10 },
+        { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" },
+        9.1,
+      );
+      tl.fromTo(
+        scope + " .b4-leaf-r3",
+        { opacity: 0, y: 10 },
+        { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" },
+        9.3,
+      );
+
+      // Diagram fully built by ~9.8s. Hold 3..18s window finishes with breath.
+
+      // -------------------------------------------------------------------
+      // Phase C: Caption + chip strip (18..32s)
+      // -------------------------------------------------------------------
+      tl.set(
+        scope + " .b4-cf-caption, " + scope + " .b4-chip-wrap",
+        { opacity: 0 },
+        0,
+      );
+
+      // 18.0s — caption fades up first
+      tl.fromTo(
+        scope + " .b4-cf-caption",
+        { opacity: 0, y: 16 },
+        { opacity: 1, y: 0, duration: 0.7, ease: "power3.out" },
+        18.0,
+      );
+      // 18.5s — chip strip fades up
+      tl.fromTo(
+        scope + " .b4-chip-wrap",
+        { opacity: 0, y: 24 },
+        { opacity: 1, y: 0, duration: 0.9, ease: "power3.out" },
+        18.5,
+      );
+
+      // Phase D: Static hold 32..35s. No exit animations.
+
+      window.__timelines["beat-4-architecture"] = tl;
+    </script>
+  </div>
+</template>

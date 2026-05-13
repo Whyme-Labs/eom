@@ -1,0 +1,127 @@
+<template id="captions-template">
+  <div
+    data-composition-id="captions"
+    data-width="1920"
+    data-height="1080"
+    data-start="0"
+    data-duration="180"
+  >
+    <style>
+      [data-composition-id="captions"] {
+        position: absolute;
+        inset: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        color: #111111;
+        pointer-events: none;
+      }
+      [data-composition-id="captions"] .cap-wrap {
+        position: absolute;
+        left: 50%;
+        bottom: 96px;
+        width: 1600px;
+        margin-left: -800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        visibility: hidden;
+      }
+      [data-composition-id="captions"] .cap {
+        font-size: 38px;
+        line-height: 1.35;
+        text-align: center;
+        padding: 18px 32px;
+        background: rgba(250, 250, 247, 0.92);
+        border-top: 1px solid #B8860B;
+        border-bottom: 1px solid #B8860B;
+        max-width: 1500px;
+        font-weight: 600;
+      }
+    </style>
+
+    <!-- All caption blocks are rendered once; opacity + visibility are driven
+         by the timeline. Hard-kill tweens after each exit prevent stuck
+         captions per the hyperframes caption_exit_missing_hard_kill rule. -->
+    <div id="cap-container"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      (function () {
+        const ROOT = document.querySelector('[data-composition-id="captions"]');
+        const CONTAINER = ROOT.querySelector('#cap-container');
+
+        // Captions baked in from transcript.json (markdown emphasis stripped).
+        // Regenerate with `python3 -c "..."` if the source script changes.
+        const CAPTIONS = [
+          {"start": 0,       "end": 2.051,   "text": "Markdown was built for storage."},
+          {"start": 2.301,   "end": 3.901,   "text": "Not for dialogue."},
+          {"start": 4.151,   "end": 11.536,  "text": "Every chat with an AI is a flat byte stream — both sides re-derive what matters every turn."},
+          {"start": 11.786,  "end": 14.7,    "text": "So we built a wire format for it."},
+          {"start": 15,      "end": 24.866,  "text": "EOM is a two-way wire format between humans and models, with attention budgets and source grounding built in."},
+          {"start": 25.116,  "end": 27.306,  "text": "One IR. Two lowerings."},
+          {"start": 27.556,  "end": 30.296,  "text": "Outbound — AI to human."},
+          {"start": 30.546,  "end": 35.486,  "text": "The same EOM document projects to a newspaper brief."},
+          {"start": 35.736,  "end": 42.866,  "text": "Headline. Lede. Body. Archive. Every claim grounded to a span in the source."},
+          {"start": 43.116,  "end": 49.7,    "text": "Twelve formal validators. H1 through H12. This document passes all of them."},
+          {"start": 50,      "end": 53.967,  "text": "Inbound — human to AI."},
+          {"start": 54.217,  "end": 57.397,  "text": "Same IR. Different lowering."},
+          {"start": 57.647,  "end": 67.965,  "text": "We ask the same model the same question — with two different contexts."},
+          {"start": 68.215,  "end": 70.605,  "text": "Left: raw markdown."},
+          {"start": 70.855,  "end": 74.035,  "text": "Right: the EOM context-pack."},
+          {"start": 74.285,  "end": 77.465,  "text": "Same answer. Smaller payload."},
+          {"start": 77.715,  "end": 80.095,  "text": "0.30× the tokens."},
+          {"start": 80.345,  "end": 81.945,  "text": "70% reduction."},
+          {"start": 82.195,  "end": 94.106,  "text": "Across our benchmark — three documents, fifteen questions — EOM cuts input tokens by 52%."},
+          {"start": 94.356,  "end": 99.916,  "text": "The pack is editorially lossy by design."},
+          {"start": 100.166, "end": 105.726, "text": "Tier-A always survives. Tier-C compresses. Tier-D drops."},
+          {"start": 105.976, "end": 114.7,   "text": "High-salience answers preserved. Tail detail demoted by priority, not by accident."},
+          {"start": 115,     "end": 120.503, "text": "One core IR. Two asymmetric dialects. Shared validator."},
+          {"start": 120.753, "end": 126.936, "text": "Outbound carries visual primitives — lede, hero, factbox, archive."},
+          {"start": 127.186, "end": 136.126, "text": "Inbound carries model-context primitives — system intent, role tags, evidence layers, token budgets."},
+          {"start": 136.376, "end": 140.506, "text": "Same blocks underneath. Different projections out."},
+          {"start": 140.756, "end": 149.7,   "text": "Deployed on the Cloudflare suite — Pages, Workers, R2, D1, KV, Workers AI."},
+          {"start": 150,     "end": 155.756, "text": "For the Unsloth track, we fine-tuned Gemma-4-E4B on Modal."},
+          {"start": 156.006, "end": 161.126, "text": "bf16. Rank-32 LoRA. Thirty epochs. Canonical Unsloth recipe."},
+          {"start": 161.376, "end": 169.7,   "text": "The adapter is the IR frontend — raw text in, EOM out, offline."},
+          {"start": 170,     "end": 172.98,  "text": "Markdown is for storage."},
+          {"start": 173.23,  "end": 176.22,  "text": "EOM is for dialogue."},
+          {"start": 176.47,  "end": 178.7,   "text": "Spec → docs/SPEC-v0.2.md."},
+          {"start": 178.95,  "end": 179.7,   "text": "eom-demo.swmengappdev.workers.dev"}
+        ];
+
+        // Build the timeline synchronously (no async/await — capture engine
+        // reads window.__timelines after page load).
+        const tl = gsap.timeline({ paused: true });
+        const FADE = 0.25;
+        const EXIT = 0.25;
+
+        CAPTIONS.forEach((c, i) => {
+          const wrap = document.createElement('div');
+          wrap.className = 'cap-wrap';
+          wrap.id = 'cap-' + i;
+          const inner = document.createElement('div');
+          inner.className = 'cap';
+          inner.textContent = c.text;
+          wrap.appendChild(inner);
+          CONTAINER.appendChild(wrap);
+
+          // Entrance: at start time, fade + visibility on
+          tl.set(wrap, { visibility: 'visible' }, c.start);
+          tl.fromTo(wrap, { opacity: 0, y: 8 },
+            { opacity: 1, y: 0, duration: FADE, ease: 'power2.out' }, c.start);
+
+          // Exit: just before end time, fade out
+          const exitStart = Math.max(c.start + FADE, c.end - EXIT);
+          tl.to(wrap, { opacity: 0, y: -6, duration: EXIT, ease: 'power2.in' }, exitStart);
+
+          // Hard kill — per hyperframes caption_exit_missing_hard_kill rule:
+          // ensures no later tween or seek can resurrect this caption.
+          tl.set(wrap, { opacity: 0, visibility: 'hidden' }, exitStart + EXIT);
+        });
+
+        window.__timelines = window.__timelines || {};
+        window.__timelines['captions'] = tl;
+      })();
+    </script>
+  </div>
+</template>

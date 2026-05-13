@@ -1,0 +1,275 @@
+<template id="beat-6-close-template">
+  <div
+    data-composition-id="beat-6-close"
+    data-width="1920"
+    data-height="1080"
+    data-start="0"
+    data-duration="10"
+  >
+    <style>
+      [data-composition-id="beat-6-close"] {
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        background: #fafaf7;
+        overflow: hidden;
+        font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+        color: #111111;
+      }
+
+      /* Faint horizontal text-grain — matches Beat 1 for visual continuity. */
+      [data-composition-id="beat-6-close"] .b6-grain {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        background-image: repeating-linear-gradient(
+          to bottom,
+          rgba(17, 17, 17, 0.012) 0px,
+          rgba(17, 17, 17, 0.012) 1px,
+          transparent 1px,
+          transparent 3px
+        );
+        z-index: 1;
+      }
+
+      /* Scene-content stack — flexbox column, full frame, vertically centered.
+         Brand mark + contrast pair sit in the upper-middle; URL block at the
+         bottom is absolutely positioned to anchor the close. */
+      [data-composition-id="beat-6-close"] .b6-stack {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 56px;
+        padding: 200px 160px 280px 160px;
+        box-sizing: border-box;
+        z-index: 3;
+      }
+
+      /* Brand mark — Georgia 700, 240px ink, centered via flexbox parent. */
+      [data-composition-id="beat-6-close"] .b6-brand {
+        font-family: Georgia, "Times New Roman", serif;
+        font-weight: 700;
+        font-size: 240px;
+        line-height: 1;
+        color: #111111;
+        letter-spacing: -0.01em;
+        text-align: center;
+        will-change: transform, opacity;
+      }
+
+      /* Contrast pair — two Georgia lines, stacked, both centered. */
+      [data-composition-id="beat-6-close"] .b6-pair {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+      }
+
+      [data-composition-id="beat-6-close"] .b6-line-a {
+        font-family: Georgia, "Times New Roman", serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 1.2;
+        color: #5a5a5a;
+        text-align: center;
+        will-change: transform, opacity;
+      }
+
+      [data-composition-id="beat-6-close"] .b6-line-b {
+        font-family: Georgia, "Times New Roman", serif;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.2;
+        color: #111111;
+        text-align: center;
+        will-change: transform, opacity;
+      }
+
+      /* URL block — bottom of frame, absolutely positioned so it doesn't push
+         the brand-mark stack around. Contains: gold rule + two mono lines. */
+      [data-composition-id="beat-6-close"] .b6-url-block {
+        position: absolute;
+        left: 50%;
+        bottom: 120px;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 22px;
+        z-index: 3;
+      }
+
+      /* Hairline gold rule above the URL pair — 240px wide, antique gold. */
+      [data-composition-id="beat-6-close"] .b6-rule {
+        width: 240px;
+        height: 2px;
+      }
+      [data-composition-id="beat-6-close"] .b6-rule svg {
+        display: block;
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+      }
+      [data-composition-id="beat-6-close"] .b6-rule-path {
+        stroke: #b8860b;
+        stroke-width: 1;
+        fill: none;
+        stroke-linecap: round;
+        will-change: stroke-dashoffset, opacity;
+      }
+
+      [data-composition-id="beat-6-close"] .b6-url {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      [data-composition-id="beat-6-close"] .b6-url-line {
+        font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+        font-size: 28px;
+        line-height: 1.3;
+        color: #5a5a5a;
+        letter-spacing: 0.01em;
+        text-align: center;
+        will-change: transform, opacity;
+      }
+    </style>
+
+    <div class="b6-grain"></div>
+
+    <div class="b6-stack">
+      <div class="b6-brand">📰 EOM</div>
+      <div class="b6-pair">
+        <div class="b6-line-a">Markdown is for storage.</div>
+        <div class="b6-line-b">EOM is for dialogue.</div>
+      </div>
+    </div>
+
+    <div class="b6-url-block">
+      <div class="b6-rule">
+        <svg viewBox="0 0 240 2" preserveAspectRatio="none" aria-hidden="true">
+          <path class="b6-rule-path" d="M 0 1 L 240 1" />
+        </svg>
+      </div>
+      <div class="b6-url">
+        <div class="b6-url-line b6-url-spec">Spec &rarr; docs/SPEC-v0.2.md</div>
+        <div class="b6-url-line b6-url-demo">eom-demo.swmengappdev.workers.dev</div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      (function () {
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        const scope = '[data-composition-id="beat-6-close"]';
+        const sel = (s) => scope + " " + s;
+
+        // Phase A — Brand mark (0..2.5s)
+        // Georgia 240px ink, centered via flexbox. Entrance: fade + tiny y rise
+        // + slight scale settle. NO transform translate(-50%, -50%) — flexbox
+        // owns centering, so GSAP can freely write transform.
+        tl.fromTo(
+          sel(".b6-brand"),
+          { opacity: 0, y: -30, scale: 0.95 },
+          {
+            opacity: 1,
+            y: 0,
+            scale: 1,
+            duration: 1.0,
+            ease: "power2.out",
+          },
+          0.2
+        );
+
+        // Phase B — Contrast pair (2.5..6.5s)
+        // Line A: italic muted, lands first. Line B: bold ink, lands 1.7s later
+        // on the implied piano-chord beat. Different eases per line for
+        // entrance-pattern variety.
+        tl.fromTo(
+          sel(".b6-line-a"),
+          { opacity: 0, y: 20 },
+          { opacity: 1, y: 0, duration: 0.9, ease: "power2.out" },
+          2.8
+        );
+
+        tl.fromTo(
+          sel(".b6-line-b"),
+          { opacity: 0, y: 24 },
+          { opacity: 1, y: 0, duration: 1.0, ease: "expo.out" },
+          4.5
+        );
+
+        // Phase C — URL anchor (6.5..9s)
+        // Two mono lines fade-up with stagger, then the gold rule draws via
+        // stroke-dashoffset. Rule draws AFTER the URL lines settle so the rule
+        // reads as the editorial cap on the close.
+        tl.fromTo(
+          sel(".b6-url-spec"),
+          { opacity: 0, y: 14 },
+          { opacity: 1, y: 0, duration: 0.7, ease: "power3.out" },
+          6.5
+        );
+
+        tl.fromTo(
+          sel(".b6-url-demo"),
+          { opacity: 0, y: 14 },
+          { opacity: 1, y: 0, duration: 0.7, ease: "power3.out" },
+          7.0
+        );
+
+        // Gold hairline — 240px path length, draws left→right.
+        tl.fromTo(
+          sel(".b6-rule-path"),
+          { strokeDasharray: 240, strokeDashoffset: 240, opacity: 0.9 },
+          {
+            strokeDashoffset: 0,
+            opacity: 0.9,
+            duration: 1.2,
+            ease: "power1.inOut",
+          },
+          7.4
+        );
+
+        // Phase D — Resolution fade (9..10s)
+        // FINAL SCENE — exit fades are allowed here only (and only here in the
+        // entire video). Fade brand mark, contrast pair, and URL lines. Keep
+        // the gold rule visible as the final editorial mark.
+        tl.to(
+          sel(".b6-brand"),
+          { opacity: 0, duration: 1.0, ease: "power2.in" },
+          9.0
+        );
+        tl.to(
+          sel(".b6-line-a"),
+          { opacity: 0, duration: 1.0, ease: "power2.in" },
+          9.0
+        );
+        tl.to(
+          sel(".b6-line-b"),
+          { opacity: 0, duration: 1.0, ease: "power2.in" },
+          9.0
+        );
+        tl.to(
+          sel(".b6-url-spec"),
+          { opacity: 0, duration: 1.0, ease: "power2.in" },
+          9.0
+        );
+        tl.to(
+          sel(".b6-url-demo"),
+          { opacity: 0, duration: 1.0, ease: "power2.in" },
+          9.0
+        );
+        // Gold rule intentionally NOT faded — remains as the closing mark.
+
+        window.__timelines["beat-6-close"] = tl;
+      })();
+    </script>
+  </div>
+</template>

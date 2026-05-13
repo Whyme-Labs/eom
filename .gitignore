@@ -47,3 +47,7 @@ video/*/narration.mp3
 # video/*/playwright/shots/ (force-included below)
 video/*/renders/
 video/*/snapshots/
+
+# HyperFrames studio caches (regenerable)
+video/*/.thumbnails/
+video/*/.waveform-cache/

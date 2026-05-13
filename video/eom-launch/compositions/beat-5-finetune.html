@@ -1,0 +1,366 @@
+<template id="beat-5-finetune-template">
+  <div
+    data-composition-id="beat-5-finetune"
+    data-width="1920"
+    data-height="1080"
+    data-start="0"
+    data-duration="20"
+  >
+    <style>
+      [data-composition-id="beat-5-finetune"] {
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        background: #fafaf7;
+        overflow: hidden;
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+        color: #111111;
+      }
+
+      /* Title above the card — Georgia, ink, centered. */
+      [data-composition-id="beat-5-finetune"] .b5-title {
+        position: absolute;
+        top: 130px;
+        left: 0;
+        width: 1920px;
+        text-align: center;
+        font-family: Georgia, "Times New Roman", serif;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 1.2;
+        color: #111111;
+        letter-spacing: 0.005em;
+        z-index: 4;
+      }
+      [data-composition-id="beat-5-finetune"] .b5-title .gold-token {
+        color: #111111; /* tween target #B8860B */
+        font-weight: 600;
+      }
+
+      /* Terminal card — centered, 1400x680, cream-white, sharp corners.
+         Centered on 1920x1080 => left = (1920-1400)/2 = 260, top ~= 220. */
+      [data-composition-id="beat-5-finetune"] .b5-card {
+        position: absolute;
+        left: 260px;
+        top: 220px;
+        width: 1400px;
+        height: 680px;
+        background: #ffffff;
+        border: 1px solid #111111;
+        border-radius: 0;
+        box-sizing: border-box;
+        padding: 48px;
+        z-index: 3;
+        font-family:
+          ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+        font-size: 22px;
+        line-height: 1.55;
+        color: #111111;
+        overflow: hidden;
+      }
+
+      /* Antique gold top-rule (4px) just inside the top border. */
+      [data-composition-id="beat-5-finetune"] .b5-card-rule {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: #b8860b;
+      }
+
+      /* Terminal lines — column layout. */
+      [data-composition-id="beat-5-finetune"] .b5-lines {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        max-width: 1000px; /* keeps lines away from the sparkline corner */
+      }
+
+      [data-composition-id="beat-5-finetune"] .b5-line {
+        display: block;
+        white-space: nowrap;
+        overflow: visible;
+      }
+
+      /* Muted prompt prefix used inside the recipe excerpt block. */
+      [data-composition-id="beat-5-finetune"] .b5-muted {
+        color: #5a5a5a;
+      }
+
+      /* Typed-on-screen wrapper: animate max-width from 0 to a measured
+         value to reveal the inner content left-to-right. Deterministic
+         (no JS text replacement). */
+      [data-composition-id="beat-5-finetune"] .typed {
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        vertical-align: bottom;
+        max-width: 0;
+      }
+      [data-composition-id="beat-5-finetune"] .typed-content {
+        display: inline-block;
+      }
+
+      /* Gold-token span — color tween from ink to antique gold. */
+      [data-composition-id="beat-5-finetune"] .gold-token {
+        color: #111111;
+      }
+
+      /* Caret — block character at end of last typed line. */
+      [data-composition-id="beat-5-finetune"] .caret {
+        display: inline-block;
+        width: 0.6em;
+        margin-left: 2px;
+        color: #111111;
+        opacity: 0; /* hidden until phase E */
+      }
+
+      /* Indent for the recipe excerpt lines. */
+      [data-composition-id="beat-5-finetune"] .b5-recipe {
+        margin-top: 14px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      /* Sparkline cluster — anchored to top-right inside the card padding. */
+      [data-composition-id="beat-5-finetune"] .b5-spark-wrap {
+        position: absolute;
+        top: 56px; /* sits just below the 4px gold rule + card padding */
+        right: 56px;
+        width: 240px;
+        z-index: 5;
+        opacity: 0; /* hidden until phase D entrance */
+      }
+      [data-composition-id="beat-5-finetune"] .b5-spark {
+        display: block;
+        width: 240px;
+        height: 60px;
+      }
+      [data-composition-id="beat-5-finetune"] .b5-spark-caption {
+        margin-top: 8px;
+        font-family: Georgia, "Times New Roman", serif;
+        font-style: italic;
+        font-size: 18px;
+        line-height: 1.3;
+        color: #5a5a5a;
+        text-align: right;
+      }
+      [data-composition-id="beat-5-finetune"] .b5-spark-path {
+        fill: none;
+        stroke: #b8860b;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        /* Normalize path length to 100 so dash math is independent of
+           the actual geometric path length. */
+        stroke-dasharray: 100;
+        stroke-dashoffset: 100;
+      }
+    </style>
+
+    <!-- Title above the card -->
+    <div class="b5-title">
+      <span class="gold-token" data-token="unsloth">Unsloth</span> track
+      — Gemma-4-E4B fine-tune
+    </div>
+
+    <!-- Centered terminal card -->
+    <div class="b5-card">
+      <div class="b5-card-rule"></div>
+
+      <!-- Sparkline cluster (top-right inside card) -->
+      <div class="b5-spark-wrap">
+        <svg
+          class="b5-spark"
+          viewBox="0 0 240 60"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <path
+            class="b5-spark-path"
+            pathLength="100"
+            d="M 0,5.0 L 8.28,11.6 L 16.55,18.0 L 24.83,23.9 L 33.10,28.7 L 41.38,32.7 L 49.66,36.4 L 57.93,39.4 L 66.21,41.9 L 74.48,44.2 L 82.76,46.0 L 91.03,47.5 L 99.31,48.8 L 107.59,49.9 L 115.86,50.8 L 124.14,51.5 L 132.41,52.2 L 140.69,52.8 L 148.97,53.1 L 157.24,53.5 L 165.52,53.9 L 173.79,54.1 L 182.07,54.2 L 190.34,54.4 L 198.62,54.6 L 206.90,54.8 L 215.17,54.8 L 223.45,55.0 L 231.72,55.0 L 240,55.0"
+          />
+        </svg>
+        <div class="b5-spark-caption">train loss 2.81 &rarr; 0.09</div>
+      </div>
+
+      <div class="b5-lines">
+        <!-- Line 1: modal volume ls ... -->
+        <span class="b5-line" data-line="1">
+          <span class="typed">
+            <span class="typed-content"
+              >$ modal volume ls eom-sft-out | grep gemma4-v5</span
+            >
+          </span>
+        </span>
+
+        <!-- Line 2: adapter directory output -->
+        <span class="b5-line" data-line="2">
+          <span class="typed">
+            <span class="typed-content">eom-sft-adapter-gemma4-v5/</span>
+          </span>
+        </span>
+
+        <!-- Line 3: cat scripts/modal_train_gemma4_v5.py | head -16 -->
+        <span class="b5-line" data-line="3">
+          <span class="typed">
+            <span class="typed-content"
+              >$ cat scripts/modal_train_gemma4_v5.py | head -16</span
+            >
+          </span>
+        </span>
+
+        <!-- Recipe excerpt -->
+        <div class="b5-recipe">
+          <span class="b5-line" data-line="4a">
+            <span class="typed">
+              <span class="typed-content"
+                ><span class="b5-muted">&gt; </span
+                ><span class="gold-token" data-token="r32">r=32</span>,
+                lora_alpha=32,</span
+              >
+            </span>
+          </span>
+          <span class="b5-line" data-line="4b">
+            <span class="typed">
+              <span class="typed-content"
+                ><span class="b5-muted">&gt; </span
+                ><span class="gold-token" data-token="bf16">bf16=True</span
+                >,</span
+              >
+            </span>
+          </span>
+          <span class="b5-line" data-line="4c">
+            <span class="typed">
+              <span class="typed-content"
+                ><span class="b5-muted">&gt; </span>num_train_epochs=30,</span
+              >
+            </span>
+          </span>
+          <span class="b5-line" data-line="4d">
+            <span class="typed">
+              <span class="typed-content"
+                ><span class="b5-muted">&gt; </span>learning_rate=1e-4,</span
+              ><span class="caret">&#9608;</span>
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const scope = '[data-composition-id="beat-5-finetune"]';
+
+      // ----- Phase A: card + title entrance (0..1.5s) -----
+      tl.fromTo(
+        scope + " .b5-card",
+        { opacity: 0, y: 40 },
+        { opacity: 1, y: 0, duration: 1.0, ease: "power3.out" },
+        0.1,
+      );
+      tl.fromTo(
+        scope + " .b5-title",
+        { opacity: 0, y: 24 },
+        { opacity: 1, y: 0, duration: 0.9, ease: "power2.out" },
+        0.2,
+      );
+
+      // ----- Phase B: typed lines (1.5..10s) -----
+      // Each .typed wrapper animates max-width 0 -> wide enough to reveal
+      // its content. We use 1200px which exceeds any single line's measured
+      // width, so the reveal completes at the tween's end regardless of
+      // exact pixel width. white-space: nowrap on the wrapper guarantees
+      // the inner content has a single horizontal run.
+      const typeReveal = (selector, start, duration) => {
+        tl.fromTo(
+          scope + " " + selector + " .typed",
+          { maxWidth: 0 },
+          { maxWidth: 1200, duration: duration, ease: "none" },
+          start,
+        );
+      };
+
+      // Line 1: "$ modal volume ls eom-sft-out | grep gemma4-v5" (50ch → ~1.67s)
+      typeReveal('[data-line="1"]', 1.5, 1.67);
+      // Line 2: "eom-sft-adapter-gemma4-v5/" (26ch → ~0.87s) — note: 3.5s start
+      typeReveal('[data-line="2"]', 3.5, 0.87);
+      // Line 3: "$ cat scripts/modal_train_gemma4_v5.py | head -16" (49ch → ~1.63s)
+      typeReveal('[data-line="3"]', 5.0, 1.63);
+      // Recipe lines — staggered, ~30 chars/sec.
+      typeReveal('[data-line="4a"]', 7.0, 0.75); // "> r=32, lora_alpha=32," (~22ch)
+      typeReveal('[data-line="4b"]', 7.85, 0.43); // "> bf16=True," (~13ch)
+      typeReveal('[data-line="4c"]', 8.4, 0.7); // "> num_train_epochs=30," (~21ch)
+      typeReveal('[data-line="4d"]', 9.2, 0.65); // "> learning_rate=1e-4," (~20ch)
+
+      // ----- Phase C: gold-token color highlights (8..14s) -----
+      // bf16 first, then r=32 (0.3s later), then "Unsloth" in title.
+      tl.to(
+        scope + ' .gold-token[data-token="bf16"]',
+        { color: "#B8860B", duration: 0.4, ease: "power1.inOut" },
+        9.85, // just after bf16=True finishes typing
+      );
+      tl.to(
+        scope + ' .gold-token[data-token="r32"]',
+        { color: "#B8860B", duration: 0.4, ease: "power1.inOut" },
+        10.15,
+      );
+      tl.to(
+        scope + ' .gold-token[data-token="unsloth"]',
+        { color: "#B8860B", duration: 0.5, ease: "power1.inOut" },
+        10.55,
+      );
+
+      // ----- Phase D: sparkline draw (10..17s) -----
+      // Reveal the wrap (opacity), then draw the stroke via dashoffset.
+      tl.to(
+        scope + " .b5-spark-wrap",
+        { opacity: 1, duration: 0.4, ease: "power1.out" },
+        10.0,
+      );
+      // SVG pathLength="100" + initial stroke-dasharray:100 / dashoffset:100
+      // make this independent of any geometric path length lookup.
+      // Tween dashoffset 100 -> 0 to draw the line left-to-right.
+      tl.to(
+        scope + " .b5-spark-path",
+        {
+          strokeDashoffset: 0,
+          duration: 4.0,
+          ease: "power1.inOut",
+        },
+        10.2,
+      );
+      // Caption fade in beneath the sparkline once the line is mostly drawn.
+      tl.fromTo(
+        scope + " .b5-spark-caption",
+        { opacity: 0, y: 6 },
+        { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" },
+        13.6,
+      );
+
+      // ----- Phase E: caret blink + hold (17..20s) -----
+      // 0.8s cycle (0.4 on, 0.4 off). 3s window → repeat = ceil(3/0.8) - 1 = 3.
+      tl.set(scope + " .caret", { opacity: 1 }, 17.0);
+      tl.to(
+        scope + " .caret",
+        {
+          opacity: 0,
+          duration: 0.4,
+          repeat: 3,
+          yoyo: true,
+          ease: "steps(1)",
+        },
+        17.0,
+      );
+
+      window.__timelines["beat-5-finetune"] = tl;
+    </script>
+  </div>
+</template>

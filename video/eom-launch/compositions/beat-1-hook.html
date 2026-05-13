@@ -1,0 +1,215 @@
+<template id="beat-1-hook-template">
+  <div
+    data-composition-id="beat-1-hook"
+    data-width="1920"
+    data-height="1080"
+    data-start="0"
+    data-duration="15"
+  >
+    <style>
+      [data-composition-id="beat-1-hook"] {
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        background: #fafaf7;
+        overflow: hidden;
+        font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+        color: #111111;
+      }
+
+      /* Faint horizontal text-grain — CSS-only, deterministic.
+         Repeating linear-gradient at 3px pitch, ~1% opacity. */
+      [data-composition-id="beat-1-hook"] .b1-grain {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        background-image: repeating-linear-gradient(
+          to bottom,
+          rgba(17, 17, 17, 0.012) 0px,
+          rgba(17, 17, 17, 0.012) 1px,
+          transparent 1px,
+          transparent 3px
+        );
+        z-index: 1;
+      }
+
+      /* Brand mark — Georgia, ink, upper-third, off-centre-left.
+         Positioned at ~30% from left, ~25% from top (baseline-ish). */
+      [data-composition-id="beat-1-hook"] .b1-brand {
+        position: absolute;
+        left: 576px;   /* 30% of 1920 */
+        top: 270px;    /* 25% of 1080 */
+        font-family: Georgia, "Times New Roman", serif;
+        font-weight: 700;
+        font-size: 168px;
+        line-height: 1;
+        color: #111111;
+        letter-spacing: -0.01em;
+        z-index: 3;
+        transform-origin: 50% 50%;
+        will-change: transform, opacity;
+      }
+
+      /* Hairline gold rule sits below the brand mark, spanning most of frame.
+         SVG is positioned absolutely; the <path> handles the draw animation. */
+      [data-composition-id="beat-1-hook"] .b1-rule {
+        position: absolute;
+        left: 160px;
+        top: 540px;
+        width: 1600px;
+        height: 4px;
+        z-index: 2;
+      }
+      [data-composition-id="beat-1-hook"] .b1-rule svg {
+        display: block;
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+      }
+      [data-composition-id="beat-1-hook"] .b1-rule-path {
+        stroke: #b8860b;
+        stroke-width: 2;
+        fill: none;
+        stroke-linecap: round;
+        /* dashoffset is animated by GSAP — initial state set there */
+      }
+
+      /* Bottom-right meta — monospaced, muted slate. */
+      [data-composition-id="beat-1-hook"] .b1-meta {
+        position: absolute;
+        right: 96px;
+        bottom: 72px;
+        font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+        font-size: 22px;
+        letter-spacing: 0.02em;
+        color: #5a5a5a;
+        z-index: 3;
+        will-change: transform, opacity;
+      }
+
+      /* Far-right editorial tick — a 1px ink hairline, vertical, decorative.
+         Mirrors the typographic mark in old broadsheet pages. */
+      [data-composition-id="beat-1-hook"] .b1-tick {
+        position: absolute;
+        right: 96px;
+        top: 96px;
+        width: 1px;
+        height: 56px;
+        background: #111111;
+        opacity: 0.7;
+        z-index: 3;
+        will-change: opacity;
+      }
+      [data-composition-id="beat-1-hook"] .b1-tick-label {
+        position: absolute;
+        right: 96px;
+        top: 168px;
+        font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+        font-size: 12px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: #5a5a5a;
+        z-index: 3;
+        will-change: opacity, transform;
+      }
+    </style>
+
+    <div class="b1-grain"></div>
+
+    <svg
+      class="b1-rule"
+      viewBox="0 0 1600 4"
+      preserveAspectRatio="none"
+      aria-hidden="true"
+    >
+      <path class="b1-rule-path" d="M 0 2 L 1600 2" />
+    </svg>
+
+    <div class="b1-brand">📰 EOM</div>
+
+    <div class="b1-tick"></div>
+    <div class="b1-tick-label">v0.2</div>
+
+    <div class="b1-meta">EOM v0.2 · github.com/Whyme-Labs/eom</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script>
+      (function () {
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        const scope = '[data-composition-id="beat-1-hook"]';
+        const sel = (s) => scope + " " + s;
+
+        // 1. Brand mark — soft fade + tiny y rise. Georgia ink, no scale jitter.
+        tl.fromTo(
+          sel(".b1-brand"),
+          { opacity: 0, y: 24 },
+          { opacity: 1, y: 0, duration: 1.2, ease: "power2.out" },
+          0.3
+        );
+
+        // 2. Hairline gold rule draws left → right via stroke-dashoffset.
+        //    Path length is 1600 (the line is x=0..1600 at y=2).
+        tl.fromTo(
+          sel(".b1-rule-path"),
+          { strokeDasharray: 1600, strokeDashoffset: 1600, opacity: 0.6 },
+          {
+            strokeDashoffset: 0,
+            opacity: 0.6,
+            duration: 3.0,
+            ease: "power1.inOut",
+          },
+          0.5
+        );
+
+        // 3. Editorial tick (hairline) — gentle fade.
+        tl.fromTo(
+          sel(".b1-tick"),
+          { opacity: 0, scaleY: 0.6, transformOrigin: "50% 0%" },
+          { opacity: 0.7, scaleY: 1, duration: 0.9, ease: "expo.out" },
+          1.2
+        );
+
+        // 4. Editorial tick label "v0.2" — fade + slight y.
+        tl.fromTo(
+          sel(".b1-tick-label"),
+          { opacity: 0, y: -8 },
+          { opacity: 1, y: 0, duration: 0.7, ease: "power3.out" },
+          1.4
+        );
+
+        // 5. Bottom-right meta tag — fade + slight y rise, last to land.
+        tl.fromTo(
+          sel(".b1-meta"),
+          { opacity: 0, y: 12 },
+          { opacity: 1, y: 0, duration: 0.9, ease: "power2.out" },
+          1.8
+        );
+
+        // 6. Subtle aliveness on the brand mark — a slow float, yoyo, finite repeat.
+        //    Beat duration is 15s. Float starts after the entrance settles at ~1.5s.
+        //    Each half-cycle is 3.0s → full cycle 6.0s. Window 1.5..15.0 = 13.5s.
+        //    Repeats needed: floor(13.5 / 6.0) = 2 → repeat: 2*2 - 1 = 3 half-cycles
+        //    actually: cycleDuration is one yoyo round-trip = 6.0s.
+        //    Math.ceil(13.5 / 6.0) - 1 = 2 → 2 additional repeats after the first cycle.
+        //    To stay safely inside the window we cap at 1 (one full out + back, then
+        //    one more out + back), then a final out tween will be interrupted by the
+        //    transition. We use repeat: 1 (= 2 full cycles), yoyo: true.
+        tl.to(
+          sel(".b1-brand"),
+          {
+            y: -6,
+            duration: 3.0,
+            ease: "sine.inOut",
+            yoyo: true,
+            repeat: 1,
+          },
+          1.5
+        );
+
+        window.__timelines["beat-1-hook"] = tl;
+      })();
+    </script>
+  </div>
+</template>
