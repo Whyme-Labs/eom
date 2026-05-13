@@ -21,19 +21,35 @@ Expect 213 passed.
 git push origin main
 ```
 
-## 2. Streamlit Cloud deploy
+## 2. Cloudflare Workers deploy
 
-The judges should be able to click a live URL.
+The judges should be able to click a live URL. The canonical demo lives
+in `web/` (Hono + static assets + Workers AI binding). The Streamlit
+demo at `demo/app.py` remains for local Python dev.
 
-1. Visit https://streamlit.io/cloud → New app.
-2. Repo `Whyme-Labs/eom`, branch `main`, main file `demo/app.py`.
-3. Advanced → Secrets → paste:
-   ```toml
-   OPENROUTER_API_KEY = "sk-or-..."
-   ```
-4. Deploy. Cold start ~2 min. Confirm http URL works.
+```bash
+cd web
+bun install                # if not done already
+bun run scripts/sync.ts    # refresh public/ from data/gold + data/bench
 
-Capture the URL — it goes in the Kaggle submission form.
+# One-time: log in to Cloudflare and set the secret
+bunx wrangler login
+bunx wrangler secret put OPENROUTER_API_KEY   # paste the sk-or-... key
+
+# (Optional, for the maximalist suite story) create the bindings
+# referenced by wrangler.jsonc and paste the returned ids in:
+bunx wrangler r2 bucket create eom-corpus
+bunx wrangler d1 create eom-data
+bunx wrangler kv namespace create CACHE
+
+bun run deploy             # wrangler deploy
+```
+
+Capture the worker URL (e.g. `eom-demo.<your-subdomain>.workers.dev`)
+— it goes in the Kaggle submission form.
+
+For local dev: `bun run dev` (= `wrangler dev --local`), opens
+`http://127.0.0.1:8787`. Reads `web/.dev.vars` for the OpenRouter key.
 
 ## 3. Record the video
 
@@ -91,12 +107,12 @@ Paste contents of `docs/KAGGLE-WRITEUP.md` (1163 words).
 ## 6. Pre-submit sanity checks
 
 - [ ] `git push origin main` succeeded; the public repo shows the latest commit
-- [ ] Streamlit Cloud URL loads without an error banner
-- [ ] Streamlit secret is set (test by clicking **🔄 Ask AI** with a sample loaded)
+- [ ] CF Worker URL loads without an error banner; the sample picker is populated
+- [ ] OPENROUTER_API_KEY secret is set on the Worker (test the **🔄 Ask AI** tab end-to-end)
 - [ ] Video plays end-to-end on a fresh tab (incognito, logged out)
 - [ ] `docs/SPEC-v0.2.md`, `docs/KAGGLE-WRITEUP.md`, `docs/VIDEO-SCRIPT.md`, `LICENSE` all visible on GitHub
 - [ ] Modal volume `eom-sft-out` still has `eom-sft-adapter-gemma4-v5`
-- [ ] No secrets in any committed file (`grep -r 'sk-or-' . --include='*.py' --include='*.md'` returns nothing)
+- [ ] No secrets in any committed file (`grep -r 'sk-or-' . --include='*.py' --include='*.ts' --include='*.md'` returns only placeholders)
 
 ## 7. Submit
 
