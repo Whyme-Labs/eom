@@ -35,14 +35,14 @@ captured-from-site assets are minimal (this is a SPA).
 | Asset | Type | Source | Beat | Role |
 |---|---|---|---|---|
 | `capture/screenshots/scroll-000.png` | static screenshot | hyperframes capture | Beat 1 | Full hero state, "demo at rest" |
-| `playwright/shots/sample-picker-open.png` | dynamic screenshot | Step 6 recorder | Beat 2 | Sidebar list of 32 docs scrolling past |
-| `playwright/shots/newspaper-populated.png` | dynamic screenshot | Step 6 recorder | Beat 2 | The rendered newspaper for paris-2024 |
-| `playwright/shots/newspaper-render.webm` | screen clip | Step 6 recorder | Beat 2 | 4-second pan over the newspaper render |
-| `playwright/shots/harness-pass.png` | dynamic screenshot | Step 6 recorder | Beat 2 | H1–H12 pass badge + metrics |
-| `playwright/shots/ask-ai-empty.png` | dynamic screenshot | Step 6 recorder | Beat 3 | Two empty cards, question loaded |
-| `playwright/shots/ask-ai-results.webm` | screen clip | Step 6 recorder | Beat 3 | Side-by-side answers populating |
-| `playwright/shots/compression-headline.png` | dynamic screenshot | Step 6 recorder | Beat 3 | The "0.31× / 69% reduction" line |
-| `playwright/shots/health-bindings.png` | dynamic screenshot | Step 6 recorder | Beat 4 | `R2, D1 (32 docs), KV, AI, OpenRouter` meta line, magnified |
+| `assets/sample-picker-open.png` | dynamic screenshot | Step 6 recorder | Beat 2 | Sidebar list of 32 docs scrolling past |
+| `assets/newspaper-populated.png` | dynamic screenshot | Step 6 recorder | Beat 2 | The rendered newspaper for paris-2024 |
+| `assets/newspaper-render.webm` | screen clip | Step 6 recorder | Beat 2 | 4-second pan over the newspaper render |
+| `assets/harness-pass.png` | dynamic screenshot | Step 6 recorder | Beat 2 | H1–H12 pass badge + metrics |
+| `assets/ask-ai-empty.png` | dynamic screenshot | Step 6 recorder | Beat 3 | Two empty cards, question loaded |
+| `assets/ask-ai-results.webm` | screen clip | Step 6 recorder | Beat 3 | Side-by-side answers populating |
+| `assets/compression-headline.png` | dynamic screenshot | Step 6 recorder | Beat 3 | The "0.31× / 69% reduction" line |
+| `assets/health-bindings.png` | dynamic screenshot | Step 6 recorder | Beat 4 | `R2, D1 (32 docs), KV, AI, OpenRouter` meta line, magnified |
 | inline SVG architecture diagram | drawn in composition | Beat 4 | the two-dialect tree from `docs/SPEC-v0.2.md` §1 |
 | `data/bench/results/20260510-094128.md` | text excerpt | repo file | Beat 3 | Benchmark numbers overlay |
 | Modal CLI `ls` output | typed-on-screen | mocked in composition | Beat 5 | `eom-sft-adapter-gemma4-v5` listing |

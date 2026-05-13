@@ -94,7 +94,7 @@
 
     <!-- Layer 1: Newspaper still with Ken Burns -->
     <div class="news-wrap">
-      <img class="news" src="../playwright/shots/02-newspaper.png" alt="" />
+      <img class="news" src="assets/02-newspaper.png" alt="" />
     </div>
 
     <!-- Layer 2: Source-span hover overlay -->
@@ -111,7 +111,7 @@
 
     <!-- Layer 3: Harness panel (right ~70% of 03-harness.png) -->
     <div class="harness-wrap">
-      <img class="harness" src="../playwright/shots/03-harness.png" alt="" />
+      <img class="harness" src="assets/03-harness.png" alt="" />
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
@@ -129,12 +129,14 @@
         { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" },
         0.1,
       );
-      // Child: Ken Burns scale 1.0 -> 1.03 across 12s. Single transform tween on .news.
+      // Ken Burns — span the FULL beat duration so the capture engine never
+      // sees a "post-tween-end" state on this element. (A 12s tween that
+      // resolved early caused the image to vanish under non-linear seek.)
       tl.fromTo(
         scope + " .news",
         { scale: 1.0 },
-        { scale: 1.03, duration: 12, ease: "none" },
-        0.1,
+        { scale: 1.04, duration: 35, ease: "none" },
+        0,
       );
 
       // --- Layer 2: source-span tooltip enters at 8s, holds (no exit) ---
@@ -155,6 +157,8 @@
       );
 
       // --- Layer 3: harness panel slides in at 14s, holds ---
+      // Hard-lock the after-state at t=35 so non-linear seek past the tween
+      // end can't reset the element back to opacity:0 / x:120.
       tl.set(scope + " .harness-wrap", { opacity: 0, x: 120 }, 0);
       tl.fromTo(
         scope + " .harness-wrap",
@@ -162,6 +166,11 @@
         { opacity: 1, x: 0, duration: 0.8, ease: "power3.out" },
         14.0,
       );
+      tl.set(scope + " .harness-wrap", { opacity: 1, x: 0 }, 14.8);
+
+      // Lock newspaper end-state too — extra safety against immediateRender
+      // shenanigans when the playhead lands past the Ken Burns end.
+      tl.set(scope + " .news", { scale: 1.04 }, 35);
 
       window.__timelines["beat-2-outbound"] = tl;
     </script>

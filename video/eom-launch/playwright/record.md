@@ -1,6 +1,6 @@
 # Playwright shots — recorder notes
 
-The 10 PNGs in `shots/` are the dynamic assets for the video. Each is a
+The 10 PNGs in `assets/` are the dynamic assets for the video. Each is a
 real 1920×1080 screenshot (or DOM-region screenshot) of the live demo at
 https://eom-demo.swmengappdev.workers.dev, taken with the Playwright MCP
 adapter against the production Worker.
