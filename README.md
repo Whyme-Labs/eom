@@ -27,10 +27,12 @@ This repo is the submission for the
 Unsloth track. Writeup at [`docs/KAGGLE-WRITEUP.md`](docs/KAGGLE-WRITEUP.md);
 3-minute video script at [`docs/VIDEO-SCRIPT.md`](docs/VIDEO-SCRIPT.md).
 
-**Live demo (Cloudflare Workers Suite):**
-[https://eom-demo.swmengappdev.workers.dev](https://eom-demo.swmengappdev.workers.dev)
-— Pages + Workers + R2 (gold corpus) + D1 (qsets + benchmark results) + KV
-(pack cache) + Workers AI binding + OpenRouter (inbound LLM).
+**Live site (Cloudflare Workers Suite):**
+- Marketing / landing → [eom-demo.swmengappdev.workers.dev](https://eom-demo.swmengappdev.workers.dev)
+- Interactive demo → [eom-demo.swmengappdev.workers.dev/app](https://eom-demo.swmengappdev.workers.dev/app)
+
+Stack: Pages + Workers + R2 (gold corpus) + D1 (qsets + benchmark results)
++ KV (pack cache) + Workers AI binding + OpenRouter (inbound LLM).
 
 The newspaper / context-pack / JSON / harness tabs are public. The **🔄 Ask AI**
 tab is BYO key — paste an OpenRouter `sk-or-…` in the sidebar and it stays
