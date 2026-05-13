@@ -6,19 +6,23 @@ recording with voice-over. Aspect 16:9, 1080p, 30fps.
 ## Pre-flight (run once before recording)
 
 ```bash
-# 1. Confirm env
-echo $OPENROUTER_API_KEY  # must be set
-git rev-parse --short HEAD  # latest master
+# 1. Confirm state
+git rev-parse --short HEAD  # latest main
+curl -fs https://eom-demo.swmengappdev.workers.dev/api/health | jq
 
-# 2. Warm OpenRouter caches by running the benchmark once
-uv run python -m bench.inbound --docs paris-2024 --no-judge
+# 2. Warm KV pack-cache + OpenRouter answer cache for the demo doc
+curl -s -X POST https://eom-demo.swmengappdev.workers.dev/api/render/pack \
+  -H 'content-type: application/json' \
+  -d '{"id":"news/paris-2024-olympics","budget":1500}' > /dev/null
 
-# 3. Boot Streamlit
-uv run streamlit run demo/app.py --server.port 8501
-# Open http://localhost:8501 in a clean browser window (no extensions, no
-# bookmark bar, full-screen). Use light mode.
+# 3. Open the live demo in a clean browser window
+#    URL:  https://eom-demo.swmengappdev.workers.dev
+#    Use light mode, no extensions visible, full-screen.
 
-# 4. Quit any noisy mac/win notification daemons (Slack, Mail) before record
+# 4. Paste your OpenRouter sk-or-… into the sidebar "OpenRouter key" field
+#    and click Save. It lives in localStorage; the Ask AI tab now works.
+
+# 5. Quit notification daemons (Slack, Mail) before record.
 ```
 
 ## Shot-by-shot
@@ -27,8 +31,10 @@ Timing is wall-clock; each row is one continuous shot unless noted.
 
 ### 0:00 — 0:15  Open with the pitch
 
-**On screen.** Streamlit landing page (pre-compile state). Title visible:
+**On screen.** Demo landing page at
+`https://eom-demo.swmengappdev.workers.dev`. Title visible:
 "📰 EOM — two-way wire format between humans and models". Caption visible.
+Hero meta line shows the live bindings: `R2, D1 (32 docs), KV, AI, OpenRouter`.
 
 **Voice-over.**
 > Today, the way humans and AIs talk is a flat byte stream — Markdown, raw
@@ -154,7 +160,9 @@ and the spec path.
 |---|---|
 | OpenRouter compile times out | Re-run; if still failing, switch to **rules** compiler in the sidebar — it's deterministic and offline. Use it for the outbound shot only. |
 | Ask AI side-by-side returns "not in document" on the pack side | The compression headline is still load-bearing; lean on the token numbers and acknowledge "pack is editorially lossy by design — that's the trade-off." This is true and on-message. |
-| Streamlit crashes mid-shot | Restart, refresh; the compile result is in session_state and survives reruns within a session but **not** across restarts — re-do the load+compile sequence. |
+| CF Worker returns 5xx | Hit the URL again — cold-start is rare. If sustained, point at the bench results table (D1) instead and explain the architecture from the screenshot. |
+| `/api/ask` returns 401 (missing key) | The sidebar key wasn't saved. Paste the key, click Save, verify the masked display appears, retry. |
+| OpenRouter key over rate-limit | The error surfaces in the answer panel. The compression headline is still load-bearing — point at it and acknowledge "rate-limited, the token numbers are what matters." |
 
 ## Numbers to memorise (for any improvised explanation)
 

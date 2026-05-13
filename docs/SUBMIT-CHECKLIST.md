@@ -53,12 +53,23 @@ For local dev: `bun run dev` (= `wrangler dev --local`), opens
 
 ## 3. Record the video
 
-`docs/VIDEO-SCRIPT.md` is the shot-by-shot. Pre-flight:
+`docs/VIDEO-SCRIPT.md` is the shot-by-shot. Two paths:
+
+**Programmatic (Playwright + Remotion)** — see `video/` (scaffold in
+progress). Replays the script deterministically; lets us re-render after
+any tweak.
+
+**Manual**: pre-flight against the live URL:
 
 ```bash
-export OPENROUTER_API_KEY=...
-uv run python -m bench.inbound --docs paris-2024 --no-judge   # warm caches
-uv run streamlit run demo/app.py --server.port 8501
+# Warm KV pack-cache so the recording isn't waiting on cold lookups
+curl -s -X POST https://eom-demo.swmengappdev.workers.dev/api/render/pack \
+  -H 'content-type: application/json' \
+  -d '{"id":"news/paris-2024-olympics","budget":1500}' > /dev/null
+
+# Open in clean browser, light mode, full-screen
+open https://eom-demo.swmengappdev.workers.dev
+# Paste OpenRouter sk-or-... in the sidebar Save field. Done.
 ```
 
 Record at 1080p, 30fps, 16:9. Upload to YouTube (unlisted is fine).

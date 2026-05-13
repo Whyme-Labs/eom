@@ -39,17 +39,29 @@ time). Free tier keys at [openrouter.ai/keys](https://openrouter.ai/keys).
 
 ## Quickstart
 
-```bash
-# Python 3.11 + uv
-uv venv && uv sync --extra dev
+**Live demo (no setup):** open
+[eom-demo.swmengappdev.workers.dev](https://eom-demo.swmengappdev.workers.dev),
+pick a sample, click the **🔄 Ask AI** tab. The first four tabs work without
+any key; **Ask AI** is BYO OpenRouter — paste `sk-or-…` in the sidebar.
 
-# Run the bidirectional Streamlit demo
-export OPENROUTER_API_KEY=sk-or-...   # for the prompted compiler + Ask AI tab
-uv run streamlit run demo/app.py
-# open http://localhost:8501
+**Local dev — Cloudflare path** (Bun + Wrangler):
+
+```bash
+cd web && bun install
+echo 'OPENROUTER_API_KEY=sk-or-...' > .dev.vars  # optional; only for /api/ask fallback
+bun run dev   # = wrangler dev --local, http://127.0.0.1:8787
 ```
 
-The demo's tabs cover both directions on the same compiled IR:
+**Local dev — Python path** (Streamlit, kept for offline iteration on the
+core library):
+
+```bash
+uv venv && uv sync --extra dev
+export OPENROUTER_API_KEY=sk-or-...
+uv run streamlit run demo/app.py     # http://localhost:8501
+```
+
+Both paths show the same 5 tabs:
 
 - **📰 Newspaper** — outbound HTML brief, hero/lede/body/archive
 - **🤖 Context pack** — inbound LLM payload, token-budgeted
@@ -136,7 +148,8 @@ uv run eom render --eom my.eom.json --target context-pack --budget 1000 --output
 | `eom/renderers/{newspaper,context_pack}.py` | Outbound + inbound lowerings |
 | `eom/repair.py` | Compile-with-repair loop |
 | `bench/inbound.py` + `data/bench/qsets.json` | Inbound benchmark |
-| `demo/app.py` | Bidirectional Streamlit demo |
+| `demo/app.py` | Bidirectional Streamlit demo (Python, offline-friendly) |
+| `web/` | Cloudflare Workers deploy (Pages + Workers + R2 + D1 + KV + AI) |
 | `scripts/modal_train_gemma4_v[2-5].py` | Unsloth-track fine-tune iterations |
 | `data/gold/` | 30+ hand-curated EOM examples passing H1-H12 |
 

@@ -171,7 +171,8 @@ kind of finding the Unsloth community benefits from.
 ## Repo
 
 - Spec: `docs/SPEC-v0.2.md`
-- Demo: `demo/app.py` (Streamlit, deployable to Streamlit Cloud)
+- Live demo: [`eom-demo.swmengappdev.workers.dev`](https://eom-demo.swmengappdev.workers.dev) (Cloudflare Workers Suite — Pages + Workers + R2 + D1 + KV + AI; BYO OpenRouter key for the inbound Ask AI tab)
+- Local demo: `web/` (Wrangler) or `demo/app.py` (Streamlit)
 - Benchmark: `bench/inbound.py` + `data/bench/qsets.json`
 - Validator: `eom/harness.py` (H1–H12)
 - Compilers: `eom/compilers/{rules,prompted,finetuned}.py`
