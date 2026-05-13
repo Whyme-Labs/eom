@@ -1,0 +1,145 @@
+{
+  "version": "0.1",
+  "document_type": "news",
+  "summary": "On 15 April 2019, a structural fire broke out at Notre-Dame de Paris, destroying the spire and most of the wooden roof; investigators believe it was caused by a cigarette or electrical short circuit. President Macron pledged restoration within five years; the cathedral reopened on 7 December 2024.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "Notre-Dame de Paris fire",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 26,
+        "quote": "Notre-Dame de Paris fire"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "On 15 April 2019, at 18:18 CEST, a structural fire broke out in the roof space of Notre-Dame de Paris, a medieval Catholic cathedral in Paris, France, that is part of the \"Paris, Banks of the Seine\" UNESCO World Heritage Site.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 28,
+        "end": 254,
+        "quote": "On 15 April 2019, at 18:18 CEST, a structural fire broke out in the roof space of Notre-Dame de Paris, a medieval Catholic cathedral in Paris, France, that is part of the \"Paris, Banks of the Seine\" UNESCO World Heritage Site."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "The fire, which investigators believe was started by a cigarette or an electrical short circuit, destroyed the cathedral's wooden spire (flèche) and most of the wooden roof and severely damaged the cathedral's upper walls. The vaulted stone ceiling largely contained the burning roof as it collapsed, preventing extensive damage to the interior. Many works of art and religious relics were moved to safety, but others suffered smoke damage, and some of the exterior art was damaged or destroyed. The cathedral's altar, two pipe organs, and three 13th-century rose windows suffered little or no damage. Three emergency workers were injured. The fire contaminated the site and nearby areas of Paris with toxic dust and lead.",
+      "attention_tier": "B",
+      "priority": 0.90,
+      "reading_order": 2,
+      "source_span": {
+        "start": 256,
+        "end": 978,
+        "quote": "The fire, which investigators believe was started by a cigarette or an electrical short circuit, destroyed the cathedral's wooden spire (flèche) and most of the wooden roof and severely damaged the cathedral's upper walls. The vaulted stone ceiling largely contained the burning roof as it collapsed, preventing extensive damage to the interior. Many works of art and religious relics were moved to safety, but others suffered smoke damage, and some of the exterior art was damaged or destroyed. The cathedral's altar, two pipe organs, and three 13th-century rose windows suffered little or no damage. Three emergency workers were injured. The fire contaminated the site and nearby areas of Paris with toxic dust and lead."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "The cathedral was then closed immediately. Two days after the blaze, President of France Emmanuel Macron set a five-year deadline to restore it. Notre-Dame did not hold a Christmas Mass in 2019 for the first time since 1803. By September 2021, donors had contributed over €840 million to the rebuilding effort. After three years of reconstruction, the cathedral reopened on 7 December 2024.",
+      "attention_tier": "C",
+      "priority": 0.80,
+      "reading_order": 3,
+      "source_span": {
+        "start": 980,
+        "end": 1370,
+        "quote": "The cathedral was then closed immediately. Two days after the blaze, President of France Emmanuel Macron set a five-year deadline to restore it. Notre-Dame did not hold a Christmas Mass in 2019 for the first time since 1803. By September 2021, donors had contributed over €840 million to the rebuilding effort. After three years of reconstruction, the cathedral reopened on 7 December 2024."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "Fire broke out in the attic beneath the cathedral's roof at 18:18 CEST. At 18:20, the fire alarm sounded and guards evacuated the cathedral; a guard was sent to investigate, but to the wrong location—the attic of the adjoining sacristy—where he found no fire. About fifteen minutes later, the error was discovered, but by the time guards had climbed the three hundred steps to the cathedral attic, the fire was well advanced. The alarm system was not designed to automatically notify the fire brigade, which was summoned at 18:51 after the guards had returned. Firefighters arrived within ten minutes.",
+      "attention_tier": "C",
+      "priority": 0.70,
+      "reading_order": 4,
+      "source_span": {
+        "start": 1381,
+        "end": 1982,
+        "quote": "Fire broke out in the attic beneath the cathedral's roof at 18:18 CEST. At 18:20, the fire alarm sounded and guards evacuated the cathedral; a guard was sent to investigate, but to the wrong location—the attic of the adjoining sacristy—where he found no fire. About fifteen minutes later, the error was discovered, but by the time guards had climbed the three hundred steps to the cathedral attic, the fire was well advanced. The alarm system was not designed to automatically notify the fire brigade, which was summoned at 18:51 after the guards had returned. Firefighters arrived within ten minutes."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-2",
+      "type": "evidence",
+      "content": "Police evacuated the Île de la Cité, the island in the river Seine where the cathedral is located. White smoke was seen rising from the roof, which turned black before flames appeared from the spire, then turned yellow.",
+      "attention_tier": "C",
+      "priority": 0.65,
+      "reading_order": 5,
+      "source_span": {
+        "start": 1984,
+        "end": 2203,
+        "quote": "Police evacuated the Île de la Cité, the island in the river Seine where the cathedral is located. White smoke was seen rising from the roof, which turned black before flames appeared from the spire, then turned yellow."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "The roof reduced to piles of char atop the mostly intact vaults. Most of the wood/metal roof and the spire of the cathedral was destroyed, with about one third of the roof remaining. The remnants of the roof and spire fell atop the stone vault underneath, which forms the ceiling of the cathedral's interior. Some sections of this vaulting collapsed in turn, allowing debris from the burning roof to fall to the marble floor below, but most sections remained intact owing to the use of rib vaulting, greatly reducing damage to the cathedral's interior and objects within.",
+      "attention_tier": "C",
+      "priority": 0.55,
+      "reading_order": 6,
+      "source_span": {
+        "start": 2216,
+        "end": 2787,
+        "quote": "The roof reduced to piles of char atop the mostly intact vaults. Most of the wood/metal roof and the spire of the cathedral was destroyed, with about one third of the roof remaining. The remnants of the roof and spire fell atop the stone vault underneath, which forms the ceiling of the cathedral's interior. Some sections of this vaulting collapsed in turn, allowing debris from the burning roof to fall to the marble floor below, but most sections remained intact owing to the use of rib vaulting, greatly reducing damage to the cathedral's interior and objects within."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "decision-1",
+      "type": "decision",
+      "content": "The cathedral contained a large number of artworks, religious relics, and other irreplaceable treasures, including a crown of thorns said to be the one Jesus wore at his crucifixion, a purported piece of the cross on which Jesus was crucified, the Tunic of Saint Louis, a much-rebuilt pipe organ by Aristide Cavaillé-Coll, and the 14th-century Virgin of Paris statue.",
+      "attention_tier": "D",
+      "priority": 0.40,
+      "reading_order": 7,
+      "source_span": {
+        "start": 2789,
+        "end": 3156,
+        "quote": "The cathedral contained a large number of artworks, religious relics, and other irreplaceable treasures, including a crown of thorns said to be the one Jesus wore at his crucifixion, a purported piece of the cross on which Jesus was crucified, the Tunic of Saint Louis, a much-rebuilt pipe organ by Aristide Cavaillé-Coll, and the 14th-century Virgin of Paris statue."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:4af7da9b4d3dffcc121e34d944d651415566b9301303362c244c3a1c7fdce1c4",
+    "chars": 3157,
+    "lang": "en"
+  }
+}

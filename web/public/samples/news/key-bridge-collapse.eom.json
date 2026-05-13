@@ -1,0 +1,129 @@
+{
+  "version": "0.1",
+  "document_type": "news",
+  "summary": "On 26 March 2024, the container ship Dali struck a pier of the Francis Scott Key Bridge in Baltimore, collapsing the main spans and killing six construction workers.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "Francis Scott Key Bridge collapse",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 35,
+        "quote": "Francis Scott Key Bridge collapse"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "On March 26, 2024, the main spans and the three nearest northeast approach spans of the Francis Scott Key Bridge across the Patapsco River in the Baltimore metropolitan area of Maryland, United States, collapsed after one of the bridge piers was struck by the container ship Dali, which had suffered catastrophic power outages that impaired its control systems.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 37,
+        "end": 398,
+        "quote": "On March 26, 2024, the main spans and the three nearest northeast approach spans of the Francis Scott Key Bridge across the Patapsco River in the Baltimore metropolitan area of Maryland, United States, collapsed after one of the bridge piers was struck by the container ship Dali, which had suffered catastrophic power outages that impaired its control systems."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "Six members of a maintenance crew working on the roadway were killed, one was rescued from the river, and an inspector was rescued from the remaining structure.",
+      "attention_tier": "B",
+      "priority": 0.90,
+      "reading_order": 2,
+      "source_span": {
+        "start": 399,
+        "end": 559,
+        "quote": "Six members of a maintenance crew working on the roadway were killed, one was rescued from the river, and an inspector was rescued from the remaining structure."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "The collapse blocked most shipping to and from the Port of Baltimore for 11 weeks. Maryland Governor Wes Moore called the event a \"global crisis\" that affected more than 8,000 jobs. The economic impact of the closure of the waterway was estimated at $15 million per day.",
+      "attention_tier": "C",
+      "priority": 0.80,
+      "reading_order": 3,
+      "source_span": {
+        "start": 561,
+        "end": 831,
+        "quote": "The collapse blocked most shipping to and from the Port of Baltimore for 11 weeks. Maryland Governor Wes Moore called the event a \"global crisis\" that affected more than 8,000 jobs. The economic impact of the closure of the waterway was estimated at $15 million per day."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "Maryland officials have said they plan to replace the bridge by late 2030; initial cost estimates of $1.7 billion to $1.9 billion were later revised to $4.3 billion to $5.2 billion.",
+      "attention_tier": "C",
+      "priority": 0.70,
+      "reading_order": 4,
+      "source_span": {
+        "start": 833,
+        "end": 1014,
+        "quote": "Maryland officials have said they plan to replace the bridge by late 2030; initial cost estimates of $1.7 billion to $1.9 billion were later revised to $4.3 billion to $5.2 billion."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-2",
+      "type": "evidence",
+      "content": "The Francis Scott Key Bridge was a steel arch-shaped continuous truss bridge, the second-longest in the United States and third-longest in the world. Opened in 1977, the 1.6-mile bridge ran northeast from Hawkins Point, Baltimore, to Sollers Point in Dundalk in Baltimore County, Maryland. Before being damaged, it carried Interstate 695, a beltway around Baltimore; its four lanes (two in each direction) were used by some 34,000 vehicles each day, including 3,000 trucks, many of which hauled hazardous materials barred from the two harbor tunnels.",
+      "attention_tier": "C",
+      "priority": 0.60,
+      "reading_order": 5,
+      "source_span": {
+        "start": 1031,
+        "end": 1581,
+        "quote": "The Francis Scott Key Bridge was a steel arch-shaped continuous truss bridge, the second-longest in the United States and third-longest in the world. Opened in 1977, the 1.6-mile bridge ran northeast from Hawkins Point, Baltimore, to Sollers Point in Dundalk in Baltimore County, Maryland. Before being damaged, it carried Interstate 695, a beltway around Baltimore; its four lanes (two in each direction) were used by some 34,000 vehicles each day, including 3,000 trucks, many of which hauled hazardous materials barred from the two harbor tunnels."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-1",
+      "type": "appendix",
+      "content": "The bridge crossed one of the busiest shipping routes in the United States: the lower Patapsco River, which connects the Port of Baltimore to the Chesapeake Bay and the Atlantic Ocean. In 2023, the port handled more than 444,000 passengers and 52.3 million tons of foreign cargo valued at $80 billion. It was the second-largest U.S. port for coal, and had been the leading port for automobiles and light trucks for 13 straight years, handling more than 847,000 vehicles in 2023. It employed 15,000 people and indirectly supported 140,000 others, annually helping to generate $3.3 billion in wages and salaries, $2.6 billion in business revenue, and $400 million in state and local tax revenue.",
+      "attention_tier": "D",
+      "priority": 0.35,
+      "reading_order": 6,
+      "source_span": {
+        "start": 1583,
+        "end": 2276,
+        "quote": "The bridge crossed one of the busiest shipping routes in the United States: the lower Patapsco River, which connects the Port of Baltimore to the Chesapeake Bay and the Atlantic Ocean. In 2023, the port handled more than 444,000 passengers and 52.3 million tons of foreign cargo valued at $80 billion. It was the second-largest U.S. port for coal, and had been the leading port for automobiles and light trucks for 13 straight years, handling more than 847,000 vehicles in 2023. It employed 15,000 people and indirectly supported 140,000 others, annually helping to generate $3.3 billion in wages and salaries, $2.6 billion in business revenue, and $400 million in state and local tax revenue."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:8f9f962ea4d2b42bf48deb749bed52468870287c97a188f5b8bafaa4b40f4a4c",
+    "chars": 2277,
+    "lang": "en"
+  }
+}

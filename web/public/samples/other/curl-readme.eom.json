@@ -1,0 +1,241 @@
+{
+  "version": "0.1",
+  "document_type": "other",
+  "summary": "curl is a command-line tool and cross-platform library for transferring data using URLs across 28+ protocols.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "curl",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 97,
+        "end": 167,
+        "quote": "# [![curl logo](https://curl.se/logo/curl-logo.svg)](https://curl.se/)"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "curl is a command-line tool for transferring data from or to a server using\nURLs. It supports these protocols: DICT, FILE, FTP, FTPS, GOPHER, GOPHERS,\nHTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT, MQTTS, POP3, POP3S, RTSP, SCP,\nSFTP, SMB, SMBS, SMTP, SMTPS, TELNET, TFTP, WS and WSS.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 169,
+        "end": 451,
+        "quote": "curl is a command-line tool for transferring data from or to a server using\nURLs. It supports these protocols: DICT, FILE, FTP, FTPS, GOPHER, GOPHERS,\nHTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT, MQTTS, POP3, POP3S, RTSP, SCP,\nSFTP, SMB, SMBS, SMTP, SMTPS, TELNET, TFTP, WS and WSS."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "libcurl is the library curl is using to do its job. It is readily available to\nbe used by your software. Read [the libcurl\nman page](https://curl.se/libcurl/c/libcurl.html) to learn how.",
+      "attention_tier": "B",
+      "priority": 0.9,
+      "reading_order": 2,
+      "source_span": {
+        "start": 689,
+        "end": 875,
+        "quote": "libcurl is the library curl is using to do its job. It is readily available to\nbe used by your software. Read [the libcurl\nman page](https://curl.se/libcurl/c/libcurl.html) to learn how."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "Learn how to use curl by reading [the\nman page](https://curl.se/docs/manpage.html) or [everything\ncurl](https://everything.curl.dev/).",
+      "attention_tier": "C",
+      "priority": 0.8,
+      "reading_order": 3,
+      "source_span": {
+        "start": 453,
+        "end": 587,
+        "quote": "Learn how to use curl by reading [the\nman page](https://curl.se/docs/manpage.html) or [everything\ncurl](https://everything.curl.dev/)."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-2",
+      "type": "factbox",
+      "content": "Find out how to install curl by reading [the INSTALL\ndocument](https://curl.se/docs/install.html).",
+      "attention_tier": "C",
+      "priority": 0.75,
+      "reading_order": 4,
+      "source_span": {
+        "start": 589,
+        "end": 687,
+        "quote": "Find out how to install curl by reading [the INSTALL\ndocument](https://curl.se/docs/install.html)."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "Download the latest source from the Git server:\n\n    git clone https://github.com/curl/curl",
+      "attention_tier": "C",
+      "priority": 0.7,
+      "reading_order": 5,
+      "source_span": {
+        "start": 1645,
+        "end": 1736,
+        "quote": "Download the latest source from the Git server:\n\n    git clone https://github.com/curl/curl"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-1",
+      "type": "appendix",
+      "content": "curl is Open Source and is distributed under an MIT-like\n[license](https://curl.se/docs/copyright.html).",
+      "attention_tier": "C",
+      "priority": 0.65,
+      "reading_order": 6,
+      "source_span": {
+        "start": 893,
+        "end": 997,
+        "quote": "curl is Open Source and is distributed under an MIT-like\n[license](https://curl.se/docs/copyright.html)."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-2",
+      "type": "appendix",
+      "content": "Contact us on a suitable [mailing list](https://curl.se/mail/) or\nuse GitHub [issues](https://github.com/curl/curl/issues)/\n[pull requests](https://github.com/curl/curl/pulls)/\n[discussions](https://github.com/curl/curl/discussions).",
+      "attention_tier": "C",
+      "priority": 0.6,
+      "reading_order": 7,
+      "source_span": {
+        "start": 1011,
+        "end": 1244,
+        "quote": "Contact us on a suitable [mailing list](https://curl.se/mail/) or\nuse GitHub [issues](https://github.com/curl/curl/issues)/\n[pull requests](https://github.com/curl/curl/pulls)/\n[discussions](https://github.com/curl/curl/discussions)."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-3",
+      "type": "appendix",
+      "content": "All contributors to the project are listed in [the THANKS\ndocument](https://curl.se/docs/thanks.html).",
+      "attention_tier": "D",
+      "priority": 0.5,
+      "reading_order": 8,
+      "source_span": {
+        "start": 1246,
+        "end": 1348,
+        "quote": "All contributors to the project are listed in [the THANKS\ndocument](https://curl.se/docs/thanks.html)."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-4",
+      "type": "appendix",
+      "content": "For commercial support, maybe private and dedicated help with your problems or\napplications using (lib)curl visit [the support page](https://curl.se/support.html).",
+      "attention_tier": "D",
+      "priority": 0.45,
+      "reading_order": 9,
+      "source_span": {
+        "start": 1373,
+        "end": 1536,
+        "quote": "For commercial support, maybe private and dedicated help with your problems or\napplications using (lib)curl visit [the support page](https://curl.se/support.html)."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-5",
+      "type": "appendix",
+      "content": "Visit the [curl website](https://curl.se/) for the latest news and downloads.",
+      "attention_tier": "D",
+      "priority": 0.4,
+      "reading_order": 10,
+      "source_span": {
+        "start": 1550,
+        "end": 1627,
+        "quote": "Visit the [curl website](https://curl.se/) for the latest news and downloads."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-6",
+      "type": "appendix",
+      "content": "Report suspected security problems\n[privately](https://curl.se/dev/vuln-disclosure.html) and not in public.",
+      "attention_tier": "D",
+      "priority": 0.35,
+      "reading_order": 11,
+      "source_span": {
+        "start": 1760,
+        "end": 1867,
+        "quote": "Report suspected security problems\n[privately](https://curl.se/dev/vuln-disclosure.html) and not in public."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-7",
+      "type": "appendix",
+      "content": "Thank you to all our backers :pray: [Become a backer](https://opencollective.com/curl#section-contribute).",
+      "attention_tier": "D",
+      "priority": 0.3,
+      "reading_order": 12,
+      "source_span": {
+        "start": 1881,
+        "end": 1987,
+        "quote": "Thank you to all our backers :pray: [Become a backer](https://opencollective.com/curl#section-contribute)."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-8",
+      "type": "appendix",
+      "content": "Support this project by becoming a [sponsor](https://curl.se/sponsors.html).",
+      "attention_tier": "D",
+      "priority": 0.25,
+      "reading_order": 13,
+      "source_span": {
+        "start": 2002,
+        "end": 2079,
+        "quote": "Support this project by becoming a [sponsor](https://curl.se/sponsors.html).\n"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:11d1ca2946f112e83bf72cc611ca01598daa003539988c064256772b23f33cc2",
+    "chars": 2079,
+    "lang": "en"
+  }
+}

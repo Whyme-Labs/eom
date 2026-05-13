@@ -1,0 +1,194 @@
+[
+  {
+    "id": "memo/12-factor-app",
+    "type": "memo",
+    "slug": "12-factor-app",
+    "title": "The Twelve-Factor App"
+  },
+  {
+    "id": "memo/agile-manifesto",
+    "type": "memo",
+    "slug": "agile-manifesto",
+    "title": "Agile software development"
+  },
+  {
+    "id": "memo/bus-factor",
+    "type": "memo",
+    "slug": "bus-factor",
+    "title": "Bus factor"
+  },
+  {
+    "id": "memo/conway-law",
+    "type": "memo",
+    "slug": "conway-law",
+    "title": "Conway's law"
+  },
+  {
+    "id": "memo/postmortem-doc",
+    "type": "memo",
+    "slug": "postmortem-doc",
+    "title": "Postmortem documentation"
+  },
+  {
+    "id": "news/key-bridge-collapse",
+    "type": "news",
+    "slug": "key-bridge-collapse",
+    "title": "Francis Scott Key Bridge collapse"
+  },
+  {
+    "id": "news/notre-dame-fire",
+    "type": "news",
+    "slug": "notre-dame-fire",
+    "title": "Notre-Dame de Paris fire"
+  },
+  {
+    "id": "news/paris-2024-olympics",
+    "type": "news",
+    "slug": "paris-2024-olympics",
+    "title": "2024 Summer Olympics"
+  },
+  {
+    "id": "news/tohoku-earthquake",
+    "type": "news",
+    "slug": "tohoku-earthquake",
+    "title": "2011 Tōhoku earthquake and tsunami"
+  },
+  {
+    "id": "other/curl-readme",
+    "type": "other",
+    "slug": "curl-readme",
+    "title": "[![curl logo](https://curl.se/logo/curl-logo.svg)](https://curl.se/)"
+  },
+  {
+    "id": "other/git-readme",
+    "type": "other",
+    "slug": "git-readme",
+    "title": ""
+  },
+  {
+    "id": "other/json-spec",
+    "type": "other",
+    "slug": "json-spec",
+    "title": "JSON"
+  },
+  {
+    "id": "other/pep-8",
+    "type": "other",
+    "slug": "pep-8",
+    "title": "PEP 8 – Style Guide for Python Code"
+  },
+  {
+    "id": "other/wikipedia-readme",
+    "type": "other",
+    "slug": "wikipedia-readme",
+    "title": "README"
+  },
+  {
+    "id": "paper/attention-is-all-you-need",
+    "type": "paper",
+    "slug": "attention-is-all-you-need",
+    "title": "Attention Is All You Need"
+  },
+  {
+    "id": "paper/bert",
+    "type": "paper",
+    "slug": "bert",
+    "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
+  },
+  {
+    "id": "paper/chinchilla",
+    "type": "paper",
+    "slug": "chinchilla",
+    "title": "Training Compute-Optimal Large Language Models"
+  },
+  {
+    "id": "paper/llama2",
+    "type": "paper",
+    "slug": "llama2",
+    "title": "Llama 2: Open Foundation and Fine-Tuned Chat Models"
+  },
+  {
+    "id": "paper/mistral-7b",
+    "type": "paper",
+    "slug": "mistral-7b",
+    "title": "Mistral 7B"
+  },
+  {
+    "id": "policy/gdpr",
+    "type": "policy",
+    "slug": "gdpr",
+    "title": "General Data Protection Regulation"
+  },
+  {
+    "id": "policy/paris-agreement",
+    "type": "policy",
+    "slug": "paris-agreement",
+    "title": "Paris Agreement"
+  },
+  {
+    "id": "policy/rfc-7540-http2",
+    "type": "policy",
+    "slug": "rfc-7540-http2",
+    "title": "RFC 7540: Hypertext Transfer Protocol Version 2 (HTTP/2)"
+  },
+  {
+    "id": "policy/rfc-9293-tcp",
+    "type": "policy",
+    "slug": "rfc-9293-tcp",
+    "title": "RFC 9293: Transmission Control Protocol (TCP)"
+  },
+  {
+    "id": "report/doomsday-clock",
+    "type": "report",
+    "slug": "doomsday-clock",
+    "title": "Doomsday Clock"
+  },
+  {
+    "id": "report/ipcc-ar6",
+    "type": "report",
+    "slug": "ipcc-ar6",
+    "title": "IPCC Sixth Assessment Report"
+  },
+  {
+    "id": "report/limits-to-growth",
+    "type": "report",
+    "slug": "limits-to-growth",
+    "title": "The Limits to Growth"
+  },
+  {
+    "id": "report/pisa",
+    "type": "report",
+    "slug": "pisa",
+    "title": "Programme for International Student Assessment"
+  },
+  {
+    "id": "report/stern-review",
+    "type": "report",
+    "slug": "stern-review",
+    "title": "Stern Review"
+  },
+  {
+    "id": "transcript/gettysburg-address",
+    "type": "transcript",
+    "slug": "gettysburg-address",
+    "title": "Gettysburg Address"
+  },
+  {
+    "id": "transcript/i-have-a-dream",
+    "type": "transcript",
+    "slug": "i-have-a-dream",
+    "title": "I Have a Dream"
+  },
+  {
+    "id": "transcript/jfk-inaugural",
+    "type": "transcript",
+    "slug": "jfk-inaugural",
+    "title": "JFK Inaugural Address"
+  },
+  {
+    "id": "transcript/pearl-harbor-speech",
+    "type": "transcript",
+    "slug": "pearl-harbor-speech",
+    "title": "Day of Infamy Speech"
+  }
+]

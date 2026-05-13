@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>EOM — two-way wire format between humans and models</title>
+<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+
+<header class="hero">
+  <h1>📰 EOM</h1>
+  <p class="tagline">Two-way wire format between humans and models, with attention budgets and source grounding built in.</p>
+  <p class="meta">v0.2 · MIT · <a href="https://github.com/Whyme-Labs/eom" target="_blank" rel="noopener">github.com/Whyme-Labs/eom</a></p>
+</header>
+
+<main>
+  <aside class="sidebar">
+    <h2>Sample documents</h2>
+    <p class="hint">Pick a sample to load its compiled EOM IR.</p>
+    <select id="sample-picker">
+      <option value="">— choose —</option>
+    </select>
+    <div id="sample-meta" class="meta"></div>
+    <hr />
+    <h2>Direction</h2>
+    <p class="hint">
+      Same IR, two lowerings.
+      <strong>Outbound</strong>: newspaper brief.
+      <strong>Inbound</strong>: LLM context-pack.
+    </p>
+  </aside>
+
+  <section class="content">
+    <nav class="tabs" role="tablist">
+      <button class="tab active" data-tab="newspaper" role="tab">📰 Newspaper</button>
+      <button class="tab" data-tab="pack" role="tab">🤖 Context pack</button>
+      <button class="tab" data-tab="json" role="tab">📋 JSON</button>
+      <button class="tab" data-tab="harness" role="tab">✓ Harness</button>
+      <button class="tab" data-tab="ask" role="tab">🔄 Ask AI</button>
+    </nav>
+
+    <section class="panel" id="panel-newspaper">
+      <div class="loading" data-default>Load a sample to see the outbound newspaper brief.</div>
+      <iframe id="newspaper-frame" class="newspaper-frame" hidden></iframe>
+    </section>
+
+    <section class="panel" id="panel-pack" hidden>
+      <div class="controls">
+        <label>Token budget
+          <input type="range" id="pack-budget" min="200" max="4000" step="100" value="1500" />
+          <span id="pack-budget-value">1500</span>
+        </label>
+      </div>
+      <pre id="pack-out" class="codepane">Load a sample to render the EOM context-pack.</pre>
+    </section>
+
+    <section class="panel" id="panel-json" hidden>
+      <pre id="json-out" class="codepane">Load a sample to see the raw EOM JSON.</pre>
+    </section>
+
+    <section class="panel" id="panel-harness" hidden>
+      <div id="harness-out">Load a sample to run H1–H12.</div>
+    </section>
+
+    <section class="panel" id="panel-ask" hidden>
+      <p class="hint">
+        Send the same question to the same model with two contexts:
+        raw markdown on the left, the EOM context-pack on the right.
+        Compare token cost and answer quality.
+      </p>
+      <div class="controls ask-controls">
+        <label>Question
+          <select id="question-picker" disabled>
+            <option value="">— load a sample first —</option>
+          </select>
+        </label>
+        <label>Or type your own
+          <input type="text" id="custom-question" placeholder="What does this document say about…" />
+        </label>
+        <label>Pack budget
+          <input type="range" id="ask-budget" min="200" max="4000" step="100" value="1500" />
+          <span id="ask-budget-value">1500</span>
+        </label>
+        <button id="ask-run" disabled>Run side-by-side →</button>
+      </div>
+      <div id="ask-reference" class="ref" hidden></div>
+      <div class="askgrid">
+        <div class="askcol" data-mode="raw">
+          <h3>Raw markdown</h3>
+          <div class="metrics" id="ask-raw-metrics"></div>
+          <div class="answer" id="ask-raw-answer"></div>
+          <details><summary>Context sent</summary><pre id="ask-raw-context" class="codepane small"></pre></details>
+        </div>
+        <div class="askcol" data-mode="pack">
+          <h3>EOM context-pack</h3>
+          <div class="metrics" id="ask-pack-metrics"></div>
+          <div class="answer" id="ask-pack-answer"></div>
+          <details><summary>Context sent</summary><pre id="ask-pack-context" class="codepane small"></pre></details>
+        </div>
+      </div>
+      <div class="askheadline" id="ask-headline"></div>
+    </section>
+  </section>
+</main>
+
+<footer>
+  <p>
+    Spec: <code>docs/SPEC-v0.2.md</code>.
+    Benchmark numbers: see <a href="/bench-results.json">bench-results.json</a>.
+    The fine-tuned Gemma-4-E4B adapter (Unsloth track) lives on Modal volume
+    <code>eom-sft-out:/output/eom-sft-adapter-gemma4-v5</code>.
+  </p>
+</footer>
+
+<script type="module" src="/app.js"></script>
+</body>
+</html>

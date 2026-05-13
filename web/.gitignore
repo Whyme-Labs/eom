@@ -170,3 +170,8 @@ dist
 
 # IntelliJ based IDEs
 .idea
+.dev.vars
+
+# Cloudflare Workers local dev state
+.wrangler/
+.dev.vars

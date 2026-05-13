@@ -1,0 +1,193 @@
+{
+  "version": "0.1",
+  "document_type": "report",
+  "summary": "The IPCC Sixth Assessment Report (AR6), completed 2021-2023, concludes that human-caused warming has reached 1.1 °C above pre-industrial levels; under every modelled scenario the 1.5 °C threshold will be breached temporarily by mid-century, demanding 50% emissions cuts by 2030 and net-zero by 2050.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "IPCC Sixth Assessment Report",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 30,
+        "quote": "IPCC Sixth Assessment Report"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "The Sixth Assessment Report (AR6) of the United Nations Intergovernmental Panel on Climate Change represents the most recent comprehensive evaluation of available scientific information on climate change. This report series, spanning multiple decades, synthesizes thousands of peer-reviewed studies to inform global climate policy and action.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 32,
+        "end": 374,
+        "quote": "The Sixth Assessment Report (AR6) of the United Nations Intergovernmental Panel on Climate Change represents the most recent comprehensive evaluation of available scientific information on climate change. This report series, spanning multiple decades, synthesizes thousands of peer-reviewed studies to inform global climate policy and action."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "Regarding future warming projections, the analysis indicates that under all modeled scenarios, global temperature will reach the 1.5-degree warming threshold at least temporarily during the mid-21st century.",
+      "attention_tier": "B",
+      "priority": 0.90,
+      "reading_order": 2,
+      "source_span": {
+        "start": 2089,
+        "end": 2296,
+        "quote": "Regarding future warming projections, the analysis indicates that under all modeled scenarios, global temperature will reach the 1.5-degree warming threshold at least temporarily during the mid-21st century."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "The AR6 assessment cycle produced three primary working group reports followed by a synthesis document. The first working group report was published in August 2021, addressing the physical science basis of climate change. The second report, examining impacts, adaptation, and vulnerability, was released in February 2022. The third report on climate change mitigation followed in April 2022. A final synthesis report integrating all three perspectives was completed in March 2023 and served as the foundation for the 2023 United Nations Climate Change Conference in Dubai.",
+      "attention_tier": "C",
+      "priority": 0.80,
+      "reading_order": 3,
+      "source_span": {
+        "start": 376,
+        "end": 948,
+        "quote": "The AR6 assessment cycle produced three primary working group reports followed by a synthesis document. The first working group report was published in August 2021, addressing the physical science basis of climate change. The second report, examining impacts, adaptation, and vulnerability, was released in February 2022. The third report on climate change mitigation followed in April 2022. A final synthesis report integrating all three perspectives was completed in March 2023 and served as the foundation for the 2023 United Nations Climate Change Conference in Dubai."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-2",
+      "type": "factbox",
+      "content": "Key findings established that human activities, principally through greenhouse gas emissions, have unequivocally caused global warming. Global surface temperature reached 1.1 degrees Celsius above pre-industrial levels in the 2011-2020 period. The report quantifies climate sensitivity at between 2.5 and 4.0 degrees Celsius, with a best estimate of 3 degrees, for every doubling of atmospheric carbon dioxide.",
+      "attention_tier": "C",
+      "priority": 0.75,
+      "reading_order": 4,
+      "source_span": {
+        "start": 1677,
+        "end": 2087,
+        "quote": "Key findings established that human activities, principally through greenhouse gas emissions, have unequivocally caused global warming. Global surface temperature reached 1.1 degrees Celsius above pre-industrial levels in the 2011-2020 period. The report quantifies climate sensitivity at between 2.5 and 4.0 degrees Celsius, with a best estimate of 3 degrees, for every doubling of atmospheric carbon dioxide."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "decision-1",
+      "type": "decision",
+      "content": "Completely avoiding 1.5 degrees of warming would require cutting global emissions by 50 percent by 2030 and achieving net-zero emissions by 2050. Without drastic and immediate reductions in greenhouse gas emissions, warming of 1.5 or 2 degrees Celsius cannot be prevented.",
+      "attention_tier": "C",
+      "priority": 0.70,
+      "reading_order": 5,
+      "source_span": {
+        "start": 2297,
+        "end": 2569,
+        "quote": "Completely avoiding 1.5 degrees of warming would require cutting global emissions by 50 percent by 2030 and achieving net-zero emissions by 2050. Without drastic and immediate reductions in greenhouse gas emissions, warming of 1.5 or 2 degrees Celsius cannot be prevented."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "Sea-level rise projections indicate a likely range of half to one meter by 2100, though two to five meters is not ruled out due to uncertainties regarding ice sheet stability.",
+      "attention_tier": "C",
+      "priority": 0.65,
+      "reading_order": 6,
+      "source_span": {
+        "start": 2946,
+        "end": 3121,
+        "quote": "Sea-level rise projections indicate a likely range of half to one meter by 2100, though two to five meters is not ruled out due to uncertainties regarding ice sheet stability."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "The report documents increased frequency and intensity of extreme weather events. Heat waves that occurred once every ten years under 1850-1900 climate conditions are projected to occur 4.1 times more frequently and be 1.9 degrees hotter under 1.5 degrees of warming. Heavy precipitation events, droughts, and other extreme phenomena similarly escalate with warming levels.",
+      "attention_tier": "D",
+      "priority": 0.55,
+      "reading_order": 7,
+      "source_span": {
+        "start": 2571,
+        "end": 2944,
+        "quote": "The report documents increased frequency and intensity of extreme weather events. Heat waves that occurred once every ten years under 1850-1900 climate conditions are projected to occur 4.1 times more frequently and be 1.9 degrees hotter under 1.5 degrees of warming. Heavy precipitation events, droughts, and other extreme phenomena similarly escalate with warming levels."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-2",
+      "type": "evidence",
+      "content": "The report found that approximately 3.3 billion people, roughly 40 percent of global population, now fall into the most serious category of highly vulnerable to climate impacts, with developing nations experiencing the worst effects. Climate change poses severe threats including biodiversity loss, water scarcity, food insecurity, health risks, and forced migration. At least one billion people face flooding from sea-level rise.",
+      "attention_tier": "D",
+      "priority": 0.45,
+      "reading_order": 8,
+      "source_span": {
+        "start": 3464,
+        "end": 3894,
+        "quote": "The report found that approximately 3.3 billion people, roughly 40 percent of global population, now fall into the most serious category of highly vulnerable to climate impacts, with developing nations experiencing the worst effects. Climate change poses severe threats including biodiversity loss, water scarcity, food insecurity, health risks, and forced migration. At least one billion people face flooding from sea-level rise."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-1",
+      "type": "appendix",
+      "content": "The report identified 127 distinct negative climate impacts, many classified as irreversible. These include ongoing mass extinction, increasingly frequent droughts, floods, and heatwaves. A temporary overshoot of 1.5 degrees warming will produce lasting negative effects on humans and ecosystems, with some impacts triggering additional greenhouse gas releases.",
+      "attention_tier": "D",
+      "priority": 0.35,
+      "reading_order": 9,
+      "source_span": {
+        "start": 3896,
+        "end": 4257,
+        "quote": "The report identified 127 distinct negative climate impacts, many classified as irreversible. These include ongoing mass extinction, increasingly frequent droughts, floods, and heatwaves. A temporary overshoot of 1.5 degrees warming will produce lasting negative effects on humans and ecosystems, with some impacts triggering additional greenhouse gas releases."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-2",
+      "type": "appendix",
+      "content": "Climate-resilient development requires international cooperation, local community engagement, and immediate action to limit warming. The report cautions that climate-resilient development becomes substantially more difficult above 1.5 degrees warming and impossible in some regions above 2 degrees. While losses and damages from climate change are already widespread and irreversible, aggressive action to limit warming would substantially reduce future harms.",
+      "attention_tier": "D",
+      "priority": 0.25,
+      "reading_order": 10,
+      "source_span": {
+        "start": 4664,
+        "end": 5124,
+        "quote": "Climate-resilient development requires international cooperation, local community engagement, and immediate action to limit warming. The report cautions that climate-resilient development becomes substantially more difficult above 1.5 degrees warming and impossible in some regions above 2 degrees. While losses and damages from climate change are already widespread and irreversible, aggressive action to limit warming would substantially reduce future harms."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:8109683f7fcb0f7c1ad7030f59b67e18028bfc7b1aa461b33eef333b195efcb8",
+    "chars": 5125,
+    "lang": "en"
+  }
+}

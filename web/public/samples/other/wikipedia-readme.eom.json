@@ -1,0 +1,145 @@
+{
+  "version": "0.1",
+  "document_type": "other",
+  "summary": "Wikipedia article explaining the README file convention: its purpose, typical contents, naming history, and relationship to companion metadata files in software projects.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "README",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 8,
+        "quote": "README"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "A **README** file contains descriptive information about the content of a directory in which the file is located. The scope of the information generally includes the files of the directory, and may include descendant directories, or even the full directory tree.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 10,
+        "end": 272,
+        "quote": "A **README** file contains descriptive information about the content of a directory in which the file is located. The scope of the information generally includes the files of the directory, and may include descendant directories, or even the full directory tree."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "The name is intended to draw a user's attention to important and orientational information about the directory content.",
+      "attention_tier": "B",
+      "priority": 0.9,
+      "reading_order": 2,
+      "source_span": {
+        "start": 273,
+        "end": 392,
+        "quote": "The name is intended to draw a user's attention to important and orientational information about the directory content."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "Lacking standardization, the format and content of a README file varies dramatically. For a software project, a README file commonly includes information such as:\n\n- Configuration instructions\n- Installation instructions\n- Operating instructions\n- A file manifest (a list of files in the directory or archive)\n- Copyright and licensing information\n- Contact information for the distributor or author\n- A list of known bugs\n- Troubleshooting instructions\n- Credits and acknowledgments\n- A changelog (usually aimed at fellow programmers)\n- A news section (usually aimed at end users)",
+      "attention_tier": "C",
+      "priority": 0.8,
+      "reading_order": 3,
+      "source_span": {
+        "start": 961,
+        "end": 1542,
+        "quote": "Lacking standardization, the format and content of a README file varies dramatically. For a software project, a README file commonly includes information such as:\n\n- Configuration instructions\n- Installation instructions\n- Operating instructions\n- A file manifest (a list of files in the directory or archive)\n- Copyright and licensing information\n- Contact information for the distributor or author\n- A list of known bugs\n- Troubleshooting instructions\n- Credits and acknowledgments\n- A changelog (usually aimed at fellow programmers)\n- A news section (usually aimed at end users)"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "The convention of including a README file began in the mid-1970s. In Unix, where most file names were in lowercase, the name was capitalized so it would stand out and appear near the beginning of ASCII-ordered lists. Early Macintosh system software installed a Read Me on the Startup Disk, and README files commonly accompanied third-party software.\n\nIn particular, there is a long history of free software and open-source software including a README file; the GNU Coding Standards encourage including one to provide \"a general overview of the package\".",
+      "attention_tier": "C",
+      "priority": 0.7,
+      "reading_order": 4,
+      "source_span": {
+        "start": 1556,
+        "end": 2109,
+        "quote": "The convention of including a README file began in the mid-1970s. In Unix, where most file names were in lowercase, the name was capitalized so it would stand out and appear near the beginning of ASCII-ordered lists. Early Macintosh system software installed a Read Me on the Startup Disk, and README files commonly accompanied third-party software.\n\nIn particular, there is a long history of free software and open-source software including a README file; the GNU Coding Standards encourage including one to provide \"a general overview of the package\"."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "Since the advent of the web as a de facto standard platform for software distribution, many software packages have moved (or occasionally, copied) some of the above ancillary files and pieces of information to a website or wiki, sometimes including the README itself, or sometimes leaving behind only a brief README file without all of the information required by a new user of the software.",
+      "attention_tier": "D",
+      "priority": 0.55,
+      "reading_order": 5,
+      "source_span": {
+        "start": 2111,
+        "end": 2502,
+        "quote": "Since the advent of the web as a de facto standard platform for software distribution, many software packages have moved (or occasionally, copied) some of the above ancillary files and pieces of information to a website or wiki, sometimes including the README itself, or sometimes leaving behind only a brief README file without all of the information required by a new user of the software."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-1",
+      "type": "appendix",
+      "content": "The popular source code hosting website GitHub strongly encourages the creation of a README file – if one exists in the main (top-level) directory of a repository, it is automatically presented on the repository's front page. In addition to plain text, various other formats and file extensions are also supported, and HTML conversion takes extensions into account – in particular a README.md is treated as GitHub Flavored Markdown.",
+      "attention_tier": "D",
+      "priority": 0.5,
+      "reading_order": 6,
+      "source_span": {
+        "start": 2504,
+        "end": 2936,
+        "quote": "The popular source code hosting website GitHub strongly encourages the creation of a README file – if one exists in the main (top-level) directory of a repository, it is automatically presented on the repository's front page. In addition to plain text, various other formats and file extensions are also supported, and HTML conversion takes extensions into account – in particular a README.md is treated as GitHub Flavored Markdown."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-2",
+      "type": "factbox",
+      "content": "Directory content metadata is sometimes stored in files in addition to or instead of a README. The following table lists commonly-used file names along with content of what is commonly in the file. As with README, there are no formal standards that govern the file names nor the content of them. Yet, there are conventions as dictated by Gnits Standards and GNU Autotools.\n\n| README | General information |\n| AUTHORS | Credits |\n| THANKS | Acknowledgments |\n| CHANGELOG | A detailed changelog, intended for programmers |\n| NEWS | A basic changelog, intended for users |\n| INSTALL | Installation instructions |\n| COPYING/LICENSE | Copyright and licensing information |\n| BUGS | Known bugs and instructions on reporting new ones |\n| CONTRIBUTING/HACKING | Guide for prospective contributors to the project |\n| FAQ | Frequently asked questions and answers |\n| TODO | Planned changes |",
+      "attention_tier": "D",
+      "priority": 0.4,
+      "reading_order": 7,
+      "source_span": {
+        "start": 2950,
+        "end": 3831,
+        "quote": "Directory content metadata is sometimes stored in files in addition to or instead of a README. The following table lists commonly-used file names along with content of what is commonly in the file. As with README, there are no formal standards that govern the file names nor the content of them. Yet, there are conventions as dictated by Gnits Standards and GNU Autotools.\n\n| README | General information |\n| AUTHORS | Credits |\n| THANKS | Acknowledgments |\n| CHANGELOG | A detailed changelog, intended for programmers |\n| NEWS | A basic changelog, intended for users |\n| INSTALL | Installation instructions |\n| COPYING/LICENSE | Copyright and licensing information |\n| BUGS | Known bugs and instructions on reporting new ones |\n| CONTRIBUTING/HACKING | Guide for prospective contributors to the project |\n| FAQ | Frequently asked questions and answers |\n| TODO | Planned changes |"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:9468a30f582be6d637ba3a7485dcc0770792fdac174e6ed61ecaff101087e0b5",
+    "chars": 3832,
+    "lang": "en"
+  }
+}

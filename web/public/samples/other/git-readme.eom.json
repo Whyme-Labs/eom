@@ -1,0 +1,257 @@
+{
+  "version": "0.1",
+  "document_type": "other",
+  "summary": "Git is a fast, scalable, distributed revision control system originally written by Linus Torvalds, licensed under GPL-2.0.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "Git - fast, scalable, distributed revision control system",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 141,
+        "end": 198,
+        "quote": "Git - fast, scalable, distributed revision control system"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "Git is a fast, scalable, distributed revision control system with an\nunusually rich command set that provides both high-level operations\nand full access to internals.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 258,
+        "end": 424,
+        "quote": "Git is a fast, scalable, distributed revision control system with an\nunusually rich command set that provides both high-level operations\nand full access to internals."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "See [Documentation/gittutorial.adoc][] to get started, then see\n[Documentation/giteveryday.adoc][] for a useful minimum set of commands, and\n`Documentation/git-<commandname>.adoc` for documentation of each command.\nIf git has been correctly installed, then the tutorial can also be\nread with `man gittutorial` or `git help tutorial`, and the\ndocumentation of each command with `man git-<commandname>` or `git help\n<commandname>`.",
+      "attention_tier": "B",
+      "priority": 0.88,
+      "reading_order": 2,
+      "source_span": {
+        "start": 864,
+        "end": 1293,
+        "quote": "See [Documentation/gittutorial.adoc][] to get started, then see\n[Documentation/giteveryday.adoc][] for a useful minimum set of commands, and\n`Documentation/git-<commandname>.adoc` for documentation of each command.\nIf git has been correctly installed, then the tutorial can also be\nread with `man gittutorial` or `git help tutorial`, and the\ndocumentation of each command with `man git-<commandname>` or `git help\n<commandname>`."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-2",
+      "type": "evidence",
+      "content": "Please read the file [INSTALL][] for installation instructions.",
+      "attention_tier": "C",
+      "priority": 0.80,
+      "reading_order": 3,
+      "source_span": {
+        "start": 677,
+        "end": 740,
+        "quote": "Please read the file [INSTALL][] for installation instructions."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-3",
+      "type": "evidence",
+      "content": "Many Git online resources are accessible from <https://git-scm.com/>\nincluding full documentation and Git related tools.",
+      "attention_tier": "C",
+      "priority": 0.75,
+      "reading_order": 4,
+      "source_span": {
+        "start": 742,
+        "end": 862,
+        "quote": "Many Git online resources are accessible from <https://git-scm.com/>\nincluding full documentation and Git related tools."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "decision-1",
+      "type": "decision",
+      "content": "The user discussion and development of Git take place on the Git\nmailing list -- everyone is welcome to post bug reports, feature\nrequests, comments and patches to git@vger.kernel.org (read\n[Documentation/SubmittingPatches][] for instructions on patch submission\nand [Documentation/CodingGuidelines][]).",
+      "attention_tier": "C",
+      "priority": 0.70,
+      "reading_order": 5,
+      "source_span": {
+        "start": 1442,
+        "end": 1745,
+        "quote": "The user discussion and development of Git take place on the Git\nmailing list -- everyone is welcome to post bug reports, feature\nrequests, comments and patches to git@vger.kernel.org (read\n[Documentation/SubmittingPatches][] for instructions on patch submission\nand [Documentation/CodingGuidelines][])."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "decision-2",
+      "type": "decision",
+      "content": "Those wishing to help with error message, usage and informational message\nstring translations (localization l10) should see [po/README.md][]\n(a `po` file is a Portable Object file that holds the translations).",
+      "attention_tier": "D",
+      "priority": 0.55,
+      "reading_order": 6,
+      "source_span": {
+        "start": 1747,
+        "end": 1956,
+        "quote": "Those wishing to help with error message, usage and informational message\nstring translations (localization l10) should see [po/README.md][]\n(a `po` file is a Portable Object file that holds the translations)."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-4",
+      "type": "evidence",
+      "content": "CVS users may also want to read [Documentation/gitcvs-migration.adoc][]\n(`man gitcvs-migration` or `git help cvs-migration` if git is\ninstalled).",
+      "attention_tier": "D",
+      "priority": 0.50,
+      "reading_order": 7,
+      "source_span": {
+        "start": 1295,
+        "end": 1440,
+        "quote": "CVS users may also want to read [Documentation/gitcvs-migration.adoc][]\n(`man gitcvs-migration` or `git help cvs-migration` if git is\ninstalled)."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-1",
+      "type": "appendix",
+      "content": "Git is an Open Source project covered by the GNU General Public\nLicense version 2 (some parts of it are under different licenses,\ncompatible with the GPLv2). It was originally written by Linus\nTorvalds with help of a group of hackers around the net.",
+      "attention_tier": "D",
+      "priority": 0.45,
+      "reading_order": 8,
+      "source_span": {
+        "start": 426,
+        "end": 675,
+        "quote": "Git is an Open Source project covered by the GNU General Public\nLicense version 2 (some parts of it are under different licenses,\ncompatible with the GPLv2). It was originally written by Linus\nTorvalds with help of a group of hackers around the net."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-5",
+      "type": "evidence",
+      "content": "The name \"git\" was given by Linus Torvalds when he wrote the very\nfirst version. He described the tool as \"the stupid content tracker\"\nand the name as (depending on your mood):",
+      "attention_tier": "D",
+      "priority": 0.42,
+      "reading_order": 9,
+      "source_span": {
+        "start": 2616,
+        "end": 2792,
+        "quote": "The name \"git\" was given by Linus Torvalds when he wrote the very\nfirst version. He described the tool as \"the stupid content tracker\"\nand the name as (depending on your mood):"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-6",
+      "type": "evidence",
+      "content": " - random three-letter combination that is pronounceable, and not\n   actually used by any common UNIX command.  The fact that it is a\n   mispronunciation of \"get\" may or may not be relevant.\n - stupid. contemptible and despicable. simple. Take your pick from the\n   dictionary of slang.\n - \"global information tracker\": you're in a good mood, and it actually\n   works for you. Angels sing, and a light suddenly fills the room.\n - \"goddamn idiotic truckload of sh*t\": when it breaks",
+      "attention_tier": "D",
+      "priority": 0.38,
+      "reading_order": 10,
+      "source_span": {
+        "start": 2794,
+        "end": 3275,
+        "quote": " - random three-letter combination that is pronounceable, and not\n   actually used by any common UNIX command.  The fact that it is a\n   mispronunciation of \"get\" may or may not be relevant.\n - stupid. contemptible and despicable. simple. Take your pick from the\n   dictionary of slang.\n - \"global information tracker\": you're in a good mood, and it actually\n   works for you. Angels sing, and a light suddenly fills the room.\n - \"goddamn idiotic truckload of sh*t\": when it breaks"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-2",
+      "type": "appendix",
+      "content": "To subscribe to the list, send an email to <git+subscribe@vger.kernel.org>\n(see https://subspace.kernel.org/subscribing.html for details). The mailing\nlist archives are available at <https://lore.kernel.org/git/>,\n<https://marc.info/?l=git> and other archival sites.",
+      "attention_tier": "D",
+      "priority": 0.35,
+      "reading_order": 11,
+      "source_span": {
+        "start": 1958,
+        "end": 2224,
+        "quote": "To subscribe to the list, send an email to <git+subscribe@vger.kernel.org>\n(see https://subspace.kernel.org/subscribing.html for details). The mailing\nlist archives are available at <https://lore.kernel.org/git/>,\n<https://marc.info/?l=git> and other archival sites."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-3",
+      "type": "appendix",
+      "content": "Issues which are security relevant should be disclosed privately to\nthe Git Security mailing list <git-security@googlegroups.com>.",
+      "attention_tier": "D",
+      "priority": 0.32,
+      "reading_order": 12,
+      "source_span": {
+        "start": 2226,
+        "end": 2356,
+        "quote": "Issues which are security relevant should be disclosed privately to\nthe Git Security mailing list <git-security@googlegroups.com>."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-4",
+      "type": "appendix",
+      "content": "The maintainer frequently sends the \"What's cooking\" reports that\nlist the current status of various development topics to the mailing\nlist.  The discussion following them give a good reference for\nproject status, development direction and remaining tasks.",
+      "attention_tier": "D",
+      "priority": 0.28,
+      "reading_order": 13,
+      "source_span": {
+        "start": 2358,
+        "end": 2614,
+        "quote": "The maintainer frequently sends the \"What's cooking\" reports that\nlist the current status of various development topics to the mailing\nlist.  The discussion following them give a good reference for\nproject status, development direction and remaining tasks."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-5",
+      "type": "appendix",
+      "content": "[INSTALL]: INSTALL\n[Documentation/gittutorial.adoc]: Documentation/gittutorial.adoc\n[Documentation/giteveryday.adoc]: Documentation/giteveryday.adoc\n[Documentation/gitcvs-migration.adoc]: Documentation/gitcvs-migration.adoc\n[Documentation/SubmittingPatches]: Documentation/SubmittingPatches\n[Documentation/CodingGuidelines]: Documentation/CodingGuidelines\n[po/README.md]: po/README.md",
+      "attention_tier": "D",
+      "priority": 0.20,
+      "reading_order": 14,
+      "source_span": {
+        "start": 3277,
+        "end": 3661,
+        "quote": "[INSTALL]: INSTALL\n[Documentation/gittutorial.adoc]: Documentation/gittutorial.adoc\n[Documentation/giteveryday.adoc]: Documentation/giteveryday.adoc\n[Documentation/gitcvs-migration.adoc]: Documentation/gitcvs-migration.adoc\n[Documentation/SubmittingPatches]: Documentation/SubmittingPatches\n[Documentation/CodingGuidelines]: Documentation/CodingGuidelines\n[po/README.md]: po/README.md"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:4dddaa908cc3407fe752784073847ca4ba949793800a686bed696f93a64534a0",
+    "chars": 3662,
+    "lang": "en"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "version": "0.1",
+  "document_type": "paper",
+  "summary": "Meta releases Llama 2, a family of open-weights LLMs from 7B to 70B parameters, including Llama 2-Chat fine-tuned for dialogue, which outperforms open-source chat models and may substitute closed-source models, with safety improvements detailed for community use.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "Llama 2: Open Foundation and Fine-Tuned Chat Models",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 53,
+        "quote": "Llama 2: Open Foundation and Fine-Tuned Chat Models"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "In this work, we develop and release Llama 2, a collection of pretrained and fine-tuned large language models (LLMs) ranging in scale from 7 billion to 70 billion parameters.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 1097,
+        "end": 1271,
+        "quote": "In this work, we develop and release Llama 2, a collection of pretrained and fine-tuned large language models (LLMs) ranging in scale from 7 billion to 70 billion parameters."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "Our models outperform open-source chat models on most benchmarks we tested, and based on our human evaluations for helpfulness and safety, may be a suitable substitute for closed-source models.",
+      "attention_tier": "B",
+      "priority": 0.88,
+      "reading_order": 2,
+      "source_span": {
+        "start": 1352,
+        "end": 1545,
+        "quote": "Our models outperform open-source chat models on most benchmarks we tested, and based on our human evaluations for helpfulness and safety, may be a suitable substitute for closed-source models."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "Our fine-tuned LLMs, called Llama 2-Chat, are optimized for dialogue use cases.",
+      "attention_tier": "C",
+      "priority": 0.75,
+      "reading_order": 3,
+      "source_span": {
+        "start": 1272,
+        "end": 1351,
+        "quote": "Our fine-tuned LLMs, called Llama 2-Chat, are optimized for dialogue use cases."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "decision-1",
+      "type": "decision",
+      "content": "We provide a detailed description of our approach to fine-tuning and safety improvements of Llama 2-Chat in order to enable the community to build on our work and contribute to the responsible development of LLMs.",
+      "attention_tier": "C",
+      "priority": 0.55,
+      "reading_order": 4,
+      "source_span": {
+        "start": 1546,
+        "end": 1759,
+        "quote": "We provide a detailed description of our approach to fine-tuning and safety improvements of Llama 2-Chat in order to enable the community to build on our work and contribute to the responsible development of LLMs."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:7b67a2301b77c2c00fcbd46bf8e2ab5f1203d9ff1f06b9104f3bc4a3ca088209",
+    "chars": 1760,
+    "lang": "en"
+  }
+}

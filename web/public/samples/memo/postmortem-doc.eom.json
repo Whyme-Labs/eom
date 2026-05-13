@@ -1,0 +1,129 @@
+{
+  "version": "0.1",
+  "document_type": "memo",
+  "summary": "A project post-mortem is a structured review that identifies the causes of project failure or downtime and drives process improvements to prevent recurrence.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "Postmortem documentation",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 26,
+        "quote": "Postmortem documentation"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "A project post-mortem is a process used to identify the causes of a project failure (or significant business-impairing downtime), and how to prevent them in the future. This differs from a retrospective, which reviews both positive and negative aspects of a project.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 28,
+        "end": 294,
+        "quote": "A project post-mortem is a process used to identify the causes of a project failure (or significant business-impairing downtime), and how to prevent them in the future. This differs from a retrospective, which reviews both positive and negative aspects of a project."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "The Project Management Body of Knowledge refers to this process as \"lessons learned.\" Project post-mortems are intended to inform process improvements which mitigate future risks and to promote iterative best practices. Post-mortems are often considered a key component of, and ongoing precursor to, effective risk management.",
+      "attention_tier": "B",
+      "priority": 0.85,
+      "reading_order": 2,
+      "source_span": {
+        "start": 296,
+        "end": 622,
+        "quote": "The Project Management Body of Knowledge refers to this process as \"lessons learned.\" Project post-mortems are intended to inform process improvements which mitigate future risks and to promote iterative best practices. Post-mortems are often considered a key component of, and ongoing precursor to, effective risk management."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "Elements of a project post-mortem",
+      "attention_tier": "C",
+      "priority": 0.73,
+      "reading_order": 3,
+      "source_span": {
+        "start": 624,
+        "end": 660,
+        "quote": "## Elements of a project post-mortem"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-2",
+      "type": "factbox",
+      "content": "Post-mortems can encompass both quantitative and qualitative data. Quantitative data includes the variance between the hours estimated for a project and the actual hours incurred. Qualitative data often encompasses stakeholder satisfaction, end-user satisfaction, team satisfaction, potential reusability, and perceived quality of deliverables.",
+      "attention_tier": "C",
+      "priority": 0.61,
+      "reading_order": 4,
+      "source_span": {
+        "start": 662,
+        "end": 1006,
+        "quote": "Post-mortems can encompass both quantitative and qualitative data. Quantitative data includes the variance between the hours estimated for a project and the actual hours incurred. Qualitative data often encompasses stakeholder satisfaction, end-user satisfaction, team satisfaction, potential reusability, and perceived quality of deliverables."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-1",
+      "type": "appendix",
+      "content": "Role of time tracking",
+      "attention_tier": "D",
+      "priority": 0.45,
+      "reading_order": 5,
+      "source_span": {
+        "start": 1008,
+        "end": 1032,
+        "quote": "## Role of time tracking"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "Successful analysis of project estimate variance is dependent on accurate time tracking. The greater the granularity with which time is tracked, the more detailed an analysis can be performed during the project post-mortem.",
+      "attention_tier": "C",
+      "priority": 0.37,
+      "reading_order": 6,
+      "source_span": {
+        "start": 1034,
+        "end": 1257,
+        "quote": "Successful analysis of project estimate variance is dependent on accurate time tracking. The greater the granularity with which time is tracked, the more detailed an analysis can be performed during the project post-mortem."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:7334e5004a8cdc1f4ffbd6468cf52eb65ef274e1916c000b6c33a552e95a7185",
+    "chars": 1258,
+    "lang": "en"
+  }
+}

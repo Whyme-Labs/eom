@@ -1,0 +1,177 @@
+{
+  "version": "0.1",
+  "document_type": "news",
+  "summary": "The 2024 Summer Olympics (Paris 2024, Games of the XXXIII Olympiad) were held in France from 26 July to 11 August 2024, featuring 10,714 athletes across 329 events; the US and China tied on gold medals (40 each) and Paris became only the second city to host the Summer Games three times.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "2024 Summer Olympics",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 22,
+        "quote": "2024 Summer Olympics"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "The 2024 Summer Olympics, officially known as the Games of the XXXIII Olympiad and branded as Paris 2024, took place in France from July 26 to August 11, 2024, with certain events beginning on July 24. Paris served as the host city, with additional events distributed across 16 other metropolitan French locations.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 24,
+        "end": 338,
+        "quote": "The 2024 Summer Olympics, officially known as the Games of the XXXIII Olympiad and branded as Paris 2024, took place in France from July 26 to August 11, 2024, with certain events beginning on July 24. Paris served as the host city, with additional events distributed across 16 other metropolitan French locations."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "This marked Paris's third hosting of the Summer Olympics, following 1900 and 1924. The city thus became only the second location ever to host the Summer Games three times, with London being the first. The 2024 Games commemorated the centennial of Paris's 1924 Olympics and the inaugural 1924 Winter Olympics in Chamonix. France hosted the Summer Games for the third time and Winter Games three times across its Olympic history.",
+      "attention_tier": "B",
+      "priority": 0.90,
+      "reading_order": 2,
+      "source_span": {
+        "start": 587,
+        "end": 1014,
+        "quote": "This marked Paris's third hosting of the Summer Olympics, following 1900 and 1924. The city thus became only the second location ever to host the Summer Games three times, with London being the first. The 2024 Games commemorated the centennial of Paris's 1924 Olympics and the inaugural 1924 Winter Olympics in Chamonix. France hosted the Summer Games for the third time and Winter Games three times across its Olympic history."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "The Games featured 10,714 athletes competing across 329 events in 32 sports comprising 48 disciplines. Breaking made its Olympic debut, while skateboarding, sport climbing, and surfing returned after debuting in 2020. The event was the first to achieve full gender parity in athlete participation.",
+      "attention_tier": "C",
+      "priority": 0.85,
+      "reading_order": 3,
+      "source_span": {
+        "start": 1016,
+        "end": 1313,
+        "quote": "The Games featured 10,714 athletes competing across 329 events in 32 sports comprising 48 disciplines. Breaking made its Olympic debut, while skateboarding, sport climbing, and surfing returned after debuting in 2020. The event was the first to achieve full gender parity in athlete participation."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "The opening ceremony, directed by Thomas Jolly, departed from tradition by occurring outside a stadium. Instead, athletes paraded by boat along the Seine from Pont d'Austerlitz to Pont d'Iéna, with cultural performances at various landmarks. The flame was lit by judoka Teddy Riner and sprinter Marie-José Pérec. For the first time, the Olympic cauldron used LED lighting and aerosol jets rather than actual combustion.",
+      "attention_tier": "C",
+      "priority": 0.75,
+      "reading_order": 4,
+      "source_span": {
+        "start": 1315,
+        "end": 1734,
+        "quote": "The opening ceremony, directed by Thomas Jolly, departed from tradition by occurring outside a stadium. Instead, athletes paraded by boat along the Seine from Pont d'Austerlitz to Pont d'Iéna, with cultural performances at various landmarks. The flame was lit by judoka Teddy Riner and sprinter Marie-José Pérec. For the first time, the Olympic cauldron used LED lighting and aerosol jets rather than actual combustion."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-2",
+      "type": "factbox",
+      "content": "The United States topped the medal count with 40 gold and 126 total medals, marking its fourth consecutive Summer Olympics at the top position. China tied the U.S. on gold medals (40) but finished second with 91 total medals—the first time these two most successful Olympic nations tied in gold. Japan earned 20 gold and 45 total medals, while Australia achieved 18 gold and 53 total, marking its most successful Summer Olympics. France, the host nation, secured 16 gold and 64 total medals, their best finish since 1996. Several nations won their first-ever Olympic medals, including Dominica and Saint Lucia (each earning gold), Cape Verde, and Albania.",
+      "attention_tier": "C",
+      "priority": 0.70,
+      "reading_order": 5,
+      "source_span": {
+        "start": 1736,
+        "end": 2391,
+        "quote": "The United States topped the medal count with 40 gold and 126 total medals, marking its fourth consecutive Summer Olympics at the top position. China tied the U.S. on gold medals (40) but finished second with 91 total medals—the first time these two most successful Olympic nations tied in gold. Japan earned 20 gold and 45 total medals, while Australia achieved 18 gold and 53 total, marking its most successful Summer Olympics. France, the host nation, secured 16 gold and 64 total medals, their best finish since 1996. Several nations won their first-ever Olympic medals, including Dominica and Saint Lucia (each earning gold), Cape Verde, and Albania."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "The Games recorded over 9.5 million ticket sales out of 10 million available, surpassing the previous record from the 1996 Atlanta Olympics. Despite controversies regarding logistics, politics, and Olympic Village conditions, observers and Parisians largely considered the Games successful.",
+      "attention_tier": "C",
+      "priority": 0.65,
+      "reading_order": 6,
+      "source_span": {
+        "start": 2393,
+        "end": 2683,
+        "quote": "The Games recorded over 9.5 million ticket sales out of 10 million available, surpassing the previous record from the 1996 Atlanta Olympics. Despite controversies regarding logistics, politics, and Olympic Village conditions, observers and Parisians largely considered the Games successful."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "decision-1",
+      "type": "decision",
+      "content": "The IOC subsequently established procedures for Los Angeles 2024 and Paris 2024 bid committees to negotiate which city would host which Olympiad. Following negotiations, the IOC announced Los Angeles as sole candidate for 2028 on July 31, 2017, enabling Paris confirmation for 2024. Both bids received praise for their technical plans and innovative use of existing and temporary facilities. Both decisions were ratified at the 131st IOC Session on September 13, 2017.",
+      "attention_tier": "C",
+      "priority": 0.60,
+      "reading_order": 7,
+      "source_span": {
+        "start": 3777,
+        "end": 4245,
+        "quote": "The IOC subsequently established procedures for Los Angeles 2024 and Paris 2024 bid committees to negotiate which city would host which Olympiad. Following negotiations, the IOC announced Los Angeles as sole candidate for 2028 on July 31, 2017, enabling Paris confirmation for 2024. Both bids received praise for their technical plans and innovative use of existing and temporary facilities. Both decisions were ratified at the 131st IOC Session on September 13, 2017."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-2",
+      "type": "evidence",
+      "content": "Paris did not pursue hosting the Olympics again until bidding for 2024, which would mark the centenary of its 1924 Games. Previous unsuccessful bids targeted 1992, 2008, and 2012. Six cities initially entered the bidding process: Paris, Hamburg, Boston, Budapest, Rome, and Los Angeles. The competition faced significant obstacles from withdrawals and rising costs.",
+      "attention_tier": "D",
+      "priority": 0.45,
+      "reading_order": 8,
+      "source_span": {
+        "start": 2700,
+        "end": 3065,
+        "quote": "Paris did not pursue hosting the Olympics again until bidding for 2024, which would mark the centenary of its 1924 Games. Previous unsuccessful bids targeted 1992, 2008, and 2012. Six cities initially entered the bidding process: Paris, Hamburg, Boston, Budapest, Rome, and Los Angeles. The competition faced significant obstacles from withdrawals and rising costs."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-1",
+      "type": "appendix",
+      "content": "Most Olympic events took place in Paris and its metropolitan region, including neighboring cities such as Saint-Denis, Le Bourget, Nanterre, Versailles, and Vaires-sur-Marne. Beyond this core zone, basketball preliminaries and handball finals occurred in Lille, 225 kilometers away. Marseille, 777 kilometers distant, hosted sailing and some football matches. Teahupo'o in Tahiti hosted surfing at a distance of 15,716 kilometers.",
+      "attention_tier": "D",
+      "priority": 0.35,
+      "reading_order": 9,
+      "source_span": {
+        "start": 4428,
+        "end": 4858,
+        "quote": "Most Olympic events took place in Paris and its metropolitan region, including neighboring cities such as Saint-Denis, Le Bourget, Nanterre, Versailles, and Vaires-sur-Marne. Beyond this core zone, basketball preliminaries and handball finals occurred in Lille, 225 kilometers away. Marseille, 777 kilometers distant, hosted sailing and some football matches. Teahupo'o in Tahiti hosted surfing at a distance of 15,716 kilometers."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:3d0998187a42436bd9bb135a0db2888bbd064d7297671a5bb93a833610fdf510",
+    "chars": 6708,
+    "lang": "en"
+  }
+}

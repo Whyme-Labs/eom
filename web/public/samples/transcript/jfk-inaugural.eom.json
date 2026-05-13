@@ -1,0 +1,225 @@
+{
+  "version": "0.1",
+  "document_type": "transcript",
+  "summary": "John F. Kennedy's 1,366-word inaugural address of January 20, 1961, called on Americans and the world to bear the burdens of Cold War-era freedom, and issued the defining summons of his presidency: ask not what your country can do for you—ask what you can do for your country.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "JFK Inaugural Address",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 23,
+        "quote": "JFK Inaugural Address"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "John F. Kennedy's inaugural address was delivered on January 20, 1961, at the East Portico of the United States Capitol in Washington, D.C., at the start of his presidency as the 35th president of the United States.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 25,
+        "end": 240,
+        "quote": "John F. Kennedy's inaugural address was delivered on January 20, 1961, at the East Portico of the United States Capitol in Washington, D.C., at the start of his presidency as the 35th president of the United States."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "The most famous passage of the address employed antimetabole, a classical rhetorical device that inverts parallel structures: \"And so, my fellow Americans, ask not what your country can do for you—ask what you can do for your country.\" This call to public service became the speech's thesis, appealing to Americans' sense of duty and sacrifice for the greater good. A companion appeal to citizens of other nations followed: \"My fellow citizens of the world, ask not what America will do for you, but what together we can do for the freedom of man.\"",
+      "attention_tier": "B",
+      "priority": 0.90,
+      "reading_order": 2,
+      "source_span": {
+        "start": 1773,
+        "end": 2321,
+        "quote": "The most famous passage of the address employed antimetabole, a classical rhetorical device that inverts parallel structures: \"And so, my fellow Americans, ask not what your country can do for you—ask what you can do for your country.\" This call to public service became the speech's thesis, appealing to Americans' sense of duty and sacrifice for the greater good. A companion appeal to citizens of other nations followed: \"My fellow citizens of the world, ask not what America will do for you, but what together we can do for the freedom of man.\""
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "The 1,366-word speech is widely considered among the finest presidential inaugural addresses in American history and was the first inaugural address delivered to a televised audience in color. Kennedy became the first Catholic president, the youngest person elected to the office, and the first president born in the twentieth century. The ceremony drew nearly one million people to the nation's capital.",
+      "attention_tier": "C",
+      "priority": 0.80,
+      "reading_order": 3,
+      "source_span": {
+        "start": 241,
+        "end": 645,
+        "quote": "The 1,366-word speech is widely considered among the finest presidential inaugural addresses in American history and was the first inaugural address delivered to a televised audience in color. Kennedy became the first Catholic president, the youngest person elected to the office, and the first president born in the twentieth century. The ceremony drew nearly one million people to the nation's capital."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "The address emphasized duty and collective responsibility, employing strong juxtaposition and classical rhetorical devices. Kennedy spoke to the Cold War anxieties of the American people while maintaining an optimistic tone focused on the future. He called for international cooperation and unity, using the repeated phrase \"Let both sides\" to appeal to both allies and adversaries.",
+      "attention_tier": "C",
+      "priority": 0.75,
+      "reading_order": 4,
+      "source_span": {
+        "start": 1025,
+        "end": 1407,
+        "quote": "The address emphasized duty and collective responsibility, employing strong juxtaposition and classical rhetorical devices. Kennedy spoke to the Cold War anxieties of the American people while maintaining an optimistic tone focused on the future. He called for international cooperation and unity, using the repeated phrase \"Let both sides\" to appeal to both allies and adversaries."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-2",
+      "type": "evidence",
+      "content": "The speech focused on nuclear dangers, the accelerating arms race, and the need to shift emphasis from military firepower to international relations and assistance for impoverished nations worldwide. Kennedy highlighted themes of sacrifice, framing negative circumstances as challenges and opportunities, and appealing to American ideals of civic responsibility.",
+      "attention_tier": "C",
+      "priority": 0.70,
+      "reading_order": 5,
+      "source_span": {
+        "start": 1409,
+        "end": 1771,
+        "quote": "The speech focused on nuclear dangers, the accelerating arms race, and the need to shift emphasis from military firepower to international relations and assistance for impoverished nations worldwide. Kennedy highlighted themes of sacrifice, framing negative circumstances as challenges and opportunities, and appealing to American ideals of civic responsibility."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-3",
+      "type": "evidence",
+      "content": "The speech also contained what speechwriter Ted Sorensen considered its most important policy sentence: \"For only when our arms are sufficient beyond doubt can we be certain beyond doubt that they will never be employed.\" This reflected Kennedy's core doctrine of peace through strength.",
+      "attention_tier": "C",
+      "priority": 0.65,
+      "reading_order": 6,
+      "source_span": {
+        "start": 2323,
+        "end": 2610,
+        "quote": "The speech also contained what speechwriter Ted Sorensen considered its most important policy sentence: \"For only when our arms are sufficient beyond doubt can we be certain beyond doubt that they will never be employed.\" This reflected Kennedy's core doctrine of peace through strength."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-4",
+      "type": "evidence",
+      "content": "The speech employed juxtaposition prominently throughout. \"Man holds in his mortal hands the power to abolish all forms of human poverty and all forms of human life,\" Kennedy declared. Similarly: \"United there is little we cannot do in a host of cooperative ventures. Divided there is little we can do.\" These passages appealed for refocused international values.",
+      "attention_tier": "C",
+      "priority": 0.60,
+      "reading_order": 7,
+      "source_span": {
+        "start": 3090,
+        "end": 3453,
+        "quote": "The speech employed juxtaposition prominently throughout. \"Man holds in his mortal hands the power to abolish all forms of human poverty and all forms of human life,\" Kennedy declared. Similarly: \"United there is little we cannot do in a host of cooperative ventures. Divided there is little we can do.\" These passages appealed for refocused international values."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "decision-1",
+      "type": "decision",
+      "content": "ask not what your country can do for you—ask what you can do for your country.",
+      "attention_tier": "C",
+      "priority": 0.88,
+      "reading_order": 8,
+      "source_span": {
+        "start": 1929,
+        "end": 2007,
+        "quote": "ask not what your country can do for you—ask what you can do for your country."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": "claim-1"
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "Sorensen revealed in 2007 that Kennedy had five objectives for his speech, all of which were achieved. The address proved transformative, heralding a new American foreign policy aimed at peaceful resolution of the Cold War struggle with the Soviet Union.",
+      "attention_tier": "C",
+      "priority": 0.55,
+      "reading_order": 9,
+      "source_span": {
+        "start": 3859,
+        "end": 4113,
+        "quote": "Sorensen revealed in 2007 that Kennedy had five objectives for his speech, all of which were achieved. The address proved transformative, heralding a new American foreign policy aimed at peaceful resolution of the Cold War struggle with the Soviet Union."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-2",
+      "type": "caveat",
+      "content": "The address was immediately recognized as a landmark of American political rhetoric. Its themes of collective sacrifice, international cooperation, and generational responsibility resonated widely at home and abroad. Kennedy's call to service inspired a generation of Americans to enter public life and contributed to the creation of the Peace Corps, established by executive order less than two months later.",
+      "attention_tier": "D",
+      "priority": 0.45,
+      "reading_order": 10,
+      "source_span": {
+        "start": 4115,
+        "end": 4524,
+        "quote": "The address was immediately recognized as a landmark of American political rhetoric. Its themes of collective sacrifice, international cooperation, and generational responsibility resonated widely at home and abroad. Kennedy's call to service inspired a generation of Americans to enter public life and contributed to the creation of the Peace Corps, established by executive order less than two months later."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-1",
+      "type": "appendix",
+      "content": "Kennedy used kairos—the rhetorical principle of saying what fits a given moment—to address American Cold War anxieties with optimism. He framed the burden of leadership as a privilege: \"In the long history of the world, only a few generations have been granted the role of defending freedom in its hour of maximum danger. I do not shrink from this responsibility—I welcome it.\"",
+      "attention_tier": "D",
+      "priority": 0.40,
+      "reading_order": 11,
+      "source_span": {
+        "start": 3455,
+        "end": 3832,
+        "quote": "Kennedy used kairos—the rhetorical principle of saying what fits a given moment—to address American Cold War anxieties with optimism. He framed the burden of leadership as a privilege: \"In the long history of the world, only a few generations have been granted the role of defending freedom in its hour of maximum danger. I do not shrink from this responsibility—I welcome it.\""
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "appendix-2",
+      "type": "appendix",
+      "content": "The most famous passage from the inaugural address is etched in stone at Kennedy's gravesite in Arlington National Cemetery, ensuring the words endure as a testament to his vision of American civic responsibility. The speech is regularly cited by scholars and journalists among the greatest presidential addresses in American history, alongside Lincoln's Gettysburg Address and second inaugural.",
+      "attention_tier": "D",
+      "priority": 0.30,
+      "reading_order": 12,
+      "source_span": {
+        "start": 4526,
+        "end": 4921,
+        "quote": "The most famous passage from the inaugural address is etched in stone at Kennedy's gravesite in Arlington National Cemetery, ensuring the words endure as a testament to his vision of American civic responsibility. The speech is regularly cited by scholars and journalists among the greatest presidential addresses in American history, alongside Lincoln's Gettysburg Address and second inaugural."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:c537dce51cf0539f755015f407d5a4b8d7b283aeb1b133929080ab6904a45074",
+    "chars": 4922,
+    "lang": "en"
+  }
+}

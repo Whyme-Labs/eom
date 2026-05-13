@@ -1,0 +1,145 @@
+{
+  "version": "0.1",
+  "document_type": "paper",
+  "summary": "Mistral 7B is a 7-billion-parameter open-weights LLM that matches or exceeds Llama 2 13B on all evaluated benchmarks via grouped-query attention and sliding-window attention, while remaining efficient enough for practical deployment.",
+  "render_profile": "executive_brief",
+  "attention_budget": {
+    "B_A": 200,
+    "B_AB": 800
+  },
+  "blocks": [
+    {
+      "id": "headline-1",
+      "type": "headline",
+      "content": "Mistral 7B",
+      "attention_tier": "A",
+      "priority": 1.0,
+      "reading_order": 0,
+      "source_span": {
+        "start": 2,
+        "end": 12,
+        "quote": "Mistral 7B"
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "lead-1",
+      "type": "lead",
+      "content": "We introduce Mistral 7B, a 7-billion-parameter language model engineered for superior performance and efficiency.",
+      "attention_tier": "B",
+      "priority": 0.95,
+      "reading_order": 1,
+      "source_span": {
+        "start": 346,
+        "end": 459,
+        "quote": "We introduce Mistral 7B, a 7-billion-parameter language model engineered for superior performance and efficiency."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-1",
+      "type": "claim",
+      "content": "Mistral 7B outperforms the best open 13B model (Llama 2) across all evaluated benchmarks, and the best released 34B model (Llama 1) in reasoning, mathematics, and code generation.",
+      "attention_tier": "B",
+      "priority": 0.88,
+      "reading_order": 2,
+      "source_span": {
+        "start": 460,
+        "end": 639,
+        "quote": "Mistral 7B outperforms the best open 13B model (Llama 2) across all evaluated benchmarks, and the best released 34B model (Llama 1) in reasoning, mathematics, and code generation."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "factbox-1",
+      "type": "factbox",
+      "content": "Our model leverages grouped-query attention (GQA) for faster inference, coupled with sliding window attention (SWA) to effectively handle sequences of arbitrary length with a reduced inference cost.",
+      "attention_tier": "C",
+      "priority": 0.75,
+      "reading_order": 3,
+      "source_span": {
+        "start": 640,
+        "end": 838,
+        "quote": "Our model leverages grouped-query attention (GQA) for faster inference, coupled with sliding window attention (SWA) to effectively handle sequences of arbitrary length with a reduced inference cost."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "claim-2",
+      "type": "claim",
+      "content": "We also provide a model fine-tuned to follow instructions, Mistral 7B -- Instruct, that surpasses Llama 2 13B -- chat model both on human and automated benchmarks.",
+      "attention_tier": "C",
+      "priority": 0.65,
+      "reading_order": 4,
+      "source_span": {
+        "start": 839,
+        "end": 1002,
+        "quote": "We also provide a model fine-tuned to follow instructions, Mistral 7B -- Instruct, that surpasses Llama 2 13B -- chat model both on human and automated benchmarks."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "decision-1",
+      "type": "decision",
+      "content": "Our models are released under the Apache 2.0 license.",
+      "attention_tier": "C",
+      "priority": 0.55,
+      "reading_order": 5,
+      "source_span": {
+        "start": 1003,
+        "end": 1056,
+        "quote": "Our models are released under the Apache 2.0 license."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "caveat-1",
+      "type": "caveat",
+      "content": "In the rapidly evolving domain of Natural Language Processing (NLP), the race towards higher model performance often necessitates an escalation in model size. However, this scaling tends to increase computational costs and inference latency, thereby raising barriers to deployment in practical, real-world scenarios. In this context, the search for balanced models delivering both high-level performance and efficiency becomes critically essential. Our model, Mistral 7B, demonstrates that a carefully designed language model can deliver high performance while maintaining an efficient inference. Mistral 7B outperforms the previous best 13B model (Llama 2) across all tested benchmarks, and surpasses the best 34B model (LLaMa 34B) in mathematics and code generation. Furthermore, Mistral 7B approaches the coding performance of Code-Llama 7B, without sacrificing performance on non-code related benchmarks.",
+      "attention_tier": "C",
+      "priority": 0.45,
+      "reading_order": 6,
+      "source_span": {
+        "start": 1075,
+        "end": 1983,
+        "quote": "In the rapidly evolving domain of Natural Language Processing (NLP), the race towards higher model performance often necessitates an escalation in model size. However, this scaling tends to increase computational costs and inference latency, thereby raising barriers to deployment in practical, real-world scenarios. In this context, the search for balanced models delivering both high-level performance and efficiency becomes critically essential. Our model, Mistral 7B, demonstrates that a carefully designed language model can deliver high performance while maintaining an efficient inference. Mistral 7B outperforms the previous best 13B model (Llama 2) across all tested benchmarks, and surpasses the best 34B model (LLaMa 34B) in mathematics and code generation. Furthermore, Mistral 7B approaches the coding performance of Code-Llama 7B, without sacrificing performance on non-code related benchmarks."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    },
+    {
+      "id": "evidence-1",
+      "type": "evidence",
+      "content": "Mistral 7B leverages grouped-query attention (GQA) and sliding window attention (SWA). GQA significantly accelerates the inference speed, and also reduces the memory requirement during decoding, allowing for higher batch sizes hence higher throughput, a crucial factor for real-time applications. In addition, SWA is designed to handle longer sequences more effectively at a reduced computational cost, thereby alleviating a common limitation in LLMs. These attention mechanisms collectively contribute to the enhanced performance and efficiency of Mistral 7B.",
+      "attention_tier": "D",
+      "priority": 0.35,
+      "reading_order": 7,
+      "source_span": {
+        "start": 1985,
+        "end": 2545,
+        "quote": "Mistral 7B leverages grouped-query attention (GQA) and sliding window attention (SWA). GQA significantly accelerates the inference speed, and also reduces the memory requirement during decoding, allowing for higher batch sizes hence higher throughput, a crucial factor for real-time applications. In addition, SWA is designed to handle longer sequences more effectively at a reduced computational cost, thereby alleviating a common limitation in LLMs. These attention mechanisms collectively contribute to the enhanced performance and efficiency of Mistral 7B."
+      },
+      "is_inferred": false,
+      "inference_basis": [],
+      "parent_id": null
+    }
+  ],
+  "source": {
+    "checksum": "sha256:a4e3d62ae000d963f8bb808f1e6738ab0498151defb55044ee66af5dd16413b8",
+    "chars": 2546,
+    "lang": "en"
+  }
+}
