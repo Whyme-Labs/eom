@@ -28,7 +28,8 @@
     "enabled": true
   },
 
-  // R2 — sample corpus + compiled outputs
+  // R2 — gold corpus + compiled outputs.
+  // Provisioned: swmengappdev account, bucket "eom-corpus".
   "r2_buckets": [
     {
       "binding": "CORPUS",
@@ -36,20 +37,22 @@
     }
   ],
 
-  // D1 — relational store for qsets and benchmark runs
+  // D1 — relational store for qsets and benchmark runs.
+  // Provisioned: swmengappdev account, db "eom-data" (APAC region).
   "d1_databases": [
     {
       "binding": "DB",
       "database_name": "eom-data",
-      "database_id": "PLACEHOLDER_REPLACE_AFTER_CREATE"
+      "database_id": "53f25532-6837-45ff-a27f-f01f17458bb4"
     }
   ],
 
-  // KV — short-TTL cache for compiled docs keyed by source hash
+  // KV — short-TTL cache for compiled docs keyed by source hash.
+  // Provisioned: swmengappdev account, namespace "eom_cache".
   "kv_namespaces": [
     {
       "binding": "CACHE",
-      "id": "PLACEHOLDER_REPLACE_AFTER_CREATE"
+      "id": "4692de13298145a2941ef5678427dc65"
     }
   ],
 

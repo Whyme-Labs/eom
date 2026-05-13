@@ -54,7 +54,9 @@ async function fetchText(path, init) {
 }
 
 async function loadManifest() {
-  state.manifest = await fetchJson("/samples/manifest.json");
+  const data = await fetchJson("/api/samples");
+  state.manifest = data.samples || [];
+  state.manifestSource = data.source || "?";
   samplePicker.innerHTML =
     `<option value="">— choose —</option>` +
     state.manifest.map((m) =>
@@ -62,12 +64,14 @@ async function loadManifest() {
     ).join("");
 }
 
-async function loadQsets() {
+async function loadQsetsForCurrent() {
+  if (!state.currentId) return;
   try {
-    const data = await fetchJson("/qsets.json");
-    for (const q of data.qsets || []) state.qsets[q.doc_id] = q.questions;
-  } catch (e) {
-    // qsets are optional; fall back to custom-only mode.
+    const data = await fetchJson(`/api/qsets/${state.currentId}`);
+    state.qsetSource = data.source || "?";
+    return data.questions || [];
+  } catch {
+    return [];
   }
 }
 
@@ -89,7 +93,6 @@ samplePicker.addEventListener("change", async () => {
   if (!id) return;
   state.currentId = id;
   sampleMeta.textContent = "loading…";
-  // Populate all panels in parallel.
   await Promise.all([
     loadJsonPanel(id),
     loadNewspaperPanel(id),
@@ -98,10 +101,16 @@ samplePicker.addEventListener("change", async () => {
     loadAskPresets(id),
   ]);
   const m = state.manifest.find((x) => x.id === id);
-  sampleMeta.textContent = m ? `${m.type} · ${m.title || m.slug}` : id;
+  const tag = state.manifestSource === "d1" ? "D1" : "static";
+  sampleMeta.innerHTML = m
+    ? `${escape(m.type)} · ${escape(m.title || m.slug)} <small style="opacity:0.6">(via ${tag})</small>`
+    : id;
 });
 
 async function loadJsonPanel(id) {
+  // Fetch the eom.json via /api/render/* round-trip would re-validate; for
+  // raw JSON display we fetch the static asset directly (R2-backed in prod
+  // via a /samples/* rewrite is a Phase-4 nicety).
   const eom = await fetchJson(`/samples/${id}.eom.json`);
   state.currentEom = eom;
   jsonOut.textContent = JSON.stringify(eom, null, 2);
@@ -168,16 +177,18 @@ askBudget.addEventListener("input", () => {
   askBudgetValue.textContent = askBudget.value;
 });
 
-function loadAskPresets(id) {
-  const presets = state.qsets[id.split("/", 2)[1]] || [];
+async function loadAskPresets(id) {
+  const presets = await loadQsetsForCurrent();
+  state.currentQsets = presets;
   questionPicker.innerHTML =
     `<option value="">— preset or use custom —</option>` +
-    presets.map((p) => `<option value="${escape(p.q)}" data-ref="${escape(p.ref)}">${escape(p.q)}</option>`).join("");
+    presets.map((p) =>
+      `<option value="${escape(p.q)}" data-ref="${escape(p.ref)}">${escape(p.q)}</option>`,
+    ).join("");
   questionPicker.disabled = presets.length === 0;
   customQuestion.value = "";
   askRun.disabled = false;
   askReference.hidden = true;
-  return null;
 }
 
 questionPicker.addEventListener("change", () => {
@@ -265,7 +276,20 @@ function escape(s) {
 
 (async () => {
   try {
-    await Promise.all([loadManifest(), loadQsets()]);
+    await loadManifest();
+    // Health check is a nice diagnostic for which CF bindings are wired.
+    fetchJson("/api/health").then((h) => {
+      const tags = [];
+      if (h.bindings?.r2) tags.push("R2");
+      if (h.bindings?.d1) tags.push(`D1 (${h.d1_docs ?? "?"} docs)`);
+      if (h.bindings?.kv) tags.push("KV");
+      if (h.bindings?.ai) tags.push("AI");
+      if (h.bindings?.openrouter) tags.push("OpenRouter");
+      const el = document.querySelector(".hero .meta");
+      if (el && tags.length) {
+        el.innerHTML += ` &middot; bindings: <code>${tags.join(", ")}</code>`;
+      }
+    }).catch(() => {});
   } catch (e) {
     document.body.insertAdjacentHTML(
       "afterbegin",

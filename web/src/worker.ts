@@ -56,29 +56,72 @@ async function fetchAsset(env: Env, request: Request, path: string): Promise<Res
   return env.ASSETS.fetch(new Request(url.toString(), { method: "GET" }));
 }
 
+// R2 keys mirror the path layout: <type>/<slug>.md, <type>/<slug>.eom.json.
+async function fetchSampleFromR2(env: Env, id: string)
+  : Promise<{ raw: string; eom: unknown } | null> {
+  if (!env.CORPUS) return null;
+  const [md, eom] = await Promise.all([
+    env.CORPUS.get(`${id}.md`),
+    env.CORPUS.get(`${id}.eom.json`),
+  ]);
+  if (!md || !eom) return null;
+  return { raw: await md.text(), eom: await eom.json() };
+}
+
+async function fetchSampleFromAssets(env: Env, request: Request, id: string)
+  : Promise<{ raw: string; eom: unknown } | null> {
+  const [mdResp, eomResp] = await Promise.all([
+    fetchAsset(env, request, `/samples/${id}.md`),
+    fetchAsset(env, request, `/samples/${id}.eom.json`),
+  ]);
+  if (mdResp.status === 404 || eomResp.status === 404) return null;
+  return { raw: await mdResp.text(), eom: await eomResp.json() };
+}
+
 async function loadSample(env: Env, request: Request, id: string)
-  : Promise<{ raw: string; norm: string; eom: EOMDocument } | Response> {
+  : Promise<{ raw: string; norm: string; eom: EOMDocument; source: "r2" | "assets" } | Response> {
   if (!SAMPLE_ID_RE.test(id)) {
     return new Response(JSON.stringify({ error: "bad sample id" }),
       { status: 400, headers: { "content-type": "application/json" } });
   }
-  const mdResp = await fetchAsset(env, request, `/samples/${id}.md`);
-  const eomResp = await fetchAsset(env, request, `/samples/${id}.eom.json`);
-  if (mdResp.status === 404 || eomResp.status === 404) {
+  // Prefer R2 (canonical store); fall back to bundled assets so wrangler
+  // dev runs without R2 still work.
+  let source: "r2" | "assets" = "r2";
+  let raw_eom = await fetchSampleFromR2(env, id);
+  if (!raw_eom) {
+    raw_eom = await fetchSampleFromAssets(env, request, id);
+    source = "assets";
+  }
+  if (!raw_eom) {
     return new Response(JSON.stringify({ error: `unknown sample ${id}` }),
       { status: 404, headers: { "content-type": "application/json" } });
   }
-  const raw = await mdResp.text();
-  const norm = normalise(raw);
-  const eomJson = await eomResp.json();
-  const parsed = EOMDocument.safeParse(eomJson);
+  const parsed = EOMDocument.safeParse(raw_eom.eom);
   if (!parsed.success) {
     return new Response(JSON.stringify({
       error: "eom schema invalid",
       details: parsed.error.issues,
     }), { status: 422, headers: { "content-type": "application/json" } });
   }
-  return { raw, norm, eom: parsed.data };
+  return { raw: raw_eom.raw, norm: normalise(raw_eom.raw), eom: parsed.data, source };
+}
+
+// KV cache for renderContextPack output. Key = `${id}::${budget}`; value is
+// the rendered text. EOM compilations are immutable per (id, budget) so a
+// 24h TTL is safe; bumping the EOM schema bumps the key implicitly via id.
+const PACK_CACHE_TTL_SECONDS = 24 * 60 * 60;
+async function cachedPack(env: Env, id: string, budget: number,
+                          eom: EOMDocument): Promise<{ text: string; cached: boolean }> {
+  const key = `pack::${id}::${budget}`;
+  if (env.CACHE) {
+    const hit = await env.CACHE.get(key);
+    if (hit) return { text: hit, cached: true };
+  }
+  const text = renderContextPack(eom, budget);
+  if (env.CACHE) {
+    await env.CACHE.put(key, text, { expirationTtl: PACK_CACHE_TTL_SECONDS });
+  }
+  return { text, cached: false };
 }
 
 async function callOpenRouter(env: Env, system: string, user: string,
@@ -114,9 +157,92 @@ async function callOpenRouter(env: Env, system: string, user: string,
 
 // --- routes ---------------------------------------------------------------
 
-app.get("/api/health", (c) =>
-  c.json({ ok: true, ts: new Date().toISOString() })
-);
+app.get("/api/health", async (c) => {
+  // Bind-aware health check so the demo can show which CF services are wired.
+  const bindings = {
+    assets: !!c.env.ASSETS,
+    r2: !!c.env.CORPUS,
+    d1: !!c.env.DB,
+    kv: !!c.env.CACHE,
+    ai: !!c.env.AI,
+    openrouter: !!c.env.OPENROUTER_API_KEY,
+  };
+  let d1_docs: number | null = null;
+  if (c.env.DB) {
+    try {
+      const row = await c.env.DB.prepare("SELECT COUNT(*) AS n FROM docs").first<{ n: number }>();
+      d1_docs = row?.n ?? null;
+    } catch {
+      d1_docs = null;
+    }
+  }
+  return c.json({ ok: true, ts: new Date().toISOString(), bindings, d1_docs });
+});
+
+/** List all sample docs — D1-backed with static fallback. */
+app.get("/api/samples", async (c) => {
+  if (c.env.DB) {
+    try {
+      const { results } = await c.env.DB.prepare(
+        "SELECT id, type, slug, title FROM docs ORDER BY type, slug",
+      ).all<{ id: string; type: string; slug: string; title: string }>();
+      if (results && results.length > 0) {
+        return c.json({ source: "d1", samples: results });
+      }
+    } catch (e) {
+      // fall through to static
+    }
+  }
+  // Static fallback — bundled manifest under public/samples/.
+  const r = await fetchAsset(c.env, c.req.raw, "/samples/manifest.json");
+  const samples = await r.json();
+  return c.json({ source: "assets", samples });
+});
+
+/** Questions for a doc — D1-backed with static fallback. */
+app.get("/api/qsets/:type/:slug", async (c) => {
+  const id = `${c.req.param("type")}/${c.req.param("slug")}`;
+  if (c.env.DB) {
+    try {
+      const { results } = await c.env.DB.prepare(
+        "SELECT q_id AS id, question AS q, reference AS ref " +
+        "FROM qsets WHERE doc_id = ? ORDER BY position",
+      ).bind(id).all<{ id: string; q: string; ref: string }>();
+      return c.json({ source: "d1", doc_id: id, questions: results ?? [] });
+    } catch (e) {
+      // fall through
+    }
+  }
+  // Static fallback: filter qsets.json by slug (matches the JSON layout).
+  const r = await fetchAsset(c.env, c.req.raw, "/qsets.json");
+  const data = await r.json() as { qsets?: Array<{ doc_id: string; questions: any[] }> };
+  const slug = c.req.param("slug");
+  const match = data.qsets?.find((q) => q.doc_id === slug);
+  return c.json({
+    source: "assets",
+    doc_id: id,
+    questions: match?.questions ?? [],
+  });
+});
+
+/** Latest inbound-benchmark roll-up — D1-backed. */
+app.get("/api/bench/results", async (c) => {
+  if (!c.env.DB) return c.json({ source: "none", rows: [] });
+  try {
+    const { results } = await c.env.DB.prepare(
+      "SELECT run_id, doc_id, mode, COUNT(*) AS n, " +
+      "       SUM(input_tokens) AS sum_input_tokens, " +
+      "       AVG(latency_ms) AS avg_latency_ms, " +
+      "       AVG(judge_score) AS avg_score " +
+      "FROM bench_results " +
+      "GROUP BY run_id, doc_id, mode " +
+      "ORDER BY run_id DESC, doc_id, mode",
+    ).all();
+    return c.json({ source: "d1", rows: results ?? [] });
+  } catch (e: unknown) {
+    return c.json({ error: e instanceof Error ? e.message : String(e) }, 500);
+  }
+});
 
 const PackBody = z.object({
   id: SampleId,
@@ -127,9 +253,13 @@ app.post("/api/render/pack", async (c) => {
   if (!body.success) return c.json({ error: body.error.issues }, 400);
   const loaded = await loadSample(c.env, c.req.raw, body.data.id);
   if (loaded instanceof Response) return loaded;
-  const text = renderContextPack(loaded.eom, body.data.budget);
+  const { text, cached } = await cachedPack(c.env, body.data.id, body.data.budget, loaded.eom);
   return new Response(text, {
-    headers: { "content-type": "text/plain; charset=utf-8" },
+    headers: {
+      "content-type": "text/plain; charset=utf-8",
+      "x-eom-source": loaded.source,
+      "x-eom-cache": cached ? "hit" : "miss",
+    },
   });
 });
 
