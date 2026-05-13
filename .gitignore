@@ -40,3 +40,10 @@ wandb/
 .idea/
 *.swp
 .DS_Store
+
+# Video pipeline — silent narration audio and Playwright recordings (regenerable)
+video/*/narration.wav
+video/*/narration.mp3
+video/*/playwright/shots/
+video/*/renders/
+video/*/snapshots/

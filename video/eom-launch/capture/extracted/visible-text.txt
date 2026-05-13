@@ -1,0 +1,89 @@
+[h1] 📰 EOM
+[p] Two-way wire format between humans and models, with attention budgets and source grounding built in.
+[p] v0.2 · MIT ·
+[a] github.com/Whyme-Labs/eom
+[p] · bindings:
+[code] R2, D1 (32 docs), KV, AI, OpenRouter
+[h2] Sample documents
+[p] Pick a sample to load its compiled EOM IR.
+[option] — choose —
+[option] memo — The Twelve-Factor App
+[option] memo — Agile software development
+[option] memo — Bus factor
+[option] memo — Conway's law
+[option] memo — Postmortem documentation
+[option] news — Francis Scott Key Bridge collapse
+[option] news — Notre-Dame de Paris fire
+[option] news — 2024 Summer Olympics
+[option] news — 2011 Tōhoku earthquake and tsunami
+[option] other — [![curl logo](https://curl.se/logo/curl-logo.svg)](https://curl.se/)
+[option] other — git-readme
+[option] other — JSON
+[option] other — PEP 8 – Style Guide for Python Code
+[option] other — README
+[option] paper — Attention Is All You Need
+[option] paper — BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
+[option] paper — Training Compute-Optimal Large Language Models
+[option] paper — Llama 2: Open Foundation and Fine-Tuned Chat Models
+[option] paper — Mistral 7B
+[option] policy — General Data Protection Regulation
+[option] policy — Paris Agreement
+[option] policy — RFC 7540: Hypertext Transfer Protocol Version 2 (HTTP/2)
+[option] policy — RFC 9293: Transmission Control Protocol (TCP)
+[option] report — Doomsday Clock
+[option] report — IPCC Sixth Assessment Report
+[option] report — The Limits to Growth
+[option] report — Programme for International Student Assessment
+[option] report — Stern Review
+[option] transcript — Gettysburg Address
+[option] transcript — I Have a Dream
+[option] transcript — JFK Inaugural Address
+[option] transcript — Day of Infamy Speech
+[h2] Direction
+[p] Same IR, two lowerings.
+[strong] Outbound
+[p] : newspaper brief.
+[strong] Inbound
+[p] : LLM context-pack.
+[h2] OpenRouter key
+[p] The
+[strong] 🔄 Ask AI
+[p] tab is BYO key — your
+[code] sk-or-…
+[p] lives only in this browser's localStorage and is sent directly to the
+      Worker for one /api/ask call at a time.
+[a] Get one →
+[span] Key set:
+[code] sk-or-***
+[button] clear
+[button] Save
+[button] 📰 Newspaper
+[button] 🤖 Context pack
+[button] ✓ Harness
+[button] 🔄 Ask AI
+[div] Load a sample to see the outbound newspaper brief.
+[label] Token budget
+[span] 1500
+[pre] Load a sample to render the EOM context-pack.
+[pre] Load a sample to see the raw EOM JSON.
+[div] Load a sample to run H1–H12.
+[p] Send the same question to the same model with two contexts:
+        raw markdown on the left, the EOM context-pack on the right.
+        Compare token cost and answer quality.
+[label] Question
+[option] — load a sample first —
+[label] Or type your own
+[label] Pack budget
+[span] 1500
+[button] Run side-by-side →
+[h3] Raw markdown
+[summary] Context sent
+[h3] EOM context-pack
+[summary] Context sent
+[code] docs/SPEC-v0.2.md
+[p] .
+    Benchmark numbers: see
+[a] bench-results.json
+[p] .
+    The fine-tuned Gemma-4-E4B adapter (Unsloth track) lives on Modal volume
+[code] eom-sft-out:/output/eom-sft-adapter-gemma4-v5

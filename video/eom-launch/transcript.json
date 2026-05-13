@@ -1,0 +1,209 @@
+{
+  "captions": [
+    {
+      "text": "Markdown was built for storage.",
+      "start": 0,
+      "end": 2.051,
+      "beat": "beat-1-hook"
+    },
+    {
+      "text": "Not for dialogue.",
+      "start": 2.301,
+      "end": 3.901,
+      "beat": "beat-1-hook"
+    },
+    {
+      "text": "Every chat with an AI is a flat byte stream — both sides re-derive what matters every turn.",
+      "start": 4.151,
+      "end": 11.536,
+      "beat": "beat-1-hook"
+    },
+    {
+      "text": "So we built a wire format for it.",
+      "start": 11.786,
+      "end": 14.7,
+      "beat": "beat-1-hook"
+    },
+    {
+      "text": "EOM is a two-way wire format between humans and models, with attention budgets and source grounding built in.",
+      "start": 15,
+      "end": 24.87,
+      "beat": "beat-2-outbound"
+    },
+    {
+      "text": "One IR. Two lowerings.",
+      "start": 25.12,
+      "end": 27.313,
+      "beat": "beat-2-outbound"
+    },
+    {
+      "text": "**Outbound** — AI to human.",
+      "start": 27.563,
+      "end": 30.305,
+      "beat": "beat-2-outbound"
+    },
+    {
+      "text": "The same EOM document projects to a newspaper brief.",
+      "start": 30.555,
+      "end": 35.49,
+      "beat": "beat-2-outbound"
+    },
+    {
+      "text": "Headline. Lede. Body. Archive. Every claim grounded to a span in the source.",
+      "start": 35.74,
+      "end": 42.869,
+      "beat": "beat-2-outbound"
+    },
+    {
+      "text": "Twelve formal validators. H1 through H12. This document passes all of them.",
+      "start": 43.119,
+      "end": 49.699,
+      "beat": "beat-2-outbound"
+    },
+    {
+      "text": "**Inbound** — human to AI.",
+      "start": 50,
+      "end": 53.971,
+      "beat": "beat-3-inbound"
+    },
+    {
+      "text": "Same IR. Different lowering.",
+      "start": 54.221,
+      "end": 57.398,
+      "beat": "beat-3-inbound"
+    },
+    {
+      "text": "We ask the same model the same question — with two different contexts.",
+      "start": 57.648,
+      "end": 67.973,
+      "beat": "beat-3-inbound"
+    },
+    {
+      "text": "Left: raw markdown.",
+      "start": 68.223,
+      "end": 70.606,
+      "beat": "beat-3-inbound"
+    },
+    {
+      "text": "Right: the EOM context-pack.",
+      "start": 70.856,
+      "end": 74.033,
+      "beat": "beat-3-inbound"
+    },
+    {
+      "text": "Same answer. Smaller payload.",
+      "start": 74.283,
+      "end": 77.46,
+      "beat": "beat-3-inbound"
+    },
+    {
+      "text": "**0.31× the tokens.**",
+      "start": 77.71,
+      "end": 80.093,
+      "beat": "beat-3-inbound"
+    },
+    {
+      "text": "**69% reduction.**",
+      "start": 80.343,
+      "end": 81.943,
+      "beat": "beat-3-inbound"
+    },
+    {
+      "text": "Across our benchmark — three documents, fifteen questions — EOM cuts input tokens by **52%**.",
+      "start": 82.193,
+      "end": 94.106,
+      "beat": "beat-3-inbound"
+    },
+    {
+      "text": "The pack is editorially lossy *by design*.",
+      "start": 94.356,
+      "end": 99.916,
+      "beat": "beat-3-inbound"
+    },
+    {
+      "text": "Tier-A always survives. Tier-C compresses. Tier-D drops.",
+      "start": 100.166,
+      "end": 105.726,
+      "beat": "beat-3-inbound"
+    },
+    {
+      "text": "High-salience answers preserved. Tail detail demoted by priority, not by accident.",
+      "start": 105.976,
+      "end": 114.7,
+      "beat": "beat-3-inbound"
+    },
+    {
+      "text": "One core IR. Two asymmetric dialects. Shared validator.",
+      "start": 115,
+      "end": 120.502,
+      "beat": "beat-4-architecture"
+    },
+    {
+      "text": "Outbound carries visual primitives — lede, hero, factbox, archive.",
+      "start": 120.752,
+      "end": 126.942,
+      "beat": "beat-4-architecture"
+    },
+    {
+      "text": "Inbound carries model-context primitives — system intent, role tags, evidence layers, token budgets.",
+      "start": 127.192,
+      "end": 136.133,
+      "beat": "beat-4-architecture"
+    },
+    {
+      "text": "Same blocks underneath. Different projections out.",
+      "start": 136.383,
+      "end": 140.51,
+      "beat": "beat-4-architecture"
+    },
+    {
+      "text": "Deployed on the Cloudflare suite — Pages, Workers, R2, D1, KV, Workers AI.",
+      "start": 140.76,
+      "end": 149.7,
+      "beat": "beat-4-architecture"
+    },
+    {
+      "text": "For the Unsloth track, we fine-tuned Gemma-4-E4B on Modal.",
+      "start": 150,
+      "end": 155.76,
+      "beat": "beat-5-finetune"
+    },
+    {
+      "text": "bf16. Rank-32 LoRA. Thirty epochs. Canonical Unsloth recipe.",
+      "start": 156.01,
+      "end": 161.13,
+      "beat": "beat-5-finetune"
+    },
+    {
+      "text": "The adapter is the IR frontend — raw text in, EOM out, offline.",
+      "start": 161.38,
+      "end": 169.7,
+      "beat": "beat-5-finetune"
+    },
+    {
+      "text": "Markdown is for storage.",
+      "start": 170,
+      "end": 172.983,
+      "beat": "beat-6-close"
+    },
+    {
+      "text": "EOM is for dialogue.",
+      "start": 173.233,
+      "end": 176.216,
+      "beat": "beat-6-close"
+    },
+    {
+      "text": "Spec → docs/SPEC-v0.2.md.",
+      "start": 176.466,
+      "end": 178.704,
+      "beat": "beat-6-close"
+    },
+    {
+      "text": "eom-demo.swmengappdev.workers.dev",
+      "start": 178.954,
+      "end": 179.7,
+      "beat": "beat-6-close"
+    }
+  ],
+  "total_seconds": 180
+}
