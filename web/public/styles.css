@@ -64,6 +64,47 @@ main {
 }
 #sample-meta { margin-top: 0.6em; font-size: 0.85em; color: var(--muted); }
 
+#apikey-form { display: flex; gap: 0.4em; align-items: center; }
+#apikey-input {
+  flex: 1;
+  padding: 0.4em 0.5em;
+  font-size: 0.85em;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  min-width: 0;
+}
+#apikey-save, button.link {
+  padding: 0.4em 0.7em;
+  font-size: 0.82em;
+  background: var(--fg);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button.link {
+  background: transparent;
+  color: var(--accent);
+  text-decoration: underline;
+  padding: 0 0.3em;
+}
+#apikey-set {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 0.85em;
+}
+.apikey-status code { font-family: ui-monospace, monospace; }
+.apikey-banner {
+  background: var(--accent-dim);
+  border-left: 3px solid var(--accent);
+  padding: 0.5em 0.8em;
+  border-radius: 4px;
+  font-size: 0.9em;
+  margin-bottom: 0.8em;
+}
+
 /* content area */
 .content { padding: 1.5em 2em 2em; }
 .tabs { display: flex; gap: 0; border-bottom: 1px solid var(--rule); margin-bottom: 1em; }

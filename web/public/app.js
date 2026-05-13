@@ -32,13 +32,64 @@ const askRawContext = $("#ask-raw-context");
 const askPackAnswer = $("#ask-pack-answer");
 const askPackMetrics = $("#ask-pack-metrics");
 const askPackContext = $("#ask-pack-context");
+const apikeyInput = $("#apikey-input");
+const apikeySave = $("#apikey-save");
+const apikeyClear = $("#apikey-clear");
+const apikeySet = $("#apikey-set");
+const apikeyForm = $("#apikey-form");
+const apikeyMask = $("#apikey-mask");
+
+const APIKEY_LS = "eom.openrouter_key";
 
 let state = {
   manifest: [],
   qsets: {},
   currentId: null,
   currentEom: null,
+  apiKey: null,
 };
+
+// --- API key state --------------------------------------------------------
+
+function maskKey(k) {
+  if (!k) return "";
+  if (k.length < 14) return k.slice(0, 6) + "***";
+  return k.slice(0, 6) + "***" + k.slice(-3);
+}
+
+function loadApiKey() {
+  state.apiKey = localStorage.getItem(APIKEY_LS) || null;
+  syncApiKeyUi();
+}
+
+function syncApiKeyUi() {
+  if (state.apiKey) {
+    apikeyForm.hidden = true;
+    apikeySet.hidden = false;
+    apikeyMask.textContent = maskKey(state.apiKey);
+  } else {
+    apikeyForm.hidden = false;
+    apikeySet.hidden = true;
+  }
+}
+
+apikeySave.addEventListener("click", () => {
+  const k = apikeyInput.value.trim();
+  if (!k.startsWith("sk-or-")) {
+    alert("Key must start with 'sk-or-' (OpenRouter format).");
+    return;
+  }
+  localStorage.setItem(APIKEY_LS, k);
+  state.apiKey = k;
+  apikeyInput.value = "";
+  syncApiKeyUi();
+});
+
+apikeyClear.addEventListener("click", () => {
+  localStorage.removeItem(APIKEY_LS);
+  state.apiKey = null;
+  syncApiKeyUi();
+});
 
 // --- API helpers ---------------------------------------------------------
 
@@ -212,6 +263,13 @@ askRun.addEventListener("click", async () => {
   if (!state.currentId) return;
   const question = customQuestion.value.trim() || questionPicker.value;
   if (!question) return;
+  if (!state.apiKey) {
+    askHeadline.innerHTML =
+      `<strong>OpenRouter key required.</strong> Paste your <code>sk-or-…</code> ` +
+      `in the sidebar — it stays in this browser only. ` +
+      `<a href="https://openrouter.ai/keys" target="_blank" rel="noopener">Get one →</a>`;
+    return;
+  }
   askRun.disabled = true;
   askRun.textContent = "Running…";
   askRawMetrics.textContent = "";
@@ -223,6 +281,7 @@ askRun.addEventListener("click", async () => {
     id: state.currentId,
     question,
     budget: parseInt(askBudget.value, 10),
+    apiKey: state.apiKey,
   };
   try {
     const [raw, pack] = await Promise.all([
@@ -276,6 +335,7 @@ function escape(s) {
 
 (async () => {
   try {
+    loadApiKey();
     await loadManifest();
     // Health check is a nice diagnostic for which CF bindings are wired.
     fetchJson("/api/health").then((h) => {

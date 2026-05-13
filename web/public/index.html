@@ -29,6 +29,22 @@
       <strong>Outbound</strong>: newspaper brief.
       <strong>Inbound</strong>: LLM context-pack.
     </p>
+    <hr />
+    <h2>OpenRouter key</h2>
+    <p class="hint">
+      The <strong>🔄 Ask AI</strong> tab is BYO key — your <code>sk-or-…</code>
+      lives only in this browser's localStorage and is sent directly to the
+      Worker for one /api/ask call at a time.
+      <a href="https://openrouter.ai/keys" target="_blank" rel="noopener">Get one →</a>
+    </p>
+    <div id="apikey-set" hidden>
+      <span class="apikey-status">Key set: <code id="apikey-mask">sk-or-***</code></span>
+      <button id="apikey-clear" class="link">clear</button>
+    </div>
+    <div id="apikey-form">
+      <input type="password" id="apikey-input" placeholder="sk-or-…" />
+      <button id="apikey-save">Save</button>
+    </div>
   </aside>
 
   <section class="content">

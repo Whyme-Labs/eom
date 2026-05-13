@@ -23,12 +23,14 @@ import { EOMDocument } from "./eom/schema";
 import { countTokens } from "./eom/tokens";
 
 // CF Workers env bindings — declared in wrangler.jsonc.
+//
+// /api/ask is BYO-key: users supply their own OpenRouter key in the
+// request. The legacy OPENROUTER_API_KEY secret is *not* used for /api/ask
+// and is kept only for forward compatibility (and so `wrangler secret put`
+// during local dev is harmless).
 type Env = {
   ASSETS: Fetcher;
-  // OPENROUTER_API_KEY is a secret, not a binding. Accessed via env.
-  OPENROUTER_API_KEY?: string;
-  // Optional storage bindings — present in production, may be undefined in
-  // local dev runs without `wrangler dev --persist-to`.
+  OPENROUTER_API_KEY?: string;  // unused by /api/ask; kept for back-compat
   CORPUS?: R2Bucket;
   DB?: D1Database;
   CACHE?: KVNamespace;
@@ -124,11 +126,11 @@ async function cachedPack(env: Env, id: string, budget: number,
   return { text, cached: false };
 }
 
-async function callOpenRouter(env: Env, system: string, user: string,
+async function callOpenRouter(apiKey: string, system: string, user: string,
                                maxTokens: number = 512)
   : Promise<{ text: string; latencyMs: number }> {
-  const key = env.OPENROUTER_API_KEY;
-  if (!key) throw new Error("OPENROUTER_API_KEY not set");
+  const key = apiKey;
+  if (!key) throw new Error("OpenRouter key required");
   const t0 = Date.now();
   const resp = await fetch("https://openrouter.ai/api/v1/chat/completions", {
     method: "POST",
@@ -176,7 +178,15 @@ app.get("/api/health", async (c) => {
       d1_docs = null;
     }
   }
-  return c.json({ ok: true, ts: new Date().toISOString(), bindings, d1_docs });
+  // openrouter binding presence doesn't grant /api/ask access — it's BYO-key.
+  // Surface this explicitly so the frontend can show the right UI.
+  return c.json({
+    ok: true,
+    ts: new Date().toISOString(),
+    bindings,
+    d1_docs,
+    ask_auth: "byo-key",
+  });
 });
 
 /** List all sample docs — D1-backed with static fallback. */
@@ -283,15 +293,37 @@ app.post("/api/render/validate", async (c) => {
   return c.json(validate(loaded.eom, loaded.norm));
 });
 
+// /api/ask is BYO-key: the user supplies their own OpenRouter API key in
+// the request body (or in the Authorization header, sk-or-... pattern).
+// This keeps the demo zero-cost regardless of traffic. The server-side
+// OPENROUTER_API_KEY secret is intentionally NOT a fallback here.
 const AskBody = z.object({
   id: SampleId,
   mode: z.enum(["raw", "pack"]),
   question: z.string().min(1).max(1000),
   budget: z.number().int().positive().max(8000).default(1500),
+  apiKey: z.string().regex(/^sk-or-[A-Za-z0-9_-]+$/,
+    "expected an OpenRouter key starting with sk-or-").optional(),
 });
+
+function extractApiKey(c: any): string | null {
+  // Prefer Authorization header (Bearer sk-or-...), fall back to body.apiKey.
+  const auth = c.req.header("authorization") || "";
+  const m = auth.match(/^Bearer\s+(sk-or-[A-Za-z0-9_-]+)$/);
+  return m ? m[1] : null;
+}
+
 app.post("/api/ask", async (c) => {
   const body = AskBody.safeParse(await c.req.json().catch(() => ({})));
   if (!body.success) return c.json({ error: body.error.issues }, 400);
+  const apiKey = extractApiKey(c) || body.data.apiKey;
+  if (!apiKey) {
+    return c.json({
+      error: "missing OpenRouter API key — paste yours in the sidebar " +
+             "(stored only in your browser's localStorage). " +
+             "Get one at https://openrouter.ai/keys",
+    }, 401);
+  }
   const loaded = await loadSample(c.env, c.req.raw, body.data.id);
   if (loaded instanceof Response) return loaded;
 
@@ -306,7 +338,7 @@ app.post("/api/ask", async (c) => {
   const inputTokens = countTokens(user);
 
   try {
-    const { text, latencyMs } = await callOpenRouter(c.env, ANSWER_SYSTEM, user);
+    const { text, latencyMs } = await callOpenRouter(apiKey, ANSWER_SYSTEM, user);
     return c.json({
       mode: body.data.mode,
       answer: text,
