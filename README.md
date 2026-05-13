@@ -32,6 +32,11 @@ Unsloth track. Writeup at [`docs/KAGGLE-WRITEUP.md`](docs/KAGGLE-WRITEUP.md);
 — Pages + Workers + R2 (gold corpus) + D1 (qsets + benchmark results) + KV
 (pack cache) + Workers AI binding + OpenRouter (inbound LLM).
 
+The newspaper / context-pack / JSON / harness tabs are public. The **🔄 Ask AI**
+tab is BYO key — paste an OpenRouter `sk-or-…` in the sidebar and it stays
+in your browser's localStorage (sent server-side only for one request at a
+time). Free tier keys at [openrouter.ai/keys](https://openrouter.ai/keys).
+
 ## Quickstart
 
 ```bash

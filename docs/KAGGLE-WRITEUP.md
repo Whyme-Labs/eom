@@ -100,16 +100,28 @@ Results at `data/bench/results/`.
 
 ## Outbound demo: same IR, different lowering
 
-The Streamlit app at `demo/app.py` shows both directions on the same
-compiled IR. Outbound lowering produces a newspaper-style HTML brief
-with hero, lede, body, archive, and source-span hover. The harness
-report next to it shows pass/fail per H-rule and the metrics each
-contributed. Documents in the gold corpus pass H1–H12.
+The live demo at
+[eom-demo.swmengappdev.workers.dev](https://eom-demo.swmengappdev.workers.dev)
+shows both directions on the same compiled IR. Outbound lowering produces
+a newspaper-style HTML brief with hero, lede, body, archive, and
+source-span hover. The harness report next to it shows pass/fail per
+H-rule and the metrics each contributed. All 32 documents in the gold
+corpus pass H1–H12.
 
 The outbound side is what most readers expect from “document AI today” —
 a render. The inbound side is the wedge. Most existing tools treat the
 artefact as the goal; EOM treats the IR as the goal and the artefact as
 a projection.
+
+The demo is deployed on the Cloudflare Workers suite: **Pages + Workers**
+(static + edge functions), **R2** (gold corpus), **D1** (qsets +
+benchmark history), **KV** (pack memoisation, hit/miss surfaced in
+`x-eom-cache` headers), and **Workers AI** (binding reserved for an
+inbound-model toggle). All public except the **🔄 Ask AI** tab, which is
+BYO OpenRouter key — judges paste their own `sk-or-…` and it lives only
+in browser localStorage. That keeps the demo zero-cost regardless of
+traffic and the inbound benchmark numbers reproducible without any
+shared budget asymmetry.
 
 ## Unsloth track: Gemma-4-E4B as the IR frontend
 
