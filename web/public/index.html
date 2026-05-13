@@ -4,131 +4,148 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>EOM — two-way wire format between humans and models</title>
-<link rel="stylesheet" href="/styles.css" />
+<meta name="description" content="A formal IR for human/AI documents. Attention budgets and source grounding built in. One IR, two lowerings: outbound newspaper brief and inbound LLM context-pack. 52% input-token reduction on the benchmark." />
+<meta property="og:title" content="EOM — two-way wire format between humans and models" />
+<meta property="og:description" content="Markdown is for storage. EOM is for dialogue. One IR, two lowerings, twelve formal validators." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://eom-demo.swmengappdev.workers.dev" />
+<link rel="stylesheet" href="/landing.css" />
 </head>
 <body>
 
-<header class="hero">
-  <h1>📰 EOM</h1>
-  <p class="tagline">Two-way wire format between humans and models, with attention budgets and source grounding built in.</p>
-  <p class="meta">v0.2 · MIT · <a href="https://github.com/Whyme-Labs/eom" target="_blank" rel="noopener">github.com/Whyme-Labs/eom</a></p>
-</header>
+<nav class="nav">
+  <a href="/" class="brand">📰 EOM</a>
+  <div class="nav-links">
+    <a href="/app">Demo</a>
+    <a href="https://github.com/Whyme-Labs/eom" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://github.com/Whyme-Labs/eom/blob/main/docs/SPEC-v0.2.md" target="_blank" rel="noopener">Spec</a>
+  </div>
+</nav>
 
-<main>
-  <aside class="sidebar">
-    <h2>Sample documents</h2>
-    <p class="hint">Pick a sample to load its compiled EOM IR.</p>
-    <select id="sample-picker">
-      <option value="">— choose —</option>
-    </select>
-    <div id="sample-meta" class="meta"></div>
-    <hr />
-    <h2>Direction</h2>
-    <p class="hint">
-      Same IR, two lowerings.
-      <strong>Outbound</strong>: newspaper brief.
-      <strong>Inbound</strong>: LLM context-pack.
-    </p>
-    <hr />
-    <h2>OpenRouter key</h2>
-    <p class="hint">
-      The <strong>🔄 Ask AI</strong> tab is BYO key — your <code>sk-or-…</code>
-      lives only in this browser's localStorage and is sent directly to the
-      Worker for one /api/ask call at a time.
-      <a href="https://openrouter.ai/keys" target="_blank" rel="noopener">Get one →</a>
-    </p>
-    <div id="apikey-set" hidden>
-      <span class="apikey-status">Key set: <code id="apikey-mask">sk-or-***</code></span>
-      <button id="apikey-clear" class="link">clear</button>
-    </div>
-    <div id="apikey-form">
-      <input type="password" id="apikey-input" placeholder="sk-or-…" />
-      <button id="apikey-save">Save</button>
-    </div>
-  </aside>
+<section class="hero">
+  <h1 class="hero-h">Two-way wire format between humans and models.</h1>
+  <p class="hero-sub">Attention budgets and source grounding built in. One IR, two lowerings — outbound brief, inbound LLM context-pack. <em>Markdown is for storage. EOM is for dialogue.</em></p>
+  <div class="hero-cta">
+    <a href="/app" class="cta cta-primary">Try the live demo →</a>
+    <a href="https://github.com/Whyme-Labs/eom" target="_blank" rel="noopener" class="cta cta-secondary">GitHub →</a>
+  </div>
+  <div class="hero-stats">
+    <div class="stat"><span class="num">52%</span><span class="lbl">benchmark token reduction</span></div>
+    <div class="stat"><span class="num">32</span><span class="lbl">gold-corpus docs</span></div>
+    <div class="stat"><span class="num">H1–H12</span><span class="lbl">formal validators</span></div>
+  </div>
+  <div class="hero-rule"></div>
+</section>
 
-  <section class="content">
-    <nav class="tabs" role="tablist">
-      <button class="tab active" data-tab="newspaper" role="tab">📰 Newspaper</button>
-      <button class="tab" data-tab="pack" role="tab">🤖 Context pack</button>
-      <button class="tab" data-tab="json" role="tab">📋 JSON</button>
-      <button class="tab" data-tab="harness" role="tab">✓ Harness</button>
-      <button class="tab" data-tab="ask" role="tab">🔄 Ask AI</button>
-    </nav>
-
-    <section class="panel" id="panel-newspaper">
-      <div class="loading" data-default>Load a sample to see the outbound newspaper brief.</div>
-      <iframe id="newspaper-frame" class="newspaper-frame" hidden></iframe>
-    </section>
-
-    <section class="panel" id="panel-pack" hidden>
-      <div class="controls">
-        <label>Token budget
-          <input type="range" id="pack-budget" min="200" max="4000" step="100" value="1500" />
-          <span id="pack-budget-value">1500</span>
-        </label>
-      </div>
-      <pre id="pack-out" class="codepane">Load a sample to render the EOM context-pack.</pre>
-    </section>
-
-    <section class="panel" id="panel-json" hidden>
-      <pre id="json-out" class="codepane">Load a sample to see the raw EOM JSON.</pre>
-    </section>
-
-    <section class="panel" id="panel-harness" hidden>
-      <div id="harness-out">Load a sample to run H1–H12.</div>
-    </section>
-
-    <section class="panel" id="panel-ask" hidden>
-      <p class="hint">
-        Send the same question to the same model with two contexts:
-        raw markdown on the left, the EOM context-pack on the right.
-        Compare token cost and answer quality.
-      </p>
-      <div class="controls ask-controls">
-        <label>Question
-          <select id="question-picker" disabled>
-            <option value="">— load a sample first —</option>
-          </select>
-        </label>
-        <label>Or type your own
-          <input type="text" id="custom-question" placeholder="What does this document say about…" />
-        </label>
-        <label>Pack budget
-          <input type="range" id="ask-budget" min="200" max="4000" step="100" value="1500" />
-          <span id="ask-budget-value">1500</span>
-        </label>
-        <button id="ask-run" disabled>Run side-by-side →</button>
-      </div>
-      <div id="ask-reference" class="ref" hidden></div>
-      <div class="askgrid">
-        <div class="askcol" data-mode="raw">
-          <h3>Raw markdown</h3>
-          <div class="metrics" id="ask-raw-metrics"></div>
-          <div class="answer" id="ask-raw-answer"></div>
-          <details><summary>Context sent</summary><pre id="ask-raw-context" class="codepane small"></pre></details>
-        </div>
-        <div class="askcol" data-mode="pack">
-          <h3>EOM context-pack</h3>
-          <div class="metrics" id="ask-pack-metrics"></div>
-          <div class="answer" id="ask-pack-answer"></div>
-          <details><summary>Context sent</summary><pre id="ask-pack-context" class="codepane small"></pre></details>
-        </div>
-      </div>
-      <div class="askheadline" id="ask-headline"></div>
-    </section>
-  </section>
-</main>
-
-<footer>
-  <p>
-    Spec: <code>docs/SPEC-v0.2.md</code>.
-    Benchmark numbers: see <a href="/bench-results.json">bench-results.json</a>.
-    The fine-tuned Gemma-4-E4B adapter (Unsloth track) lives on Modal volume
-    <code>eom-sft-out:/output/eom-sft-adapter-gemma4-v5</code>.
+<section class="thesis">
+  <p class="pitch-line"><em>Markdown is for storage.</em></p>
+  <p class="pitch-line pitch-strong">EOM is for dialogue.</p>
+  <p class="pitch-body">
+    Today, every human–AI exchange is a flat byte stream: walls of Markdown going one
+    way, walls of model output coming back. Both sides re-derive what matters every
+    turn. EOM carries salience, grounding, and structure <em>on the wire</em>, so
+    neither side has to.
   </p>
+</section>
+
+<section class="arch">
+  <h2>Architecture</h2>
+  <p class="arch-sub">One core IR. Two asymmetric dialects. Shared validator.</p>
+  <svg viewBox="0 0 1200 520" class="arch-svg" role="img" aria-label="EOM architecture diagram">
+    <defs>
+      <marker id="arr" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+        <path d="M0,1 L8,5 L0,9 z" fill="#B8860B" />
+      </marker>
+    </defs>
+    <!-- Core IR box -->
+    <rect x="500" y="40" width="200" height="60" rx="6" fill="#fff" stroke="#111" stroke-width="2" />
+    <text x="600" y="78" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="22" fill="#111">[ Core IR ]</text>
+    <!-- Trunk -->
+    <path d="M 600 100 L 600 160 M 300 160 L 900 160 M 300 160 L 300 220 M 900 160 L 900 220"
+          stroke="#111" stroke-width="2" fill="none" />
+    <!-- Arrow tips -->
+    <path d="M 300 215 l -6 -10 l 12 0 z" fill="#B8860B" />
+    <path d="M 900 215 l -6 -10 l 12 0 z" fill="#B8860B" />
+    <!-- Dialect boxes -->
+    <rect x="180" y="220" width="240" height="50" rx="4" fill="#fff" stroke="#111" stroke-width="1.5" />
+    <text x="300" y="250" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="18" fill="#111">outbound dialect</text>
+    <line x1="200" y1="262" x2="400" y2="262" stroke="#B8860B" stroke-width="1.5" />
+
+    <rect x="780" y="220" width="240" height="50" rx="4" fill="#fff" stroke="#111" stroke-width="1.5" />
+    <text x="900" y="250" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="18" fill="#111">inbound dialect</text>
+    <line x1="800" y1="262" x2="1000" y2="262" stroke="#B8860B" stroke-width="1.5" />
+
+    <!-- Dialect direction labels -->
+    <text x="300" y="295" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="14" fill="#5a5a5a">AI → human</text>
+    <text x="900" y="295" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="14" fill="#5a5a5a">human → AI</text>
+
+    <!-- Leaves -->
+    <text x="300" y="350" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="16" fill="#111">HTML newspaper</text>
+    <text x="300" y="385" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="16" fill="#111">mobile cards</text>
+    <text x="300" y="420" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="16" fill="#111">slide deck</text>
+
+    <text x="900" y="350" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="16" fill="#111">LLM context-pack</text>
+    <text x="900" y="385" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="16" fill="#111">retrieval payload</text>
+    <text x="900" y="420" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="16" fill="#111">tool-call payload</text>
+
+    <!-- Footer caption -->
+    <text x="600" y="490" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="18" fill="#5a5a5a">Same blocks underneath. Different projections out.</text>
+  </svg>
+</section>
+
+<section class="bench">
+  <h2>Inbound benchmark</h2>
+  <p class="bench-sub">Three documents, fifteen questions, two contexts per question. Same downstream model on both cells. Real numbers off a live run.</p>
+  <table class="bench-table">
+    <thead>
+      <tr><th></th><th class="num-col">raw</th><th class="num-col">pack</th><th class="num-col">Δ</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>GDPR</td><td class="num-col">5,159</td><td class="num-col">3,239</td><td class="num-col">-37%</td></tr>
+      <tr><td>Paris 2024</td><td class="num-col">7,488</td><td class="num-col">2,348</td><td class="num-col gold">-69%</td></tr>
+      <tr><td>RFC 9293 (TCP)</td><td class="num-col">3,485</td><td class="num-col">2,090</td><td class="num-col">-40%</td></tr>
+      <tr class="bench-total"><td><strong>Total</strong></td><td class="num-col"><strong>16,132</strong></td><td class="num-col"><strong>7,677</strong></td><td class="num-col gold"><strong>-52%</strong></td></tr>
+    </tbody>
+  </table>
+  <p class="bench-caption"><em>Editorially lossy by design. Tier-A always survives. Tier-C compresses. Tier-D drops.</em></p>
+</section>
+
+<section class="stack">
+  <h2>What it runs on</h2>
+  <div class="stack-grid">
+    <div class="stack-card">
+      <div class="card-h">Cloudflare Workers Suite</div>
+      <p>Pages + Workers + R2 (gold corpus) + D1 (qsets + benchmark results) + KV (pack cache) + Workers AI binding.</p>
+      <code class="card-tag">R2 · D1 · KV · AI · Pages · Workers</code>
+    </div>
+    <div class="stack-card">
+      <div class="card-h">Compiler frontend</div>
+      <p>Gemma-4-E4B fine-tuned via Unsloth on Modal A100-80GB. r=32, α=32, bf16, 30 epochs, canonical Unsloth recipe.</p>
+      <code class="card-tag">Unsloth · Gemma 4 · Modal · LoRA</code>
+    </div>
+    <div class="stack-card">
+      <div class="card-h">Inbound LLM</div>
+      <p>OpenRouter (BYO key) routes /api/ask to <code>google/gemma-4-31b-it</code>. The Ask AI tab is zero-cost-to-host: judges paste their own <code>sk-or-…</code>.</p>
+      <code class="card-tag">OpenRouter · BYO key</code>
+    </div>
+  </div>
+</section>
+
+<section class="cta-bottom">
+  <h2>See it run.</h2>
+  <p>Five tabs. Three pre-compiled samples. Live OpenRouter Q&amp;A.</p>
+  <a href="/app" class="cta cta-primary cta-big">Open the demo →</a>
+  <p class="cta-foot">
+    Spec at <a href="https://github.com/Whyme-Labs/eom/blob/main/docs/SPEC-v0.2.md" target="_blank" rel="noopener"><code>docs/SPEC-v0.2.md</code></a> ·
+    Writeup at <a href="https://github.com/Whyme-Labs/eom/blob/main/docs/KAGGLE-WRITEUP.md" target="_blank" rel="noopener"><code>docs/KAGGLE-WRITEUP.md</code></a> ·
+    Source on <a href="https://github.com/Whyme-Labs/eom" target="_blank" rel="noopener">GitHub</a>
+  </p>
+</section>
+
+<footer class="footer">
+  <p>EOM v0.2 · MIT license · Submission for the Gemma 4 Good Hackathon, Unsloth track.</p>
+  <p>Compiled, validated, projected. Same IR, two lowerings.</p>
 </footer>
 
-<script type="module" src="/app.js"></script>
 </body>
 </html>
