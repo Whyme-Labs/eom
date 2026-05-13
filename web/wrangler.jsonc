@@ -1,0 +1,60 @@
+// Cloudflare Workers config for EOM live demo.
+//
+// This single Worker serves both static frontend (public/) and API (Hono
+// router under /api/*). Bindings:
+//   - ASSETS  : static files in public/ (Workers Static Assets)
+//   - CORPUS  : R2 bucket for sample docs + compiled .eom.json
+//   - DB      : D1 database for qsets, benchmark results
+//   - CACHE   : KV namespace for compiled-doc memoisation
+//   - AI      : Workers AI binding (kept for future inbound model toggle;
+//               OpenRouter is the canonical inbound LLM today)
+//
+// Secrets (set via `wrangler secret put OPENROUTER_API_KEY`):
+//   - OPENROUTER_API_KEY
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "eom-demo",
+  "main": "src/worker.ts",
+  "compatibility_date": "2026-05-10",
+  "compatibility_flags": ["nodejs_compat"],
+
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application"
+  },
+
+  "observability": {
+    "enabled": true
+  },
+
+  // R2 — sample corpus + compiled outputs
+  "r2_buckets": [
+    {
+      "binding": "CORPUS",
+      "bucket_name": "eom-corpus"
+    }
+  ],
+
+  // D1 — relational store for qsets and benchmark runs
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "eom-data",
+      "database_id": "PLACEHOLDER_REPLACE_AFTER_CREATE"
+    }
+  ],
+
+  // KV — short-TTL cache for compiled docs keyed by source hash
+  "kv_namespaces": [
+    {
+      "binding": "CACHE",
+      "id": "PLACEHOLDER_REPLACE_AFTER_CREATE"
+    }
+  ],
+
+  // Workers AI — bound but not used by default; OpenRouter is canonical
+  "ai": {
+    "binding": "AI"
+  }
+}
