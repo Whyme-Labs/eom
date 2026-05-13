@@ -97,7 +97,7 @@ Paste contents of `docs/KAGGLE-WRITEUP.md` (1163 words).
 | Field | Value |
 |---|---|
 | Code repository | `https://github.com/Whyme-Labs/eom` |
-| Live demo | `https://<your-app>.streamlit.app/` |
+| Live demo | `https://eom-demo.swmengappdev.workers.dev` |
 | Video | `https://youtu.be/<id>` |
 | Adapter (Unsloth track) | `modal://eom-sft-out/eom-sft-adapter-gemma4-v5` |
 
